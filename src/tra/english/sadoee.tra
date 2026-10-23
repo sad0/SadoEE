@@ -2,6 +2,7 @@
 @2000 = ~Party Stash~
 @2001 = ~Rest camp~
 @2002 = ~Quality of life~
+@2003 = ~Engine extension~
 @2010 = ~SadoEE replaces Party Stash and SadoQoL (same files): uninstall every Party Stash and SadoQoL component first. The stash contents stay in your saves and come back with SadoEE's stash.~
 @2011 = ~Requires the Rest camp component.~
 @2012 = ~Grand merchant at the rest camp: sells every item seen at the stores already visited (requires the rest camp and the stash)~

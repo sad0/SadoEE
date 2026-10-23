@@ -38,7 +38,7 @@ SQ_MAP = {0: (20, 'SADOEE-QOL-PASSIVE-TRAPS'), 1: (21, 'SADOEE-QOL-VALUABLE-CONT
           13: (30, 'SADOEE-QOL-KEEP-GEAR'), 14: (31, 'SADOEE-QOL-CHESTS-IN-GROUND-BAR'), 15: (12, 'SADOEE-CAMP-SCHOLAR'),
           16: (13, 'SADOEE-CAMP-WAITING')}
 CAMP_FILES = {'M_SQCAMP.lua', 'SQCAMP.menu', 'M_SQCAIN.lua', 'M_SQWAIT.lua', 'SQWAIT.menu'}
-GROUP_STASH, GROUP_CAMP, GROUP_QOL = '@2000', '@2001', '@2002'
+GROUP_STASH, GROUP_CAMP, GROUP_QOL, GROUP_ENGINE = '@2000', '@2001', '@2002', '@2003'
 CAMP_PRED = 'REQUIRE_PREDICATE MOD_IS_INSTALLED ~SadoEE.tp2~ (ID_OF_LABEL ~SadoEE.tp2~ ~SADOEE-CAMP~) @2011'
 MERCHANT_LINE = "{ 'SQMERCH', 723, 301, 2 },"   # M_SQCAMP.lua's spawn list (old saves): off without the merchant
 
@@ -262,6 +262,8 @@ END
         if n == 8:
             merchant = b
             continue
+        if n >= 40:   # engine extension (#40 big party): its own group, after quality of life
+            continue
         parts.append(add_group(b, GROUP_STASH))
     camp, merchant_add = split_camp(sq[10])
     parts.append('\n////////// Rest camp (#10-#13) //////////\n')
@@ -277,6 +279,9 @@ END
     parts.append('\n////////// Quality of life (#20-#31) //////////\n')
     for n in sorted(k for k in sq if k >= 20):
         parts.append(add_group(sq[n], GROUP_QOL))
+    parts.append('\n////////// Engine extension (#40+) //////////\n')
+    for n in sorted(k for k in ps if k >= 40):
+        parts.append(add_group(ps[n], GROUP_ENGINE))
     return ''.join(parts)
 
 
