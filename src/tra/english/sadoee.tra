@@ -1,0 +1,9 @@
+// SadoEE's own strings (groups, guards, merged components). Party Stash strings: setup.tra; ex-SadoQoL: qol.tra.
+@2000 = ~Party Stash~
+@2001 = ~Rest camp~
+@2002 = ~Quality of life~
+@2010 = ~SadoEE replaces Party Stash and SadoQoL (same files): uninstall every Party Stash and SadoQoL component first. The stash contents stay in your saves and come back with SadoEE's stash.~
+@2011 = ~Requires the Rest camp component.~
+@2012 = ~Grand merchant at the rest camp: sells every item seen at the stores already visited (requires the rest camp and the stash)~
+@2013 = ~Requires the stash.~
+@2014 = ~For now: Baldur's Gate EE and EET only (the BG2EE camp is coming).~
