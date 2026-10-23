@@ -18,5 +18,5 @@ if ($dev -ne $Game) {
 }
 $wargs = "--language $Language --force-install-list $Components --no-exit-pause --noautoupdate --skip-at-view"
 Start-Process -FilePath "$Game\setup-SadoEE.exe" -ArgumentList $wargs -WorkingDirectory $Game -Wait -WindowStyle Hidden
-"errors: " + (Select-String -Path "$Game\SETUP-SADOEE.DEBUG" -Pattern 'NOT INSTALLED|^ERROR').Count
+"errors: " + (Select-String -Path "$Game\SETUP-SADOEE.DEBUG" -Pattern 'NOT INSTALLED|^ERROR' -CaseSensitive).Count
 "installed: " + ((Select-String -Path "$Game\WeiDU.log" -Pattern '^~SADOEE[\\/]SADOEE.TP2~ #\d+ #(\d+)' | ForEach-Object { $_.Matches[0].Groups[1].Value }) -join ' ')

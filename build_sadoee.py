@@ -144,6 +144,7 @@ def copy_sadoqol():
         paths[f] = 'SadoEE/%s/%s' % (sub, f)
     shutil.copytree(os.path.join(SQ, 'camp'), os.path.join(OUT, 'camp', 'area'))
     shutil.copytree(os.path.join(SQ, 'withers'), os.path.join(OUT, 'camp', 'withers'))
+    shutil.copytree(os.path.join(SQ, 'quiver'), os.path.join(OUT, 'qol', 'quiver'))  # endless ammo's quiver icons
     for f in os.listdir(os.path.join(SQ, 'dlg')):
         write(os.path.join(OUT, 'camp', 'dlg', f), offset_refs(read(os.path.join(SQ, 'dlg', f))))
     assert MERCHANT_LINE in read(os.path.join(SQ, 'M_SQCAMP.lua')), 'M_SQCAMP.lua spawn line changed'
@@ -182,6 +183,7 @@ def sq_components(paths):
             b = must_sub(r'(LABEL ~SADOEE-CAMP~\n)', r'\1REQUIRE_PREDICATE GAME_IS ~bgee eet~ @2014\n', b)
         b = b.replace('.../sadoqol-inlined/', '.../sadoee-inlined/')
         b = b.replace('~SadoQoL/camp~', '~SadoEE/camp/area~').replace('~SadoQoL/withers~', '~SadoEE/camp/withers~')
+        b = b.replace('~SadoQoL/quiver~', '~SadoEE/qol/quiver~')
         b = re.sub(r'~SadoQoL/dlg/', '~SadoEE/camp/dlg/', b)
         b = b.replace('USING ~SadoQoL/tra/%LANGUAGE%/setup.tra~', 'USING ~SadoEE/tra/%LANGUAGE%/qol.tra~')
         b = re.sub(r'~SadoQoL/([^~/]+)~', lambda m: '~%s~' % paths[m.group(1)], b)
