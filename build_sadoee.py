@@ -36,8 +36,9 @@ SQ_MAP = {0: (20, 'SADOEE-QOL-PASSIVE-TRAPS'), 1: (21, 'SADOEE-QOL-VALUABLE-CONT
           7: (25, 'SADOEE-QOL-FOOTPRINT-ONE'), 8: (26, 'SADOEE-QOL-FOOTPRINT-NONE'), 9: (27, 'SADOEE-QOL-LASTING-MODES'),
           10: (10, 'SADOEE-CAMP'), 11: (28, 'SADOEE-QOL-ATTACK-MOVE'), 12: (29, 'SADOEE-QOL-MOUSE-BUTTONS'),
           13: (30, 'SADOEE-QOL-KEEP-GEAR'), 14: (31, 'SADOEE-QOL-CHESTS-IN-GROUND-BAR'), 15: (12, 'SADOEE-CAMP-SCHOLAR'),
-          16: (13, 'SADOEE-CAMP-WAITING')}
-CAMP_FILES = {'M_SQCAMP.lua', 'SQCAMP.menu', 'M_SQCAIN.lua', 'M_SQWAIT.lua', 'SQWAIT.menu'}
+          16: (13, 'SADOEE-CAMP-WAITING'), 17: (14, 'SADOEE-CAMP-WITHERS')}
+SQ_DROPPED = {3, 4}   # sorted loot (= Party Stash #1), deprecated half personal space
+CAMP_FILES = {'M_SQCAMP.lua', 'SQCAMP.menu', 'M_SQCAIN.lua', 'M_SQWAIT.lua', 'SQWAIT.menu', 'M_SQRESP.lua', 'SQRESP.menu'}
 GROUP_STASH, GROUP_CAMP, GROUP_QOL, GROUP_ENGINE = '@2000', '@2001', '@2002', '@2003'
 CAMP_PRED = 'REQUIRE_PREDICATE MOD_IS_INSTALLED ~SadoEE.tp2~ (ID_OF_LABEL ~SadoEE.tp2~ ~SADOEE-CAMP~) @2011'
 MERCHANT_LINE = "{ 'SQMERCH', 723, 301, 2 },"   # M_SQCAMP.lua's spawn list (old saves): off without the merchant
@@ -141,6 +142,7 @@ def copy_sadoqol():
         shutil.copy2(os.path.join(SQ, f), os.path.join(OUT, sub, f))
         paths[f] = 'SadoEE/%s/%s' % (sub, f)
     shutil.copytree(os.path.join(SQ, 'camp'), os.path.join(OUT, 'camp', 'area'))
+    shutil.copytree(os.path.join(SQ, 'withers'), os.path.join(OUT, 'camp', 'withers'))
     for f in os.listdir(os.path.join(SQ, 'dlg')):
         write(os.path.join(OUT, 'camp', 'dlg', f), offset_refs(read(os.path.join(SQ, 'dlg', f))))
     assert MERCHANT_LINE in read(os.path.join(SQ, 'M_SQCAMP.lua')), 'M_SQCAMP.lua spawn line changed'
@@ -166,8 +168,9 @@ def sq_components(paths):
     out = {}
     for b in comps:
         n = designated(b)
-        if n not in SQ_MAP:
+        if n in SQ_DROPPED:
             continue
+        assert n in SQ_MAP, 'SadoQoL #%d is new: give it a SadoEE number in SQ_MAP' % n
         new_n, label = SQ_MAP[n]
         b = offset_refs(b)
         b = re.sub(r'DESIGNATED \d+', 'DESIGNATED %d' % new_n, b, count=1)
@@ -177,12 +180,13 @@ def sq_components(paths):
         if new_n == 10:   # the camp's area and people come from BG1 / SoD files: BG2EE gets its own camp later
             b = must_sub(r'(LABEL ~SADOEE-CAMP~\n)', r'\1REQUIRE_PREDICATE GAME_IS ~bgee eet~ @2014\n', b)
         b = b.replace('.../sadoqol-inlined/', '.../sadoee-inlined/')
-        b = b.replace('~SadoQoL/camp~', '~SadoEE/camp/area~')
+        b = b.replace('~SadoQoL/camp~', '~SadoEE/camp/area~').replace('~SadoQoL/withers~', '~SadoEE/camp/withers~')
         b = re.sub(r'~SadoQoL/dlg/', '~SadoEE/camp/dlg/', b)
         b = b.replace('USING ~SadoQoL/tra/%LANGUAGE%/setup.tra~', 'USING ~SadoEE/tra/%LANGUAGE%/qol.tra~')
         b = re.sub(r'~SadoQoL/([^~/]+)~', lambda m: '~%s~' % paths[m.group(1)], b)
         b = re.sub(r'^// #\d+(?: / #\d+)? ', '// ', b)
-        assert 'SadoQoL/' not in b, 'unmapped path in SadoQoL #%d' % n
+        code = '\n'.join(line.split('//')[0] for line in b.splitlines())
+        assert 'SadoQoL/' not in code, 'unmapped path in SadoQoL #%d' % n
         out[new_n] = b
     return out
 
@@ -271,7 +275,7 @@ END
             continue
         parts.append(add_group(b, GROUP_STASH))
     camp, merchant_add = split_camp(sq[10])
-    parts.append('\n////////// Rest camp (#10-#13) //////////\n')
+    parts.append('\n////////// Rest camp (#10-#14) //////////\n')
     parts.append(add_group(camp, GROUP_CAMP))
     # Party Stash #8 -> #11: needs the camp now (John), still the stash (its engine stubs live in M_PSTASH.lua)
     merchant = must_sub(r'BEGIN @18 DESIGNATED 8', 'BEGIN @2012 DESIGNATED 11', merchant)
@@ -279,7 +283,7 @@ END
     merchant = merchant.replace(') @17\n', ') @2013\n')
     merchant = re.sub(r'^// #8 Camp merchant', '// #11 Camp merchant', merchant, flags=re.M)
     parts.append(add_group(merchant.rstrip('\n') + '\n\n' + merchant_add, GROUP_CAMP) + '\n')
-    for n in (12, 13):
+    for n in (12, 13, 14):
         parts.append(add_group(sq[n], GROUP_CAMP))
     parts.append('\n////////// Quality of life (#20-#31) //////////\n')
     for n in sorted(k for k in sq if k >= 20):
