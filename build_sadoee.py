@@ -291,6 +291,11 @@ END
 
 
 def main():
+    # the rebuild wipes SadoEE\: never while a WeiDU install reads it (a rebuild broke an EET install, 2026-10-23)
+    tasks = subprocess.run(['tasklist', '/FI', 'IMAGENAME eq setup-SadoEE.exe'], capture_output=True, text=True,
+                           errors='replace').stdout
+    if 'setup-sadoee.exe' in tasks.lower():
+        sys.exit('setup-SadoEE.exe is running (a WeiDU install): rebuild later.')
     if os.path.exists(OUT):
         shutil.rmtree(OUT)
     os.makedirs(os.path.join(OUT, 'qol'))
