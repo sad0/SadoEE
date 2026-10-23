@@ -1,0 +1,10 @@
+// German translation of SadoEE (from English)
+@2000 = ~Party Stash~
+@2001 = ~Rastlager~
+@2002 = ~Komfortfunktionen~
+@2003 = ~Engine-Erweiterung~
+@2010 = ~SadoEE ersetzt Party Stash und SadoQoL (dieselben Dateien): deinstalliert zuerst alle Komponenten von Party Stash und SadoQoL. Der Truheninhalt bleibt in euren Spielständen und kehrt mit der Truhe von SadoEE zurück.~
+@2011 = ~Benötigt die Komponente Rastlager.~
+@2012 = ~Großhändler im Rastlager: verkauft jeden Gegenstand, der in bereits besuchten Läden gesehen wurde (benötigt Rastlager und Truhe)~
+@2013 = ~Benötigt die Truhe.~
+@2014 = ~Vorerst nur Baldur's Gate EE und EET (das Lager für BG2EE folgt).~

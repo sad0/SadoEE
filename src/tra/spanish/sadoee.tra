@@ -1,0 +1,10 @@
+// Spanish translation of SadoEE (from English)
+@2000 = ~Party Stash~
+@2001 = ~Campamento de descanso~
+@2002 = ~Comodidad de juego~
+@2003 = ~Extensión del motor~
+@2010 = ~SadoEE sustituye a Party Stash y SadoQoL (mismos archivos): desinstala antes todos los componentes de Party Stash y SadoQoL. El contenido del baúl sigue en tus partidas guardadas y vuelve con el baúl de SadoEE.~
+@2011 = ~Requiere el componente Campamento de descanso.~
+@2012 = ~Gran mercader en el campamento de descanso: vende cualquier objeto visto en las tiendas ya visitadas (requiere el campamento de descanso y el baúl)~
+@2013 = ~Requiere el baúl.~
+@2014 = ~Por ahora: solo Baldur's Gate EE y EET (el campamento de BG2EE llegará pronto).~

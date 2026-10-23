@@ -1,0 +1,10 @@
+// Simplified Chinese translation of SadoEE (from English)
+@2000 = ~Party Stash~
+@2001 = ~休息营地~
+@2002 = ~便利性改进~
+@2003 = ~引擎扩展~
+@2010 = ~SadoEE 取代 Party Stash 和 SadoQoL（使用相同文件）：请先卸载 Party Stash 和 SadoQoL 的所有组件。储物箱内容仍保留在你的存档中，并会随 SadoEE 的储物箱回来。~
+@2011 = ~需要“休息营地”组件。~
+@2012 = ~休息营地的大商人：出售已拜访过的商店中见过的所有物品（需要休息营地和储物箱）~
+@2013 = ~需要储物箱。~
+@2014 = ~目前仅支持 Baldur's Gate EE 和 EET（BG2EE 营地即将推出）。~
