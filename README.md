@@ -14,10 +14,11 @@ Party Stash and SadoQoL in one WeiDU mod for **Baldur's Gate: Enhanced Edition**
 | 12 | Rest camp | The Old Scholar: identifies everything |
 | 13 | Rest camp | Ex-members can wait for you at the camp |
 | 14 | Rest camp | Withers: a lich who fully recreates a party member |
+| 15 | Rest camp | Withers can also recruit new members |
 | 20-32 | Quality of life | Passive trap detection, valuable containers, automatic disarming, FPS counter, endless ammo, small party footprint, lasting modes, attack-move, mouse buttons, keep gear on death, chests in the ground bar, Auto-Roller |
 | 40 | Engine extension | Big party: 7 to 32 members (experimental) |
 
-The rest camp (#10-#14) is for BGEE and EET for now; the big party for BGEE and EET.
+The rest camp (#10-#15) is for BGEE and EET for now; the big party for BGEE and EET.
 
 ## Installation
 

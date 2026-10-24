@@ -37,9 +37,10 @@ SQ_MAP = {0: (20, 'SADOEE-QOL-PASSIVE-TRAPS'), 1: (21, 'SADOEE-QOL-VALUABLE-CONT
           10: (10, 'SADOEE-CAMP'), 11: (28, 'SADOEE-QOL-ATTACK-MOVE'), 12: (29, 'SADOEE-QOL-MOUSE-BUTTONS'),
           13: (30, 'SADOEE-QOL-KEEP-GEAR'), 14: (31, 'SADOEE-QOL-CHESTS-IN-GROUND-BAR'), 15: (12, 'SADOEE-CAMP-SCHOLAR'),
           16: (13, 'SADOEE-CAMP-WAITING'), 17: (14, 'SADOEE-CAMP-WITHERS'),
-          18: (32, 'SADOEE-QOL-AUTO-ROLLER')}
+          18: (32, 'SADOEE-QOL-AUTO-ROLLER'), 19: (15, 'SADOEE-CAMP-WITHERS-RECRUIT')}
 SQ_DROPPED = {3, 4}   # sorted loot (= Party Stash #1), deprecated half personal space
-CAMP_FILES = {'M_SQCAMP.lua', 'SQCAMP.menu', 'M_SQCAIN.lua', 'M_SQWAIT.lua', 'SQWAIT.menu', 'M_SQRESP.lua', 'SQRESP.menu'}
+CAMP_FILES = {'M_SQCAMP.lua', 'SQCAMP.menu', 'M_SQCAIN.lua', 'M_SQWAIT.lua', 'SQWAIT.menu', 'M_SQRESP.lua', 'SQRESP.menu',
+             'M_SQRECR.lua', 'SQRECR.menu'}
 GROUP_STASH, GROUP_CAMP, GROUP_QOL, GROUP_ENGINE = '@2000', '@2001', '@2002', '@2003'
 CAMP_PRED = 'REQUIRE_PREDICATE MOD_IS_INSTALLED ~SadoEE.tp2~ (ID_OF_LABEL ~SadoEE.tp2~ ~SADOEE-CAMP~) @2011'
 MERCHANT_LINE = "{ 'SQMERCH', 723, 301, 2 },"   # M_SQCAMP.lua's spawn list (old saves): off without the merchant
@@ -278,7 +279,7 @@ END
             continue
         parts.append(add_group(b, GROUP_STASH))
     camp, merchant_add = split_camp(sq[10])
-    parts.append('\n////////// Rest camp (#10-#14) //////////\n')
+    parts.append('\n////////// Rest camp (#10-#15) //////////\n')
     parts.append(add_group(camp, GROUP_CAMP))
     # Party Stash #8 -> #11: needs the camp now (John), still the stash (its engine stubs live in M_PSTASH.lua)
     merchant = must_sub(r'BEGIN @18 DESIGNATED 8', 'BEGIN @2012 DESIGNATED 11', merchant)
@@ -286,7 +287,7 @@ END
     merchant = merchant.replace(') @17\n', ') @2013\n')
     merchant = re.sub(r'^// #8 Camp merchant', '// #11 Camp merchant', merchant, flags=re.M)
     parts.append(add_group(merchant.rstrip('\n') + '\n\n' + merchant_add, GROUP_CAMP) + '\n')
-    for n in (12, 13, 14):
+    for n in (12, 13, 14, 15):
         parts.append(add_group(sq[n], GROUP_CAMP))
     parts.append('\n////////// Quality of life (#20-#31) //////////\n')
     for n in sorted(k for k in sq if k >= 20):
