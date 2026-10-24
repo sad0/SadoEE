@@ -9,7 +9,7 @@ paths, renumbers components and strings, and writes SadoEE.tp2. Never edit <BGEE
 Hand-written SadoEE files: src/ (tra/<lang>/sadoee.tra: groups, guards, merged component names).
 
 Components: Party Stash keeps its numbers (#0-#7); camp block #10 camp, #11 grand merchant (was Party Stash #8, now
-needs the camp), #12 old scholar, #13 waiting at the camp; quality of life #20-#31 (SadoQoL #0-#14 minus its sorted
+needs the camp), #12 old scholar, #13 waiting at the camp, #16 quest chronicle (was Party Stash #9); quality of life #20-#31 (SadoQoL #0-#14 minus its sorted
 loot, the same as Party Stash #1). ex-SadoQoL strings: @N -> @(1000 + N) in tra/<lang>/qol.tra.
 Every resref, Lua global and game variable keeps its name: saves made with Party Stash / SadoQoL keep working.
 """
@@ -269,11 +269,14 @@ END
 ////////// Party Stash (#0-#7) //////////
 ''' % (guard, lang_lines)
     parts = [head]
-    merchant = None
+    merchant = chronicle = None
     for n in sorted(ps):
         b = ps[n]
         if n == 8:
             merchant = b
+            continue
+        if n == 9:   # quest chronicle: Decard's page, in the camp block (#16)
+            chronicle = b
             continue
         if n >= 40:   # engine extension (#40 big party): its own group, after quality of life
             continue
@@ -289,6 +292,14 @@ END
     parts.append(add_group(merchant.rstrip('\n') + '\n\n' + merchant_add, GROUP_CAMP) + '\n')
     for n in (12, 13, 14, 15):
         parts.append(add_group(sq[n], GROUP_CAMP))
+    # Party Stash #9 -> #16: Decard's quest chronicle (John 2026-10-24), needs the old scholar (#12)
+    if chronicle:
+        chronicle = must_sub(r'BEGIN @20 DESIGNATED 9', 'BEGIN @20 DESIGNATED 16', chronicle)
+        chronicle = must_sub(r'(LABEL ~SADOEE-QUEST-CHRONICLE~\n)',
+                             r'\1REQUIRE_PREDICATE MOD_IS_INSTALLED ~SadoEE.tp2~ (ID_OF_LABEL ~SadoEE.tp2~ '
+                             r'~SADOEE-CAMP-SCHOLAR~) @21\n', chronicle)
+        chronicle = re.sub(r'^// #9 Quest chronicle', '// #16 Quest chronicle', chronicle, flags=re.M)
+        parts.append(add_group(chronicle, GROUP_CAMP))
     parts.append('\n////////// Quality of life (#20-#31) //////////\n')
     for n in sorted(k for k in sq if k >= 20):
         parts.append(add_group(sq[n], GROUP_QOL))
