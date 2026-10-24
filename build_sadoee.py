@@ -297,6 +297,69 @@ END
     return ''.join(parts)
 
 
+README_CSS = ('body{font-family:Segoe UI,Arial,sans-serif;max-width:900px;margin:2em auto;padding:0 1em;background:#1b1712;'
+              'color:#e8dcc4;line-height:1.5}h1,h2,h3{color:#e6c35c}a{color:#e6c35c}table{border-collapse:collapse;'
+              'width:100%;margin:.5em 0}td,th{border:1px solid #5a4a32;padding:.4em .6em;text-align:left;vertical-align:top}'
+              'th{background:#2a2219}img{max-width:100%;border:1px solid #5a4a32;margin:.5em 0}.v{color:#a89878}'
+              '.n{white-space:nowrap;color:#a89878}')
+
+
+def tra_text(lang):
+    """Every @N of the installed language (setup, qol, sadoee) -> plain text."""
+    out = {}
+    for name in ('setup.tra', 'qol.tra', 'sadoee.tra'):
+        p = os.path.join(OUT, 'tra', lang, name)
+        if os.path.exists(p):
+            for m in re.finditer(r'(?ms)^@(\d+)\s*=\s*~(.*?)~', read(p)):
+                out[int(m.group(1))] = m.group(2)
+    return out
+
+
+def build_readme(langs):
+    """readme/readme-<language>.html: prose from src/readme_text.py, the component list from SadoEE.tp2 + the .tra."""
+    import html
+    sys.path.insert(0, SRC)
+    from readme_text import TEXT
+    tp2_text = read(os.path.join(OUT, 'SadoEE.tp2'))
+    _pre, comps = blocks(tp2_text)
+    version = re.search(r'VERSION ~([^~]+)~', tp2_text).group(1)
+    for lang in langs:
+        t = dict(TEXT['english'])
+        t.update(TEXT.get(lang, {}))
+        s = tra_text(lang)
+        e = html.escape
+        rows, group = [], None
+        for b in comps:
+            if 'DEPRECATED' in b.split('\n', 1)[0] or 'DEPRECATED' in re.search(r'(?m)^BEGIN [^\n]*', b).group(0):
+                continue
+            n = designated(b)
+            name = s.get(int(re.search(r'(?m)^BEGIN @(\d+)', b).group(1)), '')
+            sub = re.search(r'SUBCOMPONENT @(\d+)', b)
+            if sub:
+                name = '%s → %s' % (s.get(int(sub.group(1)), ''), name)
+            g = re.search(r'(?m)^GROUP @(\d+)', b)
+            g = s.get(int(g.group(1)), '') if g else ''
+            if g != group:
+                rows.append('<tr><th colspan="2">%s</th></tr>' % e(g))
+                group = g
+            extra = ' <span class="v">(%s)</span>' % e(t['experimental']) if n >= 40 else ''
+            rows.append('<tr><td class="n">#%d</td><td>%s%s</td></tr>' % (n, e(name), extra))
+        compat = ['<tr>%s</tr>' % ''.join('<th>%s</th>' % e(h) for h in t['compat_head'])]
+        compat += ['<tr>%s</tr>' % ''.join('<td>%s</td>' % e(c) for c in row) for row in t['compat']]
+        page = ['<!DOCTYPE html>', '<html lang="%s"><head><meta charset="utf-8">' % t['lang'],
+                '<title>SadoEE %s</title><style>%s</style></head><body>' % (e(version), README_CSS),
+                '<h1>SadoEE <span class="v">%s</span></h1>' % e(version), '<p>%s</p>' % e(t['intro']),
+                '<p><img src="inventory_bg1.png" alt="Party Stash"></p>',
+                '<h2>%s</h2><table>%s</table>' % (e(t['h_components']), ''.join(rows)),
+                '<h2>%s</h2><table>%s</table><p>%s</p>' % (e(t['h_compat']), ''.join(compat), e(t['compat_note'])),
+                '<h2>%s</h2><ol>%s</ol>' % (e(t['h_install']), ''.join('<li>%s</li>' % e(i) for i in t['install'])),
+                '<h2>%s</h2><p>%s</p>' % (e(t['h_upgrade']), e(t['upgrade'])),
+                '<h2>%s</h2><p>%s</p>' % (e(t['h_help']), e(t['help'])),
+                '<h2>%s</h2><p>%s</p>' % (e(t['h_uninstall']), e(t['uninstall'])),
+                '<h2>%s</h2><p>%s</p>' % (e(t['h_license']), e(t['license'])), '</body></html>']
+        write(os.path.join(OUT, 'readme', 'readme-%s.html' % lang), '\n'.join(page) + '\n')
+
+
 def main():
     # the rebuild wipes SadoEE\: never while a WeiDU install reads it (a rebuild broke an EET install, 2026-10-23)
     tasks = subprocess.run(['tasklist', '/FI', 'IMAGENAME eq setup-SadoEE.exe'], capture_output=True, text=True,
@@ -312,6 +375,7 @@ def main():
     langs = languages()
     build_tra([d for _t, d in langs])
     write(os.path.join(OUT, 'SadoEE.tp2'), tp2(ps_components(), sq_components(paths), langs))
+    build_readme([d for _t, d in langs])
     shutil.copy2(os.path.join(GAME, 'setup-PartyStash.exe'), os.path.join(GAME, 'setup-SadoEE.exe'))
     n = sum(len(fs) for _r, _d, fs in os.walk(OUT))
     print('SadoEE built:', n, 'files in', OUT)
