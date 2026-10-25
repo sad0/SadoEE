@@ -9,20 +9,23 @@ Party Stash and SadoQoL in one WeiDU mod for **Baldur's Gate: Enhanced Edition**
 | 0-4 | Party Stash | One infinite stash shared by the whole party, on a redesigned inventory page (Baldur's Gate 1 or II look) |
 | 1 | Party Stash | Sorted loot: quest items, then weightless items, then the rest by value/weight |
 | 5-7 | Party Stash | Options: weightless stash, keep the gold through campaign changes, hardcore |
-| 10 | Rest camp | A quiet camp reached from the world map (0 h there and back, rest without ambush) and its wandering priest |
+| 10 | Rest camp | A quiet camp reached from the world map (0 h there and back, rest without ambush) and its priestess: free healing of HP, poison and disease (also while you sleep there), paid resurrection, restoration and curse removal, donations |
 | 11 | Rest camp | Grand merchant: sells every item seen at the stores already visited |
 | 12 | Rest camp | The Old Scholar: identifies everything |
 | 13 | Rest camp | Ex-members can wait for you at the camp |
 | 14 | Rest camp | Withers: a lich who fully recreates a party member |
 | 15 | Rest camp | Withers can also recruit new members |
+| 16 | Rest camp | The Old Scholar's quest chronicle: every quest of the game and how far you are |
+| 17 | Rest camp | The necromancer: raises any creature of the game as a target dummy (damage meter), to fight or to recruit |
+| 50-53 | Rest camp | Priestess prices for her paid healing: 75 %, 50 %, 25 % or free (default: the game's temple prices) |
 | 20-32 | Quality of life | Passive trap detection, valuable containers, automatic disarming, FPS counter, endless ammo, small party footprint, lasting modes, attack-move, mouse buttons, keep gear on death, chests in the ground bar, Auto-Roller |
 | 40 | Engine extension | Big party: 7 to 32 members (experimental) |
 
-The rest camp (#10-#15) is for BGEE and EET for now; the big party for BGEE and EET.
+The rest camp (#10-#17, #50-#53) works on BGEE, EET and BG2EE (on BG2EE in the Helmite Camp); the big party on BGEE and EET.
 
 ## Installation
 
-1. Install EEex.
+1. Install EEex. Install SadoEE last, after every other mod (on EET also after EET_end): see [COMPATIBILITY.md](COMPATIBILITY.md).
 2. Coming from Party Stash or SadoQoL: uninstall them first (SadoEE replaces both; saves keep working).
 3. Extract the release into the game folder (where chitin.key is) and run `setup-SadoEE.exe`.
 4. Start the game with `InfinityLoader.exe`.

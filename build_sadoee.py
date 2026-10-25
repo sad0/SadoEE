@@ -37,10 +37,14 @@ SQ_MAP = {0: (20, 'SADOEE-QOL-PASSIVE-TRAPS'), 1: (21, 'SADOEE-QOL-VALUABLE-CONT
           10: (10, 'SADOEE-CAMP'), 11: (28, 'SADOEE-QOL-ATTACK-MOVE'), 12: (29, 'SADOEE-QOL-MOUSE-BUTTONS'),
           13: (30, 'SADOEE-QOL-KEEP-GEAR'), 14: (31, 'SADOEE-QOL-CHESTS-IN-GROUND-BAR'), 15: (12, 'SADOEE-CAMP-SCHOLAR'),
           16: (13, 'SADOEE-CAMP-WAITING'), 17: (14, 'SADOEE-CAMP-WITHERS'),
-          18: (32, 'SADOEE-QOL-AUTO-ROLLER'), 19: (15, 'SADOEE-CAMP-WITHERS-RECRUIT')}
+          18: (32, 'SADOEE-QOL-AUTO-ROLLER'), 19: (15, 'SADOEE-CAMP-WITHERS-RECRUIT'),
+          20: (17, 'SADOEE-CAMP-NECROMANCER'),
+          # camp priestess prices (John 2026-10-25): one SUBCOMPONENT group, camp block
+          21: (50, 'SADOEE-CAMP-PRIEST-PRICES-75'), 22: (51, 'SADOEE-CAMP-PRIEST-PRICES-50'),
+          23: (52, 'SADOEE-CAMP-PRIEST-PRICES-25'), 24: (53, 'SADOEE-CAMP-PRIEST-PRICES-0')}
 SQ_DROPPED = {3, 4}   # sorted loot (= Party Stash #1), deprecated half personal space
-CAMP_FILES = {'M_SQCAMP.lua', 'SQCAMP.menu', 'M_SQCAIN.lua', 'M_SQWAIT.lua', 'SQWAIT.menu', 'M_SQRESP.lua', 'SQRESP.menu',
-             'M_SQRECR.lua', 'SQRECR.menu'}
+CAMP_FILES = {'M_SQCAMP.lua', 'SQCAMP.menu', 'M_SQCAIN.lua', 'M_SQPRST.lua', 'M_SQWAIT.lua', 'SQWAIT.menu', 'M_SQRESP.lua', 'SQRESP.menu',
+             'M_SQRECR.lua', 'SQRECR.menu', 'M_SQNECR.lua', 'SQNECR.menu'}
 GROUP_STASH, GROUP_CAMP, GROUP_QOL, GROUP_ENGINE = '@2000', '@2001', '@2002', '@2003'
 CAMP_PRED = 'REQUIRE_PREDICATE MOD_IS_INSTALLED ~SadoEE.tp2~ (ID_OF_LABEL ~SadoEE.tp2~ ~SADOEE-CAMP~) @2011'
 MERCHANT_LINE = "{ 'SQMERCH', 723, 301, 2 },"   # M_SQCAMP.lua's spawn list (old saves): off without the merchant
@@ -144,7 +148,9 @@ def copy_sadoqol():
         shutil.copy2(os.path.join(SQ, f), os.path.join(OUT, sub, f))
         paths[f] = 'SadoEE/%s/%s' % (sub, f)
     shutil.copytree(os.path.join(SQ, 'camp'), os.path.join(OUT, 'camp', 'area'))
+    shutil.copytree(os.path.join(SQ, 'camp_bg2'), os.path.join(OUT, 'camp', 'area_bg2'))  # BG2EE's camp (OH5300)
     shutil.copytree(os.path.join(SQ, 'withers'), os.path.join(OUT, 'camp', 'withers'))
+    shutil.copytree(os.path.join(SQ, 'necro'), os.path.join(OUT, 'camp', 'necro'))  # necromancer: dolls, portraits
     shutil.copytree(os.path.join(SQ, 'quiver'), os.path.join(OUT, 'qol', 'quiver'))  # endless ammo's quiver icons
     for f in os.listdir(os.path.join(SQ, 'dlg')):
         write(os.path.join(OUT, 'camp', 'dlg', f), offset_refs(read(os.path.join(SQ, 'dlg', f))))
@@ -180,11 +186,13 @@ def sq_components(paths):
         b = re.sub(r'LABEL ~[^~]+~', 'LABEL ~%s~' % label, b, count=1)
         b = b.replace('~SadoQoL.tp2~', '~SadoEE.tp2~').replace('~SADOQOL-REST-CAMP~) @%d' % (2 + SQ_OFFSET),
                                                                  '~SADOEE-CAMP~) @2011')
-        if new_n == 10:   # the camp's area and people come from BG1 / SoD files: BG2EE gets its own camp later
-            b = must_sub(r'(LABEL ~SADOEE-CAMP~\n)', r'\1REQUIRE_PREDICATE GAME_IS ~bgee eet~ @2014\n', b)
+        if new_n == 10:   # BGEE / EET: the BD5000 crop; BG2EE: OH5300 (camp_bg2, 2026-10-25)
+            b = must_sub(r'(LABEL ~SADOEE-CAMP~\n)', r'\1REQUIRE_PREDICATE GAME_IS ~bgee eet bg2ee~ @2014\n', b)
         b = b.replace('.../sadoqol-inlined/', '.../sadoee-inlined/')
+        b = b.replace('~SadoQoL/camp_bg2~', '~SadoEE/camp/area_bg2~')
         b = b.replace('~SadoQoL/camp~', '~SadoEE/camp/area~').replace('~SadoQoL/withers~', '~SadoEE/camp/withers~')
         b = b.replace('~SadoQoL/quiver~', '~SadoEE/qol/quiver~')
+        b = b.replace('~SadoQoL/necro~', '~SadoEE/camp/necro~')
         b = re.sub(r'~SadoQoL/dlg/', '~SadoEE/camp/dlg/', b)
         b = b.replace('USING ~SadoQoL/tra/%LANGUAGE%/setup.tra~', 'USING ~SadoEE/tra/%LANGUAGE%/qol.tra~')
         b = re.sub(r'~SadoQoL/([^~/]+)~', lambda m: '~%s~' % paths[m.group(1)], b)
@@ -300,8 +308,13 @@ END
                              r'~SADOEE-CAMP-SCHOLAR~) @21\n', chronicle)
         chronicle = re.sub(r'^// #9 Quest chronicle', '// #16 Quest chronicle', chronicle, flags=re.M)
         parts.append(add_group(chronicle, GROUP_CAMP))
+    if 17 in sq:   # SadoQoL #20: the camp necromancer (target dummies, John 2026-10-24)
+        parts.append(add_group(sq[17], GROUP_CAMP))
+    for n in (50, 51, 52, 53):   # SadoQoL #21-#24: camp priestess prices (one SUBCOMPONENT group)
+        if n in sq:
+            parts.append(add_group(sq[n], GROUP_CAMP))
     parts.append('\n////////// Quality of life (#20-#31) //////////\n')
-    for n in sorted(k for k in sq if k >= 20):
+    for n in sorted(k for k in sq if 20 <= k < 40):
         parts.append(add_group(sq[n], GROUP_QOL))
     parts.append('\n////////// Engine extension (#40+) //////////\n')
     for n in sorted(k for k in ps if k >= 40):
