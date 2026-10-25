@@ -1,6 +1,8 @@
 # SadoEE documentation
 
-> Work in progress. Game versions 2.6.6 and 2.7.3, BGEE / EET / BG2EE, EEex required.
+> **Work in progress.** I had to wrap SadoEE up before leaving on holiday, so everything is still WIP. More balanced options are already planned for every component (today many of them lean on the generous side). Feedback is very welcome: open an issue on GitHub.
+>
+> Game versions 2.6.6 and 2.7.3, BGEE / EET / BG2EE, EEex required.
 > **Install SadoEE at the very end, after every other mod**: it patches the scripts and dialogues present at install
 > time (see [COMPATIBILITY.md](../COMPATIBILITY.md)).
 
