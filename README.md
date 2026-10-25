@@ -4,6 +4,10 @@ Party Stash and SadoQoL in one WeiDU mod for **Baldur's Gate: Enhanced Edition**
 
 > **Work in progress.** I had to wrap SadoEE up before leaving on holiday, so everything is still WIP. More balanced options are already planned for every component (today many of them lean on the generous side). Feedback is very welcome: open an issue on GitHub.
 
+![The rest camp with a 19-member party](docs/images/camp.jpg)
+![Who's who at the camp: priestess, Old Scholar, Grand merchant, necromancer and Withers](docs/images/camp-who-is-who.jpg)
+![The inventory page with the party stash, on a recruited ogrillon](docs/images/inventory.jpg)
+
 ## Components
 
 Full documentation: [docs/README.md](docs/README.md).

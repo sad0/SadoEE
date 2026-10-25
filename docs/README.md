@@ -6,6 +6,10 @@
 > **Install SadoEE at the very end, after every other mod**: it patches the scripts and dialogues present at install
 > time (see [COMPATIBILITY.md](../COMPATIBILITY.md)).
 
+![The rest camp](images/camp.jpg)
+![Who's who at the camp](images/camp-who-is-who.jpg)
+![The inventory page with the party stash](images/inventory.jpg)
+
 ## All components at a glance (to review)
 
 | # | Component | In one line | Games |
