@@ -21,18 +21,22 @@ Full documentation: [docs/README.md](docs/README.md).
 | 17 | Rest camp | The necromancer: raises any creature of the game as a target dummy (damage meter), to fight or to recruit |
 | 50-53 | Rest camp | Priestess prices for her paid healing: 75 %, 50 %, 25 % or free (default: the game's temple prices) |
 | 20-32 | Quality of life | Passive trap detection, valuable containers, automatic disarming, FPS counter, endless ammo, small party footprint, lasting modes, attack-move, mouse buttons, keep gear on death, chests in the ground bar, Auto-Roller |
-| 40 | Engine extension | Big party: 7 to 32 members (experimental) |
+| 40 | Engine extension | Big party: 7 to 32 members, with working banter and interjections for members 7+ (experimental) |
 
 The rest camp (#10-#17, #50-#53) works on BGEE, EET and BG2EE (on BG2EE in the Helmite Camp); the big party on BGEE and EET.
 
 ## Installation
 
-1. Install EEex. Install SadoEE last, after every other mod (on EET also after EET_end): see [COMPATIBILITY.md](COMPATIBILITY.md).
-2. Coming from Party Stash or SadoQoL: uninstall them first (SadoEE replaces both; saves keep working).
+1. Install EEex. **Install SadoEE at the very end, after every other mod** (on EET also after EET_end): see [COMPATIBILITY.md](COMPATIBILITY.md).
+   SadoEE reads and patches the scripts and dialogues present in the game at install time: the big party extends every
+   script and dialogue (other mods' banters included) to members 7+, and the sorted loot, the Grand merchant, the Codex
+   and the quest chronicle index the items, stores and quests of every mod installed before it. A mod installed after
+   SadoEE is missed: reinstall SadoEE after it.
+2. Coming from Party Stash or SadoQoL: uninstall them first (SadoEE replaces both; saves keep working). No need to empty the Party Stash stash: SadoEE keeps the same stash.
 3. Extract the release into the game folder (where chitin.key is) and run `setup-SadoEE.exe`.
 4. Start the game with `InfinityLoader.exe`.
 
-Before uninstalling, empty the stash in game: Ctrl + left click on the big bag next to the weight.
+Uninstalling SadoEE for good: empty the stash in game first (Ctrl + left click on the big bag next to the weight), otherwise its contents stay in your saves but out of reach.
 
 Readme in 15 languages: `SadoEE/readme/`.
 

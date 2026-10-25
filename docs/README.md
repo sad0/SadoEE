@@ -1,7 +1,8 @@
 # SadoEE documentation
 
 > Work in progress. Game versions 2.6.6 and 2.7.3, BGEE / EET / BG2EE, EEex required.
-> Install SadoEE last, after every other mod (see [COMPATIBILITY.md](../COMPATIBILITY.md)).
+> **Install SadoEE at the very end, after every other mod**: it patches the scripts and dialogues present at install
+> time (see [COMPATIBILITY.md](../COMPATIBILITY.md)).
 
 ## All components at a glance (to review)
 
@@ -37,10 +38,10 @@
 | 31 | Chests in the ground bar | Visible unlocked containers listed in the ground items bar | all |
 | 32 | Auto-Roller | Auto-Roll button in character creation keeps the best of many rolls | all |
 | **Engine extension** | | | |
-| 40 | Big party | 7 to 32 members, extra portrait bar, scripts and dialogues extended | BGEE, EET |
+| 40 | Big party | 7 to 32 members, extra portrait bar, working banter and interjections for members 7+ (scripts and dialogues extended at install) | BGEE, EET |
 
 "Games: all" = BGEE, EET and BG2EE. To check in the review: banter with members 7+, level up of respecced
-creatures, equipping items on creatures.
+creatures, equipping items on creatures. (Banter 7+: checked in game by John, 2026-10-25.)
 
 ---
 
