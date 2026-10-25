@@ -4,6 +4,8 @@ Party Stash and SadoQoL in one WeiDU mod for **Baldur's Gate: Enhanced Edition**
 
 ## Components
 
+Full documentation: [docs/README.md](docs/README.md).
+
 | # | Group | Component |
 |---|---|---|
 | 0-4 | Party Stash | One infinite stash shared by the whole party, on a redesigned inventory page (Baldur's Gate 1 or II look) |
