@@ -28,7 +28,7 @@
 @1112 = ~Not now, thank you.~
 @1113 = ~Wandering priest~
 @1114 = ~Wandering priest's services~
-@1115 = ~Grand merchant~
+@1115 = ~Grand Merchant~
 @1116 = ~Welcome to the camp! Anything you have seen in the shops of the Coast, I can get for you, at the best price.~
 @1117 = ~Let's see what you have.~
 @1118 = ~Not now.~
@@ -124,7 +124,7 @@
 @1266 = ~Withers recruits: a new companion made in the game's own creation screens or imported, free~
 @1267 = ~The new companion's gear~
 @1268 = ~Validate~
-@1269 = ~Bought from the Grand merchant: %d gp (party gold: %d gp)~
+@1269 = ~Bought from the Grand Merchant: %d gp (party gold: %d gp)~
 @1270 = ~Stash~
 @1271 = ~%d gp~
 @1272 = ~free~

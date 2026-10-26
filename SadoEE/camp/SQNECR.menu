@@ -25,7 +25,7 @@ menu
 	label
 	{
 		enabled "SQNecro_DpsShown()"
-		area 100 74 200 26
+		area 100 74 158 26
 		text lua "SQNecro_DpsTitle()"
 		text style "label"
 		text align left center
@@ -33,12 +33,22 @@ menu
 	button
 	{
 		enabled "SQNecro_DpsShown()"
-		area 300 74 82 26
+		area 262 74 82 26
 		bam GUIBUTWS
 		sequence 0
 		text lua "SQNecro_T('reset')"
 		text style "button"
 		action "SQNecro_DpsReset()"
+	}
+	button
+	{
+		enabled "SQNecro_DpsShown()"
+		area 350 74 32 26
+		bam GUIBUTWS
+		sequence 0
+		text "X"
+		text style "button"
+		action "SQNecro_DpsClose()"
 	}
 	text
 	{

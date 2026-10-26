@@ -89,6 +89,133 @@ BEGIN
 	END
 END
 
+// Trigger lines (before THEN), v1.0.1 (Argent77 / jmerry / lynx on G3, relayed 2026-10-26): a per-member series in the
+// conditions is extended too.
+// - Inside OR(n): a positive Player6-only line whose positive Player5 twin (same shape) is in the same OR gets copies
+//   for Player7..last right after it, and n grows by the copies ("any member has / is ..."). A negated line is never
+//   extended there: "!X(PlayerK)" is true for a missing member, so the OR would always be true.
+// - Outside OR (AND): a negated Player6-only line whose negated Player5 twin is in the conditions gets the copies
+//   ("no member has / is ..."). A positive one is left alone: "X(PlayerK)" is false for a missing member, so the block
+//   would need a full 32-member party.
+DEFINE_PATCH_FUNCTION PSXP7_BAF_TRIG
+	INT_VAR last = 32
+	STR_VAR cond = ~~
+	RET cond added
+BEGIN
+	SET added = 0
+	CLEAR_ARRAY psxp7_t
+	CLEAR_ARRAY psxp7_o
+	SET nt = 0
+	INNER_PATCH ~%cond%~ BEGIN
+		SET pos = 0
+		WHILE pos < BUFFER_LENGTH BEGIN
+			SET e = INDEX_BUFFER (EXACT_MATCH ~%LNL%~ pos)
+			PATCH_IF e < 0 BEGIN SET e = BUFFER_LENGTH END
+			PATCH_IF e > pos BEGIN READ_ASCII pos l (e - pos) END ELSE BEGIN SPRINT l ~~ END
+			SPRINT $psxp7_t(~%nt%~) ~%l%~
+			SET nt += 1
+			SET pos = e + 1
+			PATCH_IF e = BUFFER_LENGTH - 1 BEGIN
+				SPRINT $psxp7_t(~%nt%~) ~~
+				SET nt += 1
+			END
+		END
+	END
+	// pass 1: OR membership (psxp7_o = header index + 1, 0 = AND line) and the AND lines' negated Player5 shapes
+	SPRINT and5 ~%LNL%~
+	SET i = 0
+	WHILE i < nt BEGIN
+		SPRINT l $psxp7_t(~%i%~)
+		SET $psxp7_o(~%i%~) = 0
+		PATCH_IF INDEX (CASE_SENSITIVE EVALUATE_REGEXP ~^[ %TAB%]*OR([0-9]+)~ ~%l%~) = 0 BEGIN
+			INNER_PATCH_SAVE num ~%l%~ BEGIN REPLACE_TEXTUALLY CASE_SENSITIVE ~^[ %TAB%]*OR(\([0-9]+\)).*$~ ~\1~ END
+			SET h = i
+			FOR (k = 1; k <= num AND i + k < nt; ++k) BEGIN
+				SET j = i + k
+				SET $psxp7_o(~%j%~) = h + 1
+			END
+			SET i = i + 1 + num
+		END ELSE BEGIN
+			PATCH_IF INDEX (CASE_SENSITIVE EVALUATE_REGEXP ~^[ %TAB%]*!~ ~%l%~) = 0 BEGIN
+				LPF PSXP7_KIND STR_VAR s = EVAL ~%l%~ RET is5 only6 END
+				PATCH_IF is5 BEGIN
+					LPF PSXP7_SHAPE STR_VAR s = EVAL ~%l%~ RET shape END
+					SPRINT and5 ~%and5%%shape%%LNL%~
+				END
+			END
+			SET i += 1
+		END
+	END
+	// pass 2: output; an OR header is written after its members (its count may grow)
+	SPRINT out ~~
+	SET i = 0
+	WHILE i < nt BEGIN
+		SPRINT l $psxp7_t(~%i%~)
+		PATCH_IF INDEX (CASE_SENSITIVE EVALUATE_REGEXP ~^[ %TAB%]*OR([0-9]+)~ ~%l%~) = 0 BEGIN
+			INNER_PATCH_SAVE num ~%l%~ BEGIN REPLACE_TEXTUALLY CASE_SENSITIVE ~^[ %TAB%]*OR(\([0-9]+\)).*$~ ~\1~ END
+			// positive Player5 shapes of this OR
+			SPRINT or5 ~%LNL%~
+			FOR (k = 1; k <= num AND i + k < nt; ++k) BEGIN
+				SET j = i + k
+				SPRINT m $psxp7_t(~%j%~)
+				PATCH_IF INDEX (CASE_SENSITIVE EVALUATE_REGEXP ~^[ %TAB%]*!~ ~%m%~) < 0 BEGIN
+					LPF PSXP7_KIND STR_VAR s = EVAL ~%m%~ RET is5 only6 END
+					PATCH_IF is5 BEGIN
+						LPF PSXP7_SHAPE STR_VAR s = EVAL ~%m%~ RET shape END
+						SPRINT or5 ~%or5%%shape%%LNL%~
+					END
+				END
+			END
+			SPRINT mem ~~
+			SET c = 0
+			FOR (k = 1; k <= num AND i + k < nt; ++k) BEGIN
+				SET j = i + k
+				SPRINT m $psxp7_t(~%j%~)
+				SPRINT mem ~%mem%%m%%LNL%~
+				PATCH_IF INDEX (CASE_SENSITIVE EVALUATE_REGEXP ~^[ %TAB%]*!~ ~%m%~) < 0 BEGIN
+					LPF PSXP7_KIND STR_VAR s = EVAL ~%m%~ RET is5 only6 END
+					PATCH_IF only6 BEGIN
+						LPF PSXP7_SHAPE STR_VAR s = EVAL ~%m%~ RET shape END
+						PATCH_IF INDEX (CASE_SENSITIVE EXACT_MATCH ~%LNL%%shape%%LNL%~ ~%or5%~) >= 0 BEGIN
+							FOR (q = 7; q <= last; ++q) BEGIN
+								LPF PSXP7_SUB INT_VAR k = q STR_VAR s = EVAL ~%m%~ RET o = out END
+								SPRINT mem ~%mem%%o%%LNL%~
+								SET c += 1
+							END
+						END
+					END
+				END
+			END
+			SET nn = num + c
+			PATCH_IF c > 0 BEGIN
+				INNER_PATCH_SAVE l ~%l%~ BEGIN REPLACE_TEXTUALLY CASE_SENSITIVE ~OR([0-9]+)~ ~OR(%nn%)~ END
+			END
+			SPRINT out ~%out%%l%%LNL%%mem%~
+			SET added += c
+			SET i = i + 1 + num
+		END ELSE BEGIN
+			SPRINT out ~%out%%l%~
+			PATCH_IF i < nt - 1 BEGIN SPRINT out ~%out%%LNL%~ END
+			PATCH_IF INDEX (CASE_SENSITIVE EVALUATE_REGEXP ~^[ %TAB%]*!~ ~%l%~) = 0 BEGIN
+				LPF PSXP7_KIND STR_VAR s = EVAL ~%l%~ RET is5 only6 END
+				PATCH_IF only6 BEGIN
+					LPF PSXP7_SHAPE STR_VAR s = EVAL ~%l%~ RET shape END
+					PATCH_IF INDEX (CASE_SENSITIVE EXACT_MATCH ~%LNL%%shape%%LNL%~ ~%and5%~) >= 0 BEGIN
+						PATCH_IF i = nt - 1 BEGIN SPRINT out ~%out%%LNL%~ END
+						FOR (q = 7; q <= last; ++q) BEGIN
+							LPF PSXP7_SUB INT_VAR k = q STR_VAR s = EVAL ~%l%~ RET o = out END
+							SPRINT out ~%out%%o%%LNL%~
+							SET added += 1
+						END
+					END
+				END
+			END
+			SET i += 1
+		END
+	END
+	SPRINT cond ~%out%~
+END
+
 // ---------- BAF (decompiled script) ----------
 // - a block naming Player6 alone, whose twin block (Player6 -> Player5, "P6" -> "P5") also exists, is copied for 7..last;
 // - inside a response, an action line naming Player6 alone, whose Player5 twin line is in the same response, is copied
@@ -126,6 +253,19 @@ BEGIN
 			END
 		END
 		LPF PSXP7_LINES INT_VAR n last STR_VAR sep = EVAL ~%LNL%~ RET block = text added END
+		// trigger lines (before the THEN line)
+		SET tp = INDEX (CASE_SENSITIVE EVALUATE_REGEXP ~^THEN~ ~%block%~)
+		PATCH_IF tp > 0 BEGIN
+			INNER_PATCH ~%block%~ BEGIN
+				READ_ASCII 0 cond (tp)
+				READ_ASCII tp rest (BUFFER_LENGTH - tp)
+			END
+			LPF PSXP7_BAF_TRIG INT_VAR last STR_VAR cond = EVAL ~%cond%~ RET cond tadded = added END
+			PATCH_IF tadded > 0 BEGIN
+				SPRINT block ~%cond%%rest%~
+				SET added += tadded
+			END
+		END
 		// block copies
 		LPF PSXP7_KIND STR_VAR s = EVAL ~%block%~ RET is5 only6 END
 		PATCH_IF only6 BEGIN

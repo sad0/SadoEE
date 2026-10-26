@@ -539,6 +539,7 @@ local function record(dummy, lost)
 	local m, now = T.meter, Infinity_GetClockTicks()
 	if not m.start or now - (m.last or 0) > T.SESSION_IDLE then
 		T.meter = { by = {}, names = {}, total = 0, start = now }
+		T.dpsOpen = true   -- a new fight opens the panel (John 2026-10-25)
 		m = T.meter
 	end
 	m.last = now
@@ -577,7 +578,9 @@ local function seconds()
 	if not m.start then return 0 end
 	return math.max(1, ((m.last or m.start) - m.start) / 1000)
 end
-function SQNecro_DpsShown() return inCamp() ~= nil and (count() > 0 or (T.meter.total or 0) > 0) end
+-- hidden until the first hit of a fight on a raised creature, and after its close button (John 2026-10-25)
+function SQNecro_DpsShown() return T.dpsOpen == true and inCamp() ~= nil end
+function SQNecro_DpsClose() T.dpsOpen = false end
 function SQNecro_DpsTitle()
 	local m = T.meter
 	local live = m.start and Infinity_GetClockTicks() - (m.last or 0) <= T.SESSION_IDLE
