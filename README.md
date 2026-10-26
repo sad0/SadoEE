@@ -58,4 +58,4 @@ MIT. Author: sad0.
 
 ## Credits
 
-Thanks to Endarire and 11jo for their feedback and testing.
+Thanks to Endarire and 11jo for their feedback and testing, and for showing there was an audience for these features.
