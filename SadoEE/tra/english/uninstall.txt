@@ -1,0 +1,1 @@
+﻿Party Stash: before uninstalling, empty the stash in game: Ctrl + left click on the big bag next to the weight, on the inventory page. Your collected bags come back filled with the items they can hold; everything else drops on the ground. Otherwise the stash contents stay in your saves but cannot be reached until the mod is reinstalled.

@@ -1,0 +1,81 @@
+// Party Stash #40: parties of 7 to 32 members (EEex engine extension, John 2026-10-23).
+// Lua: M_PSXP7.lua patches the engine at startup (per-build tables in M_PSXP7S.lua, 2.6.6 + 2.7.3; an unknown build
+// does nothing), M_PSXENG.lua runs its tick (and the store sort / wishlist, the loot hook), PSXP7.menu draws the
+// portrait bar for members 7+.
+// Scripts: OBJECT.IDS gets Player7..Player32 (160-185), and every per-member series of the game's own scripts and
+// dialogues (a Player6 line or block whose Player5 twin exists) is extended to Player7..Player32 here, at install,
+// from the game's files (so other games and mods' scripts get it too). Same rule as the prototype's dupe2.py / dlgp7.py.
+
+OUTER_SET psxp7_last = 32
+INCLUDE ~SadoEE/lib/party_fn.tpa~
+
+// ---------- install ----------
+
+// Script objects Player7..Player32
+OUTER_FOR (k = 7; k <= psxp7_last; ++k) BEGIN
+	OUTER_SET id = 153 + k
+	APPEND ~OBJECT.IDS~ ~%id% Player%k%~ UNLESS ~\bPlayer%k%\b~
+END
+
+// Scripts: only BCS naming object 26 (Player6) are decompiled; a script that already has Player7 is left alone.
+COPY_EXISTING_REGEXP GLOB ~^.+\.BCS$~ ~override~
+	PATCH_IF INDEX_BUFFER (EXACT_MATCH ~ 26 ~) >= 0 BEGIN
+		READ_ASCII 0 bcs (BUFFER_LENGTH)
+		INNER_PATCH_SAVE baf ~%bcs%~ BEGIN DECOMPILE_BCS_TO_BAF END
+		PATCH_IF (INDEX (CASE_SENSITIVE EVALUATE_REGEXP ~\bPlayer6\b~ ~%baf%~) >= 0) AND (INDEX (CASE_SENSITIVE EVALUATE_REGEXP ~\bPlayer7\b~ ~%baf%~) < 0) BEGIN
+			LPF PSXP7_BAF INT_VAR last = psxp7_last STR_VAR text = EVAL ~%baf%~ RET baf = text added END
+			PATCH_IF added > 0 BEGIN
+				DELETE_BYTES 0 BUFFER_LENGTH
+				INSERT_BYTES 0 STRING_LENGTH ~%baf%~
+				WRITE_ASCIIE 0 ~%baf%~
+				COMPILE_BAF_TO_BCS
+			END
+		END
+	END
+BUT_ONLY_IF_IT_CHANGES
+
+// Dialogues: the action texts (stored as text in the DLG): changed ones are appended at the end of the file.
+COPY_EXISTING_REGEXP GLOB ~^.+\.DLG$~ ~override~
+	PATCH_IF (INDEX_BUFFER (CASE_SENSITIVE EVALUATE_REGEXP ~\bPlayer6\b~) >= 0) AND (INDEX_BUFFER (CASE_SENSITIVE EVALUATE_REGEXP ~\bPlayer7\b~) < 0) BEGIN
+		// a malformed DLG (another mod's) is skipped, never fails the component (Codex scan bug, 2026-10-24)
+		SET len0 = BUFFER_LENGTH
+		READ_LONG 0x28 aoff
+		READ_LONG 0x2c acnt
+		PATCH_IF (BUFFER_LENGTH < 0x30) OR (aoff < 0) OR (acnt < 0) OR (aoff + acnt * 8 > len0) BEGIN SET acnt = 0 END
+		FOR (i = 0; i < acnt; ++i) BEGIN
+			READ_LONG (aoff + i * 8) so
+			READ_LONG (aoff + i * 8 + 4) sl
+			PATCH_IF (sl > 0) AND (so >= 0) AND (so + sl <= len0) BEGIN
+				READ_ASCII so t (sl)
+				PATCH_IF INDEX (CASE_SENSITIVE ~Player6~ ~%t%~) >= 0 BEGIN
+					LPF PSXP7_DLG_ACTION INT_VAR last = psxp7_last STR_VAR t = EVAL ~%t%~ RET t added END
+					PATCH_IF added > 0 BEGIN
+						SET base = BUFFER_LENGTH
+						SET len = STRING_LENGTH ~%t%~
+						INSERT_BYTES base len
+						WRITE_ASCIIE base ~%t%~
+						WRITE_LONG (aoff + i * 8) base
+						WRITE_LONG (aoff + i * 8 + 4) len
+					END
+				END
+			END
+		END
+	END
+BUT_ONLY_IF_IT_CHANGES
+
+// Lua + menus
+COPY ~SadoEE/M_PSXENG.lua~ ~override~
+     ~SadoEE/PSXENG.menu~ ~override~
+     ~SadoEE/M_PSXP7.lua~ ~override~
+     ~SadoEE/M_PSXP7S.lua~ ~override~
+     ~SadoEE/M_PSXP7C.lua~ ~override~
+     ~SadoEE/PSXP7.menu~ ~override~
+// the switch read at startup: the engine patch is on (M_PSXP7.lua, party size PSXP7_N of M_PSXP7C.lua)
+<<<<<<<< .../PartyStash-inlined/PSXP7ON.2DA
+2DA V1.0
+0
+    VALUE
+ON  1
+>>>>>>>>
+COPY ~.../PartyStash-inlined/PSXP7ON.2DA~ ~override~
+

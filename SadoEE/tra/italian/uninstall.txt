@@ -1,0 +1,1 @@
+﻿Party Stash: prima di disinstallare, svuota il baule in gioco: Ctrl + clic sinistro sulla grande borsa accanto al peso, nella pagina dell'inventario. Le borse collezionate tornano piene degli oggetti che possono contenere; tutto il resto cade a terra. Altrimenti il contenuto del baule resta nei salvataggi ma è inaccessibile finché il mod non viene reinstallato.

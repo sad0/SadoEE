@@ -1,0 +1,11 @@
+menu
+{
+	name "SQTRAP_TICK"
+	ignoreesc
+	-- SadoQoL passive trap detection: its enabled check runs every frame (throttled in SQTrap_Tick).
+	label
+	{
+		area 0 0 0 0
+		enabled "SQTrap_Tick()"
+	}
+}

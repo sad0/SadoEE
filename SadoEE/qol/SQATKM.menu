@@ -1,0 +1,11 @@
+menu
+{
+	name "SQATKM_TICK"
+	ignoreesc
+	-- SadoQoL attack-move: its enabled check runs every frame (throttled in SQAttackMove_Tick).
+	label
+	{
+		area 0 0 0 0
+		enabled "SQAttackMove_Tick()"
+	}
+}

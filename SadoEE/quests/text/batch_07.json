@@ -1,0 +1,506 @@
+[
+ {
+  "title": 261935,
+  "idx": 455,
+  "game": "sod",
+  "chapter": "Dragonspear Castle",
+  "where_en": "Dragonspear Castle, basement",
+  "where_fr": "Château de Vougedragon, sous-sol",
+  "kind": "side",
+  "hints_en": [
+   "Someone is raising the dead in the depths beneath Dragonspear Castle.",
+   "A gathering of dark magicians works its rituals in the castle's lower levels.",
+   "The ghost of a dragon haunts the same depths and can help you against the cabal."
+  ],
+  "hints_fr": [
+   "Quelqu'un relève les morts dans les profondeurs du château de Vougedragon.",
+   "Une assemblée de magiciens sombres pratique ses rituels dans les niveaux inférieurs du château.",
+   "Le fantôme d'un dragon hante ces mêmes profondeurs et peut vous aider contre la cabale."
+  ],
+  "solution_en": "Explore the levels beneath Dragonspear Castle. A cabal of dark magicians is animating corpses there to swell the crusade's ranks.\nPrepare for a hard fight against several spellcasters backed by undead: protection from evil, undead-turning and spell disruption help.\nIf you have met the ghost of the dragon Halatathlaer down there, it can take part in the battle on your side.\nKill all the magicians to close the quest. This weakens the crusade.",
+  "solution_fr": "Explorez les niveaux situés sous le château de Vougedragon. Une cabale de magiciens sombres y réanime des cadavres pour grossir les rangs de la croisade.\nPréparez-vous à un combat difficile contre plusieurs lanceurs de sorts soutenus par des morts-vivants : protection contre le mal, renvoi des morts-vivants et interruption des sorts sont utiles.\nSi vous avez rencontré le fantôme du dragon Halatathlaer dans ces lieux, il peut combattre à vos côtés.\nTuez tous les magiciens pour terminer la quête. Cela affaiblit la croisade."
+ },
+ {
+  "title": 261940,
+  "idx": 456,
+  "game": "sod",
+  "chapter": "Dragonspear Castle",
+  "where_en": "Dragonspear Castle",
+  "where_fr": "Château de Vougedragon",
+  "kind": "side",
+  "hints_en": [
+   "The dragon ghost Halatathlaer left a message for its old friend Daeros.",
+   "Daeros Dragonspear died long ago, but his spirit may still linger near the castle he ruled.",
+   "When you meet Daeros's ghost, tell him Halatathlaer waits for him in the Fugue Plane."
+  ],
+  "hints_fr": [
+   "Le dragon fantôme Halatathlaer a laissé un message pour son vieil ami Daeros.",
+   "Daeros Vougedragon est mort depuis longtemps, mais son esprit hante peut-être encore le château qu'il dirigeait.",
+   "Quand vous croisez le fantôme de Daeros, dites-lui qu'Halatathlaer l'attend dans le Plan de la Fugue."
+  ],
+  "solution_en": "This quest starts when the ghost of the dragon Halatathlaer departs (through the Fountain of Nepenthe, or simply leaving this world) and asks you to tell its friend Daeros where it went.\nKeep exploring Dragonspear Castle and the places tied to it. The ghost of Daeros Dragonspear, the castle's long-dead lord, can be found there.\nTalk to him and pass on Halatathlaer's message: it waits for him in the Fugue Plane.\nHis spirit is set free and leaves to join the dragon, closing the quest.",
+  "solution_fr": "La quête commence quand le fantôme du dragon Halatathlaer s'en va (par la fontaine de Népenthès, ou en quittant simplement ce monde) et vous demande de dire à son ami Daeros où le trouver.\nContinuez d'explorer le château de Vougedragon et les lieux qui y sont liés. Le fantôme de Daeros Vougedragon, l'ancien seigneur du château mort depuis longtemps, s'y trouve.\nParlez-lui et transmettez le message d'Halatathlaer : il l'attend dans le Plan de la Fugue.\nSon esprit est libéré et part rejoindre le dragon, ce qui termine la quête."
+ },
+ {
+  "title": 261945,
+  "idx": 457,
+  "game": "sod",
+  "chapter": "Underground River",
+  "where_en": "Underground River, caverns beneath Dragonspear",
+  "where_fr": "Rivière souterraine, grottes sous Vougedragon",
+  "kind": "side",
+  "hints_en": [
+   "Two sahuagin block the caverns of the underground river beneath Dragonspear.",
+   "You do not have to fight them: talk first.",
+   "A good story, or enough intimidation, gets you past them without bloodshed."
+  ],
+  "hints_fr": [
+   "Deux sahuagins bloquent les grottes de la rivière souterraine sous Vougedragon.",
+   "Vous n'êtes pas obligé de les combattre : parlez-leur d'abord.",
+   "Une bonne histoire, ou assez d'intimidation, vous permet de passer sans verser de sang."
+  ],
+  "solution_en": "In the underground river caverns beneath Dragonspear, a pair of sahuagin, Gurgle and Floss, stop the crusaders from passing.\nTalk to them. Three ways out:\n- Tell them a story they like: they let you through.\n- Frighten them enough and they flee.\n- Attack: they are only two and the fight is short.\nAny of these closes the quest and opens the way onward through the caverns.",
+  "solution_fr": "Dans les grottes de la rivière souterraine sous Vougedragon, deux sahuagins, Glouglou et Curdent, empêchent les croisés de passer.\nParlez-leur. Trois issues :\n- Racontez-leur une histoire qui leur plaît : ils vous laissent passer.\n- Effrayez-les suffisamment et ils s'enfuient.\n- Attaquez : ils ne sont que deux et le combat est bref.\nChacune de ces solutions termine la quête et ouvre la suite du chemin dans les grottes."
+ },
+ {
+  "title": 261963,
+  "idx": 458,
+  "game": "sod",
+  "chapter": "Epilogue",
+  "where_en": "Baldur's Gate, sewers beneath the Flaming Fist headquarters",
+  "where_fr": "Porte de Baldur, égouts sous le quartier général du Poing Enflammé",
+  "kind": "side",
+  "hints_en": [
+   "During your escape through the sewers under the Flaming Fist headquarters, check the bodies you pass.",
+   "A dead escapee carries a note and a key to a hidden cache.",
+   "The cache lies beside an underground pool fed by the city sewers."
+  ],
+  "hints_fr": [
+   "Pendant votre évasion par les égouts sous le quartier général du Poing Enflammé, fouillez les corps que vous croisez.",
+   "Un évadé mort porte une note et une clef menant à une cachette.",
+   "La cachette se trouve près d'une mare souterraine alimentée par les égouts de la ville."
+  ],
+  "solution_en": "At the end of the campaign, while escaping through the sewers beneath the Flaming Fist headquarters in Baldur's Gate, search the corpse of a failed escapee.\nTake his note and key and read the note.\nExplore the sewer tunnels until you reach an underground pool fed by the city sewers. The hidden cache is there: open it with the key and take the loot.\nThe items are welcome, since you start the escape poorly equipped.",
+  "solution_fr": "À la fin de la campagne, pendant votre évasion par les égouts sous le quartier général du Poing Enflammé à la Porte de Baldur, fouillez le cadavre d'un évadé malchanceux.\nPrenez sa note et sa clef, puis lisez la note.\nExplorez les tunnels jusqu'à une mare souterraine alimentée par les égouts. La cachette s'y trouve : ouvrez-la avec la clef et prenez le butin.\nCes objets sont bienvenus, car vous commencez l'évasion mal équipé."
+ },
+ {
+  "title": 262483,
+  "idx": 459,
+  "game": "sod",
+  "chapter": "Bridgefort",
+  "where_en": "Bridgefort",
+  "where_fr": "Fort-du-Pont",
+  "kind": "main",
+  "hints_en": [
+   "Once inside Bridgefort, find out what strength the defenders really have.",
+   "Two people matter: the defenders' spokesman Wynan Hess and the smith Jegg Hillcarver.",
+   "After talking to both, report back to Khalid."
+  ],
+  "hints_fr": [
+   "Une fois dans Fort-du-Pont, découvrez la vraie force des défenseurs.",
+   "Deux personnes comptent : Wynan Hess, qui parle pour les défenseurs, et le forgeron Jegg Sculptecolline.",
+   "Après leur avoir parlé à tous les deux, retournez faire votre rapport à Khalid."
+  ],
+  "solution_en": "Inside the besieged Bridgefort, talk to Wynan Hess: the defenders are few, mostly merchants and travelers, and need to coordinate with the Flaming Fist to attack the crusade.\nTalk to the smith, Jegg Hillcarver (either order works). The fort's supplies would strengthen the crusade at Dragonspear; if you negotiate a surrender, she will make sure most of them are destroyed.\nWhen you have spoken to both, return to Khalid and tell him what you learned. This feeds into how you end the Bridgefort siege.",
+  "solution_fr": "Dans Fort-du-Pont assiégé, parlez à Wynan Hess : les défenseurs sont peu nombreux, surtout des marchands et des voyageurs, et doivent se coordonner avec le Poing Enflammé pour attaquer la croisade.\nParlez au forgeron, Jegg Sculptecolline (l'ordre est libre). Les provisions du fort renforceraient la croisade à Vougedragon ; si vous négociez une capitulation, elle veillera à en détruire la plus grande partie.\nUne fois les deux entretiens faits, retournez voir Khalid et rapportez-lui ce que vous avez appris. Cela compte pour la façon dont vous mettez fin au siège de Fort-du-Pont."
+ },
+ {
+  "title": 249477,
+  "idx": 460,
+  "game": "sod",
+  "chapter": "any",
+  "where_en": "Underground caverns",
+  "where_fr": "Grottes souterraines",
+  "kind": "side",
+  "hints_en": [
+   "Murs has heard screams coming from inside the cavern walls.",
+   "Search west and south of the old ogre settlement, where the noise seems trapped in the rock.",
+   "Behind the rock lies a sealed cavern; what lives inside is beyond saving."
+  ],
+  "hints_fr": [
+   "Murs a entendu des cris qui sortent des murs des grottes.",
+   "Cherchez au sud-ouest de l'ancien camp des ogres, là où le bruit semble piégé dans la roche.",
+   "Derrière la roche se trouve une grotte scellée ; ce qui y vit ne peut plus être sauvé."
+  ],
+  "solution_en": "Talk to Murs: he mentions screams heard from the cavern walls west and south of the old ogre settlement.\nGo there and search the walls for a way into a sealed cavern.\nInside is a hatch of blind albino wyrmlings, twisted by foul magic and driven mad by years of eating each other. They cannot be reasoned with and attack.\nKill them all to end their suffering and close the quest.",
+  "solution_fr": "Parlez à Murs : il évoque des cris venant des murs des grottes, au sud-ouest de l'ancien camp des ogres.\nAllez-y et fouillez les parois pour trouver un passage vers une grotte scellée.\nÀ l'intérieur vit une couvée de vers albinos aveugles, déformés par une magie infecte et rendus fous par des années à se dévorer entre eux. Impossible de raisonner avec eux : ils attaquent.\nTuez-les tous pour abréger leurs souffrances et terminer la quête."
+ },
+ {
+  "title": 251953,
+  "idx": 461,
+  "game": "sod",
+  "chapter": "any",
+  "where_en": "Underground caverns",
+  "where_fr": "Grottes souterraines",
+  "kind": "side",
+  "hints_en": [
+   "Drow and crusaders are fighting over two missing drow youths; Shapur leads the drow.",
+   "Search the caves nearby for the two runaways before more blood is spilled.",
+   "Their fate is up to you: bring them home, fake their deaths with their house insignias, or arrive too late."
+  ],
+  "hints_fr": [
+   "Drows et croisés se battent à cause de deux jeunes drows disparus ; Shapur mène les drows.",
+   "Fouillez les grottes voisines pour trouver les deux fugueurs avant que le sang ne coule davantage.",
+   "Leur sort dépend de vous : ramenez-les, faites croire à leur mort avec leurs insignes de maison, ou arrivez trop tard."
+  ],
+  "solution_en": "At the site where drow face off against crusaders, talk to Shapur: two adolescent drow have run away and the drow blame the crusaders.\nSearch the surrounding caves for the runaways. Outcomes:\n- Convince them to go home: they meet you back at the battle site and Shapur, grudgingly, thanks you before the drow withdraw.\n- Agree to fake their deaths: they give you their house insignias to show Shapur.\n- If an ankheg kills them, report their deaths.\nWhen you tell Shapur they died, she may take it calmly and leave, or attack you: be ready for a fight.",
+  "solution_fr": "Sur le lieu où drows et croisés s'affrontent, parlez à Shapur : deux adolescents drows ont fugué et les drows accusent les croisés.\nFouillez les grottes voisines pour trouver les fugueurs. Issues :\n- Convainquez-les de rentrer : ils vous retrouvent sur le champ de bataille et Shapur vous remercie à contrecœur avant que les drows ne partent.\n- Acceptez de les faire passer pour morts : ils vous donnent leurs insignes de maison à montrer à Shapur.\n- Si un ankheg les tue, annoncez leur mort.\nQuand vous dites à Shapur qu'ils sont morts, elle peut l'accepter et partir, ou vous attaquer : soyez prêt à combattre."
+ },
+ {
+  "title": 249478,
+  "idx": 462,
+  "game": "sod",
+  "chapter": "any",
+  "where_en": "Unknown",
+  "where_fr": "Inconnu",
+  "kind": "side",
+  "hints_en": [
+   "This quest has no journal entries in the game's tables.",
+   "Its title suggests someone or something has gone astray; listen to the people you meet in the wilds.",
+   "If you never get an entry for it, you are not missing anything."
+  ],
+  "hints_fr": [
+   "Cette quête n'a aucune entrée de journal dans les tables du jeu.",
+   "Son titre évoque des personnes ou des choses égarées ; écoutez les gens que vous croisez dans les contrées sauvages.",
+   "Si vous n'obtenez jamais d'entrée pour elle, vous ne ratez rien."
+  ],
+  "solution_en": "The game's quest table lists this title but no journal entry is attached to it, so there is nothing that can be tracked or completed here.\nIt is most likely an unused or cut quest from Siege of Dragonspear. You can safely ignore it.",
+  "solution_fr": "La table des quêtes du jeu contient ce titre, mais aucune entrée de journal n'y est rattachée : il n'y a donc rien à suivre ni à terminer.\nIl s'agit très probablement d'une quête inutilisée ou retirée de Siege of Dragonspear. Vous pouvez l'ignorer sans risque."
+ },
+ {
+  "title": 258475,
+  "idx": 463,
+  "game": "sod",
+  "chapter": "any",
+  "where_en": "Spider cave",
+  "where_fr": "Grotte arachnéenne",
+  "kind": "side",
+  "hints_en": [
+   "Spider eggs lie scattered around a cave full of spiders; pick some up.",
+   "Only certain giant insects like to eat spider eggs.",
+   "Once you hold the eggs, something big stirs in the caverns: go find the noise."
+  ],
+  "hints_fr": [
+   "Des œufs d'araignée sont dispersés dans une grotte infestée d'araignées ; ramassez-en.",
+   "Seuls certains insectes géants aiment se nourrir d'œufs d'araignée.",
+   "Une fois les œufs en main, quelque chose de gros remue dans les grottes : allez voir d'où vient le bruit."
+  ],
+  "solution_en": "In the spider-infested cave, collect the eggs scattered around the cavern (expect spiders to defend their nest).\nAfter that, the journal warns that something large has entered the cave. Follow the noise.\nIts source is a giant rhino beetle. Spider eggs are the kind of food such insects crave, so keep them with you when you meet it and see how it reacts.\nFinding the beetle closes the quest.",
+  "solution_fr": "Dans la grotte infestée d'araignées, ramassez les œufs dispersés dans la caverne (attendez-vous à ce que les araignées défendent leur nid).\nEnsuite, le journal signale que quelque chose de gros est entré dans la grotte. Suivez le bruit.\nIl vient d'un scarabée-rhinocéros géant. Les œufs d'araignée sont justement le genre de nourriture que ces insectes recherchent : gardez-les sur vous en le rencontrant et voyez sa réaction.\nTrouver le scarabée termine la quête."
+ },
+ {
+  "title": 264446,
+  "idx": 464,
+  "game": "sod",
+  "chapter": "Bridgefort",
+  "where_en": "Bridgefort, crusader camp and ruined temple to the east",
+  "where_fr": "Fort-du-Pont, camp des croisés et temple en ruine à l'est",
+  "kind": "main",
+  "hints_en": [
+   "The crusader camp's gate guard will not admit new recruits until they prove themselves.",
+   "A missing crusader patrol, including the recruiter's nephew Keherrem, was last seen near a ruined temple to the east.",
+   "Free the caged patrol with the key someone on that level carries, or pull the lever and bring back their leader's badge."
+  ],
+  "hints_fr": [
+   "Le garde à l'entrée du camp des croisés n'accepte aucune recrue qui n'a pas fait ses preuves.",
+   "Une patrouille de croisés disparue, dont Keherrem, le neveu du recruteur, a été vue près d'un temple en ruine à l'est.",
+   "Libérez la patrouille en cage avec la clef que porte quelqu'un à cet étage, ou tirez le levier et rapportez l'insigne de leur chef."
+  ],
+  "solution_en": "Talk to the guard at the crusader camp gate near Bridgefort. To bluff your way in, you must find a missing patrol, likely in a ruined temple to the east.\nEnter the temple, now held by Cyricists, and fight down to the caged crusaders.\n- Mercy: take the cage key from a cultist on that level, free them, and return to the camp to take the credit.\n- Ruthless: pull the wall lever; spikes kill them. Take their leader's badge and tell the camp the Cyricists did it.\nEither way you gain access to the crusader camp, from where you can work to lift the siege. If you already have another way in, the prisoners' fate makes no difference.",
+  "solution_fr": "Parlez au garde à l'entrée du camp des croisés près de Fort-du-Pont. Pour vous y infiltrer, vous devez retrouver une patrouille disparue, sans doute dans un temple en ruine à l'est.\nEntrez dans le temple, tenu par des Cyriquistes, et progressez jusqu'aux croisés en cage.\n- Clémence : prenez la clef de la cage sur un cultiste de cet étage, libérez-les et retournez au camp vous en attribuer le mérite.\n- Cruauté : tirez le levier du mur ; des piques les tuent. Prenez l'insigne de leur chef et dites au camp que les Cyriquistes en sont responsables.\nDans les deux cas, vous accédez au camp des croisés, d'où vous pourrez agir pour lever le siège. Si vous avez déjà un autre moyen d'entrer, le sort des prisonniers ne change rien."
+ },
+ {
+  "title": 264506,
+  "idx": 465,
+  "game": "sod",
+  "chapter": "Prologue / Bridgefort",
+  "where_en": "Korlasz family tomb, then the temple of Cyric near Bridgefort",
+  "where_fr": "Tombeau de la famille de Korlasz, puis temple de Cyric près de Fort-du-Pont",
+  "kind": "side",
+  "hints_en": [
+   "Sarevok left research notes in the Korlasz family tomb; read them carefully.",
+   "They point to a secret room in an old temple of Bhaal, which you will visit later in your travels.",
+   "The ruined temple of Bhaal is now a temple of Cyric: use the marks in the order 3, 1, 4."
+  ],
+  "hints_fr": [
+   "Sarevok a laissé des notes de recherche dans le tombeau de la famille de Korlasz ; lisez-les attentivement.",
+   "Elles mènent à une chambre secrète dans un ancien temple de Bhaal, que vous visiterez plus tard.",
+   "Le temple de Bhaal en ruine est devenu un temple de Cyric : utilisez les marques dans l'ordre 3, 1, 4."
+  ],
+  "solution_en": "In the Korlasz family tomb (prologue), find Sarevok's old notes about the Bhaal prophecy. They mention a secret room in an old temple of Bhaal and the marks of the Lord of Shadows: 3, 1 and 4.\nLater, near Bridgefort, you explore the ruined temple of Bhaal now used by Cyricists (the same dungeon as the missing patrol).\nLook for the marked spots inside and activate them in the order 3, 1, 4 from Sarevok's notes. The secret room opens; take its contents.",
+  "solution_fr": "Dans le tombeau de la famille de Korlasz (prologue), trouvez les anciennes notes de Sarevok sur la prophétie de Bhaal. Elles évoquent une chambre secrète dans un ancien temple de Bhaal et les marques du Seigneur des Ombres : 3, 1 et 4.\nPlus tard, près de Fort-du-Pont, vous explorez le temple en ruine de Bhaal occupé par des Cyriquistes (le même donjon que celui de la patrouille disparue).\nCherchez les emplacements marqués et activez-les dans l'ordre 3, 1, 4 indiqué par Sarevok. La chambre secrète s'ouvre ; prenez son contenu."
+ },
+ {
+  "title": 264473,
+  "idx": 466,
+  "game": "sod",
+  "chapter": "Coast Way Crossing",
+  "where_en": "Coast Way Crossing, dwarven dig site",
+  "where_fr": "Pont de la Voie Côtière, site de fouilles nain",
+  "kind": "side",
+  "hints_en": [
+   "Near Coast Way Crossing, a dwarf is fighting zombies; help him and hear his story.",
+   "Inside the hidden dig, help the clerics of Dumathoin, look for Gurn Coldhearth and spare the giant Semahl.",
+   "Coldhearth has become a lich: destroy his phylactery in a hidden room before fighting him, or accept his bargain."
+  ],
+  "hints_fr": [
+   "Près du pont de la Voie Côtière, un nain combat des zombies ; aidez-le et écoutez son histoire.",
+   "Dans le site de fouilles caché, aidez les clercs de Dumathoin, cherchez Gurn Âtrefroid et épargnez le géant Semahl.",
+   "Âtrefroid est devenu une liche : détruisez son phylactère dans une salle secrète avant de l'affronter, ou acceptez son marché."
+  ],
+  "solution_en": "Near Coast Way Crossing, save Daran Highhammer from zombies. He asks you to check on the dwarven clerics who hired him inside their secret dig.\nIn the dig, help the clerics fight the undead. Their leader Auchlin Deepvein asks you to find his friend Gurn Coldhearth. In a remote corner, rescue the giant Semahl and send him to the survivors: his word later backs up your report.\nDeeper, in a buried fortress, you see Coldhearth become a lich. Do not fight him yet: report to Deepvein, who gives you the weapon Secret Revealed.\nFind the phylactery in a hidden room off the transformation chamber, destroy it, then kill the lich. The dwarves may join you at Dragonspear Castle.\nEvil option: the lich offers a big reward for the five Amulets of the Keeper worn by the clerics. Bring all five, never fewer.",
+  "solution_fr": "Près du pont de la Voie Côtière, sauvez Daran Hautmarteau des zombies. Il vous demande de voir ce que deviennent les clercs nains qui l'ont embauché, dans leur site de fouilles secret.\nSur le site, aidez les clercs contre les morts-vivants. Leur meneur, Auchlin Veineprofonde, vous demande de retrouver son ami Gurn Âtrefroid. Dans un coin reculé, sauvez le géant Semahl et envoyez-le rejoindre les survivants : son témoignage appuiera votre rapport.\nPlus bas, dans une forteresse enfouie, vous voyez Âtrefroid devenir une liche. Ne l'affrontez pas tout de suite : faites votre rapport à Veineprofonde, qui vous remet l'arme Secret dévoilé.\nTrouvez le phylactère dans une salle secrète près de la salle de la transformation, détruisez-le, puis tuez la liche. Les nains pourront vous rejoindre au château de Vougedragon.\nOption maléfique : la liche promet une grande récompense contre les cinq amulettes du Gardien que portent les clercs. Apportez-les toutes les cinq, jamais moins."
+ },
+ {
+  "title": 264981,
+  "idx": 467,
+  "game": "sod",
+  "chapter": "Bridgefort",
+  "where_en": "Bridgefort",
+  "where_fr": "Fort-du-Pont",
+  "kind": "main",
+  "hints_en": [
+   "Bridgefort is sealed while the crusade besieges it; you need a special way in.",
+   "A wardstone grants passage into the fort.",
+   "Once you hold the wardstone, use it at the fort to get inside and meet the defenders."
+  ],
+  "hints_fr": [
+   "Fort-du-Pont est scellé pendant que la croisade l'assiège ; il vous faut un moyen spécial d'entrer.",
+   "Une pierre-sésame permet de pénétrer dans le fort.",
+   "Une fois la pierre-sésame en main, utilisez-la au fort pour entrer et rencontrer les défenseurs."
+  ],
+  "solution_en": "During the siege of Bridgefort, the fort cannot be entered normally.\nObtain the Bridgefort wardstone, then use it to pass into the fort.\nOnce inside, the quest ends and you can speak with the defenders: this leads straight into The Desperate Defenders (Wynan Hess and the smith Jegg Hillcarver).",
+  "solution_fr": "Pendant le siège de Fort-du-Pont, impossible d'entrer dans le fort normalement.\nProcurez-vous la pierre-sésame de Fort-du-Pont, puis utilisez-la pour pénétrer dans le fort.\nUne fois à l'intérieur, la quête se termine et vous pouvez parler aux défenseurs : la suite est la quête Les défenseurs désespérés (Wynan Hess et le forgeron Jegg Sculptecolline)."
+ },
+ {
+  "title": 264982,
+  "idx": 468,
+  "game": "sod",
+  "chapter": "Bridgefort",
+  "where_en": "Ruined temple of Bhaal (temple of Cyric), near Bridgefort",
+  "where_fr": "Temple en ruine de Bhaal (temple de Cyric), près de Fort-du-Pont",
+  "kind": "side",
+  "hints_en": [
+   "A blind prisoner in the ruined temple of Bhaal claims she was once its high priestess.",
+   "Something has gone very wrong in the temple; the Cyricist high priestess Akanna has shut herself in the ritual chambers.",
+   "Akanna's mind is not her own: the true master waits in the reliquary."
+  ],
+  "hints_fr": [
+   "Une prisonnière aveugle du temple en ruine de Bhaal affirme en avoir été la grande prêtresse.",
+   "Quelque chose cloche dans le temple ; la grande prêtresse de Cyric, Akanna, s'est enfermée dans la salle du rituel.",
+   "L'esprit d'Akanna ne lui appartient plus : le vrai maître attend dans le reliquaire."
+  ],
+  "solution_en": "In the ruined temple of Bhaal near Bridgefort, now held by Cyricists, meet Madele, a caged former high priestess of Bhaal. Read her notes: she hears a voice promising Akanna's downfall. You may free her if you find a way to open her cell, or leave her there.\nCreatures have attacked the temple: proceed with care and find a way into the ritual chambers where the high priestess Akanna is locked.\nAkanna admits a voice made her let monsters in. Go on to the reliquary and defeat the mind flayer behind it all and its tentacled minions. Expect mind attacks: protect against charm and stun.",
+  "solution_fr": "Dans le temple en ruine de Bhaal près de Fort-du-Pont, occupé par des Cyriquistes, rencontrez Madele, ancienne grande prêtresse de Bhaal enfermée dans une cellule. Lisez ses notes : une voix lui promet la chute d'Akanna. Vous pouvez la libérer si vous trouvez comment ouvrir sa cellule, ou l'y laisser.\nDes créatures ont attaqué le temple : avancez prudemment et trouvez un moyen d'entrer dans la salle du rituel où s'est enfermée la grande prêtresse Akanna.\nAkanna avoue qu'une voix l'a forcée à laisser entrer des monstres. Continuez jusqu'au reliquaire et vainquez le flagelleur mental à l'origine de tout, avec ses serviteurs à tentacules. Attendez-vous à des attaques mentales : protégez-vous contre le charme et l'étourdissement."
+ },
+ {
+  "title": 269214,
+  "idx": 469,
+  "game": "sod",
+  "chapter": "Dragonspear Castle",
+  "where_en": "Dragonspear Castle, interior",
+  "where_fr": "Château de Vougedragon, intérieur",
+  "kind": "side",
+  "hints_en": [
+   "Some coalition soldiers are filling their pockets with treasure found in the castle.",
+   "Order them to stop, or report them to a Flaming Fist officer on the same level.",
+   "You can also keep quiet in exchange for a share of the loot."
+  ],
+  "hints_fr": [
+   "Des soldats de la coalition se remplissent les poches avec des trésors trouvés dans le château.",
+   "Ordonnez-leur d'arrêter, ou signalez-les à un officier du Poing Enflammé au même étage.",
+   "Vous pouvez aussi vous taire en échange d'une part du butin."
+  ],
+  "solution_en": "Inside Dragonspear Castle, you come upon coalition soldiers looting treasure. Talk to them:\n- Order them to leave the valuables: they may comply grudgingly.\n- If they refuse, find a Flaming Fist officer on that level and report them; he deals with it.\n- Or offer to keep their secret for a cut: they give you a valuable ring.\nAny of these closes the quest.",
+  "solution_fr": "Dans le château de Vougedragon, vous surprenez des soldats de la coalition en train de piller des trésors. Parlez-leur :\n- Ordonnez-leur de laisser les objets de valeur : ils peuvent obéir à contrecœur.\n- S'ils refusent, trouvez un officier du Poing Enflammé à cet étage et dénoncez-les ; il s'en charge.\n- Ou proposez de garder le secret contre une part : ils vous donnent un anneau de valeur.\nChacune de ces issues termine la quête."
+ },
+ {
+  "title": 266700,
+  "idx": 470,
+  "game": "sod",
+  "chapter": "Prologue",
+  "where_en": "Baldur's Gate, Ducal Palace",
+  "where_fr": "Porte de Baldur, palais ducal",
+  "kind": "main",
+  "hints_en": [
+   "Assassins have struck at the Ducal Palace; drive them off.",
+   "The killers were sent by Caelar Argent, whose crusade threatens the lands north of the Winding Water.",
+   "Talk to the dukes and get ready to march north with the coalition."
+  ],
+  "hints_fr": [
+   "Des assassins ont frappé le palais ducal ; repoussez-les.",
+   "Les tueurs ont été envoyés par Caelar Argent, dont la croisade menace les terres au nord du Fleuve Sinueux.",
+   "Parlez aux ducs et préparez-vous à partir vers le nord avec la coalition."
+  ],
+  "solution_en": "After clearing the Korlasz family tomb, you rest at the Ducal Palace in Baldur's Gate. At night, assassins attack.\nFight your way through the palace with your companions and kill the assassins. This is a hard fight at this level: keep healing potions ready.\nOnce the palace is secure, the dukes reveal the assassins came from Caelar Argent's crusade.\nTalk to the dukes and Flaming Fist leaders, prepare your party and supplies, then leave the city with the coalition to march north.",
+  "solution_fr": "Après avoir nettoyé le tombeau de la famille de Korlasz, vous vous reposez au palais ducal de la Porte de Baldur. Pendant la nuit, des assassins attaquent.\nTraversez le palais avec vos compagnons et tuez les assassins. Le combat est rude à ce niveau : gardez des potions de soins à portée.\nUne fois le palais sécurisé, les ducs révèlent que les assassins venaient de la croisade de Caelar Argent.\nParlez aux ducs et aux chefs du Poing Enflammé, préparez votre groupe et vos provisions, puis quittez la ville avec la coalition pour marcher vers le nord."
+ },
+ {
+  "title": 266743,
+  "idx": 471,
+  "game": "sod",
+  "chapter": "Dragonspear Castle",
+  "where_en": "Dragonspear Castle",
+  "where_fr": "Château de Vougedragon",
+  "kind": "main",
+  "hints_en": [
+   "Explore Dragonspear Castle as far as you can, down to the basement.",
+   "Securing the underground river route and the basement gives the coalition an edge.",
+   "When you return, the commanders are gone: Caelar has asked for a parley."
+  ],
+  "hints_fr": [
+   "Explorez le château de Vougedragon aussi loin que possible, jusqu'au sous-sol.",
+   "Prendre la route de la rivière souterraine et le sous-sol donne un avantage à la coalition.",
+   "À votre retour, les commandants ont disparu : Caelar a demandé à négocier."
+  ],
+  "solution_en": "Break into Dragonspear Castle with the coalition, through the courtyard or the underground river caverns.\nExplore the castle and its basement, clearing crusaders and the horrors below. Side quests here include the looters (Spoils of War), the dark magicians (The Cabal) and the prisoners in the courtyard.\nWhen you come back, the commanders have left: Caelar Argent has requested a parley. Prepare well before going, as the story soon moves on past the point of no return.",
+  "solution_fr": "Entrez dans le château de Vougedragon avec la coalition, par la cour ou par les grottes de la rivière souterraine.\nExplorez le château et son sous-sol en éliminant les croisés et les horreurs d'en bas. Quêtes annexes sur place : les pilleurs (Prises de guerre), les magiciens sombres (La cabale) et les prisonniers de la cour.\nÀ votre retour, les commandants sont partis : Caelar Argent a demandé à négocier. Préparez-vous bien avant d'y aller, car l'histoire franchit bientôt un point de non-retour."
+ },
+ {
+  "title": 267432,
+  "idx": 472,
+  "game": "sod",
+  "chapter": "any",
+  "where_en": "Sword Coast, road to Dragonspear",
+  "where_fr": "Côte des Épées, route de Vougedragon",
+  "kind": "main",
+  "hints_en": [
+   "This entry of the main story has no journal text of its own.",
+   "The campaign goes Baldur's Gate, Coast Way Crossing, Bridgefort, the coalition camp, then Dragonspear Castle.",
+   "When lost, talk to the coalition commanders: they always point to the next goal."
+  ],
+  "hints_fr": [
+   "Cette entrée de l'histoire principale n'a pas de texte de journal propre.",
+   "La campagne suit cet ordre : Porte de Baldur, pont de la Voie Côtière, Fort-du-Pont, camp de la coalition, puis château de Vougedragon.",
+   "Si vous êtes perdu, parlez aux commandants de la coalition : ils indiquent toujours le prochain objectif."
+  ],
+  "solution_en": "This main quest row is a duplicate with no journal entries.\nThe main path of Siege of Dragonspear: leave Baldur's Gate with the coalition, secure Coast Way Crossing, lift the siege of Bridgefort, reach the coalition camp before Dragonspear Castle and defend it, then storm the castle and meet Caelar Argent.\nFollow the other Important Events and The Siege of Dragonspear entries in your journal for each step.",
+  "solution_fr": "Cette ligne de quête principale est un doublon sans entrée de journal.\nLe fil principal de Siege of Dragonspear : quitter la Porte de Baldur avec la coalition, sécuriser le pont de la Voie Côtière, lever le siège de Fort-du-Pont, gagner le camp de la coalition devant le château de Vougedragon et le défendre, puis prendre le château et rencontrer Caelar Argent.\nSuivez les autres entrées Événements importants et Le siège de Vougedragon de votre journal pour chaque étape."
+ },
+ {
+  "title": 267432,
+  "idx": 473,
+  "game": "sod",
+  "chapter": "Prologue - coalition camp",
+  "where_en": "Baldur's Gate, then the coalition camp near Dragonspear",
+  "where_fr": "Porte de Baldur, puis camp de la coalition près de Vougedragon",
+  "kind": "main",
+  "hints_en": [
+   "As you leave Baldur's Gate, a crowd gathers: what you say shapes how they see you.",
+   "At the coalition camp before Dragonspear Castle, the crusade will attack: hold the camp.",
+   "Once the attack is repelled, check in with Marshal Nederlok at the camp entrance."
+  ],
+  "hints_fr": [
+   "En quittant la Porte de Baldur, une foule se rassemble : vos paroles décident de l'image qu'elle a de vous.",
+   "Au camp de la coalition devant le château de Vougedragon, la croisade va attaquer : tenez le camp.",
+   "Une fois l'attaque repoussée, allez voir le Maréchal Nederlok à l'entrée du camp."
+  ],
+  "solution_en": "Leaving Baldur's Gate, a crowd confronts you about your shared lineage with Sarevok. A reassuring speech wins them over; a harsher attitude leaves them suspicious. Neither blocks the story.\nLater, at the coalition's siege camp before Dragonspear Castle, the crusade launches an assault. Defend the camp with the coalition troops until the attackers are driven off.\nThen go to Marshal Nederlok at the camp entrance to continue toward the real battle at Dragonspear Castle.",
+  "solution_fr": "En quittant la Porte de Baldur, une foule vous interpelle sur l'ascendance que vous partagez avec Sarevok. Un discours rassurant la rallie ; une attitude plus dure la laisse méfiante. Aucune des deux ne bloque l'histoire.\nPlus tard, au camp de siège de la coalition devant le château de Vougedragon, la croisade lance un assaut. Défendez le camp avec les troupes de la coalition jusqu'à repousser les assaillants.\nAllez ensuite voir le Maréchal Nederlok à l'entrée du camp pour poursuivre vers la vraie bataille du château de Vougedragon."
+ },
+ {
+  "title": 266957,
+  "idx": 474,
+  "game": "sod",
+  "chapter": "Prologue",
+  "where_en": "Korlasz family tomb",
+  "where_fr": "Tombeau de la famille de Korlasz",
+  "kind": "side",
+  "hints_en": [
+   "A restless spirit haunts a robbed sarcophagus, searching for its stolen staff.",
+   "The thieves left the staff behind in the tomb, broken in two: the shaft and the headpiece lie in different rooms.",
+   "Put both pieces back in the spirit's sarcophagus on that floor."
+  ],
+  "hints_fr": [
+   "Un esprit tourmenté hante un sarcophage pillé et cherche son bâton volé.",
+   "Les voleurs ont abandonné le bâton dans le tombeau, brisé en deux : le manche et le pommeau sont dans des salles différentes.",
+   "Replacez les deux morceaux dans le sarcophage de l'esprit, à cet étage."
+  ],
+  "solution_en": "In the tomb, thieves robbed a sarcophagus of a plain, non-magical staff, and its owner's spirit now haunts it.\nSearch the rooms on that floor: one holds the broken staff, another its headpiece. You can join them into the restored staff.\nReturn to the haunted sarcophagus and place the staff inside. The spirit rests in peace and the quest ends.",
+  "solution_fr": "Dans le tombeau, des voleurs ont dérobé un simple bâton non magique dans un sarcophage, et l'esprit de son propriétaire le hante désormais.\nFouillez les salles de cet étage : l'une contient le bâton brisé, une autre son pommeau. Vous pouvez les assembler pour reconstituer le bâton.\nRetournez au sarcophage hanté et placez-y le bâton. L'esprit repose en paix et la quête se termine."
+ },
+ {
+  "title": 269686,
+  "idx": 475,
+  "game": "sod",
+  "chapter": "Coalition camp",
+  "where_en": "Coalition camp, outside Dragonspear Castle",
+  "where_fr": "Camp de la coalition, devant le château de Vougedragon",
+  "kind": "side",
+  "hints_en": [
+   "Marshal Nederlok cannot find Skie Silvershield anywhere in the coalition camp.",
+   "Bored with camp life, Skie went to scout the enemy on her own, toward Dragonspear Castle.",
+   "Save her from the crusader mercenaries, then tell Nederlok she is safe."
+  ],
+  "hints_fr": [
+   "Le Maréchal Nederlok ne trouve Skie Écudargent nulle part dans le camp de la coalition.",
+   "Lassée de la vie de camp, Skie est partie seule repérer l'ennemi, vers le château de Vougedragon.",
+   "Sauvez-la des mercenaires de la croisade, puis dites à Nederlok qu'elle est en sécurité."
+  ],
+  "solution_en": "In the coalition camp, Marshal Nederlok tells you Skie Silvershield is missing.\nShe was last seen heading toward Dragonspear Castle. Search the area between the camp and the castle.\nYou find her under attack by crusader mercenaries: kill them quickly before she falls.\nTalk to Skie: she was scouting out of boredom and promises to go back to camp.\nReturn to Nederlok and report. He puts her to filling sandbags, and the quest ends.",
+  "solution_fr": "Dans le camp de la coalition, le Maréchal Nederlok vous apprend que Skie Écudargent a disparu.\nElle a été vue pour la dernière fois en direction du château de Vougedragon. Fouillez les environs entre le camp et le château.\nVous la trouvez attaquée par des mercenaires de la croisade : tuez-les vite avant qu'elle ne tombe.\nParlez à Skie : elle partait en reconnaissance par ennui et promet de rentrer au camp.\nRetournez faire votre rapport à Nederlok. Il la met à remplir des sacs de sable, et la quête se termine."
+ },
+ {
+  "title": 271143,
+  "idx": 476,
+  "game": "sod",
+  "chapter": "Coalition camp",
+  "where_en": "Coalition camp, outside Dragonspear Castle",
+  "where_fr": "Camp de la coalition, devant le château de Vougedragon",
+  "kind": "side",
+  "hints_en": [
+   "Two Daggerford militiamen in the coalition camp complain about their gnome officer.",
+   "Find Pritchard Gardnersonson and deal with him, one way or another.",
+   "Telling Pritchard what his men really think brings General Stonehand into the matter."
+  ],
+  "hints_fr": [
+   "Deux miliciens de Gué-de-la-Dague se plaignent de leur officier gnome dans le camp de la coalition.",
+   "Trouvez Pritchard Gardnersonson et réglez le problème, d'une façon ou d'une autre.",
+   "Dire à Pritchard ce que ses hommes pensent vraiment de lui fait intervenir le général Main-de-pierre."
+  ],
+  "solution_en": "In the coalition camp, two Daggerford militiamen tell you their commanding officer, the gnome Pritchard Gardnersonson, is a problem.\nSeek out Pritchard and talk to him. Telling him how his troops truly feel leads General Stonehand of the Daggerford militia to handle him personally. Luck can also solve the matter for you.\nOnce Pritchard is no longer a nuisance, return to the two militiamen. They thank you with several potions.",
+  "solution_fr": "Dans le camp de la coalition, deux miliciens de Gué-de-la-Dague vous disent que leur officier, le gnome Pritchard Gardnersonson, pose problème.\nCherchez Pritchard et parlez-lui. Lui dire ce que ses soldats pensent vraiment de lui pousse le général Main-de-pierre, de la milice de Gué-de-la-Dague, à s'en occuper en personne. La chance peut aussi régler l'affaire à votre place.\nUne fois Pritchard hors d'état de nuire, retournez voir les deux miliciens. Ils vous remercient avec plusieurs potions."
+ },
+ {
+  "title": 271314,
+  "idx": 477,
+  "game": "sod",
+  "chapter": "Coalition camp",
+  "where_en": "Coalition camp and nearby woods",
+  "where_fr": "Camp de la coalition et bois voisins",
+  "kind": "side",
+  "hints_en": [
+   "Mizhena, a priest of Tempus in the coalition camp, lost a keepsake fighting crusaders.",
+   "Look for signs of a struggle in the woods near the camp.",
+   "Bring the amulet back to Mizhena; she will then trust you with a bigger request."
+  ],
+  "hints_fr": [
+   "Mizhena, clerc de Tempus dans le camp de la coalition, a perdu un souvenir en combattant des croisés.",
+   "Cherchez des traces de combat dans les bois près du camp.",
+   "Rapportez l'amulette à Mizhena ; elle vous confiera ensuite une demande plus importante."
+  ],
+  "solution_en": "Talk to Mizhena, a priest of Tempus in the coalition camp. She lost an amulet of sentimental value during a fight with crusaders.\nSearch the woods near the camp for the site of the struggle and pick up the amulet (you may already have found it).\nReturn it to Mizhena. She is grateful and, now trusting you, asks for help finding her father, which starts Mizhena's Father.",
+  "solution_fr": "Parlez à Mizhena, clerc de Tempus dans le camp de la coalition. Elle a perdu une amulette à valeur sentimentale lors d'un combat contre des croisés.\nFouillez les bois près du camp pour trouver le lieu du combat et ramassez l'amulette (vous l'avez peut-être déjà trouvée).\nRendez-la à Mizhena. Reconnaissante et désormais en confiance, elle vous demande de l'aide pour retrouver son père, ce qui lance la quête Le père de Mizhena."
+ },
+ {
+  "title": 271319,
+  "idx": 478,
+  "game": "sod",
+  "chapter": "Dragonspear Castle",
+  "where_en": "Coalition camp, then Dragonspear Castle courtyard",
+  "where_fr": "Camp de la coalition, puis cour du château de Vougedragon",
+  "kind": "side",
+  "hints_en": [
+   "Mizhena's father was captured when his band of soldiers attacked the castle.",
+   "The crusade keeps its prisoners in the courtyard of Dragonspear Castle.",
+   "Free him along with the other prisoners, then bring the news back to Mizhena."
+  ],
+  "hints_fr": [
+   "Le père de Mizhena a été capturé quand sa troupe a attaqué le château.",
+   "La croisade garde ses prisonniers dans la cour du château de Vougedragon.",
+   "Libérez-le avec les autres prisonniers, puis rapportez la nouvelle à Mizhena."
+  ],
+  "solution_en": "After you return her amulet, Mizhena asks you to look for her father among the crusade's prisoners.\nStorm the courtyard of Dragonspear Castle and find the captives. Free her father along with the other prisoners.\nReturn to Mizhena with the good news: she is relieved and goes to find him.\nOther outcomes: if you killed him, you can tell her and she leaves to search for his body. If Mizhena has died, her father mourns her when you free him.",
+  "solution_fr": "Après lui avoir rendu son amulette, Mizhena vous demande de chercher son père parmi les prisonniers de la croisade.\nPrenez d'assaut la cour du château de Vougedragon et trouvez les captifs. Libérez son père avec les autres prisonniers.\nRetournez annoncer la bonne nouvelle à Mizhena : soulagée, elle part le rejoindre.\nAutres issues : si vous l'avez tué, vous pouvez le lui dire et elle part chercher son corps. Si Mizhena est morte, son père la pleure quand vous le libérez."
+ }
+]

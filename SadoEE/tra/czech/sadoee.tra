@@ -1,0 +1,10 @@
+// SadoEE strings (GENERATED from SadoEE/src/tra)
+@2000 = ~Party Stash~
+@2001 = ~Odpočinkový tábor~
+@2002 = ~Pohodlí hry~
+@2003 = ~Rozšíření enginu~
+@2010 = ~SadoEE nahrazuje Party Stash a SadoQoL (stejné soubory): nejprve odinstalujte všechny komponenty Party Stash a SadoQoL. Obsah truhly zůstane ve vašich uložených pozicích a vrátí se s truhlou SadoEE.~
+@2011 = ~Vyžaduje komponentu Odpočinkový tábor.~
+@2012 = ~Velký kupec v odpočinkovém táboře: prodává každý předmět viděný v již navštívených obchodech (vyžaduje odpočinkový tábor a truhlu)~
+@2013 = ~Vyžaduje truhlu.~
+@2014 = ~Vyžaduje Baldur's Gate EE, Baldur's Gate II EE nebo EET.~

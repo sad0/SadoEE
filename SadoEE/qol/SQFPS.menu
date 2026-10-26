@@ -1,0 +1,20 @@
+menu
+{
+	name "SQFPS_TICK"
+	ignoreesc
+	-- SadoQoL FPS counter: the first label's enabled check runs every frame and counts it.
+	label
+	{
+		area 0 0 0 0
+		enabled "SQFps_Tick()"
+	}
+	label
+	{
+		name "SQFPS_TEXT"
+		area 900 4 180 24
+		enabled "SQFps_On()"
+		text lua "SQFps_Text()"
+		text style "normal"
+		text align center top
+	}
+}

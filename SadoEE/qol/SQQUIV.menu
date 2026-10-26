@@ -1,0 +1,11 @@
+menu
+{
+	name "SQQUIV_TICK"
+	ignoreesc
+	-- SadoQoL endless ammo, the quiver part: its enabled check runs every frame (throttled in SQQuiv_Tick).
+	label
+	{
+		area 0 0 0 0
+		enabled "SQQuiv_Tick()"
+	}
+}

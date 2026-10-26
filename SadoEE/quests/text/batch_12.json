@@ -1,0 +1,842 @@
+[
+ {
+  "title": 74477,
+  "idx": 161,
+  "game": "bg2",
+  "chapter": "5",
+  "where_en": "Underdark",
+  "where_fr": "Ombreterre",
+  "kind": "side",
+  "hints_en": [
+   "The githyanki you met as captives of the mind flayers did not stay where you left them.",
+   "After escaping the illithid city, look for them resting in a cavern of the Underdark.",
+   "They want the silver sword back and will not be talked out of a fight."
+  ],
+  "hints_fr": [
+   "Les githyankis rencontrés chez les flagelleurs mentaux ne sont pas restés là où vous les avez laissés.",
+   "Après avoir fui la cité illithide, cherchez-les au repos dans une caverne de l'Ombreterre.",
+   "Ils réclament l'Épée d'argent et aucun discours ne leur fera renoncer au combat."
+  ],
+  "solution_en": "After surviving the illithid city in the Underdark, explore the caverns until you find the githyanki party resting there, the same group that was held captive with you (and that attacked Saemon's ship if you met them before).\nTalk to their leader. Whatever you answer, they demand the silver sword they say was stolen from them and attack.\nPrepare for a hard fight against several githyanki warriors and casters, then loot them. The journal closes once they are dead.",
+  "solution_fr": "Après avoir survécu à la cité illithide en Ombreterre, explorez les cavernes jusqu'à trouver le groupe de githyankis au repos : ceux qui étaient prisonniers avec vous (et qui ont attaqué le navire de Saemon si vous les avez déjà croisés).\nParlez à leur chef. Quoi que vous répondiez, ils réclament l'Épée d'argent qu'on leur aurait volée et attaquent.\nPréparez-vous à un combat difficile contre plusieurs guerriers et lanceurs de sorts githyankis, puis fouillez les corps. Le journal se clôt une fois qu'ils sont morts."
+ },
+ {
+  "title": 74478,
+  "idx": 162,
+  "game": "bg2",
+  "chapter": "7",
+  "where_en": "Suldanessellar",
+  "where_fr": "Suldanessellar",
+  "kind": "side",
+  "hints_en": [
+   "A locked elven box in Suldanessellar opens only if its five runes are pressed in the right order.",
+   "The Priest's Stone in the room above holds the clue; the lid says the Natural Order shall prevail.",
+   "Start with Corellon, then Rillifane, and finish with the rune of Suldanessellar."
+  ],
+  "hints_fr": [
+   "Une boîte elfique verrouillée à Suldanessellar ne s'ouvre que si l'on presse ses cinq runes dans le bon ordre.",
+   "La pierre presbytérale de la pièce du dessus donne l'indice ; le couvercle annonce que l'Ordre Naturel prévaudra.",
+   "Commencez par Corellon, puis Rillifane, et finissez par la rune de Suldanessellar."
+  ],
+  "solution_en": "Examine the elven puzzle box found in a building of Suldanessellar. Read the Priest's Stone in the room above for the clue.\nA wrong rune fires an acid dart at you and resets the box, so press them in this order:\n1. Corellon Larethian.\n2. Rillifane.\n3. The elven symbol for water.\n4. The Tree of Life.\n5. The rune of Suldanessellar.\nThe box opens and gives you the talisman of Rillifane.",
+  "solution_fr": "Examinez la boîte à énigme elfique trouvée dans un bâtiment de Suldanessellar. Lisez la pierre presbytérale de la pièce du dessus pour l'indice.\nUne mauvaise rune vous tire une fléchette acide et remet la boîte à zéro ; pressez donc dans cet ordre :\n1. Corellon Larethian.\n2. Rillifane.\n3. Le symbole elfique de l'eau.\n4. L'Arbre de Vie.\n5. La rune de Suldanessellar.\nLa boîte s'ouvre et vous donne le talisman de Rillifane."
+ },
+ {
+  "title": 74479,
+  "idx": 163,
+  "game": "bg2",
+  "chapter": "4",
+  "where_en": "Spellhold, dungeon below the asylum",
+  "where_fr": "Spellhold, souterrains sous l'asile",
+  "kind": "side",
+  "hints_en": [
+   "The vampire you just struck down was a victim of Bodhi, and his soul begs for a true death.",
+   "A kobold shaman who fears the vampire keeps a wooden stake in a secret room near the Tome of Madness.",
+   "Use the stake on the body in Dace's coffin; his hand is half of the key out of this place."
+  ],
+  "hints_fr": [
+   "Le vampire que vous venez d'abattre était une victime de Bodhi, et son âme réclame une vraie mort.",
+   "Un chaman kobold qui craint le vampire garde un pieu en bois dans une pièce secrète près du Grimoire de la folie.",
+   "Plantez le pieu dans le corps du cercueil de Dace ; sa main est la moitié de la clef pour sortir d'ici."
+  ],
+  "solution_en": "In the dungeon maze below Spellhold, after you defeat the vampire Dace Sontan, his tormented spirit appears. Agree to help him.\nFind the secret room near the Tome of Madness, where the kobold shaman worships a crystal shard. Take the wooden stake from him (by force if needed).\nReturn to Dace's coffin and use the stake on his body: his soul is freed.\nTake Dace's hand from the coffin. Together with the crystal, it is the key you need to open the way out of this level, so do not skip it.",
+  "solution_fr": "Dans le labyrinthe sous Spellhold, après avoir vaincu le vampire Dace Sontan, son esprit tourmenté apparaît. Acceptez de l'aider.\nTrouvez la pièce secrète près du Grimoire de la folie, où le chaman kobold vénère un éclat de cristal. Prenez-lui le pieu en bois (par la force si besoin).\nRetournez au cercueil de Dace et utilisez le pieu sur son corps : son âme est libérée.\nPrenez la main de Dace dans le cercueil. Avec le cristal, c'est la clef qui ouvre la sortie de ce niveau : ne l'oubliez pas."
+ },
+ {
+  "title": 74480,
+  "idx": 164,
+  "game": "bg2",
+  "chapter": "5",
+  "where_en": "Underdark, Ust Natha",
+  "where_fr": "Ombreterre, Ust Natha",
+  "kind": "side",
+  "hints_en": [
+   "A captive aboleth in a tank in Ust Natha can read your mind and sees through your disguise.",
+   "It wants the brain of the priestess Qilue, who lives in the Female Fighters' Society.",
+   "Her room is behind the second door from the bottom; strike fast, take the brain, bring it back."
+  ],
+  "hints_fr": [
+   "Un aboleth captif dans un réservoir d'Ust Natha lit dans votre esprit et voit à travers votre déguisement.",
+   "Il veut le cerveau de la prêtresse Qilue, qui vit à la Société des Combattantes.",
+   "Sa chambre est derrière la deuxième porte à partir du bas ; frappez vite, prenez le cerveau, rapportez-le."
+  ],
+  "solution_en": "In the drow city of Ust Natha, talk to the aboleth kept in a tank. It threatens to reveal that you are a surfacer unless you obey. Agree (refusing means it alerts the whole city).\nGo to the Female Fighters' Society and enter the second door from the bottom. Kill the priestess Qilue quickly and take her brain from the body.\nReturn to the aboleth and hand it over. It keeps your secret, and the party gains experience (10,000 XP). There is no other reward.",
+  "solution_fr": "Dans la cité drow d'Ust Natha, parlez à l'aboleth enfermé dans un réservoir. Il menace de révéler que vous venez de la surface si vous n'obéissez pas. Acceptez (un refus alerte toute la cité).\nAllez à la Société des Combattantes et entrez par la deuxième porte à partir du bas. Tuez vite la prêtresse Qilue et prenez son cerveau sur le corps.\nRetournez voir l'aboleth et donnez-le-lui. Il garde votre secret, et le groupe gagne de l'expérience (10 000 PX). Il n'y a pas d'autre récompense."
+ },
+ {
+  "title": 74481,
+  "idx": 165,
+  "game": "bg2",
+  "chapter": "2-3",
+  "where_en": "Athkatla, Slums",
+  "where_fr": "Athkatla, quartier des taudis",
+  "kind": "side",
+  "hints_en": [
+   "Two kidnappers, Camitis and Reti, held Lady Elgea for ransom, and someone is still coming to pay.",
+   "A note found on the kidnappers names the meeting place: in front of the Copper Coronet.",
+   "Pose as the kidnapper to Welther to take the ransom; this is the selfish way out."
+  ],
+  "hints_fr": [
+   "Deux ravisseurs, Camitis et Reti, retenaient Dame Elgea contre rançon, et quelqu'un vient encore payer.",
+   "Une note trouvée sur les ravisseurs indique le lieu du rendez-vous : devant la Couronne de Cuivre.",
+   "Faites-vous passer pour le ravisseur auprès de Welther pour toucher la rançon ; c'est la voie intéressée."
+  ],
+  "solution_en": "This entry follows the kidnapping of Lady Elgea by Camitis and Reti in the Slums. After dealing with the kidnappers, keep their note.\nGo to the front of the Copper Coronet and talk to Welther, Lady Elgea's servant. Show the note and claim to be the kidnapper.\nHe hands over the agreed ransom (an item, not gold) and you tell him where the lady is.\nWelther now knows the house where she is held, so it is wise not to go back there.",
+  "solution_fr": "Cette entrée fait suite à l'enlèvement de Dame Elgea par Camitis et Reti dans le quartier des taudis. Après vous être occupé des ravisseurs, gardez leur note.\nAllez devant la Couronne de Cuivre et parlez à Welther, le serviteur de Dame Elgea. Montrez la note et prétendez être le ravisseur.\nIl vous remet la rançon convenue (un objet, pas de l'or) et vous lui indiquez où se trouve la dame.\nWelther connaît désormais la maison où elle est retenue : mieux vaut ne pas y retourner."
+ },
+ {
+  "title": 66122,
+  "idx": 166,
+  "game": "bg2",
+  "chapter": "2-7 (or ToB)",
+  "where_en": "Watcher's Keep",
+  "where_fr": "Tour de Garde",
+  "kind": "side",
+  "hints_en": [
+   "Brother Odren of the Knights of the Vigil seeks heroes strong enough to reseal an ancient prison.",
+   "At the top of the keep, Brother Pol gives the holy symbol and ritual; Garlena sells supplies.",
+   "The Imprisoned One is Demogorgon, and Odren meant to leave you sealed inside with him."
+  ],
+  "hints_fr": [
+   "Frère Odren, des Chevaliers Vigilants, cherche des héros assez forts pour resceller une ancienne prison.",
+   "Au sommet de la tour, Frère Pol fournit le symbole sacré et le rituel ; Garlena vend du matériel.",
+   "L'Emprisonné est Démogorgon, et Odren comptait vous laisser enfermé avec lui."
+  ],
+  "solution_en": "Brother Odren approaches you and asks you to enter Watcher's Keep to repair the seals of its prisoner. If you are too weak he tells you to come back later.\nAccept. At the keep, Odren shows you the entrance; get the holy symbol and ritual from Brother Pol, and buy gear from Garlena.\nGo down level by level (see the other Watcher's Keep entries) and open the final seal.\nThe Imprisoned One is Demogorgon. Choices: kill him (hardest fight in the keep); perform the ritual to reseal him and trick him into letting you out; or agree to free him by lying to Odren that the prisoner is dead.\nIf Odren goes inside, a ghostly knight offers Helm's scroll to seal the prison forever.\nAfterwards, confront Odren: forgive him or punish the Knights.",
+  "solution_fr": "Frère Odren vous aborde et vous demande d'entrer dans la Tour de Garde pour réparer les sceaux de son prisonnier. Si vous êtes trop faible, il vous dit de revenir plus tard.\nAcceptez. À la tour, Odren vous montre l'entrée ; prenez le symbole sacré et le rituel auprès de Frère Pol, et achetez du matériel à Garlena.\nDescendez niveau par niveau (voir les autres entrées de la Tour de Garde) et ouvrez le dernier sceau.\nL'Emprisonné est Démogorgon. Au choix : le tuer (le combat le plus dur de la tour) ; accomplir le rituel pour le resceller et le tromper pour qu'il vous laisse sortir ; ou accepter de le libérer en faisant croire à Odren qu'il est mort.\nSi Odren entre, un chevalier fantôme offre un parchemin de Helm pour sceller la prison à jamais.\nEnsuite, confrontez Odren : pardonnez-lui ou punissez les Vigilants."
+ },
+ {
+  "title": 74482,
+  "idx": 167,
+  "game": "bg2",
+  "chapter": "2-7 (or ToB)",
+  "where_en": "Watcher's Keep, maze level",
+  "where_fr": "Tour de Garde, niveau du labyrinthe",
+  "kind": "side",
+  "hints_en": [
+   "A friendly cambion in the maze wants to gamble with you rather than fight.",
+   "He stakes a gem against your holy symbol of Helm, decided by draws from a deck of many things.",
+   "Whether you win or lose the game, refuse to leave without the symbol and expect a fight if he resists."
+  ],
+  "hints_fr": [
+   "Un cambion amical dans le labyrinthe préfère jouer avec vous plutôt que se battre.",
+   "Il mise une gemme contre votre symbole sacré de Helm, sur des tirages de cartes merveilleuses.",
+   "Gagnant ou perdant, ne partez pas sans le symbole et attendez-vous à un combat s'il résiste."
+  ],
+  "solution_en": "In the maze level of Watcher's Keep, meet the cambion and his retinue. Talk instead of attacking.\nHe offers a game with his deck of many things: your holy symbol of Helm (his way out) against a gem he found. Each draw can bring good or bad effects.\nIf he wins his freedom, he keeps his word: he returns the holy symbol and gives you the gem anyway.\nIf he will not let you leave with the symbol, the matter ends in combat with him and his followers.",
+  "solution_fr": "Au niveau du labyrinthe de la Tour de Garde, rencontrez le cambion et sa suite. Parlez au lieu d'attaquer.\nIl propose une partie de cartes merveilleuses : votre symbole sacré de Helm (sa porte de sortie) contre une gemme qu'il a trouvée. Chaque tirage peut avoir des effets bons ou mauvais.\nS'il gagne sa liberté, il tient parole : il vous rend le symbole sacré et vous donne quand même la gemme.\nS'il refuse de vous laisser partir avec le symbole, l'affaire finit en combat contre lui et ses fidèles."
+ },
+ {
+  "title": 74483,
+  "idx": 168,
+  "game": "bg2",
+  "chapter": "2-7 (or ToB)",
+  "where_en": "Watcher's Keep, maze level",
+  "where_fr": "Tour de Garde, niveau du labyrinthe",
+  "kind": "side",
+  "hints_en": [
+   "Two fiends of the Blood War are trapped in the maze, each wanting the other dead.",
+   "The balor Tahazzar and the pit fiend Ka'rashur each ask you to bring back the other's heart.",
+   "Pick one side, kill the other fiend, and return with its heart for the reward."
+  ],
+  "hints_fr": [
+   "Deux fiélons de la Guerre du Sang sont piégés dans le labyrinthe, chacun voulant la mort de l'autre.",
+   "Le balor Tahazzar et le diantrefosse Ka'rashur vous demandent chacun le cœur de l'autre.",
+   "Choisissez un camp, tuez l'autre fiélon et rapportez son cœur pour la récompense."
+  ],
+  "solution_en": "In the maze of Watcher's Keep, you can meet the tanar'ri balor Tahazzar and the baatezu pit fiend Ka'rashur in different parts of the level.\nAccept the job from one of them: find the other fiend and destroy it, then cut out its heart.\nThe target is a very powerful fiend; prepare protections against fire and high-level magic.\nReturn the heart to your employer. Surprisingly, the fiend keeps its word and gives you its material reward.",
+  "solution_fr": "Dans le labyrinthe de la Tour de Garde, vous pouvez croiser le balor tanar'ri Tahazzar et le diantrefosse baatezu Ka'rashur dans des parties différentes du niveau.\nAcceptez la mission de l'un d'eux : trouvez l'autre fiélon et détruisez-le, puis prenez son cœur.\nLa cible est un fiélon très puissant ; préparez des protections contre le feu et la magie de haut niveau.\nRapportez le cœur à votre employeur. À la surprise générale, il tient parole et vous donne sa récompense."
+ },
+ {
+  "title": 74484,
+  "idx": 169,
+  "game": "bg2",
+  "chapter": "2-7 (or ToB)",
+  "where_en": "Watcher's Keep, temple level",
+  "where_fr": "Tour de Garde, niveau du temple",
+  "kind": "side",
+  "hints_en": [
+   "The mirror portal in the middle of the temple opens with a ritual at the altar.",
+   "The archivist's ghost points you to the forgetful old priest, long dead somewhere in the temple.",
+   "The chapter and verse are woven into the old priest's cloak sleeve: bell, bell, candle, book, bell."
+  ],
+  "hints_fr": [
+   "Le portail miroir au centre du temple s'ouvre grâce à un rituel sur l'autel.",
+   "Le spectre de l'archiviste vous oriente vers le vieux prêtre distrait, mort depuis longtemps quelque part dans le temple.",
+   "Le chapitre et le verset sont tissés dans la manche de la cape du vieux prêtre : cloche, cloche, bougie, livre, cloche."
+  ],
+  "solution_en": "On the first level of Watcher's Keep, gather the ritual items found around the temple (a bell, a candle and the holy book) and use the altar.\nTalk to the archivist's ghost: he tells you to find the forgetful old priest. Find his remains and his cloak: the chapter and verse are woven into its sleeve.\nAt the altar, in this order: ring the bell, ring the bell again, light the candle, open the book (it now opens on the right page), ring the bell a third time.\nThe mirror portal in the center of the temple activates and takes you down when you want.\nIf you leave the altar midway, start the ritual over.",
+  "solution_fr": "Au premier niveau de la Tour de Garde, réunissez les objets du rituel trouvés dans le temple (une cloche, une bougie et le livre sacré) et utilisez l'autel.\nParlez au spectre de l'archiviste : il vous dit de trouver le vieux prêtre distrait. Trouvez ses restes et sa cape : le chapitre et le verset sont tissés dans la manche.\nÀ l'autel, dans cet ordre : sonnez la cloche, sonnez-la encore, allumez la bougie, ouvrez le livre (il s'ouvre alors à la bonne page), sonnez une troisième fois.\nLe portail miroir au centre du temple s'active et vous fait descendre quand vous le voulez.\nSi vous quittez l'autel en cours de route, recommencez le rituel."
+ },
+ {
+  "title": 74485,
+  "idx": 170,
+  "game": "bg2",
+  "chapter": "2-7 (or ToB)",
+  "where_en": "Watcher's Keep, wizards' level",
+  "where_fr": "Tour de Garde, niveau des magiciens",
+  "kind": "side",
+  "hints_en": [
+   "The chromatic demon in the central cage controls the gate to the next level.",
+   "Four elemental wizards each made a scepter key; look in their laboratories on this level.",
+   "Place the four scepters in the slots around the cage, and be ready: the freed demon attacks."
+  ],
+  "hints_fr": [
+   "Le démon chromatique de la cage centrale contrôle la porte vers le niveau suivant.",
+   "Quatre magiciens élémentaires ont chacun fabriqué un sceptre ; fouillez leurs laboratoires sur ce niveau.",
+   "Placez les quatre sceptres dans les emplacements autour de la cage, et soyez prêt : le démon libéré attaque."
+  ],
+  "solution_en": "On the second level of Watcher's Keep, talk to the chromatic demon imprisoned in its elemental cage. It will only open the way down if you free it.\nAgree, then explore the four wizards' laboratories (air, slime, cold and fire). Start the fan first, and read the wizards' notes to beat their creations (see the related entries).\nCollect the four scepter keys and place them in the four slots around the cage.\nThe demon is freed and immediately attacks you. Kill it to continue to the lower level.",
+  "solution_fr": "Au deuxième niveau de la Tour de Garde, parlez au démon chromatique enfermé dans sa cage élémentaire. Il n'ouvrira la descente que si vous le libérez.\nAcceptez, puis explorez les quatre laboratoires des magiciens (air, vase, froid et feu). Mettez d'abord le ventilateur en marche et lisez les notes des magiciens pour vaincre leurs créatures (voir les entrées liées).\nRécupérez les quatre sceptres et placez-les dans les quatre emplacements autour de la cage.\nLe démon est libéré et vous attaque aussitôt. Tuez-le pour descendre au niveau inférieur."
+ },
+ {
+  "title": 74486,
+  "idx": 171,
+  "game": "bg2",
+  "chapter": "2-7 (or ToB)",
+  "where_en": "Watcher's Keep, Carston's level",
+  "where_fr": "Tour de Garde, niveau de Carston",
+  "kind": "side",
+  "hints_en": [
+   "A dying apprentice tortured by illithids knows Carston's story and the secret of his glass case.",
+   "The Machine of Lum the Mad, inside Carston's glass bubble, controls the gate in the northeast.",
+   "Every lever and dial has a random effect, good or bad; the red button only opens the gate at the right moment."
+  ],
+  "hints_fr": [
+   "Un apprenti mourant torturé par les illithides connaît l'histoire de Carston et le secret de sa cage de verre.",
+   "La machine de Lum le Fou, dans la bulle de verre de Carston, commande la porte du nord-est.",
+   "Chaque levier et chaque cadran a un effet aléatoire, bon ou mauvais ; le bouton rouge n'ouvre la porte qu'au bon moment."
+  ],
+  "solution_en": "On the third level of Watcher's Keep, talk to Carston's dying apprentice. He explains that the mad wizard Carston is trapped in a glass bubble by the Machine of Lum the Mad, the only way down. Illithids, githyanki and the dragon Saladrex also live on this level.\nFind a way through Carston's glass bubble and deal with him.\nUse the machine: three levers and two dials give random effects, some permanent (stat gains, healing, summoned monsters, fire, petrification, level drain).\nWhen the red button works, the magical gate in the northeast corner opens to the next level. Save before experimenting.",
+  "solution_fr": "Au troisième niveau de la Tour de Garde, parlez à l'apprenti mourant de Carston. Il explique que le magicien fou Carston est piégé dans une bulle de verre par la machine de Lum le Fou, seule voie vers le bas. Des illithides, des githyankis et le dragon Saladrex vivent aussi à ce niveau.\nTrouvez un moyen de franchir la bulle de verre de Carston et occupez-vous de lui.\nUtilisez la machine : trois leviers et deux cadrans ont des effets aléatoires, parfois permanents (gains de caractéristiques, soins, monstres invoqués, feu, pétrification, perte de niveau).\nQuand le bouton rouge fonctionne, la porte magique du coin nord-est s'ouvre vers le niveau suivant. Sauvegardez avant d'expérimenter."
+ },
+ {
+  "title": 74487,
+  "idx": 172,
+  "game": "bg2",
+  "chapter": "2-7 (or ToB)",
+  "where_en": "Watcher's Keep, prison level",
+  "where_fr": "Tour de Garde, niveau de la prison",
+  "kind": "side",
+  "hints_en": [
+   "The final seal before the Imprisoned One's crypt needs three keys: mind, heart and spirit.",
+   "Each key is won in its own trial on this level.",
+   "Mind is the puzzle of the colored globes, heart is the gauntlet, spirit is the Eternal Warrior's challenge."
+  ],
+  "hints_fr": [
+   "Le dernier sceau avant la crypte de l'Emprisonné demande trois clefs : l'esprit, le cœur et l'âme.",
+   "Chaque clef se gagne dans sa propre épreuve à ce niveau.",
+   "L'esprit, c'est l'énigme des globes colorés ; le cœur, l'épreuve du parcours ; l'âme, le défi du Guerrier Éternel."
+  ],
+  "solution_en": "On the last level of Watcher's Keep, the stairs to the Imprisoned One's crypt are blocked by the final seal.\nComplete the three trials, in any order:\n- Mind: solve the puzzle of the colored globes.\n- Heart: run the gauntlet, proving perseverance and courage.\n- Spirit: beat the challenge of the Eternal Warrior.\nEach trial gives one key. With the heart, mind and spirit keys, unlock the final seal; the path to the crypt is open.\nPrepare well before going down: Demogorgon waits below.",
+  "solution_fr": "Au dernier niveau de la Tour de Garde, l'escalier vers la crypte de l'Emprisonné est bloqué par le dernier sceau.\nRéussissez les trois épreuves, dans l'ordre de votre choix :\n- Esprit : résolvez l'énigme des globes colorés.\n- Cœur : passez l'épreuve du parcours, qui prouve persévérance et courage.\n- Âme : relevez le défi du Guerrier Éternel.\nChaque épreuve donne une clef. Avec les clefs du cœur, de l'esprit et de l'âme, ouvrez le dernier sceau ; la voie de la crypte est libre.\nPréparez-vous bien avant de descendre : Démogorgon attend en bas."
+ },
+ {
+  "title": 74488,
+  "idx": 173,
+  "game": "tob",
+  "chapter": "8",
+  "where_en": "Saradush",
+  "where_fr": "Saradush",
+  "kind": "main",
+  "hints_en": [
+   "Melissan wants the paranoid general Gromnir, locked in Saradush's castle, stopped before the siege can be broken.",
+   "The castle gate stays shut: ask around the Tankard Tree, the Temple of Waukeen and the streets for a secret way in.",
+   "Sister Farielle has the key to the abandoned jail across the street, which hides a passage into the castle."
+  ],
+  "hints_fr": [
+   "Mélissanne veut qu'on arrête le général paranoïaque Gromnir, enfermé dans le château de Saradush, avant de briser le siège.",
+   "La porte du château reste close : renseignez-vous à l'Arbre à Chopines, au temple de Waukyne et dans les rues pour trouver un passage secret.",
+   "Sœur Farielle a la clef de la prison abandonnée de l'autre côté de la rue, qui cache un passage vers le château."
+  ],
+  "solution_en": "After talking to Melissan, find a way into Gromnir's castle. Three leads:\n- Pyrgam Aleson at the Tankard Tree speaks of an abandoned jail; Sister Farielle at the Temple of Waukeen gives you its key. The door is across the street. Bring holy water against the undead inside and look for the secret area leading to the castle.\n- A waitress you save from bullying soldiers says the sealed sewers lead to the castle.\n- Peltje talks of vampires posing as prostitutes, based in the sewers.\nInside, Gromnir is beyond reason: kill him and his guards. Then report to Melissan for the next step.",
+  "solution_fr": "Après avoir parlé à Mélissanne, trouvez un moyen d'entrer dans le château de Gromnir. Trois pistes :\n- Pyrgam Bièritage, à l'Arbre à Chopines, parle d'une prison abandonnée ; Sœur Farielle, au temple de Waukyne, vous en donne la clef. La porte est de l'autre côté de la rue. Emportez de l'eau bénite contre les morts-vivants et cherchez la zone secrète menant au château.\n- Une serveuse que vous sauvez de soldats brutaux dit que les égouts scellés mènent au château.\n- Peltje parle de vampires déguisés en prostituées, installés dans les égouts.\nÀ l'intérieur, Gromnir n'entend pas raison : tuez-le, ainsi que ses gardes. Retournez ensuite voir Mélissanne pour la suite."
+ },
+ {
+  "title": 74489,
+  "idx": 174,
+  "game": "tob",
+  "chapter": "8",
+  "where_en": "Saradush",
+  "where_fr": "Saradush",
+  "kind": "main",
+  "hints_en": [
+   "Saradush is besieged by Yaga-Shura's army; find Melissan, the protector of the Bhaalspawn here.",
+   "Melissan says the mad general Gromnir must be dealt with first.",
+   "With Gromnir dead, leave the city through your pocket plane and go after Yaga-Shura himself."
+  ],
+  "hints_fr": [
+   "Saradush est assiégée par l'armée de Yaga-Shura ; trouvez Mélissanne, la protectrice des enfants de Bhaal.",
+   "Selon Mélissanne, il faut d'abord régler le cas du général fou Gromnir.",
+   "Une fois Gromnir mort, quittez la ville par votre Antichambre et allez chercher Yaga-Shura lui-même."
+  ],
+  "solution_en": "You arrive in Saradush, a city besieged by the fire giant Bhaalspawn Yaga-Shura. No one can leave, even by magic.\nTalk to Melissan. She promises to explain why the Bhaalspawn are hunted if you help end the siege.\nFirst deal with Gromnir Il-Khan, who has locked himself in the castle (see \"Dealing with Gromnir\"). Side quests in town are worth doing before you go.\nAfter Gromnir's death, Melissan says the only hope is to kill Yaga-Shura. Use your pocket plane ability to leave the city, then follow \"Defeating Yaga-Shura\".",
+  "solution_fr": "Vous arrivez à Saradush, assiégée par l'enfant de Bhaal et géant du feu Yaga-Shura. Personne ne peut sortir, même par magie.\nParlez à Mélissanne. Elle promet de vous expliquer pourquoi on traque les enfants de Bhaal si vous aidez à briser le siège.\nOccupez-vous d'abord de Gromnir Il-Khan, retranché dans le château (voir « Le cas Gromnir »). Les quêtes secondaires de la ville valent la peine avant de partir.\nAprès la mort de Gromnir, Mélissanne dit que le seul espoir est de tuer Yaga-Shura. Utilisez votre capacité Antichambre pour quitter la ville, puis suivez « Vaincre Yaga-Shura »."
+ },
+ {
+  "title": 74490,
+  "idx": 175,
+  "game": "tob",
+  "chapter": "8",
+  "where_en": "Saradush",
+  "where_fr": "Saradush",
+  "kind": "side",
+  "hints_en": [
+   "Captain Samand holds a young man, Mateo, accused of plotting to open a secret gate to the enemy.",
+   "Countess Santele accused him because the merchant Kiser Jhaeri kidnapped her son Ardic.",
+   "Ask the wizard Errard instead of killing him: Ardic is hidden in Kiser's house."
+  ],
+  "hints_fr": [
+   "Le capitaine Samand détient un jeune homme, Mateo, accusé de comploter l'ouverture d'un passage secret à l'ennemi.",
+   "La comtesse Santele l'a accusé parce que le marchand Kiser Jhaeri a enlevé son fils Ardic.",
+   "Interrogez le magicien Errard au lieu de le tuer : Ardic est caché dans la maison de Kiser."
+  ],
+  "solution_en": "Talk to Captain Samand, then to Mateo at the militia headquarters: he claims innocence.\nVisit Countess Santele: Kiser Jhaeri kidnapped her son Ardic and forced her to accuse Mateo.\nTalk to Kiser. He asks you to kill the wizard Errard, or even the countess, for gold and a key to Ardic's secret cell in his basement.\nGood path: speak to Errard instead. He confirms Ardic is in Kiser's home. Go back, kill Kiser and free Ardic; his testimony clears Mateo and the countess rewards you.\nEvil paths: kill Errard (Saradush's defenses suffer) or the countess for Kiser's pay. Ardic may also die in the fight.",
+  "solution_fr": "Parlez au capitaine Samand, puis à Mateo au quartier général de la milice : il clame son innocence.\nRendez visite à la comtesse Santele : Kiser Jhaeri a enlevé son fils Ardic et l'a forcée à accuser Mateo.\nParlez à Kiser. Il vous demande de tuer le magicien Errard, voire la comtesse, contre de l'or et la clef de la cellule secrète d'Ardic dans sa cave.\nVoie bonne : parlez plutôt à Errard. Il confirme qu'Ardic est chez Kiser. Retournez-y, tuez Kiser et libérez Ardic ; son témoignage innocente Mateo et la comtesse vous récompense.\nVoies mauvaises : tuer Errard (les défenses de Saradush en pâtissent) ou la comtesse pour la paie de Kiser. Ardic peut aussi mourir dans le combat."
+ },
+ {
+  "title": 74491,
+  "idx": 176,
+  "game": "tob",
+  "chapter": "8",
+  "where_en": "Forest of Mir / Marching Mountains",
+  "where_fr": "Forêt de Mir / Monts de la Marche",
+  "kind": "main",
+  "hints_en": [
+   "Yaga-Shura is immune to weapons and magic; his secret lies in the Forest of Mir or the Marching Mountains.",
+   "The witch Nyalee, in a Bhaalist temple ruin in the Haunted Glade, raised him and knows how his heart burns.",
+   "Take his blazing heart from the brazier in his lair and the golden chest from his stone bed, then bring both to Nyalee."
+  ],
+  "hints_fr": [
+   "Yaga-Shura est immunisé contre les armes et la magie ; son secret se trouve dans la Forêt de Mir ou dans les Monts de la Marche.",
+   "La sorcière Nyalee, dans les ruines d'un temple de Bhaal de la Clairière Hantée, l'a élevé et sait pourquoi son cœur brûle.",
+   "Prenez son cœur embrasé sur le brasier de son repaire et le coffre doré de son lit de pierre, puis apportez les deux à Nyalee."
+  ],
+  "solution_en": "Melissan warns that Yaga-Shura cannot be harmed as he is. Leave Saradush by the pocket plane.\nIn the Forest of Mir, reach the Haunted Glade and the ruined Bhaalist temple. The witch Nyalee explains that Yaga-Shura keeps his heart outside his body, ablaze. She will extinguish it if you also bring back her own heart, which he stole.\nIn the Marching Mountains, enter Yaga-Shura's lair. Free the woman chained in his quarters: she tells you about the small golden chest hidden in his stony bed (it holds Nyalee's heart).\nTake Yaga-Shura's heart from the brazier and the chest, return to Nyalee and give her both. She extinguishes his heart.\nThen go to the siege camp to face Yaga-Shura.",
+  "solution_fr": "Mélissanne prévient que Yaga-Shura est invulnérable en l'état. Quittez Saradush par l'Antichambre.\nDans la Forêt de Mir, gagnez la Clairière Hantée et le temple de Bhaal en ruine. La sorcière Nyalee explique que Yaga-Shura garde son cœur hors de son corps, embrasé. Elle l'éteindra si vous lui rapportez aussi son propre cœur, qu'il lui a volé.\nDans les Monts de la Marche, entrez dans le repaire de Yaga-Shura. Libérez la femme enchaînée dans ses quartiers : elle vous parle du petit coffre doré caché dans son lit de pierre (il contient le cœur de Nyalee).\nPrenez le cœur de Yaga-Shura sur le brasier et le coffre, retournez voir Nyalee et donnez-lui les deux. Elle éteint son cœur.\nAllez ensuite au campement du siège pour affronter Yaga-Shura."
+ },
+ {
+  "title": 74492,
+  "idx": 177,
+  "game": "tob",
+  "chapter": "8",
+  "where_en": "Siege camp outside Saradush",
+  "where_fr": "Campement du siège devant Saradush",
+  "kind": "main",
+  "hints_en": [
+   "Once Nyalee has extinguished his heart, Yaga-Shura can finally be hurt.",
+   "He waits among his army at the siege camp outside Saradush.",
+   "Fight through his giants and kill him; Saradush itself cannot be saved."
+  ],
+  "hints_fr": [
+   "Une fois son cœur éteint par Nyalee, Yaga-Shura peut enfin être blessé.",
+   "Il attend au milieu de son armée, au campement du siège devant Saradush.",
+   "Frayez-vous un chemin parmi ses géants et tuez-le ; Saradush elle-même ne peut être sauvée."
+  ],
+  "solution_en": "This entry closes the Yaga-Shura storyline.\nAfter Nyalee extinguishes Yaga-Shura's heart, travel to the siege camp outside Saradush. Expect a long battle against his army of giants and soldiers before you reach him.\nYaga-Shura is now vulnerable: kill him.\nSaradush has been razed in the meantime, as Yaga-Shura destroyed it while searching for you. The story continues with Melissan and the plan to attack the enclaves of Sendai and Abazigal.",
+  "solution_fr": "Cette entrée clôt l'histoire de Yaga-Shura.\nAprès que Nyalee a éteint le cœur de Yaga-Shura, rendez-vous au campement du siège devant Saradush. Attendez-vous à une longue bataille contre son armée de géants et de soldats avant de l'atteindre.\nYaga-Shura est maintenant vulnérable : tuez-le.\nEntre-temps, Saradush a été rasée : Yaga-Shura l'a détruite en vous y cherchant. L'histoire continue avec Mélissanne et le plan d'attaque des enclaves de Sendaï et d'Abazigal."
+ },
+ {
+  "title": 74493,
+  "idx": 178,
+  "game": "tob",
+  "chapter": "9",
+  "where_en": "Amkethran and the enclaves",
+  "where_fr": "Amkethran et les enclaves",
+  "kind": "main",
+  "hints_en": [
+   "Melissan sends you to the village of Amkethran, where Balthazar holds the maps to the enclaves.",
+   "Destroy Sendai and Abazigal in their enclaves; a vision then shows Balthazar fighting Melissan.",
+   "Saemon Havarian can get you into the guarded monastery, with a password and stolen uniforms."
+  ],
+  "hints_fr": [
+   "Mélissanne vous envoie au village d'Amkethran, où Balthazar détient les cartes des enclaves.",
+   "Détruisez Sendaï et Abazigal dans leurs enclaves ; une vision montre ensuite Balthazar combattant Mélissanne.",
+   "Saemon Havarian peut vous faire entrer dans le monastère gardé, avec un mot de passe et des uniformes volés."
+  ],
+  "solution_en": "After Yaga-Shura's death, Melissan sends you to Amkethran. Meet Balthazar, the head of the monastery: he gives you the maps to the enclaves.\nAttack Sendai's enclave and Abazigal's enclave, in any order (see their own entries).\nWith both dead, a vision shows Balthazar fighting Melissan. Return to Amkethran: the town is full of Balthazar's mercenaries.\nSaemon offers a way in. Refuse and fight through the town, or accept: he eventually gives you a password and disguises to enter the monastery.\nConfront Balthazar. He reveals he is one of the Five and wants every Bhaalspawn dead, himself included, and warns that Melissan has used you all along.",
+  "solution_fr": "Après la mort de Yaga-Shura, Mélissanne vous envoie à Amkethran. Rencontrez Balthazar, le chef du monastère : il vous donne les cartes des enclaves.\nAttaquez l'enclave de Sendaï et celle d'Abazigal, dans l'ordre de votre choix (voir leurs propres entrées).\nUne fois les deux morts, une vision montre Balthazar combattant Mélissanne. Retournez à Amkethran : la ville grouille des mercenaires de Balthazar.\nSaemon propose un moyen d'entrer. Refusez et traversez la ville en combattant, ou acceptez : il finit par vous donner un mot de passe et des déguisements pour entrer dans le monastère.\nAffrontez Balthazar. Il révèle qu'il est un des doigts de la Main et veut la mort de tous les enfants de Bhaal, lui compris, et vous avertit que Mélissanne vous manipule depuis le début."
+ },
+ {
+  "title": 74494,
+  "idx": 179,
+  "game": "tob",
+  "chapter": "9",
+  "where_en": "Sendai's enclave",
+  "where_fr": "Enclave de Sendaï",
+  "kind": "main",
+  "hints_en": [
+   "At Sendai's location on the map, you only find a simple woodsman.",
+   "He mentions strange events on his land; the woodsman is a disguised drow agent.",
+   "The entrance to Sendai's enclave is hidden in his cabin."
+  ],
+  "hints_fr": [
+   "À l'emplacement de Sendaï sur la carte, vous ne trouvez qu'un simple forestier.",
+   "Il parle d'événements étranges sur sa propriété ; le forestier est un agent drow déguisé.",
+   "L'entrée de l'enclave de Sendaï est cachée dans sa cabane."
+  ],
+  "solution_en": "Travel to Sendai's enclave using Balthazar's maps. A woodsman greets you and talks of strange happenings on his property.\nHe is in fact a disguised drow working for Sendai. Unmask or kill him, then search his cabin for the entrance to the enclave below.\nFight through Sendai's drow and their traps. Expect many casters and puzzles on the way.\nKill Sendai, another of the Five. The Solar will call you back to the pocket plane for a new revelation.",
+  "solution_fr": "Rendez-vous à l'enclave de Sendaï grâce aux cartes de Balthazar. Un forestier vous accueille et parle d'étranges événements sur sa propriété.\nC'est en fait un drow déguisé au service de Sendaï. Démasquez-le ou tuez-le, puis fouillez sa cabane pour trouver l'entrée de l'enclave souterraine.\nTraversez les rangs des drows de Sendaï et leurs pièges. Attendez-vous à beaucoup de lanceurs de sorts et à quelques énigmes.\nTuez Sendaï, un autre doigt de la Main. Le solaire vous rappellera dans l'Antichambre pour une nouvelle révélation."
+ },
+ {
+  "title": 74495,
+  "idx": 180,
+  "game": "tob",
+  "chapter": "9",
+  "where_en": "Abazigal's enclave",
+  "where_fr": "Enclave d'Abazigal",
+  "kind": "main",
+  "hints_en": [
+   "Abazigal's son Draconis guards the entrance to his caverns.",
+   "A dying monk of Balthazar says a scroll of reversal breaks the geas on a dragon guardian and the inner seal.",
+   "The caves link through underwater tunnels; the mad wizard Iycanth trades the scroll for an eyestalk."
+  ],
+  "hints_fr": [
+   "Draconis, le fils d'Abazigal, garde l'entrée de ses cavernes.",
+   "Un moine mourant de Balthazar explique qu'un Parchemin d'inversion rompt le sortilège du dragon gardien et du sceau intérieur.",
+   "Les grottes sont reliées par des tunnels sous-marins ; le sorcier fou Iycanth échange le parchemin contre un pédoncule."
+  ],
+  "solution_en": "Travel to Abazigal's enclave. At the entrance you meet his son Draconis: kill him (he turns into a dragon).\nInside, find Balthazar's imprisoned monk. Before dying, he gives you a rope and water breathing potions and explains that you need the scroll of reversal.\nExplore the caverns through the underwater tunnels. Get the scroll from the wizard Iycanth (see \"Iycanth's eyestalk\").\nUse it to break the geas on the dragon guardian and open Abazigal's inner lair.\nKill Abazigal, a blue half-dragon; prepare protection against electricity.",
+  "solution_fr": "Rendez-vous à l'enclave d'Abazigal. À l'entrée, vous rencontrez son fils Draconis : tuez-le (il se change en dragon).\nÀ l'intérieur, trouvez le moine prisonnier de Balthazar. Avant de mourir, il vous donne une corde et des potions de respiration aquatique, et explique qu'il vous faut le Parchemin d'inversion.\nExplorez les cavernes par les tunnels sous-marins. Obtenez le parchemin auprès du sorcier Iycanth (voir « Pédoncule oculaire d'Iycanth »).\nUtilisez-le pour rompre le sortilège du dragon gardien et ouvrir l'antre intérieur d'Abazigal.\nTuez Abazigal, un demi-dragon bleu ; prévoyez une protection contre l'électricité."
+ },
+ {
+  "title": 74496,
+  "idx": 181,
+  "game": "bg2",
+  "chapter": "2-7 (or ToB)",
+  "where_en": "Watcher's Keep, wizards' level",
+  "where_fr": "Tour de Garde, niveau des magiciens",
+  "kind": "side",
+  "hints_en": [
+   "The imp in the library says a magical fan powers every laboratory on this level.",
+   "Start with the Air Lab, just behind the imp.",
+   "The fan has two settings, high and low; switching between them matters elsewhere on the level."
+  ],
+  "hints_fr": [
+   "Le diablotin de la bibliothèque dit qu'un ventilateur magique alimente tous les laboratoires de ce niveau.",
+   "Commencez par le laboratoire de l'Air, juste derrière le diablotin.",
+   "Le ventilateur a deux réglages, fort et faible ; passer de l'un à l'autre compte ailleurs sur le niveau."
+  ],
+  "solution_en": "On the second level of Watcher's Keep, talk to the imp in the libraries. Tell him his masters are dead: he explains that the fans stopped and the labs are empty without them.\nGo to the Air Lab, right behind the imp, and start the magical fan.\nThe fan has a high and a low setting. Try both as you explore: the labs only come to life with the fan running, and the airflow affects what you can do elsewhere.\nWith the labs active you can look for the wizards' scepter keys (see \"Gather the four scepter keys\").",
+  "solution_fr": "Au deuxième niveau de la Tour de Garde, parlez au diablotin des bibliothèques. Dites-lui que ses maîtres sont morts : il explique que les ventilateurs se sont arrêtés et que les laboratoires sont vides sans eux.\nAllez au laboratoire de l'Air, juste derrière le diablotin, et mettez en marche le ventilateur magique.\nLe ventilateur a un réglage fort et un réglage faible. Essayez les deux en explorant : les laboratoires ne s'animent qu'avec le ventilateur en marche, et le courant d'air influe sur ce que vous pouvez faire ailleurs.\nUne fois les laboratoires actifs, cherchez les sceptres des magiciens (voir « Réunir les quatre sceptres »)."
+ },
+ {
+  "title": 74497,
+  "idx": 182,
+  "game": "bg2",
+  "chapter": "2-7 (or ToB)",
+  "where_en": "Watcher's Keep, wizards' level",
+  "where_fr": "Tour de Garde, niveau des magiciens",
+  "kind": "side",
+  "hints_en": [
+   "Four wizards of air, slime, cold and fire each had a library and a laboratory here.",
+   "Their pets are nearly unkillable unless you know how to hurt them.",
+   "Read the lab notes in each library: each wizard used his own element against another's creation."
+  ],
+  "hints_fr": [
+   "Quatre magiciens de l'air, de la vase, du froid et du feu avaient chacun ici une bibliothèque et un laboratoire.",
+   "Leurs créatures sont presque invincibles si l'on ne sait pas comment les blesser.",
+   "Lisez les notes de chaque bibliothèque : chaque magicien utilisait son élément contre la créature d'un autre."
+  ],
+  "solution_en": "The imp on the second level of Watcher's Keep tells you about the four elemental wizards (air, slime, cold and fire), who plotted against each other.\nVisit the four libraries and read the wizards' notes before entering their laboratories. Each note explains how to destroy a rival's creation.\nIn each lab, use the element or item named in the notes against its guardian; normal attacks barely work on them.\nDefeating the guardians lets you search the labs for the scepter keys needed by the chromatic demon.",
+  "solution_fr": "Le diablotin du deuxième niveau de la Tour de Garde vous parle des quatre magiciens élémentaires (air, vase, froid et feu), qui complotaient les uns contre les autres.\nVisitez les quatre bibliothèques et lisez les notes des magiciens avant d'entrer dans leurs laboratoires. Chaque note explique comment détruire la créature d'un rival.\nDans chaque laboratoire, utilisez l'élément ou l'objet indiqué dans les notes contre son gardien ; les attaques normales n'y font presque rien.\nUne fois les gardiens vaincus, fouillez les laboratoires pour trouver les sceptres réclamés par le démon chromatique."
+ },
+ {
+  "title": 74498,
+  "idx": 183,
+  "game": "tob",
+  "chapter": "9",
+  "where_en": "Abazigal's enclave",
+  "where_fr": "Enclave d'Abazigal",
+  "kind": "side",
+  "hints_en": [
+   "The mad wizard Iycanth will trade the scroll of reversal for a gauth's eyestalk.",
+   "The gauth vanished into one of the pools east of his laboratory.",
+   "Fetch it yourself, or restore the petrified adventurers nearby and let them do the job."
+  ],
+  "hints_fr": [
+   "Le sorcier fou Iycanth échangera le Parchemin d'inversion contre le pédoncule d'un gauth.",
+   "Le gauth a disparu dans un des bassins à l'est de son laboratoire.",
+   "Allez-le chercher vous-même, ou rendez vie aux aventuriers pétrifiés tout proches et laissez-les s'en charger."
+  ],
+  "solution_en": "In Abazigal's caverns, meet the wizard Iycanth. He wants the eyestalk of a gauth (a small beholder) that hid in one of the pools east of his lab.\nOption 1: dive through the pools (you need water breathing), find and kill the gauth, and take its eyestalk.\nOption 2: Iycanth suggests subcontracting. Nearby, Bondari and his companions (Nanoc, Tim and friends) have been turned to stone. Cast Stone to Flesh on them and hand them the \"quest\": they bring back the eyestalk.\nReturn to Iycanth's lab and trade the eyestalk for the scroll of reversal, needed to break the geas and enter Abazigal's lair.",
+  "solution_fr": "Dans les cavernes d'Abazigal, rencontrez le sorcier Iycanth. Il veut le pédoncule d'un gauth (un petit tyrannœil) caché dans un des bassins à l'est de son laboratoire.\nOption 1 : plongez dans les bassins (il faut pouvoir respirer sous l'eau), trouvez et tuez le gauth, prenez son pédoncule.\nOption 2 : Iycanth conseille de sous-traiter. Tout près, Bondari et ses compagnons (Nanoc, Tim et les autres) ont été pétrifiés. Lancez Pierre en chair sur eux et confiez-leur la « Quête » : ils rapportent le pédoncule.\nRetournez au laboratoire d'Iycanth et échangez le pédoncule contre le Parchemin d'inversion, nécessaire pour rompre le sortilège et entrer dans l'antre d'Abazigal."
+ },
+ {
+  "title": 74499,
+  "idx": 184,
+  "game": "tob",
+  "chapter": "9",
+  "where_en": "Amkethran",
+  "where_fr": "Amkethran",
+  "kind": "side",
+  "hints_en": [
+   "A boy in front of the sealed graveyard cavern blames a strange man for the undead.",
+   "Marlowe, a merchant from Calimshan, says the lich Vongoethe stole his daughter Malla's soul.",
+   "Hear the lich's side in the graveyard cavern: Marlowe sold his own soul and never paid."
+  ],
+  "hints_fr": [
+   "Un garçon devant la grotte scellée du cimetière accuse un homme étrange d'avoir attiré les morts-vivants.",
+   "Marlowe, un marchand de Calimshan, dit que la liche Vongoethe a volé l'âme de sa fille Malla.",
+   "Écoutez la version de la liche dans la grotte du cimetière : Marlowe a vendu sa propre âme et n'a jamais payé."
+  ],
+  "solution_en": "Talk to the boy near the sealed graveyard cavern on the north side of Amkethran, then to Marlowe in his house on the east cliff. He says the lich Vongoethe took his daughter Malla's soul.\nAgree to help: the guard lets you through the magical seal.\nIn the cavern, Vongoethe tells you Marlowe traded his soul for twenty years of success and fled without paying.\nChoices:\n- Kill Vongoethe and his undead (tough lich fight). If you get the soul stone, give it to Marlowe or keep it.\n- Bring Marlowe to the lich (ask him or trick him). Vongoethe takes Marlowe and gives you the girl's soul; use it to restore Malla.\n- Attacking without the stone may leave Malla dead.",
+  "solution_fr": "Parlez au garçon près de la grotte scellée du cimetière, au nord d'Amkethran, puis à Marlowe dans sa maison sur la falaise est. Il dit que la liche Vongoethe a pris l'âme de sa fille Malla.\nAcceptez de l'aider : le garde vous laisse franchir le sceau magique.\nDans la grotte, Vongoethe raconte que Marlowe a échangé son âme contre vingt ans de prospérité et s'est enfui sans payer.\nChoix :\n- Tuer Vongoethe et ses morts-vivants (combat de liche difficile). Si vous obtenez la pierre d'âme, donnez-la à Marlowe ou gardez-la.\n- Amener Marlowe à la liche (en le lui demandant ou par la ruse). Vongoethe prend Marlowe et vous donne l'âme de la fille ; utilisez-la pour rendre la vie à Malla.\n- Attaquer sans la pierre peut laisser Malla mourir."
+ },
+ {
+  "title": 74500,
+  "idx": 185,
+  "game": "tob",
+  "chapter": "8",
+  "where_en": "Saradush",
+  "where_fr": "Saradush",
+  "kind": "side",
+  "hints_en": [
+   "Lazarus, the scroll seller of Saradush, had his spellbook stolen and suspects Hectan.",
+   "Small muddy footprints lead from the shop window to a street urchin, Squip.",
+   "Hectan wants a teleportation scroll for the book; Lazarus warns it will kill whoever uses it."
+  ],
+  "hints_fr": [
+   "Lazarus, le marchand de parchemins de Saradush, s'est fait voler son livre de sorts et soupçonne Hectan.",
+   "De petites empreintes boueuses partent de la fenêtre de l'échoppe vers un gamin des rues, Squip.",
+   "Hectan veut un parchemin de téléportation contre le livre ; Lazarus prévient qu'il tuera celui qui s'en sert."
+  ],
+  "solution_en": "Talk to Lazarus in his scroll shop in Saradush. His spellbook is gone; he suspects Hectan, who was drunk at the inn that night.\nExamine the clue: small muddy footprints by the shop window. Find the urchin Squip, who admits he stole the book for Hectan.\nConfront Hectan. He will only trade the book for a teleportation scroll to escape the besieged city.\nReturn to Lazarus: he gives you the scroll, warning that anyone who reads it will rebound off the magical barrier around Saradush.\nTrade the scroll to Hectan for the book (he meets his end when he uses it).\nReturn the spellbook: Lazarus reopens his shop.",
+  "solution_fr": "Parlez à Lazarus dans son échoppe de parchemins de Saradush. Son livre de sorts a disparu ; il soupçonne Hectan, qui était saoul à l'auberge ce soir-là.\nExaminez l'indice : de petites empreintes boueuses près de la fenêtre. Trouvez le gamin Squip, qui avoue avoir volé le livre pour Hectan.\nConfrontez Hectan. Il n'échangera le livre que contre un parchemin de téléportation pour fuir la ville assiégée.\nRetournez voir Lazarus : il vous donne le parchemin, en prévenant que quiconque le lira rebondira sur la barrière magique de Saradush.\nÉchangez le parchemin contre le livre (Hectan y laisse la vie en s'en servant).\nRendez le livre : Lazarus rouvre son échoppe."
+ },
+ {
+  "title": 74501,
+  "idx": 186,
+  "game": "tob",
+  "chapter": "9",
+  "where_en": "Amkethran",
+  "where_fr": "Amkethran",
+  "kind": "side",
+  "hints_en": [
+   "A frightened man named Marlowe stops you in Amkethran.",
+   "He asks you to meet him at his home atop the east cliff.",
+   "Go there and hear his story about a lich; it starts \"The graveyard lich\"."
+  ],
+  "hints_fr": [
+   "Un homme effrayé nommé Marlowe vous arrête à Amkethran.",
+   "Il vous demande de le retrouver chez lui, en haut de la falaise est.",
+   "Allez-y et écoutez son histoire de liche ; elle lance « La liche du cimetière »."
+  ],
+  "solution_en": "In Amkethran, Marlowe approaches you, desperate, and asks you to come to his house on top of the east cliff.\nGo there and talk to him. He tells you about the lich Vongoethe and his daughter's stolen soul.\nThe story then continues in the quest \"The graveyard lich\": the sealed graveyard cavern is on the north side of town.",
+  "solution_fr": "À Amkethran, Marlowe vous aborde, désespéré, et vous demande de venir chez lui, en haut de la falaise est.\nAllez-y et parlez-lui. Il vous parle de la liche Vongoethe et de l'âme volée de sa fille.\nL'histoire continue ensuite dans la quête « La liche du cimetière » : la grotte scellée du cimetière est au nord de la ville."
+ },
+ {
+  "title": 74503,
+  "idx": 187,
+  "game": "tob",
+  "chapter": "8-10",
+  "where_en": "Pocket plane",
+  "where_fr": "Antichambre",
+  "kind": "main",
+  "hints_en": [
+   "Five corridors lead off the main room of your pocket plane; each opens when you are ready.",
+   "The fate spirit near the entrance can summon companions whose fates are tied to yours.",
+   "Before each challenge, talk to the fate spirit to fill out your party."
+  ],
+  "hints_fr": [
+   "Cinq couloirs partent de la pièce principale de votre Antichambre ; chacun s'ouvre quand vous êtes prêt.",
+   "L'esprit du destin, près de l'entrée, peut convoquer des compagnons dont le destin est lié au vôtre.",
+   "Avant chaque épreuve, parlez à l'esprit du destin pour compléter votre groupe."
+  ],
+  "solution_en": "At the start of Throne of Bhaal, Sarevok's echo explains how your pocket plane works.\nThe challenges: five corridors around the main room. The Solar opens them one by one as the story advances (after major events like the fall of Saradush or the death of one of the Five). Each holds a hard fight or test; you return to the plane when called.\nThe fate spirit: talk to it near the entrance of the plane. It can summon former companions whose fates are tied to yours, so you can rebuild your party at any time.\nUse it before each challenge.",
+  "solution_fr": "Au début du Trône de Bhaal, l'écho de Sarevok vous explique le fonctionnement de votre Antichambre.\nLes épreuves : cinq couloirs autour de la pièce principale. Le solaire les ouvre un à un à mesure que l'histoire avance (après de grands événements comme la chute de Saradush ou la mort d'un des doigts de la Main). Chacun cache un combat ou un test difficile ; vous revenez dans l'Antichambre quand on vous appelle.\nL'esprit du destin : parlez-lui près de l'entrée de l'Antichambre. Il peut convoquer d'anciens compagnons dont le destin est lié au vôtre, pour reformer votre groupe à tout moment.\nUtilisez-le avant chaque épreuve."
+ },
+ {
+  "title": 74504,
+  "idx": 188,
+  "game": "tob",
+  "chapter": "8",
+  "where_en": "Pocket plane",
+  "where_fr": "Antichambre",
+  "kind": "main",
+  "hints_en": [
+   "Sarevok's echo in the pocket plane tells you where your destiny leads next.",
+   "The pocket plane takes you where you need to be: the city of Saradush in Tethyr.",
+   "Gather your party with the fate spirit, then leave the plane through its exit."
+  ],
+  "hints_fr": [
+   "L'écho de Sarevok dans l'Antichambre vous dit où votre destin vous mène ensuite.",
+   "L'Antichambre vous emmène là où vous devez être : la ville de Saradush, au Téthyr.",
+   "Réunissez votre groupe avec l'esprit du destin, puis quittez l'Antichambre par sa sortie."
+  ],
+  "solution_en": "In the pocket plane at the start of Throne of Bhaal, talk to Sarevok's echo. He says your next destination is Saradush, a city of Tethyr.\nThe plane is not a free portal: it sends you where you need to be.\nSummon the companions you want with the fate spirit, then use the exit. You arrive in Saradush, under siege, where the quest \"Saradush under siege\" begins.",
+  "solution_fr": "Dans l'Antichambre au début du Trône de Bhaal, parlez à l'écho de Sarevok. Il dit que votre prochaine destination est Saradush, une ville du Téthyr.\nL'Antichambre n'est pas un portail libre : elle vous envoie là où vous devez être.\nConvoquez les compagnons que vous voulez grâce à l'esprit du destin, puis empruntez la sortie. Vous arrivez à Saradush, assiégée, où commence la quête « Le siège de Saradush »."
+ },
+ {
+  "title": 74505,
+  "idx": 189,
+  "game": "tob",
+  "chapter": "9",
+  "where_en": "Amkethran",
+  "where_fr": "Amkethran",
+  "kind": "main",
+  "hints_en": [
+   "In Amkethran, the monks will lead you to their master, Balthazar.",
+   "Balthazar lets you stay in town if you keep out of his monastery.",
+   "He hands you the maps to Sendai's and Abazigal's enclaves: go there next."
+  ],
+  "hints_fr": [
+   "À Amkethran, les moines vous mèneront à leur maître, Balthazar.",
+   "Balthazar vous laisse rester en ville si vous restez hors de son monastère.",
+   "Il vous remet les cartes des enclaves de Sendaï et d'Abazigal : c'est votre prochaine étape."
+  ],
+  "solution_en": "Arriving in Amkethran after the fall of Saradush, you are brought before Balthazar, head of the monastic order.\nHe is cold but allows you to stay in town as long as you do not try to enter the monastery or meddle in his affairs.\nHe gives you the maps to the Bhaalspawn enclaves that Melissan left with him. Melissan herself is nowhere to be found.\nUse the maps on the world map to attack Sendai's and Abazigal's enclaves. Meanwhile, the town has shops and side quests.",
+  "solution_fr": "En arrivant à Amkethran après la chute de Saradush, vous êtes conduit devant Balthazar, chef de l'ordre monastique.\nIl est froid mais vous autorise à rester en ville tant que vous n'essayez pas d'entrer dans le monastère ni de vous mêler de ses affaires.\nIl vous donne les cartes des enclaves des enfants de Bhaal que Mélissanne lui a laissées. Mélissanne elle-même reste introuvable.\nUtilisez ces cartes sur la carte du monde pour attaquer les enclaves de Sendaï et d'Abazigal. En attendant, la ville a des boutiques et des quêtes secondaires."
+ },
+ {
+  "title": 74506,
+  "idx": 190,
+  "game": "tob",
+  "chapter": "8-10",
+  "where_en": "Pocket plane",
+  "where_fr": "Antichambre",
+  "kind": "main",
+  "hints_en": [
+   "After each major victory, the Solar calls you back to the pocket plane.",
+   "Listen to her revelations: each one opens a new challenge corridor.",
+   "Beat every challenge; the last one destroys your pocket plane and opens the way to the Throne of Bhaal."
+  ],
+  "hints_fr": [
+   "Après chaque grande victoire, le solaire vous rappelle dans l'Antichambre.",
+   "Écoutez ses révélations : chacune ouvre un nouveau couloir d'épreuve.",
+   "Réussissez chaque épreuve ; la dernière détruit votre Antichambre et ouvre la voie du Trône de Bhaal."
+  ],
+  "solution_en": "Throughout Throne of Bhaal, the Solar summons you to your pocket plane after key events and reveals your past and your role in Alaundo's prophecy (Gorion could have taken Sarevok instead of you; you are the one meant to stop the other Bhaalspawn; the Five are Illasera, Yaga-Shura, Sendai, Abazigal and Balthazar).\nAfter each talk, she opens another challenge corridor. Enter it, with companions from the fate spirit, and win the test.\nAfter Balthazar, she reveals that your true enemy is Melissan, Bhaal's former high priestess. The final challenge destroys your pocket plane so you can follow her to the Throne of Bhaal.",
+  "solution_fr": "Tout au long du Trône de Bhaal, le solaire vous convoque dans l'Antichambre après les événements clés et vous révèle votre passé et votre rôle dans la prophétie d'Alaundo (Gorion aurait pu emmener Sarevok à votre place ; c'est vous qui devez arrêter les autres enfants de Bhaal ; la Main se compose d'Illasera, Yaga-Shura, Sendaï, Abazigal et Balthazar).\nAprès chaque entretien, elle ouvre un nouveau couloir d'épreuve. Entrez-y, avec les compagnons de l'esprit du destin, et réussissez l'épreuve.\nAprès Balthazar, elle révèle que votre véritable ennemie est Mélissanne, ancienne grande prêtresse de Bhaal. L'ultime épreuve détruit votre Antichambre pour que vous puissiez la suivre jusqu'au Trône de Bhaal."
+ },
+ {
+  "title": 74507,
+  "idx": 191,
+  "game": "tob",
+  "chapter": "8",
+  "where_en": "Saradush, abandoned jail",
+  "where_fr": "Saradush, prison abandonnée",
+  "kind": "side",
+  "hints_en": [
+   "A mute ghost of an old prisoner haunts the abandoned jail and points to his defiled grave.",
+   "He mimes a necklace, points at the nearby cells, and clutches his head: find his necklace and skull.",
+   "Place the skull and necklace in the shallow grave and sprinkle elven holy water on it."
+  ],
+  "hints_fr": [
+   "Le fantôme muet d'un vieux prisonnier hante la prison abandonnée et désigne sa tombe profanée.",
+   "Il mime un collier, montre les cellules voisines et se tient la tête : trouvez son collier et son crâne.",
+   "Déposez le crâne et le collier dans la tombe peu profonde et aspergez-la d'eau bénite elfique."
+  ],
+  "solution_en": "In the abandoned jail of Saradush (the route into Gromnir's castle), the ghost of an old beggar appears several times. He cannot speak but shows you that his grave has been defiled.\nSearch the nearby cells for his necklace, and find his skull.\nAt the shallow grave, put back the skull and the necklace, then use elven holy water to sanctify the ground.\nThe spirit finds peace, gives you experience, and opens a door you could not open before.",
+  "solution_fr": "Dans la prison abandonnée de Saradush (le chemin vers le château de Gromnir), le fantôme d'un vieux mendiant apparaît plusieurs fois. Il ne peut pas parler mais vous montre que sa tombe a été profanée.\nFouillez les cellules voisines pour trouver son collier, et retrouvez son crâne.\nÀ la tombe peu profonde, replacez le crâne et le collier, puis utilisez de l'eau bénite elfique pour sanctifier le sol.\nL'esprit trouve la paix, vous donne de l'expérience et ouvre une porte qui restait close jusque-là."
+ },
+ {
+  "title": 93935,
+  "idx": 192,
+  "game": "bg2",
+  "chapter": "2-6",
+  "where_en": "Athkatla / Deepstone",
+  "where_fr": "Athkatla / Rocheprofonde",
+  "kind": "companion",
+  "hints_en": [
+   "Dark Moon heretics court Rasaad; they meet in an abandoned amphitheater outside Athkatla.",
+   "Their leader Hammerhelm points Rasaad to Collus Darathon, founder of the Twofold Trust, in a secret temple.",
+   "Collus Darathon is Alorgoth; a map on the Dark Moon assassins leads to Deepstone and his final plan."
+  ],
+  "hints_fr": [
+   "Des hérétiques de la Lune Noire courtisent Rasaad ; ils se réunissent dans un amphithéâtre abandonné hors d'Athkatla.",
+   "Leur chef Martheaume oriente Rasaad vers Collus Darathon, fondateur du Cercle Dédoublé, dans un temple secret.",
+   "Collus Darathon est Alorgoth ; une carte sur les assassins de la Lune Noire mène à Rocheprofonde et à son dernier plan."
+  ],
+  "solution_en": "With Rasaad in the party, go to the abandoned amphitheater outside the city and hear Hammerhelm, a former Sun Soul monk who leads the Twofold believers.\nHe tells Rasaad where to find Collus Darathon: travel to the Twofold's secret temple and pass the trials to join the Twofold Trust.\nCollus Darathon is Alorgoth, who sends Sharrans to crush his own cult. Fight beside the Trust, or flee before the attack. Rasaad may defeat his old teacher, the Master of Combat, and lead the Trust.\nLater, Dark Moon assassins attack; one carries a map to Deepstone. There, Meems Dugdeep's dwarves need rock salt, a potion of explosions and a special grog to blast a tunnel into the mines.\nInside, Alorgoth opens a gate to the Plane of Shadow. Follow him with Rasaad (he goes alone if you refuse), face Alorgoth, his assistant Yxtrazzal and a shadow dragon, then escape back through the portal.",
+  "solution_fr": "Avec Rasaad, allez à l'amphithéâtre abandonné hors de la ville et écoutez Martheaume, ancien moine de la Conscience Solaire.\nIl indique à Rasaad où trouver Collus Darathon : rendez-vous au temple secret de la Dédoublée et passez les épreuves pour rejoindre le Cercle Dédoublé.\nCollus Darathon est Alorgoth, qui envoie des Sharrans écraser son propre culte. Combattez aux côtés du Cercle ou fuyez avant l'attaque. Rasaad peut vaincre son ancien professeur, le Maître d'armes, et prendre la tête du Cercle.\nPlus tard, des assassins de la Lune Noire attaquent ; l'un d'eux porte une carte de Rocheprofonde. Là-bas, les nains de Meems Creusefond ont besoin de sel gemme, d'une potion d'explosions et d'un grog spécial pour percer un tunnel vers les mines.\nÀ l'intérieur, Alorgoth ouvre un portail vers le Plan des Ombres. Suivez-le avec Rasaad (il part seul si vous refusez), affrontez Alorgoth, son assistant Yxtrazzal et un dragon d'ombre, puis repassez le portail."
+ },
+ {
+  "title": 94452,
+  "idx": 193,
+  "game": "bg2",
+  "chapter": "2-6",
+  "where_en": "Wild Forest / Hidden Refuge",
+  "where_fr": "Forêt Sauvage / Refuge Caché",
+  "kind": "side",
+  "hints_en": [
+   "Barad Ding, a wild mage at the Hidden Refuge, has lost eight cats.",
+   "They roam the Wild Forest; he gives you a bag of cat food as a lure.",
+   "Use the cat food near each feral cat, collect all eight, and bring them back to the Refuge."
+  ],
+  "hints_fr": [
+   "Barad Ding, un entropiste du Refuge Caché, a perdu huit chats.",
+   "Ils errent dans la Forêt Sauvage ; il vous donne un sac de nourriture pour chat comme appât.",
+   "Utilisez la nourriture près de chaque chat sauvage, réunissez les huit et ramenez-les au Refuge."
+  ],
+  "solution_en": "At the Hidden Refuge (Neera's camp), talk to Barad Ding. His cats Abby, Connie, Alter, Divine, Chanticleer, Eevo, Lucy and Nector are lost in the Wild Forest.\nTake the bag of cat food and search the forest. The cats are feral: use the food to lure each one.\nReturn to Barad Ding once you have all eight.\nReward: a cat named Dings. If he becomes too much trouble (he fills your bags with dead rodents), you can give him back to Barad Ding.",
+  "solution_fr": "Au Refuge Caché (le camp de Neera), parlez à Barad Ding. Ses chats Abby, Connie, Alter, Divine, Chanticleer, Eevo, Lucy et Nector sont perdus dans la Forêt Sauvage.\nPrenez le sac de nourriture pour chat et fouillez la forêt. Les chats sont sauvages : utilisez la nourriture pour attirer chacun d'eux.\nRetournez voir Barad Ding quand vous les avez tous les huit.\nRécompense : un chat nommé Dings. S'il devient trop encombrant (il remplit vos sacs de rongeurs morts), vous pouvez le rendre à Barad Ding."
+ },
+ {
+  "title": 94457,
+  "idx": 194,
+  "game": "bg2",
+  "chapter": "2-6",
+  "where_en": "Hidden Refuge / Trademeet",
+  "where_fr": "Refuge Caché / Franc-Marché",
+  "kind": "side",
+  "hints_en": [
+   "Mironda, the dwarven wild mage at the Hidden Refuge, misses a particular beer.",
+   "She wants a cask of Halfling's Help, sold in Trademeet.",
+   "Buy the cask at Vyatri's Pub in Trademeet and bring it back to her."
+  ],
+  "hints_fr": [
+   "Mironda, l'entropiste naine du Refuge Caché, regrette une bière bien précise.",
+   "Elle veut un tonneau de Providence des petites-gens, vendu à Franc-Marché.",
+   "Achetez le tonneau au pub de Vyatri à Franc-Marché et rapportez-le-lui."
+  ],
+  "solution_en": "At the Hidden Refuge, talk to Mironda, a dwarven wild mage. She asks for a cask of Halfling's Help.\nTravel to Trademeet and buy the cask from Vyatri at his pub.\nReturn to the Hidden Refuge and give it to Mironda.\nReward: a magical tankard with your name on it.",
+  "solution_fr": "Au Refuge Caché, parlez à Mironda, une entropiste naine. Elle demande un tonneau de Providence des petites-gens.\nRendez-vous à Franc-Marché et achetez le tonneau à Vyatri, dans son pub.\nRetournez au Refuge Caché et donnez-le à Mironda.\nRécompense : une chope magique portant votre nom."
+ },
+ {
+  "title": 94461,
+  "idx": 195,
+  "game": "bg2",
+  "chapter": "2-6",
+  "where_en": "Hidden Refuge",
+  "where_fr": "Refuge Caché",
+  "kind": "side",
+  "hints_en": [
+   "Zaviak, an alchemist at the Hidden Refuge, longs to see Wilson, \"the best bear in the world\".",
+   "Wilson is a bear who can travel with you.",
+   "Come back to the Refuge with Wilson in the party and talk to Zaviak."
+  ],
+  "hints_fr": [
+   "Zaviak, un alchimiste du Refuge Caché, rêve de voir Wilson, « le meilleur ours au monde ».",
+   "Wilson est un ours qui peut voyager avec vous.",
+   "Revenez au Refuge avec Wilson dans le groupe et parlez à Zaviak."
+  ],
+  "solution_en": "At the Hidden Refuge, Zaviak the alchemist says he would love to see Wilson the bear.\nIf you have Wilson travelling with you, bring him to the Refuge and talk to Zaviak for a short reunion.\nReward: a few of Zaviak's odd but powerful potions.\nIf Wilson is not in your party, this quest stays open.",
+  "solution_fr": "Au Refuge Caché, l'alchimiste Zaviak dit qu'il aimerait beaucoup voir Wilson l'ours.\nSi Wilson voyage avec vous, amenez-le au Refuge et parlez à Zaviak pour de brèves retrouvailles.\nRécompense : quelques potions étranges mais puissantes de Zaviak.\nSi Wilson n'est pas dans votre groupe, cette quête reste ouverte."
+ },
+ {
+  "title": 94464,
+  "idx": 196,
+  "game": "bg2",
+  "chapter": "2-6",
+  "where_en": "Hidden Refuge / Athkatla, Bridge District",
+  "where_fr": "Refuge Caché / Athkatla, quartier du pont",
+  "kind": "side",
+  "hints_en": [
+   "Mereth, a child wild mage at the Hidden Refuge, lost her mother's hairband.",
+   "She lost it when Neera rescued her from the Order of Eight Staves in Athkatla.",
+   "Search in and near the crates at the east end of the Bridge District."
+  ],
+  "hints_fr": [
+   "Mereth, une enfant entropiste du Refuge Caché, a perdu le serre-tête de sa mère.",
+   "Elle l'a perdu quand Neera l'a sauvée de l'Ordre des Huit Bâtons à Athkatla.",
+   "Fouillez dans et près des caisses à l'extrémité est du quartier du pont."
+  ],
+  "solution_en": "At the Hidden Refuge, talk to the young Mereth. She lost her mother's hairband just before Neera rescued her.\nGo to Athkatla's Bridge District and search the crates at its east end until you find the hairband.\nReturn to the Hidden Refuge and give it to Mereth.\nReward: a magical necklace.",
+  "solution_fr": "Au Refuge Caché, parlez à la petite Mereth. Elle a perdu le serre-tête de sa mère juste avant que Neera la sauve.\nAllez au quartier du pont d'Athkatla et fouillez les caisses à son extrémité est jusqu'à trouver le serre-tête.\nRetournez au Refuge Caché et rendez-le à Mereth.\nRécompense : un collier enchanté."
+ },
+ {
+  "title": 94474,
+  "idx": 197,
+  "game": "bg2",
+  "chapter": "2-6",
+  "where_en": "Athkatla, Waukeen's Promenade, Red Wizard Enclave",
+  "where_fr": "Athkatla, Promenade de Waukyne, enclave des Magiciens Rouges",
+  "kind": "companion",
+  "hints_en": [
+   "Inside the Red Wizard Enclave, fighting every mercenary is not the only way to reach Lanneth.",
+   "Their leader Fadell complains of low pay and pointless deaths; her journal says she drinks.",
+   "Stir up the mercenaries' grievances and push a drunk Fadell to revolt."
+  ],
+  "hints_fr": [
+   "Dans l'enclave des Magiciens Rouges, combattre tous les mercenaires n'est pas le seul moyen d'atteindre Lanneth.",
+   "Leur chef Fadell se plaint d'être mal payée et de morts inutiles ; son journal dit qu'elle boit.",
+   "Attisez les griefs des mercenaires et poussez une Fadell ivre à la révolte."
+  ],
+  "solution_en": "Part of Neera's quest, after the Hidden Refuge is destroyed. Enter the Red Wizard Enclave in Waukeen's Promenade.\nTalk to Fadell, the leader of the mercenaries: she says \"things are bad\". Ask more: her men are paid next to nothing.\nSearch the enclave for Fadell's journal: she resents her men's deaths and drinks.\nUse these facts to sow revolt among the mercenaries. Once Fadell is drunk enough, she and her men rise against the Red Wizards.\nIn the final fight, Fadell refuses to help Lanneth even when told you caused many of her men's deaths.\nAlternatively, fight the mercenaries yourself.",
+  "solution_fr": "Fait partie de la quête de Neera, après la destruction du Refuge Caché. Entrez dans l'enclave des Magiciens Rouges, dans la Promenade de Waukyne.\nParlez à Fadell, le chef des mercenaires : elle dit que « les choses vont mal ». Insistez : ses hommes sont très mal payés.\nFouillez l'enclave pour trouver le journal de Fadell : elle en veut aux Magiciens pour la mort de ses hommes et boit.\nServez-vous de ces informations pour semer la révolte parmi les mercenaires. Une fois Fadell assez ivre, elle et ses hommes se soulèvent contre les Magiciens Rouges.\nAu combat final, Fadell refuse d'aider Lanneth, même quand celle-ci révèle que vous avez causé la mort de nombre de ses hommes.\nSinon, affrontez vous-même les mercenaires."
+ },
+ {
+  "title": 94483,
+  "idx": 198,
+  "game": "bg2",
+  "chapter": "2-6",
+  "where_en": "Athkatla, Waukeen's Promenade, Red Wizard Enclave",
+  "where_fr": "Athkatla, Promenade de Waukyne, enclave des Magiciens Rouges",
+  "kind": "companion",
+  "hints_en": [
+   "A minotaur slave and former gladiator, Ghallus, could be a strong ally inside the enclave.",
+   "His cell needs a key: Lanneth has one, and a Red Wizard carries a copy.",
+   "Get the copy, deal with the mercenaries first, then free the slaves before facing Lanneth."
+  ],
+  "hints_fr": [
+   "Un esclave minotaure et ancien gladiateur, Ghallus, pourrait être un allié de poids dans l'enclave.",
+   "Sa cellule demande une clef : Lanneth en a une, et un Magicien Rouge en porte un double.",
+   "Obtenez le double, occupez-vous d'abord des mercenaires, puis libérez les esclaves avant d'affronter Lanneth."
+  ],
+  "solution_en": "In the Red Wizard Enclave, watch the minotaur Ghallus kill a mercenary in the arena, then talk to him.\nHe needs a key to free himself and the other slaves. Lanneth has one, but a Red Wizard holds a copy: find and take it.\nGhallus prefers that you deal with the mercenaries first (see Part 1).\nReturn and unlock the slave cells. If the mercenaries are still around, Ghallus leads a bloody revolt against them.\nGhallus then helps you fight Lanneth and her servants.",
+  "solution_fr": "Dans l'enclave des Magiciens Rouges, regardez le minotaure Ghallus tuer un mercenaire dans l'arène, puis parlez-lui.\nIl lui faut une clef pour se libérer, ainsi que les autres esclaves. Lanneth en a une, mais un Magicien Rouge détient un double : trouvez-le et prenez-le.\nGhallus préfère que vous vous occupiez d'abord des mercenaires (voir la 1re partie).\nRevenez et ouvrez les cellules des esclaves. Si les mercenaires sont toujours là, Ghallus mène contre eux une révolte sanglante.\nGhallus vous aide ensuite à combattre Lanneth et ses serviteurs."
+ },
+ {
+  "title": 94495,
+  "idx": 199,
+  "game": "bg2",
+  "chapter": "2-6",
+  "where_en": "Wild Forest / Athkatla",
+  "where_fr": "Forêt Sauvage / Athkatla",
+  "kind": "companion",
+  "hints_en": [
+   "Neera wants to meet in the Wild Forest outside Athkatla about a secret camp for wild mages.",
+   "At the Hidden Refuge, Telana asks you to protect the elven wild mage Daxus, who plays at Delosar's.",
+   "When the Refuge is destroyed, the survivors are held in the Red Wizard Enclave in Waukeen's Promenade."
+  ],
+  "hints_fr": [
+   "Neera veut vous retrouver dans la Forêt Sauvage, hors d'Athkatla, au sujet d'un camp secret d'entropistes.",
+   "Au Refuge Caché, Telana vous demande de protéger l'entropiste elfe Daxus, qui se produit chez Delosar.",
+   "Quand le Refuge est détruit, les survivants sont retenus dans l'enclave des Magiciens Rouges, Promenade de Waukyne."
+  ],
+  "solution_en": "Meet Neera in Athkatla; she asks you to join her in the Wild Forest. If she cannot find the camp yet, come back later. Then find a way past the wards protecting it.\nAt the Hidden Refuge, meet Telana and Hayes, who shelter wild mages from the Order of Eight Staves. Talk to the other refugees for side quests.\nWith Neera, go to Delosar's in the Bridge District at night and talk to Daxus after his show. Give him one of Knocktor's Talismans of the Hearthfire, or let Hayes escort him. Protect him from the Red Wizards.\nWhile you are away, the Refuge is destroyed. Telana says the captives are in the Red Wizard Enclave in Waukeen's Promenade: enter, free them and defeat Lanneth (see Disorder in the Order).\nReturn to the Refuge to talk to Telana and Neera.",
+  "solution_fr": "Rencontrez Neera à Athkatla ; elle vous donne rendez-vous dans la Forêt Sauvage. Si elle ne trouve pas encore le camp, revenez plus tard. Trouvez ensuite un moyen de franchir les protections du camp.\nAu Refuge Caché, rencontrez Telana et Hayes, qui protègent les entropistes de l'Ordre des Huit Bâtons. Parlez aux autres réfugiés pour des quêtes secondaires.\nAvec Neera, allez la nuit à l'auberge de Delosar, au quartier du pont, et parlez à Daxus après son spectacle. Donnez-lui un des Talismans de foyer ardent de Cognor, ou laissez Hayes l'escorter. Protégez-le des Magiciens Rouges.\nPendant votre absence, le Refuge est détruit. Telana dit que les captifs sont dans l'enclave des Magiciens Rouges, Promenade de Waukyne : entrez, libérez-les et vainquez Lanneth (voir L'ordre en désordre).\nRetournez au Refuge pour parler à Telana et Neera."
+ },
+ {
+  "title": 96076,
+  "idx": 200,
+  "game": "tob",
+  "chapter": "8-9",
+  "where_en": "Tethyr / Thay",
+  "where_fr": "Téthyr / Thay",
+  "kind": "companion",
+  "hints_en": [
+   "Telana tells Neera that Vicross, leader of the Order of Eight Staves, is in Tethyr nearby.",
+   "Neera wants to lure her into a trap in a clearing with a burst of wild magic.",
+   "A wild surge carries you to Thay, where Szass Tam offers to send you into Vicross's estate."
+  ],
+  "hints_fr": [
+   "Telana fait savoir à Neera que Vicross, chef de l'Ordre des Huit Bâtons, est tout près, au Téthyr.",
+   "Neera veut l'attirer dans un piège dans une clairière avec une décharge de magie entropique.",
+   "Un hiatus entropique vous emporte en Thay, où Szass Tam propose de vous envoyer dans la propriété de Vicross."
+  ],
+  "solution_en": "With Neera in the party in Throne of Bhaal, she learns that Vicross is close. Go to the clearing she suggests.\nNeera casts Nahal's Reckless Dweomer; set up camp and wait for Vicross and the Red Wizards.\nVicross, herself a wild mage, teleports back to Thay, and a wild surge pulls you along into a gladiator arena. Win the fight.\nThe announcer Dennaton calls you to the staging area. Szass Tam, zulkir of necromancy, wants Vicross dead: rest and prepare, then he teleports you into her estate.\nKill Vicross, search her quarters, and ring the Bell of Summoning.\nSzass Tam betrays you; survive his attack until he sends you back to Tethyr. The Order of Eight Staves is finished.",
+  "solution_fr": "Avec Neera dans le groupe pendant le Trône de Bhaal, elle apprend que Vicross est proche. Allez à la clairière qu'elle propose.\nNeera lance la rupture hasardeuse de Nahal ; dressez le camp et attendez Vicross et les Magiciens Rouges.\nVicross, elle-même entropiste, se téléporte en Thay, et un hiatus entropique vous entraîne avec elle dans une arène de gladiateurs. Gagnez le combat.\nLe maître de l'arène, Dennaton, vous convoque en coulisse. Szass Tam, zulkir de la nécromancie, veut la mort de Vicross : reposez-vous et préparez-vous, puis il vous téléporte dans sa propriété.\nTuez Vicross, fouillez ses appartements et sonnez la Cloche de convocation.\nSzass Tam vous trahit ; résistez à son attaque jusqu'à ce qu'il vous renvoie au Téthyr. L'Ordre des Huit Bâtons est fini."
+ }
+]

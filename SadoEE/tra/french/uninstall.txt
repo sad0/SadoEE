@@ -1,0 +1,1 @@
+﻿Party Stash : avant de désinstaller, videz le coffre en jeu : Ctrl + clic gauche sur le gros sac à côté du poids, sur la page d'inventaire. Vos sacs collectionnés reviennent remplis des objets qu'ils peuvent contenir ; tout le reste tombe au sol. Sinon, le contenu du coffre reste dans vos sauvegardes mais devient inaccessible jusqu'à la réinstallation du mod.

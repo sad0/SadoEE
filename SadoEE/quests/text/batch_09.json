@@ -1,0 +1,842 @@
+[
+ {
+  "title": 74356,
+  "idx": 41,
+  "game": "bg2",
+  "chapter": "2-6",
+  "where_en": "Athkatla, Government District / Docks",
+  "where_fr": "Athkatla, quartier du gouvernement / quartier des quais",
+  "kind": "companion",
+  "hints_en": [
+   "Someone in the Government District knows how Isaea abuses his rank.",
+   "Isaea's dirty dealings leave traces with a drunk at the docks, a slaver and in his own house.",
+   "Gather enough proof, then bring it all to Isaea's commander Corgeig in the government building."
+  ],
+  "hints_fr": [
+   "Quelqu'un dans le quartier du gouvernement sait comment Isaéa abuse de son grade.",
+   "Les sales affaires d'Isaéa laissent des traces : un ivrogne sur les quais, un esclavagiste et sa propre maison.",
+   "Réunissez assez de preuves, puis apportez-les toutes au commandant Corgeig, dans le bâtiment du gouvernement."
+  ],
+  "solution_en": "Isaea Roenall uses his military post to arrest Nalia, and her location is unknown.\nIn the Government District, talk to the soldier Khellor: he names Barg, a contact at the docks, and points to Isaea's house northwest of the government building.\nIn the Docks District, get Barg talking: he names the slaver Dirth, found at the Sea's Bounty. Dirth attacks; take the transaction ledger from his body.\nSearch Isaea's house for his records.\nBring everything to Corgeig in the government building. With too little proof he sends you away; with all of it he frees Nalia and opens an investigation into Isaea.",
+  "solution_fr": "Isaéa Roenal se sert de son poste dans l'armée pour faire arrêter Nalia, et personne ne sait où elle est détenue.\nDans le quartier du gouvernement, parlez au soldat Khellor : il vous donne le nom de Barg, un contact sur les quais, et vous indique la maison d'Isaéa au nord-ouest du bâtiment du gouvernement.\nDans le quartier des quais, faites parler Barg : il cite l'esclavagiste Dirth, à la Bonté Marine. Dirth vous attaque ; prenez le livre de transactions sur son corps.\nFouillez la maison d'Isaéa pour trouver ses registres.\nApportez le tout à Corgeig dans le bâtiment du gouvernement. Sans assez de preuves il vous renvoie ; avec tout, il libère Nalia et ouvre une enquête sur Isaéa."
+ },
+ {
+  "title": 74357,
+  "idx": 42,
+  "game": "bg2",
+  "chapter": "2-3",
+  "where_en": "Windspear Hills, Firkraag's dungeon",
+  "where_fr": "Collines de Lancevent, donjon de Firkraag",
+  "kind": "side",
+  "hints_en": [
+   "The relic hunter in Firkraag's dungeon is too eager to let you take all the risks.",
+   "Be ready for a fight when you bring Samia what she asked for.",
+   "Samia and her companions attack once you hand over or show the texts from the burial chamber."
+  ],
+  "hints_fr": [
+   "La chasseuse de reliques du donjon de Firkraag tient beaucoup à vous laisser prendre tous les risques.",
+   "Préparez-vous au combat quand vous rapportez à Samia ce qu'elle demande.",
+   "Samia et ses compagnons attaquent dès que vous revenez avec les textes de la chambre funéraire."
+  ],
+  "solution_en": "In Firkraag's dungeon in the Windspear Hills, Samia asks you to fetch texts about a dead Tethyrian king from his burial chamber and gives you her key.\nThe chamber is guarded by an invisible creature: bring a way to see or dispel invisibility.\nTake the texts and return to Samia. She reveals her plan: let a dupe do the work, then kill them and keep the prize. She and her companions attack.\nDefeat them to close this entry. The texts and the tomb's loot stay with you.",
+  "solution_fr": "Dans le donjon de Firkraag, dans les Collines de Lancevent, Samia vous demande de rapporter des textes sur un roi téthyrien mort, depuis sa chambre funéraire, et vous donne sa clef.\nLa chambre est gardée par une créature invisible : prévoyez de quoi voir ou dissiper l'invisibilité.\nPrenez les textes et retournez voir Samia. Elle dévoile son plan : laisser un naïf faire le travail, puis le tuer et garder le butin. Elle et ses compagnons attaquent.\nBattez-les pour clore cette entrée. Les textes et le butin de la tombe vous restent."
+ },
+ {
+  "title": 74358,
+  "idx": 43,
+  "game": "bg2",
+  "chapter": "2-3",
+  "where_en": "Athkatla, Graveyard District / Docks",
+  "where_fr": "Athkatla, quartier du cimetière / quartier des quais",
+  "kind": "main",
+  "hints_en": [
+   "Bodhi, in the crypts under the Graveyard District, gives you a series of jobs against the Shadow Thieves.",
+   "The jobs are a guarded shipment at the docks, then a rescue or a murder, then the Shadowmaster himself.",
+   "Gaelan Bayle holds the key to Aran's lair, and Tizzak inside explains the two magical doors."
+  ],
+  "hints_fr": [
+   "Bodhi, dans les cryptes sous le quartier du cimetière, vous confie des missions contre les Voleurs de l'Ombre.",
+   "Il y a une cargaison gardée sur les quais, puis un sauvetage ou un meurtre, puis le Maître des Ombres en personne.",
+   "Gaelan Bayle a la clef du repaire d'Aran, et Tizzak, à l'intérieur, explique les deux portes magiques."
+  ],
+  "solution_en": "Side with Bodhi in the Graveyard District crypts. The Shadow Thieves become hostile. The crypts are a safe place to rest.\n1. Docks District: kill the Shadow Thieves guarding a shipment, take the crate and bring it to Bodhi.\n2. Second task, depending on your path: rescue Palern Flynn alive from the second floor of the Shadow Thief headquarters, or kill the merchant Vulova (Government District, between the jail and the government building) and drop her cloak and dagger in his fountain. You may let Vulova flee instead; failing this task does not matter.\n3. Get the key from Gaelan Bayle, then use the secret door on the right inside the guild headquarters. Free Tizzak: press the button at the end of the trapped northern hall, take the second key from the wizard Haz, and kill Aran Linvail.\nReturn to Bodhi: she has booked passage to the asylum where Imoen is held.",
+  "solution_fr": "Rangez-vous du côté de Bodhi, dans les cryptes du quartier du cimetière. Les Voleurs de l'Ombre deviennent hostiles.\n1. Quartier des quais : tuez les Voleurs de l'Ombre qui gardent une cargaison, prenez la caisse et rapportez-la à Bodhi.\n2. Deuxième tâche, selon votre voie : sauver Palern Flynn vivant, au deuxième étage du quartier général des Voleurs de l'Ombre, ou tuer le marchand Vulova (quartier du gouvernement, entre la prison et le bâtiment du gouvernement) et laisser la cape et la dague de Bodhi dans sa fontaine. Laisser fuir Vulova ou échouer ici n'a pas d'importance.\n3. Prenez la clef chez Gaelan Bayle, puis passez la porte secrète à droite de l'entrée du quartier général. Libérez Tizzak : appuyez sur le bouton au bout du couloir piégé au nord, prenez la seconde clef sur le magicien Haz, et tuez Aran Linvail.\nRetournez voir Bodhi : elle a payé votre passage vers l'asile où Imoen est détenue."
+ },
+ {
+  "title": 74359,
+  "idx": 44,
+  "game": "bg2",
+  "chapter": "2-3",
+  "where_en": "Athkatla, Slums, planar sphere",
+  "where_fr": "Athkatla, bas quartiers, sphère planaire",
+  "kind": "side",
+  "hints_en": [
+   "The necromancer Lavok is the master of the planar sphere in the Slums.",
+   "Bring the sphere back to your own plane, and Lavok will ask one last favour before he dies.",
+   "Decide whether to carry the dying Lavok outside or to let him die inside the sphere."
+  ],
+  "hints_fr": [
+   "Le nécromancien Lavok est le maître de la sphère planaire des bas quartiers.",
+   "Ramenez la sphère dans votre plan, et Lavok demandera une dernière faveur avant de mourir.",
+   "Choisissez entre porter Lavok mourant à l'extérieur ou le laisser mourir dans la sphère."
+  ],
+  "solution_en": "Enter the planar sphere in the Slums (with Valygar, or with what opens its door) and work through it until you face Lavok and return the sphere to Athkatla's plane.\nThe old necromancer is dying. You can honour his wish and bring him outside to die under his home sky, or refuse and let him die inside so he can harm no one.\nIf the protagonist is a mage, Lavok leaves the sphere to you: it becomes your stronghold, with its own quests later.\nEither way the quest ends with Lavok dead.",
+  "solution_fr": "Entrez dans la sphère planaire des bas quartiers (avec Valygar, ou avec ce qui ouvre sa porte) et progressez jusqu'à affronter Lavok et ramener la sphère dans le plan d'Athkatla.\nLe vieux nécromancien est mourant. Vous pouvez exaucer son souhait et l'emmener dehors pour qu'il meure sous son ciel natal, ou refuser et le laisser mourir à l'intérieur pour qu'il ne nuise à personne.\nSi le protagoniste est un mage, Lavok vous lègue la sphère : elle devient votre forteresse, avec ses propres quêtes ensuite.\nDans tous les cas, la quête se termine avec la mort de Lavok."
+ },
+ {
+  "title": 74360,
+  "idx": 45,
+  "game": "bg2",
+  "chapter": "2-3",
+  "where_en": "Windspear Hills, Firkraag's dungeon",
+  "where_fr": "Collines de Lancevent, donjon de Firkraag",
+  "kind": "side",
+  "hints_en": [
+   "Garren's child was taken by Firkraag's men; look for a hidden lair in the Windspear Hills.",
+   "The child sits in a magically locked cell; a mage in the dungeon has the key.",
+   "You do not need to fight Firkraag: free the child, then go back to Garren's cabin."
+  ],
+  "hints_fr": [
+   "L'enfant de Garren a été enlevé par les hommes de Firkraag ; cherchez un repaire caché dans les Collines de Lancevent.",
+   "L'enfant est dans une cellule à serrure magique ; un mage du donjon en a la clef.",
+   "Inutile d'affronter Firkraag : libérez l'enfant, puis retournez à la cabane de Garren."
+  ],
+  "solution_en": "After Garren clears your name with the Order of the Radiant Heart, he finds his child kidnapped.\nExplore the Windspear Hills to find Firkraag's dungeon; an orc inside mentions Firkraag, a sign you are on track. You may also meet the relic hunter Samia, who sends you into a tomb (a trap, see her own entry).\nFind the child in a magically locked cell. Kill the mage nearby who carries the key, open the cell and the child runs home.\nReturn to Garren's cabin for your reward. Firkraag is an optional and very dangerous red dragon fight.",
+  "solution_fr": "Après que Garren a prouvé votre innocence auprès de l'Ordre du Cœur Radieux, il découvre que son enfant a été enlevé.\nExplorez les Collines de Lancevent pour trouver le donjon de Firkraag ; un orque à l'intérieur parle de Firkraag, signe que vous êtes sur la bonne piste. Vous pouvez aussi y croiser la chasseuse de reliques Samia, qui vous envoie dans une tombe (un piège, voir son entrée).\nTrouvez l'enfant dans une cellule à serrure magique. Tuez le mage voisin qui porte la clef, ouvrez la cellule et l'enfant rentre chez lui.\nRetournez à la cabane de Garren pour votre récompense. Firkraag est un combat facultatif et très dangereux contre un dragon rouge."
+ },
+ {
+  "title": 74361,
+  "idx": 46,
+  "game": "bg2",
+  "chapter": "2-3",
+  "where_en": "Umar Hills, Imnesvale",
+  "where_fr": "Collines d'Umar, Imnesvale",
+  "kind": "side",
+  "hints_en": [
+   "A farmer in Imnesvale gossips about his neighbours, the Hendricks.",
+   "The Hendricks hid their late daughter's treasure in an unusual place on their farm.",
+   "One of the Hendricks' chickens swallowed a gem: buy it from the farmer, or take it."
+  ],
+  "hints_fr": [
+   "Un fermier d'Imnesvale aime bavarder sur ses voisins, les Hendrick.",
+   "Les Hendrick ont caché le trésor de leur défunte fille dans un endroit inattendu de leur ferme.",
+   "Un des poulets des Hendrick a avalé une gemme : achetez-la au fermier, ou prenez-la."
+  ],
+  "solution_en": "In Imnesvale, talk to the farmer Jeb. He suspects the Hendricks, farmers who fled into the village, fed something valuable to one of their chickens; their adventuring daughter brought it home before she died.\nTalk to Mr. Hendrick and offer to buy the hidden item: paying a fair price gets you a beljuril gem and a grateful farmer.\nYou can also find the gem by dealing with the chicken yourself, which is the less kind option.",
+  "solution_fr": "À Imnesvale, parlez au fermier Jeb. Il soupçonne les Hendrick, des paysans réfugiés au village, d'avoir fait avaler quelque chose de précieux à un de leurs poulets ; leur fille aventurière l'avait rapporté avant de mourir.\nParlez au fermier Hendrick et proposez de lui acheter l'objet caché : à un prix honnête, vous obtenez une gemme beljuril et un fermier reconnaissant.\nVous pouvez aussi récupérer la gemme en vous occupant vous-même du poulet, ce qui est moins aimable."
+ },
+ {
+  "title": 74362,
+  "idx": 47,
+  "game": "bg2",
+  "chapter": "5",
+  "where_en": "Underdark, Ust Natha",
+  "where_fr": "Ombreterre, Ust Natha",
+  "kind": "main",
+  "hints_en": [
+   "Disguised as Veldrin, report to Solaufein at the Male Fighters' Society and never keep the drow waiting.",
+   "Each task comes from Phaere: meet her and Solaufein where she says, within the time she gives.",
+   "Many tasks have a bloodless way out: the svirfneblin patrol and Solaufein can both be talked into helping you."
+  ],
+  "hints_fr": [
+   "Sous l'apparence de Veldrin, présentez-vous à Solaufein à la société des Combattants et ne faites jamais attendre les drows.",
+   "Chaque tâche vient de Phaere : retrouvez-la avec Solaufein là où elle le dit, dans le délai donné.",
+   "Plusieurs tâches ont une issue sans massacre : la patrouille svirfneblin et Solaufein peuvent être convaincus de vous aider."
+  ],
+  "solution_en": "Go fast at every step: delays make the drow suspicious and the whole city turns hostile.\n1. Meet Solaufein at the Male Fighters' Society (north, past the Female Fighters' Society). Meet him and the handmaiden Imrae at the city entrance.\n2. Rescue Phaere from the illithids, meeting Solaufein near their city in the southeast of the main cavern. Return to the entrance, then see Phaere at the tavern.\n3. Kill the svirfneblin patrol near their village, or visit the gnomes and get the leader's helmet peacefully (you may send Solaufein back first). Bring the helmet to Phaere at the tavern.\n4. Kill the adamantite-smuggling beholder on its spelljammer platform with Phaere and Solaufein; do not hurt them.\n5. Meet Phaere at the temple of Lolth to see Matron Mother Ardulace, then in her quarters in the Female Fighters' Society tower. She wants Solaufein dead: kill him in his quarters or talk him into giving you his piwafwi cloak, and bring it back.",
+  "solution_fr": "Faites vite : tout retard éveille les soupçons et rend la cité hostile.\n1. Retrouvez Solaufein à la société des Combattants (au nord, après la société des Combattantes). Rejoignez-le avec la vestale Imrae à l'entrée de la ville.\n2. Sauvez Phaere des illithides, en retrouvant Solaufein près de leur cité au sud-est de la caverne principale. Revenez à l'entrée, puis voyez Phaere à la taverne.\n3. Tuez la patrouille svirfneblin près de leur village, ou allez voir les gnomes et obtenez le heaume du chef sans combat. Apportez le heaume à Phaere à la taverne.\n4. Tuez le tyrannœil contrebandier d'adamantite sur la plateforme de son navire spelljammer avec Phaere et Solaufein ; ne les blessez pas.\n5. Retrouvez Phaere au temple de Lolth pour voir la matriarche Ardulace, puis dans ses quartiers de la tour de la société des Combattantes. Elle veut la mort de Solaufein : tuez-le dans ses quartiers ou convainquez-le de vous donner son piwafwi, et rapportez-le."
+ },
+ {
+  "title": 74363,
+  "idx": 48,
+  "game": "bg2",
+  "chapter": "2-3",
+  "where_en": "Windspear Hills",
+  "where_fr": "Collines de Lancevent",
+  "kind": "side",
+  "hints_en": [
+   "Lord Jierdan Firkraag pays well to clear ogres from his lands in the Windspear Hills.",
+   "The ogres are not what they seem, and there is a witness to what happens.",
+   "Accept Garren Windspear's offer of shelter in his cabin south of the ambush."
+  ],
+  "hints_fr": [
+   "Le seigneur Jierdan Firkraag paie bien pour chasser les ogres de ses terres, dans les Collines de Lancevent.",
+   "Les ogres ne sont pas ce qu'ils semblent être, et quelqu'un est témoin de la scène.",
+   "Acceptez l'abri que Garren Lancevent vous offre dans sa cabane, au sud de l'embuscade."
+  ],
+  "solution_en": "Lord Jierdan Firkraag approaches you and offers 10,000 gold to kill the ogre bandits on his land in the Windspear Hills.\nTravel there. The ogres are paladins of the Order of the Radiant Heart under illusions, and they see you as ogres too; the fight is forced.\nGarren Windspear witnesses it and offers you shelter in his cabin, a short way south. Accept, or return later.\nAt the cabin Garren explains that Firkraag set this up, and that Firkraag ruined him too. He leaves for Athkatla to clear your name. This leads to the rescue of his child.",
+  "solution_fr": "Le seigneur Jierdan Firkraag vous aborde et vous offre 10 000 pièces d'or pour tuer les bandits ogres de ses terres, dans les Collines de Lancevent.\nRendez-vous sur place. Les ogres sont des paladins de l'Ordre du Cœur Radieux sous illusion, et ils vous voient vous aussi comme des ogres ; le combat est inévitable.\nGarren Lancevent en est témoin et vous offre l'abri de sa cabane, un peu au sud. Acceptez, ou revenez plus tard.\nÀ la cabane, Garren explique que Firkraag a tout manigancé, et qu'il l'a ruiné lui aussi. Il part pour Athkatla clamer votre innocence. La suite est le sauvetage de son enfant."
+ },
+ {
+  "title": 74364,
+  "idx": 49,
+  "game": "bg2",
+  "chapter": "6",
+  "where_en": "Suldanessellar",
+  "where_fr": "Suldanessellar",
+  "kind": "main",
+  "hints_en": [
+   "Look for High Priestess Demin in the southwest of the elven city.",
+   "Three relics stolen from Rillifane's temple must go back on his statue; the strongest monsters carry them.",
+   "The cup, talisman and moonblade are spread among the city's invaders, one with the black dragon in the northwest."
+  ],
+  "hints_fr": [
+   "Cherchez la Grande Prêtresse Demin au sud-ouest de la cité elfique.",
+   "Trois reliques volées au temple de Rillifane doivent retourner sur sa statue ; les monstres les plus forts les portent.",
+   "La coupe, le talisman et la lame de lune sont répartis entre les envahisseurs, dont le dragon noir au nord-ouest."
+  ],
+  "solution_en": "The Rhynn Lanthorn reveals Suldanessellar, besieged by Irenicus's creatures. Elhan stays at the entrance.\nAn elf says Demin was fighting in the southwest: find her in a building there. Irenicus has sealed the palace with Queen Ellesime inside.\nAgree to her plan: recover the cup, the talisman and the moonblade from the strongest monsters in the city, including the black dragon outside to the northwest. Demin confirms when you have them.\nPlace the three relics on Rillifane's statue in his temple. The avatar of Rillifane Rallathil wakes the forest guardians and breaks the seal.\nEnter the palace; you will need the Stone Harp and Horn to get through it.",
+  "solution_fr": "Le Rhynn Lanthorn révèle Suldanessellar, assiégée par les créatures d'Irenicus. Elhan reste à l'entrée.\nUn elfe dit avoir vu Demin se battre au sud-ouest : trouvez-la dans un bâtiment de ce quartier. Irenicus a scellé le palais avec la reine Ellésime à l'intérieur.\nAcceptez son plan : reprenez la coupe, le talisman et la lame de lune aux monstres les plus puissants de la cité, dont le dragon noir au nord-ouest, hors de la ville. Demin confirme quand vous les avez.\nPlacez les trois reliques sur la statue de Rillifane dans son temple. L'avatar de Rillifane Rallathil réveille les gardiens de la forêt et brise le sceau.\nEntrez dans le palais ; il vous faudra la Harpe et le Cor de Pierre pour le traverser."
+ },
+ {
+  "title": 74365,
+  "idx": 50,
+  "game": "bg2",
+  "chapter": "2-3",
+  "where_en": "Umar Hills, Imnesvale",
+  "where_fr": "Collines d'Umar, Imnesvale",
+  "kind": "side",
+  "hints_en": [
+   "Not every ogre in the Umar Hills is your enemy.",
+   "Madulf and his fellow deserters would rather live in peace near the village.",
+   "Talk to Madulf instead of fighting, then bring his offer to Imnesvale's mayor."
+  ],
+  "hints_fr": [
+   "Tous les ogres des Collines d'Umar ne sont pas vos ennemis.",
+   "Madulf et ses compagnons déserteurs préféreraient vivre en paix près du village.",
+   "Parlez à Madulf au lieu de combattre, puis portez son offre au maire d'Imnesvale."
+  ],
+  "solution_en": "In the Umar Hills, talk to the ogre Madulf rather than attacking him and his band of deserters.\nAgree to help them reach an understanding with Imnesvale, then speak with Mayor Lloyd in the village.\nThe deal: the deserters protect the village and are left in peace, maybe even trading now and then. Killing them instead skips this ending.",
+  "solution_fr": "Dans les Collines d'Umar, parlez à l'ogre Madulf au lieu de l'attaquer, lui et sa bande de déserteurs.\nAcceptez de les aider à s'entendre avec Imnesvale, puis parlez au maire Lloyd au village.\nL'accord : les déserteurs protègent le village et on les laisse en paix, avec peut-être un peu de commerce de temps en temps. Les tuer à la place supprime cette issue."
+ },
+ {
+  "title": 74366,
+  "idx": 51,
+  "game": "bg2",
+  "chapter": "2-6",
+  "where_en": "Athkatla, Waukeen's Promenade / Government District",
+  "where_fr": "Athkatla, Promenade de Waukyne / quartier du gouvernement",
+  "kind": "companion",
+  "hints_en": [
+   "Travel with Cernd: an old friend of his has news about the wife he left behind.",
+   "Cernd's former servant Fennecia knows what happened, but talks more freely without him.",
+   "The child lives with the noble Deril in the southernmost mansion of the Government District."
+  ],
+  "hints_fr": [
+   "Voyagez avec Cernd : un vieil ami a des nouvelles de la femme qu'il a quittée.",
+   "Fennecia, l'ancienne servante de Cernd, sait ce qui s'est passé, mais parle mieux sans lui.",
+   "L'enfant vit chez le noble Deril, dans la demeure la plus au sud du quartier du gouvernement."
+  ],
+  "solution_en": "With Cernd in the party, Igarol tells him that his abandoned wife was pregnant, and sends him to his old house in Waukeen's Promenade.\nIn the house, a beggar says the servant Fennecia now works as a nanny in her own home, marked on your map.\nFennecia only says that Galia is dead while Cernd is there; talk to her alone. Galia took up with the noble Deril and died in strange circumstances; the baby is still in Deril's house, the southernmost mansion in the Government District.\nGo there and help Cernd confront Deril. If you refuse, it ends badly with Cernd.\nCernd names the boy Ahsdale and takes him to the Druid Grove; come back a day or so later to get Cernd again.",
+  "solution_fr": "Avec Cernd dans le groupe, Igarol lui apprend que la femme qu'il a abandonnée était enceinte, et l'envoie à son ancienne maison de la Promenade de Waukyne.\nDans la maison, un mendiant dit que la servante Fennecia travaille maintenant comme nourrice chez elle ; sa maison est sur votre carte.\nFennecia dit seulement que Galia est morte tant que Cernd est là : parlez-lui seul. Galia s'est installée avec le noble Deril et est morte dans d'étranges circonstances ; le bébé est resté chez Deril, la demeure la plus au sud du quartier du gouvernement.\nAllez-y et aidez Cernd à affronter Deril. Si vous refusez, cela tourne mal avec Cernd.\nCernd nomme l'enfant Ahsdale et l'emmène au bosquet des druides ; revenez un jour ou deux plus tard pour reprendre Cernd."
+ },
+ {
+  "title": 74367,
+  "idx": 52,
+  "game": "bg2",
+  "chapter": "2-3",
+  "where_en": "Athkatla, Docks / Umar Hills",
+  "where_fr": "Athkatla, quartier des quais / Collines d'Umar",
+  "kind": "companion",
+  "hints_en": [
+   "Tolgerias of the Cowled Wizards wants Valygar Corthala; start at Valygar's house in the Docks District.",
+   "His servant Hervo, his friend Suna Seni and a clerk in the government building all point to family land.",
+   "Valygar hides in a cabin in the Umar Hills; hear him out before deciding whom to help."
+  ],
+  "hints_fr": [
+   "Tolgerias, des Mages Cagoulés, veut Valygar Corthala ; commencez par sa maison du quartier des quais.",
+   "Son serviteur Hervo, son amie Suna Seni et un employé du bâtiment du gouvernement parlent tous de terres familiales.",
+   "Valygar se cache dans une cabane des Collines d'Umar ; écoutez-le avant de choisir qui aider."
+  ],
+  "solution_en": "Tolgerias, in the government building, asks you to bring Valygar back dead or alive. Refusing angers the Cowled Wizards.\nIn Valygar's house in the Docks District, Hervo lets you look around and mentions the family land in the Umar Hills and his friend Suna Seni. The clerk Llarsh confirms the land and links Valygar to Lavok and the planar sphere in the Slums.\nFind Valygar in his cabin in the Umar Hills. He explains that the wizards need his blood to open the sphere, where Lavok waits to steal a relative's body.\nChoices: recruit him and enter the sphere together (good path); let him go (he can be found later through Hervo); or kill him and bring the body to Tolgerias.\nLying to Tolgerias fails. Whatever you do, expect Tolgerias to turn on you near the sphere.",
+  "solution_fr": "Tolgerias, au bâtiment du gouvernement, vous demande de ramener Valygar mort ou vif. Refuser fâche les Mages Cagoulés.\nDans la maison de Valygar, quartier des quais, Hervo vous laisse fouiller et parle des terres de la famille dans les Collines d'Umar et de son amie Suna Seni. Le clerc Llarsh confirme ces terres et relie Valygar à Lavok et à la sphère planaire des bas quartiers.\nTrouvez Valygar dans sa cabane des Collines d'Umar. Il explique que les mages ont besoin de son sang pour ouvrir la sphère, où Lavok attend de voler le corps d'un descendant.\nChoix : le recruter et entrer ensemble dans la sphère (voie bonne) ; le laisser partir (on le retrouve ensuite par Hervo) ; ou le tuer et apporter son corps à Tolgerias.\nMentir à Tolgerias échoue. Dans tous les cas, attendez-vous à ce que Tolgerias se retourne contre vous près de la sphère."
+ },
+ {
+  "title": 74368,
+  "idx": 53,
+  "game": "bg2",
+  "chapter": "2-3",
+  "where_en": "Trademeet",
+  "where_fr": "Franc-Marché",
+  "kind": "side",
+  "hints_en": [
+   "After the ceremony in Trademeet, two rival nobles each try to hire you.",
+   "Both want the Mantle of Waukeen from a haunted tomb in town, to prove their claim.",
+   "Lord Logan asks for the circlet for the sake of peace; giving it to him is the gentlest ending."
+  ],
+  "hints_fr": [
+   "Après la cérémonie de Franc-Marché, deux nobles rivaux tentent chacun de vous engager.",
+   "Les deux veulent le Manteau de Waukyne, dans une tombe hantée de la ville, pour prouver leur rang.",
+   "Le Seigneur Logan vous demande le bandeau au nom de la paix ; le lui donner est l'issue la plus douce."
+  ],
+  "solution_en": "Once you have dealt with Trademeet's troubles, Lord Logan Coprith holds a ceremony. Lady Lilith Lurraxol and Lord Skarmaen Alibakkar each approach you; visit one of them at their estate.\nYour employer gives you the tomb key and warns it is haunted. Lord Logan asks you to bring the Mantle of Waukeen to him instead.\nClear the tomb and take the gold circlet. Outcomes:\nGive it to Logan: smaller reward, both families annoyed, but peace kept.\nWork for one family: you are rewarded for killing the head of the other, and Logan is unhappy.\nIf both families end up fighting you and each other, all die; Logan does not blame you.",
+  "solution_fr": "Une fois les problèmes de Franc-Marché réglés, le Seigneur Logan Coprith organise une cérémonie. Dame Lilith Lurraxol et le seigneur Skarmaen Alibakkar viennent chacun vous voir ; rendez visite à l'un d'eux dans son domaine.\nVotre employeur vous donne la clef de la tombe et vous prévient qu'elle est hantée. Le Seigneur Logan vous demande de lui apporter le Manteau de Waukyne à la place.\nNettoyez la tombe et prenez le bandeau en or. Issues :\nLe donner à Logan : récompense moindre, les deux familles fâchées, mais la paix préservée.\nTravailler pour une famille : vous êtes récompensé pour avoir tué le chef de l'autre, et Logan est mécontent.\nSi les deux familles finissent par se battre contre vous et entre elles, tous meurent ; Logan ne vous en veut pas."
+ },
+ {
+  "title": 74369,
+  "idx": 54,
+  "game": "bg2",
+  "chapter": "5",
+  "where_en": "Underdark, Ust Natha",
+  "where_fr": "Ombreterre, Ust Natha",
+  "kind": "main",
+  "hints_en": [
+   "A silver dragon guards the way to the surface, but her hands are tied while the drow hold her eggs.",
+   "Adalon disguises you as the drow Veldrin so you can search Ust Natha.",
+   "Earn the drow's trust step by step until you can take the eggs, then carry them back to Adalon."
+  ],
+  "hints_fr": [
+   "Un dragon d'argent garde le chemin de la surface, mais elle ne peut rien faire tant que les drows ont ses œufs.",
+   "Adalon vous donne l'apparence du drow Veldrin pour fouiller Ust Natha.",
+   "Gagnez peu à peu la confiance des drows jusqu'à pouvoir prendre les œufs, puis rapportez-les à Adalon."
+  ],
+  "solution_en": "In the Underdark, reach Adalon the silver dragon. Irenicus and Bodhi stole her eggs and gave them to the drow.\nShe gives you the appearance of a drow named Veldrin and sends you into Ust Natha. Play along with the drow tasks (see the Ust Natha quest) without being found out, until you get hold of the eggs.\nReturn the eggs to Adalon: she gives you an item from her hoard and takes you to the surface.\nIf the city turns against you, Adalon can no longer help and only a hard fight remains. Destroying the eggs or attacking Adalon makes her an enemy, and you must find another exit.",
+  "solution_fr": "Dans l'Ombreterre, rejoignez Adalon, le dragon d'argent. Irenicus et Bodhi lui ont volé ses œufs et les ont donnés aux drows.\nElle vous donne l'apparence d'un drow nommé Veldrin et vous envoie à Ust Natha. Jouez le jeu des tâches drows (voir la quête d'Ust Natha) sans vous faire démasquer, jusqu'à mettre la main sur les œufs.\nRapportez les œufs à Adalon : elle vous offre un objet de son trésor et vous ramène à la surface.\nSi la cité se retourne contre vous, Adalon ne peut plus vous aider et il ne reste qu'un combat difficile. Détruire les œufs ou attaquer Adalon fait d'elle une ennemie, et il faut trouver une autre sortie."
+ },
+ {
+  "title": 74370,
+  "idx": 55,
+  "game": "bg2",
+  "chapter": "2-3",
+  "where_en": "Athkatla",
+  "where_fr": "Athkatla",
+  "kind": "companion",
+  "hints_en": [
+   "A mob in Athkatla is about to burn someone at the stake.",
+   "The victim is a drow cleric you may remember from the Sword Coast.",
+   "Drive off or kill the fanatics around the stake to save Viconia."
+  ],
+  "hints_fr": [
+   "Une foule d'Athkatla s'apprête à brûler quelqu'un sur un bûcher.",
+   "La victime est une prêtresse drow dont vous vous souvenez peut-être, de la Côte des Épées.",
+   "Faites fuir ou tuez les fanatiques autour du bûcher pour sauver Viconia."
+  ],
+  "solution_en": "In Athkatla, a group of fanatics has caught Viconia and is about to burn her at the stake.\nTalk to their leader and intervene; the fanatics attack, so be ready for a fight.\nOnce they are dead, talk to Viconia: she can join the party now, or tells you she can be found in the Graveyard District later.",
+  "solution_fr": "À Athkatla, un groupe de fanatiques a capturé Viconia et va la brûler sur un bûcher.\nParlez à leur meneur et intervenez ; les fanatiques attaquent, préparez-vous au combat.\nUne fois qu'ils sont morts, parlez à Viconia : elle peut rejoindre le groupe tout de suite, ou vous dit qu'on la trouvera plus tard dans le quartier du cimetière."
+ },
+ {
+  "title": 74371,
+  "idx": 56,
+  "game": "bg2",
+  "chapter": "4-5",
+  "where_en": "Sahuagin city",
+  "where_fr": "Cité des sahuagins",
+  "kind": "side",
+  "hints_en": [
+   "Two imps watch over six chests and offer a game before you open the locked one.",
+   "Each illusionary figure hands you an item that belongs to another; return every item to its true owner's chest.",
+   "Solve the riddle before opening the locked chest, or the specter inside kills whoever opens it."
+  ],
+  "hints_fr": [
+   "Deux diablotins surveillent six coffres et proposent un jeu avant que vous n'ouvriez le coffre verrouillé.",
+   "Chaque figure illusoire vous donne un objet qui appartient à une autre ; rendez chaque objet au coffre de son vrai propriétaire.",
+   "Résolvez l'énigme avant d'ouvrir le coffre verrouillé, sinon le spectre qu'il contient tue celui qui l'ouvre."
+  ],
+  "solution_en": "In the room with six chests, the imps warn that the locked chest holds something that steals souls. They will protect you if you solve their riddle.\nTalk to each illusionary figure: it gives you an item. Work out which figure each item really belongs to and put it in the chest behind that figure.\nWhen all items are placed correctly, talk to the imps. If you are right, open the sixth chest: the imps drive the specter away and you keep the drow treasure.\nOpening it without solving the riddle releases the specter, which kills the opener and flees.",
+  "solution_fr": "Dans la salle aux six coffres, les diablotins préviennent que le coffre verrouillé renferme quelque chose qui vole les âmes. Ils vous protégeront si vous résolvez leur énigme.\nParlez à chaque figure illusoire : elle vous donne un objet. Trouvez à quelle figure appartient vraiment chaque objet et placez-le dans le coffre derrière cette figure.\nQuand tout est bien placé, parlez aux diablotins. Si vous avez juste, ouvrez le sixième coffre : les diablotins chassent le spectre et vous gardez le trésor drow.\nL'ouvrir sans résoudre l'énigme libère le spectre, qui tue celui qui l'ouvre et s'enfuit."
+ },
+ {
+  "title": 74372,
+  "idx": 57,
+  "game": "bg2",
+  "chapter": "2-3",
+  "where_en": "Trademeet / Druid Grove",
+  "where_fr": "Franc-Marché / bosquet des druides",
+  "kind": "side",
+  "hints_en": [
+   "After the druid grove, Lord Logan sends you to Guildmistress Busya in his house.",
+   "The Dao genies will leave once they have the rakshasa Ihtafeer, who hides outside town.",
+   "The local Shadow Thieves suspect the old potion seller in the hut northeast of the druid grove."
+  ],
+  "hints_fr": [
+   "Après le bosquet des druides, le Seigneur Logan vous envoie voir la maîtresse de guilde Busya chez lui.",
+   "Les génies Dao partiront dès qu'ils auront la rakshasa Ihtafeer, cachée hors de la ville.",
+   "Les Voleurs de l'Ombre du coin soupçonnent la vieille marchande de potions de la hutte au nord-est du bosquet des druides."
+  ],
+  "solution_en": "Once the druid grove is calm, Lord Logan Coprith tells you about the genies. Talk to Guildmistress Busya in his house: find the rakshasa or kill the genies.\nTalk to Khan Zahraa, leader of the Dao. He wants the head of the rakshasa Ihtafeer, probably hiding near town.\nItona of the Shadow Thieves says Ihtafeer has replaced the potion seller Adratha, in a hut northeast of the druid grove. Go there, unmask her and kill her.\nBring the head to Khan Zahraa: the Dao leave for Calimshan. Fighting the genies also solves it.\nCollect your reward from Busya, then report to Lord Logan.",
+  "solution_fr": "Une fois le bosquet des druides apaisé, le Seigneur Logan Coprith vous parle des génies. Voyez la maîtresse de guilde Busya chez lui : trouver la rakshasa ou tuer les génies.\nParlez au Khan Zahraa, chef des Dao. Il veut la tête de la rakshasa Ihtafeer, sans doute cachée près de la ville.\nItona, des Voleurs de l'Ombre, dit qu'Ihtafeer a pris la place de la marchande de potions Adratha, dans une hutte au nord-est du bosquet des druides. Allez-y, démasquez-la et tuez-la.\nApportez la tête au Khan Zahraa : les Dao repartent pour Calimshan. Combattre les génies règle aussi le problème.\nRécupérez votre récompense auprès de Busya, puis faites votre rapport au Seigneur Logan."
+ },
+ {
+  "title": 74373,
+  "idx": 58,
+  "game": "bg2",
+  "chapter": "2-3",
+  "where_en": "Windspear Hills",
+  "where_fr": "Collines de Lancevent",
+  "kind": "side",
+  "hints_en": [
+   "This is the sad ending of the hunt for Garren's child.",
+   "The child must be freed before anything happens to it in Firkraag's dungeon.",
+   "Free the child from its cell first; only then think about facing Firkraag."
+  ],
+  "hints_fr": [
+   "C'est la triste fin de la recherche de l'enfant de Garren.",
+   "L'enfant doit être libéré avant qu'il ne lui arrive quoi que ce soit dans le donjon de Firkraag.",
+   "Libérez d'abord l'enfant de sa cellule ; ne pensez à Firkraag qu'ensuite."
+  ],
+  "solution_en": "This entry closes the Garren quest when his child died in Firkraag's dungeon.\nGarren is broken and furious, even if you killed Firkraag, and there is nothing more to do with him.\nTo avoid it, reload and rescue the child: kill the mage who holds the key to the magic cell, open it and let the child run home before you deal with the dragon.",
+  "solution_fr": "Cette entrée clôt la quête de Garren quand son enfant est mort dans le donjon de Firkraag.\nGarren est anéanti et furieux, même si vous avez tué Firkraag, et il n'y a plus rien à faire avec lui.\nPour l'éviter, rechargez et sauvez l'enfant : tuez le mage qui a la clef de la cellule magique, ouvrez-la et laissez l'enfant rentrer chez lui avant de vous occuper du dragon."
+ },
+ {
+  "title": 74374,
+  "idx": 59,
+  "game": "bg2",
+  "chapter": "2",
+  "where_en": "Athkatla, Graveyard District",
+  "where_fr": "Athkatla, quartier du cimetière",
+  "kind": "main",
+  "hints_en": [
+   "Valen's mistress will not deal with you for free.",
+   "Her price is the same kind of sum the Shadow Thieves ask, but smaller.",
+   "Come back to the Graveyard District at night with 15,000 gold."
+  ],
+  "hints_fr": [
+   "La maîtresse de Valen ne traite pas gratuitement.",
+   "Son prix ressemble à celui des Voleurs de l'Ombre, en plus modeste.",
+   "Revenez de nuit au quartier du cimetière avec 15 000 pièces d'or."
+  ],
+  "solution_en": "Bodhi, Valen's mistress, refused to deal with you because you lacked her price.\nGather 15,000 gold through side quests in and around Athkatla.\nReturn to the Graveyard District at night and talk to her again to accept her offer. This starts Bodhi's tasks and moves the story to the next chapter.",
+  "solution_fr": "Bodhi, la maîtresse de Valen, a refusé de traiter avec vous faute de la somme demandée.\nRéunissez 15 000 pièces d'or grâce aux quêtes d'Athkatla et des environs.\nRetournez de nuit au quartier du cimetière et reparlez-lui pour accepter son offre. Cela lance les tâches de Bodhi et fait passer l'histoire au chapitre suivant."
+ },
+ {
+  "title": 74375,
+  "idx": 60,
+  "game": "bg2",
+  "chapter": "2",
+  "where_en": "Athkatla, Graveyard District",
+  "where_fr": "Athkatla, quartier du cimetière",
+  "kind": "main",
+  "hints_en": [
+   "This entry records that you turned Bodhi down.",
+   "Refusing Bodhi keeps you on the Shadow Thieves' side.",
+   "Pay Gaelan Bayle the Shadow Thieves' price to move on."
+  ],
+  "hints_fr": [
+   "Cette entrée note que vous avez repoussé Bodhi.",
+   "Refuser Bodhi vous garde du côté des Voleurs de l'Ombre.",
+   "Payez à Gaelan Bayle le prix des Voleurs de l'Ombre pour avancer."
+  ],
+  "solution_en": "Bodhi offered to help you find Imoen for less gold than the Shadow Thieves, with bloody jobs in return. You refused, and she is now your enemy, though she let you go.\nNothing more to do here. Gather the 20,000 gold for Gaelan Bayle in the Slums: he sends you to the Shadowmaster, Aran Linvail, and the Shadow Thieves' path of the next chapter.\nExpect to meet Bodhi again as a foe.",
+  "solution_fr": "Bodhi vous a proposé de retrouver Imoen pour moins d'or que les Voleurs de l'Ombre, en échange de missions sanglantes. Vous avez refusé, et elle est maintenant votre ennemie, même si elle vous a laissé partir.\nPlus rien à faire ici. Réunissez les 20 000 pièces d'or pour Gaelan Bayle, dans les bas quartiers : il vous envoie au Maître des Ombres, Aran Linvail, et sur la voie des Voleurs de l'Ombre au chapitre suivant.\nAttendez-vous à recroiser Bodhi en ennemie."
+ },
+ {
+  "title": 74376,
+  "idx": 61,
+  "game": "bg2",
+  "chapter": "2",
+  "where_en": "Athkatla, Graveyard District",
+  "where_fr": "Athkatla, quartier du cimetière",
+  "kind": "main",
+  "hints_en": [
+   "A woman named Valen approaches you and hints that your current allies cannot be trusted.",
+   "Her mistress waits for you in the Graveyard District, but only at night.",
+   "Follow Bodhi when she leads you away to talk in private."
+  ],
+  "hints_fr": [
+   "Une femme nommée Valen vous aborde et laisse entendre que vos alliés actuels ne sont pas fiables.",
+   "Sa maîtresse vous attend dans le quartier du cimetière, mais seulement la nuit.",
+   "Suivez Bodhi quand elle vous emmène pour parler à l'écart."
+  ],
+  "solution_en": "Some time after you meet Gaelan Bayle, Valen approaches you in Athkatla and invites you to meet her mistress.\nGo to the Graveyard District at night. Bodhi introduces herself and asks you to follow her to a quieter place.\nShe reveals that Gaelan works for the Shadow Thieves and offers the same help for 15,000 gold. Accept (with the gold, or come back later with it) to work for her, or refuse and stay with the Shadow Thieves.\nWith some characters, Bodhi decides she cannot trust you, vanishes in mist and promises to meet again in battle.",
+  "solution_fr": "Quelque temps après votre rencontre avec Gaelan Bayle, Valen vous aborde à Athkatla et vous invite à rencontrer sa maîtresse.\nAllez de nuit au quartier du cimetière. Bodhi se présente et vous demande de la suivre dans un endroit plus discret.\nElle révèle que Gaelan travaille pour les Voleurs de l'Ombre et propose la même aide pour 15 000 pièces d'or. Acceptez (avec l'or, ou revenez plus tard avec) pour travailler pour elle, ou refusez et restez avec les Voleurs de l'Ombre.\nAvec certains personnages, Bodhi décide qu'elle ne peut pas vous faire confiance, disparaît dans la brume et promet de vous revoir au combat."
+ },
+ {
+  "title": 74377,
+  "idx": 62,
+  "game": "bg2",
+  "chapter": "2-3",
+  "where_en": "Trademeet",
+  "where_fr": "Franc-Marché",
+  "kind": "side",
+  "hints_en": [
+   "Jenia asks you to see her son Tiris at their house north of the Alibakkar estate.",
+   "The tanner Rejiek from the Bridge District is in Trademeet, working with a skinless creature.",
+   "Not everyone who hunts the skin dancer is who he claims to be; keep a restoration spell at hand."
+  ],
+  "hints_fr": [
+   "Jenia vous demande de voir son fils Tiris, dans leur maison au nord du domaine Alibakkar.",
+   "Le tanneur Rejiek, du quartier du Pont, est à Franc-Marché avec une créature sans peau.",
+   "Celui qui chasse le derviche peleur n'est pas forcément ce qu'il prétend ; gardez un sort de Restauration sous la main."
+  ],
+  "solution_en": "This follows Rejiek's escape in the Bridge District. Jenia sends you to Tiris: he and Raissa were kidnapped and taken to the woods by the southwest gate.\nIn the woods, Darsidian Moor says he hunts a skin dancer hiding in a walled area north of the east gate, in an orange pavilion, and goes ahead.\nThere, Darsidian asks you to kill an unconscious 'Rejiek'. Be careful: Darsidian and the rescued 'Raissa' can be skin dancers too, and the real Rejiek may be in disguise.\nKill Rejiek and Darsidian. The true Raissa has been turned into a skin dancer: cast Restoration on her quickly (the Waukeenar temple may sell a scroll). Without it she flees or must be killed.\nReturn to Tiris. Best ending: Raissa restored, and the couple leave to marry.",
+  "solution_fr": "Fait suite à la fuite de Rejiek dans le quartier du Pont. Jenia vous envoie voir Tiris : lui et Raïssa ont été enlevés et emmenés dans les bois près de la porte sud-ouest.\nDans les bois, Darsidian Moor dit chasser un derviche peleur caché dans une zone murée au nord de la porte est, dans un pavillon orange, et part devant.\nLà-bas, Darsidian vous demande de tuer un « Rejiek » inconscient. Méfiance : Darsidian et la « Raïssa » secourue peuvent aussi être des derviches peleurs, et le vrai Rejiek peut être déguisé.\nTuez Rejiek et Darsidian. La vraie Raïssa a été changée en derviche peleur : lancez vite Restauration sur elle (le temple de Waukyne vend peut-être un parchemin). Sinon elle s'enfuit ou doit être tuée.\nRetournez voir Tiris. Meilleure fin : Raïssa guérie, et le couple part se marier."
+ },
+ {
+  "title": 74378,
+  "idx": 63,
+  "game": "bg2",
+  "chapter": "2-6",
+  "where_en": "Athkatla, Slums, Copper Coronet",
+  "where_fr": "Athkatla, bas quartiers, Couronne de Cuivre",
+  "kind": "companion",
+  "hints_en": [
+   "Mazzy's pride has led her to challenge an ogre pit fighter at the Copper Coronet.",
+   "An alchemist named Festule has a potion that could even the odds.",
+   "Get Gorf's girlfriend Bunkin to slip Festule's potion into his drink before the fight."
+  ],
+  "hints_fr": [
+   "Par fierté, Mazzy a défié un ogre gladiateur à la Couronne de Cuivre.",
+   "Un alchimiste nommé Festule a une potion qui pourrait équilibrer le combat.",
+   "Persuadez Bunkin, la petite amie de Gorf, de verser la potion de Festule dans son verre avant le duel."
+  ],
+  "solution_en": "With Mazzy in the party, she challenges Gorf the Squisher, an ogre pit fighter, to a duel at the Copper Coronet.\nBefore going to the fight, get a potion from Festule the Alchemist. He suggests talking to Bunkin, Gorf's girlfriend.\nConvince Bunkin that the potion will make Gorf nicer so she puts it in his drink.\nGo to the Copper Coronet's pit: Mazzy fights Gorf alone. With the potion, she should win. Without help she may die, so buff her before the duel and keep a way to raise her.",
+  "solution_fr": "Avec Mazzy dans le groupe, elle défie Gorf l'Écrabouilleur, un ogre gladiateur, en duel à la Couronne de Cuivre.\nAvant le combat, obtenez une potion auprès de Festule l'alchimiste. Il conseille de parler à Bunkin, la petite amie de Gorf.\nConvainquez Bunkin que la potion rendra Gorf plus gentil, pour qu'elle la verse dans son verre.\nAllez dans l'arène de la Couronne de Cuivre : Mazzy affronte Gorf seule. Avec la potion, elle devrait gagner. Sans aide elle peut mourir : renforcez-la avant le duel et prévoyez de quoi la ressusciter."
+ },
+ {
+  "title": 74379,
+  "idx": 64,
+  "game": "bg2",
+  "chapter": "2-6",
+  "where_en": "Athkatla, Graveyard District",
+  "where_fr": "Athkatla, quartier du cimetière",
+  "kind": "companion",
+  "hints_en": [
+   "Travel with Nalia after her keep has been cleared; a messenger will find her.",
+   "Her father's funeral takes place in Athkatla's Graveyard District.",
+   "At the funeral, the son of Lord Roenall presses Nalia about her betrothal."
+  ],
+  "hints_fr": [
+   "Voyagez avec Nalia après la libération de son donjon ; un messager viendra la trouver.",
+   "Les funérailles de son père ont lieu dans le quartier du cimetière d'Athkatla.",
+   "Aux funérailles, le fils du Seigneur Roenal presse Nalia au sujet de ses fiançailles."
+  ],
+  "solution_en": "With Nalia in the party after Lord de'Arnise's death, a messenger asks her to come to her father's funeral.\nGo to the Graveyard District in Athkatla soon. At the funeral, Isaea Roenall insists that Nalia honour the betrothal her father arranged and grows angry when she refuses.\nNothing to fight here. This sets up Isaea's later move against Nalia (see 'Nalia abducted by Isaea Roenall').",
+  "solution_fr": "Avec Nalia dans le groupe après la mort du seigneur de'Arnise, un messager lui demande de venir aux funérailles de son père.\nAllez vite dans le quartier du cimetière d'Athkatla. Aux funérailles, Isaéa Roenal exige que Nalia respecte les fiançailles arrangées par son père et se fâche quand elle refuse.\nAucun combat ici. Cela prépare l'action d'Isaéa contre Nalia plus tard (voir « Enlèvement de Nalia par Isaéa Roenal »)."
+ },
+ {
+  "title": 74380,
+  "idx": 65,
+  "game": "bg2",
+  "chapter": "4",
+  "where_en": "Brynnlaw",
+  "where_fr": "Brynnlaw",
+  "kind": "main",
+  "hints_en": [
+   "After Spellhold, Saemon Havarian waits at the Brynnlaw tavern with an offer of passage.",
+   "His ship is disabled; he wants you to steal the horn that opens the sea gates.",
+   "Desharik's girlfriend Cayia keeps the horn in her house, west on the second tier, at night."
+  ],
+  "hints_fr": [
+   "Après Brisesort, Saemon Havarian vous attend à la taverne de Brynnlaw avec une offre de passage.",
+   "Son navire est hors d'état ; il veut que vous voliez la corne qui ouvre les portes du port.",
+   "Cayia, l'amie de Desharik, garde la corne chez elle, à l'ouest au deuxième niveau, la nuit."
+  ],
+  "solution_en": "Once out of the asylum, Saemon offers a way off the island. Gather your gear and meet him at the tavern.\nHe reveals that the Pirate Lord Desharik has disabled his ship; he plans to steal Desharik's. Your part: steal the horn that opens the sea gates from Cayia's house, west on the second tier, at night.\nBring it to Saemon at the docks. After a short fight with Desharik's men you sail away, and Saemon gives you a silver sword (trouble follows, see 'Betrayed on the voyage back').\nAlternatives: refuse and use the magic portal inside the asylum. If Saemon dies in the fight with Desharik, the portal is your only way out.",
+  "solution_fr": "Une fois sorti de l'asile, Saemon propose de vous faire quitter l'île. Rassemblez votre matériel et rejoignez-le à la taverne.\nIl avoue que le Seigneur Pirate Desharik a mis son navire hors d'état ; il compte voler celui de Desharik. Votre rôle : voler la corne qui ouvre les portes du port chez Cayia, à l'ouest au deuxième niveau, la nuit.\nApportez-la à Saemon sur les quais. Après un court combat contre les hommes de Desharik, vous prenez la mer et Saemon vous donne une épée d'argent (des ennuis suivent, voir « Trahison sur le chemin de retour »).\nAutres choix : refuser et utiliser le portail magique dans l'asile. Si Saemon meurt dans le combat contre Desharik, le portail est votre seule issue."
+ },
+ {
+  "title": 74381,
+  "idx": 66,
+  "game": "bg2",
+  "chapter": "4-5",
+  "where_en": "At sea, then the Sahuagin city",
+  "where_fr": "En mer, puis la cité des sahuagins",
+  "kind": "main",
+  "hints_en": [
+   "The silver sword Saemon gave you was not his to give.",
+   "Its real owners, the githyanki, come aboard to take it back.",
+   "Survive the githyanki attack; the ship is sinking and the sahuagin take you below."
+  ],
+  "hints_fr": [
+   "L'épée d'argent que Saemon vous a donnée n'était pas à lui.",
+   "Ses vrais propriétaires, les githyankis, montent à bord pour la reprendre.",
+   "Survivez à l'attaque des githyankis ; le navire coule et les sahuagins vous emmènent sous la mer."
+  ],
+  "solution_en": "On the voyage from Brynnlaw, githyanki board the ship: the silver sword Saemon gave you was stolen from them. They fight to get it back; prepare for a tough battle.\nDuring the fight, sahuagin storm the sinking ship and Saemon teleports away.\nYou end up in the Sahuagin city under the sea. From there the road leads into the Underdark.",
+  "solution_fr": "Pendant la traversée depuis Brynnlaw, des githyankis abordent le navire : l'épée d'argent que Saemon vous a donnée leur avait été volée. Ils se battent pour la reprendre ; préparez-vous à un combat difficile.\nPendant la bataille, des sahuagins envahissent le navire qui coule et Saemon se téléporte.\nVous vous retrouvez dans la cité des sahuagins, sous la mer. De là, la route mène à l'Ombreterre."
+ },
+ {
+  "title": 74382,
+  "idx": 67,
+  "game": "bg2",
+  "chapter": "2-6",
+  "where_en": "Athkatla / Underdark",
+  "where_fr": "Athkatla / Ombreterre",
+  "kind": "side",
+  "hints_en": [
+   "A letter in Rejiek Hidesman's home names a craftsman who was working with him.",
+   "Darcin Cole believes you are Rejiek and will finish the armor for a rare ingredient.",
+   "The blood of a silver dragon can only come from Adalon in the Underdark."
+  ],
+  "hints_fr": [
+   "Une lettre chez Rejiek Mégissier nomme un artisan qui travaillait avec lui.",
+   "Darcin Cole vous prend pour Rejiek et finira l'armure contre un ingrédient rare.",
+   "Le sang de dragon d'argent ne peut venir que d'Adalon, dans l'Ombreterre."
+  ],
+  "solution_en": "Search Rejiek Hidesman's home after the skinning murders: take the unfinished hide and the letter.\nFind the man the letter mentions and name him correctly as Darcin Cole. He takes you for Rejiek and asks for the blood of a silver dragon.\nIn the Underdark, after helping Adalon, obtain some of her blood.\nGive the hide and the blood to Darcin Cole and come back four days later. He hands over the finished dark leather armor, then realises you are not Rejiek and attacks with summoned wizards. Be ready for a fight.",
+  "solution_fr": "Fouillez la maison de Rejiek Mégissier après les meurtres des écorchés : prenez la peau inachevée et la lettre.\nTrouvez l'homme cité dans la lettre et nommez-le correctement : Darcin Cole. Il vous prend pour Rejiek et demande du sang de dragon d'argent.\nDans l'Ombreterre, après avoir aidé Adalon, obtenez un peu de son sang.\nDonnez la peau et le sang à Darcin Cole et revenez quatre jours plus tard. Il vous remet l'armure de cuir noir terminée, puis comprend que vous n'êtes pas Rejiek et attaque avec des magiciens convoqués. Préparez-vous au combat."
+ },
+ {
+  "title": 74383,
+  "idx": 68,
+  "game": "bg2",
+  "chapter": "2-6",
+  "where_en": "Athkatla",
+  "where_fr": "Athkatla",
+  "kind": "companion",
+  "hints_en": [
+   "Anomen's sister has been murdered, and his father Lord Cor demands blood.",
+   "Your advice decides whether Anomen leaves justice to the Order or takes revenge himself.",
+   "Urging him to avenge Moira sends him after the Saerk family, with lasting effects on his path."
+  ],
+  "hints_fr": [
+   "La sœur d'Anomen a été assassinée, et son père, le seigneur Cor, réclame vengeance.",
+   "Vos conseils décident si Anomen laisse l'Ordre rendre justice ou se venge lui-même.",
+   "Le pousser à venger Moira le lance contre la famille Saerk, avec des effets durables sur sa voie."
+  ],
+  "solution_en": "With Anomen in the party, he learns that his sister Moira was murdered. Lord Cor blames his rival Saerk and demands vengeance.\nIf you encourage Anomen to act himself, he attacks Saerk's household: Saerk and his daughter die, the son Yusef escapes. Lord Cor recovers his fortune and leaves for Calimshan; Anomen is not happy.\nThis choice weighs on Anomen's knighthood trial: advising patience and trusting the Order is the path that keeps him a candidate knight.",
+  "solution_fr": "Avec Anomen dans le groupe, il apprend que sa sœur Moira a été assassinée. Le seigneur Cor accuse son rival Saerk et exige vengeance.\nSi vous poussez Anomen à agir lui-même, il attaque la maison de Saerk : Saerk et sa fille meurent, le fils Yusef s'échappe. Le seigneur Cor retrouve sa fortune et part pour Calimshan ; Anomen n'est pas satisfait.\nCe choix pèse sur l'épreuve de chevalerie d'Anomen : conseiller la patience et la confiance en l'Ordre est la voie qui le garde candidat chevalier."
+ },
+ {
+  "title": 74384,
+  "idx": 69,
+  "game": "bg2",
+  "chapter": "6",
+  "where_en": "Athkatla",
+  "where_fr": "Athkatla",
+  "kind": "main",
+  "hints_en": [
+   "Back in Athkatla, you can ask powerful groups for help before attacking Bodhi's lair.",
+   "The temples mostly decline, but they point to the Order of the Radiant Heart.",
+   "Prelate Wessalen or Aran Linvail can send fighters to meet you beneath the Graveyard District."
+  ],
+  "hints_fr": [
+   "De retour à Athkatla, vous pouvez demander l'aide de groupes puissants avant d'attaquer le repaire de Bodhi.",
+   "Les temples refusent pour la plupart, mais ils vous orientent vers l'Ordre du Cœur Radieux.",
+   "Le prélat Wessalen ou Aran Linvail peuvent envoyer des combattants vous rejoindre sous le quartier du cimetière."
+  ],
+  "solution_en": "Before facing Bodhi in her lair under the Graveyard District, look for allies (optional).\nThe temples of Helm and Lathander cannot help and send you to the Order of the Radiant Heart; Nallabir at the temple of Talos refuses outright.\nAsk Prelate Wessalen at the Order's hall in the Temple District: if he agrees, Sir William Reirrac's group waits for you under the Graveyard District.\nIf you sided with the Shadow Thieves, ask Aran Linvail: he may send his spare assassins.\nEither can refuse, depending on your past dealings. Allies only help in the fight; you can face Bodhi without them.",
+  "solution_fr": "Avant d'affronter Bodhi dans son repaire sous le quartier du cimetière, cherchez des alliés (facultatif).\nLes temples de Heaume et de Lathandre ne peuvent pas aider et vous envoient à l'Ordre du Cœur Radieux ; Nallabir, au temple de Talos, refuse net.\nDemandez au prélat Wessalen, au siège de l'Ordre dans le quartier du temple : s'il accepte, le groupe de Sire William Reirrac vous attend sous le quartier du cimetière.\nSi vous avez choisi les Voleurs de l'Ombre, demandez à Aran Linvail : il peut envoyer les assassins dont il dispose.\nChacun peut refuser selon votre passé avec lui. Les alliés aident seulement au combat ; vous pouvez affronter Bodhi sans eux."
+ },
+ {
+  "title": 74385,
+  "idx": 70,
+  "game": "bg2",
+  "chapter": "2-6",
+  "where_en": "Athkatla",
+  "where_fr": "Athkatla",
+  "kind": "side",
+  "hints_en": [
+   "The Cowled Wizard Jermien needs a rare ingredient to bring his juggernaut golem to life.",
+   "The blood of a mimic is what he asks for.",
+   "Stand ready when the golem wakes: it turns on its maker, and Jermien's daughter is in the room."
+  ],
+  "hints_fr": [
+   "Le mage cagoulé Jermien a besoin d'un ingrédient rare pour animer son golem géant.",
+   "C'est du sang de mimique qu'il demande.",
+   "Soyez prêt quand le golem s'éveille : il se retourne contre son créateur, et la fille de Jermien est dans la pièce."
+  ],
+  "solution_en": "Jermien, a Cowled Wizard, wants a mimic's blood to activate his juggernaut golem. Daar, who loves Jermien's daughter Colette, is also involved.\nBring the mimic's blood to Jermien. The golem comes to life and attacks its maker.\nKill the golem quickly. If you are fast enough, Jermien survives and thanks you. If he dies, save Colette at least; she leaves sadly with Daar.",
+  "solution_fr": "Jermien, un mage cagoulé, veut du sang de mimique pour activer son golem géant. Daar, amoureux de Colette, la fille de Jermien, est aussi mêlé à l'affaire.\nApportez le sang de mimique à Jermien. Le golem s'anime et attaque son créateur.\nTuez le golem vite. Si vous êtes assez rapide, Jermien survit et vous remercie. S'il meurt, sauvez au moins Colette ; elle part tristement avec Daar."
+ },
+ {
+  "title": 74386,
+  "idx": 71,
+  "game": "bg2",
+  "chapter": "2-6",
+  "where_en": "Athkatla, Temple District",
+  "where_fr": "Athkatla, quartier du temple",
+  "kind": "companion",
+  "hints_en": [
+   "Anomen is called before the Order of the Radiant Heart to be judged.",
+   "Go with him to the Order's hall in the Temple District within two days.",
+   "The verdict depends on how Anomen acted earlier, above all about his sister's murder."
+  ],
+  "hints_fr": [
+   "Anomen est convoqué devant l'Ordre du Cœur Radieux pour être jugé.",
+   "Accompagnez-le au siège de l'Ordre, dans le quartier du temple, dans les deux jours.",
+   "Le verdict dépend de la conduite passée d'Anomen, surtout face au meurtre de sa sœur."
+  ],
+  "solution_en": "With Anomen in the party, the time comes for his trial. He must reach the Order's hall in the Temple District within two days.\nGo with him and enter the hall to watch the judgment. If you refuse to come, he leaves alone, angry, and is unlikely to return.\nIf he showed restraint and left vengeance to the Order, he is made a full knight. If he took revenge himself, he is found unworthy, storms out, and turns down a darker path.",
+  "solution_fr": "Avec Anomen dans le groupe, l'heure de son jugement arrive. Il doit se présenter au siège de l'Ordre, dans le quartier du temple, dans les deux jours.\nAccompagnez-le et entrez pour assister au jugement. Si vous refusez de venir, il part seul, furieux, et ne reviendra sans doute pas.\nS'il a su se retenir et laisser la vengeance à l'Ordre, il est fait chevalier. S'il s'est vengé lui-même, il est jugé indigne, part en colère et prend une voie plus sombre."
+ },
+ {
+  "title": 74387,
+  "idx": 72,
+  "game": "bg2",
+  "chapter": "2-3",
+  "where_en": "Windspear Hills",
+  "where_fr": "Collines de Lancevent",
+  "kind": "side",
+  "hints_en": [
+   "This is the happy ending of the hunt for Garren's child.",
+   "Once the child is freed from Firkraag's dungeon, Garren is waiting at his cabin.",
+   "Return to Garren's cabin; killing Firkraag is a bonus, not a requirement."
+  ],
+  "hints_fr": [
+   "C'est la fin heureuse de la recherche de l'enfant de Garren.",
+   "Une fois l'enfant libéré du donjon de Firkraag, Garren attend à sa cabane.",
+   "Retournez à la cabane de Garren ; tuer Firkraag est un bonus, pas une obligation."
+  ],
+  "solution_en": "Free Garren's child from the magically locked cell in Firkraag's dungeon (the key is on a mage nearby). The child runs home.\nReturn to Garren's cabin in the Windspear Hills. He thanks you and offers his cabin as lodging whenever you pass by.\nWhether Firkraag is alive or dead, the quest ends here. Firkraag stays an optional and very hard dragon fight.",
+  "solution_fr": "Libérez l'enfant de Garren de la cellule à serrure magique du donjon de Firkraag (la clef est sur un mage voisin). L'enfant rentre chez lui.\nRetournez à la cabane de Garren, dans les Collines de Lancevent. Il vous remercie et vous offre le gîte chaque fois que vous passez.\nQue Firkraag soit vivant ou mort, la quête s'arrête là. Firkraag reste un combat de dragon facultatif et très difficile."
+ },
+ {
+  "title": 74388,
+  "idx": 73,
+  "game": "bg2",
+  "chapter": "4",
+  "where_en": "Spellhold, dream world",
+  "where_fr": "Brisesort, monde du rêve",
+  "kind": "main",
+  "hints_en": [
+   "Inside the dream, follow Imoen's voice: she says you cannot fight alone.",
+   "Each door deeper into your mind asks a sacrifice of yourself.",
+   "Find the Bhaal creature and bring it back to Imoen so you fight it together."
+  ],
+  "hints_fr": [
+   "Dans le rêve, suivez la voix d'Imoen : elle dit que vous ne pouvez pas combattre seul.",
+   "Chaque porte vers le fond de votre esprit exige un sacrifice de vous-même.",
+   "Trouvez la créature de Bhaal et ramenez-la jusqu'à Imoen pour l'affronter ensemble."
+  ],
+  "solution_en": "Irenicus starts his ritual in Spellhold and you fall into a dream.\nFind Imoen in the dream. She tells you to seek the 'Bhaal creature', your instinct, and lead it back to her: fighting it alone means death, win or lose.\nGo through the doors deeper into your mind; each one takes a sacrifice from you.\nFind the creature, lure it back to Imoen and defeat it together.\nYou wake up: Irenicus has taken your soul and leaves Bodhi to finish you off. Fight your way out of the asylum.",
+  "solution_fr": "Irenicus lance son rituel à Brisesort et vous sombrez dans un rêve.\nTrouvez Imoen dans le rêve. Elle vous dit de chercher la « créature de Bhaal », votre instinct, et de la ramener jusqu'à elle : l'affronter seul signifie la mort, victoire ou non.\nFranchissez les portes vers le fond de votre esprit ; chacune vous prend un sacrifice.\nTrouvez la créature, attirez-la jusqu'à Imoen et battez-la ensemble.\nVous vous réveillez : Irenicus a volé votre âme et laisse Bodhi vous achever. Frayez-vous un chemin hors de l'asile."
+ },
+ {
+  "title": 74389,
+  "idx": 74,
+  "game": "bg2",
+  "chapter": "2",
+  "where_en": "Athkatla, Government District",
+  "where_fr": "Athkatla, quartier du gouvernement",
+  "kind": "side",
+  "hints_en": [
+   "A man named Madeen knows of a Cowled Wizard looking to hire someone.",
+   "Tolgerias waits in the main government building.",
+   "Tolgerias promises news of Imoen in exchange for finding Valygar Corthala."
+  ],
+  "hints_fr": [
+   "Un homme nommé Madeen connaît un Mage Cagoulé qui cherche à engager quelqu'un.",
+   "Tolgerias attend dans le bâtiment principal du gouvernement.",
+   "Tolgerias promet des nouvelles d'Imoen en échange de la capture de Valygar Corthala."
+  ],
+  "solution_en": "Madeen tells you that the Cowled Wizard Tolgerias wants to hire someone.\nGo to the main government building in the Government District and talk to Tolgerias.\nHe promises information about Imoen if you do his service: find Valygar Corthala. Accepting starts 'The hunt for Valygar Corthala'; refusing angers the Cowled Wizards.",
+  "solution_fr": "Madeen vous apprend que le Mage Cagoulé Tolgerias veut engager quelqu'un.\nAllez au bâtiment principal du gouvernement, dans le quartier du gouvernement, et parlez à Tolgerias.\nIl promet des informations sur Imoen si vous lui rendez service : retrouver Valygar Corthala. Accepter lance « À la poursuite de Valygar Corthala » ; refuser fâche les Mages Cagoulés."
+ },
+ {
+  "title": 74390,
+  "idx": 75,
+  "game": "bg2",
+  "chapter": "3",
+  "where_en": "Athkatla",
+  "where_fr": "Athkatla",
+  "kind": "main",
+  "hints_en": [
+   "You have paid for help finding Imoen: either the Shadow Thieves or Bodhi now expect your service.",
+   "Shadow Thieves path: take Gaelan's key to Aran Linvail beneath the guild headquarters in the Docks District.",
+   "Bodhi path: do her tasks against the Shadow Thieves from the crypts in the Graveyard District."
+  ],
+  "hints_fr": [
+   "Vous avez payé pour retrouver Imoen : les Voleurs de l'Ombre ou Bodhi attendent maintenant vos services.",
+   "Voie des Voleurs de l'Ombre : apportez la clef de Gaelan à Aran Linvail, sous le quartier général de la guilde, quartier des quais.",
+   "Voie de Bodhi : accomplissez ses missions contre les Voleurs de l'Ombre depuis les cryptes du quartier du cimetière."
+  ],
+  "solution_en": "Chapter 3 starts when you pay for help finding Imoen.\nShadow Thieves: Gaelan gives you a key to meet the Shadowmaster, Aran Linvail, in his lair under the Shadow Thief headquarters in the Docks District. He asks you to strike at the vampire guild in the Graveyard District, then arranges your passage to the island where Imoen is held.\nBodhi: work for her from the crypts beneath the Graveyard District. She sends you against the Shadow Thieves: a shipment at the docks, a second task, then killing Aran Linvail. She then books passage to the asylum.\nEither way the chapter ends when you sail to Brynnlaw.",
+  "solution_fr": "Le chapitre 3 commence quand vous payez pour retrouver Imoen.\nVoleurs de l'Ombre : Gaelan vous donne une clef pour rencontrer le Maître des Ombres, Aran Linvail, dans son repaire sous le quartier général des Voleurs de l'Ombre, quartier des quais. Il vous demande de frapper la guilde des vampires dans le quartier du cimetière, puis organise votre passage vers l'île où Imoen est détenue.\nBodhi : travaillez pour elle depuis les cryptes sous le quartier du cimetière. Elle vous envoie contre les Voleurs de l'Ombre : une cargaison sur les quais, une deuxième tâche, puis tuer Aran Linvail. Elle paie ensuite votre passage vers l'asile.\nDans les deux cas, le chapitre se termine quand vous partez pour Brynnlaw."
+ },
+ {
+  "title": 74391,
+  "idx": 76,
+  "game": "bg2",
+  "chapter": "4",
+  "where_en": "Spellhold",
+  "where_fr": "Brisesort",
+  "kind": "main",
+  "hints_en": [
+   "Inside Spellhold, the friendly coordinator offers a tour and a visit to Imoen.",
+   "Lonk the Sane, a worker, tells you where Imoen is and how she has changed.",
+   "Seeing Imoen springs Irenicus's trap: be ready for what follows."
+  ],
+  "hints_fr": [
+   "À Brisesort, l'aimable coordinateur propose une visite et de voir Imoen.",
+   "Lonk le Lucide, un employé, vous dit où est Imoen et combien elle a changé.",
+   "Voir Imoen déclenche le piège d'Irenicus : préparez-vous à la suite."
+  ],
+  "solution_en": "Once inside Spellhold, talk to the coordinator: he offers a tour and to take you to Imoen.\nTalk to the worker Lonk the Sane: Imoen is just down the hall, confused and violent. He seems surprised you know Irenicus.\nFind Imoen; she is clearly not herself.\nIrenicus then reveals himself: it was a trap from the start. He captures you to take your divine soul, as he already did to Imoen, who is also a child of Bhaal.\nThis leads to the dream sequence ('The transformation and the dream').",
+  "solution_fr": "Une fois à Brisesort, parlez au coordinateur : il propose une visite et de vous mener à Imoen.\nParlez à l'employé Lonk le Lucide : Imoen est au bout du couloir, perdue et violente. Il semble surpris que vous connaissiez Irenicus.\nTrouvez Imoen ; elle n'est visiblement plus elle-même.\nIrenicus se montre alors : c'était un piège depuis le début. Il vous capture pour prendre votre âme divine, comme il l'a fait avec Imoen, elle aussi enfant de Bhaal.\nLa suite est la séquence du rêve (« La transformation et le rêve »)."
+ },
+ {
+  "title": 74392,
+  "idx": 77,
+  "game": "bg2",
+  "chapter": "2",
+  "where_en": "Athkatla, Slums, Copper Coronet",
+  "where_fr": "Athkatla, bas quartiers, Couronne de Cuivre",
+  "kind": "side",
+  "hints_en": [
+   "The Copper Coronet's owner lets some guests into his 'back rooms'.",
+   "Behind them is a slave pen, where Hendak begs for help to escape.",
+   "Helping Hendak is the good path; betraying him to Lehtinan earns you a discount from Bernard."
+  ],
+  "hints_fr": [
+   "Le patron de la Couronne de Cuivre laisse certains clients entrer dans ses « arrière-salles ».",
+   "Derrière se trouve un enclos à esclaves, où Hendak supplie qu'on l'aide à s'évader.",
+   "Aider Hendak est la voie bonne ; le trahir auprès de Lehtinan vous vaut des rabais chez Bernard."
+  ],
+  "solution_en": "In the Copper Coronet in the Slums, the owner Lehtinan gives you leave to visit his back rooms.\nThere you find the slave pens. The slave Hendak asks for help to escape.\nGood path: agree, free Hendak and fight Lehtinan and his men.\nEvil path: refuse, report Hendak to Lehtinan, take the key he gives you and kill Hendak in his cell. Lehtinan rewards you, including cheaper prices from his clerk Bernard.",
+  "solution_fr": "À la Couronne de Cuivre, dans les bas quartiers, le patron Lehtinan vous autorise à visiter ses arrière-salles.\nVous y trouvez l'enclos des esclaves. L'esclave Hendak vous demande de l'aider à s'évader.\nVoie bonne : acceptez, libérez Hendak et combattez Lehtinan et ses hommes.\nVoie mauvaise : refusez, dénoncez Hendak à Lehtinan, prenez la clef qu'il vous donne et tuez Hendak dans sa cellule. Lehtinan vous récompense, avec entre autres des prix réduits chez Bernard, son commis."
+ },
+ {
+  "title": 74393,
+  "idx": 78,
+  "game": "bg2",
+  "chapter": "2-3",
+  "where_en": "Umar Hills, Temple Ruins",
+  "where_fr": "Collines d'Umar, ruines du temple",
+  "kind": "side",
+  "hints_en": [
+   "Mayor Lloyd of Imnesvale needs someone to stop the killings in the Umar Hills.",
+   "The trail leads to a ruined temple of Amaunator in the hills.",
+   "The Shade Lord hides deep in the temple dungeon; prepare for undead and shadows."
+  ],
+  "hints_fr": [
+   "Le maire Lloyd d'Imnesvale cherche quelqu'un pour arrêter les meurtres dans les Collines d'Umar.",
+   "La piste mène à des ruines d'un temple d'Amaunator dans les collines.",
+   "Le Seigneur des ombres se cache au fond du donjon du temple ; préparez-vous aux morts-vivants et aux ombres."
+  ],
+  "solution_en": "Mayor Lloyd hires you to stop the murders around Imnesvale.\nInvestigate the Umar Hills and head to the ruined temple of Amaunator, where shadows have taken over the land.\nWork through the temple dungeon and kill the Shade Lord at its heart.\nReturn to Mayor Lloyd in Imnesvale for his thanks and a reward. Mazzy, who can be met near the temple, may join you.",
+  "solution_fr": "Le maire Lloyd vous engage pour faire cesser les meurtres autour d'Imnesvale.\nEnquêtez dans les Collines d'Umar et rendez-vous aux ruines du temple d'Amaunator, où les ombres ont envahi les terres.\nTraversez le donjon du temple et tuez le Seigneur des ombres en son cœur.\nRetournez voir le maire Lloyd à Imnesvale pour ses remerciements et une récompense. Mazzy, que l'on croise près du temple, peut vous rejoindre."
+ },
+ {
+  "title": 74394,
+  "idx": 79,
+  "game": "bg2",
+  "chapter": "2-3",
+  "where_en": "De'Arnise Keep",
+  "where_fr": "Donjon de'Arnise",
+  "kind": "companion",
+  "hints_en": [
+   "Nalia, in Athkatla, begs for help: trolls have overrun her family's keep.",
+   "Open the way through the keep and look for her father, Lord de'Arnise.",
+   "The troll leader TorGal holds the keep; bring fire or acid to finish trolls."
+  ],
+  "hints_fr": [
+   "Nalia, à Athkatla, supplie qu'on l'aide : des trolls ont envahi le donjon de sa famille.",
+   "Frayez-vous un chemin dans le donjon et cherchez son père, le seigneur de'Arnise.",
+   "Le chef troll TorGal tient le donjon ; prévoyez du feu ou de l'acide pour achever les trolls."
+  ],
+  "solution_en": "Accept Nalia's request and travel with her to the de'Arnise keep. Captain Arat at the gate explains the situation.\nClear the keep room by room. Trolls only stay dead with fire or acid.\nFind and kill the troll leader TorGal. Lord de'Arnise cannot be saved: TorGal has killed him.\nOnce the keep is cleared, the quest ends. Nalia's future at the keep is uncertain, and her own story continues with her father's funeral. A fighter protagonist can later be offered the keep as a stronghold.",
+  "solution_fr": "Acceptez la demande de Nalia et rendez-vous avec elle au donjon de'Arnise. Le capitaine Arat, à l'entrée, vous explique la situation.\nNettoyez le donjon pièce par pièce. Les trolls ne restent morts qu'avec du feu ou de l'acide.\nTrouvez et tuez le chef troll TorGal. Le seigneur de'Arnise ne peut être sauvé : TorGal l'a tué.\nUne fois le donjon libéré, la quête se termine. L'avenir de Nalia au donjon reste incertain, et son histoire continue avec les funérailles de son père. Un protagoniste guerrier peut ensuite se voir offrir le donjon comme forteresse."
+ },
+ {
+  "title": 74395,
+  "idx": 80,
+  "game": "bg2",
+  "chapter": "any",
+  "where_en": "Wilderness, wolfwere encampment",
+  "where_fr": "Nature, campement des muloups",
+  "kind": "companion",
+  "hints_en": [
+   "Coran says Safana has been kidnapped by wolfweres camped nearby to the east.",
+   "The kidnapping is not what it seems: Safana wants the bounty on your head.",
+   "Keep Coran alive in the fight with the wolfwere Lanfear, who wants him for herself."
+  ],
+  "hints_fr": [
+   "Coran dit que Safana a été enlevée par des muloups installés non loin à l'est.",
+   "L'enlèvement n'est pas ce qu'il semble : Safana veut la prime sur votre tête.",
+   "Gardez Coran en vie pendant le combat contre la mulouve Lanfear, qui le veut pour elle."
+  ],
+  "solution_en": "Coran tells you that wolfweres have taken Safana and asks you to come to their camp, a short way east. If you refuse, he goes alone; you can still follow.\nAt the camp, the truth comes out: Safana and the wolfwere Lanfear planned this together, Safana for the bounty on your head, Lanfear to win Coran.\nLanfear kills Safana. Fight Lanfear and her wolfweres, and protect Coran.\nBest outcome: Lanfear dies and Coran survives. If Coran is killed, by you or by Lanfear, the quest still ends; a raise spell can bring him back.",
+  "solution_fr": "Coran vous dit que des muloups ont enlevé Safana et vous demande de venir à leur camp, un peu à l'est. Si vous refusez, il part seul ; vous pouvez encore le suivre.\nAu camp, la vérité éclate : Safana et la mulouve Lanfear ont tout manigancé, Safana pour la prime sur votre tête, Lanfear pour gagner Coran.\nLanfear tue Safana. Combattez Lanfear et ses muloups, et protégez Coran.\nMeilleure issue : Lanfear meurt et Coran survit. Si Coran est tué, par vous ou par Lanfear, la quête se termine quand même ; un sort de résurrection peut le ramener."
+ }
+]

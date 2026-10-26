@@ -1,0 +1,123 @@
+// Quest chronicle, the mods' quests (John 2026-10-24): every journal entry another mod adds is filed under that mod
+// (the page's "Mods" tab: journal text and status only, no hints). Built at install, from the player's own game:
+// 1. the base game's quests (BGEE.LUA's table): mods' strings come after them in dialog.tlk;
+// 2. WeiDU.log + each component's backup UNINSTALL.<n>: which mod wrote which .dlg / .bcs (the first one that is not
+//    a framework: EET, EEex, fixpacks, this mod...);
+// 3. those files' journal entries (DLG transitions with a quest / quest done entry, AddJournalEntry(n,QUEST /
+//    QUEST_DONE) in their actions) above the base game's;
+// 4. override/M_PSXQM.lua: PSXQ_MODS = { {mod, strref, 1 quest / 2 done}, ... } (M_PSXQ.lua groups them by title).
+// Installed last, it sees the mods installed before it (reinstall it after adding quest mods).
+
+OUTER_SET q_base = 0
+ACTION_IF FILE_EXISTS_IN_GAME ~bgee.lua~ BEGIN
+	COPY_EXISTING - ~bgee.lua~ ~override~
+		// the largest number there = the last base-game string it uses (quests, spells, areas)
+		REPLACE_EVALUATE ~\b\([0-9][0-9][0-9][0-9]+\)\b~ BEGIN
+			PATCH_IF MATCH1 > q_base BEGIN SET q_base = MATCH1 END
+		END ~%MATCH0%~
+END
+
+// WeiDU.log: one line per installed component, ~PATH/MOD.TP2~ #language #component // name
+ACTION_CLEAR_ARRAY q_tp2
+ACTION_CLEAR_ARRAY q_cn
+ACTION_CLEAR_ARRAY q_owner
+OUTER_SET q_n = 0
+COPY - ~WeiDU.log~ ~override~
+	REPLACE_EVALUATE ~~~~~^~\([^~%LNL%]+\)~[ %TAB%]+#[0-9]+[ %TAB%]+#\([0-9]+\)~~~~~ BEGIN
+		TEXT_SPRINT $q_tp2(~%q_n%~) ~%MATCH1%~
+		SET $q_cn(~%q_n%~) = MATCH2
+		SET q_n += 1
+	END ~%MATCH0%~
+
+OUTER_FOR (q_i = 0; q_i < q_n; ++q_i) BEGIN
+	OUTER_TEXT_SPRINT q_tp2 $q_tp2(~%q_i%~)
+	OUTER_SET q_c = $q_cn(~%q_i%~)
+	// the mod's name: its tp2's folder (setup-NAME.tp2 at the game's root: NAME)
+	OUTER_PATCH_SAVE q_tp2 ~%q_tp2%~ BEGIN REPLACE_TEXTUALLY ~\\~ ~/~ END
+	OUTER_PATCH_SAVE q_dir ~%q_tp2%~ BEGIN REPLACE_TEXTUALLY ~/?[^/]*$~ ~~ END
+	OUTER_PATCH_SAVE q_mod ~%q_tp2%~ BEGIN
+		PATCH_IF (INDEX_BUFFER (~/~) >= 0) BEGIN
+			REPLACE_TEXTUALLY ~/[^/]*$~ ~~
+			REPLACE_TEXTUALLY ~^.*/~ ~~
+		END ELSE BEGIN
+			REPLACE_TEXTUALLY CASE_INSENSITIVE ~^setup-~ ~~
+			REPLACE_TEXTUALLY CASE_INSENSITIVE ~\.tp2$~ ~~
+		END
+	END
+	OUTER_TEXT_SPRINT q_up ~%q_mod%~
+	ACTION_TO_UPPER q_up
+	OUTER_SET q_skip = (~%q_up%~ STRING_MATCHES_REGEXP ~^\(EET\|EET_END\|EET_GUI\|EET273FIX\|EEEX\|BGBOT\|SADOEE\|PARTYSTASH\|SADOQOL\|BG2FIXPACK\|BGEEFIXPACK\|BG1FIXPACK\|DLCMERGER\)$~) = 0
+	// the component's backup folder: the tp2's BACKUP ~folder~ (a %MOD_FOLDER% in it = the tp2's folder)
+	OUTER_TEXT_SPRINT q_bak ~~
+	ACTION_IF NOT q_skip AND FILE_EXISTS ~%q_tp2%~ BEGIN
+		COPY - ~%q_tp2%~ ~override~
+			REPLACE_EVALUATE CASE_INSENSITIVE ~~~~~^[ %TAB%]*BACKUP[ %TAB%%LNL%%MNL%]+[~"]\([^~"%LNL%%MNL%]+\)[~"]~~~~~ BEGIN
+				PATCH_IF ~%q_bak%~ STRING_EQUAL ~~ BEGIN TEXT_SPRINT q_bak ~%MATCH1%~ END
+			END ~%MATCH0%~
+		OUTER_PATCH_SAVE q_bak ~%q_bak%~ BEGIN
+			REPLACE_TEXTUALLY ~\\~ ~/~
+			REPLACE_TEXTUALLY ~[%][A-Za-z_]+[%]~ ~%q_dir%~
+		END
+	END
+	OUTER_TEXT_SPRINT q_un ~%q_bak%/%q_c%/UNINSTALL.%q_c%~
+	ACTION_IF NOT q_skip AND NOT ~%q_bak%~ STRING_EQUAL ~~ AND FILE_EXISTS ~%q_un%~ BEGIN
+		COPY - ~%q_un%~ ~override~
+			REPLACE_EVALUATE CASE_INSENSITIVE ~override[/\\]\([^/\\ %TAB%%LNL%]+\.\(dlg\|bcs\)\)~ BEGIN
+				TEXT_SPRINT q_f ~%MATCH1%~
+				TO_UPPER q_f
+				PATCH_IF NOT VARIABLE_IS_SET $q_owner(~%q_f%~) BEGIN TEXT_SPRINT $q_owner(~%q_f%~) ~%q_mod%~ END
+			END ~%MATCH0%~
+	END
+END
+
+// the journal entries of the mods' files
+ACTION_CLEAR_ARRAY q_ent
+ACTION_CLEAR_ARRAY q_em
+DEFINE_PATCH_MACRO ~q_journal_actions~ BEGIN
+	REPLACE_EVALUATE ~AddJournalEntry([ %TAB%]*\([0-9]+\)[ %TAB%]*,[ %TAB%]*\([A-Za-z_]+\)[ %TAB%]*)~ BEGIN
+		SET q_j = MATCH1
+		TEXT_SPRINT q_tn ~%MATCH2%~
+		TO_UPPER q_tn
+		SET q_t = (~%q_tn%~ STRING_EQUAL ~QUEST_DONE~) ? 2 : ((~%q_tn%~ STRING_EQUAL ~QUEST~) ? 1 : 0)
+		PATCH_IF q_t > 0 AND q_j > q_base AND NOT VARIABLE_IS_SET $q_ent(~%q_j%~) BEGIN
+			SET $q_ent(~%q_j%~) = q_t
+			TEXT_SPRINT $q_em(~%q_j%~) ~%q_m%~
+		END
+	END ~%MATCH0%~
+END
+ACTION_PHP_EACH q_owner AS q_f => q_m BEGIN
+	ACTION_IF FILE_EXISTS_IN_GAME ~%q_f%~ BEGIN
+		ACTION_IF ~%q_f%~ STRING_MATCHES_REGEXP ~.*\.DLG$~ = 0 BEGIN
+			COPY_EXISTING - ~%q_f%~ ~override~
+				READ_LONG 0x10 q_nt
+				READ_LONG 0x14 q_ot
+				FOR (k = 0; k < q_nt AND q_ot + k * 32 + 12 <= SOURCE_SIZE; ++k) BEGIN
+					READ_LONG (q_ot + k * 32) q_fl
+					READ_LONG (q_ot + k * 32 + 8) q_j
+					SET q_t = ((q_fl BAND 0x100) != 0) ? 2 : (((q_fl BAND 0x40) != 0) ? 1 : 0)
+					PATCH_IF (q_fl BAND 0x10) != 0 AND q_t > 0 AND q_j > q_base AND q_j < 0x7fffffff AND NOT VARIABLE_IS_SET $q_ent(~%q_j%~) BEGIN
+						SET $q_ent(~%q_j%~) = q_t
+						TEXT_SPRINT $q_em(~%q_j%~) ~%q_m%~
+					END
+				END
+				LAUNCH_PATCH_MACRO ~q_journal_actions~
+			BUT_ONLY
+		END ELSE BEGIN
+			COPY_EXISTING - ~%q_f%~ ~override~
+				DECOMPILE_AND_PATCH BEGIN LAUNCH_PATCH_MACRO ~q_journal_actions~ END
+			BUT_ONLY
+		END
+	END
+END
+
+OUTER_TEXT_SPRINT q_lua ~~
+ACTION_PHP_EACH q_ent AS q_id => q_t BEGIN
+	OUTER_TEXT_SPRINT q_m $q_em(~%q_id%~)
+	OUTER_TEXT_SPRINT q_lua ~%q_lua%{ [[%q_m%]], %q_id%, %q_t% },~
+END
+<<<<<<<< .../PartyStash-inlined/M_PSXQM.lua
+-- Quest chronicle: the journal entries other mods add, per mod. GENERATED at install (PartyStash quests/mod_quests.tpa).
+PSXQ_MODS = { PSXQ_MODS_LIST }
+>>>>>>>>
+COPY ~.../PartyStash-inlined/M_PSXQM.lua~ ~override~
+	REPLACE_TEXTUALLY EXACT_MATCH ~PSXQ_MODS_LIST~ ~%q_lua%~

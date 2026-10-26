@@ -1,0 +1,832 @@
+[
+ {
+  "title": 261630,
+  "idx": 415,
+  "game": "sod",
+  "chapter": "Prologue",
+  "where_en": "Baldur's Gate, Ducal Palace / Iron Throne building",
+  "where_fr": "Porte de Baldur, Palais Ducal / bâtiment du Trône de Fer",
+  "kind": "side",
+  "hints_en": [
+   "One of the prisoners in the Ducal Palace dungeons is not who he claims to be.",
+   "The false Flaming Fist officer is a doppelganger who promises a reward for its freedom.",
+   "Free it, then wait a few hours and go down to the Iron Throne building basement."
+  ],
+  "hints_fr": [
+   "L'un des prisonniers des cachots du Palais Ducal n'est pas celui qu'il prétend être.",
+   "Le faux officier du Poing Enflammé est un doppelganger qui promet une récompense en échange de sa liberté.",
+   "Libérez-le, attendez quelques heures puis descendez aux sous-sols du bâtiment du Trône de Fer."
+  ],
+  "solution_en": "In the dungeons under the Ducal Palace, talk to the prisoner dressed as a Flaming Fist officer. It is a doppelganger and asks you to let it out, promising a reward.\nAgree and free it. It tells you to meet it in the basement of the Iron Throne building in three hours.\nWait, then go to the Iron Throne building (now crowded with refugees) and down to its basement. The doppelganger keeps its word and hands over a cache of gold, weapons and potions.\nAfterwards you can let it leave in peace, or attack and kill it so no shapechanger stays loose in the city.",
+  "solution_fr": "Dans les cachots sous le Palais Ducal, parlez au prisonnier vêtu en officier du Poing Enflammé. C'est un doppelganger qui vous demande de le libérer contre une récompense.\nAcceptez et libérez-le. Il vous donne rendez-vous aux sous-sols du bâtiment du Trône de Fer dans trois heures.\nPatientez, puis rendez-vous au bâtiment du Trône de Fer (rempli de réfugiés) et descendez au sous-sol. Le doppelganger tient parole et vous remet une réserve d'or, d'armes et de potions.\nEnsuite, vous pouvez le laisser partir, ou l'attaquer et le tuer pour qu'aucun métamorphe ne reste en liberté en ville."
+ },
+ {
+  "title": 261636,
+  "idx": 416,
+  "game": "sod",
+  "chapter": "Prologue",
+  "where_en": "Baldur's Gate",
+  "where_fr": "Porte de Baldur",
+  "kind": "side",
+  "hints_en": [
+   "This quest has no journal entries in the game; it may never appear in normal play.",
+   "If it does, look around the streets of Baldur's Gate during the prologue of Siege of Dragonspear."
+  ],
+  "hints_fr": [
+   "Cette quête n'a aucune entrée de journal dans le jeu ; elle n'apparaît peut-être jamais en partie normale.",
+   "Si elle apparaît, cherchez dans les rues de la Porte de Baldur pendant le prologue de Siege of Dragonspear."
+  ],
+  "solution_en": "The game defines this quest title but writes no journal entry for it, so it is most likely unused or cut content.\nNothing needs to be done for it. If it ever shows up in your journal, it belongs to the Baldur's Gate part of Siege of Dragonspear: talk to the townsfolk and refugees in the city streets before you leave with the coalition army.",
+  "solution_fr": "Le jeu définit ce titre de quête mais n'écrit aucune entrée de journal, il s'agit donc très probablement de contenu inutilisé ou coupé.\nIl n'y a rien à faire. Si elle apparaît un jour dans votre journal, elle appartient à la partie Porte de Baldur de Siege of Dragonspear : parlez aux habitants et aux réfugiés dans les rues de la ville avant de partir avec l'armée de la coalition."
+ },
+ {
+  "title": 261650,
+  "idx": 417,
+  "game": "sod",
+  "chapter": "Prologue",
+  "where_en": "Baldur's Gate, outside the Flaming Fist jail",
+  "where_fr": "Porte de Baldur, devant la prison du Poing Enflammé",
+  "kind": "side",
+  "hints_en": [
+   "Walk past the Flaming Fist jail and listen for trouble.",
+   "Some mercenaries are bullying a group of young nobles who broke curfew.",
+   "Step in on the youths' side."
+  ],
+  "hints_fr": [
+   "Passez devant la prison du Poing Enflammé et soyez attentif aux disputes.",
+   "Des mercenaires malmènent un groupe de jeunes nobles qui ont enfreint le couvre-feu.",
+   "Intervenez pour prendre la défense des jeunes."
+  ],
+  "solution_en": "Outside the Flaming Fist jail in Baldur's Gate you come across several mercenaries harassing some noble children.\nTalk to them and side with the youths. Telling the mercenaries off is enough to end the quest; be ready in case they turn hostile.\nIf you do not intervene, nothing more happens and the quest stays unfinished.",
+  "solution_fr": "Devant la prison du Poing Enflammé à la Porte de Baldur, vous croisez plusieurs mercenaires qui s'en prennent à de jeunes nobles.\nParlez-leur et prenez le parti des jeunes. Remettre les mercenaires à leur place suffit à terminer la quête ; soyez prêt au cas où ils deviendraient hostiles.\nSi vous n'intervenez pas, rien d'autre ne se passe et la quête reste inachevée."
+ },
+ {
+  "title": 261653,
+  "idx": 418,
+  "game": "sod",
+  "chapter": "Prologue",
+  "where_en": "Baldur's Gate, around the Iron Throne building",
+  "where_fr": "Porte de Baldur, autour du bâtiment du Trône de Fer",
+  "kind": "side",
+  "hints_en": [
+   "A refugee in the shantytown around the old Iron Throne building tells an odd story about a lost cat.",
+   "Byzon's real problem is a Flaming Fist officer, Riggs, who extorts the refugees.",
+   "Get the stolen gold back from Riggs, by words or by force, and give it to Byzon."
+  ],
+  "hints_fr": [
+   "Un réfugié du bidonville autour de l'ancien bâtiment du Trône de Fer raconte une drôle d'histoire de chat perdu.",
+   "Le vrai problème de Byzon est un officier du Poing Enflammé, Riggs, qui rackette les réfugiés.",
+   "Reprenez l'or volé à Riggs, par la parole ou par la force, et donnez-le à Byzon."
+  ],
+  "solution_en": "In the shantytown around the former Iron Throne building, watch Byzon talking with a Flaming Fist mercenary about his \"lost cat\". Talk to Byzon afterwards: the cat story is a cover, and he admits that officer Riggs is extorting money from the refugees.\nFind Riggs nearby and confront him. With Captain Corwin in the party she can help pressure him into handing over the gold; otherwise he may refuse and fight, and you take the gold from his body.\nReturn the gold to Byzon, who shares it out among the victims. You can also keep it for yourself, the selfish ending.",
+  "solution_fr": "Dans le bidonville autour de l'ancien bâtiment du Trône de Fer, observez Byzon parlant de son « chat perdu » avec un mercenaire du Poing Enflammé. Parlez ensuite à Byzon : le chat n'est qu'un prétexte, et il avoue que l'officier Riggs extorque de l'argent aux réfugiés.\nTrouvez Riggs non loin et confrontez-le. Avec le capitaine Corwin dans le groupe, elle peut l'obliger à rendre l'or ; sinon il peut refuser et se battre, et vous prenez l'or sur son corps.\nRendez l'or à Byzon, qui le partagera entre les victimes. Vous pouvez aussi le garder pour vous, la fin égoïste."
+ },
+ {
+  "title": 261663,
+  "idx": 419,
+  "game": "sod",
+  "chapter": "Prologue",
+  "where_en": "Baldur's Gate, near the Ducal Palace",
+  "where_fr": "Porte de Baldur, près du Palais Ducal",
+  "kind": "side",
+  "hints_en": [
+   "A homeowner near the Ducal Palace takes everything refugees own in exchange for a bed.",
+   "Garachen will open his house if you bring provisions from the Elfsong Tavern.",
+   "Or tell the Flaming Fist headquarters what the refugee Perren said about lodgers leaving."
+  ],
+  "hints_fr": [
+   "Un propriétaire près du Palais Ducal prend tout ce que possèdent les réfugiés en échange d'un lit.",
+   "Garachen ouvrira sa maison si vous lui apportez des provisions de la taverne du Chant de l'Elfe.",
+   "Ou racontez au quartier général du Poing Enflammé ce que le réfugié Perren a dit des pensionnaires partis."
+  ],
+  "solution_en": "Talk to Garachen outside his large house near the Ducal Palace, and to the refugee Perren nearby. Garachen says he can only take in more people if someone supplies food.\nKind route: go to the Elfsong Tavern and arrange a week of provisions, then bring them back to Garachen. He keeps helping the refugees.\nRuthless route: go to the Flaming Fist headquarters and use Perren's remark to accuse Garachen of selling refugees into slavery. He is arrested, and the refugees can use his house freely. Talk to the refugees outside the house afterwards to close the quest.",
+  "solution_fr": "Parlez à Garachen devant sa grande maison près du Palais Ducal, ainsi qu'au réfugié Perren non loin. Garachen dit ne pouvoir accueillir plus de monde que si quelqu'un fournit de la nourriture.\nVoie bienveillante : allez à la taverne du Chant de l'Elfe, obtenez une semaine de provisions et rapportez-les à Garachen. Il continue d'aider les réfugiés.\nVoie impitoyable : allez au quartier général du Poing Enflammé et servez-vous de la remarque de Perren pour accuser Garachen de vendre des réfugiés comme esclaves. Il est arrêté, et les réfugiés peuvent utiliser sa maison. Parlez ensuite aux réfugiés devant la maison pour clore la quête."
+ },
+ {
+  "title": 261669,
+  "idx": 420,
+  "game": "sod",
+  "chapter": "Prologue",
+  "where_en": "Baldur's Gate, south of the Ducal Palace / Sorcerous Sundries",
+  "where_fr": "Porte de Baldur, au sud du Palais Ducal / Bazar Magique",
+  "kind": "side",
+  "hints_en": [
+   "A merchant south of the Ducal Palace needs someone to carry her day's earnings.",
+   "Teera's moneylender works across the street from Sorcerous Sundries; watch your pockets on the way.",
+   "If the purse is stolen, pay the moneylender yourself or confess to Teera."
+  ],
+  "hints_fr": [
+   "Une marchande au sud du Palais Ducal cherche quelqu'un pour porter ses recettes du jour.",
+   "La banquière de Teera travaille en face du Bazar Magique ; surveillez vos poches en chemin.",
+   "Si la bourse est volée, payez vous-même la banquière ou avouez tout à Teera."
+  ],
+  "solution_en": "Talk to Teera at her stall south of the Ducal Palace and accept to take her purse to her moneylender, across the street from Sorcerous Sundries.\nOn the way a pickpocket targets you. If you notice her, or charm her into giving the gold back, carry on. If she gets away with it, you can either give the moneylender your own gold to cover the sum, or go back and tell Teera.\nOnce the purse is deposited, return to Teera's stall outside the palace. She is pleased if the money arrived, and upset if you lost it.",
+  "solution_fr": "Parlez à Teera à son étal au sud du Palais Ducal et acceptez de porter sa bourse à sa banquière, en face du Bazar Magique.\nEn chemin, une voleuse vous prend pour cible. Si vous la repérez, ou si vous la charmez pour qu'elle rende l'or, continuez. Si elle s'enfuit avec, vous pouvez donner votre propre or à la banquière pour couvrir la somme, ou retourner prévenir Teera.\nUne fois la bourse déposée, retournez à l'étal de Teera devant le palais. Elle est contente si l'argent est arrivé, et contrariée si vous l'avez perdu."
+ },
+ {
+  "title": 261676,
+  "idx": 421,
+  "game": "sod",
+  "chapter": "Prologue",
+  "where_en": "Baldur's Gate, outside Sorcerous Sundries",
+  "where_fr": "Porte de Baldur, devant le Bazar Magique",
+  "kind": "side",
+  "hints_en": [
+   "A Flaming Fist officer outside Sorcerous Sundries is holding a group of refugees.",
+   "Officer Vida needs reinforcements from the Flaming Fist headquarters.",
+   "At headquarters you decide whether the refugees get leniency or a harsh punishment."
+  ],
+  "hints_fr": [
+   "Une officier du Poing Enflammé devant le Bazar Magique retient un groupe de réfugiés.",
+   "L'officier Vida a besoin de renforts du quartier général du Poing Enflammé.",
+   "Au quartier général, vous décidez si les réfugiés auront droit à l'indulgence ou à un châtiment sévère."
+  ],
+  "solution_en": "Talk to Officer Vida outside Sorcerous Sundries: she has detained some refugees who caused trouble and needs more men.\nGo to the Flaming Fist headquarters and report her request. While there you can plead for the refugees to be shown leniency, or back Vida and ask for strict punishment, or simply pass on the message.\nReturn to Vida to tell her reinforcements are coming and close the quest.",
+  "solution_fr": "Parlez à l'officier Vida devant le Bazar Magique : elle a arrêté des réfugiés agités et a besoin de renforts.\nAllez au quartier général du Poing Enflammé et transmettez sa demande. Sur place, vous pouvez plaider l'indulgence pour les réfugiés, soutenir Vida et réclamer un châtiment sévère, ou simplement transmettre le message.\nRetournez voir Vida pour lui annoncer l'arrivée des renforts et clore la quête."
+ },
+ {
+  "title": 261681,
+  "idx": 422,
+  "game": "sod",
+  "chapter": "Prologue",
+  "where_en": "Baldur's Gate, Three Old Kegs",
+  "where_fr": "Porte de Baldur, Trois Vieilles Chopes",
+  "kind": "side",
+  "hints_en": [
+   "The town crier outside the Three Old Kegs has shouted himself dry.",
+   "Ask Katheera, inside the inn, to send Robel a drink.",
+   "Persuade her to send it right away, then tell Robel."
+  ],
+  "hints_fr": [
+   "Le crieur public devant les Trois Vieilles Chopes s'est desséché à force de crier.",
+   "Demandez à Katheera, dans l'auberge, d'envoyer à boire à Robel.",
+   "Convainquez-la de le faire tout de suite, puis prévenez Robel."
+  ],
+  "solution_en": "Talk to Robel, the crier outside the Three Old Kegs; he is parched.\nGo inside and speak to Katheera. She is busy but agrees to send him a drink later; with the right words you can convince her to send it immediately.\nGo back out and give Robel her answer to finish this small errand.",
+  "solution_fr": "Parlez à Robel, le crieur devant les Trois Vieilles Chopes ; il meurt de soif.\nEntrez et parlez à Katheera. Elle est débordée mais accepte de lui envoyer une boisson plus tard ; avec les bons arguments, vous pouvez la convaincre de le faire immédiatement.\nRessortez et transmettez sa réponse à Robel pour terminer cette petite course."
+ },
+ {
+  "title": 261686,
+  "idx": 423,
+  "game": "sod",
+  "chapter": "Prologue",
+  "where_en": "Baldur's Gate, alley behind the Three Old Kegs",
+  "where_fr": "Porte de Baldur, ruelle derrière les Trois Vieilles Chopes",
+  "kind": "side",
+  "hints_en": [
+   "A woman behind the Three Old Kegs is collecting money for a burial.",
+   "Look closer at the body in Aileen's cart and ask who he really was.",
+   "Keep her secret, make her pay for it, or report her at the Flaming Fist headquarters."
+  ],
+  "hints_fr": [
+   "Une femme derrière les Trois Vieilles Chopes collecte de l'argent pour un enterrement.",
+   "Examinez le corps dans le chariot d'Aileen et demandez qui il était vraiment.",
+   "Gardez son secret, faites-le-lui payer, ou dénoncez-la au quartier général du Poing Enflammé."
+  ],
+  "solution_en": "In the alley behind the Three Old Kegs, Aileen says she needs 15 gold to bury her cousin. You can simply give her the 15 gp and end it there.\nIf you question her further, she admits the dead man in the cart is her violent, drunken husband, killed by accident during a fight. Then choose:\n- promise to keep her secret;\n- keep it only in exchange for all the money she collected;\n- go to the Flaming Fist headquarters and report the killing to an officer inside.",
+  "solution_fr": "Dans la ruelle derrière les Trois Vieilles Chopes, Aileen dit qu'il lui manque 15 pièces d'or pour enterrer son cousin. Vous pouvez simplement lui donner les 15 po et en rester là.\nSi vous l'interrogez davantage, elle avoue que le mort dans le chariot est son mari, un ivrogne violent tué par accident pendant une dispute. Choisissez alors :\n- promettre de garder son secret ;\n- ne le garder qu'en échange de tout l'argent qu'elle a récolté ;\n- aller au quartier général du Poing Enflammé et la dénoncer à un officier."
+ },
+ {
+  "title": 261693,
+  "idx": 424,
+  "game": "sod",
+  "chapter": "Prologue",
+  "where_en": "Baldur's Gate, Sorcerous Sundries",
+  "where_fr": "Porte de Baldur, Bazar Magique",
+  "kind": "side",
+  "hints_en": [
+   "Sorcerous Sundries is swamped with customers; its owner could use a hand.",
+   "Halbazzer Drin wants a case of empty potion bottles from the upper floor.",
+   "Upstairs you will find more than bottles: deal with the robbers, then tell Drin."
+  ],
+  "hints_fr": [
+   "Le Bazar Magique est débordé de clients ; son propriétaire aurait besoin d'aide.",
+   "Toubazar Drin veut une caisse de bouteilles à potions vides rangée à l'étage.",
+   "À l'étage vous trouverez plus que des bouteilles : occupez-vous des cambrioleurs, puis prévenez Drin."
+  ],
+  "solution_en": "Enter Sorcerous Sundries and talk to Halbazzer Drin on the ground floor. He asks you to fetch a case of empty potion bottles from upstairs.\nGo up: thieves are busy robbing the shop's stock. Defeat them and take the bottles.\nGo back down and give Drin the bottles. Tell him about the robbery and he rewards you; you can also keep quiet about it, in which case you get no extra reward.",
+  "solution_fr": "Entrez au Bazar Magique et parlez à Toubazar Drin au rez-de-chaussée. Il vous demande d'aller chercher une caisse de bouteilles à potions vides à l'étage.\nMontez : des voleurs sont en train de piller le stock. Battez-les et prenez les bouteilles.\nRedescendez et remettez les bouteilles à Drin. Parlez-lui du cambriolage et il vous récompense ; vous pouvez aussi vous taire, mais vous n'obtenez alors pas de récompense supplémentaire."
+ },
+ {
+  "title": 261696,
+  "idx": 425,
+  "game": "sod",
+  "chapter": "Prologue",
+  "where_en": "Baldur's Gate, Iron Throne building",
+  "where_fr": "Porte de Baldur, bâtiment du Trône de Fer",
+  "kind": "side",
+  "hints_en": [
+   "Among the refugees at the Iron Throne building, a man named Lon is accused of theft.",
+   "The stolen amulet is a holy symbol of Selune, and Lon reacts badly when pushed.",
+   "Expose Lon, kill what he becomes, then talk to Berta."
+  ],
+  "hints_fr": [
+   "Parmi les réfugiés du bâtiment du Trône de Fer, un homme nommé Lon est accusé de vol.",
+   "L'amulette volée est un symbole sacré de Séluné, et Lon réagit mal quand on le presse.",
+   "Démasquez Lon, tuez ce qu'il devient, puis parlez à Berta."
+  ],
+  "solution_en": "At the Iron Throne building, the refugees ask you to judge Lon, accused of stealing an amulet.\nIf you declare the evidence too weak, Lon goes free and the quest ends there.\nIf you press him, it turns out he took Berta's holy symbol of Selune; once exposed, he changes into a werewolf. Kill him (silver or magic weapons help).\nThen talk to Berta: grateful, she gives you her holy symbol as a reward.",
+  "solution_fr": "Au bâtiment du Trône de Fer, les réfugiés vous demandent de juger Lon, accusé d'avoir volé une amulette.\nSi vous jugez les preuves insuffisantes, Lon est libéré et la quête s'arrête là.\nSi vous le pressez, il s'avère qu'il a pris le symbole sacré de Séluné de Berta ; démasqué, il se transforme en loup-garou. Tuez-le (des armes en argent ou magiques aident).\nParlez ensuite à Berta : reconnaissante, elle vous offre son symbole sacré en récompense."
+ },
+ {
+  "title": 261707,
+  "idx": 426,
+  "game": "sod",
+  "chapter": "Coast Way",
+  "where_en": "Coast Way, burned inn",
+  "where_fr": "Voie Côtière, auberge incendiée",
+  "kind": "side",
+  "hints_en": [
+   "A halfling sits in the ashes of his inn along the Coast Way.",
+   "Takos lost a shield, a mirror and a cloak; two are close to the ruins.",
+   "The undead hunters Isabella and Ikros have the shield."
+  ],
+  "hints_fr": [
+   "Une petite-personne est assise dans les cendres de son auberge, le long de la Voie Côtière.",
+   "Takos a perdu un bouclier, un miroir et une cape ; deux d'entre eux sont près des ruines.",
+   "Les chasseurs de morts-vivants Isabella et Ikros ont le bouclier."
+  ],
+  "solution_en": "Talk to Takos in the ruins of his burned inn on the Coast Way. Rowdy soldiers burned it and three heirlooms disappeared: a shield, a mirror and a cloak.\nSearch the ruins of the inn to find the hand mirror. The cloak is locked in a battered chest near the ruins.\nThe polished shield is with Isabella and Ikros, the undead hunters camped in the same area; you get it by dealing with them (see their own quest).\nBring all three back to Takos for his thanks and a reward. If you keep the items instead, he attacks you.",
+  "solution_fr": "Parlez à Takos dans les ruines de son auberge incendiée sur la Voie Côtière. Des soldats agités l'ont brûlée et trois objets de famille ont disparu : un bouclier, un miroir et une cape.\nFouillez les ruines de l'auberge pour trouver le miroir de poche. La cape est enfermée dans un coffre usé près des ruines.\nLe bouclier poli est chez Isabella et Ikros, les chasseurs de morts-vivants installés dans la même zone ; vous l'obtenez en traitant avec eux (voir leur quête).\nRapportez les trois objets à Takos pour ses remerciements et une récompense. Si vous les gardez, il vous attaque."
+ },
+ {
+  "title": 261708,
+  "idx": 427,
+  "game": "sod",
+  "chapter": "Coast Way",
+  "where_en": "Coast Way, hunters' camp and vampire cave",
+  "where_fr": "Voie Côtière, camp des chasseurs et grotte du vampire",
+  "kind": "side",
+  "hints_en": [
+   "Two undead hunters camped near the Coast Way want help with a vampire, but only after dark.",
+   "Tsolak flees as mist when beaten; his lair lies past a trapped path to the west.",
+   "Stake his body in the cave, or listen to his side and accept his offer instead."
+  ],
+  "hints_fr": [
+   "Deux chasseurs de morts-vivants campés près de la Voie Côtière veulent de l'aide contre un vampire, mais seulement la nuit.",
+   "Vaincu, Tsolak fuit sous forme de brume ; son repaire est au-delà d'un chemin piégé à l'ouest.",
+   "Plantez un pieu dans son corps dans la grotte, ou écoutez sa version et acceptez son offre."
+  ],
+  "solution_en": "Talk to Isabella and Ikros at their camp. They ask you to return after dark to fight the vampire Tsolak.\nCome back at night and fight him with the hunters. When beaten he turns to mist and escapes; talk to Isabella.\nFollow the trapped path to the west (have a thief disarm the traps) and find his cave. Drive a stake into his body to destroy him, then return to the hunters' camp for your reward, including the polished shield Takos wants.\nAlternative: when Tsolak explains himself, side with him against the hunters. Later a messenger brings his reward.\nYou can also find and stake the vampire before meeting the hunters, then visit them for a reward.",
+  "solution_fr": "Parlez à Isabella et Ikros à leur camp. Ils vous demandent de revenir à la nuit tombée pour combattre le vampire Tsolak.\nRevenez la nuit et combattez-le avec les chasseurs. Vaincu, il se change en brume et s'enfuit ; parlez à Isabella.\nSuivez le chemin piégé vers l'ouest (faites désamorcer les pièges par un voleur) jusqu'à sa grotte. Plantez un pieu dans son corps pour le détruire, puis retournez au camp des chasseurs pour votre récompense, dont le bouclier poli que cherche Takos.\nAutre choix : quand Tsolak donne sa version, rangez-vous de son côté contre les chasseurs. Un messager vous apporte ensuite sa récompense.\nVous pouvez aussi trouver et empaler le vampire avant de rencontrer les chasseurs, puis passer les voir pour une récompense."
+ },
+ {
+  "title": 261718,
+  "idx": 428,
+  "game": "sod",
+  "chapter": "Coast Way",
+  "where_en": "Coast Way",
+  "where_fr": "Voie Côtière",
+  "kind": "side",
+  "hints_en": [
+   "Old standing stones dot the land around the Coast Way; one hums when someone sings to it.",
+   "There are six menhirs in the area, and each must be sung to until it gives a pleasing tone.",
+   "With all six active, a minstrel's ghost wakes: decide whether to reunite him with his love or destroy them."
+  ],
+  "hints_fr": [
+   "De vieilles pierres dressées parsèment les terres autour de la Voie Côtière ; l'une vibre quand on lui chante.",
+   "Il y a six menhirs dans la zone, et il faut chanter pour chacun jusqu'à ce qu'il émette un son agréable.",
+   "Une fois les six activés, le fantôme d'un troubadour s'éveille : réunissez-le avec son amour, ou détruisez-les."
+  ],
+  "solution_en": "Explore the Coast Way area and click on each ancient menhir. Choose to sing to it until it gives off a pleasing tone; a failed try just means trying again.\nFind and activate all six stones; the journal counts them for you.\nWhen the sixth sings, the ghost of Crommus, a long-dead minstrel, appears. Talk to him: he wants to be with his beloved Carline.\nPeaceful ending: free his spirit so he can join her.\nOtherwise Carline's ghost appears, driven mad by her years alone, and you must destroy her; you can also destroy both spirits to send them to their rest.",
+  "solution_fr": "Explorez la zone de la Voie Côtière et cliquez sur chaque ancien menhir. Choisissez de chanter jusqu'à ce qu'il émette un son agréable ; en cas d'échec, recommencez.\nTrouvez et activez les six pierres ; le journal les compte pour vous.\nQuand la sixième chante, le fantôme de Crommus, un troubadour mort depuis longtemps, apparaît. Parlez-lui : il veut retrouver sa bien-aimée Carline.\nFin paisible : libérez son esprit pour qu'il la rejoigne.\nSinon, le fantôme de Carline apparaît, rendue folle par ses années de solitude, et vous devez la détruire ; vous pouvez aussi détruire les deux esprits pour qu'ils reposent en paix."
+ },
+ {
+  "title": 261720,
+  "idx": 429,
+  "game": "sod",
+  "chapter": "Coast Way",
+  "where_en": "Refugee camp and western clearing",
+  "where_fr": "Camp de réfugiés et clairière à l'ouest",
+  "kind": "side",
+  "hints_en": [
+   "Refugees are vanishing from the camp, and people blame a newly arrived elf named Teleria.",
+   "Meet Teleria in the clearing to the west: the missing refugees are now statues in her collection.",
+   "Stop her and restore the statues for Herod, or help her finish her art and buy her golem."
+  ],
+  "hints_fr": [
+   "Des réfugiés disparaissent du camp, et l'on soupçonne une elfe arrivée récemment, Teleria.",
+   "Retrouvez Teleria dans la clairière à l'ouest : les réfugiés disparus sont devenus des statues de sa collection.",
+   "Arrêtez-la et rendez vie aux statues pour Herod, ou aidez-la à achever son art et achetez son golem."
+  ],
+  "solution_en": "At the refugee camp, hear about the missing people and talk to Teleria. She agrees to meet you in a clearing to the west.\nIn the clearing you learn she turns people into statues for her art collection.\nGood path: fight and stop her. Restore the petrified refugees if you can (stone to flesh magic), then report to Herod at the camp. Accept his payment or refuse it.\nEvil path: lure a soldier and a nobleman to her clearing so she can complete the collection, then return for a reward.\nYou can also buy a golem from her; it waits at the Flaming Fist camp and fights for you at Dragonspear Castle.",
+  "solution_fr": "Au camp de réfugiés, renseignez-vous sur les disparus et parlez à Teleria. Elle accepte de vous retrouver dans une clairière à l'ouest.\nDans la clairière, vous découvrez qu'elle change les gens en statues pour sa collection d'art.\nVoie bienveillante : combattez-la pour l'arrêter. Rendez vie aux réfugiés pétrifiés si vous le pouvez (magie de pierre en chair), puis faites votre rapport à Herod au camp. Acceptez son paiement ou refusez-le.\nVoie maléfique : attirez un soldat et un noble dans sa clairière pour qu'elle complète sa collection, puis revenez chercher une récompense.\nVous pouvez aussi lui acheter un golem ; il vous attend au camp du Poing Enflammé et combat pour vous au château de Vougedragon."
+ },
+ {
+  "title": 261737,
+  "idx": 430,
+  "game": "sod",
+  "chapter": "Bridgefort",
+  "where_en": "Bridgefort / crusader camp",
+  "where_fr": "Fort-du-Pont / camp des croisés",
+  "kind": "side",
+  "hints_en": [
+   "Talking to Bridgefort's wizard Wynan Hess leaves the fort open to a magical attack.",
+   "A spellstone is slowly killing everyone in the fort; the scroll that made it is in the crusader camp.",
+   "A Red Wizard in the camp carries the scroll; bring it to Wynan Hess fast, and be ready for a wraith."
+  ],
+  "hints_fr": [
+   "Parler à Wynan Hess, le magicien de Fort-du-Pont, laisse le fort exposé à une attaque magique.",
+   "Une pierre de sort tue lentement tout le monde dans le fort ; le parchemin qui l'a créée est au camp des croisés.",
+   "Un Magicien Rouge du camp porte le parchemin ; rapportez-le vite à Wynan Hess, et préparez-vous à un spectre."
+  ],
+  "solution_en": "In Bridgefort, speaking with the wizard Wynan Hess distracts him, and a crusade attack strikes the fort: an enchanted spellstone starts draining everyone inside, you included.\nGo into the crusader camp and find the Red Wizard of Thay, Vichand. Kill him and take his scroll.\nHurry back to Wynan Hess with it. Neutralizing the stone releases a dark wraith set as a trap; destroy it and Bridgefort is safe.\nIf you never talk to Hess, he deals with the stone himself during the attack on the crusade. If you wait too long, the crusade takes Bridgefort and the stone becomes their problem.",
+  "solution_fr": "À Fort-du-Pont, parler au magicien Wynan Hess le distrait, et une attaque des croisés frappe le fort : une pierre de sort enchantée commence à affaiblir tous ceux qui s'y trouvent, vous compris.\nEntrez dans le camp des croisés et trouvez le Magicien Rouge de Thay, Vichand. Tuez-le et prenez son parchemin.\nRetournez vite voir Wynan Hess avec. Neutraliser la pierre libère un spectre sombre, piège laissé par Vichand ; détruisez-le et Fort-du-Pont est sauvé.\nSi vous ne parlez jamais à Hess, il règle seul le problème pendant l'attaque contre la croisade. Si vous tardez trop, la croisade prend Fort-du-Pont et la pierre devient son problème."
+ },
+ {
+  "title": 261740,
+  "idx": 431,
+  "game": "sod",
+  "chapter": "Bridgefort",
+  "where_en": "Bridgefort, courtyard",
+  "where_fr": "Fort-du-Pont, cour",
+  "kind": "side",
+  "hints_en": [
+   "Two mages in the Bridgefort courtyard are not coping well with the siege.",
+   "Thirrim warns that Elandro's terror could draw something evil, especially at night.",
+   "Talk to Elandro after dark and calm him, or be ready to fight what his fear creates."
+  ],
+  "hints_fr": [
+   "Deux mages dans la cour de Fort-du-Pont vivent mal le siège.",
+   "Thirrim prévient que la terreur d'Elandro pourrait attirer quelque chose de maléfique, surtout la nuit.",
+   "Parlez à Elandro la nuit et calmez-le, ou préparez-vous à combattre ce que sa peur fait naître."
+  ],
+  "solution_en": "In the Bridgefort courtyard, meet the mages Elandro and Thirrim. Elandro is terrified of the crusade; Thirrim asks you to speak with him at night, when his fear grows worse.\nReturn after dark and talk to Elandro. Reassuring answers calm him and the danger passes.\nIf you fail or mock him, the fort's magic and his fear spawn a feyr, a monster made of fear. Kill it before it slaughters the people around it.",
+  "solution_fr": "Dans la cour de Fort-du-Pont, rencontrez les mages Elandro et Thirrim. Elandro est terrifié par la croisade ; Thirrim vous demande de lui parler la nuit, quand sa peur empire.\nRevenez à la nuit tombée et parlez à Elandro. Des réponses rassurantes le calment et le danger s'éloigne.\nSi vous échouez ou vous moquez de lui, la magie du fort et sa peur font naître une freyeur, un monstre né de la peur. Tuez-la avant qu'elle ne massacre ceux qui l'entourent."
+ },
+ {
+  "title": 261747,
+  "idx": 432,
+  "game": "sod",
+  "chapter": "Bridgefort",
+  "where_en": "Bridgefort",
+  "where_fr": "Fort-du-Pont",
+  "kind": "side",
+  "hints_en": [
+   "This quest has no journal entries in the game; it may never appear in normal play.",
+   "Food is scarce among the refugees and soldiers of Siege of Dragonspear; listen to the hungry ones."
+  ],
+  "hints_fr": [
+   "Cette quête n'a aucune entrée de journal dans le jeu ; elle n'apparaît peut-être jamais en partie normale.",
+   "La nourriture manque parmi les réfugiés et les soldats de Siege of Dragonspear ; écoutez ceux qui ont faim."
+  ],
+  "solution_en": "The game defines this quest title but writes no journal entry for it, so it is most likely unused or cut content.\nNothing needs to be done. If it does appear, it is tied to the food shortage during the siege: talk to the hungry people in Bridgefort and see what they ask for.",
+  "solution_fr": "Le jeu définit ce titre de quête mais n'écrit aucune entrée de journal, il s'agit donc très probablement de contenu inutilisé ou coupé.\nIl n'y a rien à faire. Si elle apparaît, elle est liée au manque de nourriture pendant le siège : parlez aux affamés de Fort-du-Pont et voyez ce qu'ils demandent."
+ },
+ {
+  "title": 261764,
+  "idx": 433,
+  "game": "sod",
+  "chapter": "Bridgefort",
+  "where_en": "Bridgefort, courtyard",
+  "where_fr": "Fort-du-Pont, cour",
+  "kind": "side",
+  "hints_en": [
+   "A hungry half-elf teamster in the Bridgefort courtyard worries about her sick horses.",
+   "Senderin wants the cleric Frair Tajik to heal them, or you can try to cure them yourself.",
+   "Once the horses are cured, talk to Senderin again; her plans for them may surprise you."
+  ],
+  "hints_fr": [
+   "Une conductrice d'attelage demi-elfe affamée, dans la cour de Fort-du-Pont, s'inquiète pour ses chevaux malades.",
+   "Senderin veut que le clerc Frair Tajik les soigne, mais vous pouvez aussi essayer de les guérir vous-même.",
+   "Une fois les chevaux guéris, reparlez à Senderin ; ses projets pour eux pourraient vous surprendre."
+  ],
+  "solution_en": "Talk to Senderin and her son in the Bridgefort courtyard. Their horses have fallen sick.\nEither find Frair Tajik, the cleric in the fort, and convince him to heal the horses, or cure them yourself (a curing spell from a party priest should do).\nReturn to Senderin. She and her son reveal they mean to butcher the horses for meat, since they are starving. She still rewards you with a fine helm.",
+  "solution_fr": "Parlez à Senderin et à son fils dans la cour de Fort-du-Pont. Leurs chevaux sont tombés malades.\nTrouvez Frair Tajik, le clerc du fort, et convainquez-le de soigner les chevaux, ou guérissez-les vous-même (un sort de guérison d'un prêtre du groupe devrait suffire).\nRetournez voir Senderin. Elle et son fils avouent qu'ils comptent abattre les chevaux pour leur viande, car ils meurent de faim. Elle vous offre tout de même un beau heaume en récompense."
+ },
+ {
+  "title": 261770,
+  "idx": 434,
+  "game": "sod",
+  "chapter": "any",
+  "where_en": "Spider cave",
+  "where_fr": "Grotte des araignées",
+  "kind": "side",
+  "hints_en": [
+   "After you clear the spider cave, something big is heard moving inside.",
+   "Go back in and follow the noise."
+  ],
+  "hints_fr": [
+   "Après avoir nettoyé la grotte des araignées, on entend quelque chose de gros bouger à l'intérieur.",
+   "Retournez-y et suivez le bruit."
+  ],
+  "solution_en": "While in the spider cave, you hear a loud noise: something large has entered the caverns.\nExplore the cave to find its source. It is a giant rhino beetle; defeat it and the quest is complete.\nIt hits hard and is well armored, so rest and buff before you go looking for it.",
+  "solution_fr": "Dans la grotte des araignées, vous entendez un grand bruit : quelque chose de gros vient d'y entrer.\nExplorez la grotte pour en trouver l'origine. C'est un scarabée-rhinocéros géant ; battez-le et la quête est terminée.\nIl frappe fort et il est bien protégé, alors reposez-vous et préparez vos protections avant d'aller le chercher."
+ },
+ {
+  "title": 261774,
+  "idx": 435,
+  "game": "sod",
+  "chapter": "Coalition camp",
+  "where_en": "Coalition camp (Flaming Fist camp)",
+  "where_fr": "Camp de la coalition (camp du Poing Enflammé)",
+  "kind": "side",
+  "hints_en": [
+   "Lieutenant Otilda distrusts a band of half-orc mercenaries in the coalition camp.",
+   "She wants you to pick a fight with Rend's unit, but Kava will share their story if you bring her ale.",
+   "Ale can be found in the crusader camp; then decide whether the half-orcs stay, leave or die."
+  ],
+  "hints_fr": [
+   "Le lieutenant Otilda se méfie d'une bande de mercenaires demi-orques dans le camp de la coalition.",
+   "Elle veut que vous provoquiez l'unité de Rend, mais Kava vous racontera leur histoire si vous lui apportez de la bière.",
+   "On trouve de la bière au camp des croisés ; décidez ensuite si les demi-orques restent, partent ou meurent."
+  ],
+  "solution_en": "Lieutenant Otilda asks you to pick a fight with the half-orc irregulars so they get banished from camp.\nTalk to them first. Kava wants a mug of ale before she talks: find one in the crusader camp and bring it back (refusing her jokes makes her clam up). She explains that she and Farrl came back for hidden loot, and that Rend, a former crusader, truly wants to kill crusaders.\nThen choose:\n- let them stay for Rend's knowledge; Kava gives a small reward, and you tell Otilda they are no threat;\n- challenge and beat them in a fight to drive them off (Otilda rewards you), or lose the fight;\n- kill them all.\nReport back to Otilda in every case.",
+  "solution_fr": "Le lieutenant Otilda vous demande de provoquer les demi-orques irréguliers pour qu'ils soient bannis du camp.\nParlez-leur d'abord. Kava veut une chope de bière avant de parler : trouvez-en une au camp des croisés et rapportez-la (refuser ses plaisanteries la rend muette). Elle explique qu'elle et Farrl sont revenus chercher un butin caché, et que Rend, ancien croisé, veut vraiment tuer des croisés.\nChoisissez ensuite :\n- les laisser rester pour les connaissances de Rend ; Kava vous offre une petite récompense, et vous dites à Otilda qu'ils ne sont pas une menace ;\n- les défier et les vaincre pour les chasser (Otilda vous récompense), ou perdre le combat ;\n- les tuer tous.\nFaites votre rapport à Otilda dans tous les cas."
+ },
+ {
+  "title": 261777,
+  "idx": 436,
+  "game": "sod",
+  "chapter": "Bridgefort",
+  "where_en": "Bridgefort, temple and nearby woods",
+  "where_fr": "Fort-du-Pont, temple et bois voisins",
+  "kind": "side",
+  "hints_en": [
+   "Junia, a priest of Lathander in Bridgefort, needs help carrying the dead to her temple altar.",
+   "A dead soldier's brother, Tharantis, wants her necklace; a missing healer in the woods is part of the mystery.",
+   "The necklace and the bodies lead back to Junia: confront her in the temple."
+  ],
+  "hints_fr": [
+   "Junia, prêtresse de Lathandre à Fort-du-Pont, a besoin d'aide pour porter les morts jusqu'à l'autel de son temple.",
+   "Le frère d'une soldate morte, Tharantis, veut son collier ; un guérisseur disparu dans les bois fait partie du mystère.",
+   "Le collier et les corps ramènent à Junia : confrontez-la dans le temple."
+  ],
+  "solution_en": "Junia asks you to pick up the bodies of fallen soldiers and carry them to the altar in the temple room. One of them, Kendra, has a brother in the fort: find Tharantis and tell him. He asks for the chain she always wore; ask Junia about it.\nThe trail leads to Ymori, a healer missing in the woods around Bridgefort. You find his mutilated body in a ritual site, and undead rise when you examine it. Kendra's necklace turns up on a murdered corpse.\nGive the necklace to Tharantis (or sell it to him; he may attack), then confront Junia. She claims Ymori was a cultist of Velsharoon and she used his body to strengthen the troops: accept her story, or fight her and her undead servants.\nFinally tell Tharantis what happened to his sister.",
+  "solution_fr": "Junia vous demande de ramasser les corps des soldats tombés et de les porter à l'autel de la salle du temple. L'une d'eux, Kendra, a un frère dans le fort : trouvez Tharantis et informez-le. Il réclame la chaîne qu'elle portait toujours ; interrogez Junia à ce sujet.\nLa piste mène à Ymori, un guérisseur disparu dans les bois autour de Fort-du-Pont. Vous trouvez son corps mutilé sur un lieu de rituel, et des morts-vivants surgissent quand vous l'examinez. Le collier de Kendra se trouve sur le corps d'une victime.\nDonnez le collier à Tharantis (ou vendez-le-lui ; il peut attaquer), puis confrontez Junia. Elle affirme qu'Ymori était un fidèle de Velsharoon et qu'elle a utilisé son corps pour renforcer les troupes : acceptez son explication, ou combattez-la avec ses serviteurs morts-vivants.\nEnfin, dites à Tharantis ce qui est arrivé à sa sœur."
+ },
+ {
+  "title": 261778,
+  "idx": 437,
+  "game": "sod",
+  "chapter": "any",
+  "where_en": "With Khalid in the party",
+  "where_fr": "Avec Khalid dans le groupe",
+  "kind": "companion",
+  "hints_en": [
+   "Keep Khalid in the party: he has an anniversary coming and wants to make Jaheira a gift.",
+   "He first needs silk from a giant spider.",
+   "Then he needs an aquamarine; agree a fair deal with him for it."
+  ],
+  "hints_fr": [
+   "Gardez Khalid dans le groupe : son anniversaire de mariage approche et il veut faire un cadeau à Jaheira.",
+   "Il lui faut d'abord de la soie d'araignée géante.",
+   "Ensuite il lui faut une aigue-marine ; trouvez un accord honnête avec lui."
+  ],
+  "solution_en": "With Khalid in the party, he tells you their wedding anniversary is near and asks for help making Jaheira a necklace.\nFirst bring him giant spider silk: kill a giant spider and loot the silk, then give it to him.\nNext he wants an aquamarine. Find or buy one and give it to Khalid. If you demand payment, he may refuse to pay for it; he can also simply drop the idea to focus on the war.\nOnce he has both, he finishes the necklace and gives it to Jaheira, which closes the quest.",
+  "solution_fr": "Avec Khalid dans le groupe, il vous apprend que leur anniversaire de mariage approche et vous demande de l'aide pour fabriquer un collier pour Jaheira.\nApportez-lui d'abord de la soie d'araignée géante : tuez une araignée géante, prenez la soie et donnez-la-lui.\nEnsuite, il veut une aigue-marine. Trouvez-en ou achetez-en une et donnez-la à Khalid. Si vous exigez un paiement, il peut refuser de payer ; il peut aussi renoncer pour se concentrer sur la guerre.\nUne fois les deux réunis, il termine le collier et l'offre à Jaheira, ce qui clôt la quête."
+ },
+ {
+  "title": 261853,
+  "idx": 438,
+  "game": "sod",
+  "chapter": "Coalition camp",
+  "where_en": "Coalition camp",
+  "where_fr": "Camp de la coalition",
+  "kind": "side",
+  "hints_en": [
+   "Vigilant Halasan has a unit of green recruits from Daggerford.",
+   "Talk to each of the six soldiers and drill them one by one.",
+   "Good advice for each recruit earns Halasan's approval and a better reward."
+  ],
+  "hints_fr": [
+   "La justicière Halasan a une unité de recrues inexpérimentées venues de Gué-de-la-Dague.",
+   "Parlez à chacun des six soldats et entraînez-les un par un.",
+   "De bons conseils à chaque recrue vous valent l'approbation d'Halasan et une meilleure récompense."
+  ],
+  "solution_en": "Talk to Vigilant Halasan in the coalition camp. Her Daggerford unit is not up to standard and she asks you to train it.\nSpeak to each of the six privates: Morlis, Danine, Hester, Garrold, Taield and Clovista. Each conversation is a short drill; pick sensible, encouraging answers that fit the soldier's problem.\nWhen all six are trained, report to Halasan. If you did well she is pleased and rewards you; poor answers leave her unimpressed.",
+  "solution_fr": "Parlez à la justicière Halasan au camp de la coalition. Son unité de Gué-de-la-Dague n'est pas à la hauteur et elle vous demande de l'entraîner.\nParlez à chacun des six soldats : Morlis, Danine, Hester, Garrold, Taield et Clovista. Chaque conversation est un petit exercice ; choisissez des réponses sensées et encourageantes adaptées au problème du soldat.\nUne fois les six entraînés, faites votre rapport à Halasan. Si vous avez bien fait, elle est satisfaite et vous récompense ; de mauvaises réponses la laissent peu convaincue."
+ },
+ {
+  "title": 261863,
+  "idx": 439,
+  "game": "sod",
+  "chapter": "Coalition camp",
+  "where_en": "Coalition camp",
+  "where_fr": "Camp de la coalition",
+  "kind": "companion",
+  "hints_en": [
+   "Safana picked a pocket in camp and found a notebook full of secrets: there is a spy among the coalition.",
+   "Trace the three other stolen items: an odd potion bottle, a gilded candle and a page of runes.",
+   "All leads point to Malden Col; gather proof, confront him, then report to Marshal Nederlok."
+  ],
+  "hints_fr": [
+   "Safana a fait les poches de quelqu'un au camp et trouvé un carnet plein de secrets : un espion se cache dans la coalition.",
+   "Remontez la piste des trois autres objets volés : un flacon étrange, une bougie dorée et une page de glyphes.",
+   "Toutes les pistes mènent à Malden Col ; réunissez des preuves, confrontez-le, puis informez le maréchal Nederlok."
+  ],
+  "solution_en": "With Safana in the party, she shows you what she stole, including a notebook proving a spy is in camp. Question people about the other items:\n- the potion bottle: ask Quartermaster Belegarm, then Helvdar the dwarf at the northern barricade. He lost a potion at cards to Malden Col.\n- the candle: Mizhena, the priest of Tempus, says it was stolen and suspects Col.\n- the runes: retired Warden Simonetta Twoedged, near the commanders' tents, lent her book to Col.\nSome witnesses refuse to help if you offend them; follow another lead.\nConfront Malden Col with the evidence: he confesses and is jailed. Without proof he denies it, and you can kill him anyway.\nReport to Marshal Nederlok. Killing an innocent witness as the \"traitor\" is possible but wrong.",
+  "solution_fr": "Avec Safana dans le groupe, elle vous montre son butin, dont un carnet prouvant qu'un espion est au camp. Interrogez les gens sur les autres objets :\n- le flacon : demandez au quartier-maître Belegarm, puis à Helvdar le nain à la barricade du nord. Il a perdu une potion aux cartes contre Malden Col.\n- la bougie : Mizhena, prêtresse de Tempus, dit qu'on la lui a volée et soupçonne Col.\n- les glyphes : l'intendante à la retraite Simonetta Doubletranchant, près des tentes des officiers, a prêté son livre à Col.\nCertains témoins refusent d'aider si vous les froissez ; suivez une autre piste.\nConfrontez Malden Col aux preuves : il avoue et il est emprisonné. Sans preuve, il nie, et vous pouvez quand même le tuer.\nFaites votre rapport au maréchal Nederlok. Tuer un témoin innocent en le prenant pour le traître est possible, mais c'est une erreur."
+ },
+ {
+  "title": 261867,
+  "idx": 440,
+  "game": "sod",
+  "chapter": "Coalition camp",
+  "where_en": "Coalition camp, triage area",
+  "where_fr": "Camp de la coalition, aire de triage",
+  "kind": "side",
+  "hints_en": [
+   "A sick priest of Ilmater in the triage area refuses any healing.",
+   "Another follower of Ilmater, Dosia, might change Hyreth's mind.",
+   "Once Hyreth agrees, find a priest in the triage area to heal him."
+  ],
+  "hints_fr": [
+   "Un prêtre d'Ilmater malade, dans l'aire de triage, refuse tout soin.",
+   "Une autre fidèle d'Ilmater, Dosia, pourrait faire changer Hyreth d'avis.",
+   "Une fois que Hyreth accepte, trouvez un prêtre dans l'aire de triage pour le soigner."
+  ],
+  "solution_en": "In the triage area, talk to Hyreth, a sick priest of Ilmater who refuses healing because of his faith.\nFind Dosia, another follower of Ilmater, and ask her to speak with him. If she agrees, return to Hyreth with her; she can convince him. She may also refuse, saying he has the right to his beliefs.\nWhen Hyreth accepts help, look for a priest working in the triage area and bring them to heal him, which completes the quest.\nYou can also leave him to his convictions.",
+  "solution_fr": "Dans l'aire de triage, parlez à Hyreth, un prêtre d'Ilmater malade qui refuse d'être soigné à cause de sa foi.\nTrouvez Dosia, une autre fidèle d'Ilmater, et demandez-lui de lui parler. Si elle accepte, retournez voir Hyreth ; elle peut le convaincre. Elle peut aussi refuser, estimant qu'il a droit à ses croyances.\nQuand Hyreth accepte l'aide, cherchez un prêtre qui travaille dans l'aire de triage pour qu'il le soigne, ce qui termine la quête.\nVous pouvez aussi le laisser à ses convictions."
+ },
+ {
+  "title": 261872,
+  "idx": 441,
+  "game": "sod",
+  "chapter": "Dragonspear",
+  "where_en": "Crusader courtyard near Dragonspear",
+  "where_fr": "Cour des croisés près de Vougedragon",
+  "kind": "side",
+  "hints_en": [
+   "Two crusader recruits pray before a broken icon of Tempus in a corner of the courtyard.",
+   "The two missing shards lie in the rubble to the north, or Morale Officer Deneld knows of them.",
+   "A priest of Tempus must bless the shards; Mizhena among your allies can do it."
+  ],
+  "hints_fr": [
+   "Deux recrues de la croisade prient devant une icône brisée de Tempus dans un coin de la cour.",
+   "Les deux fragments manquants sont dans les décombres au nord, ou l'officier du moral Deneld en a entendu parler.",
+   "Un prêtre de Tempus doit bénir les fragments ; Mizhena, parmi vos alliés, peut le faire."
+  ],
+  "solution_en": "In the northwest corner of the courtyard, talk to the recruits Kjarvan and Qing, praying at an icon of Tempus missing two pieces.\nSearch the rubble to the north for the fragments, or ask Morale Officer Deneld. Get both shards.\nThere is no priest of Tempus among the crusaders: take the shards to Mizhena, the priest of Tempus in the coalition, and have her bless them.\nBring the consecrated shards back to the recruits, then place them on the stone icon yourself.\nTempus answers with a challenge. Decline to end it safely, or accept and win a hard fight for the god's favor.",
+  "solution_fr": "Dans le coin nord-ouest de la cour, parlez aux recrues Kjarvan et Qing, qui prient devant une icône de Tempus à laquelle il manque deux morceaux.\nFouillez les décombres au nord pour trouver les fragments, ou demandez à l'officier du moral Deneld. Récupérez les deux.\nIl n'y a aucun prêtre de Tempus chez les croisés : portez les fragments à Mizhena, prêtresse de Tempus de la coalition, et faites-les bénir.\nRapportez les fragments bénits aux recrues, puis placez-les vous-même sur l'icône de pierre.\nTempus répond par un défi. Refusez pour en rester là sans risque, ou acceptez et remportez un combat difficile pour gagner la faveur du dieu."
+ },
+ {
+  "title": 261880,
+  "idx": 442,
+  "game": "sod",
+  "chapter": "Dragonspear",
+  "where_en": "Near the Underground River / its caverns",
+  "where_fr": "Près de la rivière souterraine / ses grottes",
+  "kind": "side",
+  "hints_en": [
+   "Two druids are trapped in a snare of living roots; cut them free.",
+   "Jamven and Chorster want you to destroy the dark druid circle of Ferrusk in the underground river caverns.",
+   "Plant their enchanted seed in the roots of the underground tree, or side with Ferrusk."
+  ],
+  "hints_fr": [
+   "Deux druides sont pris dans un piège de racines vivantes ; libérez-les.",
+   "Jamven et Chorster veulent que vous détruisiez le cercle du druide sombre Ferrusk dans les grottes de la rivière souterraine.",
+   "Plantez leur graine enchantée dans les racines de l'arbre souterrain, ou rangez-vous du côté de Ferrusk."
+  ],
+  "solution_en": "Cut the druids Jamven and Chorster free from the animated roots. They explain that the dark druid Ferrusk drove them out of the underground river caverns and give you an enchanted seed.\nGo down into the caverns and find Ferrusk's circle, built around the roots of an underground tree. Plant the seed in the roots to destroy the circle, then return to the druids.\nAlternatives:\n- lie to them that the circle is destroyed;\n- agree to Ferrusk's offer, go back up, kill Jamven and Chorster and bring him their heads.\nIf the druids learn you did not destroy the circle, they attack you.",
+  "solution_fr": "Libérez les druides Jamven et Chorster des racines animées. Ils vous expliquent que le druide sombre Ferrusk les a chassés des grottes de la rivière souterraine et vous confient une graine enchantée.\nDescendez dans les grottes et trouvez le cercle de Ferrusk, bâti autour des racines d'un arbre souterrain. Plantez la graine dans les racines pour détruire le cercle, puis retournez voir les druides.\nAutres choix :\n- leur mentir en prétendant que le cercle est détruit ;\n- accepter l'offre de Ferrusk, remonter, tuer Jamven et Chorster et lui rapporter leurs têtes.\nSi les druides découvrent que vous n'avez pas détruit le cercle, ils vous attaquent."
+ },
+ {
+  "title": 261881,
+  "idx": 443,
+  "game": "sod",
+  "chapter": "Dragonspear",
+  "where_en": "Underground River caverns, myconid tree-tower",
+  "where_fr": "Grottes de la rivière souterraine, tour-arbre myconide",
+  "kind": "side",
+  "hints_en": [
+   "A dying myconid in the caverns asks you to look into a corpse inside a tree-tower.",
+   "The body lies in the northern part of the tree.",
+   "Expect a myconid elder; you cannot understand it, and it will fight."
+  ],
+  "hints_fr": [
+   "Un myconide mourant dans les grottes vous demande d'enquêter sur un cadavre dans une tour-arbre.",
+   "Le corps se trouve dans la partie nord de l'arbre.",
+   "Attendez-vous à un myconide ancien ; vous ne le comprenez pas, et il combattra."
+  ],
+  "solution_en": "In the underground caverns, talk to the dying myconid near the great tree-tower. It asks you to investigate a dead body in the northern part of the tree.\nEnter the tree and head north to the body. A myconid elder confronts you; without a way to understand it, the talk fails and it attacks.\nKill the elder to end the quest. Its bloom-sac is useful for the dark druid Ferrusk in the Slime Sickness quest.",
+  "solution_fr": "Dans les grottes souterraines, parlez au myconide mourant près de la grande tour-arbre. Il vous demande d'enquêter sur un cadavre dans la partie nord de l'arbre.\nEntrez dans l'arbre et allez vers le nord jusqu'au corps. Un myconide ancien vous affronte ; faute de pouvoir le comprendre, la discussion échoue et il attaque.\nTuez l'ancien pour terminer la quête. Son bulbe reproducteur sert au druide sombre Ferrusk dans la quête Maladie du limon."
+ },
+ {
+  "title": 261883,
+  "idx": 444,
+  "game": "sod",
+  "chapter": "Dragonspear",
+  "where_en": "Ogre camp, near the caverns",
+  "where_fr": "Camp des ogres, près des grottes",
+  "kind": "side",
+  "hints_en": [
+   "A band of ogre brigands lost its leader Slug to the crusade, and his \"widow\" Murs wants the job.",
+   "Two ogre contenders must be beaten to settle who leads.",
+   "Fight them for yourself, or as Murs's champion to make her chief and an ally."
+  ],
+  "hints_fr": [
+   "Une bande d'ogres brigands a perdu son chef Slug, capturé par la croisade, et sa « veuve » Murs veut la place.",
+   "Il faut vaincre deux prétendants ogres pour décider qui commande.",
+   "Combattez-les pour vous-même, ou en champion de Murs pour faire d'elle la chef et une alliée."
+  ],
+  "solution_en": "Talk to Murs at the ogre brigands' camp. The crusade drove the band out of the caverns and caged their leader Slug; Murs wants to take control.\nAccept the leadership challenge and fight the two ogre contenders. Either fight in your own name and become leader of the band, or fight as Murs's champion so she becomes chief and helps you.\nIf you instead slaughter the ogres, the survivors will not help you later.\nMurs also tells you about the ghosts and the way into the caverns under Dragonspear (see The Lost and Accessing the Warrens).",
+  "solution_fr": "Parlez à Murs au camp des ogres brigands. La croisade a chassé la bande des grottes et enfermé leur chef Slug ; Murs veut prendre le pouvoir.\nAcceptez le défi et combattez les deux prétendants ogres. Battez-vous en votre nom pour prendre la tête de la bande, ou en champion de Murs pour qu'elle devienne chef et vous aide.\nSi vous massacrez les ogres, les survivants ne vous aideront pas par la suite.\nMurs vous parle aussi des fantômes et de l'accès aux grottes sous Vougedragon (voir Les égarés et Accéder aux dédales)."
+ },
+ {
+  "title": 261889,
+  "idx": 445,
+  "game": "sod",
+  "chapter": "Dragonspear",
+  "where_en": "Caverns beneath Dragonspear",
+  "where_fr": "Grottes sous Vougedragon",
+  "kind": "side",
+  "hints_en": [
+   "Murs speaks of ghosts haunting a cavern northwest of the old ogre settlement.",
+   "The lost spirits need their remains taken to the Fugue Plane; an ettin ghost wants his club.",
+   "Carry the remains until you find a portal to the Fugue Plane later on."
+  ],
+  "hints_fr": [
+   "Murs parle de fantômes qui hantent une grotte au nord-ouest de l'ancien camp des ogres.",
+   "Les esprits égarés veulent que leurs dépouilles soient portées au Plan de la Fugue ; un fantôme ettin veut son gourdin.",
+   "Gardez les dépouilles jusqu'à trouver plus tard un portail vers le Plan de la Fugue."
+  ],
+  "solution_en": "In the caverns northwest of the old ogre settlement, meet a group of ghosts trapped between worlds. Take their remains with you.\nAn ettin ghost among them lingers because of his lost club. Find the club in the caverns and give it to him: he moves on and leaves you a reward, an embarrassing one.\nKeep the other remains. When you reach a portal to the Fugue Plane, bring them there to lay the spirits to rest and finish the quest.",
+  "solution_fr": "Dans les grottes au nord-ouest de l'ancien camp des ogres, rencontrez un groupe de fantômes piégés entre les mondes. Prenez leurs dépouilles avec vous.\nUn fantôme ettin parmi eux reste à cause de son gourdin perdu. Trouvez le gourdin dans les grottes et rendez-le-lui : il trouve la paix et vous laisse une récompense, plutôt gênante.\nGardez les autres dépouilles. Quand vous atteignez un portail vers le Plan de la Fugue, apportez-les-y pour que les esprits reposent en paix et terminer la quête."
+ },
+ {
+  "title": 261890,
+  "idx": 446,
+  "game": "sod",
+  "chapter": "Dragonspear",
+  "where_en": "Underground River caverns",
+  "where_fr": "Grottes de la rivière souterraine",
+  "kind": "side",
+  "hints_en": [
+   "A druid ruling the caverns warns you away from his domain.",
+   "This is Ferrusk, the dark druid; the druids Jamven and Chorster want his circle gone."
+  ],
+  "hints_fr": [
+   "Un druide qui règne sur les grottes vous ordonne de vous éloigner de son domaine.",
+   "C'est Ferrusk, le druide sombre ; les druides Jamven et Chorster veulent la fin de son cercle."
+  ],
+  "solution_en": "This entry only records your meeting with the dark druid Ferrusk, who guards a cavern in the underground river region and lets only some people pass.\nIts outcome is handled in other quests: destroy his circle for Jamven and Chorster (The Good Druids), or deal with him for a cure (Slime Sickness).",
+  "solution_fr": "Cette entrée note seulement votre rencontre avec le druide sombre Ferrusk, qui garde une grotte de la rivière souterraine et ne laisse passer que certains.\nLa suite se joue dans d'autres quêtes : détruire son cercle pour Jamven et Chorster (Les bons druides), ou traiter avec lui pour un remède (Maladie du limon)."
+ },
+ {
+  "title": 261891,
+  "idx": 447,
+  "game": "sod",
+  "chapter": "Dragonspear",
+  "where_en": "Caverns beneath Dragonspear Castle, Warrens door",
+  "where_fr": "Grottes sous le château de Vougedragon, porte des dédales",
+  "kind": "side",
+  "hints_en": [
+   "Murs knows a way into the caverns right under Dragonspear, far northwest of the ogre camp.",
+   "Guard captain Turin Brassbreaker watches the door to the Warrens.",
+   "Bluff her with Caelar's crest, lure her away with an explosion in the cookfire, or fight."
+  ],
+  "hints_fr": [
+   "Murs connaît un accès aux grottes juste sous Vougedragon, loin au nord-ouest du camp des ogres.",
+   "La capitaine Turin Brisecuivre garde la porte des dédales.",
+   "Bluffez-la avec le blason de Caelar, éloignez-la avec une explosion dans le feu de camp, ou combattez."
+  ],
+  "solution_en": "Following Murs's directions, go northwest of the old ogre settlement to the caverns directly beneath Dragonspear Castle.\nAt the door to the Warrens stands guard captain Turin Brassbreaker with her crusaders. Ways past:\n- show Caelar's crest and bluff your way through without bloodshed;\n- crusaders nearby tell of a potion of firebreath that blew up their campfire: toss a potion of firebreath, or something else explosive, into the cookfire to draw Turin from her post;\n- attack her and her guards.\nOnce inside, avoid needless fights, or the whole castle may come down on you.",
+  "solution_fr": "Suivez les indications de Murs : allez au nord-ouest de l'ancien camp des ogres, jusqu'aux grottes situées juste sous le château de Vougedragon.\nDevant la porte des dédales se tient la capitaine Turin Brisecuivre avec ses croisés. Pour passer :\n- montrer le blason de Caelar et bluffer pour passer sans violence ;\n- des croisés voisins racontent qu'une potion de souffle ardent a fait exploser leur feu : jetez une potion de souffle ardent, ou un autre objet explosif, dans le feu pour éloigner Turin de son poste ;\n- l'attaquer avec ses gardes.\nUne fois à l'intérieur, évitez les combats inutiles, sinon tout le château risque de vous tomber dessus."
+ },
+ {
+  "title": 261892,
+  "idx": 448,
+  "game": "sod",
+  "chapter": "Dragonspear",
+  "where_en": "Underground River caverns / ogre camp",
+  "where_fr": "Grottes de la rivière souterraine / camp des ogres",
+  "kind": "side",
+  "hints_en": [
+   "The ogre chief Slug and two of his fellows sit in a crusade cage in the caverns.",
+   "Free them; Slug may reveal an ogre treasure cache near a pool in the northern tunnels.",
+   "After you collect the cache, visit Slug back at the ogre camp on the surface."
+  ],
+  "hints_fr": [
+   "Le chef ogre Slug et deux compagnons sont enfermés dans une cage de la croisade dans les grottes.",
+   "Libérez-les ; Slug pourra vous révéler une cachette ogre près d'un bassin dans les tunnels du nord.",
+   "Après avoir vidé la cachette, rendez visite à Slug au camp des ogres en surface."
+  ],
+  "solution_en": "In the underground river caverns, find Slug and two other ogres caged by the crusade. Find a way to open the cage and free them.\nIf he trusts you, Slug tells you about a hiding hole in a cavern wall near a pool of water in the northern part of the tunnels. Go there and take the cache. If he does not trust non-ogres, he leaves without helping.\nReturn to the ogre camp above ground. If Murs is alive, the reunited pair thank you. If Murs is dead, Slug turns violent and you have to fight him.",
+  "solution_fr": "Dans les grottes de la rivière souterraine, trouvez Slug et deux autres ogres enfermés par la croisade. Trouvez un moyen d'ouvrir la cage et libérez-les.\nS'il vous fait confiance, Slug vous parle d'un trou caché dans la paroi d'une grotte, près d'un bassin dans la partie nord des tunnels. Allez-y et prenez le contenu. S'il se méfie des non-ogres, il part sans vous aider.\nRetournez au camp des ogres en surface. Si Murs est en vie, le couple réuni vous remercie. Si Murs est morte, Slug devient violent et vous devez le combattre."
+ },
+ {
+  "title": 261896,
+  "idx": 449,
+  "game": "sod",
+  "chapter": "any",
+  "where_en": "Unknown",
+  "where_fr": "Inconnu",
+  "kind": "side",
+  "hints_en": [
+   "This quest has no journal entries in the game; it may never appear in normal play.",
+   "The title hints at someone who does not want to be bothered at their door."
+  ],
+  "hints_fr": [
+   "Cette quête n'a aucune entrée de journal dans le jeu ; elle n'apparaît peut-être jamais en partie normale.",
+   "Le titre évoque quelqu'un qui ne veut pas être dérangé à sa porte."
+  ],
+  "solution_en": "The game defines this quest title but writes no journal entry for it, so it is most likely unused or cut content from Siege of Dragonspear.\nNothing needs to be done for it, and it cannot block your progress.",
+  "solution_fr": "Le jeu définit ce titre de quête mais n'écrit aucune entrée de journal ; il s'agit très probablement de contenu inutilisé ou coupé de Siege of Dragonspear.\nIl n'y a rien à faire, et elle ne peut pas bloquer votre progression."
+ },
+ {
+  "title": 261898,
+  "idx": 450,
+  "game": "sod",
+  "chapter": "Dragonspear",
+  "where_en": "Near the entrance to the Underground River",
+  "where_fr": "Près de l'entrée de la rivière souterraine",
+  "kind": "companion",
+  "hints_en": [
+   "A Rashemi witch and her berserker bodyguard want to meet Minsc and Dynaheir.",
+   "Come back with both of them alive in the party; Julann is thinking of joining Caelar.",
+   "Find proof of Hephernaan's corruption in the caverns and show it to Julann."
+  ],
+  "hints_fr": [
+   "Une sorcière de Rashéménie et son garde du corps berserker veulent rencontrer Minsc et Dynahéir.",
+   "Revenez avec les deux, vivants, dans le groupe ; Julann songe à rejoindre Caelar.",
+   "Trouvez dans les grottes une preuve de la corruption d'Hephernaan et montrez-la à Julann."
+  ],
+  "solution_en": "Near the entrance to the underground river, meet the wychlaran Julann and her berserker Rigah. They want to speak with Minsc and Dynaheir: return with both alive and in the party.\nThey reveal that Julann leans toward joining the crusade. You must convince her otherwise.\nIn the caverns, look for evidence of Hephernaan's corruption and bring it to Julann. With Rigah's help she may be convinced; Rigah then gives you his sword.\nIf she refuses the truth, Rigah may help you slay her, or both may leave toward Dragonspear Castle, or you kill them both. You can also simply kill them from the start.",
+  "solution_fr": "Près de l'entrée de la rivière souterraine, rencontrez la wychlaran Julann et son berserker Rigah. Ils veulent parler à Minsc et Dynahéir : revenez avec les deux, vivants, dans le groupe.\nVous apprenez que Julann penche pour rejoindre la croisade. Vous devez la convaincre du contraire.\nDans les grottes, cherchez des preuves de la corruption d'Hephernaan et apportez-les à Julann. Avec l'aide de Rigah, elle peut être convaincue ; Rigah vous offre alors son épée.\nSi elle refuse la vérité, Rigah peut vous aider à la tuer, ou tous deux partent vers le château de Vougedragon, ou vous les tuez tous les deux. Vous pouvez aussi les tuer dès le départ."
+ },
+ {
+  "title": 261910,
+  "idx": 451,
+  "game": "sod",
+  "chapter": "Dragonspear",
+  "where_en": "Underground River, crusader depot",
+  "where_fr": "Rivière souterraine, entrepôt des croisés",
+  "kind": "side",
+  "hints_en": [
+   "Ladle, a gnome at the crusader depot, has a job for you.",
+   "Carry his sacks of grain to the empty crates by the river bank.",
+   "Then do what he asks next, even if it seems pointless."
+  ],
+  "hints_fr": [
+   "Ladle, un gnome à l'entrepôt des croisés, a un travail pour vous.",
+   "Portez ses sacs de grains jusqu'aux caisses vides au bord de la rivière.",
+   "Faites ensuite ce qu'il demande, même si cela semble inutile."
+  ],
+  "solution_en": "Talk to Ladle at the crusader depot by the underground river. He asks you to move the sacks of grain next to him into the empty crates on the river bank.\nPick up the sacks and put them in the crates, then report back. He now wants the grain moved back where it was.\nDo it and talk to him again. He admits it was only busywork, the kind that keeps bored crusaders from fighting each other. No real reward, just a chuckle.",
+  "solution_fr": "Parlez à Ladle à l'entrepôt des croisés au bord de la rivière souterraine. Il vous demande de déplacer les sacs de grains près de lui dans les caisses vides sur la berge.\nPrenez les sacs et mettez-les dans les caisses, puis revenez le voir. Il veut maintenant que le grain retourne à sa place.\nFaites-le et reparlez-lui. Il avoue que c'était juste une corvée pour vous occuper, du genre qui empêche les croisés oisifs de se battre entre eux. Pas de vraie récompense, juste un sourire."
+ },
+ {
+  "title": 261914,
+  "idx": 452,
+  "game": "sod",
+  "chapter": "Dragonspear",
+  "where_en": "Underground River",
+  "where_fr": "Rivière souterraine",
+  "kind": "side",
+  "hints_en": [
+   "A crusade wizard by the underground river is binding water elementals for the battle.",
+   "You can stop Strunk by killing him or by killing the elementals.",
+   "Siding with the elementals against him pleases the nereid of the river."
+  ],
+  "hints_fr": [
+   "Un magicien de la croisade, au bord de la rivière souterraine, soumet des élémentaires d'eau pour la bataille.",
+   "Vous pouvez arrêter Strunk en le tuant ou en tuant les élémentaires.",
+   "Aider les élémentaires contre lui plaît à la néréide de la rivière."
+  ],
+  "solution_en": "By the underground river, find Strunk, a crusade wizard binding water elementals to use at Dragonspear Castle.\nBest outcome: when Strunk loses control of the elementals, side with them and help them kill him. A nereid living in the river rewards you.\nIf you kill the elementals instead, both Strunk and the nereid attack you.\nSimply killing Strunk outright also frees the elementals and ends his plan.",
+  "solution_fr": "Au bord de la rivière souterraine, trouvez Strunk, un magicien de la croisade qui soumet des élémentaires d'eau pour la bataille du château de Vougedragon.\nMeilleure issue : quand Strunk perd le contrôle des élémentaires, rangez-vous de leur côté et aidez-les à le tuer. Une néréide qui vit dans la rivière vous récompense.\nSi vous tuez plutôt les élémentaires, Strunk et la néréide vous attaquent tous les deux.\nTuer simplement Strunk libère aussi les élémentaires et met fin à son plan."
+ },
+ {
+  "title": 261915,
+  "idx": 453,
+  "game": "sod",
+  "chapter": "Dragonspear",
+  "where_en": "Caverns beneath Dragonspear",
+  "where_fr": "Grottes sous Vougedragon",
+  "kind": "side",
+  "hints_en": [
+   "Injured crusaders in the caverns are poisoned by a fungus, and someone who knows these caves could help.",
+   "The dark druid Ferrusk has a cure, for 2000 gold or a myconid elder's bloom-sac.",
+   "Bring the cure to the crusaders' leader before it is too late."
+  ],
+  "hints_fr": [
+   "Des croisés blessés dans les grottes sont empoisonnés par un champignon, et quelqu'un qui connaît ces lieux pourrait aider.",
+   "Le druide sombre Ferrusk a un remède, contre 2 000 pièces d'or ou le bulbe reproducteur d'un myconide ancien.",
+   "Apportez le remède au chef des croisés avant qu'il ne soit trop tard."
+  ],
+  "solution_en": "In the caverns beneath Dragonspear, find a group of crusaders poisoned by an underground fungus. They are slowly turning into slimes.\nSeek out the dark druid Ferrusk. He will trade a cure for 2000 gold, or for the bloom-sac of a myconid elder (see The Myconid Tower).\nBring the cure back quickly and give it to the crusaders' leader. If you take too long, they all become slimes.\nIf you demand payment and they refuse, and you keep the cure, the sickness consumes them too.",
+  "solution_fr": "Dans les grottes sous Vougedragon, trouvez un groupe de croisés empoisonnés par un champignon souterrain. Ils se transforment peu à peu en limons.\nAllez voir le druide sombre Ferrusk. Il échange un remède contre 2 000 pièces d'or, ou contre le bulbe reproducteur d'un myconide ancien (voir La Tour Myconide).\nRapportez vite le remède et donnez-le au chef des croisés. Si vous tardez trop, ils deviennent tous des limons.\nSi vous exigez un paiement qu'ils refusent et gardez le remède, la maladie les consume aussi."
+ },
+ {
+  "title": 261917,
+  "idx": 454,
+  "game": "sod",
+  "chapter": "Dragonspear",
+  "where_en": "Caverns beneath Dragonspear",
+  "where_fr": "Grottes sous Vougedragon",
+  "kind": "side",
+  "hints_en": [
+   "A drow search party led by Shapur clashes with the crusade in the tunnels.",
+   "Two young drow lovers have run away; find them somewhere in the caverns.",
+   "Send them home, fake their deaths with their house insignias, or hand them over to the crusaders."
+  ],
+  "hints_fr": [
+   "Une bande de drows menée par Shapur affronte la croisade dans les tunnels.",
+   "Deux jeunes amoureux drows se sont enfuis ; trouvez-les quelque part dans les grottes.",
+   "Renvoyez-les chez eux, simulez leur mort avec leurs insignes de maison, ou livrez-les aux croisés."
+  ],
+  "solution_en": "In the tunnels you meet Shapur and her drow fighting crusaders. Talk to her: two adolescent drow have run away, and she is searching for them.\nExplore the caverns to find the pair, star-crossed lovers. Then choose:\n- convince them to go home; they meet you where the drow face the crusaders, and Shapur thanks you and withdraws;\n- agree to fake their deaths: take their house insignias to Shapur, and her people leave for the Underdark (she may fight instead);\n- take them to the crusaders, who either escort them to the surface or keep them as prisoners;\n- kill them, or kill Shapur's band first and tell the youths they are free.\nIf an ankheg kills the pair, report their deaths to Shapur.",
+  "solution_fr": "Dans les tunnels, vous croisez Shapur et ses drows aux prises avec des croisés. Parlez-lui : deux adolescents drows se sont enfuis et elle les recherche.\nExplorez les grottes pour trouver le couple, des amoureux maudits. Choisissez ensuite :\n- les convaincre de rentrer ; ils vous retrouvent là où les drows affrontent les croisés, et Shapur vous remercie et se retire ;\n- accepter de simuler leur mort : apportez leurs insignes de maison à Shapur, et les siens repartent vers l'Ombre-Terre (elle peut aussi vous combattre) ;\n- les mener aux croisés, qui les escortent vers la surface ou les gardent prisonniers ;\n- les tuer, ou éliminer d'abord la bande de Shapur et annoncer aux jeunes qu'ils sont libres.\nSi un ankheg tue le couple, annoncez leur mort à Shapur."
+ }
+]

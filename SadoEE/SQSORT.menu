@@ -1,0 +1,11 @@
+menu
+{
+	name "SQSORT_TICK"
+	ignoreesc
+	-- SadoQoL sorted loot: its enabled check runs every frame (throttled in SQSort_Tick).
+	label
+	{
+		area 0 0 0 0
+		enabled "SQSort_Tick()"
+	}
+}

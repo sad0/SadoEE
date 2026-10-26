@@ -1,0 +1,10 @@
+// SadoEE strings (GENERATED from SadoEE/src/tra)
+@2000 = ~Party Stash~
+@2001 = ~Pihenőtábor~
+@2002 = ~Kényelmi funkciók~
+@2003 = ~Motorbővítés~
+@2010 = ~A SadoEE felváltja a Party Stash-t és a SadoQoL-t (ugyanazok a fájlok): előbb távolítsd el a Party Stash és a SadoQoL összes komponensét. A láda tartalma a mentéseidben marad, és visszatér a SadoEE ládájával.~
+@2011 = ~A Pihenőtábor komponens szükséges.~
+@2012 = ~Nagykereskedő a pihenőtáborban: minden tárgyat árul, amelyet a már meglátogatott boltokban láttál (a pihenőtábor és a láda szükséges)~
+@2013 = ~A láda szükséges.~
+@2014 = ~Baldur's Gate EE, Baldur's Gate II EE vagy EET szükséges.~

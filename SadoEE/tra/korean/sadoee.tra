@@ -1,0 +1,10 @@
+// SadoEE strings (GENERATED from SadoEE/src/tra)
+@2000 = ~Party Stash~
+@2001 = ~휴식 야영지~
+@2002 = ~편의성 개선~
+@2003 = ~엔진 확장~
+@2010 = ~SadoEE는 Party Stash와 SadoQoL을 대체합니다 (같은 파일): 먼저 Party Stash와 SadoQoL의 모든 구성 요소를 제거하세요. 보관함 내용은 저장 파일에 남아 있다가 SadoEE의 보관함으로 돌아옵니다.~
+@2011 = ~휴식 야영지 구성 요소가 필요합니다.~
+@2012 = ~휴식 야영지의 대상인: 이미 방문한 상점에서 본 모든 아이템을 판매 (휴식 야영지와 보관함 필요)~
+@2013 = ~보관함이 필요합니다.~
+@2014 = ~Baldur's Gate EE, Baldur's Gate II EE 또는 EET가 필요합니다.~

@@ -1,0 +1,10 @@
+// SadoEE strings (GENERATED from SadoEE/src/tra)
+@2000 = ~Party Stash~
+@2001 = ~Campo di riposo~
+@2002 = ~Comodità di gioco~
+@2003 = ~Estensione del motore~
+@2010 = ~SadoEE sostituisce Party Stash e SadoQoL (stessi file): disinstalla prima tutti i componenti di Party Stash e SadoQoL. Il contenuto del baule resta nei salvataggi e torna con il baule di SadoEE.~
+@2011 = ~Richiede il componente Campo di riposo.~
+@2012 = ~Gran mercante al campo di riposo: vende ogni oggetto visto nei negozi già visitati (richiede il campo di riposo e il baule)~
+@2013 = ~Richiede il baule.~
+@2014 = ~Richiede Baldur's Gate EE, Baldur's Gate II EE o EET.~

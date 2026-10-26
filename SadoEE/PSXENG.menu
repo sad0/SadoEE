@@ -1,0 +1,11 @@
+menu
+{
+	name "PSXENG_TICK"
+	ignoreesc
+	-- Party Stash engine extension prototype: its enabled check runs every frame (throttled in PSXEng_Tick).
+	label
+	{
+		area 0 0 0 0
+		enabled "PSXEng_Tick()"
+	}
+}

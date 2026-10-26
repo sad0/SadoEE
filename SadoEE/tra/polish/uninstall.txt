@@ -1,0 +1,1 @@
+﻿Party Stash: przed odinstalowaniem opróżnij skrzynię w grze: Ctrl + lewy przycisk na dużej torbie obok wagi na stronie ekwipunku. Zebrane torby wracają wypełnione przedmiotami, które mogą pomieścić; cała reszta spada na ziemię. W przeciwnym razie zawartość skrzyni zostaje w zapisach, ale jest niedostępna aż do ponownej instalacji moda.

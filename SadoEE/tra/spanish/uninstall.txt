@@ -1,0 +1,1 @@
+﻿Party Stash: antes de desinstalar, vacía el baúl en el juego: Ctrl + clic izquierdo en la bolsa grande junto al peso, en la página de inventario. Tus bolsas coleccionadas vuelven llenas con los objetos que pueden contener; todo lo demás cae al suelo. Si no, el contenido del baúl sigue en tus partidas guardadas pero queda inaccesible hasta reinstalar el mod.

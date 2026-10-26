@@ -1,0 +1,842 @@
+[
+  {
+    "title": 257689,
+    "idx": 375,
+    "game": "sod",
+    "chapter": "Dragonspear Castle",
+    "where_en": "Below Dragonspear Castle, near Kanaglym",
+    "where_fr": "Sous le château de Vougedragon, près de Kanaglym",
+    "kind": "side",
+    "hints_en": [
+      "The ghost dragon guarding the doors to Kanaglym makes threats, but something else is pulling its strings.",
+      "Walk past the dragon into the room beyond, where a cabal of wizards works dark magic.",
+      "Kill the wizard Kherriun, who holds the dragon's essence, then speak to Halatathlaer again."
+    ],
+    "hints_fr": [
+      "Le dragon fantôme qui garde les portes de Kanaglym profère des menaces, mais une autre force la manipule.",
+      "Passez devant le dragon et entrez dans la salle suivante, où une cabale de magiciens pratique la magie noire.",
+      "Tuez le magicien Kherriun, qui détient l'essence du dragon, puis reparlez à Halatathlaer."
+    ],
+    "solution_en": "A huge ghost dragon, Halatathlaer, guards a pair of doors at the entrance to Kanaglym. She threatens you but does not attack: she is bound by an outside power. If you found the journal about her eggs earlier, you can tell her their fate.\nPass her and enter the room beyond, where a cabal of wizards performs a ritual. Kill their leader Kherriun to free the dragon's essence; once freed, Halatathlaer helps you finish the cabal.\nTalk to her afterwards: she reveals what she knows about Hephernaan and Caelar, then departs for the Fugue Plane through the Fountain of Nepenthe.\nIf you tell her you killed her mutant hatchlings, she leaves in a rage. You can also simply fight and destroy the ghost dragon.",
+    "solution_fr": "Un énorme dragon fantôme, Halatathlaer, garde une double porte à l'entrée de Kanaglym. Elle vous menace mais n'attaque pas : un pouvoir extérieur la contrôle. Si vous avez trouvé plus tôt le journal qui parle de ses œufs, vous pouvez lui dire ce qu'ils sont devenus.\nPassez devant elle et entrez dans la salle suivante, où une cabale de magiciens accomplit un rituel. Tuez leur chef, Kherriun, pour libérer l'essence du dragon ; une fois libre, Halatathlaer vous aide à achever la cabale.\nParlez-lui ensuite : elle révèle ce qu'elle sait d'Hephernaan et de Caelar, puis rejoint le Plan de la Fugue par la fontaine de Népenthès.\nSi vous lui avouez avoir tué sa progéniture mutante, elle part, folle de rage. Vous pouvez aussi combattre et détruire le dragon fantôme."
+  },
+  {
+    "title": 258034,
+    "idx": 376,
+    "game": "sod",
+    "chapter": "Boareskyr Bridge",
+    "where_en": "Bridgefort",
+    "where_fr": "Fort-du-Pont",
+    "kind": "side",
+    "hints_en": [
+      "The crusaders besieging Bridgefort would welcome a traitor inside the walls.",
+      "Persuade the dwarf lieutenant Kharm that you serve the crusade, then get into the fort.",
+      "Only the guard Mari holds the drawbridge key: talk her into lowering it or take the key."
+    ],
+    "hints_fr": [
+      "Les croisés qui assiègent Fort-du-Pont apprécieraient un traître derrière les murs.",
+      "Convainquez le lieutenant nain Kharm que vous servez la croisade, puis entrez dans le fort.",
+      "Seule la garde Mari détient la clef du pont-levis : persuadez-la de l'abaisser ou prenez-lui la clef."
+    ],
+    "solution_en": "This is an evil option that hands Bridgefort to the crusade at the cost of many lives.\nAt the crusader lines outside Bridgefort, talk to the dwarf Lieutenant Kharm and convince him you belong to the crusade. He asks you to slip into the fort and lower the drawbridge.\nInside, the only key to the drawbridge mechanism is held by the guard Mari. Convince her to lower the bridge, or get the key from her by other means, then work the mechanism.\nThe crusaders take the fort. You are thrown in with the prisoners and must fight your way out, unless you identify yourself, in which case you leave unharmed while everyone else in Bridgefort is captured.",
+    "solution_fr": "C'est une option maléfique qui livre Fort-du-Pont à la croisade au prix de nombreuses vies.\nDevant Fort-du-Pont, du côté des croisés, parlez au lieutenant nain Kharm et convainquez-le que vous appartenez à la croisade. Il vous demande de vous infiltrer dans le fort et d'abaisser le pont-levis.\nÀ l'intérieur, l'unique clef du mécanisme est détenue par la garde Mari. Convainquez-la d'abaisser le pont ou obtenez sa clef d'une autre façon, puis actionnez le mécanisme.\nLes croisés prennent le fort. Vous êtes jeté avec les prisonniers et devez vous frayer un chemin dehors, sauf si vous déclinez votre identité : vous partez alors sans mal, mais tous les autres occupants de Fort-du-Pont sont faits prisonniers."
+  },
+  {
+    "title": 258697,
+    "idx": 377,
+    "game": "sod",
+    "chapter": "Dragonspear Castle",
+    "where_en": "Crusader camp near Dragonspear Castle",
+    "where_fr": "Camp des croisés près du château de Vougedragon",
+    "kind": "side",
+    "hints_en": [
+      "While disguised among the crusaders, look for a cleric who handles the camp's trolls.",
+      "Sindret wants special troll shackles fetched from a chest somewhere in the camp.",
+      "With the shackles, talk to the troll Ulori, or trick Sindret into doing the job herself."
+    ],
+    "hints_fr": [
+      "Pendant que vous êtes déguisé parmi les croisés, cherchez une prêtresse qui s'occupe des trolls du camp.",
+      "Sindret veut qu'on lui rapporte des menottes spéciales pour trolls, rangées dans un coffre du camp.",
+      "Avec les menottes, parlez au troll Ulori, ou poussez Sindret à faire le travail elle-même."
+    ],
+    "solution_en": "In the crusader camp, Sindret, a cleric of Shevarash and assistant troll-wrangler, asks you to find troll shackles kept in a chest somewhere in the camp.\nBring the shackles back and agree to put them on the troll Ulori. Talk to the troll and convince it to let you shackle it, then report to Sindret.\nOther outcomes: bluff Sindret into shackling it herself (it goes badly for the crusaders), refuse and end up fighting her, or kill the troll, accidentally or on purpose. Killing it angers Sindret but leaves one less troll for the crusade to throw at the coalition.",
+    "solution_fr": "Dans le camp des croisés, Sindret, prêtresse de Shevarash et dompteuse de trolls adjointe, vous demande de trouver des menottes pour trolls rangées dans un coffre du camp.\nRapportez les menottes et acceptez de les passer au troll Ulori. Parlez au troll et convainquez-le de se laisser menotter, puis faites votre rapport à Sindret.\nAutres issues : persuadez Sindret de le menotter elle-même (cela tourne mal pour les croisés), refusez et finissez par la combattre, ou tuez le troll, par accident ou exprès. Le tuer fâche Sindret, mais la croisade aura un troll de moins à lancer contre la coalition."
+  },
+  {
+    "title": 258713,
+    "idx": 378,
+    "game": "sod",
+    "chapter": "Dragonspear Castle",
+    "where_en": "Crusader camp near Dragonspear Castle",
+    "where_fr": "Camp des croisés près du château de Vougedragon",
+    "kind": "side",
+    "hints_en": [
+      "Two crusader rangers are at odds, and their commander Leopas wants an outsider to judge.",
+      "Hear Valis and Corinth, then the crusaders Ravoc, Damarr and the gnome Delton.",
+      "Corinth did warn the hamlet of Innisfall; give Leopas a verdict or suggest a trial by combat."
+    ],
+    "hints_fr": [
+      "Deux rôdeurs croisés s'opposent, et leur commandant Leopas veut un regard extérieur pour trancher.",
+      "Écoutez Valis et Corinth, puis les croisés Ravoc, Damarr et le gnome Delton.",
+      "Corinth a bien prévenu le hameau d'Innisfall ; rendez votre verdict à Leopas ou proposez un duel judiciaire."
+    ],
+    "solution_en": "In the crusader camp, the ranger Valis accuses her fellow ranger Corinth of betrayal, and their commander Leopas asks you to find the truth.\nTalk to Valis, Corinth, the orc Ravoc, Damarr and the gnome wizard Delton. Ravoc and Delton defend Corinth, Damarr fears the punishment is too harsh, and Corinth himself is evasive.\nThe truth: Corinth warned the hamlet of Innisfall, costing the crusade recruits and supplies.\nReturn to Leopas and declare Corinth innocent or guilty, or convince him to settle it by trial by combat, which leaves one fewer crusader in Caelar's ranks. Your companions may react to your choice.",
+    "solution_fr": "Dans le camp des croisés, la rôdeuse Valis accuse son collègue Corinth de trahison, et leur commandant Leopas vous demande de découvrir la vérité.\nParlez à Valis, à Corinth, à l'orque Ravoc, à Damarr et au magicien gnome Delton. Ravoc et Delton défendent Corinth, Damarr juge la peine trop lourde, et Corinth reste évasif.\nLa vérité : Corinth a alerté le hameau d'Innisfall, ce qui a coûté des recrues et des provisions à la croisade.\nRetournez voir Leopas et déclarez Corinth innocent ou coupable, ou convainquez-le de trancher par un duel judiciaire, ce qui retire un croisé des rangs de Caelar. Vos compagnons peuvent réagir à votre choix."
+  },
+  {
+    "title": 258806,
+    "idx": 379,
+    "game": "sod",
+    "chapter": "Dragonspear Castle",
+    "where_en": "Crusader camp near Dragonspear Castle",
+    "where_fr": "Camp des croisés près du château de Vougedragon",
+    "kind": "side",
+    "hints_en": [
+      "The crusade's morale officer wants new recruits to understand why they fight.",
+      "Deneld sends you to chat with Ravoc, Sindret, Zare and Tristian around the camp.",
+      "Listen to each one's reasons for following Caelar, then answer Deneld's questions accordingly."
+    ],
+    "hints_fr": [
+      "L'officier du moral de la croisade veut que les recrues comprennent pourquoi elles se battent.",
+      "Deneld vous envoie discuter avec Ravoc, Sindret, Zare et Tristian dans le camp.",
+      "Écoutez les raisons de chacun de suivre Caelar, puis répondez aux questions de Deneld en conséquence."
+    ],
+    "solution_en": "In the crusader camp, Morale Officer Deneld asks you to talk with some crusaders and then prove what you learned.\nSpeak to the orc Ravoc (his tribe's souls are trapped in the Nine Hells), Sindret (a drow-hunting cleric of Shevarash won over by Caelar's faith), the new recruit Zare (blindly devoted to Caelar) and Tristian (a cleric of the Red Knight conscripted by force, now content to plan for the crusade).\nReturn to Deneld and answer his questions using what they told you. If he is satisfied, the quest closes and you understand your enemies better.",
+    "solution_fr": "Dans le camp des croisés, l'officier du moral Deneld vous demande de parler à quelques croisés, puis de lui montrer ce que vous avez appris.\nParlez à l'orque Ravoc (les âmes de sa tribu sont piégées dans les Neuf Enfers), à Sindret (prêtresse de Shevarash, chasseuse de drows, conquise par la foi de Caelar), à la recrue Zare (dévoué à Caelar sans réserve) et à Tristian (clerc de la Cavalière Rouge, conscrit de force et désormais heureux de servir de stratège).\nRetournez voir Deneld et répondez à ses questions d'après leurs propos. S'il est satisfait, la quête se termine et vous comprenez mieux vos ennemis."
+  },
+  {
+    "title": 259541,
+    "idx": 380,
+    "game": "sod",
+    "chapter": "any",
+    "where_en": "Throughout the expedition",
+    "where_fr": "Tout au long de l'expédition",
+    "kind": "companion",
+    "hints_en": [
+      "Neera hears the voice of the wild mage Adoy and wants a potion to silence it.",
+      "She needs a seven-legged spider's leg, a planetar's feather, belladonna, a potion of perception and turnip juice.",
+      "Hand her the ingredients, then rest so she can brew; or seek the Fountain of Nepenthe in the deep caverns."
+    ],
+    "hints_fr": [
+      "Neera entend la voix de l'entropiste Adoy et veut une potion pour la faire taire.",
+      "Il lui faut une patte d'araignée à sept pattes, une plume de planétaire, de la belladone, une potion de perception et du jus de navet.",
+      "Donnez-lui les ingrédients, puis reposez-vous pour qu'elle prépare la potion ; ou cherchez la fontaine de Népenthès dans les grottes profondes."
+    ],
+    "solution_en": "With Neera in the party, she asks for five ingredients to drive Adoy from her mind: a leg from a seven-legged spider, a feather from a planetar's wing, belladonna, a potion of perception and turnip juice.\nGather them as you travel. The bard Voghiln can tell you the spider lives in a cavern to the east; the turnip juice is sold by a very dedicated gnome.\nOnce she has all of them (or if you let her try without them), make camp and she brews the potion. A complete potion frees her; an incomplete one works but costs her, more or less heavily.\nShe may instead decide to free Adoy for good: then look for the portal to the Fugue Plane, the Fountain of Nepenthe, in the caverns beneath Dragonspear, and help her release his spirit.",
+    "solution_fr": "Quand Neera est dans le groupe, elle demande cinq ingrédients pour chasser Adoy de son esprit : une patte d'araignée à sept pattes, une plume d'aile de planétaire, de la belladone, une potion de perception et du jus de navet.\nRassemblez-les au fil du voyage. Le barde Voghiln peut vous dire que l'araignée vit dans une grotte à l'est ; le jus de navet est vendu par un gnome très dévoué.\nQuand elle a tout (ou si vous la laissez essayer sans tout), dressez le camp et elle prépare la potion. Une potion complète la libère ; une potion incomplète fonctionne, mais elle en paie le prix, plus ou moins lourd.\nElle peut aussi choisir de libérer Adoy pour de bon : cherchez alors le portail vers le Plan de la Fugue, la fontaine de Népenthès, dans les grottes sous Vougedragon, et aidez-la à libérer son esprit."
+  },
+  {
+    "title": 259567,
+    "idx": 381,
+    "game": "sod",
+    "chapter": "Prologue",
+    "where_en": "Korlasz's tomb",
+    "where_fr": "Tombeau de Korlasz",
+    "kind": "side",
+    "hints_en": [
+      "This quest has no journal entries of its own in this game.",
+      "It most likely covers the remnants of Sarevok's followers in Korlasz's tomb at the start of the campaign.",
+      "Explore every room of the tomb with the Flaming Fist before leaving."
+    ],
+    "hints_fr": [
+      "Cette quête n'a aucune entrée de journal propre dans ce jeu.",
+      "Elle concerne très probablement les restes des partisans de Sarevok dans le tombeau de Korlasz, au début de la campagne.",
+      "Explorez toutes les salles du tombeau avec le Poing Enflammé avant de partir."
+    ],
+    "solution_en": "The game's quest table lists this quest without any journal entry, so there is nothing specific to track.\nIt most likely belongs to the opening of Siege of Dragonspear: with the Flaming Fist, you clear the tomb where Korlasz and the last followers of Sarevok are hiding.\nExplore the whole dungeon, deal with Korlasz, and take care of the side matters found there (the rescued girl, the mummy Fanegonorom) before returning to the surface.",
+    "solution_fr": "La table des quêtes du jeu contient cette quête sans aucune entrée de journal : il n'y a rien de précis à suivre.\nElle appartient très probablement au début de Siege of Dragonspear : avec le Poing Enflammé, vous nettoyez le tombeau où se cachent Korlasz et les derniers partisans de Sarevok.\nExplorez tout le donjon, réglez le sort de Korlasz et occupez-vous des affaires annexes qui s'y trouvent (la fillette secourue, la momie Fanegonorom) avant de remonter à la surface."
+  },
+  {
+    "title": 259568,
+    "idx": 382,
+    "game": "sod",
+    "chapter": "Prologue",
+    "where_en": "Korlasz's tomb",
+    "where_fr": "Tombeau de Korlasz",
+    "kind": "side",
+    "hints_en": [
+      "Not everyone held prisoner in Korlasz's tomb is what they appear to be.",
+      "A young girl seems to be Korlasz's captive; Imoen may also seem to appear somewhere she should not be.",
+      "Doppelgangers are in the tomb: watch for odd details and be ready to fight."
+    ],
+    "hints_fr": [
+      "Les prisonniers du tombeau de Korlasz ne sont pas tous ce qu'ils semblent être.",
+      "Une fillette semble être captive de Korlasz ; Imoen pourrait aussi apparaître là où elle ne devrait pas être.",
+      "Des doppelgangers rôdent dans le tombeau : guettez les détails étranges et préparez-vous à combattre."
+    ],
+    "solution_en": "In Korlasz's tomb you find a young girl claiming to be a child tortured by Korlasz.\nYou can free her and let the Flaming Fist guide her to the surface, or see through the act: she is a doppelganger, and you fight and kill it.\nLater a fake Imoen appears, sometimes working with Korlasz. It reveals itself as a doppelganger and you must destroy it. If you freed the girl earlier, you are left wondering whether she was a real child at all.",
+    "solution_fr": "Dans le tombeau de Korlasz, vous trouvez une fillette qui prétend avoir été torturée par Korlasz.\nVous pouvez la libérer et laisser le Poing Enflammé la guider vers la surface, ou percer la ruse à jour : c'est un doppelganger, que vous combattez et tuez.\nPlus tard, une fausse Imoen apparaît, parfois alliée à Korlasz. Elle se révèle être un doppelganger et vous devez la détruire. Si vous avez libéré la fillette, vous vous demandez alors si c'était vraiment une enfant."
+  },
+  {
+    "title": 259569,
+    "idx": 383,
+    "game": "sod",
+    "chapter": "Prologue",
+    "where_en": "Korlasz's tomb",
+    "where_fr": "Tombeau de Korlasz",
+    "kind": "side",
+    "hints_en": [
+      "Something ancient sleeps in a chamber of Korlasz's tomb and dislikes the noise.",
+      "The mummy Fanegonorom wants the intruders gone so it can rest.",
+      "Defeat Korlasz, then go back upstairs to the mummy's chamber."
+    ],
+    "hints_fr": [
+      "Une chose ancienne dort dans une salle du tombeau de Korlasz et n'aime pas le bruit.",
+      "La momie Fanegonorom veut que les intrus disparaissent pour retrouver le repos.",
+      "Vainquez Korlasz, puis remontez à la chambre de la momie."
+    ],
+    "solution_en": "In Korlasz's tomb you disturb the mummy Fanegonorom. Instead of fighting, it orders you to deal with Korlasz, whose noisy followers keep it from sleeping.\nContinue through the tomb and defeat Korlasz on the lower level.\nThen return to the mummy's chamber on the upper level and speak to it again. It rewards you for the service and the quest ends.",
+    "solution_fr": "Dans le tombeau de Korlasz, vous dérangez la momie Fanegonorom. Au lieu de combattre, elle vous ordonne de régler le cas de Korlasz, dont les partisans bruyants l'empêchent de dormir.\nPoursuivez l'exploration du tombeau et vainquez Korlasz au niveau inférieur.\nRetournez ensuite dans la chambre de la momie, au niveau supérieur, et reparlez-lui. Elle vous récompense pour ce service et la quête se termine."
+  },
+  {
+    "title": 259615,
+    "idx": 384,
+    "game": "sod",
+    "chapter": "Coast Way Crossing",
+    "where_en": "Coast Way Crossing",
+    "where_fr": "Pont de la Voie Côtière",
+    "kind": "main",
+    "hints_en": [
+      "The expedition's planned road north has been cut.",
+      "With the Coast Way bridge destroyed, the Flaming Fist must go around.",
+      "Head for Boareskyr Bridge and the fort that guards it, Bridgefort."
+    ],
+    "hints_fr": [
+      "La route prévue de l'expédition vers le nord est coupée.",
+      "Le pont de la Voie Côtière étant détruit, le Poing Enflammé doit faire un détour.",
+      "Dirigez-vous vers le Pont de Boreskyr et le fort qui le garde, Fort-du-Pont."
+    ],
+    "solution_en": "After leaving Baldur's Gate, the expedition camps near Coast Way Crossing. Explore the area, deal with the crusaders there and finish your business with the Flaming Fist officers in camp.\nThe bridge over the river is blown up, so the army cannot cross there.\nThe new route leads to Boareskyr Bridge, the place where Bhaal died, guarded by Bridgefort. Travel there when you are ready to continue the main story.",
+    "solution_fr": "Après avoir quitté la Porte de Baldur, l'expédition campe près du pont de la Voie Côtière. Explorez la zone, réglez le sort des croisés présents et terminez vos affaires avec les officiers du Poing Enflammé au camp.\nLe pont sur le fleuve est détruit : l'armée ne peut plus passer par là.\nLe nouvel itinéraire mène jusqu'au Pont de Boreskyr, le lieu de la mort de Bhaal, gardé par Fort-du-Pont. Rendez-vous-y quand vous êtes prêt à poursuivre l'histoire principale."
+  },
+  {
+    "title": 259618,
+    "idx": 385,
+    "game": "sod",
+    "chapter": "Baldur's Gate",
+    "where_en": "Baldur's Gate, Ducal Palace",
+    "where_fr": "Porte de Baldur, Palais Ducal",
+    "kind": "side",
+    "hints_en": [
+      "The gold you carried at the end of your last adventure was put in safekeeping at the palace.",
+      "The treasurer Ophyllis works in a small room on the south side of the palace basement.",
+      "If he says the gold is lost, meet him outside and follow his lead to the Three Old Kegs."
+    ],
+    "hints_fr": [
+      "L'or que vous aviez à la fin de votre dernière aventure a été mis en sûreté au palais.",
+      "Le trésorier Ophyllis travaille dans une petite pièce, côté sud, au sous-sol du palais.",
+      "S'il annonce que l'or est perdu, retrouvez-le dehors et suivez sa piste jusqu'aux Trois Vieilles Chopes."
+    ],
+    "solution_en": "Your gold was deposited in the Ducal Palace vault. Go down to the basement and talk to the treasurer Ophyllis in the small room on the south side to get it back. He also places a storage chest in your quarters.\nIn one branch he admits the gold was lost and promises to repay you outside the palace. He then turns up beaten outside the High Hall: thieves took the money. Their hideout is on the second floor of the Three Old Kegs. They spent it on refugees fleeing Caelar; you can forgive them, kill them, or send them to the Flaming Fist. The gold is gone in every case.\nOphyllis may later offer a golden bust of your head as repayment. If he dies at the hands of crusaders, seek them out to recover your fortune.",
+    "solution_fr": "Votre or a été déposé dans la chambre forte du Palais Ducal. Descendez au sous-sol et parlez au trésorier Ophyllis, dans la petite pièce côté sud, pour le récupérer. Il installe aussi un coffre dans vos quartiers.\nDans une variante, il avoue avoir perdu l'or et promet de vous rembourser devant le palais. Il réapparaît blessé devant la Grande-Maison : des voleurs ont pris l'argent. Leur repaire est au deuxième étage des Trois Vieilles Chopes. Ils l'ont dépensé pour les réfugiés qui fuient Caelar ; vous pouvez les pardonner, les tuer ou les livrer au Poing Enflammé. L'or est perdu dans tous les cas.\nOphyllis peut ensuite vous offrir un buste en or à votre effigie. S'il meurt sous les coups de croisés, retrouvez-les pour récupérer votre fortune."
+  },
+  {
+    "title": 259620,
+    "idx": 386,
+    "game": "sod",
+    "chapter": "Baldur's Gate - Dragonspear Castle",
+    "where_en": "Baldur's Gate, then the expedition",
+    "where_fr": "Porte de Baldur, puis l'expédition",
+    "kind": "side",
+    "hints_en": [
+      "Grand Duke Entar Silvershield's daughter Skie wants a private word with you at the palace.",
+      "She has secretly joined the Flaming Fist under a false name; decide whether to tell her father.",
+      "Keep an eye out for her during the march north, and look for her in Dragonspear Castle after the battle."
+    ],
+    "hints_fr": [
+      "Skie, la fille du Grand Duc Entar Écudargent, veut vous parler en privé au palais.",
+      "Elle a rejoint le Poing Enflammé en secret sous un faux nom ; décidez si vous prévenez son père.",
+      "Gardez un œil sur elle pendant la marche vers le nord et cherchez-la dans le château de Vougedragon après la bataille."
+    ],
+    "solution_en": "At the Ducal Palace you meet Skie Silvershield, who hints she wants to talk alone. Wait: she visits your room at night and reveals she has joined the Flaming Fist under an assumed name.\nKeep her secret or tell Grand Duke Entar Silvershield. Either way she comes along; Entar asks that she be treated as any soldier.\nDuring the expedition, rumors about her identity and her link to Bence Duncan spread through the camps; you can find her at the coalition camp outside Dragonspear Castle.\nAfter the castle falls, Skie, briefly captured by crusaders, is found hiding there. She tells you Caelar went to the vault below the castle, and the Flaming Fist takes charge of her safety.\nHer fate is tied to the main story's ending in Baldur's Gate.",
+    "solution_fr": "Au Palais Ducal, vous croisez Skie Écudargent, qui laisse entendre qu'elle veut vous parler seule. Attendez : elle vient dans votre chambre la nuit et révèle qu'elle a rejoint le Poing Enflammé sous un faux nom.\nGardez son secret ou prévenez le Grand Duc Entar Écudargent. Dans les deux cas, elle part avec l'expédition ; Entar demande qu'elle soit traitée comme n'importe quel soldat.\nPendant le voyage, des rumeurs sur son identité et ses liens avec Bence Duncan circulent dans les camps ; vous pouvez la trouver au camp de la coalition, devant le château de Vougedragon.\nAprès la chute du château, Skie, un temps capturée par les croisés, est retrouvée cachée sur place. Elle vous apprend que Caelar est descendue à la chambre forte sous le château, et le Poing Enflammé veille sur elle.\nSon sort est lié à la fin de l'histoire principale, à la Porte de Baldur."
+  },
+  {
+    "title": 259621,
+    "idx": 387,
+    "game": "sod",
+    "chapter": "Baldur's Gate",
+    "where_en": "Baldur's Gate",
+    "where_fr": "Porte de Baldur",
+    "kind": "main",
+    "hints_en": [
+      "Before marching north you may gather old friends from your earlier adventures.",
+      "Captain Schael Corwin escorts you around the city while you look for companions.",
+      "Try the Three Old Kegs, the Elfsong Tavern, the old Iron Throne building and the Flaming Fist headquarters, then return to the palace."
+    ],
+    "hints_fr": [
+      "Avant la marche vers le nord, vous pouvez rassembler de vieux amis de vos aventures passées.",
+      "Le capitaine Schael Corwin vous accompagne en ville pendant que vous cherchez des compagnons.",
+      "Essayez les Trois Vieilles Chopes, la taverne du Chant de l'Elfe, l'ancien bâtiment du Trône de Fer et le quartier général du Poing Enflammé, puis retournez au palais."
+    ],
+    "solution_en": "Captain Schael Corwin accompanies you through Baldur's Gate to recruit companions for the journey to Dragonspear.\nMinsc and Dynaheir have rooms at the Three Old Kegs. Garrick, Safana and Coran are at the Elfsong Tavern. Rasaad works at a refugee camp in the old Iron Throne building. Tiax is held at the Flaming Fist headquarters.\nInvite whoever you want. When you are done, Corwin advises returning to the Ducal Palace, which moves the story on and ends your time in the city.\nCompanions you did not take still join the expedition: you will find them at the Flaming Fist camp near Coast Way Crossing.",
+    "solution_fr": "Le capitaine Schael Corwin vous accompagne dans la Porte de Baldur pour recruter des compagnons en vue du voyage vers Vougedragon.\nMinsc et Dynahéir logent aux Trois Vieilles Chopes. Garrick, Safana et Coran sont à la taverne du Chant de l'Elfe. Rasaad travaille dans un camp de réfugiés, dans l'ancien bâtiment du Trône de Fer. Tiax est détenu au quartier général du Poing Enflammé.\nInvitez qui vous voulez. Une fois terminé, Corwin conseille de retourner au Palais Ducal, ce qui fait avancer l'histoire et met fin à votre séjour en ville.\nLes compagnons que vous n'avez pas pris rejoignent quand même l'expédition : vous les retrouverez au camp du Poing Enflammé, près du pont de la Voie Côtière."
+  },
+  {
+    "title": 259623,
+    "idx": 388,
+    "game": "sod",
+    "chapter": "any",
+    "where_en": "Throughout the expedition",
+    "where_fr": "Tout au long de l'expédition",
+    "kind": "companion",
+    "hints_en": [
+      "This companion quest has no journal entries of its own in this game.",
+      "Captain Schael Corwin of the Flaming Fist can join you from Baldur's Gate onward.",
+      "Keep her in the party and talk with her often to learn more about her and her family."
+    ],
+    "hints_fr": [
+      "Cette quête de compagnon n'a aucune entrée de journal propre dans ce jeu.",
+      "Le capitaine Schael Corwin, du Poing Enflammé, peut vous rejoindre dès la Porte de Baldur.",
+      "Gardez-la dans le groupe et parlez-lui souvent pour en apprendre davantage sur elle et sa famille."
+    ],
+    "solution_en": "The game's quest table lists this entry without any journal text, so there are no steps to follow.\nSchael Corwin, a Flaming Fist captain, is assigned to you in Baldur's Gate and can travel with you through the whole campaign.\nTake her along and answer her when she starts a conversation; her personal story unfolds through those talks during the march north and at the coalition camp.",
+    "solution_fr": "La table des quêtes du jeu contient cette entrée sans aucun texte de journal : il n'y a pas d'étapes à suivre.\nSchael Corwin, capitaine du Poing Enflammé, vous est affectée à la Porte de Baldur et peut vous accompagner pendant toute la campagne.\nEmmenez-la et répondez-lui quand elle engage la conversation ; son histoire personnelle se dévoile au fil de ces discussions, pendant la marche vers le nord et au camp de la coalition."
+  },
+  {
+    "title": 259626,
+    "idx": 389,
+    "game": "sod",
+    "chapter": "Baldur's Gate - Epilogue",
+    "where_en": "Ducal Palace, Boareskyr Bridge, Baldur's Gate",
+    "where_fr": "Palais Ducal, Pont de Boreskyr, Porte de Baldur",
+    "kind": "main",
+    "hints_en": [
+      "A hooded stranger keeps appearing wherever you go and seems to know you.",
+      "He reveals himself again after your blackout on Boareskyr Bridge and warns you about Caelar.",
+      "After the night Skie dies, gather your defense: Duke Belt will hear everyone who met you on the way north."
+    ],
+    "hints_fr": [
+      "Un étranger encapuchonné apparaît partout où vous allez et semble vous connaître.",
+      "Il se montre de nouveau après votre malaise sur le Pont de Boreskyr et vous met en garde contre Caelar.",
+      "Après la nuit où Skie meurt, préparez votre défense : le Duc Belt entendra tous ceux que vous avez croisés vers le nord."
+    ],
+    "solution_en": "A strange hooded man first appears in your quarters at the Ducal Palace. Others mention him asking about you during the journey.\nWhen you black out crossing Boareskyr Bridge, you wake in a burned symbol of Bhaal; he claims to have saved you, says your power could be contained or extracted, and warns that Caelar is not what she seems.\nAfter the campaign, back in Baldur's Gate, you see Skie turn into a monster and wake with blood on your hands, accused of her murder and jailed in the Flaming Fist headquarters.\nYou learn the hooded man killed Skie. Duke Belt then hears your companions, the coalition commanders and others: your deeds during the expedition weigh on the verdict.",
+    "solution_fr": "Un étrange homme à capuche apparaît d'abord dans vos quartiers du Palais Ducal. Pendant le voyage, d'autres vous disent qu'il pose des questions sur vous.\nLorsque vous perdez connaissance en traversant le Pont de Boreskyr, vous vous réveillez au milieu d'un symbole de Bhaal tracé par les flammes ; il prétend vous avoir sauvé, affirme que votre pouvoir peut être endigué ou extrait, et vous avertit que Caelar n'est pas ce qu'elle semble être.\nAprès la campagne, de retour à la Porte de Baldur, vous voyez Skie se changer en monstre et vous vous réveillez les mains en sang, accusé de son meurtre et emprisonné au quartier général du Poing Enflammé.\nVous apprenez que l'homme à la capuche a tué Skie. Le Duc Belt entend ensuite vos compagnons, les commandants de la coalition et d'autres : vos actes durant l'expédition pèsent sur le verdict."
+  },
+  {
+    "title": 259645,
+    "idx": 390,
+    "game": "sod",
+    "chapter": "Dragonspear Castle",
+    "where_en": "Crusader camp near Dragonspear Castle",
+    "where_fr": "Camp des croisés près du château de Vougedragon",
+    "kind": "companion",
+    "hints_en": [
+      "Edwin has his own reasons to fear, and to face, the Shining Lady's crusade.",
+      "An old travelling companion of Edwin's, a Red Wizard, now serves among the crusaders.",
+      "Find the Red Wizard Vichand in the crusader camp with Edwin in the party, and kill him."
+    ],
+    "hints_fr": [
+      "Edwin a ses propres raisons de craindre, et d'affronter, la croisade de la Dame Étincelante.",
+      "Un ancien compagnon de route d'Edwin, un Magicien Rouge, sert désormais parmi les croisés.",
+      "Trouvez le Magicien Rouge Vichand dans le camp des croisés avec Edwin dans le groupe, et tuez-le."
+    ],
+    "solution_en": "With Edwin in the party, he eventually explains why he wants to confront Caelar Argent.\nIn the crusader camp you meet the Red Wizard Vichand, once Edwin's travelling companion and now his bitter enemy. Edwin wants him dead at the first chance.\nWhen the time is right, fight Vichand with Edwin present. Expect a capable spellcaster, so prepare protections. Killing him avenges a fallen comrade of Edwin's and closes the quest; Edwin is as grateful as he ever gets.",
+    "solution_fr": "Quand Edwin est dans le groupe, il finit par expliquer pourquoi il veut affronter Caelar Argent.\nDans le camp des croisés, vous rencontrez le Magicien Rouge Vichand, ancien compagnon de route d'Edwin devenu son ennemi juré. Edwin veut le tuer à la première occasion.\nLe moment venu, combattez Vichand en présence d'Edwin. Attendez-vous à un lanceur de sorts redoutable et préparez vos protections. Sa mort venge un camarade disparu d'Edwin et clôt la quête ; Edwin vous en est aussi reconnaissant qu'il peut l'être."
+  },
+  {
+    "title": 259711,
+    "idx": 391,
+    "game": "sod",
+    "chapter": "Boareskyr Bridge",
+    "where_en": "Boareskyr Bridge, Bridgefort",
+    "where_fr": "Pont de Boreskyr, Fort-du-Pont",
+    "kind": "main",
+    "hints_en": [
+      "The expedition's new road runs through Boareskyr Bridge, where Bhaal died.",
+      "Crossing the bridge will stir something in your blood, in front of your allies.",
+      "Secure Bridgefort for the coalition before the army moves on toward Dragonspear."
+    ],
+    "hints_fr": [
+      "La nouvelle route de l'expédition passe par le Pont de Boreskyr, là où Bhaal est mort.",
+      "Traverser le pont réveillera quelque chose dans votre sang, sous les yeux de vos alliés.",
+      "Assurez Fort-du-Pont à la coalition avant que l'armée reprenne la route vers Vougedragon."
+    ],
+    "solution_en": "The expedition reaches Boareskyr Bridge and Bridgefort, which the crusade threatens.\nWhen you cross the bridge you are struck by a vision of your father Bhaal's death and collapse in front of your allies; rumors about your parentage may cause trouble later. The hooded man appears afterwards.\nHelp hold Bridgefort against the crusade and explore the region around it. Once the fort is secure, the coalition can continue north to Dragonspear Castle.\nThe evil alternative, lowering the drawbridge for the crusaders, is covered by the quest Down With the Drawbridge.",
+    "solution_fr": "L'expédition arrive au Pont de Boreskyr et à Fort-du-Pont, que menace la croisade.\nEn traversant le pont, vous êtes frappé par une vision de la mort de votre père, Bhaal, et vous vous effondrez devant vos alliés ; les rumeurs sur votre ascendance pourraient vous causer des ennuis plus tard. L'homme à la capuche apparaît ensuite.\nAidez à tenir Fort-du-Pont face à la croisade et explorez la région alentour. Une fois le fort sécurisé, la coalition peut poursuivre vers le nord jusqu'au château de Vougedragon.\nL'option maléfique, abaisser le pont-levis pour les croisés, est traitée dans la quête « À bas le pont-levis »."
+  },
+  {
+    "title": 259716,
+    "idx": 392,
+    "game": "sod",
+    "chapter": "Coast Way Crossing - later",
+    "where_en": "Coast Way Crossing, underground dwarf town",
+    "where_fr": "Pont de la Voie Côtière, ville naine souterraine",
+    "kind": "companion",
+    "hints_en": [
+      "Travelling with M'Khiin, keep an eye out for slain goblins near the Coast Way bridge.",
+      "Their spirits, called back by M'Khiin, speak of a stash hidden west of the bridge.",
+      "Later, in a subterranean dwarf town, a possessed goblin armor awaits; decide whether M'Khiin wears it."
+    ],
+    "hints_fr": [
+      "Avec M'Khiin dans le groupe, guettez des gobelins tués près du pont de la Voie Côtière.",
+      "Leurs esprits, rappelés par M'Khiin, parlent d'une planque cachée à l'ouest du pont.",
+      "Plus tard, dans une ville naine souterraine, une armure de gobelin possédée attend ; décidez si M'Khiin la porte."
+    ],
+    "solution_en": "With M'Khiin in the party, you find four goblin mercenaries recently slain near Coast Way Crossing. M'Khiin calls back their spirits, which reveal a stash of goods hidden west of the Coast Way bridge. Search there to find it.\nLater, in the subterranean dwarf town, you find a set of goblin armor possessed by its former owner, Kruntur.\nConvince M'Khiin to wear the armor for protection, or let her follow her calling as a spellcaster: she then takes robes and a staff instead.",
+    "solution_fr": "Avec M'Khiin dans le groupe, vous trouvez près du pont de la Voie Côtière les corps de quatre gobelins mercenaires tués récemment. M'Khiin rappelle leurs esprits, qui révèlent une planque de marchandises à l'ouest du pont de la Voie Côtière. Fouillez cet endroit pour la trouver.\nPlus tard, dans la ville naine souterraine, vous trouvez une armure de gobelin possédée par son ancien propriétaire, Kruntur.\nConvainquez M'Khiin de la porter pour se protéger, ou laissez-la suivre sa voie de lanceuse de sorts : elle prend alors des robes et un bâton."
+  },
+  {
+    "title": 259717,
+    "idx": 393,
+    "game": "sod",
+    "chapter": "Dragonspear Castle",
+    "where_en": "Dragonspear Castle",
+    "where_fr": "Château de Vougedragon",
+    "kind": "main",
+    "hints_en": [
+      "The crusade's guards will not let a stranger walk into Dragonspear Castle.",
+      "You need one of Caelar's seals; crusader patrols may carry them.",
+      "Show the seal to the gate guards, then always play the part of a crusader inside."
+    ],
+    "hints_fr": [
+      "Les gardes de la croisade ne laissent pas un inconnu entrer dans le château de Vougedragon.",
+      "Il vous faut l'un des sceaux de Caelar ; les patrouilles de croisés en portent peut-être.",
+      "Montrez le sceau aux gardes de la porte, puis jouez toujours le rôle d'un croisé à l'intérieur."
+    ],
+    "solution_en": "To get into Dragonspear Castle without raising the alarm, you need one of Caelar's seals.\nAmbush or deal with a crusader patrol outside the castle and take a seal from them.\nPresent yourself at the gate and convince the guards to let you in. You can then explore the courtyard, but keep your true name and purpose secret: answer as a crusader in every conversation, or the whole garrison may turn on you.",
+    "solution_fr": "Pour entrer dans le château de Vougedragon sans donner l'alerte, il vous faut l'un des sceaux de Caelar.\nTendez une embuscade à une patrouille de croisés hors du château, ou réglez son sort, et prenez-lui un sceau.\nPrésentez-vous à la porte et convainquez les gardes de vous laisser entrer. Vous pouvez alors explorer la cour, mais gardez secrets votre nom et votre but : répondez en croisé dans chaque conversation, sinon toute la garnison pourrait se retourner contre vous."
+  },
+  {
+    "title": 259718,
+    "idx": 394,
+    "game": "sod",
+    "chapter": "Dragonspear Castle",
+    "where_en": "Dragonspear Castle, coalition camp",
+    "where_fr": "Château de Vougedragon, camp de la coalition",
+    "kind": "main",
+    "hints_en": [
+      "Torsin de Lancie has a covert mission for you inside the enemy's stronghold.",
+      "Once inside Dragonspear Castle, find the crusade's food and water supplies.",
+      "Poison them, flee the castle when Hephernaan arrives, and report to de Lancie."
+    ],
+    "hints_fr": [
+      "Torsin de Lancie vous confie une mission secrète à l'intérieur de la forteresse ennemie.",
+      "Une fois dans le château de Vougedragon, trouvez les réserves de nourriture et d'eau de la croisade.",
+      "Empoisonnez-les, fuyez le château à l'arrivée d'Hephernaan et faites votre rapport à de Lancie."
+    ],
+    "solution_en": "At the coalition camp, Torsin de Lancie asks you to sabotage the crusade from inside Dragonspear Castle.\nGet into the castle (see Entering Dragonspear Castle) and make your way to the stores. Poison the food supply, the water supply, or both: each one weakens the crusade for the coming battle.\nWhile you continue toward the basement, Hephernaan arrives and your cover is blown. Leave the castle at once before the whole garrison falls on you, and return to de Lancie at the coalition camp to report.",
+    "solution_fr": "Au camp de la coalition, Torsin de Lancie vous demande de saboter la croisade depuis l'intérieur du château de Vougedragon.\nEntrez dans le château (voir « Entrer dans le château de Vougedragon ») et gagnez les réserves. Empoisonnez la nourriture, l'eau, ou les deux : chacune affaiblit la croisade pour la bataille à venir.\nAlors que vous poursuivez vers les sous-sols, Hephernaan arrive et votre couverture tombe. Quittez immédiatement le château avant que toute la garnison ne vous tombe dessus, et retournez voir de Lancie au camp de la coalition pour faire votre rapport."
+  },
+  {
+    "title": 259732,
+    "idx": 395,
+    "game": "sod",
+    "chapter": "Dragonspear Castle - Avernus",
+    "where_en": "Dragonspear Castle, basement",
+    "where_fr": "Château de Vougedragon, sous-sols",
+    "kind": "main",
+    "hints_en": [
+      "The castle is taken, but Caelar is not among the prisoners.",
+      "Follow her trail down into the castle's basement and the vault below.",
+      "Caelar has gone through a portal to Avernus after Hephernaan: you must follow her into Hell."
+    ],
+    "hints_fr": [
+      "Le château est pris, mais Caelar ne fait pas partie des prisonniers.",
+      "Suivez sa piste jusqu'aux sous-sols du château et à la chambre forte en dessous.",
+      "Caelar a franchi un portail vers Avernus à la suite d'Hephernaan : vous devez la suivre en Enfer."
+    ],
+    "solution_en": "After the battle, Dragonspear Castle is secured by the coalition, but Caelar has escaped.\nSearch the castle; Skie, if found, reports that Caelar headed for the vault in the basement while the crusaders fled through the tunnels.\nGo down through the basement levels. There you learn that Caelar followed Hephernaan through a portal to Avernus, the first layer of the Nine Hells, and that her plan has gone badly wrong.\nPrepare your party (rest, restock, pick your companions) and step through the portal to pursue her.",
+    "solution_fr": "Après la bataille, le château de Vougedragon est aux mains de la coalition, mais Caelar s'est échappée.\nFouillez le château ; si vous trouvez Skie, elle vous apprend que Caelar s'est dirigée vers la chambre forte du sous-sol pendant que les croisés fuyaient par les tunnels.\nDescendez à travers les sous-sols. Vous y apprenez que Caelar a suivi Hephernaan par un portail vers Avernus, la première strate des Neuf Enfers, et que son plan a terriblement mal tourné.\nPréparez le groupe (repos, provisions, choix des compagnons) et franchissez le portail pour la poursuivre."
+  },
+  {
+    "title": 259722,
+    "idx": 396,
+    "game": "sod",
+    "chapter": "Avernus - Epilogue",
+    "where_en": "Avernus, then Baldur's Gate",
+    "where_fr": "Avernus, puis Porte de Baldur",
+    "kind": "main",
+    "hints_en": [
+      "In Avernus, reach Caelar and stop what Hephernaan has set in motion.",
+      "Once the crusade is broken, the expedition returns to Baldur's Gate.",
+      "Your troubles are not over at home: the hooded man is waiting."
+    ],
+    "hints_fr": [
+      "En Avernus, rejoignez Caelar et arrêtez ce qu'Hephernaan a déclenché.",
+      "Une fois la croisade brisée, l'expédition rentre à la Porte de Baldur.",
+      "Vos ennuis ne sont pas finis en ville : l'homme à la capuche attend son heure."
+    ],
+    "solution_en": "In Avernus, fight your way to the basalt tower and confront Hephernaan and the forces of Hell. Your choices toward Caelar decide her fate.\nWith Hephernaan defeated, the crusade is finished and you return to Baldur's Gate as a hero.\nThat is when the final part begins: Skie Silvershield dies, you are accused of her murder and imprisoned in the Flaming Fist headquarters. Follow the quests Disturbing Implications and It Wasn't Me to reach the ending.",
+    "solution_fr": "En Avernus, frayez-vous un chemin jusqu'à la Tour de Basalte et affrontez Hephernaan et les forces de l'Enfer. Vos choix envers Caelar décident de son sort.\nUne fois Hephernaan vaincu, la croisade est terminée et vous rentrez à la Porte de Baldur en héros.\nC'est alors que commence la dernière partie : Skie Écudargent meurt, vous êtes accusé de son meurtre et emprisonné au quartier général du Poing Enflammé. Suivez les quêtes « Implications troublantes » et « Ce n'était pas moi » pour atteindre le dénouement."
+  },
+  {
+    "title": 259731,
+    "idx": 397,
+    "game": "sod",
+    "chapter": "Avernus",
+    "where_en": "Avernus, outside the basalt tower",
+    "where_fr": "Avernus, devant la Tour de Basalte",
+    "kind": "side",
+    "hints_en": [
+      "A devil bars the way into the basalt tower and loves a wager.",
+      "Thrix the Profane lets you pass if you win his game; the stake can be a companion or your own soul.",
+      "You may also refuse to bet and fight him instead."
+    ],
+    "hints_fr": [
+      "Un diable barre l'accès à la Tour de Basalte et adore les paris.",
+      "Thrix le Profane vous laisse passer si vous gagnez son jeu ; l'enjeu peut être un compagnon ou votre propre âme.",
+      "Vous pouvez aussi refuser de parier et le combattre."
+    ],
+    "solution_en": "In Avernus, the devil Thrix the Profane guards the entrance to the basalt tower and offers a wager to let you through.\nAccept and choose the stake: one of your companions, or your own soul. Answer his challenge carefully. If you win, you pass and nothing is lost.\nIf you lose, you still get through, but the wagered companion is doomed to be claimed by Thrix some day, or he lays claim to your soul.\nAlternatively, refuse to bargain and challenge him: either you destroy him in battle, or he flees, leaving minions to fight you, and swears revenge. Be ready for a hard fight in either case.",
+    "solution_fr": "En Avernus, le diable Thrix le Profane garde l'entrée de la Tour de Basalte et propose un pari pour vous laisser passer.\nAcceptez et choisissez l'enjeu : l'un de vos compagnons, ou votre propre âme. Répondez à son défi avec soin. Si vous gagnez, vous passez sans rien perdre.\nSi vous perdez, vous passez quand même, mais le compagnon misé est condamné à être réclamé un jour par Thrix, ou bien il revendique votre âme.\nVous pouvez aussi refuser de marchander et le défier : soit vous le détruisez au combat, soit il s'enfuit en laissant ses larbins vous affronter, et jure de se venger. Préparez-vous à un combat difficile dans les deux cas."
+  },
+  {
+    "title": 259734,
+    "idx": 398,
+    "game": "sod",
+    "chapter": "Epilogue",
+    "where_en": "Baldur's Gate, Flaming Fist headquarters and sewers",
+    "where_fr": "Porte de Baldur, quartier général du Poing Enflammé et égouts",
+    "kind": "main",
+    "hints_en": [
+      "Jailed for Skie's murder, you must either escape or be released by the Council of Four.",
+      "If a stranger offers a way out, grab your gear from the central chamber and follow him to the basement.",
+      "The secret tunnel leads to the sewers; your only way out is over the waterfall."
+    ],
+    "hints_fr": [
+      "Emprisonné pour le meurtre de Skie, vous devez vous évader ou être libéré par le Conseil des Quatre.",
+      "Si un étranger vous propose une issue, récupérez votre équipement dans la pièce centrale et suivez-le au sous-sol.",
+      "Le tunnel secret mène aux égouts ; votre seule issue est de passer par-dessus la cascade."
+    ],
+    "solution_en": "Accused of murdering Skie, you are held in the Flaming Fist headquarters.\nIf your past deeds convince most of the Council of Four, you are released but exiled: collect your belongings from the headquarters, then leave the city under escort. Skie's father swears vengeance.\nOtherwise a stranger offers escape. Take your equipment from the table in the central chamber and follow him to the secret tunnel in the basement. In the sewers, the Flaming Fist corners you; you may have to fight Corwin or Bence Duncan and their men.\nRun to the falls and go over the waterfall to escape. Afterwards you realize it was not Imoen who freed you: the hooded man set it all up.",
+    "solution_fr": "Accusé du meurtre de Skie, vous êtes détenu au quartier général du Poing Enflammé.\nSi vos actes passés convainquent la majorité du Conseil des Quatre, vous êtes libéré mais banni : récupérez vos affaires au quartier général, puis quittez la ville sous escorte. Le père de Skie jure de se venger.\nSinon, un étranger vous propose de fuir. Prenez votre équipement sur la table de la pièce centrale et suivez-le jusqu'au tunnel secret du sous-sol. Dans les égouts, le Poing Enflammé vous accule ; vous devrez peut-être combattre Corwin ou Bence Duncan et leurs hommes.\nCourez jusqu'à la chute d'eau et passez par-dessus la cascade pour vous enfuir. Vous comprenez ensuite que ce n'est pas Imoen qui vous a libéré : l'homme à la capuche a tout manigancé."
+  },
+  {
+    "title": 260258,
+    "idx": 399,
+    "game": "sod",
+    "chapter": "Dragonspear Castle",
+    "where_en": "Coalition camp and crusader camp",
+    "where_fr": "Camp de la coalition et camp des croisés",
+    "kind": "side",
+    "hints_en": [
+      "A gnome fence in the coalition camp pays well for souvenirs from the enemy's camp.",
+      "Waizahb wants five items: a commander's signet ring, a battle standard, a holy symbol, a token of faith and Caelar's annotated map.",
+      "Bring a replacement for the ruby-eyed symbol, scare Commander Dreon with talk of honest work, and hurry before the battle."
+    ],
+    "hints_fr": [
+      "Une gnome receleuse du camp de la coalition paie bien pour des souvenirs du camp ennemi.",
+      "Waizahb veut cinq objets : la chevalière d'un commandant, un étendard, un symbole sacré, un gage de foi et la carte annotée par Caelar.",
+      "Prévoyez un remplacement pour le symbole aux yeux de rubis, effrayez le commandant Dreon en parlant d'honnête labeur, et faites vite avant la bataille."
+    ],
+    "solution_en": "Waizahb, a fence at the coalition siege camp, wants five items from the crusader camp.\nSignet ring: Commander Dreon is hard to approach; win his trust and suggest honest work, and he hands it over.\nBattle standard: in a chest in the crusader camp.\nHoly symbol: Tristian, cleric of the Red Knight, carries one with ruby eyes. Its loss would be noticed, so bring a replacement to swap it.\nToken of faith: some new recruits carry homemade tokens of devotion; get one.\nMap: Caelar's annotated map hangs in the camp.\nBring the items to Waizahb as you find them; all five earn the full reward. The quest closes when the battle starts, so finish early.",
+    "solution_fr": "Waizahb, receleuse au camp de siège de la coalition, veut cinq objets du camp des croisés.\nChevalière : le commandant Dreon est difficile d'approche ; gagnez sa confiance et évoquez un travail honnête, il vous la cède.\nÉtendard : dans un coffre du camp des croisés.\nSymbole sacré : Tristian, clerc de la Cavalière Rouge, en porte un aux yeux de rubis. Sa disparition se remarquerait, alors apportez un objet de remplacement pour l'échanger.\nGage de foi : certaines recrues portent des gages de dévotion faits main ; obtenez-en un.\nCarte : la carte annotée par Caelar est accrochée dans le camp.\nApportez les objets à Waizahb au fur et à mesure ; les cinq donnent la récompense complète. La quête se ferme au début de la bataille, alors terminez tôt."
+  },
+  {
+    "title": 261101,
+    "idx": 400,
+    "game": "sod",
+    "chapter": "Coast Way Crossing - Dragonspear Castle",
+    "where_en": "Bridgefort, coalition camp, crusader camp",
+    "where_fr": "Fort-du-Pont, camp de la coalition, camp des croisés",
+    "kind": "companion",
+    "hints_en": [
+      "Glint the gnome sneaked into the caravan to learn what became of his relatives in crusade territory.",
+      "His uncle the cobbler is in Bridgefort, his cousin Pritchard annoys the Daggerford militia, and another cousin sews for the crusade.",
+      "Ask Glint what to do about Pritchard: beating him up, driving him off or sparing him all close the matter."
+    ],
+    "hints_fr": [
+      "Le gnome Glint s'est glissé dans la caravane pour savoir ce qu'il est advenu de sa famille en territoire croisé.",
+      "Son oncle cordonnier est à Fort-du-Pont, son cousin Pritchard agace la milice de Gué-de-la-Dague, et une autre cousine coud pour la croisade.",
+      "Demandez à Glint quoi faire de Pritchard : le rosser, le chasser ou l'épargner, chaque choix règle l'affaire."
+    ],
+    "solution_en": "Glint Gardnersonson, a gnome stowaway in the Flaming Fist caravan, joins you to find his relatives.\nIn Bridgefort, his uncle Hoach Randymonk, a cobbler, can repair the boot and a half found near Coast Way Bridge; return a day later. The Boots of Speed fail badly, so ask him for a refund.\nAt the coalition camp, Pritchard Gardnersonson troubles the Daggerford militia and General Stonehand; two militiamen offer potions to solve it. Talk to Glint: he asks you to beat Pritchard up to save his life. You can beat him, drive him away (he leaves Glint a family dagger), fake his death, or leave him alone. He may also die.\nIn the crusader camp you find Glint's cousin Rhonda, forced to work as a seamstress.",
+    "solution_fr": "Glint Gardnersonson, un gnome passager clandestin de la caravane du Poing Enflammé, vous rejoint pour retrouver sa famille.\nÀ Fort-du-Pont, son oncle Hoach Moinefougueux, cordonnier, peut réparer la botte et demie trouvée près du pont de la Voie Côtière ; revenez un jour plus tard. Les Bottes de rapidité ratent lamentablement : demandez-lui un remboursement.\nAu camp de la coalition, Pritchard Gardnersonson pose problème à la milice de Gué-de-la-Dague et au général Main-de-pierre ; deux miliciens offrent des potions pour régler cela. Parlez à Glint : il vous demande de rosser Pritchard pour lui sauver la vie. Vous pouvez le battre, le chasser (il laisse un poignard de famille à Glint), simuler sa mort ou le laisser tranquille. Il peut aussi mourir.\nDans le camp des croisés, vous trouvez Rhonda, cousine de Glint, forcée de travailler comme couturière."
+  },
+  {
+    "title": 261301,
+    "idx": 401,
+    "game": "sod",
+    "chapter": "Dragonspear Castle",
+    "where_en": "Crusader camp near Dragonspear Castle",
+    "where_fr": "Camp des croisés près du château de Vougedragon",
+    "kind": "side",
+    "hints_en": [
+      "Two crusaders, Nan and Pedro, have a drunk comrade who cannot do his duty.",
+      "Commander Dreon expects the morning report from Morale Officer Deneld, plus some wine.",
+      "Wear a crusader uniform before asking Deneld for the report, and fill a flask with wine."
+    ],
+    "hints_fr": [
+      "Deux croisés, Nan et Pedro, ont un camarade ivre incapable de faire son devoir.",
+      "Le commandant Dreon attend le rapport matinal de l'officier du moral Deneld, ainsi que du vin.",
+      "Portez un uniforme de croisé avant de demander le rapport à Deneld, et remplissez une flasque de vin."
+    ],
+    "solution_en": "In the crusader camp, Nan and Pedro explain that their comrade Sallo is too drunk to bring the morning report to Commander Dreon.\nFind a flask and fill it with wine.\nGet the report from Morale Officer Deneld. He refuses unless you wear a crusader uniform, so find one or come up with a convincing excuse.\nTake the wine and the papers to Commander Dreon and persuade him to accept the delivery.\nReturn to Nan and Pedro: they reward you with some potions.",
+    "solution_fr": "Dans le camp des croisés, Nan et Pedro expliquent que leur camarade Sallo est trop ivre pour porter le rapport matinal au commandant Dreon.\nTrouvez une flasque et remplissez-la de vin.\nObtenez le rapport auprès de l'officier du moral Deneld. Il refuse si vous ne portez pas d'uniforme de croisé : trouvez-en un ou inventez une excuse convaincante.\nApportez le vin et les papiers au commandant Dreon et convainquez-le d'accepter la livraison.\nRetournez voir Nan et Pedro : ils vous récompensent avec quelques potions."
+  },
+  {
+    "title": 261432,
+    "idx": 402,
+    "game": "sod",
+    "chapter": "Dragonspear Castle",
+    "where_en": "Coalition camp and nearby forest",
+    "where_fr": "Camp de la coalition et forêt voisine",
+    "kind": "side",
+    "hints_en": [
+      "The healer Dosia in the coalition camp is worried about a spreading sickness.",
+      "Examine the three patients, then look into the camp's rats with a druid or ranger.",
+      "Possible cures lie in the forest: blackthorn bark, or the help of a hermit druid who wants a basilisk's claw."
+    ],
+    "hints_fr": [
+      "La guérisseuse Dosia, au camp de la coalition, s'inquiète d'une maladie qui se répand.",
+      "Examinez les trois patients, puis intéressez-vous aux rats du camp avec un druide ou un rôdeur.",
+      "Les remèdes possibles sont dans la forêt : l'écorce d'un prunellier, ou l'aide d'un druide ermite qui veut une griffe de basilic."
+    ],
+    "solution_en": "A sickness spreads through the coalition camp. Talk to the healer Dosia, then examine the patients Xerra, Yestimell and Zidrand (Yestimell attacks you). Companions skilled in healing or nature help. Report back to Dosia.\nLead: the camp's rats. A wererat claims them as his pack and attacks; once he is dead, a druid or ranger can talk to a rat.\nCure options: find a blackthorn tree in the forest near camp and take its moldy bark, or find the hermit druid Onoroth there; he wants you to kill a sick basilisk and bring its claw, then gives you a cure.\nBring the cure to Dosia to heal the soldiers. If she will not pay you can keep it. You can also advise her to isolate, or kill, the infected.",
+    "solution_fr": "Une maladie se répand au camp de la coalition. Parlez à la guérisseuse Dosia, puis examinez les patients Xerra, Yestimell et Zidrand (Yestimell vous attaque). Des compagnons doués en soins ou en nature sont utiles. Faites votre rapport à Dosia.\nPiste : les rats du camp. Un homme-rat les a pris pour meute et vous attaque ; une fois mort, un druide ou un rôdeur peut parler à un rat.\nRemèdes : trouvez un prunellier dans la forêt près du camp et prenez son écorce moisie, ou cherchez-y le druide ermite Onoroth ; il vous demande de tuer un basilic malade et de rapporter sa griffe, puis vous donne un remède.\nApportez le remède à Dosia pour soigner les soldats. Si elle refuse de payer, vous pouvez le garder. Vous pouvez aussi lui conseiller d'isoler, ou de tuer, les malades."
+  },
+  {
+    "title": 261449,
+    "idx": 403,
+    "game": "sod",
+    "chapter": "Dragonspear Castle",
+    "where_en": "Coalition camp",
+    "where_fr": "Camp de la coalition",
+    "kind": "side",
+    "hints_en": [
+      "Warden Twoedged wants you to understand how the coalition's soldiers feel about war.",
+      "Talk to the healer Dosia, Vigilant Halasan and Quartermaster Belegarm.",
+      "Then find Twoedged near the command tents and share what you learned."
+    ],
+    "hints_fr": [
+      "L'intendante Doubletranchant veut que vous compreniez ce que les soldats de la coalition pensent de la guerre.",
+      "Parlez à la guérisseuse Dosia, à la justicière Halasan et au quartier-maître Belegarm.",
+      "Retrouvez ensuite Doubletranchant près des tentes de commandement et racontez-lui ce que vous avez appris."
+    ],
+    "solution_en": "In the coalition camp, Warden Simonetta Twoedged asks you to talk to people in camp about their experiences of war.\nSpeak to Dosia (she survived the attack on Daggerford as a child and believes fate brought her here), Vigilant Halasan (she wants to bring her soldiers home alive, though a childhood friend, Tristian, serves the crusade) and Quartermaster Belegarm (a history lover eager for glory).\nReturn to Twoedged near the command tents and discuss what you heard to close the quest. You can also give up on the exercise, which ends it without the full conversation.",
+    "solution_fr": "Au camp de la coalition, l'intendante Simonetta Doubletranchant vous demande d'interroger des gens du camp sur leur expérience de la guerre.\nParlez à Dosia (enfant, elle a survécu à l'attaque de Gué-de-la-Dague et croit que le destin l'a menée ici), à la justicière Halasan (elle veut ramener ses soldats vivants, alors qu'un ami d'enfance, Tristian, sert la croisade) et au quartier-maître Belegarm (passionné d'histoire, avide de gloire).\nRetournez voir Doubletranchant près des tentes de commandement et discutez de ce que vous avez entendu pour clore la quête. Vous pouvez aussi abandonner l'exercice, ce qui y met fin sans la conversation complète."
+  },
+  {
+    "title": 261502,
+    "idx": 404,
+    "game": "sod",
+    "chapter": "Dragonspear Castle",
+    "where_en": "Coalition camp, Dead Man's Pass",
+    "where_fr": "Camp de la coalition, Défilé du Trépassé",
+    "kind": "side",
+    "hints_en": [
+      "The dwarf Helvdar lost his lucky charm and cannot fight without one.",
+      "A new pair of boots made from a bear's hide might do; Quartermaster Belegarm can make them.",
+      "Hunt a bear in Dead Man's Pass, bring the skin to Belegarm, and come back a day later."
+    ],
+    "hints_fr": [
+      "Le nain Helvdar a perdu son porte-bonheur et ne peut pas combattre sans.",
+      "Une nouvelle paire de bottes en peau d'ours pourrait convenir ; le quartier-maître Belegarm peut les fabriquer.",
+      "Chassez un ours au Défilé du Trépassé, apportez la peau à Belegarm et revenez un jour plus tard."
+    ],
+    "solution_en": "Helvdar the dwarf has lost his lucky charm and needs a new one.\nGo to Dead Man's Pass and hunt down a bear. Take its skin to Quartermaster Belegarm, who grumbles but agrees to make boots; they are ready one day later.\nCollect the boots and give them to Helvdar to complete the quest.\nIf you try to pass off ordinary boots as lucky ones, or keep the new boots for yourself, Helvdar spreads word that you are a boot thief, which hurts your standing in camp.",
+    "solution_fr": "Le nain Helvdar a perdu son porte-bonheur et en a besoin d'un nouveau.\nRendez-vous au Défilé du Trépassé et chassez un ours. Apportez sa peau au quartier-maître Belegarm, qui râle mais accepte de fabriquer des bottes ; elles sont prêtes un jour plus tard.\nRécupérez les bottes et remettez-les à Helvdar pour terminer la quête.\nSi vous essayez de lui faire passer des bottes ordinaires pour des bottes porte-bonheur, ou si vous gardez les nouvelles bottes, Helvdar raconte partout que vous êtes un voleur de bottes, ce qui nuit à votre réputation au camp."
+  },
+  {
+    "title": 261529,
+    "idx": 405,
+    "game": "sod",
+    "chapter": "Dragonspear Castle",
+    "where_en": "Coalition camp",
+    "where_fr": "Camp de la coalition",
+    "kind": "side",
+    "hints_en": [
+      "General Stonehand of the Daggerford forces suspects a thieves' guild is growing in camp.",
+      "Start with the gnome fence Waizahb: convince her to arrange a meeting, or follow her.",
+      "The guild meets at the north end of camp; confront its leader Rhynwis, then report to Stonehand."
+    ],
+    "hints_fr": [
+      "Le général Main-de-pierre, des forces de Gué-de-la-Dague, soupçonne une guilde de voleurs de prospérer au camp.",
+      "Commencez par la gnome receleuse Waizahb : convainquez-la d'organiser une rencontre, ou suivez-la.",
+      "La guilde se réunit à la pointe nord du camp ; affrontez sa chef Rhynwis, puis faites votre rapport à Main-de-pierre."
+    ],
+    "solution_en": "In the coalition camp, General Stonehand asks you to uncover the thieves' guild taking root there.\nQuestion the gnome Waizahb, the guild's fence. Persuade her to set up a meeting, or, if she sees through you, follow her as she heads north.\nAt the north edge of camp, meet the guild's representatives and their leader, Rhynwis. Threaten her: she either agrees to help the camp when the time comes, or flees and leaves the camp alone.\nReturn to General Stonehand and report. She is grateful and starts to see you as a good influence on the camp.",
+    "solution_fr": "Au camp de la coalition, le général Main-de-pierre vous demande de démasquer la guilde de voleurs qui s'y installe.\nInterrogez la gnome Waizahb, receleuse de la guilde. Persuadez-la d'organiser une rencontre ou, si elle vous perce à jour, suivez-la quand elle part vers le nord.\nÀ la pointe nord du camp, rencontrez les représentants de la guilde et leur chef, Rhynwis. Menacez-la : soit elle accepte d'aider le camp le moment venu, soit elle s'enfuit et laisse le camp tranquille.\nRetournez faire votre rapport au général Main-de-pierre. Elle vous remercie et commence à vous voir comme une influence positive sur le camp."
+  },
+  {
+    "title": 261592,
+    "idx": 406,
+    "game": "sod",
+    "chapter": "Dragonspear Castle",
+    "where_en": "Dragonspear region camps",
+    "where_fr": "Camps de la région de Vougedragon",
+    "kind": "side",
+    "hints_en": [
+      "A gloomy man named Jospil asks to be left alone for a moment.",
+      "Come back and talk with him about the crusade and the Shining Lady.",
+      "Choose encouraging replies to lift his spirits; the better his mood, the better his gift."
+    ],
+    "hints_fr": [
+      "Un homme abattu nommé Jospil demande qu'on le laisse seul un instant.",
+      "Revenez lui parler de la croisade et de la Dame Étincelante.",
+      "Choisissez des réponses encourageantes pour lui remonter le moral ; meilleure est son humeur, meilleur est son cadeau."
+    ],
+    "solution_en": "A depressed man, Jospil, asks you to give him a moment before talking.\nSpeak to him again. He tells you about the crusade and Caelar Argent and how bleak he finds the odds.\nTry to cheer him up with encouraging, understanding replies. If you turn his attitude around completely, he gives you a shield and a quarterstaff. If you only lift his mood a little, he gives you a quarterstaff. If you fail, you only learn something about the crusade.",
+    "solution_fr": "Un homme déprimé, Jospil, vous demande de lui laisser un moment avant de parler.\nReparlez-lui. Il vous parle de la croisade et de Caelar Argent, et de ses sombres perspectives.\nEssayez de lui remonter le moral avec des réponses encourageantes et compréhensives. Si vous le faites complètement changer d'état d'esprit, il vous donne un bouclier et un bâton. Si vous ne l'égayez qu'un peu, il vous donne un bâton. Si vous échouez, vous apprenez seulement des choses sur la croisade."
+  },
+  {
+    "title": 261597,
+    "idx": 407,
+    "game": "sod",
+    "chapter": "Baldur's Gate",
+    "where_en": "Baldur's Gate, Three Old Kegs",
+    "where_fr": "Porte de Baldur, Trois Vieilles Chopes",
+    "kind": "side",
+    "hints_en": [
+      "Two ship crews are about to come to blows in the Three Old Kegs.",
+      "The innkeeper Nantrin Bellowglym trusts you to handle it; you can also talk to the two officers.",
+      "Side with Lucilla of the Amnian Delight or Autinn of Chiondar's Son, then ask for a reward."
+    ],
+    "hints_fr": [
+      "Deux équipages sont sur le point d'en venir aux mains aux Trois Vieilles Chopes.",
+      "Le tavernier Nantrin Bellowglym vous fait confiance pour régler cela ; vous pouvez aussi parler aux deux officiers.",
+      "Prenez parti pour Lucilla, du Délice Amnien, ou pour Autinn, du Fils de Chiondar, puis demandez une récompense."
+    ],
+    "solution_en": "In the Three Old Kegs in Baldur's Gate, a bar fight is brewing between two ship crews.\nTalk to the innkeeper Nantrin Bellowglym, who recognizes you and asks you to step in, or speak directly to the two leaders.\nYou can defuse the situation peacefully, or take a side: Lucilla, navigator of the Amnian Delight, or Autinn, first mate of Chiondar's Son.\nIf you sided with one of them, talk to them again afterwards: Lucilla gives you an enchanted cudgel, Autinn an enchanted scimitar.",
+    "solution_fr": "Aux Trois Vieilles Chopes, à la Porte de Baldur, une bagarre se prépare entre deux équipages.\nParlez au tavernier Nantrin Bellowglym, qui vous reconnaît et vous demande d'intervenir, ou adressez-vous directement aux deux meneurs.\nVous pouvez calmer la situation pacifiquement, ou prendre parti : pour Lucilla, navigatrice du Délice Amnien, ou pour Autinn, premier lieutenant du Fils de Chiondar.\nSi vous avez pris parti, reparlez ensuite à votre allié : Lucilla vous donne un gourdin enchanté, Autinn un cimeterre enchanté."
+  },
+  {
+    "title": 261604,
+    "idx": 408,
+    "game": "sod",
+    "chapter": "Baldur's Gate",
+    "where_en": "Baldur's Gate, Three Old Kegs",
+    "where_fr": "Porte de Baldur, Trois Vieilles Chopes",
+    "kind": "side",
+    "hints_en": [
+      "Three nobles have rented a single room upstairs at the Three Old Kegs; it is not a party.",
+      "Find proof of their plot against the city, or win their confidence by pretending to agree.",
+      "Fetch Captain Corwin at the main door, then get the plotters to repeat their plans while her men listen."
+    ],
+    "hints_fr": [
+      "Trois nobles ont loué une seule chambre à l'étage des Trois Vieilles Chopes ; ce n'est pas une fête.",
+      "Trouvez la preuve de leur complot contre la ville, ou gagnez leur confiance en feignant d'être d'accord.",
+      "Prévenez le capitaine Corwin à la porte principale, puis poussez les conspirateurs à répéter leurs plans pendant que ses hommes écoutent."
+    ],
+    "solution_en": "Upstairs in the Three Old Kegs, three nobles share a room and plot against Baldur's Gate.\nTalk to them and pretend to share their views, or find the seditious letter one of them carries.\nGo to Captain Corwin, who waits at the main door downstairs. She posts a Flaming Fist team in the hallway; return and trick the nobles into discussing their plans again. If you succeed, they are arrested. If they do not incriminate themselves, Corwin has to let them go.\nOther options: extort money from the traitors, or kill them yourself.",
+    "solution_fr": "À l'étage des Trois Vieilles Chopes, trois nobles partagent une chambre et complotent contre la Porte de Baldur.\nParlez-leur en feignant de partager leurs idées, ou trouvez la lettre séditieuse que l'un d'eux porte sur lui.\nAllez voir le capitaine Corwin, qui attend à la porte principale au rez-de-chaussée. Elle poste une équipe du Poing Enflammé dans le couloir ; revenez et poussez les nobles à reparler de leurs plans. Si vous réussissez, ils sont arrêtés. S'ils ne se trahissent pas, Corwin doit les relâcher.\nAutres options : extorquer de l'argent aux traîtres, ou les tuer vous-même."
+  },
+  {
+    "title": 261611,
+    "idx": 409,
+    "game": "sod",
+    "chapter": "Baldur's Gate",
+    "where_en": "Baldur's Gate, Three Old Kegs",
+    "where_fr": "Porte de Baldur, Trois Vieilles Chopes",
+    "kind": "side",
+    "hints_en": [
+      "Barging into the wrong room at the Three Old Kegs can be profitable.",
+      "The vain noblewoman Delenda orders you out, guarded by her bodyguard.",
+      "Talk her out of her necklace with clever words, scare them off, or fight the bodyguard."
+    ],
+    "hints_fr": [
+      "Entrer dans la mauvaise chambre aux Trois Vieilles Chopes peut rapporter gros.",
+      "La noble vaniteuse Delenda vous ordonne de sortir, protégée par son garde du corps.",
+      "Soutirez-lui son collier par la ruse, faites-les fuir, ou combattez le garde du corps."
+    ],
+    "solution_en": "In a guest room of the Three Old Kegs you walk in on Delenda, a vain noblewoman, who angrily orders you out.\nUse cunning replies to trick her into giving you a valuable necklace.\nAlternatively, frighten her and her bodyguard off: they flee and leave the room empty. Or fight: killing the bodyguard gets you his wakizashi.",
+    "solution_fr": "Dans une chambre des Trois Vieilles Chopes, vous tombez sur Delenda, une noble vaniteuse, qui vous ordonne avec colère de sortir.\nUtilisez des réponses rusées pour la convaincre de vous donner un collier de grande valeur.\nVous pouvez aussi l'effrayer, elle et son garde du corps : ils s'enfuient en abandonnant la chambre. Ou combattre : tuer le garde du corps vous rapporte son wakizashi."
+  },
+  {
+    "title": 261612,
+    "idx": 410,
+    "game": "sod",
+    "chapter": "Baldur's Gate - Avernus",
+    "where_en": "Elfsong Tavern, then the whole journey",
+    "where_fr": "Taverne du Chant de l'Elfe, puis tout le voyage",
+    "kind": "side",
+    "hints_en": [
+      "An eccentric elf at the Elfsong Tavern hands out very strange glasses.",
+      "Zaviak's Spectacles of Spectacle reveal extraplanar beings and can pull up to three into this world.",
+      "Choose wisely where to use the charges: some visitors reward you, others attack."
+    ],
+    "hints_fr": [
+      "Un elfe excentrique de la taverne du Chant de l'Elfe distribue d'étranges lunettes.",
+      "Les lunettes de scrutation de Zaviak révèlent des êtres extraplanaires et peuvent en attirer jusqu'à trois dans ce monde.",
+      "Choisissez bien où utiliser les charges : certains visiteurs vous récompensent, d'autres attaquent."
+    ],
+    "solution_en": "Talk to Zaviak, the eccentric elf at the Elfsong Tavern, to get the Spectacles of Spectacle. Wear them to see extraplanar creatures; you can pull three into the world.\nKnown sightings: a fire elemental in the Elfsong (it attacks); a gauth near Coast Way Crossing (kill it or send it toward the crusader camp); a tiefling, Raeanndra, fighting an earth elemental (pull her for a magic ring); the djinni Nazramu; the rakshasa Vidyadhar (solve his riddle for a Modron Heart); a shadow in a bugbear cave (turn it on them); the imprisoned lich Zhadroth in Kanaglym (an Endless Watcher comes after him); a deva or a demon in Avernus (the demon gives a sword).\nThe quest ends when the spectacles run out of charges.",
+    "solution_fr": "Parlez à Zaviak, l'elfe excentrique de la taverne du Chant de l'Elfe, pour obtenir les lunettes de scrutation. Portez-les pour voir les créatures extraplanaires ; vous pouvez en attirer trois dans ce monde.\nApparitions connues : un élémentaire de feu au Chant de l'Elfe (il attaque) ; un gauth près du pont de la Voie Côtière (tuez-le ou envoyez-le vers le camp des croisés) ; une tieffeline, Raeanndra, aux prises avec un élémentaire de terre (attirez-la pour un anneau magique) ; le djinn Nazramu ; le rakshasa Vidyadhar (résolvez son énigme pour un cœur de modron) ; une ombre dans une grotte de gobelours (lâchez-la sur eux) ; la liche Zhadroth emprisonnée à Kanaglym (une Sentinelle Éternelle la poursuit) ; une déva ou un démon en Avernus (le démon donne une épée).\nLa quête se termine quand les lunettes n'ont plus de charges."
+  },
+  {
+    "title": 261617,
+    "idx": 411,
+    "game": "sod",
+    "chapter": "Baldur's Gate",
+    "where_en": "Baldur's Gate, Elfsong Tavern and Ducal Palace",
+    "where_fr": "Porte de Baldur, taverne du Chant de l'Elfe et Palais Ducal",
+    "kind": "side",
+    "hints_en": [
+      "A halfling working at the Elfsong Tavern has run out of a special wine.",
+      "Irina wants a barrel of ruby wine, known for its sharp, spicy smell, from the Ducal Palace cellar.",
+      "Sneak a barrel out of the palace cellar, or offer her a convincing substitute."
+    ],
+    "hints_fr": [
+      "Une petite-personne qui travaille à la taverne du Chant de l'Elfe est à court d'un vin particulier.",
+      "Irina veut un tonneau de vin rubis, au parfum très épicé, de la cave du Palais Ducal.",
+      "Dérobez un tonneau dans la cave du palais, ou proposez-lui un substitut convaincant."
+    ],
+    "solution_en": "At the Elfsong Tavern, the halfling Irina has run out of ruby wine and asks you to pilfer a barrel from the cellar of the Ducal Palace.\nGo down to the palace cellar and look for the barrel with a sharp, spicy smell. Bring it back to Irina for a reward.\nInstead, you can provide her with a substitute, which also earns a reward.\nA druid can try a magical solution, but it may go wrong and turn Irina into a squirrel; once changed back, she loses interest in the wine.",
+    "solution_fr": "À la taverne du Chant de l'Elfe, la petite-personne Irina est à court de vin rubis et vous demande de voler un tonneau dans la cave du Palais Ducal.\nDescendez dans la cave du palais et cherchez le tonneau au parfum très épicé. Rapportez-le à Irina pour obtenir une récompense.\nVous pouvez aussi lui fournir un substitut, qui rapporte également une récompense.\nUn druide peut tenter une solution magique, mais elle peut mal tourner et changer Irina en écureuil ; une fois redevenue elle-même, elle ne s'intéresse plus au vin."
+  },
+  {
+    "title": 261618,
+    "idx": 412,
+    "game": "sod",
+    "chapter": "any",
+    "where_en": "Unknown (where you meet Ammon)",
+    "where_fr": "Inconnu (là où vous rencontrez Ammon)",
+    "kind": "side",
+    "hints_en": [
+      "A woman named Ammon is stuck on a potion for lack of cobalt moss.",
+      "Suggest a substitute ingredient, or bring her cobalt moss if you find some.",
+      "Her potion is part of a plan to enter Candlekeep; as someone raised there, you may sign her letter or refuse."
+    ],
+    "hints_fr": [
+      "Une femme nommée Ammon est bloquée sur une potion faute de lichen de cobalt.",
+      "Suggérez-lui un ingrédient de substitution, ou apportez-lui du lichen de cobalt si vous en trouvez.",
+      "Sa potion fait partie d'un plan pour entrer à Château-Suif ; ayant grandi là-bas, vous pouvez signer sa lettre ou refuser."
+    ],
+    "solution_en": "Ammon needs cobalt moss to finish a potion.\nSuggest a substitute: she tries it at once; talk to her again shortly after. Or come back if you find cobalt moss.\nOnce the potion is done, she rewards you.\nYou learn the potion is part of her plan to get into Candlekeep. If you tell her you grew up there, she asks you to sign a letter explaining her goal. Signing or refusing does not change much: the letter is unlikely to get her past the gates.",
+    "solution_fr": "Ammon a besoin de lichen de cobalt pour terminer une potion.\nSuggérez-lui un substitut : elle l'essaie aussitôt ; reparlez-lui peu après. Ou revenez si vous trouvez du lichen de cobalt.\nUne fois la potion terminée, elle vous récompense.\nVous apprenez que la potion fait partie de son plan pour entrer à Château-Suif. Si vous lui dites y avoir grandi, elle vous demande de signer une lettre expliquant son but. Signer ou refuser ne change pas grand-chose : la lettre a peu de chances de lui ouvrir les portes."
+  },
+  {
+    "title": 261625,
+    "idx": 413,
+    "game": "sod",
+    "chapter": "Baldur's Gate",
+    "where_en": "Baldur's Gate, Ducal Palace basement",
+    "where_fr": "Porte de Baldur, sous-sols du Palais Ducal",
+    "kind": "side",
+    "hints_en": [
+      "An old enemy you captured at the start of the campaign has broken loose in the Ducal Palace.",
+      "Korlasz wants revenge on you and on the city.",
+      "Go down to the palace basement, prepared for a mage fight, and finish her."
+    ],
+    "hints_fr": [
+      "Une vieille ennemie capturée au début de la campagne s'est libérée dans le Palais Ducal.",
+      "Korlasz veut se venger de vous et de la ville.",
+      "Descendez aux sous-sols du palais, prêt à affronter une magicienne, et achevez-la."
+    ],
+    "solution_en": "Korlasz, Sarevok's servant and a former Iron Throne lieutenant, escapes captivity and roams the Ducal Palace, bent on revenge for her capture and Sarevok's death.\nGo down to the palace basement and find her. Prepare against a spellcaster (spell protections, ways to break her defenses) before you engage.\nThis time there is no sparing her: defeat and kill Korlasz to close the quest.",
+    "solution_fr": "Korlasz, servante de Sarevok et ancien lieutenant du Trône de Fer, s'échappe et erre dans le Palais Ducal, décidée à se venger de sa capture et de la mort de Sarevok.\nDescendez aux sous-sols du palais pour la trouver. Préparez-vous contre une lanceuse de sorts (protections contre les sorts, moyens de briser ses défenses) avant d'engager le combat.\nCette fois, pas de quartier : vainquez et tuez Korlasz pour clore la quête."
+  },
+  {
+    "title": 261628,
+    "idx": 414,
+    "game": "sod",
+    "chapter": "Baldur's Gate",
+    "where_en": "Baldur's Gate, Ducal Palace",
+    "where_fr": "Porte de Baldur, Palais Ducal",
+    "kind": "side",
+    "hints_en": [
+      "A Flaming Fist officer got himself locked in one of the palace cells.",
+      "Find a way to open the cell and let him out.",
+      "Be ready for a fight: the prisoner may not be what he seems."
+    ],
+    "hints_fr": [
+      "Un officier du Poing Enflammé s'est retrouvé enfermé dans une cellule du palais.",
+      "Trouvez un moyen d'ouvrir la cellule pour le faire sortir.",
+      "Préparez-vous à combattre : le prisonnier n'est peut-être pas ce qu'il semble être."
+    ],
+    "solution_en": "In the Ducal Palace, a Flaming Fist officer has been accidentally locked in a cell.\nFind a way to open it, by key or by picking the lock, and free him.\nIn one outcome he is a real, unlucky officer and simply goes on his way. In another, the \"officer\" is a doppelganger that attacks once freed: kill it to close the quest.",
+    "solution_fr": "Au Palais Ducal, un officier du Poing Enflammé a été enfermé par accident dans une cellule.\nTrouvez un moyen de l'ouvrir, avec une clef ou en crochetant la serrure, et libérez-le.\nDans un cas, c'est un véritable officier malchanceux qui repart simplement. Dans l'autre, l'« officier » est un doppelganger qui attaque une fois libéré : tuez-le pour clore la quête."
+  }
+]

@@ -1,0 +1,810 @@
+[
+ {
+  "title": 74436,
+  "idx": 121,
+  "game": "bg2",
+  "chapter": "2-6",
+  "where_en": "Athkatla, Government District",
+  "where_fr": "Athkatla, quartier du gouvernement",
+  "kind": "companion",
+  "hints_en": [
+   "Keldorn has not seen his family for a long time; take him home before he goes alone.",
+   "His wife Maria has been seeing another man, Sir William of Thorpe, who frequents the Mithrest inn.",
+   "Urge Keldorn to forgive and reconcile rather than seek justice or vengeance."
+  ],
+  "hints_fr": [
+   "Keldorn n'a pas vu sa famille depuis longtemps : emmenez-le chez lui avant qu'il n'y aille seul.",
+   "Sa femme Maria fréquente un autre homme, Sire William de Thorpe, un habitué du Bonrepos.",
+   "Poussez Keldorn au pardon et à la réconciliation plutôt qu'à la justice ou à la vengeance."
+  ],
+  "solution_en": "After some time in the party, Keldorn asks to visit his estate in the Government District. Go there with him soon, or he leaves on his own and waits for you at the Radiant Heart headquarters.\nAt home he learns that Maria has been seeing Sir William of Thorpe. He then wants to confront William at the Mithrest inn in Waukeen's Promenade.\nThe outcome depends on your advice:\n- Urge him to reconcile and blame himself: he talks with Maria, then rejoins you (best outcome).\n- Push for the law: Maria and William are jailed, his family leaves him.\n- Push for revenge: he kills William and Maria leaves with the children.\n- Advise him to stay with his family for good: he leaves the party.",
+  "solution_fr": "Après un moment dans le groupe, Keldorn demande à visiter son domaine du quartier du gouvernement. Allez-y vite avec lui, sinon il part seul et vous attend dans les locaux du Cœur Radieux.\nChez lui, il apprend que Maria fréquente Sire William de Thorpe. Il veut alors l'affronter au Bonrepos, sur la Promenade de Waukyne.\nL'issue dépend de vos conseils :\n- Poussez-le à se réconcilier et à se remettre en cause : il parle à Maria puis vous rejoint (meilleure issue).\n- Prônez la loi : Maria et William sont emprisonnés, sa famille le quitte.\n- Prônez la vengeance : il tue William et Maria part avec les enfants.\n- Conseillez-lui de rester avec sa famille pour de bon : il quitte le groupe."
+ },
+ {
+  "title": 74437,
+  "idx": 122,
+  "game": "bg2",
+  "chapter": "2-6",
+  "where_en": "Trademeet",
+  "where_fr": "Franc-Marché",
+  "kind": "companion",
+  "hints_en": [
+   "With Mazzy in the party, visit her sister Pala in Trademeet.",
+   "The love potion came from Wallace, a gnome peddler in the market square, but he did not brew it.",
+   "Ask the superior of the temple of Waukeen to search the acolyte Barl's rooms."
+  ],
+  "hints_fr": [
+   "Avec Mazzy dans le groupe, rendez visite à sa sœur Pala à Franc-Marché.",
+   "Le filtre d'amour vient de Wallace, un camelot gnome de la place du marché, mais il ne l'a pas préparé.",
+   "Demandez au supérieur du temple de Waukyne de fouiller les appartements de l'acolyte Barl."
+  ],
+  "solution_en": "Bring Mazzy to Trademeet: she learns that Pala was poisoned by a love potion bought by her betrothed Danno.\nGo to the market square and find Wallace, the gnome peddler. He reveals his new supplier: Barl, an acolyte of the temple of Waukeen in Trademeet.\nTalk to the temple superior. He may first ask for a 300 gold donation before he acts. He searches Barl's rooms and finds alchemy gear and a holy symbol of Talona.\nBarl attacks: kill him and take the antidote from his body. Pala is cured.\nLet Mazzy spend the night with her sister. If you leave without waiting, she stays in Trademeet until you return for her.",
+  "solution_fr": "Emmenez Mazzy à Franc-Marché : elle apprend que Pala a été empoisonnée par un filtre d'amour acheté par son fiancé Danno.\nAllez sur la place du marché et trouvez Wallace, le camelot gnome. Il révèle son nouveau fournisseur : Barl, un acolyte du temple de Waukyne de Franc-Marché.\nParlez au supérieur du temple. Il peut d'abord exiger un don de 300 pièces d'or. Il fouille les appartements de Barl et y trouve du matériel d'alchimie et un symbole sacré de Talona.\nBarl attaque : tuez-le et prenez l'antidote sur son corps. Pala est guérie.\nLaissez Mazzy passer la nuit avec sa sœur. Si vous partez sans attendre, elle reste à Franc-Marché jusqu'à ce que vous reveniez la chercher."
+ },
+ {
+  "title": 74438,
+  "idx": 123,
+  "game": "bg2",
+  "chapter": "any",
+  "where_en": "Unknown",
+  "where_fr": "Inconnu",
+  "kind": "side",
+  "hints_en": [
+   "No dialog or script writes this entry: it seems to be unused content.",
+   "The only entry speaks of six pieces of King Strohm's burial mask, already reassembled."
+  ],
+  "hints_fr": [
+   "Aucun dialogue ni script n'écrit cette entrée : il s'agit sans doute de contenu inutilisé.",
+   "La seule entrée parle des six morceaux du masque mortuaire du roi Strohm, déjà reconstitué."
+  ],
+  "solution_en": "This quest has no known trigger in the game files: no dialog or script writes its journal entry, so it is most likely cut content and cannot normally be started.\nIts single entry says the six pieces of King Strohm's burial mask were found and put back together, without saying what the mask is for.\nIf it appears in your journal, a mod probably added it; check that mod's own documentation.",
+  "solution_fr": "Cette quête n'a aucun déclencheur connu dans les fichiers du jeu : aucun dialogue ni script n'écrit son entrée de journal. Il s'agit très probablement de contenu coupé, impossible à lancer normalement.\nSa seule entrée dit que les six morceaux du masque mortuaire du roi Strohm ont été retrouvés et reconstitués, sans dire à quoi sert le masque.\nSi elle apparaît dans votre journal, un mod l'a sans doute ajoutée : consultez la documentation de ce mod."
+ },
+ {
+  "title": 74439,
+  "idx": 124,
+  "game": "bg2",
+  "chapter": "2-6",
+  "where_en": "Athkatla, Mae'Var's guildhall",
+  "where_fr": "Athkatla, guilde de Mae'Var",
+  "kind": "side",
+  "hints_en": [
+   "A thief who kills Mae'Var for Renal Bloodscalp is given Mae'Var's guildhall to run.",
+   "Visit the guild every five days or so, assign your thieves and always pay the quotamaster.",
+   "When pickpockets steal from the guild, docking everyone's pay is the safest answer; be wary of Ama."
+  ],
+  "hints_fr": [
+   "Un voleur qui tue Mae'Var pour Renal Scalpesang reçoit la guilde de Mae'Var à diriger.",
+   "Passez à la guilde environ tous les cinq jours, affectez vos voleurs et payez toujours le questeur.",
+   "Quand des voleurs à la tire volent la guilde, bloquer tous les salaires est le plus sûr ; méfiez-vous d'Ama."
+  ],
+  "solution_en": "Stronghold for thieves: do Renal Bloodscalp's tasks and kill Mae'Var. Renal then gives you Mae'Var's guildhall.\nGo there and talk to Jariel: each week you choose your thieves' activities and their risk, then collect the profit. Pay the quotamaster every five days or so, or the guild is shut down (Renal can reinstate you for a high price).\nEvents:\n- Ama asks you to be a decoy for an ambush in Waukeen's Promenade at night. It is a trap set in Mae'Var's name: be ready to fight. You may then dismiss Lathan, who vouched for her.\n- One of Kretor's pickpockets steals from the guild. Dock all their pay: the thief is dealt with. Killing one is a gamble; killing all or doing nothing makes Kretor quit.",
+  "solution_fr": "Quartier général des voleurs : accomplissez les missions de Renal Scalpesang et tuez Mae'Var. Renal vous confie alors la guilde de Mae'Var.\nAllez-y et parlez à Jariel : chaque semaine vous choisissez les activités de vos voleurs et leur risque, puis touchez les profits. Payez le questeur environ tous les cinq jours, sinon la guilde est fermée (Renal peut vous réintégrer, très cher).\nÉvénements :\n- Ama vous demande de servir d'appât pour une embuscade, la nuit, sur la Promenade de Waukyne. C'est un piège au nom de Mae'Var : préparez-vous au combat. Vous pouvez ensuite renvoyer Lathan, qui s'était porté garant d'elle.\n- Un des voleurs à la tire de Kretor vole la guilde. Bloquez tous leurs salaires : le coupable est éliminé. En tuer un est un pari ; les tuer tous ou ne rien faire pousse Kretor à démissionner."
+ },
+ {
+  "title": 74440,
+  "idx": 125,
+  "game": "bg2",
+  "chapter": "2-6",
+  "where_en": "Athkatla, Graveyard District",
+  "where_fr": "Athkatla, quartier du cimetière",
+  "kind": "companion",
+  "hints_en": [
+   "Keep Edwin in the party: he will remember an old tale about a Nether Scroll.",
+   "The scroll is said to lie in one of the tombs of the Graveyard District.",
+   "Search the tombs beneath the Graveyard District with Edwin and let him study what you find."
+  ],
+  "hints_fr": [
+   "Gardez Edwin dans le groupe : il se souviendra d'une vieille légende sur un Parchemin Néthère.",
+   "Le parchemin serait caché dans l'une des tombes du quartier du cimetière.",
+   "Fouillez les tombes du quartier du cimetière avec Edwin et laissez-le étudier votre trouvaille."
+  ],
+  "solution_en": "After some time in Athkatla with Edwin, he mentions the Nether Scroll, possibly hidden in a tomb of the Graveyard District.\nExplore the tombs under the Graveyard District with Edwin in the party and search the containers until you find the Nether Scroll.\nEdwin studies it. The result does not go as he planned: the scroll changes him, which leads to the Red Wizard Degardan quest (Edwin is being hunted by the Red Wizards?).\nThere is no other reward than the story that follows.",
+  "solution_fr": "Après un moment à Athkatla avec Edwin, il évoque le Parchemin Néthère, peut-être caché dans une tombe du quartier du cimetière.\nExplorez les tombes sous le quartier du cimetière avec Edwin dans le groupe et fouillez les conteneurs jusqu'à trouver le Parchemin Néthère.\nEdwin l'étudie. Le résultat n'est pas celui qu'il espérait : le parchemin le transforme, ce qui mène à la quête du magicien rouge Degardan (Les Magiciens Rouges pourchassent Edwin ?).\nIl n'y a pas d'autre récompense que l'histoire qui suit."
+ },
+ {
+  "title": 74441,
+  "idx": 126,
+  "game": "bg2",
+  "chapter": "2-6",
+  "where_en": "Athkatla",
+  "where_fr": "Athkatla",
+  "kind": "companion",
+  "hints_en": [
+   "This follows the Nether Scroll: a Red Wizard named Degardan comes looking for Edwin.",
+   "Cover for Edwin the first time you meet Degardan.",
+   "Keep travelling with Edwin: Degardan returns and can undo the scroll's effect."
+  ],
+  "hints_fr": [
+   "Suite du Parchemin Néthère : un magicien rouge nommé Degardan recherche Edwin.",
+   "Protégez Edwin la première fois que vous rencontrez Degardan.",
+   "Continuez à voyager avec Edwin : Degardan reviendra et pourra défaire l'effet du parchemin."
+  ],
+  "solution_en": "After Edwin has been changed by the Nether Scroll, the Red Wizard Degardan approaches the party in Athkatla, looking for Edwin, who has a price on his head in Thay.\nCover for Edwin and send Degardan away.\nKeep Edwin in the party. Later Degardan comes back and his magic turns Edwin back to his true form. As soon as he is exposed, Edwin attacks him: help kill Degardan.\nEdwin is himself again; why the Red Wizards hunt him stays a mystery.",
+  "solution_fr": "Après la transformation d'Edwin par le Parchemin Néthère, le magicien rouge Degardan aborde le groupe à Athkatla. Il cherche Edwin, dont la tête est mise à prix au Thay.\nProtégez Edwin et éconduisez Degardan.\nGardez Edwin dans le groupe. Plus tard, Degardan revient et sa magie rend à Edwin sa vraie forme. Démasqué, Edwin l'attaque aussitôt : aidez-le à tuer Degardan.\nEdwin redevient lui-même ; la raison de cette traque par les Magiciens Rouges reste un mystère."
+ },
+ {
+  "title": 74442,
+  "idx": 127,
+  "game": "bg2",
+  "chapter": "2-3",
+  "where_en": "Athkatla, Bridge District",
+  "where_fr": "Athkatla, quartier du pont",
+  "kind": "side",
+  "hints_en": [
+   "A playhouse lies beneath the Five Flagons inn in the Bridge District.",
+   "Go backstage in the playhouse and speak to Raelis Shai."
+  ],
+  "hints_fr": [
+   "Un théâtre se trouve sous l'auberge des Cinq Chopes, dans le quartier du pont.",
+   "Passez en coulisses du théâtre et parlez à Raelis Shai."
+  ],
+  "solution_en": "Enter the Five Flagons inn in the Bridge District and go down to the playhouse beneath it. Watch or skip the play, then go backstage.\nTalk to Raelis Shai, the head of the troupe. She asks for help: the bard Haer'Dalis is held by the wizard Mekrath, along with a gem she wants back.\nAccept to start the quest Rescue Haer'Dalis and his gem from Mekrath. Raelis offers either the playhouse deed (useful for a bard) or 1,000 gold as payment.",
+  "solution_fr": "Entrez dans l'auberge des Cinq Chopes, dans le quartier du pont, et descendez au théâtre qui se trouve en dessous. Regardez la pièce ou non, puis passez en coulisses.\nParlez à Raelis Shai, la directrice de la troupe. Elle demande de l'aide : le barde Haer'Dalis est retenu par le magicien Mekrath, ainsi qu'une gemme qu'elle veut récupérer.\nAcceptez pour lancer la quête Secourir Haer'Dalis et sa gemme des griffes de Mekrath. Raelis propose en paiement l'acte de propriété du théâtre (utile pour un barde) ou 1 000 pièces d'or."
+ },
+ {
+  "title": 74443,
+  "idx": 128,
+  "game": "bg2",
+  "chapter": "1",
+  "where_en": "Irenicus's Dungeon",
+  "where_fr": "Donjon d'Irenicus",
+  "kind": "side",
+  "hints_en": [
+   "In Irenicus's dungeon, a ruined man floats in a tank, kept alive against his will.",
+   "Talk to Rielev and agree to end his suffering by shutting down the device."
+  ],
+  "hints_fr": [
+   "Dans le donjon d'Irenicus, un homme mutilé flotte dans une cuve, maintenu en vie malgré lui.",
+   "Parlez à Rielev et acceptez de mettre fin à ses souffrances en arrêtant la machine."
+  ],
+  "solution_en": "Explore Irenicus's dungeon at the start of the game. In one of the laboratory rooms you find Rielev, floating in a life support tank.\nTalk to him: he begs to be released. Agree and shut down the device.\nRielev dies in peace. Take the crystal that powered the tank: he says it can activate other servants kept in similar devices, which helps you elsewhere in the dungeon.",
+  "solution_fr": "Explorez le donjon d'Irenicus au début du jeu. Dans l'un des laboratoires se trouve Rielev, qui flotte dans une cuve de survie.\nParlez-lui : il supplie qu'on le libère. Acceptez et arrêtez la machine.\nRielev meurt en paix. Prenez le cristal qui alimentait la cuve : il dit qu'il peut activer d'autres serviteurs gardés dans des machines semblables, ce qui sert ailleurs dans le donjon."
+ },
+ {
+  "title": 74444,
+  "idx": 129,
+  "game": "bg2",
+  "chapter": "2-6",
+  "where_en": "Athkatla, Five Flagons playhouse",
+  "where_fr": "Athkatla, théâtre des Cinq Chopes",
+  "kind": "side",
+  "hints_en": [
+   "Raelis Shai, backstage in the Five Flagons playhouse, wants Haer'Dalis and a gem back from Mekrath.",
+   "The wizard Mekrath keeps tieflings as servants; Haer'Dalis is one of them.",
+   "Bring both Haer'Dalis and the gem back to Raelis to earn the playhouse deed or gold."
+  ],
+  "hints_fr": [
+   "Raelis Shai, en coulisses du théâtre des Cinq Chopes, veut récupérer Haer'Dalis et une gemme chez Mekrath.",
+   "Le magicien Mekrath garde des tieffelins à son service ; Haer'Dalis est l'un d'eux.",
+   "Rapportez Haer'Dalis et la gemme à Raelis pour gagner l'acte du théâtre ou de l'or."
+  ],
+  "solution_en": "Accept Raelis Shai's request in the playhouse beneath the Five Flagons inn (Bridge District).\nGo to the lair of the wizard Mekrath. Haer'Dalis serves him under duress. Expect a hard fight against Mekrath and his summoned guardians; prepare magic defences.\nFree Haer'Dalis (he can join the party) and take the gem.\nReturn to Raelis: choose the playhouse deed (a stronghold for bards) or 1,000 gold.\nThe journal also records a selfish outcome where you take her reward without helping her.",
+  "solution_fr": "Acceptez la demande de Raelis Shai dans le théâtre sous l'auberge des Cinq Chopes (quartier du pont).\nRendez-vous dans l'antre du magicien Mekrath. Haer'Dalis le sert sous la contrainte. Attendez-vous à un combat difficile contre Mekrath et ses gardiens invoqués ; préparez des protections magiques.\nLibérez Haer'Dalis (il peut rejoindre le groupe) et prenez la gemme.\nRetournez voir Raelis : choisissez l'acte de propriété du théâtre (quartier général des bardes) ou 1 000 pièces d'or.\nLe journal prévoit aussi une issue égoïste où vous empochez sa récompense sans l'aider."
+ },
+ {
+  "title": 74445,
+  "idx": 130,
+  "game": "bg2",
+  "chapter": "3",
+  "where_en": "Athkatla, Docks and Graveyard District",
+  "where_fr": "Athkatla, quartier des quais et quartier du cimetière",
+  "kind": "main",
+  "hints_en": [
+   "Gaelan's gold buys an audience with Aran Linvail, who wants favours before he helps you find Imoen.",
+   "Guard the warehouse with Mook at night, then pose as a recruit on the top floor of the Five Flagons.",
+   "The rival guild hides in the tombs under the Graveyard District; bring Aran's stakes."
+  ],
+  "hints_fr": [
+   "L'or versé à Gaelan vous obtient une audience avec Aran Linvail, qui exige des services avant de vous aider à trouver Imoen.",
+   "Gardez l'entrepôt avec Mook la nuit, puis faites-vous passer pour une recrue au dernier étage des Cinq Chopes.",
+   "La guilde rivale se cache dans les tombes sous le quartier du cimetière ; emportez les pieux d'Aran."
+  ],
+  "solution_en": "Shadow Thieves path of chapter 3.\n1. Aran Linvail (Docks) sends you to the docks at night to find Mook near a warehouse. A stranger kills her and fights you, then flees as mist: a vampire. Report to Aran in the morning.\n2. Go to the top floor of the Five Flagons inn (Bridge District). Pose as a recruit with the defectors Jaylos and Caehan, then deal with their contact Gracen. You learn the rival guild is in the Graveyard District.\n3. Aran names the leader, the vampire Bodhi, and gives you wooden stakes. In the tombs under the Graveyard District, a mage and his golem open the blue doors north of the spider nest. Clear the vampire lair; bring Protection from Evil and restoration magic against level drain. Bodhi escapes.\n4. Report to Aran: he reveals where Imoen is held and arranges a ship to take you there.",
+  "solution_fr": "Voie des Voleurs de l'Ombre au chapitre 3.\n1. Aran Linvail (quartier des quais) vous envoie la nuit sur les quais retrouver Mook près d'un entrepôt. Un inconnu la tue et vous attaque, puis s'enfuit sous forme de brume : un vampire. Faites votre rapport à Aran le matin.\n2. Montez au dernier étage de l'auberge des Cinq Chopes (quartier du pont). Faites-vous passer pour une recrue auprès des traîtres Jaylos et Caehan, puis occupez-vous de leur contact Gracen. Vous apprenez que la guilde rivale est dans le quartier du cimetière.\n3. Aran nomme leur chef, la vampire Bodhi, et vous donne des pieux. Dans les tombes sous le quartier du cimetière, un mage et son golem ouvrent les portes bleues au nord du nid d'araignées. Nettoyez l'antre des vampires ; prévoyez Protection contre le mal et de quoi soigner les absorptions de niveau. Bodhi s'échappe.\n4. Faites votre rapport à Aran : il révèle où Imoen est retenue et organise votre traversée en bateau."
+ },
+ {
+  "title": 74446,
+  "idx": 131,
+  "game": "bg2",
+  "chapter": "2-3",
+  "where_en": "Athkatla, Docks District",
+  "where_fr": "Athkatla, quartier des quais",
+  "kind": "side",
+  "hints_en": [
+   "A poisoned man named Renfeld stumbles around the Docks District asking for help.",
+   "His friend Rylock waits in front of a building in the southwest of the Docks.",
+   "Lead Renfeld there quickly, or he dies on the way."
+  ],
+  "hints_fr": [
+   "Un homme empoisonné nommé Renfeld erre dans le quartier des quais en demandant de l'aide.",
+   "Son ami Rylock attend devant un bâtiment au sud-ouest du quartier des quais.",
+   "Conduisez-y Renfeld rapidement, sinon il meurt en chemin."
+  ],
+  "solution_en": "In the Docks District, talk to Renfeld, a poisoned man, and agree to take him to his friends.\nWalk him to the building in the southwest part of the district, where Rylock stands at the door. Do not waste time on the way.\nIf Renfeld arrives alive, Rylock is glad to see him. If he died on the way, Rylock still gives you a small reward.\nThe building is a Harper stronghold: soon after, Xzar approaches you, which starts Find out what happened to Montaron.",
+  "solution_fr": "Dans le quartier des quais, parlez à Renfeld, un homme empoisonné, et acceptez de le ramener à ses amis.\nConduisez-le au bâtiment du sud-ouest du quartier, devant lequel se tient Rylock. Ne traînez pas en chemin.\nSi Renfeld arrive vivant, Rylock est heureux de le revoir. S'il est mort en route, Rylock vous donne quand même une petite récompense.\nLe bâtiment est un fortin des Ménestrels : peu après, Xzar vous aborde, ce qui lance Découvrir ce qui est arrivé à Montaron."
+ },
+ {
+  "title": 74447,
+  "idx": 132,
+  "game": "bg2",
+  "chapter": "2-3",
+  "where_en": "Athkatla, Docks District, Harper Hold",
+  "where_fr": "Athkatla, quartier des quais, fortin des Ménestrels",
+  "kind": "side",
+  "hints_en": [
+   "After delivering Renfeld, Xzar asks you to find out what the Harpers did to Montaron.",
+   "Rylock lets you in once you clear the creatures in the mage Prebek's house, in the centre of the district.",
+   "The upstairs guardians spare those wearing a Harper pin; look up, not down, for Montaron."
+  ],
+  "hints_fr": [
+   "Après avoir ramené Renfeld, Xzar vous demande de découvrir ce que les Ménestrels ont fait de Montaron.",
+   "Rylock vous laisse entrer une fois les créatures de la maison du mage Prebek, au centre du quartier, éliminées.",
+   "Les gardiens de l'étage épargnent ceux qui portent la broche des Ménestrels ; cherchez Montaron en hauteur."
+  ],
+  "solution_en": "Xzar says Montaron sneaked into the Harper building and never came out. Talk to Rylock at the door.\nAs a test, go to Prebek's small house in the centre of the Docks District, kill the creatures inside, then report back. You may enter the Harper Hold, but only the ground floor.\nThe upper floor has dangerous guardians. Find a Harper pin inside the hold and wear it to pass them.\nUpstairs, a caged bird is said to be Montaron. Freeing it is a Harper trap: the bird is an assassin sent for Xzar, a former Zhentarim.\nMontaron's real fate stays unknown. This leads into Jaheira's Harper troubles later.",
+  "solution_fr": "Xzar raconte que Montaron s'est introduit chez les Ménestrels sans jamais ressortir. Parlez à Rylock devant la porte.\nEn guise d'épreuve, allez à la petite maison de Prebek, au centre du quartier des quais, tuez les créatures qui s'y trouvent et revenez. Vous pouvez entrer dans le fortin des Ménestrels, mais seulement au rez-de-chaussée.\nL'étage est protégé par de dangereux gardiens. Trouvez une broche des Ménestrels dans le fortin et portez-la pour passer.\nÀ l'étage, un oiseau en cage serait Montaron. Le libérer est un piège : l'oiseau est un assassin destiné à Xzar, ancien Zhentarim.\nLe vrai sort de Montaron reste inconnu. Cela mène plus tard aux ennuis de Jaheira avec les Ménestrels."
+ },
+ {
+  "title": 74448,
+  "idx": 133,
+  "game": "bg2",
+  "chapter": "2-6",
+  "where_en": "Athkatla, Docks District, Harper Hold",
+  "where_fr": "Athkatla, quartier des quais, fortin des Ménestrels",
+  "kind": "companion",
+  "hints_en": [
+   "With Jaheira in the party, the Harpers start to take an unhealthy interest in you.",
+   "Dermin, Jaheira's old mentor, and the Harper Galvarey are not what they seem.",
+   "Follow Jaheira's quest to the end at the Harper Hold and expose Galvarey."
+  ],
+  "hints_fr": [
+   "Avec Jaheira dans le groupe, les Ménestrels s'intéressent de trop près à vous.",
+   "Dermin, l'ancien mentor de Jaheira, et le Ménestrel Galvarey ne sont pas ce qu'ils semblent être.",
+   "Suivez la quête de Jaheira jusqu'au bout au fortin des Ménestrels et démasquez Galvarey."
+  ],
+  "solution_en": "This is the end of Jaheira's Harper quest, which starts after she has been in the party for a while.\nDermin, her former mentor, approaches her; the Harper Galvarey then accuses you of being a danger because you are a child of Bhaal.\nFollow the leads Jaheira receives and go to the Harper Hold in the Docks District. There the plot comes out: Galvarey is an opportunist using his rank for power, and Dermin was his accomplice. Fight Galvarey and his allies.\nThe quest closes with this entry; whether other Harpers keep pursuing Jaheira is left open.",
+  "solution_fr": "Il s'agit de la fin de la quête des Ménestrels de Jaheira, qui débute après un certain temps passé avec elle.\nDermin, son ancien mentor, l'aborde ; le Ménestrel Galvarey vous accuse ensuite d'être un danger parce que vous êtes un enfant de Bhaal.\nSuivez les pistes que reçoit Jaheira et allez au fortin des Ménestrels, dans le quartier des quais. Le complot y éclate : Galvarey est un opportuniste qui use de son rang pour le pouvoir, et Dermin était son complice. Combattez Galvarey et ses alliés.\nLa quête se termine sur cette entrée ; on ignore si d'autres Ménestrels poursuivront Jaheira."
+ },
+ {
+  "title": 74449,
+  "idx": 134,
+  "game": "bg2",
+  "chapter": "2-6",
+  "where_en": "Athkatla, Slums",
+  "where_fr": "Athkatla, bas quartiers",
+  "kind": "companion",
+  "hints_en": [
+   "A talkative gnome in trouble with the city guard can become a companion.",
+   "If you did not take Jan Jansen along, look for him at his family home in the Slums."
+  ],
+  "hints_fr": [
+   "Un gnome bavard qui a des ennuis avec la garde peut devenir un compagnon.",
+   "Si vous n'avez pas emmené Jan Jansen, cherchez-le chez sa famille dans les bas quartiers."
+  ],
+  "solution_en": "In Athkatla you meet Jan Jansen, a gnome con artist being questioned by the authorities. Talk your way through the scene so he gets out of trouble.\nIf you do not invite him into the party at once, he goes home: the Jansen family house in the Slums, where he claims to sell turnips.\nVisit the house any time and talk to Jan to recruit him. His family and his personal quests start from there.",
+  "solution_fr": "À Athkatla, vous croisez Jan Jansen, un escroc gnome interrogé par les autorités. Menez la discussion de façon à le tirer d'affaire.\nSi vous ne l'invitez pas tout de suite dans le groupe, il rentre chez lui : la maison de la famille Jansen, dans les bas quartiers, où il prétend vendre des navets.\nPassez chez lui quand vous voulez et parlez à Jan pour le recruter. Sa famille et ses quêtes personnelles se trouvent là."
+ },
+ {
+  "title": 74450,
+  "idx": 135,
+  "game": "bg2",
+  "chapter": "1-2",
+  "where_en": "Irenicus's Dungeon, then Athkatla",
+  "where_fr": "Donjon d'Irenicus, puis Athkatla",
+  "kind": "companion",
+  "hints_en": [
+   "You refused the thief Yoshimo in Irenicus's dungeon, but he escapes too.",
+   "Once outside, look for him in a tavern close to the dungeon exit."
+  ],
+  "hints_fr": [
+   "Vous avez refusé le voleur Yoshimo dans le donjon d'Irenicus, mais il s'évade lui aussi.",
+   "Une fois dehors, cherchez-le dans une taverne proche de la sortie du donjon."
+  ],
+  "solution_en": "In Irenicus's dungeon you met Yoshimo and did not let him join. He finds his own way out.\nAfter you escape to Waukeen's Promenade, look for him in a nearby tavern and talk to him: he still offers to join.\nThink twice before relying on him for the long term; his story ties into the main plot.",
+  "solution_fr": "Dans le donjon d'Irenicus, vous avez rencontré Yoshimo sans le laisser se joindre à vous. Il s'échappe par ses propres moyens.\nAprès votre évasion sur la Promenade de Waukyne, cherchez-le dans une taverne voisine et parlez-lui : il propose toujours de vous rejoindre.\nRéfléchissez avant de compter sur lui à long terme ; son histoire est liée à l'intrigue principale."
+ },
+ {
+  "title": 74451,
+  "idx": 136,
+  "game": "bg2",
+  "chapter": "2-6",
+  "where_en": "Athkatla, Government District",
+  "where_fr": "Athkatla, quartier du gouvernement",
+  "kind": "companion",
+  "hints_en": [
+   "This records how Keldorn's family crisis ended in reconciliation.",
+   "If he left the party, look for him at his estate in the Government District."
+  ],
+  "hints_fr": [
+   "Cette quête note comment la crise familiale de Keldorn s'est conclue par une réconciliation.",
+   "S'il a quitté le groupe, cherchez-le dans son domaine du quartier du gouvernement."
+  ],
+  "solution_en": "This follows Keldorn wishes to visit his wife and family, when he decides the fault is his and reconciles with Maria.\n- If you told him to leave and rebuild his family, he leaves the party. Depending on the dialog, he may be found again at his estate in the Government District.\n- If he promises that his mission with you is his last before resigning from the Order, Maria accepts and he stays with you: the best outcome for keeping him.",
+  "solution_fr": "Suite de Keldorn aimerait rendre visite à sa femme et à sa famille, quand il s'estime fautif et se réconcilie avec Maria.\n- Si vous lui avez dit de partir pour reconstruire sa famille, il quitte le groupe. Selon le dialogue, vous pourrez le retrouver dans son domaine du quartier du gouvernement.\n- S'il promet que sa mission avec vous sera la dernière avant de quitter l'Ordre, Maria accepte et il reste avec vous : la meilleure issue pour le garder."
+ },
+ {
+  "title": 74452,
+  "idx": 137,
+  "game": "bg2",
+  "chapter": "2-6",
+  "where_en": "Athkatla, Waukeen's Promenade",
+  "where_fr": "Athkatla, Promenade de Waukyne",
+  "kind": "companion",
+  "hints_en": [
+   "This is a bad ending of Keldorn's family quest.",
+   "Do not turn the meeting with Sir William into a fight you start: Keldorn's honour sides with him."
+  ],
+  "hints_fr": [
+   "C'est une mauvaise fin de la quête familiale de Keldorn.",
+   "Ne transformez pas la rencontre avec Sire William en un combat que vous déclenchez : l'honneur de Keldorn le pousse à le défendre."
+  ],
+  "solution_en": "During Keldorn's family quest, the confrontation with Sir William of Thorpe went wrong: Keldorn's sense of justice made him defend William, and he died.\nKeldorn is lost for good. To avoid this, reload before the meeting and steer him towards reconciliation with Maria, or leave the matter to the law instead of attacking William yourself.",
+  "solution_fr": "Pendant la quête familiale de Keldorn, la confrontation avec Sire William de Thorpe a mal tourné : son sens de la justice l'a poussé à défendre William, et il est mort.\nKeldorn est perdu pour de bon. Pour éviter cela, rechargez avant la rencontre et orientez-le vers la réconciliation avec Maria, ou laissez la loi s'en charger au lieu d'attaquer William vous-même."
+ },
+ {
+  "title": 74453,
+  "idx": 138,
+  "game": "bg2",
+  "chapter": "2-3",
+  "where_en": "Athkatla, Temple District",
+  "where_fr": "Athkatla, quartier du temple",
+  "kind": "companion",
+  "hints_en": [
+   "A paladin of the Radiant Heart searches the sewers under the Temple District for the same cult as you.",
+   "After the cult business, find Keldorn at the Radiant Heart headquarters in the Temple District."
+  ],
+  "hints_fr": [
+   "Un paladin du Cœur Radieux fouille les égouts sous le quartier du temple à la recherche du même culte que vous.",
+   "Une fois l'affaire du culte réglée, retrouvez Keldorn dans les locaux du Cœur Radieux, dans le quartier du temple."
+  ],
+  "solution_en": "In the sewers beneath the Temple District, while investigating the cult, you meet Sir Keldorn, a paladin of the Most Noble Order of the Radiant Heart.\nIf you do not take him along at once, he goes back to the Order.\nWhen the cult matter is settled, or whenever you want him, go to the Radiant Heart building in the Temple District and talk to Keldorn to recruit him.",
+  "solution_fr": "Dans les égouts sous le quartier du temple, en enquêtant sur le culte, vous rencontrez Sire Keldorn, un paladin du Très Noble Ordre du Cœur Radieux.\nSi vous ne l'emmenez pas tout de suite, il retourne à l'Ordre.\nUne fois le culte réglé, ou quand vous le voulez, allez aux locaux du Cœur Radieux dans le quartier du temple et parlez à Keldorn pour le recruter."
+ },
+ {
+  "title": 74454,
+  "idx": 139,
+  "game": "bg2",
+  "chapter": "2-6",
+  "where_en": "Trademeet and the Druid Grove",
+  "where_fr": "Franc-Marché et le bosquet des druides",
+  "kind": "side",
+  "hints_en": [
+   "Flydian at the City Gates asks for help for Trademeet, besieged by animals; druids are suspected.",
+   "Lord Logan Coprith wants you to talk to the druid Cernd, held in the jail beneath the mayor's house.",
+   "Faldorn rules the grove south of town and can only be beaten in a druid's challenge: Cernd, Jaheira or a druid hero."
+  ],
+  "hints_fr": [
+   "Flydian, aux portes de la ville, cherche de l'aide pour Franc-Marché, assiégée par des animaux ; on soupçonne les druides.",
+   "Le Seigneur Logan Coprith veut que vous parliez au druide Cernd, emprisonné sous la maison du maire.",
+   "Faldorn règne sur le bosquet au sud de la ville et ne peut être vaincue que par un défi druidique : Cernd, Jaheira ou un héros druide."
+  ],
+  "solution_en": "Agree to help Flydian, then travel to Trademeet, southeast of Athkatla. Be polite to the militia captain at the gate.\nSee High Merchant Lord Logan Coprith. He asks you to talk to the druid Cernd, jailed in the basement of the mayor's house. Cernd suspects the grove south of town and can join you.\nIn the Druid Grove, a druid tells you that the Shadow Druid Faldorn controls it and is bound to the land: she is invulnerable unless challenged by a druid.\nChallenge her with Cernd, Jaheira or your own druid. Win the duel: the attacks stop and Logan rewards you. A druid hero is also offered the grove as a stronghold.\nEvil option: Lord Khellon Menold gives you poison for the druids' font; kill the druids for him instead.",
+  "solution_fr": "Acceptez d'aider Flydian, puis rendez-vous à Franc-Marché, au sud-est d'Athkatla. Restez courtois avec la capitaine de la milice à l'entrée.\nVoyez le Haut-Marchand, le Seigneur Logan Coprith. Il vous demande de parler au druide Cernd, enfermé au sous-sol de la maison du maire. Cernd soupçonne le bosquet au sud de la ville et peut vous rejoindre.\nDans le bosquet des druides, un druide vous apprend que la druidesse de l'ombre Faldorn le contrôle et s'est liée à la terre : elle est invulnérable sauf face au défi d'un druide.\nDéfiez-la avec Cernd, Jaheira ou votre propre druide. Gagnez le duel : les attaques cessent et Logan vous récompense. Un héros druide se voit aussi offrir le bosquet comme quartier général.\nOption maléfique : le Seigneur Khellon Menold vous donne un poison pour la source sacrée des druides ; tuez alors les druides pour lui."
+ },
+ {
+  "title": 74455,
+  "idx": 140,
+  "game": "bg2",
+  "chapter": "2-6",
+  "where_en": "Windspear Hills",
+  "where_fr": "Collines de Lancevent",
+  "kind": "side",
+  "hints_en": [
+   "The dragon Firkraag can offer a deal instead of a fight.",
+   "He wants the deed to the Windspear Hills, held by Garren Windspear.",
+   "Take the deed from Garren, by force if needed, and bring it to Firkraag's lair."
+  ],
+  "hints_fr": [
+   "Le dragon Firkraag peut proposer un marché plutôt qu'un combat.",
+   "Il veut le titre de propriété des Collines de Lancevent, détenu par Garren Lancevent.",
+   "Prenez le titre à Garren, par la force s'il le faut, et apportez-le dans l'antre de Firkraag."
+  ],
+  "solution_en": "Evil option in the Windspear Hills. In Firkraag's lair, accept the red dragon's deal instead of fighting him.\nHe wants the deed to the Windspear Hills. Garren Windspear, whose home is in the Windspear Hills, has it. Garren will not hand it over willingly: take it by force.\nReturn the deed to Firkraag in his lair to finish the task (see Firkraag's task completed). Expect to lose reputation for siding with the dragon.",
+  "solution_fr": "Option maléfique dans les Collines de Lancevent. Dans l'antre de Firkraag, acceptez le marché du dragon rouge au lieu de le combattre.\nIl veut le titre de propriété des Collines de Lancevent. Garren Lancevent, qui vit dans les Collines de Lancevent, le possède. Il refuse de le céder : prenez-le par la force.\nRapportez le titre à Firkraag dans son antre pour terminer la mission (voir La mission de Firkraag est terminée). Attendez-vous à perdre de la réputation en vous rangeant du côté du dragon."
+ },
+ {
+  "title": 74456,
+  "idx": 141,
+  "game": "bg2",
+  "chapter": "2-6",
+  "where_en": "Windspear Hills, Firkraag's lair",
+  "where_fr": "Collines de Lancevent, antre de Firkraag",
+  "kind": "side",
+  "hints_en": [
+   "This closes the deal with the dragon Firkraag.",
+   "Hand him the Windspear deed in his lair to get your reward."
+  ],
+  "hints_fr": [
+   "Cette quête clôt le marché avec le dragon Firkraag.",
+   "Remettez-lui le titre de Lancevent dans son antre pour obtenir votre récompense."
+  ],
+  "solution_en": "After taking the deed to the Windspear Hills from Garren Windspear, go back to Firkraag's lair and give it to him.\nHe rewards you with a magical cloak and tells you to leave.\nNote: a paladin of the Radiant Heart is later asked to slay Firkraag for his Holy Avenger; you can still return to fight him.",
+  "solution_fr": "Après avoir pris le titre des Collines de Lancevent à Garren Lancevent, retournez dans l'antre de Firkraag et donnez-le-lui.\nIl vous récompense avec une cape magique et vous conseille de partir.\nÀ noter : un paladin du Cœur Radieux est ensuite chargé de tuer Firkraag pour sa Sainte Lame ; vous pouvez toujours revenir l'affronter."
+ },
+ {
+  "title": 74457,
+  "idx": 142,
+  "game": "bg2",
+  "chapter": "4",
+  "where_en": "Brynnlaw",
+  "where_fr": "Brynnlaw",
+  "kind": "side",
+  "hints_en": [
+   "On the pirate isle, the courtesan Ginia is forced to serve because Chremy holds her brother.",
+   "Calahan, a smuggler near the docks, can take Ginia and her brother off the isle for a price.",
+   "Pay Calahan and deal with Chremy near the inn, then tell Ginia."
+  ],
+  "hints_fr": [
+   "Sur l'île des pirates, la courtisane Ginia est forcée de servir parce que Chremy retient son frère.",
+   "Calahan, un contrebandier près des quais, peut faire quitter l'île à Ginia et à son frère moyennant finance.",
+   "Payez Calahan et occupez-vous de Chremy près de l'auberge, puis prévenez Ginia."
+  ],
+  "solution_en": "In Brynnlaw, talk to Ginia: Desharik took over the isle, and Chremy keeps her brother captive to force her to work as a courtesan. Agree to help.\nFind the smuggler Calahan near the docks and pay him 200 gold to take Ginia and her brother away.\nFind Chremy near the inn and kill him, so he cannot interfere.\nReturn to Ginia once both are done: she is overjoyed. If you kill Chremy but refuse to pay Calahan, she stays stuck on the isle.",
+  "solution_fr": "À Brynnlaw, parlez à Ginia : Desharik s'est emparé de l'île et Chremy retient son frère pour la forcer à être courtisane. Acceptez de l'aider.\nTrouvez le contrebandier Calahan près des quais et payez-lui 200 pièces d'or pour emmener Ginia et son frère.\nTrouvez Chremy près de l'auberge et tuez-le, pour qu'il ne puisse pas s'y opposer.\nRetournez voir Ginia une fois les deux choses faites : elle est aux anges. Si vous tuez Chremy sans payer Calahan, elle reste coincée sur l'île."
+ },
+ {
+  "title": 74458,
+  "idx": 143,
+  "game": "bg2",
+  "chapter": "2-6",
+  "where_en": "Athkatla, Docks District",
+  "where_fr": "Athkatla, quartier des quais",
+  "kind": "side",
+  "hints_en": [
+   "A golden skull in the Docks District promises wealth if you restore its body.",
+   "Its arms, legs and torso lie scattered in tombs around the city.",
+   "Think twice: the skull is a lich, and restoring it means a very hard fight."
+  ],
+  "hints_fr": [
+   "Un crâne doré du quartier des quais promet des richesses si vous lui rendez son corps.",
+   "Ses bras, ses jambes et son torse sont dispersés dans des tombes de la ville.",
+   "Réfléchissez bien : le crâne est une liche, et le reconstituer mène à un combat très difficile."
+  ],
+  "solution_en": "In the Docks District you meet a talking golden skull, Kangaxx, who promises wealth and power if you lift his curse and give him back his body.\nSearch the tombs of the city for his arms, legs and torso, then bring them to the skull.\nOnce whole, he reforms as a lich and attacks at once with powerful spells. Only accept if your party is ready for a high-level magic fight; otherwise simply leave the skull alone.\nThe exact locations of the body parts are not recorded in the journal.",
+  "solution_fr": "Dans le quartier des quais, vous rencontrez un crâne doré parlant, Kangaxx, qui promet richesse et pouvoir si vous levez sa malédiction et lui rendez son corps.\nFouillez les tombes de la ville pour trouver ses bras, ses jambes et son torse, puis rapportez-les au crâne.\nUne fois entier, il redevient une liche et attaque aussitôt avec de puissants sorts. N'acceptez que si votre groupe est prêt pour un combat magique de haut niveau ; sinon, laissez le crâne tranquille.\nLe journal ne précise pas où se trouvent les morceaux du corps."
+ },
+ {
+  "title": 74459,
+  "idx": 144,
+  "game": "bg2",
+  "chapter": "6",
+  "where_en": "Elven forest, then Athkatla",
+  "where_fr": "Forêt elfique, puis Athkatla",
+  "kind": "main",
+  "hints_en": [
+   "Elhan needs the Rhynn Lanthorn to reveal the hidden city of Suldanessellar.",
+   "Someone powerful who serves Irenicus stole it; you know her old lair in Athkatla.",
+   "Return to the tombs under Athkatla's Graveyard District and take the Lanthorn from Bodhi."
+  ],
+  "hints_fr": [
+   "Elhan a besoin du Rhynn Lanthorn pour révéler la cité cachée de Suldanessellar.",
+   "Une puissante servante d'Irenicus l'a volé ; vous connaissez son ancien repaire à Athkatla.",
+   "Retournez dans les tombes sous le quartier du cimetière d'Athkatla et reprenez le Lanthorn à Bodhi."
+  ],
+  "solution_en": "Chapter 6. After the Underdark, Elhan explains that Irenicus hid Suldanessellar behind illusions. Only the Rhynn Lanthorn can open the way.\nBodhi stole it. Travel back to Athkatla and enter her lair in the tombs beneath the Graveyard District. Bring Protection from Evil, stakes and level drain protection; kill Bodhi for good in her coffin chamber and take the Lanthorn.\nReturn to Elhan in the elven forest. The Lanthorn guides you into Suldanessellar while his elves hold back the drow. Inside, look for the high priestess Demin.\nSome journal entries list panes of the Lanthorn with riddles; they seem to come from unfinished content, the Lanthorn itself is what opens the city.",
+  "solution_fr": "Chapitre 6. Après l'Ombre-Terre, Elhan explique qu'Irenicus a caché Suldanessellar derrière des illusions. Seul le Rhynn Lanthorn peut ouvrir le chemin.\nBodhi l'a volé. Retournez à Athkatla et entrez dans son repaire, dans les tombes sous le quartier du cimetière. Prévoyez Protection contre le mal, des pieux et une protection contre l'absorption de niveau ; tuez Bodhi pour de bon dans la salle de son cercueil et prenez le Lanthorn.\nRetournez auprès d'Elhan dans la forêt elfique. Le Lanthorn vous guide dans Suldanessellar pendant que ses elfes retiennent les drows. Dans la cité, cherchez la grande prêtresse Demin.\nCertaines entrées listent des panneaux du Lanthorn avec des énigmes ; elles semblent venir de contenu inachevé, c'est le Lanthorn lui-même qui ouvre la cité."
+ },
+ {
+  "title": 74460,
+  "idx": 145,
+  "game": "bg2",
+  "chapter": "2-6",
+  "where_en": "Trademeet",
+  "where_fr": "Franc-Marché",
+  "kind": "side",
+  "hints_en": [
+   "The militia captain at Trademeet's gate is very wary of strangers.",
+   "Stay calm with her and ask what is wrong: it leads to Animal trouble in Trademeet."
+  ],
+  "hints_fr": [
+   "La capitaine de la milice, à l'entrée de Franc-Marché, se méfie beaucoup des étrangers.",
+   "Restez calme avec elle et demandez ce qui ne va pas : cela mène à Problème animalier à Franc-Marché."
+  ],
+  "solution_en": "You arrived in Trademeet without being sent by Flydian, and the militia captain greeted you with hostility.\nDo not fight her. Talk to her calmly and offer help: the town suffers animal attacks blamed on druids. She sends you to High Merchant Lord Logan Coprith, which starts the quest Animal trouble in Trademeet.",
+  "solution_fr": "Vous êtes arrivé à Franc-Marché sans avoir été envoyé par Flydian, et la capitaine de la milice vous a accueilli avec hostilité.\nNe la combattez pas. Parlez-lui calmement et proposez votre aide : la ville subit des attaques d'animaux attribuées aux druides. Elle vous envoie au Haut-Marchand, le Seigneur Logan Coprith, ce qui lance la quête Problème animalier à Franc-Marché."
+ },
+ {
+  "title": 74461,
+  "idx": 146,
+  "game": "bg2",
+  "chapter": "5",
+  "where_en": "Ust Natha",
+  "where_fr": "Ust Natha",
+  "kind": "side",
+  "hints_en": [
+   "In the drow city, a haughty drow female gives you an order you had better not refuse.",
+   "A sect of Ghaunadaur worshippers hides in the southeastern corner of Ust Natha."
+  ],
+  "hints_fr": [
+   "Dans la cité drow, une drow hautaine vous donne un ordre qu'il vaut mieux ne pas refuser.",
+   "Une secte d'adorateurs de Ghaunadaur se cache dans l'angle sud-est d'Ust Natha."
+  ],
+  "solution_en": "While disguised as a drow in Ust Natha, a commanding drow female orders you to destroy a sect of Ghaunadaur worshippers.\nGo to the southeastern corner of the city, find the hidden sect and kill its members.\nReport back: she gives no reward beyond letting you live. Refusing would likely make things worse for your disguise.",
+  "solution_fr": "Alors que vous êtes déguisé en drow à Ust Natha, une drow autoritaire vous ordonne de détruire une secte d'adorateurs de Ghaunadaur.\nAllez à l'angle sud-est de la cité, trouvez la secte cachée et tuez ses membres.\nFaites votre rapport : elle ne vous donne rien d'autre que le droit de vivre. Refuser compromettrait sans doute votre déguisement."
+ },
+ {
+  "title": 74462,
+  "idx": 147,
+  "game": "bg2",
+  "chapter": "5",
+  "where_en": "Ust Natha",
+  "where_fr": "Ust Natha",
+  "kind": "side",
+  "hints_en": [
+   "A drow named Visaj tells a story about Jarlaxle and a magical rope.",
+   "Nothing in this affair is as it is told; expect to end up working for Jarlaxle.",
+   "Jarlaxle wants gems from the lich Deirex's tower, and he has his own score with House Jae'llat."
+  ],
+  "hints_fr": [
+   "Un drow nommé Visaj raconte une histoire sur Jarlaxle et une corde magique.",
+   "Rien dans cette affaire n'est comme on le raconte ; attendez-vous à travailler pour Jarlaxle.",
+   "Jarlaxle veut des gemmes de la tour de la liche Deirex, et il a un compte à régler avec la maison Jae'llat."
+  ],
+  "solution_en": "This quest does not seem reachable in a normal game: Jarlaxle does not appear to be met in an unmodded Shadows of Amn, so it is probably cut content or comes from a mod.\nAccording to the journal: Visaj claims he stole a rope from Jarlaxle that protects against imprisonment, letting you loot the lich Deirex's home. It is a trap: you are forced into Jarlaxle's service and must bring back gems from the lich's tower within one day.\nThe gems really belong to House Jae'llat, which refused to pay Jarlaxle. You gain access to two drow dwellings, and the rope takes you back.",
+  "solution_fr": "Cette quête ne semble pas accessible dans une partie normale : Jarlaxle ne semble pas se rencontrer dans Shadows of Amn sans mod. Il s'agit sans doute de contenu coupé ou d'un ajout de mod.\nD'après le journal : Visaj prétend avoir volé à Jarlaxle une corde qui protège de l'Emprisonnement, pour piller la demeure de la liche Deirex. C'est un piège : vous voilà au service de Jarlaxle, à devoir rapporter des gemmes de la tour de la liche en un jour.\nLes gemmes appartiennent en fait à la maison Jae'llat, qui a refusé de payer Jarlaxle. Vous gagnez l'accès à deux demeures drows, et la corde vous ramène."
+ },
+ {
+  "title": 74463,
+  "idx": 148,
+  "game": "bg2",
+  "chapter": "2-6",
+  "where_en": "Athkatla, Temple District (Radiant Heart)",
+  "where_fr": "Athkatla, quartier du temple (Cœur Radieux)",
+  "kind": "side",
+  "hints_en": [
+   "A paladin hero is given a place in the Order of the Radiant Heart, with duties to fulfil.",
+   "Rush to the Umar Hills for the besieged knights; in Imnesvale, question everyone before siding with Baron Metrich.",
+   "Use Detect Evil on the baron and on whoever comes for Tyrianna; the last task is Firkraag's Holy Avenger."
+  ],
+  "hints_fr": [
+   "Un héros paladin reçoit une place dans l'Ordre du Cœur Radieux, avec des missions à accomplir.",
+   "Foncez aux collines d'Umar secourir les chevaliers assiégés ; à Imnesvale, interrogez tout le monde avant de soutenir le Baron Metrich.",
+   "Utilisez Détection du mal sur le Baron et sur celui qui vient chercher Tyrianna ; la dernière tâche est la Sainte Lame de Firkraag."
+  ],
+  "solution_en": "Paladin stronghold, in the Radiant Heart building of the Temple District.\n1. Go at once to the far end of the Umar Hills and save the three besieged knights. Every lost knight weighs on the Order.\n2. Baron Metrich wants squatters removed; meet at the Imnesvale tavern. Talk to Brunson, Moreno and Pardo: they are farmers and the baron lied. Refuse him and defend the farmers to earn the Order's approval.\n3. Guard young Tyrianna Morningale in a safe house until her godfather Hurgis Baltezan arrives. A fake Hurgis comes first: detect his evil and stop him. The real one comes later.\n4. Final task: slay the red dragon Firkraag in the Windspear Hills, take the Holy Avenger and report to Sir William Reirrac.\nFailing badly gets you expelled from the Order.",
+  "solution_fr": "Quartier général des paladins, dans les locaux du Cœur Radieux du quartier du temple.\n1. Partez tout de suite au bout des collines d'Umar et sauvez les trois chevaliers assiégés. Chaque chevalier perdu pèse sur l'Ordre.\n2. Le Baron Metrich veut expulser des occupants ; rendez-vous à la taverne d'Imnesvale. Parlez à Brunson, Moreno et Pardo : ce sont des fermiers et le Baron a menti. Refusez de l'aider et défendez les fermiers pour obtenir l'approbation de l'Ordre.\n3. Gardez la jeune Tyrianna Auberisée dans un refuge jusqu'à l'arrivée de son parrain Hurgis Baltezan. Un faux Hurgis arrive d'abord : détectez le mal en lui et arrêtez-le. Le vrai vient ensuite.\n4. Dernière tâche : tuez le dragon rouge Firkraag dans les Collines de Lancevent, prenez la Sainte Lame et faites votre rapport à Sire William Reirrac.\nUn échec grave vous fait bannir de l'Ordre."
+ },
+ {
+  "title": 74464,
+  "idx": 149,
+  "game": "bg2",
+  "chapter": "2-6",
+  "where_en": "Athkatla, Temple District",
+  "where_fr": "Athkatla, quartier du temple",
+  "kind": "side",
+  "hints_en": [
+   "A cleric hero joins the temple of Lathander, Helm or Talos and must advise the faithful.",
+   "Each answer is judged by your god: Lathander values compassion, Helm duty, Talos destruction.",
+   "The last task sets the temples of Lathander and Talos against each other; your god decides your side."
+  ],
+  "hints_fr": [
+   "Un héros clerc rejoint le temple de Lathandre, de Heaum ou de Talos et doit conseiller les fidèles.",
+   "Chaque réponse est jugée par votre dieu : Lathandre aime la compassion, Heaum le devoir, Talos la destruction.",
+   "La dernière tâche oppose les temples de Lathandre et de Talos ; votre dieu décide de votre camp."
+  ],
+  "solution_en": "Cleric stronghold, given by the temple of your faith in the Temple District. Talk to your acolyte (Lara for Lathander, Byron for Helm, Vilon for Talos), then answer the faithful who come to you.\n- Glinden, betrayed husband: Lathander: release his wife from her vows. Helm: remind her of her duty. Talos: tell him to kill her.\n- Ti'Vael, a killer: Lathander: make amends to the family. Helm: turn himself in. Talos: kill the witnesses.\n- Rania, losing her faith: Lathander: take time to reflect. Helm: stress her duty. Talos: kill her.\n- Cotirso's challenge: Lathander: calmly let him have it. Helm: accept the duel. Talos: kill or frame him (Inspector Ardis pays for names).\nFinal task: Helm stops the war between the two temples; Lathander raids the temple of Talos; Talos attacks Lathander's temple. Bad answers can get you cast out.",
+  "solution_fr": "Quartier général des clercs, offert par le temple de votre foi dans le quartier du temple. Parlez à votre acolyte (Lara pour Lathandre, Byron pour Heaum, Vilon pour Talos), puis répondez aux fidèles qui viennent vous voir.\n- Glinden, mari trompé : Lathandre : libérer sa femme de ses vœux. Heaum : lui rappeler son devoir. Talos : lui dire de la tuer.\n- Ti'Vael, un meurtrier : Lathandre : dédommager la famille. Heaum : se livrer. Talos : tuer les témoins.\n- Rania, qui perd la foi : Lathandre : prendre le temps de méditer. Heaum : insister sur son devoir. Talos : la tuer.\n- Le défi de Cotirso : Lathandre : lui céder calmement. Heaum : accepter le duel. Talos : le tuer ou le faire accuser (l'inspecteur Ardis paie pour des noms).\nTâche finale : Heaum stoppe la guerre entre les deux temples ; Lathandre attaque le temple de Talos ; Talos attaque celui de Lathandre. De mauvaises réponses peuvent vous faire bannir."
+ },
+ {
+  "title": 74465,
+  "idx": 150,
+  "game": "bg2",
+  "chapter": "2-6",
+  "where_en": "Athkatla, Slums, Planar Sphere",
+  "where_fr": "Athkatla, bas quartiers, sphère planaire",
+  "kind": "side",
+  "hints_en": [
+   "After the Planar Sphere quest, the Cowled Wizards offer a mage hero the sphere as a base.",
+   "Guide your three apprentices carefully, and find a way home for the Solamnic Knights.",
+   "Teos sends you after Lord Ketlaar Argrim at the Crooked Crane; refusing costs you the sphere."
+  ],
+  "hints_fr": [
+   "Après la quête de la sphère planaire, les Mages Cagoulés offrent la sphère comme base à un héros mage.",
+   "Guidez avec soin vos trois apprentis, et trouvez un moyen de renvoyer chez eux les Chevaliers Solamniques.",
+   "Teos vous envoie contre le seigneur Ketlaar Argrim à la Grue Courbée ; refuser vous coûte la sphère."
+  ],
+  "solution_en": "Mage stronghold. After clearing the Planar Sphere in the Slums, accept the Cowled Wizards' offer: the sphere is yours if you accept their scrutiny. Teos is your contact.\n- Apprentices: Teos gives you three. Instruct them each week and they craft magic items for you; keep them alive until they graduate.\n- Solamnic Knights: they want to go home. Pay Ribald at the Adventurer Mart 9,000 gold to send a mage who teleports them home, or ask the prelate of the Radiant Heart to host them.\n- A false summons from Teos is an ambush by an Argrim fanatic. Teos then asks you to deal with Lord Ketlaar Argrim at the Crooked Crane, near the City Gates, using a rune of imprisonment. Do it to be free of service; refusing bars you from the sphere.",
+  "solution_fr": "Quartier général des mages. Après avoir nettoyé la sphère planaire des bas quartiers, acceptez l'offre des Mages Cagoulés : la sphère est à vous si vous acceptez leur surveillance. Teos est votre contact.\n- Apprentis : Teos vous en confie trois. Donnez-leur des instructions chaque semaine et ils fabriquent des objets magiques pour vous ; gardez-les en vie jusqu'à leur diplôme.\n- Chevaliers Solamniques : ils veulent rentrer chez eux. Payez 9 000 pièces d'or à Ribald, au Marché de l'Aventure, pour qu'une mage les téléporte, ou demandez au prélat du Cœur Radieux de les accueillir.\n- Une fausse convocation de Teos cache une embuscade d'un fanatique d'Argrim. Teos vous demande ensuite de neutraliser le seigneur Ketlaar Argrim à la Grue Courbée, près des portes de la ville, avec une rune d'emprisonnement. Faites-le pour être libéré de vos obligations ; refuser vous interdit la sphère."
+ },
+ {
+  "title": 74467,
+  "idx": 151,
+  "game": "bg2",
+  "chapter": "5",
+  "where_en": "Underdark",
+  "where_fr": "Ombre-Terre",
+  "kind": "side",
+  "hints_en": [
+   "A duergar in the Underdark talks about a mage trapped by an Imprisonment spell.",
+   "It happened in a cavern north of the duergar.",
+   "Cast Freedom, from a spell or a scroll, in that cavern to release the mage."
+  ],
+  "hints_fr": [
+   "Un duergar de l'Ombre-Terre parle d'un mage piégé par un sort d'emprisonnement.",
+   "Cela s'est passé dans une caverne au nord du duergar.",
+   "Lancez Liberté, en sort ou en parchemin, dans cette caverne pour libérer le mage."
+  ],
+  "solution_en": "In the Underdark, talk to a duergar: a mage digging for a treasure or artifact was attacked and trapped by an Imprisonment spell in a cavern to the north.\nGet a Freedom spell or scroll. Go to that cavern and cast it there.\nThe mage, Vithal, is released, which starts A mage's proposal.",
+  "solution_fr": "Dans l'Ombre-Terre, parlez à un duergar : un mage qui cherchait un trésor ou un artefact a été attaqué et piégé par un sort d'emprisonnement dans une caverne au nord.\nProcurez-vous un sort ou un parchemin de Liberté. Allez dans cette caverne et lancez-le.\nLe mage, Vithal, est libéré, ce qui lance La proposition d'un mage."
+ },
+ {
+  "title": 74468,
+  "idx": 152,
+  "game": "bg2",
+  "chapter": "5",
+  "where_en": "Underdark, svirfneblin village",
+  "where_fr": "Ombre-Terre, village svirfneblin",
+  "kind": "side",
+  "hints_en": [
+   "Vithal, the mage you freed, lost his book of rituals; he blames the svirfneblin.",
+   "The book is with the innkeeper of the svirfneblin village to the north.",
+   "Pay the innkeeper, or visit him in drow form, then guard Vithal while he opens his gates."
+  ],
+  "hints_fr": [
+   "Vithal, le mage libéré, a perdu son livre de rituels ; il accuse les svirfneblins.",
+   "Le livre est chez le tenancier du village svirfneblin, au nord.",
+   "Payez le tenancier, ou allez le voir sous forme de drow, puis protégez Vithal pendant qu'il ouvre ses portails."
+  ],
+  "solution_en": "After freeing Vithal from his Imprisonment, he asks for his book of rituals, which he thinks the svirfneblin took.\nGo to the svirfneblin village north of his cavern and find the innkeeper. He wants a 300 gold finder's fee. If you come back under Adalon's drow illusion, he hands it over for free.\nBring the book to Vithal. He opens gates to other planes in search of treasure: kill the guardians that come through.\nYou receive a share of the magic items. You can demand more, and get it.",
+  "solution_fr": "Une fois Vithal libéré de son emprisonnement, il réclame son livre de rituels, qu'il croit pris par les svirfneblins.\nAllez au village svirfneblin au nord de sa caverne et trouvez le tenancier. Il demande 300 pièces d'or de récompense. Si vous revenez sous l'illusion drow d'Adalon, il vous le donne gratuitement.\nRapportez le livre à Vithal. Il ouvre des portails vers d'autres plans en quête de trésors : tuez les gardiens qui en sortent.\nVous recevez une part des objets magiques. Vous pouvez exiger davantage, et l'obtenir."
+ },
+ {
+  "title": 74469,
+  "idx": 153,
+  "game": "bg2",
+  "chapter": "5",
+  "where_en": "Underdark",
+  "where_fr": "Ombre-Terre",
+  "kind": "side",
+  "hints_en": [
+   "A strange crystal in the Underdark holds people trapped inside it.",
+   "The first beings you release have been conscious for too long and may be mad."
+  ],
+  "hints_fr": [
+   "Un étrange cristal de l'Ombre-Terre retient des personnes prisonnières.",
+   "Les premiers êtres libérés sont restés conscients trop longtemps et peuvent être fous."
+  ],
+  "solution_en": "In the Underdark you find a crystal trap that imprisons people. Release its prisoners one at a time.\nThe first ones are men driven mad by their long confinement. One may simply rave; another attacks you, so be ready to fight.\nKeep releasing the others: this continues in Victims of imprisonment.",
+  "solution_fr": "Dans l'Ombre-Terre, vous trouvez un cristal-piège qui emprisonne des gens. Libérez ses prisonniers un par un.\nLes premiers sont des hommes rendus fous par leur longue captivité. L'un divague, un autre vous attaque : soyez prêt à combattre.\nContinuez à libérer les autres : la suite est dans Victimes d'emprisonnement."
+ },
+ {
+  "title": 74470,
+  "idx": 154,
+  "game": "bg2",
+  "chapter": "5",
+  "where_en": "Underdark",
+  "where_fr": "Ombre-Terre",
+  "kind": "side",
+  "hints_en": [
+   "The crystal holds more prisoners, and not all of them are friendly.",
+   "Before each release, prepare for a fight: a githyanki and even a lich are inside.",
+   "One sane adventurer gives useful directions about kuo-toa to the east and a drow city to the north."
+  ],
+  "hints_fr": [
+   "Le cristal contient d'autres prisonniers, et tous ne sont pas amicaux.",
+   "Avant chaque libération, préparez-vous au combat : un githyanki et même une liche s'y trouvent.",
+   "Un aventurier sain d'esprit donne des indications utiles sur les kuo-toa à l'est et une cité drow au nord."
+  ],
+  "solution_en": "Continue releasing the beings trapped in the Underdark crystal.\n- A man whose mind you restore thanks you, or refuses to pay and has to be persuaded.\n- A githyanki attacks at once.\n- A lich comes out: buff the party before this release and expect a hard magic fight.\n- A sane adventurer, lost from his drow-fighting group, leaves to find them. He may tell you that kuo-toa guard a bridge to the east and that a drow city lies to the north. If he is rude, you can fight him.\nThe crystal also holds a svirfneblin child (see Victims of imprisonment: Svirfneblin son).",
+  "solution_fr": "Continuez à libérer les êtres piégés dans le cristal de l'Ombre-Terre.\n- Un homme dont vous rétablissez l'esprit vous remercie, ou refuse de payer et doit être convaincu.\n- Un githyanki attaque aussitôt.\n- Une liche en sort : renforcez le groupe avant cette libération et attendez-vous à un rude combat magique.\n- Un aventurier sain d'esprit, séparé de son groupe qui combattait des drows, part les retrouver. Il peut vous dire que des kuo-toa gardent un pont à l'est et qu'une cité drow se trouve au nord. S'il se montre insolent, vous pouvez le combattre.\nLe cristal retient aussi un enfant svirfneblin (voir Victimes d'emprisonnement : l'enfant svirfneblin)."
+ },
+ {
+  "title": 74471,
+  "idx": 155,
+  "game": "bg2",
+  "chapter": "5",
+  "where_en": "Underdark, svirfneblin village",
+  "where_fr": "Ombre-Terre, village svirfneblin",
+  "kind": "side",
+  "hints_en": [
+   "One prisoner of the Underdark crystal is Bedlen, son of the shopkeeper Therndle Daglefodd.",
+   "Tell Therndle in his village that you saved his son.",
+   "Visit Therndle in the same appearance you had when you freed the boy, drow form or your own face."
+  ],
+  "hints_fr": [
+   "L'un des prisonniers du cristal de l'Ombre-Terre est Bedlen, fils du marchand Therndle Daglefodd.",
+   "Annoncez à Therndle, dans son village, que vous avez sauvé son fils.",
+   "Allez voir Therndle sous la même apparence que lors de la libération, forme drow ou votre propre visage."
+  ],
+  "solution_en": "Free Bedlen Daglefodd from the crystal trap; he runs home to the svirfneblin village.\nGo to his father Therndle, a shopkeeper in the village, and tell him.\nLook the same as when you freed the boy: if you saved him as a drow, come back in drow form; if you saved him with your own face, come without the illusion. If your looks differ, Therndle may not believe you.\nIf he believes you, he gives a generous reward.\nIf Bedlen died and you bring news of his body, Therndle may suspect you and the whole village attacks.",
+  "solution_fr": "Libérez Bedlen Daglefodd du cristal-piège ; il rentre en courant au village svirfneblin.\nAllez voir son père Therndle, marchand du village, et annoncez-le-lui.\nAyez la même apparence que lors de la libération : si vous l'avez sauvé en drow, revenez sous forme de drow ; avec votre propre visage, venez sans l'illusion. Si votre apparence diffère, Therndle risque de ne pas vous croire.\nS'il vous croit, il vous récompense généreusement.\nSi Bedlen est mort et que vous annoncez avoir trouvé son corps, Therndle peut vous soupçonner et tout le village vous attaque."
+ },
+ {
+  "title": 74472,
+  "idx": 156,
+  "game": "bg2",
+  "chapter": "5",
+  "where_en": "Underdark",
+  "where_fr": "Ombre-Terre",
+  "kind": "side",
+  "hints_en": [
+   "A svirfneblin child freed from the crystal ran home to his father.",
+   "Go to the svirfneblin village and find his father, the shopkeeper Therndle Daglefodd."
+  ],
+  "hints_fr": [
+   "Un enfant svirfneblin libéré du cristal est rentré chez son père.",
+   "Allez au village svirfneblin et trouvez son père, le marchand Therndle Daglefodd."
+  ],
+  "solution_en": "You freed a svirfneblin child, Bedlen, from the Underdark crystal. He has gone home and told you to do the same.\nTravel to the svirfneblin village and talk to his father Therndle Daglefodd, a shopkeeper there, to claim your reward. Keep the same look (drow form or not) as when you freed him. See Victims of imprisonment: Svirfneblin son.",
+  "solution_fr": "Vous avez libéré du cristal de l'Ombre-Terre un enfant svirfneblin, Bedlen. Il est rentré chez lui et vous a conseillé de faire de même.\nRendez-vous au village svirfneblin et parlez à son père Therndle Daglefodd, marchand du village, pour obtenir votre récompense. Gardez la même apparence (drow ou non) que lors de sa libération. Voir Victimes d'emprisonnement : l'enfant svirfneblin."
+ },
+ {
+  "title": 74473,
+  "idx": 157,
+  "game": "bg2",
+  "chapter": "5",
+  "where_en": "Underdark, svirfneblin village",
+  "where_fr": "Ombre-Terre, village svirfneblin",
+  "kind": "side",
+  "hints_en": [
+   "Therndle Daglefodd, a svirfneblin shopkeeper, has lost his son Bedlen.",
+   "Something in the Underdark imprisons people; a strange crystal may hold the boy."
+  ],
+  "hints_fr": [
+   "Therndle Daglefodd, marchand svirfneblin, a perdu son fils Bedlen.",
+   "Quelque chose dans l'Ombre-Terre emprisonne les gens ; un étrange cristal retient peut-être l'enfant."
+  ],
+  "solution_en": "In the svirfneblin village, the shopkeeper Therndle Daglefodd says his son Bedlen has been missing for days.\nThere is no clue, but the boy angered some drow and is trapped in the crystal found elsewhere in the Underdark. Release the crystal's prisoners until Bedlen comes out, then return to Therndle for a reward.",
+  "solution_fr": "Au village svirfneblin, le marchand Therndle Daglefodd dit que son fils Bedlen a disparu depuis plusieurs jours.\nAucun indice, mais l'enfant a fâché des drows et se trouve piégé dans le cristal découvert ailleurs dans l'Ombre-Terre. Libérez les prisonniers du cristal jusqu'à ce que Bedlen en sorte, puis retournez voir Therndle pour une récompense."
+ },
+ {
+  "title": 74474,
+  "idx": 158,
+  "game": "bg2",
+  "chapter": "5",
+  "where_en": "Underdark, svirfneblin village",
+  "where_fr": "Ombre-Terre, village svirfneblin",
+  "kind": "side",
+  "hints_en": [
+   "This is the dark ending of the missing svirfneblin son.",
+   "Bedlen died at your hands; you can still tell Therndle that you found his body."
+  ],
+  "hints_fr": [
+   "C'est la fin sombre de l'enfant svirfneblin disparu.",
+   "Bedlen est mort de votre main ; vous pouvez tout de même dire à Therndle que vous avez trouvé son corps."
+  ],
+  "solution_en": "This entry records an evil outcome: you killed Bedlen Daglefodd after releasing him from the crystal, then told his father Therndle you found his body in the tunnels, keeping your part secret.\nTherndle is grateful to know his son's fate. To get the good outcome and a reward instead, let Bedlen go home alive.",
+  "solution_fr": "Cette entrée note une issue maléfique : vous avez tué Bedlen Daglefodd après l'avoir libéré du cristal, puis dit à son père Therndle avoir trouvé son corps dans les tunnels, en taisant votre rôle.\nTherndle vous remercie de connaître le sort de son fils. Pour la bonne issue et une récompense, laissez plutôt Bedlen rentrer chez lui vivant."
+ },
+ {
+  "title": 74475,
+  "idx": 159,
+  "game": "bg2",
+  "chapter": "5",
+  "where_en": "Underdark, svirfneblin village",
+  "where_fr": "Ombre-Terre, village svirfneblin",
+  "kind": "side",
+  "hints_en": [
+   "The svirfneblin guards let you through their village if you behave.",
+   "Speak with the village lord first, as the guard captain asks."
+  ],
+  "hints_fr": [
+   "Les gardes svirfneblins vous laissent traverser leur village si vous vous tenez bien.",
+   "Parlez d'abord au seigneur du village, comme le demande le chef des gardes."
+  ],
+  "solution_en": "In the Underdark, the captain of the svirfneblin guards stops you at their small village. He lets you pass on one condition: speak with their leader first.\nGo to Goldander Blackenrock, lord of the village. He has a task for you and a way into the drow city: see Svirfneblin village concerns.",
+  "solution_fr": "Dans l'Ombre-Terre, le chef des gardes svirfneblins vous arrête à l'entrée de leur petit village. Il vous laisse passer à une condition : parler d'abord à leur chef.\nAllez voir Goldander Rochenoire, seigneur du village. Il a une mission pour vous et un moyen d'entrer dans la cité drow : voir Inquiétudes au village svirfneblin."
+ },
+ {
+  "title": 74476,
+  "idx": 160,
+  "game": "bg2",
+  "chapter": "5",
+  "where_en": "Underdark, svirfneblin village",
+  "where_fr": "Ombre-Terre, village svirfneblin",
+  "kind": "main",
+  "hints_en": [
+   "Goldander Blackenrock knows how to reach the drow city: through Adalon, at the foot of the great staircase.",
+   "He wants a creature in a lower cavern killed first.",
+   "After the kill, read his scroll in that cavern to collapse it, then return for the glow stone."
+  ],
+  "hints_fr": [
+   "Goldander Rochenoire sait comment atteindre la cité drow : par Adalon, au pied du grand escalier.",
+   "Il veut d'abord qu'on tue une créature dans une caverne inférieure.",
+   "Après le combat, lisez son parchemin dans cette caverne pour l'effondrer, puis revenez chercher la pierre de lumière."
+  ],
+  "solution_en": "Talk to Goldander Blackenrock, lord of the svirfneblin village. He says Adalon, a powerful being at the base of the great staircase, can get you into the drow city. Her lair is hidden in magical darkness.\nHis price: kill the creature his miners unearthed in a lower cavern, then collapse that cavern with the stone shape scroll he gives you. Prepare well, it is a tough fight.\nReturn to Goldander: he gives you a magic item and the glow stone that lets you pass the darkness to Adalon. A thief can also pickpocket the stone.\nThe journal also records an evil path where you slaughter the svirfneblin instead.",
+  "solution_fr": "Parlez à Goldander Rochenoire, seigneur du village svirfneblin. Il dit qu'Adalon, une puissante créature au pied du grand escalier, peut vous faire entrer dans la cité drow. Son antre est caché par des ténèbres magiques.\nSon prix : tuer la créature déterrée par ses mineurs dans une caverne inférieure, puis effondrer la caverne avec le parchemin qu'il vous confie. Préparez-vous, le combat est difficile.\nRetournez voir Goldander : il vous donne un objet magique et la pierre de lumière qui permet de franchir les ténèbres jusqu'à Adalon. Un voleur peut aussi lui dérober la pierre.\nLe journal prévoit aussi une voie maléfique où vous massacrez les svirfneblins."
+ }
+]

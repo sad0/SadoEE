@@ -1,0 +1,1 @@
+﻿Party Stash: kaldırmadan önce sandığı oyunda boşaltın: envanter sayfasında ağırlığın yanındaki büyük çantaya Ctrl + sol tık. Toplanan çantalarınız alabildikleri eşyalarla dolu olarak geri gelir; geri kalan her şey yere düşer. Aksi halde sandık içeriği kayıtlarınızda kalır ama mod yeniden kurulana kadar erişilemez.

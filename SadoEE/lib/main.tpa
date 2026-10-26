@@ -1,0 +1,242 @@
+// PartyStash main component, shared by its two looks (SadoEE.tp2 sets ps_look = bg1 | bg2 first).
+// The page: pages/<look>_<game>/PSTASH.menu (build_menu.py), the background of the look (art/build_art.py).
+ACTION_IF GAME_IS ~bgee~ BEGIN
+	OUTER_TEXT_SPRINT ps_game ~bgee~
+END ELSE BEGIN
+	OUTER_TEXT_SPRINT ps_game ~bg2ee~    // BG2EE, EET: BG2's UI.MENU
+END
+ACTION_IF ~%ps_look%~ STRING_EQUAL ~bg1~ BEGIN
+	OUTER_TEXT_SPRINT ps_art ~SadoEE/art~
+END ELSE BEGIN
+	OUTER_TEXT_SPRINT ps_art ~SadoEE/art/bg2~
+END
+
+// How to empty the stash before uninstalling (John 2026-10-19): in red in the WeiDU console, at install and at an
+// interactive uninstall. WeiDU prints a tra string only at install, so both read tra/<language>/uninstall.txt
+// (= @8) through PowerShell on Windows; elsewhere the install prints @8 and the uninstall shows the file.
+ACTION_IF ~%WEIDU_OS%~ STRING_EQUAL_CASE ~win32~ BEGIN
+	OUTER_TEXT_SPRINT ps_red ~powershell -NoProfile -Command "[Console]::OutputEncoding=[Text.Encoding]::UTF8; Write-Host ([IO.File]::ReadAllText('SadoEE/tra/%LANGUAGE%/uninstall.txt')) -ForegroundColor Red"~
+	AT_EXIT ~%ps_red%~   // at the very end, right above WeiDU's "Press ENTER to exit" (John)
+	// spelled out: the uninstall evaluates this text without running the component, so ps_red is not set then
+	AT_INTERACTIVE_UNINSTALL ~powershell -NoProfile -Command "[Console]::OutputEncoding=[Text.Encoding]::UTF8; Write-Host ([IO.File]::ReadAllText('SadoEE/tra/%LANGUAGE%/uninstall.txt')) -ForegroundColor Red"~
+END ELSE BEGIN
+	PRINT @8
+	AT_INTERACTIVE_UNINSTALL ~cat SadoEE/tra/%LANGUAGE%/uninstall.txt~
+END
+
+COPY ~SadoEE/pages/%ps_look%_%ps_game%/PSTASH.menu~ ~override~   // the new INVENTORY page (build_menu.py)
+     ~%ps_art%/INVPSTSH.MOS~         ~override~   // its background (John's GIMP edit)
+     ~SadoEE/art/PSTASHUP.BAM~   ~override~   // the level-up "+" marker (upgrade / learnable scroll)
+     ~SadoEE/art/PSTASHIC.BAM~   ~override~   // the Stash item: the game's chest icon (CONTCHST)
+     ~SadoEE/art/PSTASHDP.BAM~   ~override~   // ... and its description picture
+     ~SadoEE/art/PSTASHSL.BAM~   ~override~   // the "to sell" marker (the game's gold pile)
+     ~SadoEE/art/PSTASHOR.BAM~   ~override~   // the "valuable" cell tint (old gold ~25 %, art/build_tints.py)
+     ~SadoEE/art/PSTASHDK.BAM~   ~override~   // the "to sell" cell tint (black ~75 %)
+     ~SadoEE/art/PSARROW.BAM~    ~override~   // the help overlay's arrows (art/build_arrows.py)
+     ~SadoEE/art/PSHELP.BAM~     ~override~   // its "?" button (art/build_help_icon.py)
+     ~SadoEE/art/PSHELMT.BAM~    ~override~   // the paperdoll's helmet toggle (art/build_helm_icon.py)
+// The game's own STONSLOT (art/build_slot.py) under another name: a UI mod replacing STONSLOT (Infinity UI++ ships an
+// opaque one) leaves the page's slots alone.
+COPY ~SadoEE/art/PSSLOT_%ps_game%.BAM~ ~override/PSSLOT.BAM~
+// The swapped look's own art (BG1 look on BG2 / BG2 look on BGEE): each look's game BAMs as our copies
+// (art/build_art.py slots): slots, weight bag, colours button, Store all, ground arrows.
+COPY ~SadoEE/art/PSTSLOT1.BAM~ ~override~
+     ~SadoEE/art/PSCONTB1.BAM~ ~override~
+     ~SadoEE/art/PSINVBT1.BAM~ ~override~
+     ~SadoEE/art/PSBUTNT1.BAM~ ~override~
+     ~SadoEE/art/PSPRC1.BAM~   ~override~
+     ~SadoEE/art/bg2/PSTSLOT2.BAM~ ~override~
+     ~SadoEE/art/bg2/PSCONTB2.BAM~ ~override~
+     ~SadoEE/art/bg2/PSINVBT2.BAM~ ~override~
+     ~SadoEE/art/bg2/PSBTACT2.BAM~ ~override~
+
+// The game's own tables, on every game (BGEE included: nothing depends on BGBot any more). The source keeps BGEE's
+// baked ones (build_*.py) as the fallback for a hand copy to override.
+// Bags: every bag item (type 36) that has its own store (the Bags tab and the collectable bags).
+OUTER_TEXT_SPRINT ps_bags ~~
+COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
+	PATCH_IF SOURCE_SIZE > 0x71 BEGIN
+		READ_SHORT 0x1c type
+		TEXT_SPRINT r ~%SOURCE_RES%~
+		TO_UPPER r
+		PATCH_IF type = 36 AND NOT ~%r%~ STRING_EQUAL ~PSTASH~ AND FILE_EXISTS_IN_GAME ~%r%.sto~ BEGIN
+			TEXT_SPRINT ps_bags ~%ps_bags% '%r%',~
+		END
+	END
+BUT_ONLY
+
+// Merchants ("Sell marked"): buy % and the item types bought, merged by store name (= build_stores.py).
+ACTION_CLEAR_ARRAY ps_buy
+ACTION_CLEAR_ARRAY ps_types
+COPY_EXISTING_REGEXP GLOB ~^.+\.sto$~ ~override~
+	READ_ASCII 0 sig (8)
+	PATCH_IF ~%sig%~ STRING_EQUAL ~STORV1.0~ BEGIN
+		READ_LONG 0x0c name
+		READ_LONG 0x10 flags
+		READ_LONG 0x18 buy
+		READ_LONG 0x2c off
+		READ_LONG 0x30 cnt
+		PATCH_IF (flags BAND 2) AND name > 0 AND name != 0xffffffff BEGIN
+			PATCH_IF NOT VARIABLE_IS_SET $ps_buy(~%name%~) BEGIN
+				SET $ps_buy(~%name%~) = buy
+			END ELSE PATCH_IF buy > $ps_buy(~%name%~) BEGIN
+				SET $ps_buy(~%name%~) = buy
+			END
+			FOR (i = 0; i < cnt; ++i) BEGIN
+				READ_LONG (off + i * 4) t
+				SET $ps_types(~%name%_%t%~) = 1
+			END
+		END
+	END
+BUT_ONLY
+OUTER_TEXT_SPRINT ps_stores ~~
+ACTION_PHP_EACH ps_buy AS name => buy BEGIN
+	OUTER_TEXT_SPRINT ps_set ~~
+	OUTER_FOR (t = 0; t < 80; ++t) BEGIN
+		ACTION_IF VARIABLE_IS_SET $ps_types(~%name%_%t%~) BEGIN
+			OUTER_TEXT_SPRINT ps_set ~%ps_set% [%t%] = true,~
+		END
+	END
+	OUTER_TEXT_SPRINT ps_stores ~%ps_stores%%WNL%	[%name%] = { %buy%, {%ps_set% } },~
+END
+
+// Quest items kept out of the stash: the ones a dialogue or script looks for on ONE creature (HasItem on a
+// party member...). Party-wide checks see the stash through the carried Stash item. Minus anything a store sells.
+ACTION_CLEAR_ARRAY ps_keep
+COPY_EXISTING_REGEXP GLOB ~^.+\.dlg$~ ~override~
+	REPLACE_EVALUATE CASE_INSENSITIVE ~\(HasItem\|HasItemEquiped\|HasItemEquipedReal\)([ %TAB%]*"\([^"]+\)"[ %TAB%]*,[ %TAB%]*\([^)]*\))~ BEGIN
+		TEXT_SPRINT r ~%MATCH2%~
+		TEXT_SPRINT o ~%MATCH3%~
+		TO_UPPER r
+		PATCH_IF (~%o%~ STRING_MATCHES_REGEXP ~^[ %TAB%]*Myself[ %TAB%]*$~) BEGIN   // non-zero = no match
+			SET $ps_keep(~%r%~) = 1
+		END
+	END ~%MATCH0%~
+BUT_ONLY
+// Scripts: only the ones holding HasItem (0x4061 = 16481), HasItemEquiped (0x407F = 16511) or HasItemEquipedReal
+// (0x40C2 = 16578) are decompiled. Compiled, a trigger line starts with its decimal id; an exact search is fast, a regex
+// search or decompiling every script cost minutes on a big EET install (SCS scripts are huge).
+COPY_EXISTING_REGEXP GLOB ~^.+\.bcs$~ ~override~
+	PATCH_IF INDEX_BUFFER (CASE_SENSITIVE EXACT_MATCH ~%LNL%16481 ~) >= 0 OR INDEX_BUFFER (CASE_SENSITIVE EXACT_MATCH ~%LNL%16511 ~) >= 0
+			OR INDEX_BUFFER (CASE_SENSITIVE EXACT_MATCH ~%LNL%16578 ~) >= 0 BEGIN
+		READ_ASCII 0 bcs (BUFFER_LENGTH)
+		INNER_PATCH ~%bcs%~ BEGIN
+			DECOMPILE_BCS_TO_BAF
+			REPLACE_EVALUATE CASE_INSENSITIVE ~\(HasItem\|HasItemEquiped\|HasItemEquipedReal\)([ %TAB%]*"\([^"]+\)"[ %TAB%]*,[ %TAB%]*\(Player[1-6]\|LastTalkedToBy\|Protagonist\|\[PC\]\)~ BEGIN
+				TEXT_SPRINT r ~%MATCH2%~
+				TO_UPPER r
+				SET $ps_keep(~%r%~) = 1
+			END ~%MATCH0%~
+		END
+	END
+BUT_ONLY
+ACTION_CLEAR_ARRAY ps_sold
+COPY_EXISTING_REGEXP GLOB ~^.+\.sto$~ ~override~
+	READ_LONG 0x34 off
+	READ_LONG 0x38 cnt
+	FOR (i = 0; i < cnt; ++i) BEGIN
+		READ_ASCII (off + i * 0x1c) r (8) NULL
+		TO_UPPER r
+		SET $ps_sold(~%r%~) = 1
+	END
+BUT_ONLY
+OUTER_TEXT_SPRINT ps_keepl ~~
+OUTER_SET ps_n = 0
+ACTION_PHP_EACH ps_keep AS r => v BEGIN
+	ACTION_IF FILE_EXISTS_IN_GAME ~%r%.itm~ AND NOT VARIABLE_IS_SET $ps_sold(~%r%~) BEGIN
+		OUTER_TEXT_SPRINT ps_keepl ~%ps_keepl% ["%r%"] = true,~
+		OUTER_SET ps_n += 1
+	END
+END
+PRINT ~PartyStash: %ps_n% quest items kept out of the stash.~
+
+// Quest items weigh nothing (John 2026-10-22): the critical ones, those kept out of the stash, and every item a
+// dialog or script of BG1 / SoD / BG2 checks or takes (lib/quest_items.tpa, build_quest.py).
+INCLUDE ~SadoEE/lib/quest_items.tpa~   // the list: one COPY_EXISTING each
+COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
+	PATCH_IF (BUFFER_LENGTH > 0x72) BEGIN
+		READ_LONG 0x18 ps_flags
+		TEXT_SPRINT ps_r ~%SOURCE_RES%~
+		TO_UPPER ps_r
+		PATCH_IF ((ps_flags BAND 1) OR (VARIABLE_IS_SET $ps_keep(~%ps_r%~))) BEGIN
+			WRITE_LONG 0x4c 0
+		END
+	END
+BUT_ONLY
+
+COPY ~SadoEE/M_PSTASH.lua~ ~override~
+	REPLACE_TEXTUALLY ~-- KEEP:BEGIN[^@]*-- KEEP:END~ ~-- KEEP:BEGIN (SadoEE.tp2)%WNL%P.KEEP = {%ps_keepl% }%WNL%-- KEEP:END~
+	REPLACE_TEXTUALLY ~-- BAGS:BEGIN[^@]*-- BAGS:END~ ~-- BAGS:BEGIN (SadoEE.tp2)%WNL%P.BAG_RES = {%ps_bags% }%WNL%-- BAGS:END~
+	REPLACE_TEXTUALLY ~-- STORES:BEGIN[^@]*-- STORES:END~ ~-- STORES:BEGIN (SadoEE.tp2)%WNL%P.STORE_TYPES = {}%WNL%P.STORES = {%ps_stores%%WNL%}%WNL%-- STORES:END~
+
+// The stash store: a bag store (type 5) with no practical capacity that takes every item type but bags (36).
+COPY_EXISTING ~BAG02.STO~ ~override/PSTASH.STO~
+	WRITE_LONG  0x08 5
+	SAY 0x0c @3
+	WRITE_SHORT 0x22 65000
+	WRITE_LONG  0x38 0            // no starting stock
+	SET list_off = SOURCE_SIZE
+	WRITE_LONG  0x2c list_off
+	WRITE_LONG  0x30 73
+	INSERT_BYTES list_off (73 * 4)
+	SET n = 0
+	FOR (t = 0; t < 74; ++t) BEGIN
+		PATCH_IF (t != 36) BEGIN
+			WRITE_LONG (list_off + n * 4) t
+			SET n += 1
+		END
+	END
+BUT_ONLY
+
+// The stash item (rides in Player1's backpack so merchants list it): weightless, worthless, never dropped.
+COPY_EXISTING ~BAG02.ITM~ ~override/PSTASH.ITM~
+	SAY 0x08 @3
+	SAY 0x0c @3
+	SAY 0x50 @4
+	SAY 0x54 @4
+	WRITE_LONG 0x34 0                                // price
+	WRITE_LONG 0x4c 0                                // weight
+	WRITE_LONG 0x18 (THIS BAND (BNOT 0x4))           // not droppable
+	WRITE_ASCII 0x3a ~PSTASHIC~ #8                   // inventory icon: a chest (John)
+	WRITE_ASCII 0x44 ~PSTASHIC~ #8                   // ground icon
+	WRITE_ASCII 0x58 ~PSTASHDP~ #8                   // description picture
+BUT_ONLY
+
+// The game's inventory page is replaced by ours (PSTASH.menu defines INVENTORY); the original is kept, renamed.
+// Shift + double-click on a backpack item sends it to the stash.
+COPY_EXISTING ~UI.MENU~ ~override~
+	REPLACE_TEXTUALLY EXACT_MATCH ~name 'INVENTORY'~ ~name 'INVENTORY_ORIG'~
+	REPLACE_TEXTUALLY EXACT_MATCH ~function slotDoubleClick(slotName, force)~ ~function slotDoubleClick(slotName, force)
+	if PStash_SlotDoubleClick and PStash_SlotDoubleClick(slotName) then return end~
+	// A merchant must never open the stash as a bag (the game crashes, John): no description/open from the sell list
+	// for it, and the description's "open" button does nothing on it.
+	REPLACE_TEXTUALLY EXACT_MATCH ~if(store.groupItems[storeGroupItemsVar].item.isBag == 1) then~ ~~~~~if(store.groupItems[storeGroupItemsVar].item.isBag == 1 and string.upper(store.groupItems[storeGroupItemsVar].item.res or '') ~= 'PSTASH') then~~~~~
+	REPLACE_TEXTUALLY EXACT_MATCH ~		storeScreen:OpenBag(itemDesc.item.res)~ ~~~~~		if string.upper(itemDesc.item.res or '') ~= 'PSTASH' then storeScreen:OpenBag(itemDesc.item.res) end~~~~~
+	// ... and selecting it (a simple click froze the game): every sell-list click skips it, and the items the player
+	// marked valuable (Ctrl + click twice, never sold; John 2026-10-22).
+	REPLACE_TEXTUALLY EXACT_MATCH ~~~~~if store.groupItems[storeGroupItemsVar].valid ~= 0 then~~~~~ ~~~~~if string.upper(store.groupItems[storeGroupItemsVar].item.res or '') ~= 'PSTASH' and not (PStash_IsValuable and PStash_IsValuable(string.upper(store.groupItems[storeGroupItemsVar].item.res or ''))) and store.groupItems[storeGroupItemsVar].valid ~= 0 then~~~~~
+	// ... and its row is greyed like an unsellable item (the game never greys bags); valuable items too.
+	REPLACE_TEXTUALLY EXACT_MATCH ~~~~~enabled "store.groupItems[rowNumber].valid == 0  and store.groupItems[rowNumber].item.isBag ~= 1"~~~~~ ~~~~~enabled "(store.groupItems[rowNumber].valid == 0  and (store.groupItems[rowNumber].item.isBag ~= 1 or string.upper(store.groupItems[rowNumber].item.res or '') == 'PSTASH')) or (PStash_IsValuable and PStash_IsValuable(string.upper(store.groupItems[rowNumber].item.res or '')))"~~~~~
+	// Container panel (John 2026-10-22): a copy of the game's "take all" button, bottom right, puts the backpack or the
+	// shown stash page into the open container (same popup as right-click on the weight bag). The gold moves up to
+	// make room; only on the game's own layout (UI mods keep theirs).
+	PATCH_IF (INDEX_BUFFER (EXACT_MATCH ~area 575 76 71 28~) >= 0) AND (INDEX_BUFFER (EXACT_MATCH ~worldScreen:TakeAllFromContainer()~) >= 0) BEGIN
+		REPLACE_TEXTUALLY ~area 568 20 78 50\([^a-z]+bam GUIGOLD\)~ ~area 574 4 66 42\1~
+		REPLACE_TEXTUALLY ~area 575 76 71 28\([^a-z]+text lua "game:GetPartyGold()"\)~ ~area 575 46 71 28\1~
+		REPLACE_TEXTUALLY ~worldScreen:TakeAllFromContainer()\([^}]*}\)~ ~worldScreen:TakeAllFromContainer()\1
+	button
+	{
+		area 591 82 32 32
+		bam "ROUNDBUT"
+		scaleToClip
+		tooltip lua "PStash_T and PStash_T('container_tip') or ''"
+		action "if PStash_DumpHere then PStash_DumpHere() end"
+	}~
+	END
+BUT_ONLY
+
+
+// Localized UI strings (lib/strings.tpa, by the localization work): the Lua falls back to English without them.
+ACTION_IF FILE_EXISTS ~SadoEE/lib/strings.tpa~ BEGIN
+	INCLUDE ~SadoEE/lib/strings.tpa~
+END

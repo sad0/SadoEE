@@ -1,0 +1,1 @@
+﻿Party Stash: Leert vor der Deinstallation die Truhe im Spiel: Strg + Linksklick auf den großen Beutel neben dem Gewicht auf der Inventarseite. Eure gesammelten Beutel kommen gefüllt mit den Gegenständen zurück, die sie aufnehmen können; alles andere fällt auf den Boden. Sonst bleibt der Truheninhalt in euren Spielständen, ist aber bis zur Neuinstallation des Mods unerreichbar.

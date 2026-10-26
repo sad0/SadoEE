@@ -1,0 +1,36 @@
+menu
+{
+	name "PSXPG_TICK"
+	ignoreesc
+	-- Full pages over the world (M_PSXPG.lua, John 2026-10-24): every frame, the veil's size, the pause, the world's
+	-- menus pushed over the page, the selected character.
+	label
+	{
+		area 0 0 0 0
+		enabled "PSXPG_Tick()"
+	}
+}
+
+menu
+{
+	name "PSXPG_VEIL"
+	align left top
+	ignoreesc
+	-- The darkened world under the page, up to the portrait bars (sized by PSXPG_Tick). Black at 230, as the world
+	-- behind the game's store screen.
+	label
+	{
+		name "PSXPG_SHADE"
+		area 0 0 8000 5000
+		rectangle 0
+		rectangle opacity 230
+	}
+	-- swallows the clicks on the world, the left sidebar and the action bar
+	button
+	{
+		name "PSXPG_BLOCK"
+		area 0 0 8000 5000
+		action ""
+		actionAlt ""
+	}
+}

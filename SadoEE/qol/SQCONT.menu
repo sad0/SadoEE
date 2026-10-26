@@ -1,0 +1,11 @@
+menu
+{
+	name "SQCONT_TICK"
+	ignoreesc
+	-- SadoQoL valuable containers: its enabled check runs every frame (throttled in SQCont_Tick).
+	label
+	{
+		area 0 0 0 0
+		enabled "SQCont_Tick()"
+	}
+}

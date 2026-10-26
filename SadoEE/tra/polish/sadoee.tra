@@ -1,0 +1,10 @@
+// SadoEE strings (GENERATED from SadoEE/src/tra)
+@2000 = ~Party Stash~
+@2001 = ~Obóz odpoczynku~
+@2002 = ~Udogodnienia~
+@2003 = ~Rozszerzenie silnika~
+@2010 = ~SadoEE zastępuje Party Stash i SadoQoL (te same pliki): najpierw odinstaluj wszystkie komponenty Party Stash i SadoQoL. Zawartość skrzyni zostaje w twoich zapisach i wraca razem ze skrzynią SadoEE.~
+@2011 = ~Wymaga komponentu Obóz odpoczynku.~
+@2012 = ~Wielki kupiec w obozie odpoczynku: sprzedaje każdy przedmiot widziany w już odwiedzonych sklepach (wymaga obozu odpoczynku i skrzyni)~
+@2013 = ~Wymaga skrzyni.~
+@2014 = ~Wymaga Baldur's Gate EE, Baldur's Gate II EE lub EET.~

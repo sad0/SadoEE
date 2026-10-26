@@ -1,0 +1,388 @@
+menu
+{
+	name "SQRESP_TICK"
+	ignoreesc
+	-- SadoQoL respec: opens the next creation panel when the previous one closed (SQRespec_Tick).
+	label
+	{
+		area 0 0 0 0
+		enabled "SQRespec_Tick()"
+	}
+}
+
+menu
+{
+	name "SQRESP_BACK"
+	ignoreesc
+	align center center
+	-- SadoQoL respec: the creation screen's backdrop under the Race / Kit / Alignment panels, which draw only the
+	-- bottom of the screen in the stock UI (the game's CHARGEN screen draws the rest; LeUI's panels are whole).
+	label
+	{
+		area 0 0 1024 768
+		mosaic 'GUICGB'
+		enabled "SQRespec_NeedBack()"
+	}
+}
+
+menu
+{
+	name "SQRESPEC"
+	ignoreesc
+	align center top
+	-- SadoQoL respec: who is being recreated, "Continue" (after a panel closed with Back). The end is automatic.
+	label
+	{
+		area 0 0 520 64
+		rectangle 0
+		rectangle opacity 200
+	}
+	label
+	{
+		area 16 6 488 26
+		text lua "SQRespec_Title()"
+		text style "title"
+		text align center center
+	}
+	button
+	{
+		area 150 32 220 28
+		bam GUIBUTWS
+		sequence 0
+		text lua "SQRespec.TXT_CONTINUE"
+		text style "button"
+		enabled "SQRespec_Active() and not SQRespec_AtEnd()"
+		action "SQRespec_Continue()"
+	}
+}
+
+menu
+{
+	name "SQRESP_DUAL"
+	modal
+	align center center
+	ignoreesc
+	-- SadoQoL respec, human single class: level of the first class before dual-classing (the rest of the XP comes
+	-- back once he has dual-classed).
+	label
+	{
+		area 0 0 560 200
+		rectangle 0
+		rectangle opacity 230
+	}
+	label
+	{
+		area 20 12 520 30
+		text lua "SQRespec.TXT_DUAL_TITLE"
+		text style "title"
+		text align center center
+	}
+	button
+	{
+		area 150 56 40 40
+		bam GUIBUTWS
+		sequence 0
+		text "-"
+		text style "button"
+		action "SQRespec_DualStep(-1)"
+		actionAlt "SQRespec_DualStep(-5)"
+	}
+	label
+	{
+		area 200 56 160 40
+		text lua "tostring(SQRespec_DualLevel())"
+		text style "title"
+		text align center center
+	}
+	button
+	{
+		area 370 56 40 40
+		bam GUIBUTWS
+		sequence 0
+		text "+"
+		text style "button"
+		action "SQRespec_DualStep(1)"
+		actionAlt "SQRespec_DualStep(5)"
+	}
+	label
+	{
+		area 20 104 520 34
+		text lua "SQRespec_DualText()"
+		text style "normal"
+		text align center center
+	}
+	button
+	{
+		area 50 148 220 36
+		bam GUIBUTWS
+		sequence 0
+		text lua "SQRespec.TXT_DUAL_OK"
+		text style "button"
+		action "SQRespec_DualConfirm()"
+	}
+	button
+	{
+		area 290 148 220 36
+		bam GUIBUTWS
+		sequence 0
+		text lua "SQRespec.TXT_DUAL_NONE"
+		text style "button"
+		action "SQRespec_DualNone()"
+	}
+}
+
+menu
+{
+	name "SQGRIMOIRE"
+	modal
+	align center center
+	ignoreesc
+	-- SadoQoL: the grimoire of lost spells (Withers' respec). The reader learns the spells he can write in his book.
+	label
+	{
+		area 0 0 590 500
+		rectangle 0
+		rectangle opacity 235
+	}
+	label
+	{
+		area 20 10 550 40
+		text lua "SQGrim_Title()"
+		text style "title"
+		text align center center
+	}
+	label
+	{
+		area 24 60 40 40
+		enabled "SQGrim_RowShown(1)"
+		icon lua "SQGrim_RowIcon(1)"
+	}
+	label
+	{
+		area 74 60 330 40
+		enabled "SQGrim_RowShown(1)"
+		text lua "SQGrim_RowText(1)"
+		text style "normal"
+		text align left center
+	}
+	button
+	{
+		area 414 64 150 34
+		bam GUIBUTWS
+		sequence 0
+		enabled "SQGrim_RowShown(1)"
+		clickable lua "SQGrim_CanLearn(1)"
+		text lua "SQRespec.TXT_GRIM_LEARNBTN"
+		text style "button"
+		action "SQGrim_Learn(1)"
+	}
+	label
+	{
+		area 24 108 40 40
+		enabled "SQGrim_RowShown(2)"
+		icon lua "SQGrim_RowIcon(2)"
+	}
+	label
+	{
+		area 74 108 330 40
+		enabled "SQGrim_RowShown(2)"
+		text lua "SQGrim_RowText(2)"
+		text style "normal"
+		text align left center
+	}
+	button
+	{
+		area 414 112 150 34
+		bam GUIBUTWS
+		sequence 0
+		enabled "SQGrim_RowShown(2)"
+		clickable lua "SQGrim_CanLearn(2)"
+		text lua "SQRespec.TXT_GRIM_LEARNBTN"
+		text style "button"
+		action "SQGrim_Learn(2)"
+	}
+	label
+	{
+		area 24 156 40 40
+		enabled "SQGrim_RowShown(3)"
+		icon lua "SQGrim_RowIcon(3)"
+	}
+	label
+	{
+		area 74 156 330 40
+		enabled "SQGrim_RowShown(3)"
+		text lua "SQGrim_RowText(3)"
+		text style "normal"
+		text align left center
+	}
+	button
+	{
+		area 414 160 150 34
+		bam GUIBUTWS
+		sequence 0
+		enabled "SQGrim_RowShown(3)"
+		clickable lua "SQGrim_CanLearn(3)"
+		text lua "SQRespec.TXT_GRIM_LEARNBTN"
+		text style "button"
+		action "SQGrim_Learn(3)"
+	}
+	label
+	{
+		area 24 204 40 40
+		enabled "SQGrim_RowShown(4)"
+		icon lua "SQGrim_RowIcon(4)"
+	}
+	label
+	{
+		area 74 204 330 40
+		enabled "SQGrim_RowShown(4)"
+		text lua "SQGrim_RowText(4)"
+		text style "normal"
+		text align left center
+	}
+	button
+	{
+		area 414 208 150 34
+		bam GUIBUTWS
+		sequence 0
+		enabled "SQGrim_RowShown(4)"
+		clickable lua "SQGrim_CanLearn(4)"
+		text lua "SQRespec.TXT_GRIM_LEARNBTN"
+		text style "button"
+		action "SQGrim_Learn(4)"
+	}
+	label
+	{
+		area 24 252 40 40
+		enabled "SQGrim_RowShown(5)"
+		icon lua "SQGrim_RowIcon(5)"
+	}
+	label
+	{
+		area 74 252 330 40
+		enabled "SQGrim_RowShown(5)"
+		text lua "SQGrim_RowText(5)"
+		text style "normal"
+		text align left center
+	}
+	button
+	{
+		area 414 256 150 34
+		bam GUIBUTWS
+		sequence 0
+		enabled "SQGrim_RowShown(5)"
+		clickable lua "SQGrim_CanLearn(5)"
+		text lua "SQRespec.TXT_GRIM_LEARNBTN"
+		text style "button"
+		action "SQGrim_Learn(5)"
+	}
+	label
+	{
+		area 24 300 40 40
+		enabled "SQGrim_RowShown(6)"
+		icon lua "SQGrim_RowIcon(6)"
+	}
+	label
+	{
+		area 74 300 330 40
+		enabled "SQGrim_RowShown(6)"
+		text lua "SQGrim_RowText(6)"
+		text style "normal"
+		text align left center
+	}
+	button
+	{
+		area 414 304 150 34
+		bam GUIBUTWS
+		sequence 0
+		enabled "SQGrim_RowShown(6)"
+		clickable lua "SQGrim_CanLearn(6)"
+		text lua "SQRespec.TXT_GRIM_LEARNBTN"
+		text style "button"
+		action "SQGrim_Learn(6)"
+	}
+	label
+	{
+		area 24 348 40 40
+		enabled "SQGrim_RowShown(7)"
+		icon lua "SQGrim_RowIcon(7)"
+	}
+	label
+	{
+		area 74 348 330 40
+		enabled "SQGrim_RowShown(7)"
+		text lua "SQGrim_RowText(7)"
+		text style "normal"
+		text align left center
+	}
+	button
+	{
+		area 414 352 150 34
+		bam GUIBUTWS
+		sequence 0
+		enabled "SQGrim_RowShown(7)"
+		clickable lua "SQGrim_CanLearn(7)"
+		text lua "SQRespec.TXT_GRIM_LEARNBTN"
+		text style "button"
+		action "SQGrim_Learn(7)"
+	}
+	label
+	{
+		area 24 396 40 40
+		enabled "SQGrim_RowShown(8)"
+		icon lua "SQGrim_RowIcon(8)"
+	}
+	label
+	{
+		area 74 396 330 40
+		enabled "SQGrim_RowShown(8)"
+		text lua "SQGrim_RowText(8)"
+		text style "normal"
+		text align left center
+	}
+	button
+	{
+		area 414 400 150 34
+		bam GUIBUTWS
+		sequence 0
+		enabled "SQGrim_RowShown(8)"
+		clickable lua "SQGrim_CanLearn(8)"
+		text lua "SQRespec.TXT_GRIM_LEARNBTN"
+		text style "button"
+		action "SQGrim_Learn(8)"
+	}
+	button
+	{
+		area 24 450 40 36
+		bam GUIBUTWS
+		sequence 0
+		text "<"
+		text style "button"
+		action "SQGrim_Page(-1)"
+	}
+	label
+	{
+		area 70 450 100 36
+		text lua "SQGrim_PageText()"
+		text style "normal"
+		text align center center
+	}
+	button
+	{
+		area 176 450 40 36
+		bam GUIBUTWS
+		sequence 0
+		text ">"
+		text style "button"
+		action "SQGrim_Page(1)"
+	}
+	button
+	{
+		area 384 450 180 36
+		bam GUIBUTWS
+		sequence 0
+		text lua "SQRespec.TXT_GRIM_CLOSE"
+		text style "button"
+		action "Infinity_PopMenu('SQGRIMOIRE')"
+	}
+}

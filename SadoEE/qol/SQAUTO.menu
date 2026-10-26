@@ -1,0 +1,11 @@
+menu
+{
+	name "SQAUTO_TICK"
+	ignoreesc
+	-- SadoQoL automatic trap disarming: its enabled check runs every frame (throttled in SQAuto_Tick).
+	label
+	{
+		area 0 0 0 0
+		enabled "SQAuto_Tick()"
+	}
+}

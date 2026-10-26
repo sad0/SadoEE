@@ -1,0 +1,235 @@
+menu
+{
+	name "SQNECR_TICK"
+	ignoreesc
+	-- SadoQoL camp necromancer: the damage meter's tick (SQNecro_Tick, 100 ms).
+	label
+	{
+		area 0 0 0 0
+		enabled "SQNecro_Tick()"
+	}
+}
+menu
+{
+	name "SQNECR_DPS"
+	ignoreesc
+	align left top
+	-- SadoQoL camp necromancer: damage and DPS of the current / last session on the raised creatures.
+	label
+	{
+		enabled "SQNecro_DpsShown()"
+		area 90 70 300 250
+		rectangle 0
+		rectangle opacity 200
+	}
+	label
+	{
+		enabled "SQNecro_DpsShown()"
+		area 100 74 200 26
+		text lua "SQNecro_DpsTitle()"
+		text style "label"
+		text align left center
+	}
+	button
+	{
+		enabled "SQNecro_DpsShown()"
+		area 300 74 82 26
+		bam GUIBUTWS
+		sequence 0
+		text lua "SQNecro_T('reset')"
+		text style "button"
+		action "SQNecro_DpsReset()"
+	}
+	text
+	{
+		enabled "SQNecro_DpsShown()"
+		area 100 104 284 210
+		text lua "SQNecro_DpsText()"
+		text style "normal"
+		text align left top
+		scrollbar 'GUISCRC'
+	}
+}
+menu
+{
+	name "SQNECR_MENU"
+	modal
+	align center center
+	ignoreesc
+	onOpen "SQNecro_OnOpen()"
+	-- SadoQoL camp necromancer: the bestiary. Monsters / Humans, search, a pick then "Raise".
+	label
+	{
+		area 0 0 640 560
+		rectangle 0
+		rectangle opacity 235
+	}
+	label
+	{
+		area 20 10 600 36
+		text lua "SQNecro_T('title')"
+		text style "title"
+		text align center center
+	}
+	button
+	{
+		area 20 52 180 34
+		bam GUIBUTWS
+		frame lua "SQNecro_TabFrame('monsters')"
+		text lua "SQNecro_T('monsters')"
+		text style "button"
+		action "SQNecro_Tab('monsters')"
+	}
+	button
+	{
+		area 210 52 180 34
+		bam GUIBUTWS
+		frame lua "SQNecro_TabFrame('humans')"
+		text lua "SQNecro_T('humans')"
+		text style "button"
+		action "SQNecro_Tab('humans')"
+	}
+	label
+	{
+		enabled "necroFind == ''"
+		area 406 52 214 34
+		text lua "SQNecro_T('search') .. '...'"
+		text style "normal"
+		text align left center
+	}
+	edit
+	{
+		area 400 52 220 34
+		var necroFind
+		text style "edit"
+		maxlines 1
+		fill 40 25 10 110
+		action "return SQNecro_SearchEdit()"
+	}
+	label
+	{
+		area 360 94 70 22
+		text lua "SQNecro_T('level')"
+		text style "normal"
+		text align right center
+	}
+	label
+	{
+		area 440 94 70 22
+		text lua "SQNecro_T('hp')"
+		text style "normal"
+		text align right center
+	}
+	label
+	{
+		area 520 94 70 22
+		text lua "SQNecro_T('ac')"
+		text style "normal"
+		text align right center
+	}
+	list
+	{
+		column
+		{
+			width 54
+			label
+			{
+				enabled "SQNecro_RowSelected(rowNumber)"
+				area 0 0 -1 -1
+				fill 90 60 20 110
+			}
+			label
+			{
+				area 6 0 -1 -1
+				text lua "SQNecro_RowName(rowNumber)"
+				text style "normal"
+				text align left center
+			}
+		}
+		column
+		{
+			width 13
+			label
+			{
+				enabled "SQNecro_RowSelected(rowNumber)"
+				area 0 0 -1 -1
+				fill 90 60 20 110
+			}
+			label
+			{
+				area 0 0 -1 -1
+				text lua "SQNecro_RowNum(rowNumber, 'level')"
+				text style "normal"
+				text align right center
+			}
+		}
+		column
+		{
+			width 13
+			label
+			{
+				enabled "SQNecro_RowSelected(rowNumber)"
+				area 0 0 -1 -1
+				fill 90 60 20 110
+			}
+			label
+			{
+				area 0 0 -1 -1
+				text lua "SQNecro_RowNum(rowNumber, 'hp')"
+				text style "normal"
+				text align right center
+			}
+		}
+		column
+		{
+			width 13
+			label
+			{
+				enabled "SQNecro_RowSelected(rowNumber)"
+				area 0 0 -1 -1
+				fill 90 60 20 110
+			}
+			label
+			{
+				area 0 0 -1 -1
+				text lua "SQNecro_RowNum(rowNumber, 'ac')"
+				text style "normal"
+				text align right center
+			}
+		}
+		area 20 118 600 330
+		rowheight 26
+		table "necroRows"
+		var necroRow
+		hidehighlight
+		scrollbar 'GUISCRC'
+		action "SQNecro_HasSel()"
+	}
+	label
+	{
+		area 26 454 588 46
+		text lua "SQNecro_HasSel() and SQNecro_SelText() or SQNecro_CountText()"
+		text style "normal"
+		text align left center
+	}
+	button
+	{
+		area 120 508 190 38
+		bam GUIBUTWS
+		sequence 0
+		text lua "SQNecro_T('raise')"
+		text style "button"
+		clickable lua "SQNecro_HasSel()"
+		action "SQNecro_Pick()"
+	}
+	button
+	{
+		area 330 508 190 38
+		bam GUIBUTWS
+		sequence 0
+		text lua "SQNecro_T('close')"
+		text style "button"
+		on esc
+		action "SQNecro_Close()"
+	}
+}

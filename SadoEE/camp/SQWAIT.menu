@@ -1,0 +1,11 @@
+menu
+{
+	name "SQWAIT_TICK"
+	ignoreesc
+	-- SadoQoL waiting at the camp: notices a member leaving the party (throttled in SQWait_Tick).
+	label
+	{
+		area 0 0 0 0
+		enabled "SQWait_Tick()"
+	}
+}

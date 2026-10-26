@@ -1,0 +1,54 @@
+menu
+{
+	name "SQCAMP_TICK"
+	ignoreesc
+	-- SadoQoL rest camp: opens the world map when the leader walks into an exit band (throttled in SQCamp_Tick).
+	label
+	{
+		area 0 0 0 0
+		enabled "SQCamp_Tick()"
+	}
+}
+
+menu
+{
+	name "SQCAMP_TEMPLATES"
+	ignoreesc
+
+	-- SadoQoL rest camp: the torn parchment over the world map's Travel button (injected into WORLD_MAP).
+	template
+	{
+		button
+		{
+			enabled "SQCamp_Visible()"
+			bam "SQCAMPBT"
+			frame lua "SQCamp_Frame()"
+			tooltip lua "SQCamp_Tooltip()"
+			action "SQCamp_Click()"
+		}
+		name "SQCAMP_TEMPLATE_Button"
+	}
+
+	template
+	{
+		label
+		{
+			enabled "SQCamp_Visible()"
+			text lua "SQCamp_Text()"
+			text style "sqcamp_place"
+			text align center center
+			text shadow 1
+		}
+		name "SQCAMP_TEMPLATE_Label"
+	}
+
+	template
+	{
+		label
+		{
+			enabled "SQCamp_MarkerVisible()"
+			bam "WMDAG"
+		}
+		name "SQCAMP_TEMPLATE_Marker"
+	}
+}

@@ -1,0 +1,842 @@
+[
+  {
+    "title": 231270,
+    "idx": 217,
+    "game": "bg1",
+    "chapter": "1-7",
+    "where_en": "Sword Coast",
+    "where_fr": "Côte des Épées",
+    "kind": "main",
+    "hints_en": [
+      "Follow the iron crisis: Nashkel and its mines are where the trail starts.",
+      "Letters on each villain point to the next: Tranzig, the bandit camp, then the Cloakwood mine.",
+      "In Baldur's Gate, the Iron Throne and Sarevok are behind it all; his diary and the coronation end it."
+    ],
+    "hints_fr": [
+      "Suivez la crise du fer : la piste commence à Nashkel et dans ses mines.",
+      "Les lettres trouvées sur chaque méchant mènent au suivant : Tranzig, le camp des bandits, puis la mine de Bois-Manteau.",
+      "À la Porte de Baldur, le Trône de Fer et Sarevok sont derrière tout ; son journal et le couronnement concluent l'affaire."
+    ],
+    "solution_en": "Ch. 1: after Gorion dies, go north to the Friendly Arm Inn and meet Khalid and Jaheira.\nCh. 2: in Nashkel, see Berrun Ghastkill, then clear the mines down to Mulahey; his letters name Tranzig in Beregost.\nCh. 3: Tranzig points to Larswood or Peldvale and the bandit camp; search Tazok's tent.\nCh. 4: flood the Cloakwood mine by pulling its sealed plug.\nCh. 5: in Baldur's Gate, meet Scar, then Duke Eltan, and investigate the Iron Throne.\nCh. 6: in Candlekeep you are framed for Rieltar's murder; Tethtoril frees you through the catacombs.\nCh. 7: wanted by the Flaming Fist, save Duke Eltan, take Sarevok's diary, get the palace invitation from Slythe and Krystin in the Undercellar, expose Sarevok at the Ducal Palace, then chase him through the Thieves' Guild maze to the Undercity.\nThis row also holds Siege of Dragonspear main entries.",
+    "solution_fr": "Ch. 1 : après la mort de Gorion, allez au nord à l'Auberge de Brasamical retrouver Khalid et Jaheira.\nCh. 2 : à Nashkel, voyez Berrun Tuemort, puis nettoyez les mines jusqu'à Mulahey ; ses lettres désignent Tranzig à Bérégost.\nCh. 3 : Tranzig vous envoie au Bois de Lars ou à Valpeld et au camp des bandits ; fouillez la tente de Tazok.\nCh. 4 : inondez la mine de Bois-Manteau en retirant son bouchon scellé.\nCh. 5 : à la Porte de Baldur, voyez la Balafre, puis le Duc Eltan, et enquêtez sur le Trône de Fer.\nCh. 6 : à Château-Suif, on vous accuse du meurtre de Rieltar ; Tethtoril vous libère par les catacombes.\nCh. 7 : recherché par le Poing Enflammé, sauvez le Duc Eltan, prenez le journal de Sarevok, l'invitation sur Slythe et Krystin aux Caves Souterraines, démasquez Sarevok au Palais Ducal, puis poursuivez-le par le labyrinthe de la guilde jusqu'à Ombre-Ville.\nCette ligne contient aussi les entrées principales de Siege of Dragonspear."
+  },
+  {
+    "title": 231271,
+    "idx": 218,
+    "game": "bg1",
+    "chapter": "5-7",
+    "where_en": "Baldur's Gate, near the palace",
+    "where_fr": "Porte de Baldur, près du palais",
+    "kind": "side",
+    "hints_en": [
+      "Rinnie the bard lives in a house beside the Ducal Palace.",
+      "She wants a book on the history of the Unicorn Run.",
+      "Keep an eye on bookstores and loot for that history book, then simply hand it to her."
+    ],
+    "hints_fr": [
+      "Rinnie, la barde, habite une maison à côté du Palais Ducal.",
+      "Elle veut un livre sur l'histoire de la Descente de la Licorne.",
+      "Surveillez les boutiques et le butin pour trouver ce livre d'histoire, puis donnez-le-lui."
+    ],
+    "solution_en": "Talk to Rinnie in one of the houses next to the Ducal Palace in Baldur's Gate. She asks for \"The History of the Unicorn Run\".\nFind a copy of that book during your travels (shops selling books or containers along the way).\nReturn to Rinnie and give it to her to close the quest and get her reward.",
+    "solution_fr": "Parlez à Rinnie dans l'une des maisons voisines du Palais Ducal, à la Porte de Baldur. Elle demande \"L'Histoire de la Descente de la Licorne\".\nTrouvez un exemplaire de ce livre au cours de vos voyages (boutiques qui vendent des livres ou coffres en chemin).\nRetournez voir Rinnie et donnez-le-lui pour clore la quête et recevoir sa récompense."
+  },
+  {
+    "title": 231272,
+    "idx": 219,
+    "game": "bg1",
+    "chapter": "2",
+    "where_en": "Beregost",
+    "where_fr": "Bérégost",
+    "kind": "side",
+    "hints_en": [
+      "An old mage from Candlekeep, Firebead Elvenhair, wanders the streets of Beregost.",
+      "He wants a book called \"The History of the Fateful Coin\".",
+      "Thalantyr, the mage at the High Hedge west of Beregost, sells it."
+    ],
+    "hints_fr": [
+      "Un vieux mage de Château-Suif, Perleflamme Cheveux-d'Elfe, se promène dans les rues de Bérégost.",
+      "Il veut un livre intitulé \"L'histoire de la Pièce Fatidique\".",
+      "Thalantyr, le mage de la Haute-Haie à l'ouest de Bérégost, le vend."
+    ],
+    "solution_en": "Talk to Firebead Elvenhair in Beregost. He asks you to buy \"The History of the Fateful Coin\" for him.\nGo to the High Hedge, the area west of Beregost, and buy the book from Thalantyr in his house.\nBring it back to Firebead in Beregost. He thanks you and gives you a reward.",
+    "solution_fr": "Parlez à Perleflamme Cheveux-d'Elfe à Bérégost. Il vous demande de lui acheter \"L'histoire de la Pièce Fatidique\".\nAllez à la Haute-Haie, la zone à l'ouest de Bérégost, et achetez le livre à Thalantyr dans sa maison.\nRapportez-le à Perleflamme à Bérégost. Il vous remercie et vous donne une récompense."
+  },
+  {
+    "title": 231273,
+    "idx": 220,
+    "game": "bg1",
+    "chapter": "2-4",
+    "where_en": "Lighthouse area",
+    "where_fr": "Zone du phare",
+    "kind": "side",
+    "hints_en": [
+      "A worried mother, Ardrouine, lives on the coast near an old lighthouse.",
+      "Her son is trapped in the abandoned lighthouse to the west, surrounded by worgs.",
+      "Kill the worgs around the lighthouse, then go back to Ardrouine."
+    ],
+    "hints_fr": [
+      "Une mère inquiète, Ardrouine, vit sur la côte près d'un vieux phare.",
+      "Son fils est pris au piège dans le phare abandonné à l'ouest, encerclé par des worgs.",
+      "Tuez les worgs autour du phare, puis retournez voir Ardrouine."
+    ],
+    "solution_en": "Talk to Ardrouine in the coastal area with the old lighthouse. Her son is trapped inside the abandoned lighthouse to the west.\nGo to the lighthouse and kill the worgs that surround it. They come in a pack, so keep weak characters behind.\nReturn to Ardrouine: her son is safe and she gives you her last 60 gold pieces.",
+    "solution_fr": "Parlez à Ardrouine dans la zone côtière du vieux phare. Son fils est coincé dans le phare abandonné, à l'ouest.\nAllez au phare et tuez les worgs qui l'encerclent. Ils attaquent en meute : gardez les personnages fragiles en retrait.\nRetournez voir Ardrouine : son fils est sauf et elle vous donne ses 60 dernières pièces d'or."
+  },
+  {
+    "title": 231274,
+    "idx": 221,
+    "game": "bg1",
+    "chapter": "5-7",
+    "where_en": "Baldur's Gate, Elfsong Tavern",
+    "where_fr": "Porte de Baldur, taverne du Chant de l'Elfe",
+    "kind": "side",
+    "hints_en": [
+      "A noblewoman in Baldur's Gate is being blackmailed and wants it to stop.",
+      "The blackmailer, Cyrdemac, drinks at the Elfsong Tavern.",
+      "Kill Cyrdemac and return to her, or refuse, or use charm to get paid without killing."
+    ],
+    "hints_fr": [
+      "Une noble de la Porte de Baldur est victime d'un chantage et veut que cela cesse.",
+      "Le maître-chanteur, Cyrdemac, boit à la taverne du Chant de l'Elfe.",
+      "Tuez Cyrdemac et retournez la voir, ou refusez, ou charmez-la pour être payé sans tuer."
+    ],
+    "solution_en": "A noblewoman in Baldur's Gate offers you a contract on Cyrdemac, the man blackmailing her. You can turn her down flat (quest ends).\nIf you accept, go to the Elfsong Tavern, find Cyrdemac and kill him (an evil act: watch your reputation and the guards).\nReturn to her for your pay. An evil option lets you take over the blackmail: she then keeps paying you every two days.\nA charmed noblewoman simply hands you the reward without any killing.",
+    "solution_fr": "Une noble de la Porte de Baldur vous propose de tuer Cyrdemac, l'homme qui la fait chanter. Vous pouvez refuser net (la quête s'arrête).\nSi vous acceptez, allez à la taverne du Chant de l'Elfe, trouvez Cyrdemac et tuez-le (un acte mauvais : attention à la réputation et aux gardes).\nRetournez la voir pour être payé. Une option maléfique vous permet de reprendre le chantage : elle vous paie alors tous les deux jours.\nSi vous la charmez, elle vous donne la récompense sans meurtre."
+  },
+  {
+    "title": 231275,
+    "idx": 222,
+    "game": "bg1",
+    "chapter": "5-7",
+    "where_en": "Baldur's Gate, south of the Elfsong Tavern",
+    "where_fr": "Porte de Baldur, au sud du Chant de l'Elfe",
+    "kind": "side",
+    "hints_en": [
+      "A necromancer living near the Elfsong Tavern is short of corpses.",
+      "Arkion says the city sewers are the best place to find one.",
+      "Pick up a body in the Baldur's Gate sewers and carry it back to Arkion's house."
+    ],
+    "hints_fr": [
+      "Un nécromancien qui vit près de la taverne du Chant de l'Elfe manque de cadavres.",
+      "Arkion affirme que les égouts de la ville sont le meilleur endroit pour en trouver.",
+      "Ramassez un corps dans les égouts de la Porte de Baldur et rapportez-le chez Arkion."
+    ],
+    "solution_en": "Talk to Arkion in his house just south of the Elfsong Tavern in Baldur's Gate. He wants a corpse.\nEnter the city sewers (several manholes around town) and look for a body you can pick up.\nBring it back to Arkion: he pays you some gold.\nArkion is also involved in two other quests, with Nemphre and Ordulinian.",
+    "solution_fr": "Parlez à Arkion dans sa maison juste au sud de la taverne du Chant de l'Elfe, à la Porte de Baldur. Il veut un cadavre.\nDescendez dans les égouts de la ville (plusieurs bouches en ville) et cherchez un corps que vous pouvez ramasser.\nRapportez-le à Arkion : il vous paie quelques pièces d'or.\nArkion est aussi mêlé à deux autres quêtes, avec Nemphré et Ordulinian."
+  },
+  {
+    "title": 231276,
+    "idx": 223,
+    "game": "bg1",
+    "chapter": "any",
+    "where_en": "Sword Coast",
+    "where_fr": "Côte des Épées",
+    "kind": "side",
+    "hints_en": [
+      "A chatty gnome, Delsvirftanyon, wants to retire from the curio trade.",
+      "He offers to sell you his whole stock in one go.",
+      "Pay his price if you can afford it and sort through the jumble; refusing just ends the quest."
+    ],
+    "hints_fr": [
+      "Un gnome bavard, Delsvirftanyon, veut quitter le commerce de bibelots.",
+      "Il vous propose d'acheter tout son stock d'un coup.",
+      "Payez son prix si vous en avez les moyens et triez le fatras ; refuser met juste fin à la quête."
+    ],
+    "solution_en": "Talk to the gnome Delsvirftanyon. He wants out of the curio business and offers you the entire contents of his store.\nYou can refuse because you have no room, or because the price is too high: the quest simply ends.\nIf you have the gold, buy the lot. The items are added to your inventory, so make room first, then sell what you do not need.",
+    "solution_fr": "Parlez au gnome Delsvirftanyon. Il veut arrêter la brocante et vous propose tout le contenu de sa boutique.\nVous pouvez refuser faute de place, ou parce que le prix est trop élevé : la quête s'arrête simplement.\nSi vous avez l'or, achetez le tout. Les objets arrivent dans votre inventaire : faites de la place avant, puis revendez ce qui ne sert pas."
+  },
+  {
+    "title": 231285,
+    "idx": 224,
+    "game": "bg1",
+    "chapter": "1-3",
+    "where_en": "South of the Friendly Arm Inn",
+    "where_fr": "Au sud de l'Auberge de Brasamical",
+    "kind": "side",
+    "hints_en": [
+      "A grumpy dwarven cleric, Unshey, lost her girdle to an ogre.",
+      "The ogre roams the wilderness just south of the Friendly Arm Inn.",
+      "Kill the ogre, take the girdle of piercing and return to Unshey."
+    ],
+    "hints_fr": [
+      "Une naine clerc grincheuse, Unshey, s'est fait prendre son ceinturon par un ogre.",
+      "L'ogre rôde dans la nature, juste au sud de l'Auberge de Brasamical.",
+      "Tuez l'ogre, prenez le ceinturon perceur et retournez voir Unshey."
+    ],
+    "solution_en": "Talk to Unshey, the dwarven cleric. An ogre with a taste for belts stole her girdle of piercing.\nFind the ogre in the area just south of the Friendly Arm Inn and kill it. It hits hard at low level: use ranged attacks and keep moving.\nTake the girdle from its body and bring it back to Unshey. Depending on how it goes, she pays 95 gold for the dead ogre or 70 gold for the girdle, with a rude remark about your smell.",
+    "solution_fr": "Parlez à Unshey, la naine clerc. Un ogre fétichiste des ceintures lui a volé son ceinturon perceur.\nTrouvez l'ogre dans la zone juste au sud de l'Auberge de Brasamical et tuez-le. Il frappe fort à bas niveau : attaquez à distance et restez mobile.\nPrenez le ceinturon sur son corps et rapportez-le à Unshey. Selon le cas, elle paie 95 pièces d'or pour l'ogre mort ou 70 pour le ceinturon, avec une remarque vexante sur votre odeur."
+  },
+  {
+    "title": 231279,
+    "idx": 225,
+    "game": "bg1",
+    "chapter": "3-4",
+    "where_en": "Cloakwood",
+    "where_fr": "Bois-Manteau",
+    "kind": "main",
+    "hints_en": [
+      "The documents in Tazok's tent at the bandit camp point to an Iron Throne base in the Cloakwood.",
+      "In the Cloakwood, the druids Takiyah and Faldorn know where the forest is being poisoned.",
+      "The fort lies east of the druid grove; the mine entrance is in its eastern bailey."
+    ],
+    "hints_fr": [
+      "Les documents de la tente de Tazok, au camp des bandits, désignent une base du Trône de Fer dans le Bois-Manteau.",
+      "Dans le Bois-Manteau, les druides Takiyah et Faldorn savent où la forêt est empoisonnée.",
+      "Le fortin se trouve à l'est du bosquet des druides ; l'accès aux mines est dans son enceinte est."
+    ],
+    "solution_en": "At the bandit camp, free Ender Sai in Tazok's tent and read the documents in Tazok's chest: the Iron Throne runs the bandits from a base in the Cloakwood.\nTravel through the Cloakwood. Takiyah sends you to Faldorn, who fights the people poisoning the forest; agree to help her.\nHead north then east of the druid grove to the Iron Throne fort. Fight through the guards; one of them reveals that the mine entrance is in the eastern bailey.\nEnter the Cloakwood mines to continue the main story.",
+    "solution_fr": "Au camp des bandits, libérez Ender Saï dans la tente de Tazok et lisez les documents du coffre de Tazok : le Trône de Fer dirige les bandits depuis une base du Bois-Manteau.\nTraversez le Bois-Manteau. Takiyah vous envoie vers Faldorn, qui combat ceux qui empoisonnent la forêt ; acceptez de l'aider.\nAllez au nord puis à l'est du bosquet des druides jusqu'au fortin du Trône de Fer. Combattez les gardes ; l'un d'eux révèle que l'accès aux mines est dans l'enceinte est.\nEntrez dans les mines de Bois-Manteau pour poursuivre l'histoire principale."
+  },
+  {
+    "title": 231280,
+    "idx": 226,
+    "game": "bg1",
+    "chapter": "3",
+    "where_en": "Bandit camp",
+    "where_fr": "Camp des bandits",
+    "kind": "main",
+    "hints_en": [
+      "Tazok, the bandit lieutenant, reports to someone higher up.",
+      "Kivan the ranger hunts Tazok and may tell you more.",
+      "Tazok is heading to a mine: the bandit camp and its documents show where."
+    ],
+    "hints_fr": [
+      "Tazok, le lieutenant des bandits, rend des comptes à un supérieur.",
+      "Kivan le rôdeur traque Tazok et pourra vous en dire plus.",
+      "Tazok se rend dans une mine : le camp des bandits et ses documents indiquent où."
+    ],
+    "solution_en": "You learn this from Kivan or from Tazok himself: Tazok plans to visit a mine site where he may report to the real leader of the bandits.\nGo on with the bandit camp: search Tazok's tent and his chest for the documents.\nThey point to the Iron Throne and its hidden mine in the Cloakwood, which continues in \"A Hidden Base in the Cloakwood\".",
+    "solution_fr": "Vous l'apprenez par Kivan ou par Tazok lui-même : Tazok prévoit de se rendre sur le site d'une mine, où il ferait son rapport au véritable chef des bandits.\nPoursuivez au camp des bandits : fouillez la tente de Tazok et son coffre pour trouver les documents.\nIls désignent le Trône de Fer et sa mine cachée dans le Bois-Manteau, ce qui continue dans \"Une base secrète à Bois-Manteau\"."
+  },
+  {
+    "title": 231281,
+    "idx": 227,
+    "game": "bg1",
+    "chapter": "2-7",
+    "where_en": "Beregost, Thunderhammer Smithy",
+    "where_fr": "Bérégost, forge de Grondemarteau",
+    "kind": "side",
+    "hints_en": [
+      "Taerom \"Thunderhammer\", the smith of Beregost, can work unusual materials.",
+      "Bring him an ankheg shell and he can turn it into plate mail.",
+      "Pay his fee, wait the days he asks for, then come back for the armor."
+    ],
+    "hints_fr": [
+      "Taërom \"Grondemarteau\", le forgeron de Bérégost, sait travailler des matériaux insolites.",
+      "Apportez-lui une carapace d'ankheg et il peut en faire une armure de plates.",
+      "Payez son prix, attendez les jours qu'il demande, puis revenez chercher l'armure."
+    ],
+    "solution_en": "Find an ankheg shell (ankhegs and their burrows on the Sword Coast).\nTalk to Taerom \"Thunderhammer\" at his smithy in Beregost. He offers to make ankheg plate mail from the shell for 4,000 gold.\nPay him: depending on the dialogue, the armor is ready in one day or three days.\nRest or travel, then return to Taerom and collect your ankheg plate mail, a strong armor for the early game.",
+    "solution_fr": "Trouvez une carapace d'ankheg (les ankhegs et leurs terriers sur la Côte des Épées).\nParlez à Taërom \"Grondemarteau\" dans sa forge de Bérégost. Il propose de vous faire une armure de plates en carapace d'ankheg pour 4 000 pièces d'or.\nPayez-le : selon le dialogue, l'armure est prête en un ou trois jours.\nReposez-vous ou voyagez, puis revenez voir Taërom pour récupérer votre armure en carapace d'ankheg, une armure solide en début de partie."
+  },
+  {
+    "title": 231283,
+    "idx": 228,
+    "game": "bg1",
+    "chapter": "Prologue",
+    "where_en": "Tutorial",
+    "where_fr": "Tutoriel",
+    "kind": "side",
+    "hints_en": [
+      "This is only a reminder from the combat trainer, Belt.",
+      "Go back to Belt and finish the combat training he started.",
+      "Follow his instructions to the end; the note disappears once training is done."
+    ],
+    "hints_fr": [
+      "Ce n'est qu'un rappel de l'instructeur de combat, Belt.",
+      "Retournez voir Belt et terminez l'entraînement au combat commencé.",
+      "Suivez ses instructions jusqu'au bout ; la note disparaît une fois l'entraînement fini."
+    ],
+    "solution_en": "This entry is a reminder that you have not finished Belt's combat training.\nFind Belt again and talk to him, then follow the training steps he gives you until he says you are done.\nThere is no real reward beyond practice; you can ignore it if you already know how to fight.",
+    "solution_fr": "Cette entrée rappelle que vous n'avez pas terminé l'entraînement au combat de Belt.\nRetrouvez Belt et parlez-lui, puis suivez les étapes d'entraînement qu'il vous donne jusqu'à ce qu'il dise que c'est fini.\nIl n'y a pas de vraie récompense à part l'exercice ; vous pouvez l'ignorer si vous savez déjà vous battre."
+  },
+  {
+    "title": 231284,
+    "idx": 229,
+    "game": "bg1",
+    "chapter": "any",
+    "where_en": "Sword Coast",
+    "where_fr": "Côte des Épées",
+    "kind": "side",
+    "hints_en": [
+      "Fergus, a Flaming Fist soldier, has a problem of the heart.",
+      "He needs a special ring to give to his beloved.",
+      "Bring him an angel skin ring and give it to him."
+    ],
+    "hints_fr": [
+      "Fergus, un soldat du Poing Enflammé, a un problème de cœur.",
+      "Il lui faut un anneau particulier à offrir à sa bien-aimée.",
+      "Apportez-lui un anneau en peau d'ange et donnez-le-lui."
+    ],
+    "solution_en": "Talk to Fergus, a Flaming Fist soldier. He wants a gift for the woman he loves: an angel skin ring.\nKeep any angel skin ring you find in loot or shops instead of selling it.\nReturn to Fergus with the ring and give it to him to close the quest.",
+    "solution_fr": "Parlez à Fergus, un soldat du Poing Enflammé. Il veut un cadeau pour la femme qu'il aime : un anneau en peau d'ange.\nGardez tout anneau en peau d'ange trouvé dans le butin ou en boutique au lieu de le vendre.\nRetournez voir Fergus avec l'anneau et donnez-le-lui pour clore la quête."
+  },
+  {
+    "title": 231287,
+    "idx": 230,
+    "game": "bg1",
+    "chapter": "5-7",
+    "where_en": "Ulgoth's Beard / Durlag's Tower",
+    "where_fr": "Barbe d'Ulgoth / Tour de Durlag",
+    "kind": "side",
+    "hints_en": [
+      "A loud huckster named Ike sells tours of Durlag's Tower.",
+      "Fenrus, near the docks of Ulgoth's Beard, has already taken the tour.",
+      "Accept the tour and meet Ike by the tower, but expect the tower to be far from safe."
+    ],
+    "hints_fr": [
+      "Un bonimenteur bruyant nommé Ike vend des visites de la tour de Durlag.",
+      "Fenrus, près des quais de Barbe d'Ulgoth, a déjà fait la visite.",
+      "Acceptez la visite et retrouvez Ike près de la tour, mais ne vous attendez pas à un endroit sûr."
+    ],
+    "solution_en": "Meet Ike, who offers tours of Durlag's Tower. You can refuse; he stays available if you change your mind.\nAsk Fenrus, near the docks, about the tour and the tower's history.\nAccept Ike's offer and meet him at the entrance of Durlag's Tower.\nThe tour leads you into danger rather than safety. Ike's ward token opens some of the lower chambers: see \"Durlag's Tower\" for the rest.",
+    "solution_fr": "Rencontrez Ike, qui propose des visites de la tour de Durlag. Vous pouvez refuser ; il reste disponible si vous changez d'avis.\nInterrogez Fenrus, près des quais, sur la visite et l'histoire de la tour.\nAcceptez l'offre d'Ike et retrouvez-le à l'entrée de la tour de Durlag.\nLa visite vous mène au danger plutôt qu'en sécurité. La pierre-sésame d'Ike ouvre certaines salles souterraines : voir \"La tour de Durlag\" pour la suite."
+  },
+  {
+    "title": 231288,
+    "idx": 231,
+    "game": "bg1",
+    "chapter": "7",
+    "where_en": "Baldur's Gate, Flaming Fist headquarters",
+    "where_fr": "Porte de Baldur, siège du Poing Enflammé",
+    "kind": "main",
+    "hints_en": [
+      "After Candlekeep, the Flaming Fist hunts you on the orders of its new commander, Angelo.",
+      "Avoid killing the guards: you can surrender, or slow them down and run.",
+      "If you end up in the Flaming Fist cells, talk to the prisoner Neb."
+    ],
+    "hints_fr": [
+      "Après Château-Suif, le Poing Enflammé vous traque sur ordre de son nouveau commandant, Angelo.",
+      "Évitez de tuer les gardes : vous pouvez vous rendre, ou les ralentir et fuir.",
+      "Si vous finissez dans les cachots du Poing Enflammé, parlez au prisonnier Neb."
+    ],
+    "solution_en": "Back in Baldur's Gate, Flaming Fist patrols try to arrest you: Angelo Dosan has replaced Duke Eltan and condemned you.\nKilling the guards costs reputation; entangle or hold them and flee, or surrender.\nIf you surrender, Angelo sentences you to hang and locks you up. In the cell, Neb tells you that Eltan is sick and Scar is dead, then leads you out through a hidden secret passage.\nIf Shar-Teel is in the party, Angelo, her father, releases you once, but do not get caught again.\nThe story goes on with \"Duke Eltan's Illness\".",
+    "solution_fr": "De retour à la Porte de Baldur, des patrouilles du Poing Enflammé tentent de vous arrêter : Angelo Dosan a remplacé le Duc Eltan et vous a condamné.\nTuer les gardes coûte de la réputation ; immobilisez-les et fuyez, ou rendez-vous.\nSi vous vous rendez, Angelo vous condamne à la pendaison et vous enferme. Dans la cellule, Neb vous apprend qu'Eltan est malade et que la Balafre est mort, puis vous fait sortir par un passage secret qu'il a caché.\nSi Shar-Teel est dans le groupe, Angelo, son père, vous relâche une fois, mais ne vous faites pas reprendre.\nL'histoire continue avec \"L'agonie du Duc Eltan\"."
+  },
+  {
+    "title": 231289,
+    "idx": 232,
+    "game": "bg1",
+    "chapter": "5-7",
+    "where_en": "Baldur's Gate, Thieves' Guild",
+    "where_fr": "Porte de Baldur, Guilde des Voleurs",
+    "kind": "side",
+    "hints_en": [
+      "Alatos Thuibuld, master of the Thieves' Guild, has a burglary job for you.",
+      "The three daughters of Shandalar in Oberan's estate hold the parts of a Halruaan skyship.",
+      "Win friends among the thieves first, Narlen in particular, or the payday will turn into a trap."
+    ],
+    "hints_fr": [
+      "Alatos Thuibuld, maître de la Guilde des Voleurs, a un cambriolage à vous confier.",
+      "Les trois filles de Shandalar, au domaine d'Obéron, détiennent les pièces d'un vaisseau aérien de Halruaa.",
+      "Faites-vous d'abord des amis chez les voleurs, Narlen surtout, sinon la paie tournera au piège."
+    ],
+    "solution_en": "Talk to Alatos in the Thieves' Guild. Refusing or insulting him makes the guild hostile.\nAccept the job: get a spellbook, a statuette and an artifact fragment from the three daughters of Shandalar in Oberan's estate, by talking or by stealing.\nBring the items back to the guild. Alatos and the Halruaan Resar planned to get rid of you.\nIf you have done the burglary jobs with Narlen and Rededge before, Narlen kills Resar and Alatos backs down. Otherwise you must fight your way out; failing to bring all the items also ends in a fight.",
+    "solution_fr": "Parlez à Alatos à la Guilde des Voleurs. Refuser ou l'insulter rend la guilde hostile.\nAcceptez le travail : prenez un livre de sorts, une statuette et un fragment d'artefact aux trois filles de Shandalar, au domaine d'Obéron, en parlant ou en volant.\nRapportez les objets à la guilde. Alatos et Resar, le Halruaan, comptaient se débarrasser de vous.\nSi vous avez déjà fait les cambriolages avec Narlen et le Rouge, Narlen tue Resar et Alatos renonce. Sinon, il faut vous battre pour sortir ; rapporter seulement une partie des objets finit aussi en combat."
+  },
+  {
+    "title": 231290,
+    "idx": 233,
+    "game": "bg1",
+    "chapter": "2-3",
+    "where_en": "Around Nashkel",
+    "where_fr": "Environs de Nashkel",
+    "kind": "side",
+    "hints_en": [
+      "A boy named Albert lost his dog, Rufie, outside Nashkel.",
+      "Albert gives you Rufie's chew toy to lure the dog back.",
+      "Rufie is no ordinary puppy: decide whether to bring him back or put him down."
+    ],
+    "hints_fr": [
+      "Un garçon nommé Albert a perdu son chien, Rufie, aux abords de Nashkel.",
+      "Albert vous donne le jouet à mâcher de Rufie pour attirer le chien.",
+      "Rufie n'a rien d'un chiot ordinaire : à vous de choisir entre le ramener et l'abattre."
+    ],
+    "solution_en": "Talk to Albert. If you refuse, the quest ends. If you agree, he gives you Rufie's chew toy.\nSearch the wilderness outside Nashkel for Rufie; with the chew toy in your inventory, the \"dog\" follows you.\nLead him back to Albert to reunite them; both then vanish, and it is better not to ask where.\nIf you kill Rufie instead, Albert becomes your enemy.",
+    "solution_fr": "Parlez à Albert. Si vous refusez, la quête s'arrête. Si vous acceptez, il vous donne le jouet à mâcher de Rufie.\nCherchez Rufie dans la nature aux abords de Nashkel ; avec le jouet dans l'inventaire, le \"chien\" vous suit.\nRamenez-le à Albert pour les réunir ; tous deux disparaissent ensuite, et mieux vaut ne pas demander où.\nSi vous tuez Rufie à la place, Albert devient votre ennemi."
+  },
+  {
+    "title": 231291,
+    "idx": 234,
+    "game": "bg1",
+    "chapter": "4",
+    "where_en": "Cloakwood",
+    "where_fr": "Bois-Manteau",
+    "kind": "side",
+    "hints_en": [
+      "In the Cloakwood, a Baldur's Gate noble is in trouble with a band of druids.",
+      "Aldeth Sashenstar and the druid Seniyad each want your help.",
+      "Fight the druids, side with them, or talk both sides down; Aldeth can invite you to his home."
+    ],
+    "hints_fr": [
+      "Dans le Bois-Manteau, un noble de la Porte de Baldur a des ennuis avec une bande de druides.",
+      "Aldeth Sashenstar et le druide Séniyad veulent chacun votre aide.",
+      "Combattez les druides, rangez-vous de leur côté, ou calmez les deux camps ; Aldeth peut vous inviter chez lui."
+    ],
+    "solution_en": "In the Cloakwood, meet Aldeth Sashenstar, a merchant noble of Baldur's Gate, under threat from druids led by Seniyad.\nHelp Aldeth: drive the druids off by force, or find the right words to defuse the conflict. Either way, he invites you to his house in Baldur's Gate, useful later in the city.\nOr side with the druids and kill Aldeth: Seniyad thanks you.",
+    "solution_fr": "Dans le Bois-Manteau, rencontrez Aldeth Sashenstar, un noble marchand de la Porte de Baldur menacé par des druides menés par Séniyad.\nAidez Aldeth : repoussez les druides par la force, ou trouvez les mots pour désamorcer le conflit. Dans les deux cas, il vous invite chez lui à la Porte de Baldur, ce qui servira plus tard en ville.\nOu rangez-vous du côté des druides et tuez Aldeth : Séniyad vous remercie."
+  },
+  {
+    "title": 231292,
+    "idx": 235,
+    "game": "bg1",
+    "chapter": "5-7",
+    "where_en": "Baldur's Gate (northwest) / Beregost",
+    "where_fr": "Porte de Baldur (nord-ouest) / Bérégost",
+    "kind": "side",
+    "hints_en": [
+      "The dwarf Pheirkas, in northwest Baldur's Gate, wants a cloak stolen.",
+      "Its owner, the fat Algernon, stays at Feldepost's Inn in Beregost.",
+      "Pick Algernon's pocket, or take the cloak by force, and bring it to Pheirkas."
+    ],
+    "hints_fr": [
+      "Le nain Pheirkas, au nord-ouest de la Porte de Baldur, veut qu'on vole une cape.",
+      "Son propriétaire, le gros Algernon, loge à l'auberge de Feldepost à Bérégost.",
+      "Faites les poches d'Algernon, ou prenez la cape par la force, et rapportez-la à Pheirkas."
+    ],
+    "solution_en": "Talk to Pheirkas in the northwest district of Baldur's Gate. He wants Algernon's cloak.\nTravel to Beregost and find Algernon at Feldepost's Inn. A thief can pickpocket the cloak; save first, a failed attempt turns him hostile.\nReturn to Pheirkas in Baldur's Gate and hand it over: he pays well.\nYou may also keep the cloak instead; it is a magical item.",
+    "solution_fr": "Parlez à Pheirkas dans le quartier nord-ouest de la Porte de Baldur. Il veut la cape d'Algernon.\nAllez à Bérégost et trouvez Algernon à l'auberge de Feldepost. Un voleur peut lui subtiliser la cape ; sauvegardez avant, un échec le rend hostile.\nRetournez voir Pheirkas à la Porte de Baldur et donnez-la-lui : il paie bien.\nVous pouvez aussi garder la cape ; c'est un objet magique."
+  },
+  {
+    "title": 231293,
+    "idx": 236,
+    "game": "bg1",
+    "chapter": "2-7",
+    "where_en": "Beregost, Thunderhammer Smithy",
+    "where_fr": "Bérégost, forge de Grondemarteau",
+    "kind": "side",
+    "hints_en": [
+      "Taerom \"Thunderhammer\", the Beregost smith, pays for rare monster parts.",
+      "He buys every ankheg shell you bring him.",
+      "Kill ankhegs, take their shells and sell them to Taerom for a nice sum each."
+    ],
+    "hints_fr": [
+      "Taërom \"Grondemarteau\", le forgeron de Bérégost, paie pour des morceaux de monstres rares.",
+      "Il achète toutes les carapaces d'ankheg que vous lui apportez.",
+      "Tuez des ankhegs, prenez leur carapace et vendez-la à Taërom pour une belle somme chacune."
+    ],
+    "solution_en": "Talk to Taerom \"Thunderhammer\" at his smithy in Beregost. He offers 500 gold for every ankheg shell.\nHunt ankhegs, which burrow in open farmland and fields, and collect the shells they leave.\nSell each shell to Taerom for 500 gold. Alternatively, have him forge one into ankheg plate mail (see \"A New Suit of Armor\").\nHe also mentions the bounty on Bassilus.",
+    "solution_fr": "Parlez à Taërom \"Grondemarteau\" dans sa forge de Bérégost. Il offre 500 pièces d'or par carapace d'ankheg.\nChassez les ankhegs, qui creusent dans les champs et les terres agricoles, et ramassez les carapaces qu'ils laissent.\nVendez chaque carapace 500 pièces d'or à Taërom. Vous pouvez aussi lui en faire forger une en armure (voir \"Une nouvelle armure\").\nIl mentionne aussi la prime sur Bassilus."
+  },
+  {
+    "title": 231294,
+    "idx": 237,
+    "game": "bg1",
+    "chapter": "5-7",
+    "where_en": "Baldur's Gate (west) / south of the city",
+    "where_fr": "Porte de Baldur (ouest) / au sud de la ville",
+    "kind": "side",
+    "hints_en": [
+      "Fenten, an old dwarf in west Baldur's Gate, wants ankheg scales.",
+      "A ranger named Gerde manages the ankhegs on the plains south of the city, across the river.",
+      "Kill exactly four ankhegs next to Gerde, then go back to her and to Fenten."
+    ],
+    "hints_fr": [
+      "Fenten, un vieux nain de l'ouest de la Porte de Baldur, veut des écailles d'ankheg.",
+      "Une rôdeuse nommée Gerde surveille les ankhegs dans les plaines au sud de la ville, de l'autre côté de la rivière.",
+      "Tuez exactement quatre ankhegs près de Gerde, puis retournez la voir, ainsi que Fenten."
+    ],
+    "solution_en": "Talk to Fenten in the western part of Baldur's Gate. He tells you about ankhegs south of the city and sends you to Gerde.\nCross the river to the plains south of Baldur's Gate and find Gerde. She shows you where the ankhegs surface and sets a quota of four kills; do not exceed it.\nAnkhegs are tough and spit acid: fight them a few at a time.\nReturn to Gerde for 75 gold, then bring the ankheg parts to Fenten, who pays the agreed price.",
+    "solution_fr": "Parlez à Fenten dans la partie ouest de la Porte de Baldur. Il vous parle des ankhegs au sud de la ville et vous envoie voir Gerde.\nTraversez la rivière vers les plaines au sud de la Porte de Baldur et trouvez Gerde. Elle vous montre où les ankhegs surgissent et fixe un quota de quatre victimes ; ne le dépassez pas.\nLes ankhegs sont coriaces et crachent de l'acide : affrontez-les quelques-uns à la fois.\nRetournez voir Gerde pour 75 pièces d'or, puis apportez les morceaux d'ankheg à Fenten, qui paie le prix convenu."
+  },
+  {
+    "title": 231295,
+    "idx": 238,
+    "game": "bg1",
+    "chapter": "any",
+    "where_en": "Sword Coast shoreline",
+    "where_fr": "Littoral de la Côte des Épées",
+    "kind": "side",
+    "hints_en": [
+      "An old sage who speaks in rhymes, Mad Arcand, talks about a ship on the shore.",
+      "Something of value waits aboard, and Arcand wants it brought back unused.",
+      "Search the wreck on the shoreline, take the bottle and do not open it."
+    ],
+    "hints_fr": [
+      "Un vieux sage qui parle en vers, Arcande Zinzin, évoque un navire sur le rivage.",
+      "Un objet de valeur s'y trouve, et Arcande veut qu'on le lui rapporte sans s'en servir.",
+      "Fouillez l'épave du littoral, prenez la bouteille et ne l'ouvrez pas."
+    ],
+    "solution_en": "Talk to Mad Arcand. Through his riddles he mentions a ship along the shoreline holding something valuable, and asks you to bring it to him without using it.\nSearch the coast of that area for the wreck and loot the mysterious bottle.\nThe quest ends with the bottle in your hands. Arcand warned you not to open it; whether you do is your choice, so save first if you are curious.",
+    "solution_fr": "Parlez à Arcande Zinzin. À travers ses énigmes, il évoque un navire sur le littoral qui renferme un objet précieux, et vous demande de le lui rapporter sans vous en servir.\nFouillez la côte de cette zone pour trouver l'épave et prenez la mystérieuse bouteille.\nLa quête se termine avec la bouteille en votre possession. Arcande vous a déconseillé de l'ouvrir ; libre à vous, mais sauvegardez avant si vous êtes curieux."
+  },
+  {
+    "title": 231296,
+    "idx": 239,
+    "game": "bg1",
+    "chapter": "5-7",
+    "where_en": "Baldur's Gate, Sorcerous Sundries",
+    "where_fr": "Porte de Baldur, Bazar Magique",
+    "kind": "side",
+    "hints_en": [
+      "Ordulinian of the Sorcerous Sundries is tired of two feuding necromancers.",
+      "Arkion owns a bloodstone amulet and Nemphre an onyx ring; both live south of the Elfsong Tavern.",
+      "Bring both items to Ordulinian instead of to either necromancer."
+    ],
+    "hints_fr": [
+      "Ordulinian, du Bazar Magique, en a assez de deux nécromanciens qui se disputent.",
+      "Arkion possède une amulette héliotrope et Nemphré un anneau en onyx ; tous deux vivent au sud du Chant de l'Elfe.",
+      "Apportez les deux objets à Ordulinian plutôt qu'à l'un des nécromanciens."
+    ],
+    "solution_en": "Talk to Ordulinian at the Sorcerous Sundries in Baldur's Gate. He wants Arkion's bloodstone amulet and Nemphre's onyx ring to end their feud.\nVisit Arkion and Nemphre in their houses south of the Elfsong Tavern. Each asks you to get the other's item; obtaining them may mean a fight with powerful mages.\nGive both the ring and the amulet to Ordulinian: he trades you a fine magical cloak.\nGiving the amulet to Nemphre instead closes \"Arkion's Bloodstone Amulet\", but you then cannot complete this quest.",
+    "solution_fr": "Parlez à Ordulinian au Bazar Magique, à la Porte de Baldur. Il veut l'amulette héliotrope d'Arkion et l'anneau en onyx de Nemphré pour mettre fin à leur querelle.\nAllez voir Arkion et Nemphré dans leurs maisons au sud de la taverne du Chant de l'Elfe. Chacun veut l'objet de l'autre ; les obtenir peut signifier affronter des magiciens puissants.\nDonnez l'anneau et l'amulette à Ordulinian : il vous offre en échange une belle cape magique.\nSi vous donnez plutôt l'amulette à Nemphré, \"L'amulette héliotrope d'Arkion\" se termine, mais celle-ci devient impossible."
+  },
+  {
+    "title": 231297,
+    "idx": 240,
+    "game": "bg1",
+    "chapter": "5-7",
+    "where_en": "Baldur's Gate, south of the Elfsong Tavern",
+    "where_fr": "Porte de Baldur, au sud du Chant de l'Elfe",
+    "kind": "side",
+    "hints_en": [
+      "The necromancer Nemphre wants back an amulet her former lover kept.",
+      "Arkion, who lives nearby, holds the bloodstone amulet and will not give it up easily.",
+      "Get the amulet from Arkion and bring it to Nemphre, or keep it for Ordulinian."
+    ],
+    "hints_fr": [
+      "La nécromancienne Nemphré veut récupérer une amulette gardée par son ancien amant.",
+      "Arkion, qui vit tout près, détient l'amulette héliotrope et ne la cédera pas facilement.",
+      "Obtenez l'amulette d'Arkion et apportez-la à Nemphré, ou gardez-la pour Ordulinian."
+    ],
+    "solution_en": "Talk to Nemphre in her house just south of the Elfsong Tavern in Baldur's Gate. She wants Arkion's bloodstone amulet.\nArkion lives in the same area. He is a capable mage: get the amulet through dialogue, theft or a fight, and be ready for his spells.\nReturn the amulet to Nemphre: she gives you a magical scroll.\nAlternatively, give it with Nemphre's onyx ring to Ordulinian at the Sorcerous Sundries (\"Arkion and Nemphre\") for a better reward.",
+    "solution_fr": "Parlez à Nemphré dans sa maison juste au sud de la taverne du Chant de l'Elfe, à la Porte de Baldur. Elle veut l'amulette héliotrope d'Arkion.\nArkion vit dans le même secteur. C'est un mage capable : obtenez l'amulette par le dialogue, le vol ou le combat, et préparez-vous à ses sorts.\nRapportez l'amulette à Nemphré : elle vous donne un parchemin magique.\nVous pouvez aussi la donner, avec l'anneau en onyx de Nemphré, à Ordulinian au Bazar Magique (\"Arkion et Nemphré\") pour une meilleure récompense."
+  },
+  {
+    "title": 231298,
+    "idx": 241,
+    "game": "bg1",
+    "chapter": "5-7",
+    "where_en": "Ulgoth's Beard",
+    "where_fr": "Barbe d'Ulgoth",
+    "kind": "side",
+    "hints_en": [
+      "Rumors in Ulgoth's Beard say someone found the ship of Balduran, the city's founder.",
+      "A gnome named Dushai sells what she knows for a \"research fee\".",
+      "Pay Dushai to learn of Balduran's last voyage to Anchorome; it leads to the island of his wreck."
+    ],
+    "hints_fr": [
+      "À Barbe d'Ulgoth, on dit que quelqu'un a retrouvé le navire de Baldurien, le fondateur de la ville.",
+      "Une gnome nommée Dushaï vend ce qu'elle sait moyennant des \"honoraires\".",
+      "Payez Dushaï pour apprendre le dernier voyage de Baldurien vers Anchorome ; cela mène à l'île de son épave."
+    ],
+    "solution_en": "Listen to the townsfolk of Ulgoth's Beard: they talk about Balduran's ship and his last expedition.\nTalk to the gnome Dushai and pay her fee. She explains that Balduran sailed for Anchorome and never returned.\nThis is lore that opens the Tales of the Sword Coast trip to Balduran's island, where the wreck lies (see \"Dradeel's Spellbook\").",
+    "solution_fr": "Écoutez les habitants de Barbe d'Ulgoth : ils parlent du navire de Baldurien et de sa dernière expédition.\nParlez à la gnome Dushaï et payez ses honoraires. Elle explique que Baldurien est parti vers Anchorome et n'est jamais revenu.\nC'est un récit qui ouvre le voyage de Tales of the Sword Coast vers l'île de Baldurien, où se trouve l'épave (voir \"Le livre des sorts de Dradeel\")."
+  },
+  {
+    "title": 231299,
+    "idx": 242,
+    "game": "bg1",
+    "chapter": "5-7",
+    "where_en": "Baldur's Gate, docks",
+    "where_fr": "Porte de Baldur, docks",
+    "kind": "side",
+    "hints_en": [
+      "Nadarin, on the Baldur's Gate docks, has a dangerous escaped animal on his hands.",
+      "A basilisk is loose in a dockside warehouse, turning people to stone.",
+      "Protect yourself against petrification, kill the basilisk and report to Nadarin."
+    ],
+    "hints_fr": [
+      "Nadarin, sur les docks de la Porte de Baldur, a un animal dangereux en fuite sur les bras.",
+      "Un basilic erre dans un entrepôt du port et pétrifie tout le monde.",
+      "Protégez-vous contre la pétrification, tuez le basilic et revenez voir Nadarin."
+    ],
+    "solution_en": "Talk to Nadarin near the docks of Baldur's Gate. A basilisk escaped from a ship and hides in a nearby warehouse.\nBefore entering, use protection from petrification (potions, spells or items) if you have any; its gaze turns characters to stone.\nEnter the warehouse and kill the basilisk, preferably with ranged attacks.\nReturn to Nadarin for a nice reward.",
+    "solution_fr": "Parlez à Nadarin près des docks de la Porte de Baldur. Un basilic s'est échappé d'un navire et se cache dans un entrepôt voisin.\nAvant d'entrer, utilisez une protection contre la pétrification (potions, sorts ou objets) si vous en avez ; son regard change les personnages en pierre.\nEntrez dans l'entrepôt et tuez le basilic, de préférence à distance.\nRetournez voir Nadarin pour une jolie récompense."
+  },
+  {
+    "title": 231300,
+    "idx": 243,
+    "game": "bg1",
+    "chapter": "2-3",
+    "where_en": "Beregost / wilderness",
+    "where_fr": "Bérégost / régions sauvages",
+    "kind": "side",
+    "hints_en": [
+      "Beregost folk talk of a murdering priest who commands the undead.",
+      "Kelddath Ormlyr, at the temple of Lathander east of Beregost, offers a bounty on Bassilus.",
+      "Find Bassilus with his undead \"family\" in the wilds, kill him and bring his holy symbol to Kelddath."
+    ],
+    "hints_fr": [
+      "Les habitants de Bérégost parlent d'un prêtre meurtrier qui commande aux morts-vivants.",
+      "Kelddath Ormlyr, au temple de Lathandre à l'est de Bérégost, offre une prime pour Bassilus.",
+      "Trouvez Bassilus et sa \"famille\" de morts-vivants dans la nature, tuez-le et rapportez son symbole sacré à Kelddath."
+    ],
+    "solution_en": "Hear about Bassilus from the people of Beregost or from Taerom, then talk to Kelddath Ormlyr in the temple of Lathander east of Beregost: 5,000 gold for Bassilus.\nFind Bassilus in the wilderness. He is mad, believes his undead are his family and calls you his parent. Footy, a crazed boy, lurks nearby.\nBassilus is a priest who casts spells and commands skeletons: deal with the undead and silence or rush him.\nTake his holy symbol and return it to Kelddath for the 5,000 gold reward.",
+    "solution_fr": "Entendez parler de Bassilus par les habitants de Bérégost ou par Taërom, puis parlez à Kelddath Ormlyr au temple de Lathandre, à l'est de Bérégost : 5 000 pièces d'or pour Bassilus.\nTrouvez Bassilus dans la nature. Il est fou, croit que ses morts-vivants sont sa famille et vous prend pour son parent. Footy, un garçon dérangé, rôde à côté.\nBassilus est un prêtre qui lance des sorts et commande des squelettes : occupez-vous des morts-vivants et réduisez-le au silence ou foncez sur lui.\nPrenez son symbole sacré et rapportez-le à Kelddath pour la prime de 5 000 pièces d'or."
+  },
+  {
+    "title": 231304,
+    "idx": 244,
+    "game": "bg1",
+    "chapter": "5-7",
+    "where_en": "Baldur's Gate, docks",
+    "where_fr": "Porte de Baldur, docks",
+    "kind": "side",
+    "hints_en": [
+      "Brielbara's baby daughter is under a deadly curse.",
+      "The man who cast it, Yago, is aboard the Low Lantern.",
+      "Take Yago's spellbook and bring it to Brielbara at the Splurging Sturgeon."
+    ],
+    "hints_fr": [
+      "La petite fille de Brielbara est frappée d'une malédiction mortelle.",
+      "L'homme qui l'a lancée, Yago, se trouve à bord de la Lanterne Assourdie.",
+      "Prenez le livre de sorts de Yago et apportez-le à Brielbara à l'Esturgeon Sautillant."
+    ],
+    "solution_en": "Talk to Brielbara in Baldur's Gate. Yago cursed her daughter to die, and his spellbook holds the way to lift it.\nGo to the Low Lantern, the ship moored at the docks, and find Yago. He is a mage and will not hand it over: expect a spell duel.\nTake Yago's spellbook from his body.\nMeet Brielbara at the Splurging Sturgeon and give her the book: she can now lift the curse.",
+    "solution_fr": "Parlez à Brielbara à la Porte de Baldur. Yago a maudit sa fille pour qu'elle meure, et son livre de sorts contient le moyen de lever la malédiction.\nAllez à la Lanterne Assourdie, le navire amarré aux docks, et trouvez Yago. C'est un mage qui ne le cédera pas : attendez-vous à un duel de sorts.\nPrenez le livre de sorts de Yago sur son corps.\nRetrouvez Brielbara à l'Esturgeon Sautillant et donnez-lui le livre : elle peut maintenant lever la malédiction."
+  },
+  {
+    "title": 231306,
+    "idx": 245,
+    "game": "bg1",
+    "chapter": "2-3",
+    "where_en": "Beregost, Feldepost's Inn",
+    "where_fr": "Bérégost, auberge de Feldepost",
+    "kind": "main",
+    "hints_en": [
+      "Mulahey's letters, found in the Nashkel mines, mention a go-between named Tranzig.",
+      "Tranzig has a room at Feldepost's Inn in Beregost.",
+      "Confront him and beat him: he gives up the location of the bandit camp."
+    ],
+    "hints_fr": [
+      "Les lettres de Mulahey, trouvées dans les mines de Nashkel, citent un intermédiaire nommé Tranzig.",
+      "Tranzig loge à l'auberge de Feldepost, à Bérégost.",
+      "Confrontez-le et battez-le : il révèle l'emplacement du camp des bandits."
+    ],
+    "solution_en": "After defeating Mulahey in the Nashkel mines, read his letters: he reported to Tazok through a messenger called Tranzig.\nGo to Feldepost's Inn in Beregost and find Tranzig in a room upstairs.\nHe is a mage and attacks with his allies. Bring him low and he surrenders, confessing that he carried letters between Tazok and Mulahey.\nHe reveals where the bandits are based, which sends you to Larswood or Peldvale and the bandit camp.",
+    "solution_fr": "Après avoir vaincu Mulahey dans les mines de Nashkel, lisez ses lettres : il rendait des comptes à Tazok par un messager nommé Tranzig.\nAllez à l'auberge de Feldepost, à Bérégost, et trouvez Tranzig dans une chambre à l'étage.\nC'est un mage qui attaque avec ses complices. Affaiblissez-le et il se rend, avouant qu'il portait les lettres entre Tazok et Mulahey.\nIl révèle où se trouvent les bandits, ce qui vous envoie vers le Bois de Lars ou Valpeld et le camp des bandits."
+  },
+  {
+    "title": 231307,
+    "idx": 246,
+    "game": "bg1",
+    "chapter": "2-4",
+    "where_en": "Where the Cloud Peaks meet the sea",
+    "where_fr": "Là où les Pics Brumeux rejoignent la mer",
+    "kind": "side",
+    "hints_en": [
+      "A fisherman named Cordyr complains about monsters on his fishing grounds.",
+      "Two sirines haunt the waters near where the Cloud Peaks meet the sea.",
+      "Defeat the sirines, ideally with protection against charm, then return to Cordyr."
+    ],
+    "hints_fr": [
+      "Un pêcheur nommé Cordyr se plaint de monstres sur son lieu de pêche.",
+      "Deux sirènes hantent les eaux là où les Pics Brumeux rejoignent la mer.",
+      "Venez à bout des sirènes, idéalement protégé contre le charme, puis retournez voir Cordyr."
+    ],
+    "solution_en": "Talk to Cordyr the fisherman. A pair of sirines has taken over his fishing grounds, near where the Cloud Peaks meet the sea.\nFind the sirines in that area. They can charm and confuse your party, so protect against mind effects if you can and focus them one at a time.\nReturn to Cordyr after they are dealt with: he gives you a magic scroll.",
+    "solution_fr": "Parlez à Cordyr le pêcheur. Deux sirènes ont envahi son lieu de pêche, là où les Pics Brumeux rejoignent la mer.\nTrouvez les sirènes dans cette zone. Elles peuvent charmer et embrouiller votre groupe : protégez-vous des effets mentaux si possible et attaquez-les une par une.\nRetournez voir Cordyr une fois l'affaire réglée : il vous donne un parchemin magique."
+  },
+  {
+    "title": 231308,
+    "idx": 247,
+    "game": "bg1",
+    "chapter": "5-7",
+    "where_en": "Durlag's Tower",
+    "where_fr": "Tour de Durlag",
+    "kind": "side",
+    "hints_en": [
+      "A young adventurer, Dalton, is trapped in the depths of Durlag's Tower.",
+      "He survived a deadly test that pitted him against his own double.",
+      "Reach Dalton deep in the tower and help him get out alive."
+    ],
+    "hints_fr": [
+      "Un jeune aventurier, Dalton, est pris au piège dans les profondeurs de la tour de Durlag.",
+      "Il a survécu à une épreuve mortelle qui l'a opposé à son propre double.",
+      "Atteignez Dalton au fond de la tour et aidez-le à en sortir vivant."
+    ],
+    "solution_en": "While exploring the lower levels of Durlag's Tower, you meet Dalton, a young man who barely survived the tower's tests: he had to kill his own double.\nTalk to him and agree to help him out.\nOnce he is safe, the quest closes. If the demon knight is defeated, Clair, a survivor of his group, is relieved to learn that at least one friend lived.",
+    "solution_fr": "En explorant les niveaux inférieurs de la tour de Durlag, vous rencontrez Dalton, un jeune homme qui a tout juste survécu aux épreuves de la tour : il a dû tuer son propre double.\nParlez-lui et acceptez de l'aider à sortir.\nUne fois qu'il est en sécurité, la quête se termine. Si le Chevalier Démon est vaincu, Clair, une survivante de son groupe, est soulagée qu'au moins un ami ait survécu."
+  },
+  {
+    "title": 231309,
+    "idx": 248,
+    "game": "bg1",
+    "chapter": "5-7",
+    "where_en": "Balduran's Isle, village",
+    "where_fr": "Île de Baldurien, village",
+    "kind": "side",
+    "hints_en": [
+      "The historian of the island village, Delainy, needs a small favor.",
+      "A sacred cloak blew away from the chieftain's hut in a storm.",
+      "Search outside the village walls for the cloak, beware the beasts, and talk with Delainy afterwards."
+    ],
+    "hints_fr": [
+      "L'historienne du village de l'île, Delainie, a besoin d'un petit service.",
+      "Une cape sacrée s'est envolée de la hutte du chef pendant une tempête.",
+      "Cherchez la cape hors des murs du village, méfiez-vous des bêtes, puis discutez avec Delainie."
+    ],
+    "solution_en": "In the village on Balduran's island, talk to Delainy, the village historian (her male counterpart Durlyle may appear instead). Refusing ends the quest.\nAgree to find the village cloak blown away from the chieftain's hut. Search the wilderness outside the walls, watching out for the \"beasts\" the locals fear.\nReturn the cloak to Delainy. Further talks with her can go well or badly depending on your answers.\nThe villagers hide a dark secret about the island: stay wary.",
+    "solution_fr": "Dans le village de l'île de Baldurien, parlez à Delainie, l'historienne du village (son équivalent masculin Durlyle peut apparaître à sa place). Refuser met fin à la quête.\nAcceptez de retrouver la cape du village arrachée de la hutte du chef. Fouillez la nature hors des murs en vous méfiant des \"bêtes\" que craignent les habitants.\nRapportez la cape à Delainie. Les conversations suivantes peuvent bien ou mal tourner selon vos réponses.\nLes villageois cachent un sombre secret sur l'île : restez sur vos gardes."
+  },
+  {
+    "title": 231310,
+    "idx": 249,
+    "game": "bg1",
+    "chapter": "5-7",
+    "where_en": "Balduran's Isle",
+    "where_fr": "Île de Baldurien",
+    "kind": "side",
+    "hints_en": [
+      "A half-mad elven mage, Dradeel, hides in an old hut on the island.",
+      "He was Balduran's navigator and lost his spellbook in the wreck.",
+      "Search the chest near Balduran's cabin in the wrecked ship and return the book to Dradeel."
+    ],
+    "hints_fr": [
+      "Un mage elfe à moitié fou, Dradeel, se cache dans une vieille cabane sur l'île.",
+      "Il était le navigateur de Baldurien et a perdu son livre de sorts dans le naufrage.",
+      "Fouillez le coffre près de la cabine de Baldurien, dans l'épave, et rendez le livre à Dradeel."
+    ],
+    "solution_en": "On Balduran's island, find Dradeel in his old hut. He tells you that Balduran's crew stopped here returning from Anchorome and that lycanthropes now infest the island.\nHe asks you to get his spellbook from the wreck of Balduran's ship, in a chest near Balduran's cabin.\nExplore the wreck (expect undead and other foes) and loot the spellbook.\nBring it back to Dradeel: he takes it and leaves without a word of thanks.",
+    "solution_fr": "Sur l'île de Baldurien, trouvez Dradeel dans sa vieille cabane. Il raconte que l'équipage de Baldurien s'est arrêté ici au retour d'Anchorome et que des lycanthropes infestent l'île.\nIl vous demande de récupérer son livre de sorts dans l'épave du navire de Baldurien, dans un coffre près de la cabine de Baldurien.\nExplorez l'épave (attendez-vous à des morts-vivants et d'autres ennemis) et prenez le livre de sorts.\nRapportez-le à Dradeel : il le prend et s'en va sans un merci."
+  },
+  {
+    "title": 231311,
+    "idx": 250,
+    "game": "bg1",
+    "chapter": "Prologue",
+    "where_en": "Candlekeep",
+    "where_fr": "Château-Suif",
+    "kind": "side",
+    "hints_en": [
+      "Dreppin, the farmhand in Candlekeep, is worried about his sick cow, Nessa.",
+      "The cow needs a potion of antidote, and the guard Hull has some.",
+      "Get the potion from Hull at the gate and bring it to Dreppin."
+    ],
+    "hints_fr": [
+      "Dreppin, le valet de ferme de Château-Suif, s'inquiète pour sa vache malade, Nessa.",
+      "La vache a besoin d'une potion d'antidote, et le garde Hull en a.",
+      "Obtenez la potion auprès de Hull, à la porte, et apportez-la à Dreppin."
+    ],
+    "solution_en": "Talk to Dreppin near the stables of Candlekeep. Nessa the cow is ill and needs a potion of antidote.\nGo to the main gate and talk to Hull, the guard on duty there. He uses these potions against his hangovers but gives you one.\nBring the potion back to Dreppin to close the quest and earn a little experience before leaving Candlekeep.",
+    "solution_fr": "Parlez à Dreppin près des étables de Château-Suif. Nessa la vache est malade et a besoin d'une potion d'antidote.\nAllez à la porte principale et parlez à Hull, le garde de faction. Il se sert de ces potions contre la gueule de bois, mais vous en donne une.\nRapportez la potion à Dreppin pour clore la quête et gagner un peu d'expérience avant de quitter Château-Suif."
+  },
+  {
+    "title": 231312,
+    "idx": 251,
+    "game": "bg1",
+    "chapter": "any",
+    "where_en": "Sword Coast",
+    "where_fr": "Côte des Épées",
+    "kind": "side",
+    "hints_en": [
+      "A crying girl, Drienne, begs you to rescue her cat, Pixie.",
+      "The cat went over a waterfall in the same area.",
+      "Bring the cat back to Drienne, even if it is no longer alive."
+    ],
+    "hints_fr": [
+      "Une fillette en larmes, Drienne, vous supplie de sauver son chat, Pixie.",
+      "Le chat est tombé d'une chute d'eau dans la même zone.",
+      "Ramenez le chat à Drienne, même s'il n'est plus en vie."
+    ],
+    "solution_en": "Talk to Drienne. Her cat Pixie fell into a waterfall and she asks you to rescue it.\nSearch near the waterfall in that area; you will only find the poor cat's body. Pick it up.\nReturn it to Drienne. She may accuse you of killing Pixie, but she pays you 23 gold, or gives you one of her father's scrolls, who seems to have brought the cat back more than once.",
+    "solution_fr": "Parlez à Drienne. Son chat Pixie est tombé dans une chute d'eau et elle vous demande de le sauver.\nCherchez près de la chute d'eau dans cette zone ; vous n'y trouverez que le corps du pauvre chat. Ramassez-le.\nRapportez-le à Drienne. Elle peut vous accuser d'avoir tué Pixie, mais elle vous paie 23 pièces d'or, ou vous donne l'un des parchemins de son père, qui semble avoir déjà ramené le chat plus d'une fois."
+  },
+  {
+    "title": 231313,
+    "idx": 252,
+    "game": "bg1",
+    "chapter": "2-4",
+    "where_en": "Cloud Peaks",
+    "where_fr": "Pics Brumeux",
+    "kind": "side",
+    "hints_en": [
+      "A dryad in the Cloud Peaks is afraid for her oak tree.",
+      "She asks you to protect her tree from those who threaten it.",
+      "Help her for good fortune; anger her and she still mentions a wolf cave with treasure to the south."
+    ],
+    "hints_fr": [
+      "Une dryade des Pics Brumeux craint pour son chêne.",
+      "Elle vous demande de protéger son arbre de ceux qui le menacent.",
+      "Aidez-la pour gagner sa faveur ; fâchez-la et elle parle quand même d'une grotte aux loups avec un trésor au sud."
+    ],
+    "solution_en": "In the Cloud Peaks, meet a dryad who asks you to protect her tree.\nAgree and defend the oak against those who come for it: she grants you her favor.\nIf you insult her, she orders you out of her wood, but she also mentions a wolf cave just to the south with a hidden treasure cache.\nAn evil party can kill her instead.",
+    "solution_fr": "Dans les Pics Brumeux, rencontrez une dryade qui vous demande de protéger son arbre.\nAcceptez et défendez le chêne contre ceux qui s'en approchent : elle vous accorde sa faveur.\nSi vous l'insultez, elle vous chasse de son bois, mais elle évoque aussi une grotte aux loups juste au sud, avec une cachette au trésor.\nUn groupe mauvais peut aussi la tuer."
+  },
+  {
+    "title": 231314,
+    "idx": 253,
+    "game": "bg1",
+    "chapter": "7",
+    "where_en": "Baldur's Gate, Flaming Fist headquarters",
+    "where_fr": "Porte de Baldur, siège du Poing Enflammé",
+    "kind": "main",
+    "hints_en": [
+      "Duke Eltan lies sick in the Flaming Fist compound while Angelo commands in his place.",
+      "Kolvar, Kent and a seer all suspect his healer, Rashad.",
+      "Stop the attempt on Eltan's life, then escort him to the Harbor Master on the east side of the harbor."
+    ],
+    "hints_fr": [
+      "Le Duc Eltan est alité dans l'enceinte du Poing Enflammé, tandis qu'Angelo commande à sa place.",
+      "Kolvar, Kent et un voyant soupçonnent tous son guérisseur, Rashad.",
+      "Déjouez l'attentat contre Eltan, puis escortez-le jusqu'au Maître du Port, à l'est des docks."
+    ],
+    "solution_en": "In chapter 7, learn from rumors, Kolvar, Kent, a charmed smuggler or the seer Delthyr that Eltan is gravely ill, Scar is dead, and the healer Rashad is the one making him sick.\nGo to the Flaming Fist headquarters and reach Eltan's sickroom. Rashad turns on you: kill him to stop the assassination.\nEltan asks to be taken to the Harbor Master's building on the east side of the harbor. Escort him there; the Harbor Master promises to hide him.\nThen head for the Iron Throne to go after Sarevok.",
+    "solution_fr": "Au chapitre 7, apprenez par les rumeurs, Kolvar, Kent, un contrebandier charmé ou le voyant Delthyr qu'Eltan est gravement malade, que la Balafre est mort et que son guérisseur Rashad est la cause de son mal.\nAllez au siège du Poing Enflammé et rejoignez la chambre d'Eltan. Rashad se retourne contre vous : tuez-le pour empêcher l'assassinat.\nEltan demande à être conduit au bâtiment du Maître du Port, à l'est des docks. Escortez-le ; le Maître du Port promet de le cacher.\nAllez ensuite au Trône de Fer pour traquer Sarevok."
+  },
+  {
+    "title": 231315,
+    "idx": 254,
+    "game": "bg1",
+    "chapter": "5-7",
+    "where_en": "Durlag's Tower",
+    "where_fr": "Tour de Durlag",
+    "kind": "side",
+    "hints_en": [
+      "Fenrus in Ulgoth's Beard knows the history of Durlag's Tower and its doppelganger tragedy.",
+      "Ward stones open the magical locks of the lower levels; Ike has one.",
+      "Durlag's phantom wants the demon knight expelled; Clair suggests turning its Mirror of Opposition against it."
+    ],
+    "hints_fr": [
+      "Fenrus, à Barbe d'Ulgoth, connaît l'histoire de la tour de Durlag et sa tragédie des doppelgangers.",
+      "Des pierres-sésames ouvrent les verrous magiques des niveaux inférieurs ; Ike en a une.",
+      "Le fantôme de Durlag veut qu'on chasse le Chevalier Démon ; Clair conseille de retourner son miroir d'opposition contre lui."
+    ],
+    "solution_en": "Learn the tower's story from Fenrus: Durlag killed doppelgangers wearing his family's faces, went mad and filled his home with traps.\nAt the tower, Bayard warns you about lethal traps, ward stones and a demon knight. Bring a good thief and save often.\nClimb the upper floors and go down into the labyrinth, using a ward stone (Ike's or one you find) to pass the sealed doors.\nDurlag's phantom asks you to understand the tower's paths, solving its tests (making a sword glow is one), and to drive out the demon knight.\nIn the depths, Clair explains its Mirror of Opposition, which creates duplicates of your party. Use the mirror against the knight, then destroy it: it is a very strong spellcaster.",
+    "solution_fr": "Apprenez l'histoire de la tour par Fenrus : Durlag a tué des doppelgangers qui avaient le visage de sa famille, est devenu fou et a truffé sa demeure de pièges.\nÀ la tour, Bayard vous met en garde contre les pièges mortels, les pierres-sésames et un Chevalier Démon. Emmenez un bon voleur et sauvegardez souvent.\nMontez dans les étages, puis descendez dans le labyrinthe en utilisant une pierre-sésame (celle d'Ike ou une autre trouvée) pour passer les portes scellées.\nLe fantôme de Durlag vous demande de comprendre les chemins de la tour en réussissant ses épreuves (faire luire une épée en est une) et de chasser le Chevalier Démon.\nDans les profondeurs, Clair décrit son miroir d'opposition, qui crée des doubles de votre groupe. Retournez le miroir contre le chevalier, puis abattez-le : c'est un lanceur de sorts redoutable."
+  },
+  {
+    "title": 231316,
+    "idx": 255,
+    "game": "bg1",
+    "chapter": "5-7",
+    "where_en": "Balduran's Isle, village",
+    "where_fr": "Île de Baldurien, village",
+    "kind": "side",
+    "hints_en": [
+      "The historian of the island village, Durlyle, needs a small favor.",
+      "A sacred cloak blew away from the chieftain's hut in a storm.",
+      "Search outside the village walls for the cloak, beware the beasts, and talk with Durlyle afterwards."
+    ],
+    "hints_fr": [
+      "L'historien du village de l'île, Durlyle, a besoin d'un petit service.",
+      "Une cape sacrée s'est envolée de la hutte du chef pendant une tempête.",
+      "Cherchez la cape hors des murs du village, méfiez-vous des bêtes, puis discutez avec Durlyle."
+    ],
+    "solution_en": "In the village on Balduran's island, talk to Durlyle, the village historian (his female counterpart Delainy may appear instead). Refusing ends the quest.\nAgree to find the village cloak blown away from the chieftain's hut. Search the wilderness outside the walls, watching out for the \"beasts\" the locals fear.\nReturn the cloak to Durlyle. Further talks with him can make him a friend or leave him cold, depending on your answers.\nThe villagers hide a dark secret about the island: stay wary.",
+    "solution_fr": "Dans le village de l'île de Baldurien, parlez à Durlyle, l'historien du village (son équivalente féminine Delainie peut apparaître à sa place). Refuser met fin à la quête.\nAcceptez de retrouver la cape du village arrachée de la hutte du chef. Fouillez la nature hors des murs en vous méfiant des \"bêtes\" que craignent les habitants.\nRapportez la cape à Durlyle. Les conversations suivantes peuvent en faire un ami ou le laisser froid, selon vos réponses.\nLes villageois cachent un sombre secret sur l'île : restez sur vos gardes."
+  },
+  {
+    "title": 231317,
+    "idx": 256,
+    "game": "bg1",
+    "chapter": "2-3",
+    "where_en": "West of Nashkel, Gnoll Stronghold",
+    "where_fr": "Ouest de Nashkel, bastion gnoll",
+    "kind": "companion",
+    "hints_en": [
+      "Near Nashkel, a Red Wizard named Edwin wants a witch dead.",
+      "Dynaheir is held in the gnoll stronghold west of Nashkel.",
+      "Take Edwin to the stronghold and kill Dynaheir, or refuse him and free her instead."
+    ],
+    "hints_fr": [
+      "Près de Nashkel, un Sorcier Rouge nommé Edwin veut la mort d'une sorcière.",
+      "Dynahéir est retenue dans le bastion gnoll à l'ouest de Nashkel.",
+      "Emmenez Edwin au bastion et tuez Dynahéir, ou refusez et libérez-la plutôt."
+    ],
+    "solution_en": "Meet Edwin near Nashkel. He asks you to kill Dynaheir, a witch, and joins you if you agree. Declining ends the quest.\nTravel west to the gnoll stronghold and fight through the gnolls to Dynaheir.\nKill her to fulfil Edwin's wish. This is an evil path and Minsc, her protector, will not accept it.\nYou can also dismiss Edwin and drop his alliance. Freeing Dynaheir instead lets her join you.",
+    "solution_fr": "Rencontrez Edwin près de Nashkel. Il vous demande de tuer Dynahéir, une sorcière, et vous rejoint si vous acceptez. Refuser met fin à la quête.\nAllez à l'ouest jusqu'au bastion gnoll et frayez-vous un chemin parmi les gnolls jusqu'à Dynahéir.\nTuez-la pour exaucer Edwin. C'est une voie mauvaise, et Minsc, son protecteur, ne l'acceptera pas.\nVous pouvez aussi renvoyer Edwin et rompre l'alliance. Si vous libérez Dynahéir à la place, elle peut vous rejoindre."
+  }
+]

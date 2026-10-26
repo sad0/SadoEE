@@ -1,0 +1,215 @@
+// Party Stash #40: the series functions (Player6 lines / blocks -> Player7..last), used by lib/party.tpa.
+
+// ---------- string helpers ----------
+
+// A line's shape: player numbers, points [x.y] and facing directions abstracted (twin lines have the same shape).
+DEFINE_PATCH_FUNCTION PSXP7_SHAPE
+	STR_VAR s = ~~
+	RET shape
+BEGIN
+	INNER_PATCH_SAVE shape ~%s%~ BEGIN
+		REPLACE_TEXTUALLY CASE_SENSITIVE ~\bPlayer[1-6]\b~ ~PlayerX~
+		REPLACE_TEXTUALLY CASE_SENSITIVE ~[[]-?[0-9]+\.-?[0-9]+[]]~ ~[P]~
+		REPLACE_TEXTUALLY CASE_SENSITIVE ~P[1-6]"~ ~PX"~
+		REPLACE_TEXTUALLY CASE_SENSITIVE ~Face(\(S\|SSW\|SW\|WSW\|W\|WNW\|NW\|NNW\|N\|NNE\|NE\|ENE\|E\|ESE\|SE\|SSE\))~ ~Face(D)~
+		REPLACE_TEXTUALLY ~^[ %TAB%%MNL%%LNL%]+~ ~~
+		REPLACE_TEXTUALLY ~[ %TAB%%MNL%%LNL%]+$~ ~~
+	END
+END
+
+// Player6 -> PlayerK, "P6" -> "PK" (variable names of the series)
+DEFINE_PATCH_FUNCTION PSXP7_SUB
+	INT_VAR k = 7
+	STR_VAR s = ~~
+	RET out
+BEGIN
+	INNER_PATCH_SAVE out ~%s%~ BEGIN
+		REPLACE_TEXTUALLY CASE_SENSITIVE ~\bPlayer6\b~ ~Player%k%~
+		REPLACE_TEXTUALLY CASE_SENSITIVE ~P6"~ ~P%k%"~
+	END
+END
+
+// is5: names Player5 and no other member; only6: names Player6 and none of Player1-5
+DEFINE_PATCH_FUNCTION PSXP7_KIND
+	STR_VAR s = ~~
+	RET is5 only6
+BEGIN
+	SET is5 = (INDEX (CASE_SENSITIVE EVALUATE_REGEXP ~\bPlayer5\b~ ~%s%~) >= 0) AND (INDEX (CASE_SENSITIVE EVALUATE_REGEXP ~\bPlayer[1-46]\b~ ~%s%~) < 0)
+	SET only6 = (INDEX (CASE_SENSITIVE EVALUATE_REGEXP ~\bPlayer6\b~ ~%s%~) >= 0) AND (INDEX (CASE_SENSITIVE EVALUATE_REGEXP ~\bPlayer[1-5]\b~ ~%s%~) < 0)
+END
+
+// ---------- series in a list of lines ----------
+// Lines psxp7_l_0..n-1 (no "\n", a "\r" kept), group psxp7_g_i (0 = never extended, else lines of the same group
+// share their Player5 twins). A only6 line whose shape is a Player5 line's shape in its group gets copies for
+// Player7..last right after it. Returns the text (lines joined by sep, each line kept as is) and the copies count.
+DEFINE_PATCH_FUNCTION PSXP7_LINES
+	INT_VAR n = 0 last = 32
+	STR_VAR sep = ~~
+	RET text added
+BEGIN
+	// shapes of the Player5 lines, per group: "\n" shape "\n" ...
+	CLEAR_ARRAY psxp7_s5
+	FOR (i = 0; i < n; ++i) BEGIN
+		SET g = $psxp7_g(~%i%~)
+		PATCH_IF g > 0 BEGIN
+			SPRINT l $psxp7_l(~%i%~)
+			LPF PSXP7_KIND STR_VAR s = EVAL ~%l%~ RET is5 only6 END
+			PATCH_IF is5 BEGIN
+				LPF PSXP7_SHAPE STR_VAR s = EVAL ~%l%~ RET shape END
+				PATCH_IF VARIABLE_IS_SET $psxp7_s5(~%g%~) BEGIN SPRINT old $psxp7_s5(~%g%~) END ELSE BEGIN SPRINT old ~%LNL%~ END
+				SPRINT $psxp7_s5(~%g%~) ~%old%%shape%%LNL%~
+			END
+		END
+	END
+	SPRINT text ~~
+	SET added = 0
+	FOR (i = 0; i < n; ++i) BEGIN
+		SPRINT l $psxp7_l(~%i%~)
+		SPRINT text ~%text%%l%~
+		PATCH_IF i < n - 1 BEGIN SPRINT text ~%text%%sep%~ END
+		SET g = $psxp7_g(~%i%~)
+		PATCH_IF g > 0 AND VARIABLE_IS_SET $psxp7_s5(~%g%~) AND (INDEX (CASE_SENSITIVE EVALUATE_REGEXP ~^[ %TAB%]*RESPONSE #~ ~%l%~) < 0) BEGIN
+			LPF PSXP7_KIND STR_VAR s = EVAL ~%l%~ RET is5 only6 END
+			PATCH_IF only6 BEGIN
+				LPF PSXP7_SHAPE STR_VAR s = EVAL ~%l%~ RET shape END
+				SPRINT set5 $psxp7_s5(~%g%~)
+				PATCH_IF INDEX (CASE_SENSITIVE EXACT_MATCH ~%LNL%%shape%%LNL%~ ~%set5%~) >= 0 BEGIN
+					PATCH_IF i = n - 1 BEGIN SPRINT text ~%text%%sep%~ END
+					FOR (k = 7; k <= last; ++k) BEGIN
+						LPF PSXP7_SUB INT_VAR k STR_VAR s = EVAL ~%l%~ RET out END
+						SPRINT text ~%text%%out%%sep%~
+						SET added += 1
+					END
+					PATCH_IF i = n - 1 BEGIN // no separator after the last line
+						INNER_PATCH_SAVE text ~%text%~ BEGIN DELETE_BYTES (BUFFER_LENGTH - STRING_LENGTH ~%sep%~) (STRING_LENGTH ~%sep%~) END
+					END
+				END
+			END
+		END
+	END
+END
+
+// ---------- BAF (decompiled script) ----------
+// - a block naming Player6 alone, whose twin block (Player6 -> Player5, "P6" -> "P5") also exists, is copied for 7..last;
+// - inside a response, an action line naming Player6 alone, whose Player5 twin line is in the same response, is copied
+//   for 7..last right after it (cutscenes: ActionOverride(Player6,JumpToPoint(...)), LeaveAreaLUA, ApplySpellRES...).
+DEFINE_PATCH_FUNCTION PSXP7_BAF_BLOCK
+	INT_VAR last = 32
+	STR_VAR block = ~~ all = ~~
+	RET block added
+BEGIN
+	SET added = 0
+	PATCH_IF INDEX (CASE_SENSITIVE ~Player6~ ~%block%~) >= 0 BEGIN
+		// lines, groups: 0 before THEN, then 1 + one per RESPONSE
+		CLEAR_ARRAY psxp7_l
+		CLEAR_ARRAY psxp7_g
+		SET n = 0
+		SET g = 0
+		INNER_PATCH ~%block%~ BEGIN
+			SET pos = 0
+			WHILE pos < BUFFER_LENGTH BEGIN
+				SET e = INDEX_BUFFER (EXACT_MATCH ~%LNL%~ pos)
+				PATCH_IF e < 0 BEGIN SET e = BUFFER_LENGTH END
+				PATCH_IF e > pos BEGIN READ_ASCII pos l (e - pos) END ELSE BEGIN SPRINT l ~~ END
+				PATCH_IF g = 0 AND (INDEX (CASE_SENSITIVE EVALUATE_REGEXP ~^THEN[%MNL%]?$~ ~%l%~) >= 0) BEGIN SET g = 1 END
+				ELSE PATCH_IF g > 0 AND (INDEX (CASE_SENSITIVE EVALUATE_REGEXP ~^[ %TAB%]*RESPONSE #~ ~%l%~) >= 0) BEGIN SET g += 1 END
+				SPRINT $psxp7_l(~%n%~) ~%l%~
+				SET $psxp7_g(~%n%~) = g
+				SET n += 1
+				SET pos = e + 1
+				// a block ending with "\n": keep the empty last line
+				PATCH_IF e = BUFFER_LENGTH - 1 BEGIN
+					SPRINT $psxp7_l(~%n%~) ~~
+					SET $psxp7_g(~%n%~) = 0
+					SET n += 1
+				END
+			END
+		END
+		LPF PSXP7_LINES INT_VAR n last STR_VAR sep = EVAL ~%LNL%~ RET block = text added END
+		// block copies
+		LPF PSXP7_KIND STR_VAR s = EVAL ~%block%~ RET is5 only6 END
+		PATCH_IF only6 BEGIN
+			INNER_PATCH_SAVE twin ~%block%~ BEGIN
+				REPLACE_TEXTUALLY CASE_SENSITIVE ~\bPlayer6\b~ ~Player5~
+				REPLACE_TEXTUALLY CASE_SENSITIVE ~P6"~ ~P5"~
+				SET more = 1
+				WHILE more AND BUFFER_LENGTH > 0 BEGIN // trailing white space
+					READ_BYTE (BUFFER_LENGTH - 1) c
+					PATCH_IF c = 32 OR c = 9 OR c = 10 OR c = 13 BEGIN DELETE_BYTES (BUFFER_LENGTH - 1) 1 END ELSE BEGIN SET more = 0 END
+				END
+			END
+			PATCH_IF INDEX (CASE_SENSITIVE EXACT_MATCH ~%twin%~ ~%all%~) >= 0 BEGIN
+				SPRINT copies ~~
+				FOR (k = 7; k <= last; ++k) BEGIN
+					LPF PSXP7_SUB INT_VAR k STR_VAR s = EVAL ~%block%~ RET out END
+					SPRINT copies ~%copies%%out%~
+					SET added += 1
+				END
+				SPRINT block ~%block%%copies%~
+			END
+		END
+	END
+END
+
+// The whole BAF text: split in blocks at the "IF" lines, each block extended. Returns the text and the change count.
+DEFINE_PATCH_FUNCTION PSXP7_BAF
+	INT_VAR last = 32
+	STR_VAR text = ~~
+	RET text added
+BEGIN
+	SPRINT all ~%text%~
+	SPRINT out ~~
+	SET added = 0
+	INNER_PATCH ~%all%~ BEGIN
+		SET start = 0
+		SET pos = 0
+		WHILE pos <= BUFFER_LENGTH BEGIN
+			// next block start: a line "IF" (after the current block's first line)
+			SET e = INDEX_BUFFER (CASE_SENSITIVE EVALUATE_REGEXP ~^IF[ %TAB%%MNL%]*$~ (pos + 1))
+			PATCH_IF e < 0 OR pos = BUFFER_LENGTH BEGIN SET e = BUFFER_LENGTH END
+			PATCH_IF e > start BEGIN
+				READ_ASCII start block (e - start)
+				// a block without Player6 is kept as is: the call (which copies the whole script) is skipped, SCS scripts
+				// have thousands of blocks (minutes on a big EET install)
+				PATCH_IF INDEX (CASE_SENSITIVE ~Player6~ ~%block%~) >= 0 BEGIN
+					LPF PSXP7_BAF_BLOCK INT_VAR last STR_VAR block = EVAL ~%block%~ all = EVAL ~%all%~ RET block n = added END
+					SET added += n
+				END
+				SPRINT out ~%out%%block%~
+			END
+			SET start = e
+			SET pos = (e = BUFFER_LENGTH) ? (BUFFER_LENGTH + 1) : e
+		END
+	END
+	SPRINT text ~%out%~
+END
+
+// ---------- DLG action text ----------
+DEFINE_PATCH_FUNCTION PSXP7_DLG_ACTION
+	INT_VAR last = 32
+	STR_VAR t = ~~
+	RET t added
+BEGIN
+	CLEAR_ARRAY psxp7_l
+	CLEAR_ARRAY psxp7_g
+	SET n = 0
+	INNER_PATCH ~%t%~ BEGIN
+		SET pos = 0
+		WHILE pos <= BUFFER_LENGTH BEGIN
+			SET e = INDEX_BUFFER (EXACT_MATCH ~%LNL%~ pos)
+			PATCH_IF e < 0 BEGIN SET e = BUFFER_LENGTH END
+			SET le = e
+			PATCH_IF le > pos BEGIN
+				READ_BYTE (le - 1) c
+				PATCH_IF c = 13 BEGIN SET le -= 1 END
+			END
+			PATCH_IF le > pos BEGIN READ_ASCII pos l (le - pos) END ELSE BEGIN SPRINT l ~~ END
+			SPRINT $psxp7_l(~%n%~) ~%l%~
+			SET $psxp7_g(~%n%~) = 1
+			SET n += 1
+			SET pos = e + 1
+		END
+	END
+	LPF PSXP7_LINES INT_VAR n last STR_VAR sep = EVAL ~%WNL%~ RET t = text added END
+END
+

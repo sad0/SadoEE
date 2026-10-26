@@ -1,0 +1,10 @@
+// SadoEE strings (GENERATED from SadoEE/src/tra)
+@2000 = ~Party Stash~
+@2001 = ~Dinlenme kampı~
+@2002 = ~Yaşam kalitesi~
+@2003 = ~Motor eklentisi~
+@2010 = ~SadoEE, Party Stash ve SadoQoL'un yerini alır (aynı dosyalar): önce Party Stash ve SadoQoL'un tüm bileşenlerini kaldırın. Sandık içeriği kayıtlarınızda kalır ve SadoEE'nin sandığıyla geri gelir.~
+@2011 = ~Dinlenme kampı bileşenini gerektirir.~
+@2012 = ~Dinlenme kampında Büyük tüccar: zaten ziyaret edilen dükkânlarda görülen her eşyayı satar (dinlenme kampını ve sandığı gerektirir)~
+@2013 = ~Sandığı gerektirir.~
+@2014 = ~Baldur's Gate EE, Baldur's Gate II EE veya EET gerektirir.~

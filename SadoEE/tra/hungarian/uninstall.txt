@@ -1,0 +1,1 @@
+﻿Party Stash: eltávolítás előtt ürítsd ki a ládát a játékban: Ctrl + bal kattintás a súly melletti nagy zsákra a felszerelés oldalon. A gyűjtött zsákjaid visszakerülnek, megtöltve a beléjük férő tárgyakkal; minden más a földre esik. Különben a láda tartalma a mentésekben marad, de a mod újratelepítéséig elérhetetlen.

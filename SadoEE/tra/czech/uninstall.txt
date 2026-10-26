@@ -1,0 +1,1 @@
+﻿Party Stash: před odinstalováním vyprázdněte truhlu ve hře: Ctrl + levé kliknutí na velký vak vedle váhy na stránce inventáře. Sebrané vaky se vrátí naplněné předměty, které pojmou; vše ostatní spadne na zem. Jinak obsah truhly zůstane v uložených pozicích, ale bude nedostupný, dokud mod znovu nenainstalujete.

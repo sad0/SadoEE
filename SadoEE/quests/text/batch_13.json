@@ -1,0 +1,336 @@
+[
+ {
+  "title": 96107,
+  "idx": 201,
+  "game": "bg2",
+  "chapter": "2-10",
+  "where_en": "Athkatla, Temple District / Resurrection Gorge",
+  "where_fr": "Athkatla, quartier des temples / Gorge de la Résurrection",
+  "kind": "companion",
+  "hints_en": [
+   "Dorn's demon patron wants a paladin of Helm dead; ask at Helm's temple in Athkatla.",
+   "Guardian Telwyn knows where Terpfen went; later, a marilith named Azothet offers Dorn a way out.",
+   "In Resurrection Gorge, gather every summoning stone and the abyssal blade to bind Ur-Gothoz."
+  ],
+  "hints_fr": [
+   "Le maître démoniaque de Dorn veut la mort d'un paladin de Helm : renseignez-vous au temple de Helm d'Athkatla.",
+   "Telwyn sait où est parti Terpfen ; plus tard, une marilith nommée Azothet propose à Dorn une issue.",
+   "Dans la Gorge de la Résurrection, réunissez toutes les pierres de convocation et la lame abyssale pour sceller Ur-Gothoz."
+  ],
+  "solution_en": "With Dorn in the party, Ur-Gothoz demands the death of Terpfen, a paladin of Helm.\nVisit Helm's temple in the Temple District at night and question Guardian Telwyn: Terpfen is escorting a priest of Tyr in a camp south of the city. Travel there and kill him.\nLater Azothet, a marilith, urges Dorn to break free in Resurrection Gorge. You can also reveal her scheme to Ur-Gothoz instead.\nIn the gorge, the dryad Yarrow lets you in but asks you to slay the tanar'ri lurking near her tree. The druid Vernus explains the missing summoning stones: one is behind Winterbrook's waterfall (southwest), the dragons hold one, the tanar'ri carry the rest. Collect them all plus the abyssal blade, then use the circle in the great tree to bind Ur-Gothoz. Expect hard demon and dragon fights.\nIn Throne of Bhaal, divine attackers hunt you both: go to Lunia, find the Pavilion of Righteous Wrath and get your names erased from the Scroll of Retribution, then escape.",
+  "solution_fr": "Avec Dorn dans le groupe, Ur-Gothoz exige la mort de Terpfen, un paladin de Helm.\nAllez de nuit au temple de Helm, dans le quartier des temples, et interrogez Telwyn : Terpfen escorte un prêtre de Tyr dans un camp au sud de la ville. Rendez-vous-y et tuez-le.\nPlus tard, Azothet, une marilith, pousse Dorn à se libérer dans la Gorge de la Résurrection. Vous pouvez aussi dénoncer son complot à Ur-Gothoz.\nDans la gorge, la dryade Achilée vous laisse entrer mais vous demande de tuer le tanar'ri qui rôde près de son arbre. Le druide Vernus parle des pierres de convocation manquantes : l'une est derrière la cascade de Frivière (sud-ouest), les dragons en gardent une, les tanar'ris portent les autres. Rassemblez-les toutes avec la lame abyssale, puis utilisez le cercle du grand arbre pour sceller Ur-Gothoz. Combats durs contre démons et dragons.\nDans Le Trône de Bhaal, des assaillants divins vous traquent : rendez-vous à Lunia, trouvez le Pavillon du Juste Courroux, faites effacer vos noms du Parchemin de la Rétribution, puis fuyez."
+ },
+ {
+  "title": 96115,
+  "idx": 202,
+  "game": "bg2",
+  "chapter": "2-10",
+  "where_en": "Athkatla, Graveyard District",
+  "where_fr": "Athkatla, quartier du cimetière",
+  "kind": "companion",
+  "hints_en": [
+   "Hexxat, met at the Copper Coronet, seeks a tomb in the southeast of the Graveyard District.",
+   "Inside Dragomir's Tomb, the ghost Burich and his iron rod open the vampire's chamber.",
+   "The Hexxat you know is not the real one; Dragomir's cloak and casque matter afterwards."
+  ],
+  "hints_fr": [
+   "Hexxat, rencontrée à la Couronne de Cuivre, cherche un tombeau au sud-est du quartier du cimetière.",
+   "Dans le Tombeau de Dragomir, le fantôme Burich et son bâton en fer ouvrent la chambre du vampire.",
+   "La Hexxat que vous connaissez n'est pas la vraie ; la cape et le casque de Dragomir comptent ensuite."
+  ],
+  "solution_en": "Recruit Hexxat at the Copper Coronet and agree to find Dragomir's Tomb, southeast in the Graveyard District. Enter with her, or she leaves the party.\nInside, Burich the Unyielding gives you an iron rod that opens Dragomir's chamber but seals you in until the vampire dies. Destroy Dragomir.\nThe tomb then reveals the truth: the woman you traveled with frees the real Hexxat, a vampire, who can join you. Give her Dragomir's cloak so she can walk in daylight.\nLater her employer's messenger Cabrina sends you, through Dragomir's Casque, to the crypts of Durkon in Shou Lung. Help the ghost monk Keno against the mind flayers in the Crypt of Scholars, pass Ki Chin Sang's challenge (open a sarcophagus in the hall) for the key, and take the Claw of the Black Leopard back to Amn.\nIn Throne of Bhaal, fetch the Shroud of the Unproved in Zakhara; L forges the Casque of Entrapment and sends you into Korkorran's labyrinth. Destroy the lich Korkorran to end the quest.",
+  "solution_fr": "Recrutez Hexxat à la Couronne de Cuivre et acceptez de trouver le Tombeau de Dragomir, au sud-est du quartier du cimetière. Entrez avec elle, sinon elle quitte le groupe.\nÀ l'intérieur, Burich l'Inflexible vous donne un bâton en fer qui ouvre la chambre de Dragomir mais vous enferme jusqu'à la mort du vampire. Détruisez Dragomir.\nLe tombeau révèle alors la vérité : la femme qui vous accompagnait libère la vraie Hexxat, une vampire, qui peut vous rejoindre. Donnez-lui la Cape de Dragomir pour qu'elle supporte le jour.\nPlus tard, Cabrina, la messagère de son employeur, vous envoie grâce au Casque de Dragomir dans les cryptes de Durkon, à Shou Lung. Aidez Keno, le moine spectral, contre les flagelleurs mentaux de la Crypte des Érudits, réussissez l'épreuve de Ki Chin Sang (ouvrez un sarcophage du hall) pour la clef, et rapportez la Griffe du Léopard noir en Amn.\nDans Le Trône de Bhaal, trouvez le Linceul de l'Inaccompli à Zakhara ; L forge le Casque d'Asservissement et vous envoie dans le labyrinthe de Korkorran. Détruisez la liche Korkorran pour conclure la quête."
+ },
+ {
+  "title": 100039,
+  "idx": 203,
+  "game": "bg2",
+  "chapter": "2-6",
+  "where_en": "Hidden Refuge",
+  "where_fr": "Refuge Caché",
+  "kind": "companion",
+  "hints_en": [
+   "In Neera's Hidden Refuge, the halfling artificer is out of materials.",
+   "Knocktor the Fizzled needs a silver necklace, two diamonds and a sum of gold.",
+   "A finished talisman can also bring Telana's husband Daxus to the Refuge."
+  ],
+  "hints_fr": [
+   "Au Refuge Caché de Neera, l'artificier petite-personne n'a plus de matériaux.",
+   "Cognor Crépiton a besoin d'un collier d'argent, de deux diamants et d'une somme d'or.",
+   "Un talisman terminé peut aussi amener Daxus, le mari de Telana, au Refuge."
+  ],
+  "solution_en": "During Neera's quest, reach the Hidden Refuge and talk to Knocktor the Fizzled.\nHe asks for a silver necklace, two diamonds and 3,000 gold to craft a Talisman of the Hearthfire, which teleports its owner to the Refuge.\nBring him all three; he gives you the talisman.\nTelana wants her husband Daxus brought from Athkatla. Give him the talisman to send him to the Refuge at once; otherwise Hayes, waiting south of Delosar's Inn, can escort him instead.",
+  "solution_fr": "Pendant la quête de Neera, rejoignez le Refuge Caché et parlez à Cognor Crépiton.\nIl demande un collier d'argent, deux diamants et 3 000 pièces d'or pour fabriquer un talisman de foyer ardent, qui téléporte son porteur au Refuge.\nApportez-lui le tout ; il vous remet le talisman.\nTelana veut que l'on ramène son mari Daxus d'Athkatla. Donnez-lui le talisman pour l'envoyer aussitôt au Refuge ; sinon Hayes, qui attend au sud de l'auberge de Delosar, peut l'escorter."
+ },
+ {
+  "title": 94558,
+  "idx": 204,
+  "game": "bg2",
+  "chapter": "Black Pits II",
+  "where_en": "Black Pits II, kitchen",
+  "where_fr": "Fosses noires II, cuisine",
+  "kind": "side",
+  "hints_en": [
+   "The cook's two sous-chefs are tired of his tyranny.",
+   "The cook is allergic to powdered funguswood; the merchant Bellowgulp may have some.",
+   "Slip the powder into a pot on the stove, or betray the plotters to the cook."
+  ],
+  "hints_fr": [
+   "Les deux aides du cuisinier en ont assez de sa tyrannie.",
+   "Le cuisinier est allergique au fongixyle en poudre ; le marchand Braillegosier en a peut-être.",
+   "Glissez la poudre dans une marmite sur le feu, ou dénoncez les comploteurs au cuisinier."
+  ],
+  "solution_en": "In the kitchen, talk to Marduuk and Short-Order. They ask you to slip powdered funguswood into the cook's food.\nBuy the powder from Bellowgulp and the Concocter at the market (they can also make it from a potion of barkskin).\nWhile the cook is distracted, use the powder on a pot on the stove. He dies, and so does his bodyguard, who shares the allergy.\nAlternative: tell the cook about the plot. He is grateful, but Dennaton hears of it and the two sous-chefs disappear.",
+  "solution_fr": "Dans la cuisine, parlez à Marduuk et Bref-Ordre. Ils vous demandent de glisser du fongixyle en poudre dans la nourriture du cuisinier.\nAchetez la poudre à Braillegosier et au Concocteur, au marché (ils peuvent aussi la tirer d'une potion de peau d'écorce).\nPendant que le cuisinier regarde ailleurs, utilisez la poudre sur une marmite. Il meurt, tout comme son garde du corps, qui a la même allergie.\nAutre choix : dénoncez le complot au cuisinier. Il vous en est reconnaissant, mais Dennaton l'apprend et les deux aides disparaissent."
+ },
+ {
+  "title": 94559,
+  "idx": 205,
+  "game": "bg2",
+  "chapter": "Black Pits II",
+  "where_en": "Black Pits II, kitchen",
+  "where_fr": "Fosses noires II, cuisine",
+  "kind": "side",
+  "hints_en": [
+   "The cook has a favor to ask.",
+   "He wants a bit of the myconid who sells potions in the market.",
+   "Bellowgulp can provide a piece of his partner, the Concocter."
+  ],
+  "hints_fr": [
+   "Le cuisinier a une faveur à vous demander.",
+   "Il veut un morceau du myconide qui vend des potions au marché.",
+   "Braillegosier peut fournir un morceau de son associé, le Concocteur."
+  ],
+  "solution_en": "Talk to the cook in the kitchen; he asks for a small piece of the myconid in the market for a special soup.\nGo to Bellowgulp and the Concocter at the market and obtain a piece of the Concocter.\nBring the myconid flesh back to the cook. He thinks better of you afterwards.",
+  "solution_fr": "Parlez au cuisinier dans la cuisine ; il veut un petit morceau du myconide du marché pour une soupe spéciale.\nAllez voir Braillegosier et le Concocteur au marché et obtenez un morceau du Concocteur.\nRapportez la chair de myconide au cuisinier. Il vous apprécie davantage ensuite."
+ },
+ {
+  "title": 94560,
+  "idx": 206,
+  "game": "bg2",
+  "chapter": "Black Pits II",
+  "where_en": "Black Pits II",
+  "where_fr": "Fosses noires II",
+  "kind": "side",
+  "hints_en": [
+   "The scribe who records the pit fights looks oddly familiar.",
+   "Mention his resemblance to Baeloth; the illithid merchant wants his ring.",
+   "His ring buys the illithid's runestone, which buys Brother Ellraish's key."
+  ],
+  "hints_fr": [
+   "Le scribe qui chronique les combats de l'arène a un air étrangement familier.",
+   "Évoquez sa ressemblance avec Baeloth ; le marchand illithid veut son anneau.",
+   "Son anneau s'échange contre la pierre runique de l'illithid, qui s'échange contre la clef de frère Ellraish."
+  ],
+  "solution_en": "Talk to Stannel Eibor, the scribe of the pit fights. Mentioning that he looks like Baeloth the Entertainer makes him uneasy.\nThe illithid merchant wants Stannel's ring more than anything; recover it from the scribe.\nTrade the ring to the illithid for his runestone, then give the runestone to Brother Ellraish for the key to the Hunters' Lounge.",
+  "solution_fr": "Parlez à Stannel Eibor, le scribe des combats. Évoquer sa ressemblance avec Baeloth l'Esthète le met mal à l'aise.\nLe marchand illithid veut par-dessus tout l'anneau de Stannel ; récupérez-le auprès du scribe.\nÉchangez l'anneau contre la pierre runique de l'illithid, puis donnez la pierre à frère Ellraish contre la clef du salon des Chasseurs."
+ },
+ {
+  "title": 102771,
+  "idx": 207,
+  "game": "bg2",
+  "chapter": "Black Pits II",
+  "where_en": "Black Pits II, market",
+  "where_fr": "Fosses noires II, marché",
+  "kind": "side",
+  "hints_en": [
+   "The potion sellers in the market have a grudge against one of the Planar Hunters.",
+   "Ask how they were captured, and whether they are paid for their work."
+  ],
+  "hints_fr": [
+   "Les vendeurs de potions du marché en veulent à l'un des Chasseurs planaires.",
+   "Demandez-leur comment ils ont été capturés, et s'ils sont payés pour leur travail."
+  ],
+  "solution_en": "Talk to Bellowgulp and the Concocter, the potion merchants in the market.\nAsk about their capture: Joker hurt the Concocter when she caught them, which makes them willing allies against her (they can later sell you a poison for her).\nConvince Bellowgulp that he deserves to be paid for selling potions to the performers to complete the conversation thread.",
+  "solution_fr": "Parlez à Braillegosier et au Concocteur, les marchands de potions du marché.\nInterrogez-les sur leur capture : Baladine a blessé le Concocteur en les capturant, ce qui en fait des alliés contre elle (ils peuvent ensuite vous vendre un poison pour elle).\nConvainquez Braillegosier qu'il mérite d'être payé pour vendre des potions aux combattants afin de compléter ce fil de dialogue."
+ },
+ {
+  "title": 94033,
+  "idx": 208,
+  "game": "bg2",
+  "chapter": "Black Pits II",
+  "where_en": "Black Pits II, barracks",
+  "where_fr": "Fosses noires II, casernements",
+  "kind": "side",
+  "hints_en": [
+   "Brodle knows a guard lieutenant who might back a revolt against Dennaton.",
+   "Meet Leokas in the barracks; he wants a small bribe before he even talks.",
+   "His real price for his soldiers is huge, though it may come down."
+  ],
+  "hints_fr": [
+   "Brodle connaît un lieutenant de la garde qui pourrait soutenir une révolte contre Dennaton.",
+   "Rencontrez Leokas dans les casernements ; il veut un petit pot-de-vin avant même de parler.",
+   "Le vrai prix de ses soldats est énorme, mais il peut baisser."
+  ],
+  "solution_en": "Talk to Brodle and agree to plan a rebellion; he arranges a meeting and tells you when the lieutenant is ready.\nGo to the barracks and meet Leokas. First pay for his silence (100 or 200 gold depending on the talk).\nHe then asks 20,000 gold for his and his soldiers' support; in some conversations he drops it to 15,000.\nPay him: when the revolt begins, Leokas secures the barracks for you and his men fight Dennaton's forces. If you refuse, expect to fight his troops during the uprising.",
+  "solution_fr": "Parlez à Brodle et acceptez de préparer une révolte ; il organise une rencontre et vous prévient quand le lieutenant est prêt.\nAllez aux casernements et rencontrez Leokas. Payez d'abord son silence (100 ou 200 pièces d'or selon la discussion).\nIl demande ensuite 20 000 pièces d'or pour son soutien et celui de ses soldats ; selon la conversation, il peut descendre à 15 000.\nPayez-le : au début de la révolte, Leokas s'empare des casernements pour vous et ses hommes combattent les forces de Dennaton. Si vous refusez, attendez-vous à affronter ses troupes pendant le soulèvement."
+ },
+ {
+  "title": 88267,
+  "idx": 209,
+  "game": "bg2",
+  "chapter": "Black Pits II",
+  "where_en": "Black Pits II",
+  "where_fr": "Fosses noires II",
+  "kind": "side",
+  "hints_en": [
+   "An eccentric monk among the captives offers odd services in Lathander's name.",
+   "Brother Ellraish can brew a poison from powdered quartz and rat droppings.",
+   "He also trades a key to the Hunters' Lounge for the illithid merchant's runestone."
+  ],
+  "hints_fr": [
+   "Un moine excentrique parmi les captifs propose d'étranges services au nom de Lathandre.",
+   "Frère Ellraish peut préparer un poison avec du quartz en poudre et des crottes de rat.",
+   "Il échange aussi une clef du salon des Chasseurs contre la pierre runique du marchand illithid."
+  ],
+  "solution_en": "Talk to Brother Ellraish.\nPoison: he needs powdered quartz and rat droppings. Bring both and he gives you a poison to use on Joker (see The Joke's on Who).\nKey: after a 'vision', he asks for the runestone held by the illithid merchant. The illithid wants Stannel Eibor's ring in exchange. Get the ring, trade it for the runestone, and give the stone to Ellraish.\nHe hands over the key to the Hunters' Lounge upstairs, which also gets you past the stairway guard (see Moving Up).",
+  "solution_fr": "Parlez à frère Ellraish.\nPoison : il lui faut du quartz en poudre et des crottes de rat. Apportez-les et il vous donne un poison à utiliser contre Baladine (voir Tel est pris).\nClef : après une « vision », il réclame la pierre runique du marchand illithid. L'illithid veut en échange l'anneau de Stannel Eibor. Obtenez l'anneau, échangez-le contre la pierre et donnez celle-ci à Ellraish.\nIl vous remet la clef du salon des Chasseurs, à l'étage, qui permet aussi de passer le garde de l'escalier (voir Monter)."
+ },
+ {
+  "title": 95779,
+  "idx": 210,
+  "game": "bg2",
+  "chapter": "Black Pits II",
+  "where_en": "Black Pits II",
+  "where_fr": "Fosses noires II",
+  "kind": "side",
+  "hints_en": [
+   "Two scribes can write a scroll that moves Bannor's mind into another being.",
+   "Dulf Ebonbeard wants rare components; Gerrold Darkfellow wants gold, but promises less.",
+   "Either way you need something unique to Bannor: look in his room upstairs."
+  ],
+  "hints_fr": [
+   "Deux scribes peuvent rédiger un parchemin qui transfère l'esprit de Bannor dans un autre être.",
+   "Dulf Ténébarbe veut des ingrédients rares ; Gerrold Sombr'homme veut de l'or, mais garantit moins.",
+   "Dans les deux cas, il faut un objet propre à Bannor : fouillez sa chambre à l'étage."
+  ],
+  "solution_en": "To weaken the Planar Hunter Bannor Kaxazel, get a spirit transference scroll.\nOption 1: Dulf Ebonbeard (lucid only after his salve, see his quest) wants a wyrm tooth, a carrion crawler egg, ettin-skin parchment and an item of Bannor's, plus a large sum of gold.\nOption 2: Gerrold Darkfellow asks only for an item of Bannor's and 4,000 gold, but cannot guarantee the result.\nThe item: a shard of the broken mirror in Bannor's room, in the Planar Hunters' quarters upstairs (see Moving Up).\nAfter delivery the scribe works for a while, then gives you the scroll. Only a spellcaster can use it: read it on Bannor when you face him.",
+  "solution_fr": "Pour affaiblir le Chasseur planaire Bannor Kaxazel, obtenez un parchemin de transfert d'esprit.\nOption 1 : Dulf Ténébarbe (lucide seulement après son baume, voir sa quête) veut une dent de wyrm, un œuf de ver charognard, un parchemin en peau d'ettin et un objet de Bannor, plus une grosse somme d'or.\nOption 2 : Gerrold Sombr'homme demande seulement un objet de Bannor et 4 000 pièces d'or, mais sans garantie sur l'effet.\nL'objet : un éclat du miroir brisé de la chambre de Bannor, dans les quartiers des Chasseurs planaires à l'étage (voir Monter).\nAprès livraison, le scribe travaille un moment puis vous remet le parchemin. Seul un lanceur de sorts peut s'en servir : lisez-le sur Bannor lors de l'affrontement."
+ },
+ {
+  "title": 95872,
+  "idx": 211,
+  "game": "bg2",
+  "chapter": "Black Pits II",
+  "where_en": "Black Pits II",
+  "where_fr": "Fosses noires II",
+  "kind": "side",
+  "hints_en": [
+   "A proud gladiator among the performers loves to talk about himself.",
+   "Telling Symm Haximus the plain truth about gladiators touches a nerve.",
+   "Fight beside him in the arena and he will share his secrets."
+  ],
+  "hints_fr": [
+   "Un gladiateur orgueilleux parmi les combattants adore parler de lui.",
+   "Dire à Symm Haximus la simple vérité sur les gladiateurs le touche au vif.",
+   "Combattez à ses côtés dans l'arène et il vous confiera ses secrets."
+  ],
+  "solution_en": "Talk to Symm Haximus, a self-styled professional gladiator.\nTelling him that gladiators are only slaves upsets him; this may be useful later.\nHe offers to share some of his secrets if he fights alongside you: take him into the party for arena battles, then talk to him again between fights.",
+  "solution_fr": "Parlez à Symm Haximus, qui se dit gladiateur professionnel.\nLui dire que les gladiateurs ne sont que des esclaves le contrarie ; cela peut servir plus tard.\nIl propose de vous révéler certains secrets s'il combat avec vous : prenez-le dans le groupe pour les combats de l'arène, puis reparlez-lui entre les combats."
+ },
+ {
+  "title": 96007,
+  "idx": 212,
+  "game": "bg2",
+  "chapter": "Black Pits II",
+  "where_en": "Black Pits II",
+  "where_fr": "Fosses noires II",
+  "kind": "side",
+  "hints_en": [
+   "A self-proclaimed bringer of justice is among the performers.",
+   "Mercy Whitedove knows something about the arena guards' loyalty.",
+   "Fight at her side in the arena to hear more about her past."
+  ],
+  "hints_fr": [
+   "Une justicière autoproclamée se trouve parmi les combattants.",
+   "Mercy Blanche-Colombe en sait long sur la loyauté des gardes de l'arène.",
+   "Combattez à ses côtés dans l'arène pour en apprendre plus sur son passé."
+  ],
+  "solution_en": "Talk to Mercy Whitedove.\nShe tells you the arena guards have no real loyalty to Dennaton and cannot stand against the performers without the Winged behind them: useful for a rebellion.\nShe will share more of her past if she fights beside you: take her into the party for arena battles, then talk to her again.",
+  "solution_fr": "Parlez à Mercy Blanche-Colombe.\nElle vous apprend que les gardes de l'arène ne sont guère loyaux envers Dennaton et ne peuvent tenir face aux combattants sans l'Ailée : utile pour une révolte.\nElle vous en dira plus sur son passé si elle combat avec vous : prenez-la dans le groupe pour les combats de l'arène, puis reparlez-lui."
+ },
+ {
+  "title": 96026,
+  "idx": 213,
+  "game": "bg2",
+  "chapter": "Black Pits II",
+  "where_en": "Black Pits II",
+  "where_fr": "Fosses noires II",
+  "kind": "side",
+  "hints_en": [
+   "Brother Ellraish can get you into the Hunters' Lounge, for a price.",
+   "The illithid merchant will part with his runestone for something he covets.",
+   "He wants the ring of Stannel Eibor, the pit scribe."
+  ],
+  "hints_fr": [
+   "Frère Ellraish peut vous faire entrer au salon des Chasseurs, contre un prix.",
+   "Le marchand illithid cédera sa pierre runique contre un objet qu'il convoite.",
+   "Il veut l'anneau de Stannel Eibor, le scribe de l'arène."
+  ],
+  "solution_en": "Brother Ellraish wants the illithid merchant's runestone in exchange for a key to the Hunters' Lounge.\nTalk to the illithid merchant: he agrees to trade the runestone for Stannel Eibor's ring.\nGet the ring from Stannel, give it to the illithid, then bring the runestone to Ellraish.\nHe gives you the key to the Hunters' Lounge upstairs.",
+  "solution_fr": "Frère Ellraish veut la pierre runique du marchand illithid en échange d'une clef du salon des Chasseurs.\nParlez au marchand illithid : il accepte d'échanger la pierre contre l'anneau de Stannel Eibor.\nObtenez l'anneau de Stannel, donnez-le à l'illithid, puis apportez la pierre à Ellraish.\nIl vous remet la clef du salon des Chasseurs, à l'étage."
+ },
+ {
+  "title": 102772,
+  "idx": 214,
+  "game": "bg2",
+  "chapter": "Black Pits II",
+  "where_en": "Black Pits II, stairway to the upper floor",
+  "where_fr": "Fosses noires II, escalier vers l'étage",
+  "kind": "side",
+  "hints_en": [
+   "Only the Planar Hunters and their servants, the Nosers, may climb the guarded stair.",
+   "A Noser will sell uniforms; Ellraish's key or a lockpick also open the door.",
+   "If the guard captain stops you, a bribe or a dirty job for him will clear the way."
+  ],
+  "hints_fr": [
+   "Seuls les Chasseurs planaires et leurs serviteurs, les Hautains, peuvent emprunter l'escalier gardé.",
+   "Un Hautain vend des uniformes ; la clef d'Ellraish ou un crochetage ouvrent aussi la porte.",
+   "Si le capitaine de la garde vous arrête, un pot-de-vin ou une sale besogne pour lui vous ouvrira la voie."
+  ],
+  "solution_en": "A guarded door blocks the stairs to the quarters of Dennaton and the Planar Hunters. Ways through:\n- Buy Noser uniforms from one of the Nosers and walk past the guard (return the uniforms afterwards).\n- Use Brother Ellraish's key.\n- Pick the lock and deal with the guard.\nThe guard captain may still stop you in the hall. Bribe him, or accept his task: kill Dennaton's nephew Branson, a guard who rests on his bunk in the guard quarters when off duty.\nKill Branson, or spare him: he gives you his family ring as proof. Either way the captain then lets you through. Upstairs, avoid drawing suspicion.",
+  "solution_fr": "Une porte gardée bloque l'escalier des quartiers de Dennaton et des Chasseurs planaires. Moyens de passer :\n- Achetez des uniformes de Hautains à l'un d'eux et passez devant le garde (remettez ensuite les uniformes en place).\n- Utilisez la clef de frère Ellraish.\n- Crochetez la serrure et occupez-vous du garde.\nLe capitaine de la garde peut encore vous arrêter dans le couloir. Soudoyez-le, ou acceptez sa mission : tuer Branson, le neveu de Dennaton, un garde qui se repose sur sa couchette dans les quartiers des gardes.\nTuez Branson, ou épargnez-le : il vous donne son anneau de famille comme preuve. Dans les deux cas, le capitaine vous laisse passer. À l'étage, évitez d'éveiller les soupçons."
+ },
+ {
+  "title": 94561,
+  "idx": 215,
+  "game": "bg2",
+  "chapter": "Black Pits II",
+  "where_en": "Black Pits II",
+  "where_fr": "Fosses noires II",
+  "kind": "side",
+  "hints_en": [
+   "Joker, one of the Planar Hunters, loves a drink; several captives hate her.",
+   "Many people can make or sell a poison; you also need a drink and a messenger.",
+   "Voghiln or a Noser can lure Joker with a special drink or a drinking contest."
+  ],
+  "hints_fr": [
+   "Baladine, l'une des Chasseurs planaires, aime boire ; plusieurs captifs la détestent.",
+   "Beaucoup de gens peuvent fabriquer ou vendre un poison ; il faut aussi une boisson et un messager.",
+   "Voghiln ou un Hautain peut attirer Baladine avec une boisson spéciale ou un concours de boisson."
+  ],
+  "solution_en": "Goal: poison Joker to weaken Dennaton's enforcers before the final fights.\n1. Get a poison, any one of: Bellowgulp and the Concocter (ready-made), Brother Ellraish (powdered quartz, rat droppings), Gezzthemin (distilled alcohol, lotus root), Feldrak (rose petals, wine vinegar), or the rat poison in a kitchen cupboard.\n2. Get a drink to hide it in: the ceremonial ale from Molzahn, the priest of Tymora (he holds a grudge against Joker), or some fine spirits.\n3. Send word to Joker: Voghiln drinks with her and can pass on a drink offer or a drinking-contest challenge; a Noser can do the same.\nIf she drinks it, she is weakened for the coming battle. If the attempt fails, you must find another way to weaken the Hunters.",
+  "solution_fr": "But : empoisonner Baladine pour affaiblir les gros bras de Dennaton avant les derniers combats.\n1. Obtenez un poison, au choix : Braillegosier et le Concocteur (tout prêt), frère Ellraish (quartz en poudre, crottes de rat), Gezzthemin (alcool distillé, racine de lotus), Feldrak (pétales de rose, vinaigre), ou la mort-aux-rats d'un placard de la cuisine.\n2. Trouvez une boisson pour le cacher : la bière de cérémonie de Molzahn, le prêtre de Tymora (il en veut à Baladine), ou des spiritueux.\n3. Faites prévenir Baladine : Voghiln boit avec elle et peut transmettre une offre de boisson ou un défi de concours de boisson ; un Hautain peut le faire aussi.\nSi elle boit, elle sera affaiblie lors du combat à venir. En cas d'échec, il faudra un autre moyen d'affaiblir les Chasseurs."
+ },
+ {
+  "title": 95658,
+  "idx": 216,
+  "game": "bg2",
+  "chapter": "Black Pits II",
+  "where_en": "Black Pits II",
+  "where_fr": "Fosses noires II",
+  "kind": "side",
+  "hints_en": [
+   "The old mage called 'The Ancient Threat' forgets you mid-sentence.",
+   "A salve could clear Dulf Ebonbeard's mind for a while; ask the pit merchants.",
+   "The Concocter can brew Teodgren's Salve of Senile Serenity for a small fee."
+  ],
+  "hints_fr": [
+   "Le vieux mage surnommé « L'Antique Menace » vous oublie au milieu d'une phrase.",
+   "Un baume pourrait éclaircir l'esprit de Dulf Ténébarbe un moment ; demandez aux marchands de l'arène.",
+   "Le Concocteur peut préparer le baume de sénilité sereine de Teodgren pour une petite somme."
+  ],
+  "solution_en": "Dulf Ebonbeard is too senile to be useful.\nGo to Bellowgulp and the Concocter in the market and buy Teodgren's Salve of Senile Serenity (about 100 gold).\nGive it to Dulf: his mind clears for a time, and he can then help you, notably with the spirit transference scroll against Bannor (see Trading Places).",
+  "solution_fr": "Dulf Ténébarbe est trop sénile pour être utile.\nAllez voir Braillegosier et le Concocteur au marché et achetez le baume de sénilité sereine de Teodgren (environ 100 pièces d'or).\nDonnez-le à Dulf : son esprit s'éclaircit un temps et il peut alors vous aider, notamment avec le parchemin de transfert d'esprit contre Bannor (voir Marchands)."
+ }
+]

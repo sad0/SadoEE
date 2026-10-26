@@ -1,0 +1,842 @@
+[
+ {
+  "title": 231364,
+  "idx": 297,
+  "game": "bg1",
+  "chapter": "2-3",
+  "where_en": "Beregost",
+  "where_fr": "Bérégost",
+  "kind": "side",
+  "hints_en": [
+   "A worried wife in Beregost waits for news of her husband, who travelled south to Amn.",
+   "Any news of Roe will come from the southern road toward Amn.",
+   "Bring Mirianne the letter found on a dead halfling messenger."
+  ],
+  "hints_fr": [
+   "Une épouse inquiète de Bérégost attend des nouvelles de son mari, parti au sud vers l'Amn.",
+   "Les nouvelles de Roe viendront de la route du sud, vers l'Amn.",
+   "Apportez à Mirianne la lettre trouvée sur un messager petite-personne mort."
+  ],
+  "solution_en": "Talk to Mirianne in her house in Beregost: her husband Roe left for Amn and she fears for him. Promise to keep an eye out.\nOn the road south toward Amn, a band of ogres attacks a halfling messenger. Drive them off or kill them, then search the body: a letter from Roe is sewn into his vest (see Mirianne's Letter).\nReturn to Mirianne and hand over the letter. It brings good news, and she thanks you with a simple protective ring.",
+  "solution_fr": "Parlez à Mirianne chez elle, à Bérégost : son mari Roe est parti en Amn et elle s'inquiète. Promettez-lui d'ouvrir l'œil.\nSur la route du sud vers l'Amn, une bande d'ogres s'en prend à un messager petite-personne. Chassez-les ou tuez-les, puis fouillez le corps : une lettre de Roe est cousue dans son gilet (voir Une lettre pour Mirianne).\nRetournez voir Mirianne et remettez-lui la lettre. Elle apporte de bonnes nouvelles, et Mirianne vous remercie avec un simple anneau protecteur."
+ },
+ {
+  "title": 231365,
+  "idx": 298,
+  "game": "bg1",
+  "chapter": "2-3",
+  "where_en": "Road to Amn / Beregost",
+  "where_fr": "Route de l'Amn / Bérégost",
+  "kind": "side",
+  "hints_en": [
+   "Ogres on the road toward Amn have just killed a small traveller.",
+   "Search the halfling messenger's body carefully once the ogres are gone.",
+   "The letter is for Mirianne of Beregost: deliver it to her."
+  ],
+  "hints_fr": [
+   "Des ogres sur la route de l'Amn viennent de tuer un petit voyageur.",
+   "Fouillez bien le corps du messager petite-personne une fois les ogres partis.",
+   "La lettre est pour Mirianne de Bérégost : portez-la-lui."
+  ],
+  "solution_en": "In the wilderness along the southern road toward Amn, you come upon ogres attacking a halfling messenger. Fight them off; ogres hit hard, so keep weak characters back.\nSearch the dead halfling: a letter from Roe, addressed to Mirianne of Beregost, is sewn into his vest.\nTake it to Mirianne in Beregost. This also completes Mirianne's Husband and earns you her ring.",
+  "solution_fr": "Dans la nature, le long de la route du sud vers l'Amn, vous tombez sur des ogres qui attaquent un messager petite-personne. Repoussez-les ; les ogres frappent fort, gardez vos personnages fragiles en retrait.\nFouillez le petit-homme mort : une lettre de Roe, adressée à Mirianne de Bérégost, est cousue dans son gilet.\nApportez-la à Mirianne à Bérégost. Cela termine aussi L'époux de Mirianne et vous vaut son anneau."
+ },
+ {
+  "title": 231366,
+  "idx": 299,
+  "game": "bg1",
+  "chapter": "5",
+  "where_en": "Baldur's Gate, eastern sewers",
+  "where_fr": "Porte de Baldur, égouts est",
+  "kind": "side",
+  "hints_en": [
+   "Scar of the Flaming Fist is worried about people vanishing in the eastern part of the city.",
+   "The answer lies below the streets, in the sewers under the east side of Baldur's Gate.",
+   "An ogre mage lairs down there: kill it and report to Scar."
+  ],
+  "hints_fr": [
+   "La Balafre, du Poing Enflammé, s'inquiète de disparitions dans l'est de la ville.",
+   "La réponse se trouve sous les rues, dans les égouts des quartiers est de la Porte de Baldur.",
+   "Un ogre mage se terre là-dessous : tuez-le et faites votre rapport à la Balafre."
+  ],
+  "solution_en": "Scar, waiting outside the Flaming Fist compound in the southwest of Baldur's Gate, asks you to find out why citizens are disappearing on the east side.\nEnter the sewers from a grate in the eastern districts and explore them. Deep inside you meet the culprit, an ogre mage, with its minions. It casts spells and can turn invisible: dispel or detect it and focus it down.\nReturn to Scar outside the Flaming Fist barracks to report and collect your reward.",
+  "solution_fr": "La Balafre, qui attend devant les baraquements du Poing Enflammé au sud-ouest de la Porte de Baldur, vous demande d'enquêter sur les disparitions dans l'est de la ville.\nDescendez dans les égouts par une grille des quartiers est et explorez-les. Au fond, vous trouvez le coupable, un ogre mage, avec ses sbires. Il lance des sorts et peut devenir invisible : révélez-le et concentrez vos attaques sur lui.\nRetournez voir la Balafre devant les baraquements du Poing Enflammé pour faire votre rapport et toucher votre récompense."
+ },
+ {
+  "title": 231367,
+  "idx": 300,
+  "game": "bg1",
+  "chapter": "1-3",
+  "where_en": "Peldvale",
+  "where_fr": "Peldvale",
+  "kind": "side",
+  "hints_en": [
+   "A Flaming Fist soldier is hunting someone in the woods east of the main road.",
+   "His target is a drow cleric; charm him and he will tell you why.",
+   "When he attacks the drow, take a side: she joins you if you help her."
+  ],
+  "hints_fr": [
+   "Un soldat du Poing Enflammé traque quelqu'un dans les bois à l'est de la route principale.",
+   "Sa cible est une prêtresse drow ; charmez-le et il vous dira pourquoi.",
+   "Quand il attaque la drow, choisissez votre camp : elle vous rejoint si vous l'aidez."
+  ],
+  "solution_en": "In Peldvale you meet the drow Viconia, soon followed by a Flaming Fist mercenary who wants her dead.\nIf you charm him before the fight, he explains that his unit is chasing a drow who murdered a family. That is all this journal entry adds.\nYou can kill the soldier and let Viconia join the party (she is evil), or let him fight her. Killing a Flaming Fist member may cost reputation, so decide before swords come out.",
+  "solution_fr": "Dans le Peldvale, vous rencontrez la drow Viconia, bientôt suivie d'un mercenaire du Poing Enflammé qui veut sa mort.\nSi vous le charmez avant le combat, il explique que son unité poursuit une elfe noire qui a massacré une famille. C'est tout ce qu'ajoute cette entrée du journal.\nVous pouvez tuer le soldat et laisser Viconia rejoindre le groupe (elle est mauvaise), ou le laisser l'affronter. Tuer un membre du Poing Enflammé peut coûter de la réputation : décidez avant que les armes ne parlent."
+ },
+ {
+  "title": 231368,
+  "idx": 301,
+  "game": "bg1",
+  "chapter": "5",
+  "where_en": "Baldur's Gate",
+  "where_fr": "Porte de Baldur",
+  "kind": "side",
+  "hints_en": [
+   "A mother in Baldur's Gate wants a good luck charm delivered to her runaway son.",
+   "Euric likes to hang around one of the city's many taverns.",
+   "Give Euric the amulet, then bring his message back to Nadine."
+  ],
+  "hints_fr": [
+   "Une mère de la Porte de Baldur veut faire livrer un porte-bonheur à son fils fugueur.",
+   "Euric traîne dans l'une des nombreuses tavernes de la ville.",
+   "Donnez l'amulette à Euric, puis rapportez son message à Nadine."
+  ],
+  "solution_en": "Nadine of Baldur's Gate gives you an amulet for her son Euric, who has run off again.\nVisit the city's taverns until you find Euric. Hand him the amulet; he takes it without much joy and asks you to tell his mother he misses her.\nGo back to Nadine and tell her he is safe. She rewards you with another amulet.",
+  "solution_fr": "Nadine, de la Porte de Baldur, vous confie une amulette pour son fils Euric, qui s'est encore enfui.\nFaites le tour des tavernes de la ville jusqu'à trouver Euric. Remettez-lui l'amulette ; il l'accepte sans enthousiasme et vous demande de dire à sa mère qu'elle lui manque.\nRetournez voir Nadine et dites-lui qu'il va bien. Elle vous récompense avec une autre amulette."
+ },
+ {
+  "title": 231369,
+  "idx": 302,
+  "game": "bg1",
+  "chapter": "5",
+  "where_en": "Baldur's Gate",
+  "where_fr": "Porte de Baldur",
+  "kind": "side",
+  "hints_en": [
+   "A thief named Narlen Darkwalk is looking for a partner with light fingers; only a thief may deal with him.",
+   "Keep the rest of the party out of sight, and never hurt a city guard during the job.",
+   "On the first job, raise the alarm when trouble comes; on the second, you do the stealing yourself."
+  ],
+  "hints_fr": [
+   "Un voleur nommé Narlen Marchombre cherche un partenaire aux doigts agiles ; seul un voleur peut traiter avec lui.",
+   "Gardez le reste du groupe hors de vue, et ne blessez jamais un garde de la ville pendant le coup.",
+   "Au premier coup, donnez l'alerte en cas de problème ; au second, c'est vous qui volez."
+  ],
+  "solution_en": "A thief of your party meets Narlen Darkwalk near the Splurging Sturgeon; the others must stay out of sight or he calls it off.\nJob 1: at the De'Mallonblade house, Narlen and Rededge go in while you watch. When a guard comes, call the alarm and run; do not fight. Failing to warn them gets Rededge killed and turns Narlen against you; killing a guard ends the partnership.\nMeet at the Thieves' Guild. If it went well, Narlen plans a second job: meet by the Blade and Stars, again with only the thief visible, then sneak into Gantolandan's place yourself and steal his valuable rogue stone.\nReturn to the Thieves' Guild to split the loot and earn the guild's respect.",
+  "solution_fr": "Un voleur de votre groupe rejoint Narlen Marchombre près de l'Esturgeon Sautillant ; les autres doivent rester cachés, sinon il annule.\nCoup 1 : chez les De'Mallonblade, Narlen et le Rouge entrent pendant que vous faites le guet. Quand un garde arrive, donnez l'alerte et fuyez, sans combattre. Si vous ne prévenez pas, le Rouge meurt et Narlen se retourne contre vous ; tuer un garde met fin à l'association.\nRetrouvez-les à la Guilde des Voleurs. Si tout s'est bien passé, Narlen prépare un second coup : rendez-vous à la Lame et les Étoiles, toujours avec seulement le voleur en vue, puis entrez vous-même chez Gantolandan pour voler sa précieuse pierre.\nRevenez à la Guilde des Voleurs pour partager le butin et gagner le respect de la guilde."
+ },
+ {
+  "title": 231370,
+  "idx": 303,
+  "game": "bg1",
+  "chapter": "5",
+  "where_en": "Baldur's Gate",
+  "where_fr": "Porte de Baldur",
+  "kind": "side",
+  "hints_en": [
+   "A youngster on the streets of Baldur's Gate pays good gold just for a meeting.",
+   "Accept Niklos's offer and follow him to the building he leads you to.",
+   "If someone asks for a password, answer Fafhrd."
+  ],
+  "hints_fr": [
+   "Un jeune dans les rues de la Porte de Baldur paie bien juste pour un rendez-vous.",
+   "Acceptez l'offre de Niklos et suivez-le jusqu'au bâtiment où il vous mène.",
+   "Si l'on vous demande un mot de passe, répondez Fafhrd."
+  ],
+  "solution_en": "In Baldur's Gate a youngster named Niklos approaches you and offers 50 gold to meet his master.\nIf you refuse, the entry closes there. If you accept, take the gold and follow him to a nondescript building.\nWhen you are asked for the password, give Fafhrd and you are let in to meet his master. What you do with the offer you hear inside is up to you.",
+  "solution_fr": "À la Porte de Baldur, un jeune nommé Niklos vous aborde et vous offre 50 pièces d'or pour rencontrer son maître.\nSi vous refusez, l'affaire s'arrête là. Si vous acceptez, prenez l'or et suivez-le jusqu'à un bâtiment anodin.\nQuand on vous demande le mot de passe, répondez Fafhrd pour être admis auprès de son maître. Libre à vous ensuite d'accepter ou non ce qu'il vous propose."
+ },
+ {
+  "title": 231371,
+  "idx": 304,
+  "game": "bg1",
+  "chapter": "5",
+  "where_en": "Baldur's Gate, docks",
+  "where_fr": "Porte de Baldur, port",
+  "kind": "side",
+  "hints_en": [
+   "A half-elf dock worker has lost her brand new gauntlets.",
+   "She lost them somewhere on her way between the harbor and her warehouse.",
+   "Search the ground and containers along the docks, then bring them back to Noralee."
+  ],
+  "hints_fr": [
+   "Une demi-elfe qui travaille au port a perdu ses gantelets neufs.",
+   "Elle les a perdus quelque part entre le port et son entrepôt.",
+   "Fouillez le sol et les conteneurs le long des quais, puis rapportez-les à Noralee."
+  ],
+  "solution_en": "Noralee, a half-elf working in the harbor district of Baldur's Gate, lost her new gauntlets somewhere between the harbor and the warehouse where she works.\nWalk the docks between those two places and check the ground and nearby containers until you find a pair of gauntlets.\nReturn them to Noralee for a small reward.",
+  "solution_fr": "Noralee, une demi-elfe qui travaille dans le quartier du port de la Porte de Baldur, a perdu ses gantelets neufs entre le port et l'entrepôt où elle travaille.\nParcourez les quais entre ces deux endroits et examinez le sol et les conteneurs voisins jusqu'à trouver une paire de gantelets.\nRapportez-les à Noralee pour une petite récompense."
+ },
+ {
+  "title": 231372,
+  "idx": 305,
+  "game": "bg1",
+  "chapter": "3-4",
+  "where_en": "Beregost",
+  "where_fr": "Bérégost",
+  "kind": "side",
+  "hints_en": [
+   "A girl named Chloe carries a message for you from the Flaming Fist.",
+   "Officer Vai waits at the Jovial Juggler in Beregost.",
+   "Vai pays a bounty for the scalps of bandits: keep the ones you find."
+  ],
+  "hints_fr": [
+   "Une fille nommée Chloé vous apporte un message du Poing Enflammé.",
+   "L'officier Vaï vous attend au Jongleur Jovial, à Bérégost.",
+   "Vaï paie une prime pour les scalps de bandits : gardez ceux que vous trouvez."
+  ],
+  "solution_en": "Chloe tells you that Officer Vai of the Flaming Fist wants to see you at the Jovial Juggler in Beregost.\nGo to the inn and talk to Vai. She is collecting bounties on the bandits plaguing the region and pays for every bandit scalp you bring her.\nBandits killed around the Sword Coast often carry scalps; keep them and sell them to Vai whenever you pass through Beregost.",
+  "solution_fr": "Chloé vous apprend que l'officier Vaï du Poing Enflammé veut vous voir au Jongleur Jovial, à Bérégost.\nAllez à l'auberge et parlez à Vaï. Elle offre des primes contre les bandits qui écument la région et paie chaque scalp de bandit que vous lui apportez.\nLes bandits tués sur la Côte des Épées portent souvent des scalps : gardez-les et vendez-les à Vaï à chaque passage à Bérégost."
+ },
+ {
+  "title": 231373,
+  "idx": 306,
+  "game": "bg1",
+  "chapter": "any",
+  "where_en": "Sword Coast wilderness",
+  "where_fr": "Nature de la Côte des Épées",
+  "kind": "side",
+  "hints_en": [
+   "A confused dwarven fighter named Sarhedra has a warning about ogres.",
+   "The ogre camp lies to the south of where you meet her.",
+   "Kill the ogres and report back, but do not expect much of a reward."
+  ],
+  "hints_fr": [
+   "Une combattante naine un peu confuse, Sarhedra, a un avertissement au sujet d'ogres.",
+   "Le campement d'ogres se trouve au sud de l'endroit où vous la rencontrez.",
+   "Tuez les ogres et revenez la voir, sans espérer grand-chose en échange."
+  ],
+  "solution_en": "Talk to Sarhedra, a muddled dwarven fighter you meet in the wilderness. She warns you of an ogre encampment to the south.\nHead south and wipe out the ogres. They hit hard: let tanks hold them and use ranged attacks and spells.\nReport back to Sarhedra. She gets so flustered looking for another job for you that she forgets to pay; the experience from the ogres is your only real reward.",
+  "solution_fr": "Parlez à Sarhedra, une combattante naine un peu confuse rencontrée dans la nature. Elle vous signale un campement d'ogres vers le sud.\nDescendez au sud et exterminez les ogres. Ils frappent fort : laissez vos guerriers les retenir et utilisez armes à distance et sorts.\nRetournez voir Sarhedra. Elle s'embrouille tant à chercher une autre tâche pour vous qu'elle oublie de vous payer ; l'expérience tirée des ogres est votre seule vraie récompense."
+ },
+ {
+  "title": 231374,
+  "idx": 307,
+  "game": "bg1",
+  "chapter": "7",
+  "where_en": "Baldur's Gate, Undercellar",
+  "where_fr": "Porte de Baldur, Caves Souterraines",
+  "kind": "main",
+  "hints_en": [
+   "Sarevok's lover Cythandria knows where he spends his time.",
+   "She points you to the Undercellar, a hidden brothel.",
+   "Reach the Undercellar through the sewers of Baldur's Gate."
+  ],
+  "hints_fr": [
+   "Cythandria, la maîtresse de Sarevok, sait où il passe son temps.",
+   "Elle vous oriente vers les Caves Souterraines, une maison close cachée.",
+   "On atteint les Caves Souterraines par les égouts de la Porte de Baldur."
+  ],
+  "solution_en": "While searching Sarevok's base in Baldur's Gate, you confront Cythandria. She reveals that Sarevok can be found at the Undercellar, a brothel reached through the city's sewers.\nGo down into the sewers and find the way to the Undercellar. Sarevok himself is not waiting for you there, but his assassins Slythe and Krystin are (see Slythe and Krystin), and their papers lead you on toward the Ducal Palace.",
+  "solution_fr": "En fouillant la base de Sarevok à la Porte de Baldur, vous affrontez Cythandria. Elle révèle qu'on peut trouver Sarevok aux Caves Souterraines, une maison close accessible par les égouts de la ville.\nDescendez dans les égouts et trouvez le chemin des Caves Souterraines. Sarevok lui-même ne vous y attend pas, mais ses assassins Slythe et Krystin, si (voir Slythe et Krystin), et leurs papiers vous mènent ensuite vers le palais ducal."
+ },
+ {
+  "title": 231375,
+  "idx": 308,
+  "game": "bg1",
+  "chapter": "2",
+  "where_en": "Nashkel",
+  "where_fr": "Nashkel",
+  "kind": "side",
+  "hints_en": [
+   "The bounty officer in Nashkel mistakes you for a hunter named Greywolf.",
+   "Taking his money now has a price later.",
+   "Set him straight and refuse the 200 gold if you want the full bounty on Prism."
+  ],
+  "hints_fr": [
+   "Le collecteur de primes de Nashkel vous prend pour un chasseur nommé Loup-Gris.",
+   "Prendre son argent maintenant se paie plus tard.",
+   "Détrompez-le et refusez les 200 pièces d'or si vous voulez toute la prime sur Prisme."
+  ],
+  "solution_en": "In his office in Nashkel, Oublek mistakes you for Greywolf, a bounty hunter he hired, and offers you money.\nHonest choice: tell him he has the wrong person. You give up the quick gold, but he will later pay you the full bounty for the emeralds Prism stole (see Prism the Sculptor).\nGreedy choice: take the 200 gold. It is easy money, but when you bring back the emeralds Oublek refuses to pay you (see Payment Denied!), so you lose more than you gained.",
+  "solution_fr": "Dans son bureau de Nashkel, Oublek vous prend pour Loup-Gris, un chasseur de primes qu'il a engagé, et vous offre de l'argent.\nChoix honnête : dites-lui qu'il se trompe de personne. Vous renoncez à l'or facile, mais il vous paiera plus tard la prime entière pour les émeraudes volées par Prisme (voir Prisme le sculpteur).\nChoix cupide : prenez les 200 pièces d'or. L'argent est facile, mais quand vous rapportez les émeraudes, Oublek refuse de vous payer (voir Récompense refusée !), et vous y perdez."
+ },
+ {
+  "title": 231376,
+  "idx": 309,
+  "game": "bg1",
+  "chapter": "any",
+  "where_en": "Sword Coast",
+  "where_fr": "Côte des Épées",
+  "kind": "side",
+  "hints_en": [
+   "An eager young man named Palin wants help routing some monsters.",
+   "Let him lead the way, but keep your guard up.",
+   "It is an ambush: be ready to fight as soon as you arrive."
+  ],
+  "hints_fr": [
+   "Un jeune homme enthousiaste, Palin, veut de l'aide pour chasser des monstres.",
+   "Laissez-le vous guider, mais restez sur vos gardes.",
+   "C'est une embuscade : soyez prêt à combattre dès votre arrivée."
+  ],
+  "solution_en": "Talk to Palin, a young man who claims some monsters must be routed before they do harm. Agree to help and he leads the way.\nPrepare the party before following him: buff, and keep fragile characters behind.\nWhen you reach the spot, the creatures ambush you and fight cleverly. Defeat them to end the episode.",
+  "solution_fr": "Parlez à Palin, un jeune homme qui affirme qu'il faut chasser des monstres avant qu'ils ne fassent du mal. Acceptez de l'aider et il ouvre la marche.\nPréparez le groupe avant de le suivre : sorts de protection, personnages fragiles en arrière.\nArrivés sur place, les créatures vous tendent une embuscade et se battent avec ruse. Venez-en à bout pour clore l'épisode."
+ },
+ {
+  "title": 231377,
+  "idx": 310,
+  "game": "bg1",
+  "chapter": "2",
+  "where_en": "Nashkel",
+  "where_fr": "Nashkel",
+  "kind": "side",
+  "hints_en": [
+   "This entry appears when Oublek refuses to pay you a bounty.",
+   "He remembers the 200 gold he gave you by mistake.",
+   "Next time, refuse money that was meant for Greywolf."
+  ],
+  "hints_fr": [
+   "Cette entrée apparaît quand Oublek refuse de vous verser une prime.",
+   "Il se souvient des 200 pièces d'or qu'il vous a données par erreur.",
+   "La prochaine fois, refusez l'argent destiné à Loup-Gris."
+  ],
+  "solution_en": "This is the bad outcome of Oublek the Bounty Officer. If you accepted the 200 gold Oublek meant for Greywolf, he will not pay the bounty when you return Prism's emeralds to him in Nashkel.\nThere is no way to recover the reward afterwards. To avoid it, refuse the money when Oublek first mistakes you for Greywolf, then claim the full bounty for the emeralds.",
+  "solution_fr": "C'est la mauvaise issue de Oublek, le collecteur de primes. Si vous avez accepté les 200 pièces d'or destinées à Loup-Gris, Oublek refuse de payer la prime quand vous lui rapportez les émeraudes de Prisme, à Nashkel.\nImpossible de récupérer la récompense ensuite. Pour l'éviter, refusez l'argent quand Oublek vous prend pour Loup-Gris, puis réclamez la prime entière pour les émeraudes."
+ },
+ {
+  "title": 231378,
+  "idx": 311,
+  "game": "bg1",
+  "chapter": "1-2",
+  "where_en": "Beregost / near High Hedge",
+  "where_fr": "Bérégost / près de Haute-Haie",
+  "kind": "side",
+  "hints_en": [
+   "A halfling named Perdue lost his short sword to some gnolls.",
+   "The gnolls lurk on the plains west of Beregost, close to High Hedge.",
+   "Kill the gnolls, take the sword, and decide whether to give it back."
+  ],
+  "hints_fr": [
+   "Un petit-homme nommé Perdué s'est fait voler son épée courte par des gnolls.",
+   "Les gnolls rôdent dans les plaines à l'ouest de Bérégost, près de Haute-Haie.",
+   "Tuez les gnolls, prenez l'épée et décidez si vous la lui rendez."
+  ],
+  "solution_en": "Talk to Perdue the halfling; however you treat him, you can agree to recover the short sword some gnolls stole from him.\nTravel to the plains west of Beregost, near Thalantyr's High Hedge. Find the band of gnolls there and kill them; they hit hard for early levels, so fight them together.\nPick up the short sword from their loot and return it to Perdue. His thanks and reward are stingy. The sword is a good weapon for a thief, so keeping it is a valid choice.",
+  "solution_fr": "Parlez à Perdué le petit-homme ; quelle que soit votre attitude, vous pouvez accepter de récupérer l'épée courte que des gnolls lui ont volée.\nRendez-vous dans les plaines à l'ouest de Bérégost, près de Haute-Haie, la demeure de Thalantyr. Trouvez la bande de gnolls et tuez-les ; ils frappent fort à bas niveau, combattez groupés.\nRamassez l'épée courte dans leur butin et rendez-la à Perdué. Ses remerciements et sa récompense sont maigres. L'épée est une bonne arme de voleur : la garder est un choix valable."
+ },
+ {
+  "title": 231379,
+  "idx": 312,
+  "game": "bg1",
+  "chapter": "5",
+  "where_en": "Baldur's Gate",
+  "where_fr": "Porte de Baldur",
+  "kind": "side",
+  "hints_en": [
+   "An orphan named Petrine has lost her cat Angel, and a man named Bheren hates a cat near his house.",
+   "Angel hangs around Bheren's house, along with the ring it plays with.",
+   "Bring the ring to Petrine for the kind ending, or kill the cat for Bheren."
+  ],
+  "hints_fr": [
+   "Une orpheline nommée Pétrine a perdu son chat Ange, et un certain Bheren déteste un chat près de chez lui.",
+   "Ange traîne chez Bheren, avec l'anneau qui lui sert de jouet.",
+   "Apportez l'anneau à Pétrine pour la fin heureuse, ou tuez le chat pour Bheren."
+  ],
+  "solution_en": "Petrine, an orphan of Baldur's Gate, lost her cat Angel; it is at her uncle Bheren's house, where she will not go. If she gets back the ring Angel uses as a toy, the cat will return to her.\nBheren, in his house, is fed up with a loitering cat and offers you a reward to kill it.\nKind way: search Bheren's house for Angel's ring and bring it to Petrine. Her joy is the only reward.\nCruel way: kill Angel and tell Bheren, who pays you.",
+  "solution_fr": "Pétrine, une orpheline de la Porte de Baldur, a perdu son chat Ange ; il est chez son oncle Bheren, où elle refuse d'aller. Si elle récupère l'anneau qui sert de jouet à Ange, le chat reviendra vers elle.\nBheren, chez lui, est excédé par un chat qui rôde et vous offre une récompense pour le tuer.\nVoie charitable : cherchez l'anneau d'Ange dans la maison de Bheren et apportez-le à Pétrine. Sa joie est votre seule récompense.\nVoie cruelle : tuez Ange et prévenez Bheren, qui vous paie."
+ },
+ {
+  "title": 231380,
+  "idx": 313,
+  "game": "bg1",
+  "chapter": "5",
+  "where_en": "Baldur's Gate, Elfsong Tavern",
+  "where_fr": "Porte de Baldur, Chant de l'Elfe",
+  "kind": "side",
+  "hints_en": [
+   "A halfling bard named Bellamy has a warning about a paladin.",
+   "The paladin Phandalyn waits behind the Elfsong Tavern, and he has heard of you.",
+   "With a poor reputation, expect a fight; Bellamy advises going there at night."
+  ],
+  "hints_fr": [
+   "Un barde petit-homme nommé Bellamy a un avertissement au sujet d'un paladin.",
+   "Le paladin Phandalyn attend derrière la taverne du Chant de l'Elfe, et il a entendu parler de vous.",
+   "Avec une mauvaise réputation, attendez-vous à un combat ; Bellamy conseille d'y aller de nuit."
+  ],
+  "solution_en": "Bellamy, a mysterious halfling bard in Baldur's Gate, warns you about Phandalyn, a paladin lurking behind the Elfsong Tavern by the docks, who knows your reputation.\nThis is mostly a warning. If your reputation is low, Phandalyn treats you as evil and attacks when you meet him: be ready for a tough fighter with paladin spells. With a good reputation he is no threat.\nBellamy suggests visiting the Elfsong at night to avoid him.",
+  "solution_fr": "Bellamy, un mystérieux barde petit-homme de la Porte de Baldur, vous met en garde contre Phandalyn, un paladin qui traîne derrière la taverne du Chant de l'Elfe, près du port, et qui connaît votre réputation.\nC'est surtout un avertissement. Si votre réputation est basse, Phandalyn vous juge mauvais et vous attaque : préparez-vous à un guerrier coriace aux sorts de paladin. Avec une bonne réputation, il ne représente aucune menace.\nBellamy conseille de se rendre au Chant de l'Elfe de nuit pour l'éviter."
+ },
+ {
+  "title": 231381,
+  "idx": 314,
+  "game": "bg1",
+  "chapter": "Prologue",
+  "where_en": "Candlekeep",
+  "where_fr": "Château-Suif",
+  "kind": "side",
+  "hints_en": [
+   "Absent-minded Phlydia has lost yet another book somewhere in Candlekeep.",
+   "Her own story about the hay is the best clue to where her books end up.",
+   "Find The History of Halruaa on the grounds and hand it back to her."
+  ],
+  "hints_fr": [
+   "L'étourdie Phlydia a encore perdu un livre quelque part à Château-Suif.",
+   "Sa propre histoire de foin est le meilleur indice sur l'endroit où finissent ses livres.",
+   "Trouvez L'Histoire de Halruaa dans l'enceinte et rendez-le-lui."
+  ],
+  "solution_en": "In the Candlekeep courtyard, Phlydia asks you to find her book, The History of Halruaa. She once lost a whole set in the hay kept for the cows.\nSearch the buildings and grounds of Candlekeep, starting with the places her story points to, until you find the book.\nBring it back to Phlydia. She seems to have half forgotten asking you, but rewards you with a gem.",
+  "solution_fr": "Dans la cour de Château-Suif, Phlydia vous demande de retrouver son livre, L'Histoire de Halruaa. Elle a déjà perdu une série entière dans le foin des vaches.\nFouillez les bâtiments et l'enceinte de Château-Suif, en commençant par les endroits que son histoire évoque, jusqu'à trouver le livre.\nRapportez-le à Phlydia. Elle semble avoir à moitié oublié sa demande, mais vous récompense avec une gemme."
+ },
+ {
+  "title": 231383,
+  "idx": 315,
+  "game": "bg1",
+  "chapter": "2",
+  "where_en": "Nashkel and surroundings",
+  "where_fr": "Nashkel et ses environs",
+  "kind": "side",
+  "hints_en": [
+   "People in Nashkel talk about Prism, a sculptor who vanished with an investor's emeralds.",
+   "Oublek, the bounty officer in Nashkel, pays for the emeralds' return.",
+   "Find Prism at work on a huge statue in the wilderness; a bounty hunter will soon join you."
+  ],
+  "hints_fr": [
+   "À Nashkel, on parle de Prisme, un sculpteur disparu avec les émeraudes d'un investisseur.",
+   "Oublek, le collecteur de primes de Nashkel, paie pour le retour des émeraudes.",
+   "Trouvez Prisme qui sculpte une immense statue dans la nature ; un chasseur de primes viendra bientôt."
+  ],
+  "solution_en": "Rumors in Nashkel tell of Prism, a sculptor who has not been seen for a month. Oublek, the bounty officer, offers a large reward for the emeralds he stole. Refuse any money Oublek tries to give you by mistake (see Oublek the Bounty Officer).\nFind Prism in the wilderness, carving a giant statue. The emeralds went into his work and his tale is a sad one.\nGreywolf, the bounty hunter Oublek hired, arrives and things turn violent. Greywolf is a strong fighter: prepare before talking to Prism.\nTake the emeralds back to Oublek in Nashkel for the bounty.",
+  "solution_fr": "Les rumeurs de Nashkel parlent de Prisme, un sculpteur introuvable depuis un mois. Oublek, le collecteur de primes, offre une forte récompense pour les émeraudes qu'il a volées. Refusez l'argent qu'Oublek veut vous donner par erreur (voir Oublek, le collecteur de primes).\nTrouvez Prisme dans la nature, en train de sculpter une statue géante. Les émeraudes ont servi à son œuvre, et son histoire est triste.\nLoup-Gris, le chasseur de primes engagé par Oublek, arrive et cela tourne à la violence. Loup-Gris est un guerrier redoutable : préparez-vous avant de parler à Prisme.\nRapportez les émeraudes à Oublek, à Nashkel, pour toucher la prime."
+ },
+ {
+  "title": 231384,
+  "idx": 316,
+  "game": "bg1",
+  "chapter": "2",
+  "where_en": "West of Nashkel, Gnoll Stronghold",
+  "where_fr": "À l'ouest de Nashkel, forteresse gnoll",
+  "kind": "side",
+  "hints_en": [
+   "An outcast gnoll named Ingot knows of a prisoner held by his kin.",
+   "The woman is kept in the gnoll fortress to the west.",
+   "She is Dynaheir, the witch Minsc is looking for."
+  ],
+  "hints_fr": [
+   "Un gnoll banni nommé Lingot sait qu'une prisonnière est retenue par les siens.",
+   "La femme est gardée dans la forteresse gnoll à l'ouest.",
+   "C'est Dynahéir, la sorcière que cherche Minsc."
+  ],
+  "solution_en": "Talk to Ingot, a gnoll banished by his tribe because they feared he would eat their captive. He tells you a woman is held alive in the gnoll fortress to the west.\nThe captive is Dynaheir. Travel to the Gnoll Stronghold far west of Nashkel, fight your way up through the gnolls and free her (see Rescuing Dynaheir).\nDynaheir can then join you, especially if Minsc is already in the party.",
+  "solution_fr": "Parlez à Lingot, un gnoll banni par sa tribu qui craignait qu'il ne dévore leur captive. Il vous apprend qu'une femme est retenue vivante dans la forteresse gnoll à l'ouest.\nLa captive est Dynahéir. Rendez-vous à la forteresse des gnolls, loin à l'ouest de Nashkel, frayez-vous un chemin parmi les gnolls et libérez-la (voir Au secours de Dynahéir).\nDynahéir peut ensuite vous rejoindre, surtout si Minsc est déjà dans le groupe."
+ },
+ {
+  "title": 231385,
+  "idx": 317,
+  "game": "bg1",
+  "chapter": "5",
+  "where_en": "Baldur's Gate / north of Tenya's home",
+  "where_fr": "Porte de Baldur / au nord de chez Tenya",
+  "kind": "side",
+  "hints_en": [
+   "A grieving young gnome in the northwest of Baldur's Gate lost his friend to ankhegs.",
+   "The ankhegs are upriver from the city, on the east bank, just north of the witch Tenya's home.",
+   "Find the dagger Nester stabbed the ankheg with and bring it to Quinn."
+  ],
+  "hints_fr": [
+   "Un jeune gnome en deuil, au nord-ouest de la Porte de Baldur, a perdu son ami à cause d'ankhegs.",
+   "Les ankhegs sont en amont de la ville, sur la rive, juste au nord de chez la sorcière Tenya.",
+   "Trouvez la dague avec laquelle Nester a frappé l'ankheg et apportez-la à Quinn."
+  ],
+  "solution_en": "Quinn, a young gnome in the northwest part of Baldur's Gate, tells you his friend Nester was killed by ankhegs and asks for something to bury.\nLeave the city and go upriver, along the bank, to the area just north of the witch Tenya's home. Ankhegs burrow out of the ground and spit acid: fight them as a group.\nSearch the remains for Nester's dagger, then return it to Quinn. He gives you the gem he and Nester meant to sell.",
+  "solution_fr": "Quinn, un jeune gnome du nord-ouest de la Porte de Baldur, vous apprend que son ami Nester a été tué par des ankhegs et vous demande de rapporter quelque chose à enterrer.\nQuittez la ville et remontez le fleuve, le long de la rive, jusqu'à la zone juste au nord de chez la sorcière Tenya. Les ankhegs surgissent du sol et crachent de l'acide : combattez groupés.\nFouillez les restes pour trouver la dague de Nester, puis rapportez-la à Quinn. Il vous donne la gemme que Nester et lui comptaient vendre."
+ },
+ {
+  "title": 231386,
+  "idx": 318,
+  "game": "bg1",
+  "chapter": "any",
+  "where_en": "Ulgoth's Beard / Durlag's Tower",
+  "where_fr": "Barbe d'Ulgoth / Tour de Durlag",
+  "kind": "side",
+  "hints_en": [
+   "A dwarf in Ulgoth's Beard wants a family heirloom recovered from Durlag's Tower.",
+   "The dagger Soultaker lies deep in the tower, in Durlag's death chamber, and others want it too.",
+   "Strangers will take the dagger on your return; Hurgan then sends you against their cult's house in the village."
+  ],
+  "hints_fr": [
+   "Un nain de Barbe d'Ulgoth veut récupérer un héritage de famille dans la Tour de Durlag.",
+   "La dague Buveuse d'Âmes se trouve au plus profond de la tour, dans la chambre funéraire de Durlag, et d'autres la convoitent.",
+   "Des inconnus prendront la dague à votre retour ; Hurgan vous enverra ensuite contre la maison de leur culte, au village."
+  ],
+  "solution_en": "In Ulgoth's Beard, Hurgan Stoneblade asks you to recover Soultaker, an enchanted dagger and family heirloom, from Durlag's Tower.\nDurlag's Tower is a long, deadly dungeon full of traps and puzzles; go well prepared. The dagger lies in Durlag's death chamber at the bottom.\nBack in Ulgoth's Beard, cultists demand the dagger: hand it over, or refuse and they attack and steal it.\nTell Hurgan. He reveals the dagger holds the demon that killed his grandfather, and the cult plans to free it in their house in the village.\nStorm the cult's house and defeat the cultists and the demon, a hard fight. Hurgan then leaves, his task done.",
+  "solution_fr": "À Barbe d'Ulgoth, Hurgan Lamepierre vous demande de récupérer la Buveuse d'Âmes, une dague enchantée et héritage familial, dans la Tour de Durlag.\nLa Tour de Durlag est un long donjon mortel, plein de pièges et d'énigmes : venez bien préparé. La dague repose dans la chambre funéraire de Durlag, tout en bas.\nDe retour à Barbe d'Ulgoth, des cultistes exigent la dague : donnez-la, ou refusez et ils attaquent pour la voler.\nPrévenez Hurgan. Il révèle que la dague renferme le démon qui a tué son grand-père, et que le culte veut le libérer dans sa maison du village.\nPrenez d'assaut la maison du culte et venez à bout des cultistes et du démon, un combat difficile. Hurgan quitte alors le village, sa tâche accomplie."
+ },
+ {
+  "title": 231387,
+  "idx": 319,
+  "game": "bg1",
+  "chapter": "Prologue",
+  "where_en": "Candlekeep",
+  "where_fr": "Château-Suif",
+  "kind": "side",
+  "hints_en": [
+   "Reevor in Candlekeep needs help with his storehouse again.",
+   "Rats have overrun the storehouse and the cats are no help.",
+   "Clear out every rat inside, then go back to Reevor."
+  ],
+  "hints_fr": [
+   "Reevor, à Château-Suif, a encore besoin d'aide pour son entrepôt.",
+   "Des rats ont envahi l'entrepôt et les chats ne servent à rien.",
+   "Éliminez tous les rats à l'intérieur, puis retournez voir Reevor."
+  ],
+  "solution_en": "Talk to Reevor, near his storehouse in Candlekeep. Rats have taken over and he presses you into service once more.\nEnter the storehouse and kill all the rats. They are weak, but at level 1 do not let several surround you.\nReport back to Reevor. He pays you a measly 5 gold, plus a little experience, a good start before leaving Candlekeep.",
+  "solution_fr": "Parlez à Reevor, près de son entrepôt à Château-Suif. Les rats ont pris le contrôle et il vous enrôle une fois de plus.\nEntrez dans l'entrepôt et tuez tous les rats. Ils sont faibles, mais au niveau 1 ne vous laissez pas encercler.\nRetournez voir Reevor. Il vous paie la somme ridicule de 5 pièces d'or, plus un peu d'expérience, un bon début avant de quitter Château-Suif."
+ },
+ {
+  "title": 231388,
+  "idx": 320,
+  "game": "bg1",
+  "chapter": "2-3",
+  "where_en": "Nashkel / Gnoll Stronghold",
+  "where_fr": "Nashkel / forteresse gnoll",
+  "kind": "companion",
+  "hints_en": [
+   "A loud ranger named Minsc in Nashkel has lost the witch he protects.",
+   "Dynaheir is held by gnolls in their stronghold far west of Nashkel.",
+   "Do not wait too long: Minsc grows impatient and may leave."
+  ],
+  "hints_fr": [
+   "Un rôdeur bruyant nommé Minsc, à Nashkel, a perdu la sorcière qu'il protège.",
+   "Dynahéir est retenue par les gnolls dans leur forteresse, loin à l'ouest de Nashkel.",
+   "N'attendez pas trop : Minsc s'impatiente et peut partir."
+  ],
+  "solution_en": "In Nashkel, Minsc asks you to rescue his charge, the witch Dynaheir, captured by gnolls. Accept and he joins the party.\nTravel west of Nashkel to the Gnoll Stronghold. Gnolls guard the paths up the cliffs; climb to the top and fight through them. Dynaheir is held in the upper part of the fortress.\nFree her and invite her to join, or send her on her way. Minsc complains if you delay, and leaves if you ignore him too long.\nIf Edwin is in the party, beware: he wants Dynaheir dead, and they do not get along.",
+  "solution_fr": "À Nashkel, Minsc vous demande de secourir sa protégée, la sorcière Dynahéir, capturée par des gnolls. Acceptez et il rejoint le groupe.\nRendez-vous à l'ouest de Nashkel, à la forteresse gnoll. Des gnolls gardent les sentiers qui montent sur les falaises ; grimpez jusqu'en haut en les combattant. Dynahéir est retenue dans la partie haute de la forteresse.\nLibérez-la et invitez-la à vous rejoindre, ou laissez-la repartir. Minsc se plaint si vous traînez, et part si vous l'ignorez trop longtemps.\nSi Edwin est dans le groupe, attention : il veut la mort de Dynahéir, et ils ne s'entendent pas."
+ },
+ {
+  "title": 231389,
+  "idx": 321,
+  "game": "bg1",
+  "chapter": "6",
+  "where_en": "Candlekeep",
+  "where_fr": "Château-Suif",
+  "kind": "main",
+  "hints_en": [
+   "Back home in Candlekeep, talk to old friends: several visitors are not what they seem.",
+   "Read the prophecies of Alaundo, speak with Koveras, and keep an eye on the Iron Throne leaders upstairs.",
+   "You will be framed for murder; escape through the crypts under the keep and listen to Diarmid outside."
+  ],
+  "hints_fr": [
+   "De retour à Château-Suif, parlez à vos vieux amis : plusieurs visiteurs ne sont pas ce qu'ils semblent être.",
+   "Lisez les prophéties d'Alaundo, parlez à Koveras et surveillez les chefs du Trône de Fer à l'étage.",
+   "On vous accusera de meurtre ; fuyez par les cryptes sous la forteresse et écoutez Diarmid à la sortie."
+  ],
+  "solution_en": "At the gate the Gatewarden lets you in: never take books out of their rooms, and you may stay only ten days.\nTalk to Bendalis, Karan, the Chanter and the readers: they mention odd merchants, the Iron Throne leaders meeting Knights of the Shield upstairs, and a sage named Koveras studying Alaundo's prophecies. Expose the doppelganger posing as Shistal.\nRead the prophecies, then meet Koveras: he urges you to kill the Iron Throne leaders. Charming Rieltar or Brunos reveals the Iron Throne's plan.\nThe leaders are murdered and Ulraunt blames you. You end up in the crypts under Candlekeep: fight through doppelgangers and undead to the exit.\nOutside, Diarmid mistakes you for Prat's group and reveals Sarevok's scheme. Return to Baldur's Gate.",
+  "solution_fr": "À la porte, le garde vous laisse entrer : ne sortez aucun livre des salles, et vous ne pouvez rester que dix jours.\nParlez à Bendalis, Karan, le Chantre et aux lecteurs : ils évoquent de faux marchands, les chefs du Trône de Fer qui reçoivent des Chevaliers de l'Écu à l'étage, et un sage nommé Koveras qui étudie les prophéties d'Alaundo. Démasquez le doppelganger qui se fait passer pour Shistal.\nLisez les prophéties, puis rencontrez Koveras : il vous pousse à tuer les chefs du Trône de Fer. Charmer Rieltar ou Brunos révèle le plan du Trône de Fer.\nLes chefs sont assassinés et Ulraunt vous accuse. Vous vous retrouvez dans les cryptes sous Château-Suif : traversez-les malgré doppelgangers et morts-vivants jusqu'à la sortie.\nDehors, Diarmid vous prend pour le groupe de Prat et révèle les plans de Sarevok. Retournez à la Porte de Baldur."
+ },
+ {
+  "title": 231391,
+  "idx": 322,
+  "game": "bg1",
+  "chapter": "any",
+  "where_en": "Friendly Arm Inn",
+  "where_fr": "Auberge de Brasamical",
+  "kind": "side",
+  "hints_en": [
+   "A woman named Lena needs someone to take Samuel to a healer.",
+   "The healer is Gellana Mirrorshade at the Temple of Wisdom, by the Friendly Arm Inn.",
+   "Go straight there with Samuel: if you dawdle, he dies."
+  ],
+  "hints_fr": [
+   "Une femme nommée Léna cherche quelqu'un pour conduire Samuel à une guérisseuse.",
+   "La guérisseuse est Gellana Ombremiroir, au Temple de la Sagesse, à l'auberge de Brasamical.",
+   "Allez-y directement avec Samuel : si vous traînez, il meurt."
+  ],
+  "solution_en": "Talk to Lena and promise to take Samuel to the Temple of Wisdom at the Friendly Arm Inn.\nTravel there without detours, resting or side trips: time matters.\nInside the temple, speak with Gellana Mirrorshade and hand Samuel over to her care. If you arrive in time he is saved; if you took too long, Gellana cannot save him and he dies.",
+  "solution_fr": "Parlez à Léna et promettez de conduire Samuel au Temple de la Sagesse, à l'auberge de Brasamical.\nRendez-vous-y sans détour, ni repos, ni quête annexe : le temps compte.\nDans le temple, parlez à Gellana Ombremiroir et confiez-lui Samuel. Si vous arrivez à temps, il est sauvé ; si vous avez trop tardé, Gellana ne peut rien faire et il meurt."
+ },
+ {
+  "title": 231392,
+  "idx": 323,
+  "game": "bg1",
+  "chapter": "5",
+  "where_en": "Baldur's Gate, Flaming Fist compound",
+  "where_fr": "Porte de Baldur, Poing Enflammé",
+  "kind": "side",
+  "hints_en": [
+   "Scar of the Flaming Fist is your contact in Baldur's Gate.",
+   "He waits in the southwest of the city, just outside the Flaming Fist compound.",
+   "Go back to him whenever you finish a task he gave you."
+  ],
+  "hints_fr": [
+   "La Balafre, du Poing Enflammé, est votre contact à la Porte de Baldur.",
+   "Il attend au sud-ouest de la ville, juste devant le bâtiment du Poing Enflammé.",
+   "Retournez le voir chaque fois que vous terminez une tâche qu'il vous a confiée."
+  ],
+  "solution_en": "This entry only tells you where to find Scar, the Flaming Fist officer who guides you in Baldur's Gate during Chapter 5.\nHe stands in the southwest of the city, just outside the Flaming Fist compound. Talk to him there to get his assignments (such as Missing Citizens and the Iron Throne investigation) and to report your results.",
+  "solution_fr": "Cette entrée indique seulement où trouver la Balafre, l'officier du Poing Enflammé qui vous guide à la Porte de Baldur au chapitre 5.\nIl se tient au sud-ouest de la ville, juste devant le bâtiment du Poing Enflammé. Parlez-lui là pour recevoir ses missions (comme Des citoyens disparus et l'enquête sur le Trône de Fer) et lui faire vos rapports."
+ },
+ {
+  "title": 231393,
+  "idx": 324,
+  "game": "bg1",
+  "chapter": "5",
+  "where_en": "Baldur's Gate, Flaming Fist compound",
+  "where_fr": "Porte de Baldur, Poing Enflammé",
+  "kind": "main",
+  "hints_en": [
+   "Scar wants to talk to you about the Iron Throne.",
+   "He is waiting outside the Flaming Fist barracks in the southwest of the city.",
+   "Hear him out: his task sends you into the Iron Throne's own headquarters."
+  ],
+  "hints_fr": [
+   "La Balafre veut vous parler du Trône de Fer.",
+   "Il attend devant les baraquements du Poing Enflammé, au sud-ouest de la ville.",
+   "Écoutez-le : sa mission vous envoie au quartier général même du Trône de Fer."
+  ],
+  "solution_en": "Scar sends word that he wants to discuss the Iron Throne. Go to him outside the Flaming Fist barracks in the southwest of Baldur's Gate.\nHe asks you to investigate the Iron Throne's headquarters in the city. Enter the building and work your way up the floors, fighting its guards and mercenaries, to learn what its leaders plan.\nThe findings move the main story forward toward Duke Eltan and Candlekeep.",
+  "solution_fr": "La Balafre vous fait savoir qu'il veut vous parler du Trône de Fer. Rejoignez-le devant les baraquements du Poing Enflammé, au sud-ouest de la Porte de Baldur.\nIl vous demande d'enquêter sur le quartier général du Trône de Fer en ville. Entrez dans le bâtiment et montez les étages en affrontant gardes et mercenaires pour découvrir ce que préparent ses dirigeants.\nVos découvertes font avancer l'histoire principale, vers le duc Eltan et Château-Suif."
+ },
+ {
+  "title": 231394,
+  "idx": 325,
+  "game": "bg1",
+  "chapter": "7",
+  "where_en": "Baldur's Gate, Blushing Mermaid",
+  "where_fr": "Porte de Baldur, Sirène Rougissante",
+  "kind": "side",
+  "hints_en": [
+   "While you were away, Scar was murdered; a lady of the night named Sugar knows more.",
+   "The only witness is Ivanne, in a corner of the Blushing Mermaid Tavern.",
+   "Pay Ivanne 10 gold and take the time to hear his whole tale."
+  ],
+  "hints_fr": [
+   "Pendant votre absence, la Balafre a été assassiné ; une femme de joie nommée Sucre d'Orge en sait plus.",
+   "Le seul témoin est Ivanne, dans un coin de la taverne de la Sirène Rougissante.",
+   "Payez 10 pièces d'or à Ivanne et prenez le temps d'écouter tout son récit."
+  ],
+  "solution_en": "On your return to Baldur's Gate, Sugar, a lady of the night in the streets, tells you Scar is dead and sends you to Ivanne at the Blushing Mermaid.\nGo to the tavern and find Ivanne in his corner. Pay him 10 gold to hear the story; if you leave early, come back later.\nHe tells how a doppelganger lured Scar to a quick death, most likely for the Iron Throne, though Angelo also had much to gain. It is lore only: no fight or reward.",
+  "solution_fr": "À votre retour à la Porte de Baldur, Sucre d'Orge, une femme de joie des rues, vous apprend la mort de la Balafre et vous envoie voir Ivanne à la Sirène Rougissante.\nAllez à la taverne et trouvez Ivanne dans son coin. Payez-lui 10 pièces d'or pour entendre l'histoire ; si vous partez trop tôt, revenez plus tard.\nIl raconte comment un doppelganger a attiré la Balafre vers une mort rapide, sans doute pour le Trône de Fer, même si Angelo avait aussi beaucoup à y gagner. C'est un récit seulement : ni combat ni récompense."
+ },
+ {
+  "title": 231395,
+  "idx": 326,
+  "game": "bg1",
+  "chapter": "5",
+  "where_en": "Baldur's Gate, Splurging Sturgeon",
+  "where_fr": "Porte de Baldur, Esturgeon Sautillant",
+  "kind": "side",
+  "hints_en": [
+   "The owner of the Splurging Sturgeon has a drunken deal for you.",
+   "Hand over 100 gold and he promises to double it if you kill the slimes hidden in his tavern.",
+   "Hunt down the oozes inside the inn, then claim your money; do not expect the full amount."
+  ],
+  "hints_fr": [
+   "Le patron de l'Esturgeon Sautillant vous propose un marché bien arrosé.",
+   "Confiez-lui 100 pièces d'or et il promet de les doubler si vous tuez les limons cachés dans sa taverne.",
+   "Traquez les vases à l'intérieur de l'auberge, puis réclamez votre argent ; ne comptez pas sur la somme entière."
+  ],
+  "solution_en": "At the Splurging Sturgeon in Baldur's Gate, Lusselyn gets you drunk and talks you into leaving 100 gold with him for safekeeping. He claims slimes and oozes lurk somewhere in his tavern and promises to double your gold if you kill them.\nSearch the inn's rooms and floors for the slimes and destroy them. They are slow, so ranged attacks and spells keep your fighters safe.\nReturn to Lusselyn. He pays out only part of what he promised.",
+  "solution_fr": "À l'Esturgeon Sautillant, à la Porte de Baldur, Lusselyn vous fait boire et vous convainc de lui confier 100 pièces d'or. Il prétend que des limons et des vases traînent quelque part dans sa taverne et promet de doubler votre or si vous les tuez.\nFouillez les pièces et les étages de l'auberge pour trouver les limons et détruisez-les. Ils sont lents : armes à distance et sorts épargnent vos combattants.\nRetournez voir Lusselyn. Il ne vous verse qu'une partie de ce qu'il avait promis."
+ },
+ {
+  "title": 231396,
+  "idx": 327,
+  "game": "bg1",
+  "chapter": "7",
+  "where_en": "Baldur's Gate, Undercellar",
+  "where_fr": "Porte de Baldur, Caves Souterraines",
+  "kind": "main",
+  "hints_en": [
+   "Two of Sarevok's assassins, Slythe and Krystin, are hiding in the city.",
+   "They stay at the Undercellar, an underground brothel; Duke Eltan and Husam both want them dead.",
+   "Kill them, search their bodies for Sarevok's plans, then head for the Ducal Palace quickly."
+  ],
+  "hints_fr": [
+   "Deux assassins de Sarevok, Slythe et Krystin, se cachent en ville.",
+   "Ils logent aux Caves Souterraines, un bordel clandestin ; le duc Eltan et Husam veulent tous deux leur mort.",
+   "Tuez-les, fouillez leurs corps pour trouver les plans de Sarevok, puis filez vite au palais ducal."
+  ],
+  "solution_en": "Duke Eltan, or Husam, tells you that Slythe and Krystin, Sarevok's assassins, may be planning to murder Grand Dukes Belt and Liia. If Eltan is with you, he also wants to be escorted to the Harbor Master's building on the east side of the harbor.\nGo to the Undercellar, an underground brothel, and find the pair. They are deadly: Slythe is a stealthy killer and Krystin casts spells. Buff, use detection and focus Krystin.\nSearch their bodies for papers revealing Sarevok's plans.\nTell Husam what you learned: Sarevok could seize the city at any moment, so get inside the Ducal Palace as soon as possible.",
+  "solution_fr": "Le duc Eltan, ou Husam, vous apprend que Slythe et Krystin, les assassins de Sarevok, comptent peut-être tuer les Grands-Ducs Belt et Liia. Si Eltan est avec vous, il veut aussi être escorté jusqu'à la bâtisse du Maître du Port, du côté est du port.\nRendez-vous aux Caves Souterraines, un bordel clandestin, et trouvez le duo. Ils sont redoutables : Slythe est un tueur furtif et Krystin lance des sorts. Préparez-vous, révélez les invisibles et concentrez-vous sur Krystin.\nFouillez leurs corps pour trouver des papiers sur les plans de Sarevok.\nRapportez-les à Husam : Sarevok peut prendre la ville à tout moment, entrez au palais ducal au plus vite."
+ },
+ {
+  "title": 231397,
+  "idx": 328,
+  "game": "bg1",
+  "chapter": "4",
+  "where_en": "Cloakwood",
+  "where_fr": "Bois-Manteau",
+  "kind": "side",
+  "hints_en": [
+   "A man named Tiber in the Cloakwood is worried about his brother.",
+   "Chelak went into the forest to wipe out a spider infestation and never came back.",
+   "His body lies in Centeol's lair, a spider nest deeper in the Cloakwood."
+  ],
+  "hints_fr": [
+   "Un homme nommé Tiber, dans le Bois-Manteau, s'inquiète pour son frère.",
+   "Chelak est parti dans la forêt exterminer les araignées et n'est jamais revenu.",
+   "Son corps repose dans l'antre de Centéol, un nid d'araignées plus loin dans le Bois-Manteau."
+  ],
+  "solution_en": "In the Cloakwood, Tiber asks you to look for his brother Chelak, who went to destroy the spiders infesting the forest.\nGo deeper into the Cloakwood to Centeol's lair, crawling with giant spiders and their webs. Bring antidotes or Slow Poison and remedies against webs; Centeol herself is dangerous.\nClear the lair and take Chelak's corpse.\nBring it to Tiber, who rewards you with the sword Spider's Bane.",
+  "solution_fr": "Dans le Bois-Manteau, Tiber vous demande de retrouver son frère Chelak, parti détruire les araignées qui infestent la forêt.\nEnfoncez-vous dans le Bois-Manteau jusqu'à l'antre de Centéol, grouillant d'araignées géantes et de toiles. Emportez des antidotes et de quoi résister aux toiles ; Centéol elle-même est dangereuse.\nNettoyez l'antre et récupérez le corps de Chelak.\nRapportez-le à Tiber, qui vous offre l'épée Fléau d'Araignées."
+ },
+ {
+  "title": 231398,
+  "idx": 329,
+  "game": "bg1",
+  "chapter": "any",
+  "where_en": "Sword Coast wilderness",
+  "where_fr": "Nature de la Côte des Épées",
+  "kind": "side",
+  "hints_en": [
+   "A young woman named Tamah stands frozen as a statue after meeting a basilisk.",
+   "You need magic that turns stone back to flesh.",
+   "Restore Tamah and she offers you her empty lakeside house south of Beregost."
+  ],
+  "hints_fr": [
+   "Une jeune femme nommée Tamah est figée en statue après avoir croisé un basilic.",
+   "Il vous faut une magie qui change la pierre en chair.",
+   "Rendez vie à Tamah et elle vous offre sa maison vide au bord du lac, au sud de Bérégost."
+  ],
+  "solution_en": "Tamah fell victim to a basilisk's petrifying gaze and now stands as a stone statue.\nGet a Stone to Flesh spell or scroll, then use it on her statue. Watch out for basilisks around: protect your party from their gaze.\nOnce freed, Tamah thanks you and offers you her lakeside house south of Beregost, empty for some time.",
+  "solution_fr": "Tamah a été victime du regard pétrifiant d'un basilic et n'est plus qu'une statue de pierre.\nProcurez-vous un sort ou un parchemin de Pierre en chair, puis utilisez-le sur sa statue. Attention aux basilics des environs : protégez votre groupe de leur regard.\nUne fois libérée, Tamah vous remercie et vous offre sa maison au bord du lac, au sud de Bérégost, vide depuis longtemps."
+ },
+ {
+  "title": 231399,
+  "idx": 330,
+  "game": "bg1",
+  "chapter": "5-7",
+  "where_en": "Baldur's Gate / Undercity",
+  "where_fr": "Porte de Baldur / Ombre-Ville",
+  "kind": "side",
+  "hints_en": [
+   "A mysterious woman named Tamoko warns you about Duke Eltan's healer.",
+   "She later meets you near the Flaming Fist headquarters and asks you to spare Sarevok.",
+   "In the Undercity she bars your way; refusing to fight her can end it without bloodshed."
+  ],
+  "hints_fr": [
+   "Une femme mystérieuse nommée Tamoko vous met en garde contre le guérisseur du duc Eltan.",
+   "Plus tard, elle vous retrouve près du quartier général du Poing Enflammé et vous demande d'épargner Sarevok.",
+   "À Ombre-Ville, elle vous barre la route ; refuser de la combattre peut éviter le sang."
+  ],
+  "solution_en": "Tamoko approaches you in Baldur's Gate: Duke Eltan's healer is not to be trusted and is likely making him sick. She says she will wait near the Flaming Fist headquarters.\nMeet her again later. She asks you to spare Sarevok's life. Promise it and she shares a lot: Slythe and Krystin murdered Duke Entar Silvershield and hide in the Undercellar, Cythandria works with the Iron Throne, and you and Sarevok are both children of Bhaal. Refuse and she tells you little.\nIn the Undercity, near the end, Tamoko blocks your path to win back Sarevok's favor. Refuse to fight her and she renounces him and leaves. Otherwise you must kill her.",
+  "solution_fr": "Tamoko vous aborde à la Porte de Baldur : il ne faut pas se fier au guérisseur du duc Eltan, qui serait la cause de sa maladie. Elle dit qu'elle attendra près du quartier général du Poing Enflammé.\nRetrouvez-la plus tard. Elle vous demande d'épargner la vie de Sarevok. Promettez-le et elle vous apprend beaucoup : Slythe et Krystin ont tué le duc Entar Écudargent et se cachent aux Caves Souterraines, Cythandria travaille avec le Trône de Fer, et Sarevok et vous êtes tous deux enfants de Bhaal. Refusez et elle en dit peu.\nÀ Ombre-Ville, vers la fin, Tamoko vous barre la route pour regagner la faveur de Sarevok. Refusez de la combattre et elle renonce à lui et s'en va. Sinon, vous devez la tuer."
+ },
+ {
+  "title": 231402,
+  "idx": 331,
+  "game": "bg1",
+  "chapter": "5-7",
+  "where_en": "Baldur's Gate, Undercellar",
+  "where_fr": "Porte de Baldur, Caves Souterraines",
+  "kind": "side",
+  "hints_en": [
+   "The elf Vail knows what became of the Cloak of Balduran.",
+   "He gave it to his consort Quenash, who can be found in the Undercellar.",
+   "Find Quenash in the Undercellar and ask her for the cloak."
+  ],
+  "hints_fr": [
+   "L'elfe Vail sait ce qu'est devenue la cape de Baldurien.",
+   "Il l'a donnée à sa maîtresse Quenash, qu'on trouve aux Caves Souterraines.",
+   "Trouvez Quenash aux Caves Souterraines et demandez-lui la cape."
+  ],
+  "solution_en": "Talk to Vail the elf in Baldur's Gate. He tells you he gave the Cloak of Balduran to his consort, Quenash, and that she is in the Undercellar.\nReach the Undercellar, the underground brothel reached through the city sewers, and find Quenash.\nTalk to her: she hands over the Cloak of Balduran without trouble. She also drops a hint about the Helm of Balduran (see The Helm of Balduran).",
+  "solution_fr": "Parlez à l'elfe Vail, à la Porte de Baldur. Il vous apprend qu'il a donné la cape de Baldurien à sa maîtresse, Quenash, qui se trouve aux Caves Souterraines.\nRendez-vous aux Caves Souterraines, le bordel souterrain accessible par les égouts de la ville, et trouvez Quenash.\nParlez-lui : elle vous remet la cape de Baldurien sans difficulté. Elle donne aussi un indice sur le heaume (voir Le Heaume de Baldurien)."
+ },
+ {
+  "title": 231403,
+  "idx": 332,
+  "game": "bg1",
+  "chapter": "2-5",
+  "where_en": "Firewine Bridge / Gullykin",
+  "where_fr": "Pont de Flammevin / Gullykin",
+  "kind": "side",
+  "hints_en": [
+   "A hunter on the road recommends the Firewine Bridge ruins to adventurers.",
+   "Kobolds there are unusually organized; the halflings of Gullykin suffer their raids.",
+   "An ogre mage in the ruins below the bridge commands them: kill it and tell Gandolar in Gullykin."
+  ],
+  "hints_fr": [
+   "Un chasseur sur la route recommande les ruines du pont de Flammevin aux aventuriers.",
+   "Les kobolds y sont étrangement organisés ; les petites-personnes de Gullykin subissent leurs raids.",
+   "Un ogre mage, dans les ruines sous le pont, les commande : tuez-le et prévenez Gandolar à Gullykin."
+  ],
+  "solution_en": "A hunter suggests you explore the Firewine Bridge, last remnant of an elven trading town destroyed two centuries ago. The halflings of Gullykin, nearby, are harassed by kobolds from the ruins.\nEnter the ruins under the Firewine Bridge. Kobolds there fight in organized groups, some with fire arrows: keep the party tight and kill archers first.\nDeep inside, defeat the ogre mage who sends the kobolds out. It uses spells and invisibility.\nReturn to Gandolar in Gullykin, who thanks you for freeing his village.",
+  "solution_fr": "Un chasseur vous conseille d'explorer le pont de Flammevin, dernier vestige d'une ville commerçante elfique détruite il y a deux siècles. Les petites-personnes de Gullykin, tout près, sont harcelées par les kobolds des ruines.\nEntrez dans les ruines sous le pont de Flammevin. Les kobolds y combattent en groupes organisés, certains avec des flèches enflammées : restez groupés et tuez d'abord les archers.\nAu fond, venez à bout de l'ogre mage qui envoie les kobolds. Il utilise sorts et invisibilité.\nRetournez voir Gandolar à Gullykin, qui vous remercie d'avoir délivré son village."
+ },
+ {
+  "title": 231404,
+  "idx": 333,
+  "game": "bg1",
+  "chapter": "5-6",
+  "where_en": "Candlekeep",
+  "where_fr": "Château-Suif",
+  "kind": "side",
+  "hints_en": [
+   "Shaella, a priestess of Leira, sends you on a pilgrimage to your old home.",
+   "The Great Book of the Unknowing is said to lie in Candlekeep.",
+   "Once you have been back to Candlekeep, talk to Shaella again; do not expect to remember the book."
+  ],
+  "hints_fr": [
+   "Shaella, une prêtresse de Leira, vous envoie en pèlerinage vers votre ancien foyer.",
+   "Le Grand Livre de l'Ignorance se trouverait à Château-Suif.",
+   "Une fois revenu de Château-Suif, reparlez à Shaella ; ne comptez pas vous souvenir du livre."
+  ],
+  "solution_en": "Talk to Shaella, a priestess of Leira, the goddess of deception. She tells you about the Great Book of the Unknowing in Candlekeep, which robs anyone who touches it of knowledge, and asks you to seek it.\nYou cannot return to Candlekeep until the main story takes you there. After that visit, speak with Shaella again.\nShe assures you that you did find the book, but of course you remember nothing. It is a joke in Leira's style: there is nothing to find and no real reward.",
+  "solution_fr": "Parlez à Shaella, une prêtresse de Leira, déesse de la tromperie. Elle évoque le Grand Livre de l'Ignorance de Château-Suif, qui prive de savoir quiconque le touche, et vous demande de le chercher.\nVous ne pouvez retourner à Château-Suif que lorsque l'histoire principale vous y mène. Après cette visite, reparlez à Shaella.\nElle vous assure que vous avez bien trouvé le livre, mais bien sûr vous n'en avez aucun souvenir. C'est une plaisanterie digne de Leira : il n'y a rien à trouver et pas de vraie récompense."
+ },
+ {
+  "title": 231405,
+  "idx": 334,
+  "game": "bg1",
+  "chapter": "5-7",
+  "where_en": "Baldur's Gate",
+  "where_fr": "Porte de Baldur",
+  "kind": "side",
+  "hints_en": [
+   "The wizard Degrodel, in the northwest of the city, wants the Helm of Balduran.",
+   "His lead: petrified adventurers kept by an art dealer on an estate just west of the fairgrounds.",
+   "Vail's scroll and Quenash's riddle point to a building whose name fits a helm and a cloak."
+  ],
+  "hints_fr": [
+   "Le magicien Degrodel, au nord-ouest de la ville, veut le Heaume de Baldurien.",
+   "Sa piste : des aventuriers pétrifiés détenus par un marchand d'art, dans une propriété juste à l'ouest du champ de foire.",
+   "Le parchemin de Vail et l'énigme de Quenash désignent un bâtiment dont le nom évoque un heaume et une cape."
+  ],
+  "solution_en": "Degrodel, a wizard with an estate in the northwest of Baldur's Gate, asks you for the Helm of Balduran. He says it is on the petrified bodies of adventurers held by an art dealer on an estate just west of the fairgrounds.\nVail the elf gives you a scroll meant to reveal the helm's location, and Quenash in the Undercellar adds that Vail's hiding place is practically named for the purpose.\nFollow either lead, recover the helm and be ready for a fight if you restore the petrified adventurers.\nBring the helm to Degrodel's estate. He pays a nice reward, then asks you to leave.",
+  "solution_fr": "Degrodel, un magicien qui vit au nord-ouest de la Porte de Baldur, vous demande le Heaume de Baldurien. Selon lui, il se trouve sur les corps pétrifiés d'aventuriers détenus par un marchand d'art, dans une propriété juste à l'ouest du champ de foire.\nL'elfe Vail vous donne un parchemin censé révéler l'emplacement du heaume, et Quenash, aux Caves Souterraines, ajoute que la cachette de Vail porte un nom tout trouvé.\nSuivez l'une ou l'autre piste, récupérez le heaume et préparez-vous à combattre si vous rendez vie aux aventuriers pétrifiés.\nApportez le heaume chez Degrodel. Il vous récompense généreusement, puis vous prie de partir."
+ },
+ {
+  "title": 231406,
+  "idx": 335,
+  "game": "bg1",
+  "chapter": "2",
+  "where_en": "Nashkel Mines",
+  "where_fr": "Mines de Nashkel",
+  "kind": "main",
+  "hints_en": [
+   "A prisoner in the depths of the Nashkel mines has useful knowledge.",
+   "Free the elf Xan from his captors.",
+   "Charm Xan to learn about the Iron Throne."
+  ],
+  "hints_fr": [
+   "Un prisonnier au fond des mines de Nashkel détient des informations utiles.",
+   "Libérez l'elfe Xan de ses geôliers.",
+   "Charmez Xan pour en apprendre plus sur le Trône de Fer."
+  ],
+  "solution_en": "In the lowest level of the Nashkel mines, near Mulahey's lair, you find the elf Xan held prisoner. Defeat his captors and free him; he can join the party.\nIf you charm Xan with a spell, he reveals that a merchant group called the Iron Throne is stirring up trouble along the Sword Coast, though he does not know why.\nThis is the first mention of the Iron Throne, the thread the main story will follow.",
+  "solution_fr": "Au niveau le plus profond des mines de Nashkel, près du repaire de Mulahey, vous trouvez l'elfe Xan prisonnier. Battez ses geôliers et libérez-le ; il peut rejoindre le groupe.\nSi vous charmez Xan avec un sort, il révèle qu'une organisation marchande, le Trône de Fer, sème le trouble sur la Côte des Épées, sans savoir dans quel but.\nC'est la première mention du Trône de Fer, le fil que suivra l'histoire principale."
+ },
+ {
+  "title": 231407,
+  "idx": 336,
+  "game": "bg1",
+  "chapter": "2-4",
+  "where_en": "Ulcaster ruins",
+  "where_fr": "Ruines d'Ulcaster",
+  "kind": "side",
+  "hints_en": [
+   "Townsfolk in Beregost tell of an ancient wizard school full of treasure.",
+   "The ruined school of Ulcaster lies in the wilderness not far from Beregost.",
+   "Explore the ruins and the dungeon beneath, and be ready for undead and magical guardians."
+  ],
+  "hints_fr": [
+   "Les habitants de Bérégost parlent d'une antique école de magie pleine de trésors.",
+   "L'école en ruine d'Ulcaster se trouve dans la nature, non loin de Bérégost.",
+   "Explorez les ruines et le souterrain qui les accompagne, et méfiez-vous des morts-vivants et des gardiens magiques."
+  ],
+  "solution_en": "A townsman of Beregost mentions rumors of an ancient wizard school full of treasures.\nThe rumor points to the ruins of Ulcaster's school, in the wilderness not far from Beregost.\nThe rumor itself is only a pointer: go there to explore the ruins and the dungeon below. Expect undead and magical foes; bring a priest to turn undead and some magic weapons.",
+  "solution_fr": "Un habitant de Bérégost évoque la rumeur d'une antique école de magie remplie de trésors.\nLa rumeur désigne les ruines de l'école d'Ulcaster, dans la nature, non loin de Bérégost.\nLa rumeur n'est qu'une piste : allez-y pour explorer les ruines et le souterrain. Attendez-vous à des morts-vivants et à des ennemis magiques ; emmenez un prêtre pour les repousser et quelques armes magiques."
+ }
+]

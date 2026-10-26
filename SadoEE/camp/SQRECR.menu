@@ -1,0 +1,388 @@
+menu
+{
+	name "SQRECR_TICK"
+	ignoreesc
+	-- SadoQoL Withers recruits: spawns the blank creature, opens the next creation panel (SQRecruit_Tick).
+	label
+	{
+		area 0 0 0 0
+		enabled "SQRecruit_Tick()"
+	}
+}
+
+menu
+{
+	name "SQRECR_SHADE"
+	modal
+	ignoreesc
+	align left top
+	-- the world's side bars, portraits and dialogue box go while it is open (as the record screen does)
+	onOpen "SQRecruit_ShadeOpen()"
+	onClose "SQRecruit_ShadeClose()"
+	-- SadoQoL Withers recruits: the world, paused, darkened behind the creation screen (John 2026-10-24).
+	label
+	{
+		area 0 0 8000 5000
+		rectangle 0
+		rectangle opacity 230
+	}
+}
+
+menu
+{
+	name "SQRECR_MAIN"
+	modal
+	align center center
+	ignoreesc
+	-- SadoQoL Withers recruits: a copy of the game's CHARGEN screen (UI.MENU) driven by M_SQRECR.lua. The step buttons
+	-- reopen the current panel; Back undoes a step (on the first one: the recruit is deleted); Accept ends it.
+	label
+	{
+		area 0 0 1024 768
+		mosaic 'GUICGB'
+	}
+	label
+	{
+		area 64 16 898 44
+		text lua "SQRecruit_Title()"
+		text style "title"
+	}
+	text
+	{
+		area 412 180 288 416
+		text lua "SQRecruit_Info()"
+		scrollbar 'GUISCRC'
+		text style "normal"
+	}
+	label
+	{
+		area 775 171 210 330
+		bitmap lua "SQRecruit_Portrait()"
+	}
+	button
+	{
+		area 22 226 340 30
+		bam GUICHLNG
+		sequence 0
+		clickable lua "SQRecruit_StepIn(0, 2)"
+		glow lua "SQRecruit_StepIn(0, 2)"
+		text "GENDER_BUTTON"
+		text style "button"
+		action "SQRecruit_Continue()"
+	}
+	button
+	{
+		area 22 256 340 30
+		bam GUICHLNG
+		sequence 1
+		clickable lua "SQRecruit_StepIn(3, 3)"
+		glow lua "SQRecruit_StepIn(3, 3)"
+		text "RACE_BUTTON"
+		text style "button"
+		action "SQRecruit_Continue()"
+	}
+	button
+	{
+		area 22 286 340 30
+		bam GUICHLNG
+		sequence 2
+		clickable lua "SQRecruit_StepIn(4, 6)"
+		glow lua "SQRecruit_StepIn(4, 6)"
+		text "CLASS_BUTTON"
+		text style "button"
+		action "SQRecruit_Continue()"
+	}
+	button
+	{
+		area 22 316 340 30
+		bam GUICHLNG
+		sequence 1
+		clickable lua "SQRecruit_StepIn(7, 7)"
+		glow lua "SQRecruit_StepIn(7, 7)"
+		text "ALIGNMENT_BUTTON"
+		text style "button"
+		action "SQRecruit_Continue()"
+	}
+	button
+	{
+		area 22 346 340 30
+		bam GUICHLNG
+		sequence 0
+		clickable lua "SQRecruit_StepIn(8, 8)"
+		glow lua "SQRecruit_StepIn(8, 8)"
+		text "ABILITIES_BUTTON"
+		text style "button"
+		action "SQRecruit_Continue()"
+	}
+	button
+	{
+		area 22 376 340 30
+		bam GUICHLNG
+		sequence 1
+		clickable lua "SQRecruit_StepIn(9, 14)"
+		glow lua "SQRecruit_StepIn(9, 14)"
+		text "SKILLS_BUTTON"
+		text style "button"
+		action "SQRecruit_Continue()"
+	}
+	button
+	{
+		area 22 406 340 30
+		bam GUICHLNG
+		sequence 2
+		clickable lua "SQRecruit_StepIn(15, 16)"
+		glow lua "SQRecruit_StepIn(15, 16)"
+		text "APPEARANCE_BUTTON"
+		text style "button"
+		action "SQRecruit_Continue()"
+	}
+	button
+	{
+		area 22 436 340 30
+		bam GUICHLNG
+		sequence 1
+		clickable lua "SQRecruit_StepIn(17, 17)"
+		glow lua "SQRecruit_StepIn(17, 17)"
+		text "NAME_BUTTON"
+		text style "button"
+		action "SQRecruit_Continue()"
+	}
+	button
+	{
+		area 770 604 204 44
+		text "BIOGRAPHY_BUTTON"
+		text style "button"
+		bam GUIOSTLM
+		clickable lua "SQRecruit_Step() >= 17"
+		action "createCharScreen:OnBiographyButtonClick()"
+	}
+	button
+	{
+		on escape
+		area 194 718 232 44
+		text "BACK_BUTTON"
+		text style "button"
+		bam GUIOSTUL
+		action "SQRecruit_Back()"
+	}
+	button
+	{
+		area 438 718 206 44
+		text "ACCEPT_BUTTON"
+		text style "button"
+		bam GUIOSTUM
+		clickable lua "SQRecruit_CanAccept()"
+		action "SQRecruit_Accept()"
+	}
+	button
+	{
+		area 650 718 238 44
+		text lua "SQRecruit.TXT_ABANDON"
+		text style "button"
+		bam GUIOSTUR
+		action "SQRecruit_Abandon()"
+	}
+}
+
+menu
+{
+	name "SQRECR_ASK"
+	modal
+	align center center
+	ignoreesc
+	-- SadoQoL Withers recruits, imported character: keep his own items? then his own XP or the protagonist's?
+	label
+	{
+		area 0 0 560 170
+		rectangle 0
+		rectangle opacity 230
+	}
+	label
+	{
+		area 20 14 520 80
+		text lua "SQRecruit_AskText()"
+		text style "normal"
+		text align center center
+	}
+	button
+	{
+		area 50 112 220 36
+		bam GUIBUTWS
+		sequence 0
+		text lua "SQRecruit_AskLeft()"
+		text style "button"
+		action "SQRecruit_Answer(true)"
+	}
+	button
+	{
+		area 290 112 220 36
+		bam GUIBUTWS
+		sequence 0
+		text lua "SQRecruit_AskRight()"
+		text style "button"
+		action "SQRecruit_Answer(false)"
+	}
+}
+
+menu
+{
+	name "SQRECR_GEAR"
+	modal
+	align center center
+	size 864 710
+	ignoreesc
+	onopen "SQRecruit_GearLayout()"
+	-- SadoQoL Withers recruits, last screen: the gear (M_SQRECR.lua), in the game's store look (STORE_BUYSELL,
+	-- John 2026-10-24): what is offered on the left (Party Stash, free; Grand marchand, its price), what the recruit
+	-- gets on the right; click = pick / unpick (one per slot, two rings; the best pre-picked), right click = the
+	-- item's description.
+	label
+	{
+		name "sqRecrGearBg"
+		area 0 0 864 598
+		mosaic GUISTBSC
+	}
+	label
+	{
+		enabled "not LeUI_uiStrings"
+		area 0 598 864 112
+		mosaic GUISTBBB
+	}
+	label
+	{
+		name "sqRecrGearTitle"
+		area 48 16 768 44
+		text lua "SQRecruit.TXT_GEAR_TITLE"
+		text style "title"
+	}
+	label
+	{
+		name "sqRecrGearOffer"
+		area 26 116 349 30
+		text lua "SQRecruit.TXT_GEAR_OFFER"
+		text style "label"
+		align left center
+	}
+	label
+	{
+		enabled "not LeUI_uiStrings"
+		area 467 116 250 30
+		text lua "SQRecruit_RecruitName()"
+		text style "label"
+		align left center
+	}
+	label
+	{
+		name "sqRecrGearGold"
+		area 717 116 108 30
+		text lua "SQRecruit_GearGold()"
+		text style "gold"
+		align right center
+	}
+	list
+	{
+		column
+		{
+			width 100
+			label
+			{
+				area 5 0 64 60
+				bam STONSLOT
+				frame lua "SQRecruit_OfferFrame(rowNumber)"
+				icon lua "SQRecruit_OfferIcon(rowNumber)"
+				align center center
+			}
+			label
+			{
+				area 80 0 230 60
+				text lua "SQRecruit_OfferName(rowNumber)"
+				text style "normal"
+				text align left center
+			}
+			label
+			{
+				area 310 0 91 60
+				text lua "SQRecruit_OfferPrice(rowNumber)"
+				text style "gold"
+			}
+			label
+			{
+				enabled "SQRecruit_OfferGrey(rowNumber)"
+				area 0 0 436 60
+				rectangle 1
+				rectangle opacity 150
+			}
+		}
+		name "sqRecrGearOfferList"
+		area 26 146 406 344
+		hidehighlight
+		rowheight 60
+		table "sqRecrOffer"
+		var sqRecrOfferRow
+		scrollbar 'GUISCRC'
+		action "SQRecruit_OfferClick(sqRecrOfferRow)"
+		actionalt "SQRecruit_OfferDescribe(sqRecrOfferRow)"
+	}
+	list
+	{
+		column
+		{
+			width 100
+			label
+			{
+				area 5 0 64 60
+				bam STONSLOT
+				icon lua "SQRecruit_PickIcon(rowNumber)"
+				align center center
+			}
+			label
+			{
+				area 80 0 200 60
+				text lua "SQRecruit_PickName(rowNumber)"
+				text style "normal"
+				text align left center
+			}
+			label
+			{
+				area 300 0 62 60
+				text lua "SQRecruit_PickPrice(rowNumber)"
+				text style "gold"
+			}
+		}
+		name "sqRecrGearPickList"
+		area 462 146 368 344
+		hidehighlight
+		rowheight 60
+		table "sqRecrPicked"
+		var sqRecrPickedRow
+		scrollbar 'GUISCRC'
+		action "SQRecruit_PickClick(sqRecrPickedRow)"
+		actionalt "SQRecruit_PickDescribe(sqRecrPickedRow)"
+	}
+	label
+	{
+		name "sqRecrGearCostLabel"
+		area 94 499 146 23
+		text "COST_LABEL"
+		text style "label"
+		align right center
+	}
+	label
+	{
+		name "sqRecrGearCost"
+		area 319 499 108 23
+		text lua "SQRecruit_GearCostValue()"
+		text style "normal"
+		align right center
+	}
+	button
+	{
+		name "sqRecrGearOk"
+		on return
+		area 638 658 204 44
+		bam GUIOSTUM
+		text lua "SQRecruit.TXT_GEAR_OK"
+		text style "button"
+		action "SQRecruit_GearValidate()"
+	}
+}
