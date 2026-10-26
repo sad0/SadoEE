@@ -22,7 +22,7 @@
 | 7 | Option: hardcore | Campaign changes empty the stash too | all |
 | **Rest camp** | | | |
 | 10 | Rest camp + priestess | A quiet camp from the world map (0 h there and back, safe rest). The priestess heals HP / poison / disease for free (also while you sleep), sells resurrection / restoration / curse removal, takes donations for reputation | all |
-| 11 | Grand merchant | Sells every item seen in the stores you visited | all |
+| 11 | Grand Merchant | Sells every item seen in the stores you visited | all |
 | 12 | The Old Scholar | Identifies everything, party and stash, 80 gp per item; opens the item Codex | all |
 | 13 | Waiting at the camp | A member who leaves the party can wait for you around the fire | all |
 | 14 | Withers: respec | A lich who fully remakes a party member (race, class, kit, abilities...), free; works on recruited creatures too | all |
@@ -60,7 +60,7 @@ _To write: how to reach it (parchment over Travel), leaving (exit corner, like a
 Camp), each resident with screenshots._
 
 ### Priestess (#10, #50-#53)
-### Grand merchant (#11)
+### Grand Merchant (#11)
 ### The Old Scholar, Codex and quest chronicle (#12, #16)
 ### Waiting at the camp (#13)
 ### Withers: respec and recruit (#14, #15)
@@ -485,7 +485,7 @@ Priestess services (`M_SQPRST.lua`):
 
 ---
 
-#### #11 Grand merchant (`LABEL ~SADOEE-CAMP-MERCHANT~`)
+#### #11 Grand Merchant (`LABEL ~SADOEE-CAMP-MERCHANT~`)
 
 ##### What it does
 Brings the merchant `SQMERCH` to the camp. His dialogue opens the store `PSXCAMP`, rebuilt each time it opens from
@@ -508,7 +508,7 @@ Scholar #12) and its install-time item / area encyclopedia.
 | `PSXGMBN1-4.BAM`, `PSXGMCIR.BAM` | Paper ticket buttons, pencil circle of the chosen category. |
 | `PSXGMTT.BAM` | Title lettering: from `PSXGMTFR.BAM` (French) or `PSXGMTEN.BAM` (any other language). |
 | `PSXGMTC.BAM` | Codex page title (same word in every language). |
-| `SQMERCH.CRE` | Copied from `BDBELEGA.CRE` (SoD's quartermaster; BG2EE: `AEMERCH.CRE`). Animation `0xC800` (FAT_MAN); colours 27/40/9/12/8/24/0; NAME1/NAME2 = `@1115` ("Grand merchant"); scripts cleared; DEATHVAR and DIALOG = `SQMERCH`; soundset from `MERCHA.CRE` (BG2EE: `AEMERCH.CRE`). |
+| `SQMERCH.CRE` | Copied from `BDBELEGA.CRE` (SoD's quartermaster; BG2EE: `AEMERCH.CRE`). Animation `0xC800` (FAT_MAN); colours 27/40/9/12/8/24/0; NAME1/NAME2 = `@1115` ("Grand Merchant"); scripts cleared; DEATHVAR and DIALOG = `SQMERCH`; soundset from `MERCHA.CRE` (BG2EE: `AEMERCH.CRE`). |
 | `SQMERCH.DLG` | Recompiled from `camp/dlg/SQMERCH.d` (replaces #10's placeholder): `StartStore("PSXCAMP",LastTalkedToBy())`. |
 
 ##### Existing game files modified
