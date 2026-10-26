@@ -55,3 +55,7 @@ Readme in 15 languages: `SadoEE/readme/`.
 ## License
 
 MIT. Author: sad0.
+
+## Credits
+
+Thanks to Endarire and 11jo for their feedback and testing.
