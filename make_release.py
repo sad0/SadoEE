@@ -7,6 +7,7 @@ Checks that SadoEE.tp2 says that version, then writes into release/:
   SadoEE-<v>-nexus.zip  SadoEE/ + INSTALL.txt + LICENSE, no executable (Nexus refuses them)
 """
 import os
+import shutil
 import re
 import sys
 import zipfile
@@ -64,6 +65,16 @@ def main(version):
                 z.write(full, arc)
                 n += 1
         print(name, n, 'files', os.path.getsize(path), 'bytes')
+    # the mod itself is versioned in the repository too (SadoEE/ = what the zip installs), so a release commit
+    # shows the real code changes (lynx on Gibberlings3, 2026-10-26)
+    repo_mod = os.path.join(HERE, 'SadoEE')
+    if os.path.isdir(repo_mod):
+        shutil.rmtree(repo_mod)
+    for full, arc in mod_files():
+        dst = os.path.join(HERE, arc)
+        os.makedirs(os.path.dirname(dst), exist_ok=True)
+        shutil.copy2(full, dst)
+    print('repository SadoEE/ updated: commit it with the release')
 
 
 if __name__ == '__main__':
