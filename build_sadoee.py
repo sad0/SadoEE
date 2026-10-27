@@ -145,7 +145,11 @@ def copy_sadoqol():
         if not re.match(r'(M_SQ\w+\.lua|SQ\w+\.menu)$', f) or f in ('M_SQSORT.lua', 'SQSORT.menu'):
             continue
         sub = 'camp' if f in CAMP_FILES else 'qol'
-        shutil.copy2(os.path.join(SQ, f), os.path.join(OUT, sub, f))
+        if f == 'M_SQOPT.lua':   # options panel labels: SQ_OPT_TXT_<n> = tra @n, resolved at install (qol.tra: +1000)
+            write(os.path.join(OUT, sub, f), re.sub(r'SQ_OPT_TXT_(\d+)', lambda m: 'SQ_OPT_TXT_%d' % (int(m.group(1)) + SQ_OFFSET),
+                                                 read(os.path.join(SQ, f))))
+        else:
+            shutil.copy2(os.path.join(SQ, f), os.path.join(OUT, sub, f))
         paths[f] = 'SadoEE/%s/%s' % (sub, f)
     shutil.copytree(os.path.join(SQ, 'camp'), os.path.join(OUT, 'camp', 'area'))
     shutil.copytree(os.path.join(SQ, 'camp_bg2'), os.path.join(OUT, 'camp', 'area_bg2'))  # BG2EE's camp (OH5300)
