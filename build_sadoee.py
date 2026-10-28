@@ -142,10 +142,10 @@ def copy_party_stash():
 def copy_sadoqol():
     paths = {}
     for f in os.listdir(SQ):
-        if not re.match(r'(M_SQ\w+\.lua|SQ\w+\.menu)$', f) or f in ('M_SQSORT.lua', 'SQSORT.menu'):
+        if not re.match(r'(M_SQ\w+\.lua|SQ\w+\.menu|SQOPT\w*\.(MOS|BAM))$', f) or f in ('M_SQSORT.lua', 'SQSORT.menu'):
             continue
         sub = 'camp' if f in CAMP_FILES else 'qol'
-        if f == 'M_SQOPT.lua':   # options panel labels: SQ_OPT_TXT_<n> = tra @n, resolved at install (qol.tra: +1000)
+        if f.endswith('.lua'):   # options page labels: SQ_OPT_TXT_<n> = tra @n, resolved at install (qol.tra: +1000)
             write(os.path.join(OUT, sub, f), re.sub(r'SQ_OPT_TXT_(\d+)', lambda m: 'SQ_OPT_TXT_%d' % (int(m.group(1)) + SQ_OFFSET),
                                                  read(os.path.join(SQ, f))))
         else:
