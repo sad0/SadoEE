@@ -41,7 +41,9 @@ SQ_MAP = {0: (20, 'SADOEE-QOL-PASSIVE-TRAPS'), 1: (21, 'SADOEE-QOL-VALUABLE-CONT
           20: (17, 'SADOEE-CAMP-NECROMANCER'),
           # camp priestess prices (John 2026-10-25): one SUBCOMPONENT group, camp block
           21: (50, 'SADOEE-CAMP-PRIEST-PRICES-75'), 22: (51, 'SADOEE-CAMP-PRIEST-PRICES-50'),
-          23: (52, 'SADOEE-CAMP-PRIEST-PRICES-25'), 24: (53, 'SADOEE-CAMP-PRIEST-PRICES-0')}
+          23: (52, 'SADOEE-CAMP-PRIEST-PRICES-25'), 24: (53, 'SADOEE-CAMP-PRIEST-PRICES-0'),
+          # NPC pairs can separate (John 2026-10-28, after Jarno's report on G3)
+          25: (33, 'SADOEE-QOL-PAIRS-SEPARATE')}
 SQ_DROPPED = {3, 4}   # sorted loot (= Party Stash #1), deprecated half personal space
 CAMP_FILES = {'M_SQCAMP.lua', 'SQCAMP.menu', 'M_SQCAIN.lua', 'M_SQPRST.lua', 'M_SQWAIT.lua', 'SQWAIT.menu', 'M_SQRESP.lua', 'SQRESP.menu',
              'M_SQRECR.lua', 'SQRECR.menu', 'M_SQNECR.lua', 'SQNECR.menu'}
@@ -323,7 +325,48 @@ END
     parts.append('\n////////// Engine extension (#40+) //////////\n')
     for n in sorted(k for k in ps if k >= 40):
         parts.append(add_group(ps[n], GROUP_ENGINE))
-    return ''.join(parts)
+    return switch_pack(''.join(parts))
+
+
+# Components the SadoEE options page switches on / off in game (M_SQOPT.lua): offered as one pack first (John
+# 2026-10-28: "install everything that can be turned off in the options? Yes / No / Choose each one").
+SWITCHABLE = (1, 20, 21, 22, 23, 24, 28, 29, 31)
+PACK_ALL, PACK_NONE, PACK_CHOOSE = 60, 61, 62
+EEX_PRED = 'REQUIRE_PREDICATE MOD_IS_INSTALLED ~EEex.tp2~ (ID_OF_LABEL ~EEex.tp2~ ~B3-EEex-Main~) @1002'
+HEADER_LINE = re.compile(r'(BEGIN |GROUP |LABEL |REQUIRE_PREDICATE |SUBCOMPONENT |//|\s*$)')
+
+
+def switch_pack(text):
+    """Puts the pack question first; each switchable component is skipped once the pack (all / none) is chosen."""
+    pre, comps = blocks(text)
+    bodies, out = [], []
+    skip = ('REQUIRE_PREDICATE !MOD_IS_INSTALLED ~SadoEE.tp2~ %d AND !MOD_IS_INSTALLED ~SadoEE.tp2~ %d @2024\n'
+            % (PACK_ALL, PACK_NONE))
+    for b in comps:
+        n = designated(b)
+        if n not in SWITCHABLE:
+            out.append(b)
+            continue
+        lines = b.splitlines(keepends=True)
+        i = 0
+        while i < len(lines) and HEADER_LINE.match(lines[i]):
+            i += 1
+        bodies.append('// #%d\nACTION_IF !MOD_IS_INSTALLED ~SadoEE.tp2~ %d BEGIN\n%sEND\n' % (n, n, ''.join(lines[i:])))
+        out.append(must_sub(r'(LABEL ~[^~]+~\n)', lambda m: m.group(1) + skip, b))
+    pack = ('////////// Features you can switch off in game (#60-#62) //////////\n'
+            '// One question for every component the SadoEE options page turns on / off (build_sadoee.py SWITCHABLE):\n'
+            '// all of them (#60, the same code as each one, skipped where one is installed already), none (#61), or\n'
+            '// choose each one (#62: the components are asked one by one, as before).\n'
+            'BEGIN @2021 DESIGNATED %d SUBCOMPONENT @2020\n'
+            'LABEL ~SADOEE-SWITCHABLE-ALL~\n'
+            'REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet~ @2014\n'
+            '%s\n\n%s\n'
+            'BEGIN @2022 DESIGNATED %d SUBCOMPONENT @2020\n'
+            'LABEL ~SADOEE-SWITCHABLE-NONE~\n\n'
+            'BEGIN @2023 DESIGNATED %d SUBCOMPONENT @2020\n'
+            'LABEL ~SADOEE-SWITCHABLE-CHOOSE~\n\n'
+            % (PACK_ALL, EEX_PRED, '\n'.join(bodies), PACK_NONE, PACK_CHOOSE))
+    return pre + pack + ''.join(out)
 
 
 README_CSS = ('body{font-family:Segoe UI,Arial,sans-serif;max-width:900px;margin:2em auto;padding:0 1em;background:#1b1712;'
