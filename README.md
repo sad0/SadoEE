@@ -1,10 +1,12 @@
 # SadoEE
 
+[![Discord](https://img.shields.io/badge/Discord-Sado%20Mods-5865F2?logo=discord&logoColor=white)](https://discord.gg/3XzeQv7HeS)
+
 Party Stash and SadoQoL in one WeiDU mod for **Baldur's Gate: Enhanced Edition**, **EET** and **Baldur's Gate II: Enhanced Edition** (game versions 2.6.6 and 2.7.3). Every feature is an optional component. Requires [EEex](https://github.com/Bubb13/EEex).
 
-**Discussion:** [Gibberlings3](https://www.gibberlings3.net/forums/topic/41664/) · [Beamdog Forums](https://forums.beamdog.com/discussion/90874) · [GitHub issues](https://github.com/sad0/SadoEE/issues). SadoEE includes [Party Stash](https://github.com/sad0/PartyStash-EE), which is also available on its own.
+**Discussion:** [Discord](https://discord.gg/3XzeQv7HeS) · [Gibberlings3](https://www.gibberlings3.net/forums/topic/41664/) · [Beamdog Forums](https://forums.beamdog.com/discussion/90874) · [GitHub issues](https://github.com/sad0/SadoEE/issues). SadoEE includes [Party Stash](https://github.com/sad0/PartyStash-EE), which is also available on its own.
 
-> **Work in progress.** I had to wrap SadoEE up before leaving on holiday, so everything is still WIP. More balanced options are already planned for every component (today many of them lean on the generous side). Feedback is very welcome: open an issue on GitHub.
+> **Work in progress.** I had to wrap SadoEE up before leaving on holiday, so everything is still WIP. More balanced options are already planned for every component (today many of them lean on the generous side). Feedback is very welcome: open an issue on GitHub or come to the [Discord](https://discord.gg/3XzeQv7HeS).
 
 ![A quick tour of the camp: Grand Merchant, quest chronicle, necromancer, a recruited gibberling](docs/images/camp-tour.gif)
 
