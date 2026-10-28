@@ -2,6 +2,8 @@
 
 [![Discord](https://img.shields.io/badge/Discord-Sado%20Mods-5865F2?logo=discord&logoColor=white)](https://discord.gg/3XzeQv7HeS)
 
+I have plenty of ideas and new projects on the way. Want to follow the news, try test builds early or share your ideas? Come say hi on the **[Sado Mods Discord](https://discord.gg/3XzeQv7HeS)**.
+
 Party Stash and SadoQoL in one WeiDU mod for **Baldur's Gate: Enhanced Edition**, **EET** and **Baldur's Gate II: Enhanced Edition** (game versions 2.6.6 and 2.7.3). Every feature is an optional component. Requires [EEex](https://github.com/Bubb13/EEex).
 
 **Discussion:** [Discord](https://discord.gg/3XzeQv7HeS) · [Gibberlings3](https://www.gibberlings3.net/forums/topic/41664/) · [Beamdog Forums](https://forums.beamdog.com/discussion/90874) · [GitHub issues](https://github.com/sad0/SadoEE/issues). SadoEE includes [Party Stash](https://github.com/sad0/PartyStash-EE), which is also available on its own.
