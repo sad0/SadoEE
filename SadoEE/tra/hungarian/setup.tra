@@ -1,6 +1,6 @@
 @1 = ~Party Stash: végtelen láda az egész csapatnak (EEex szükséges). Eltávolítás előtt: Ctrl + bal kattintás a súly zsákjára a láda kiürítéséhez~
 @2 = ~EEex szükséges.~
-@3 = ~Stash~
+@3 = ~Láda~
 @4 = ~Minden karakter viseli, hogy a játék a tartalmát viseltnek tekintse (küldetések). Az egész csapat közös ládája a felszerelés oldalon. Kattints egy tárgyra a felvételéhez; Shift + dupla kattintás egy hátizsákban lévő tárgyon vagy Szóköz (Mindet elrak) az elrakáshoz; Ctrl + kattintás megjelöl egy tárgyat eladásra a kereskedő „Jelöltek eladása” gombjával. A ládába tett zsák kiürül bele, és a Zsákok fülön marad: a láda tárgyai, amelyeket befogad, nem nyomnak semmit. A többi a tagok teherbírásának összegébe számít; felette mindenki lelassul.~
 @5 = ~Rendezett zsákmány: a földön, a tárolókban és a zsákmánysávon~
 @6 = ~Baldur's Gate 1 kinézet (ajánlott)~
@@ -17,7 +17,7 @@
 @17 = ~Party Stash szükséges.~
 @18 = ~Nagykereskedő: mindent árul, ami a már meglátogatott boltok raktárán van (a SadoQoL táborához)~
 @19 = ~Nagykereskedő~
-@20 = ~Quest chronicle: Decard opens the list of every quest of the game (status, journal, hints, full solution)~
-@21 = ~Requires Decard, the old scholar of the camp (SadoQoL / SadoEE).~
-@40 = ~Big party: 7 to 32 members (an extra portrait bar, the game's scripts and dialogues extended to members 7+)~
-@41 = ~For Baldur's Gate: Enhanced Edition and EET only.~
+@20 = ~Küldetéskrónika: Decard megnyitja a játék összes küldetésének listáját (állapot, napló, tippek, teljes megoldás)~
+@21 = ~Decard, a tábor öreg tudósa szükséges (SadoQoL / SadoEE).~
+@40 = ~Nagy csapat: 7-32 tag (egy további portrésáv, a játék szkriptjei és párbeszédei kiterjesztve a 7. és további tagokra)~
+@41 = ~Csak a Baldur's Gate: Enhanced Editionhöz és az EET-hez.~

@@ -84,11 +84,6 @@ Several components read or patch **every** file of a type present at install tim
 that is why SadoEE must be installed after every other mod.
 
 ## Known issues (v1.0.0)
-- #15 Withers recruit and #16 quest chronicle: when their requirement is missing, the refusal message wrongly
-  says "Requires EEex."
-- #14 Withers respec: without Party Stash, gear the new character cannot use is not unequipped.
-- #10: SQPRIEST.STO is still installed although nothing opens it any more (harmless).
-- #32 Auto-Roller: its texts are English only.
 - #40 Big party: loading a save with 7+ members after uninstalling #40 is not handled.
 - Some code comments still use the old SadoQoL / Party Stash component numbers.
 
@@ -369,7 +364,6 @@ spot is prepared but stays empty until #11.
 | `SQCAMPBT.BAM` | The parchment button (frame 0 normal, frame 1 under the mouse: `SQCamp_Frame()`). |
 | `SQCHS.BAM`, `7F8B.INI` | Legacy: the old camp chest's static animation (`animation_type=4000`, resref `SQCHS`), kept for saves made when the chest `SQCHEST` existed. The chest is removed from saves at runtime (`T.GONE`). |
 | `7F8C.INI`, `7F8D.INI` | Legacy test animation slots 0x7F8C (= 0x6402 MONK) and 0x7F8D (= 0xC910 PEASANT_WOMAN), kept for saves made on 2026-10-24. |
-| `SQPRIEST.STO` | Temple store (type 3, flags 0x34, markup 150/50) with 15 cures at the game's temple prices (SPPR103 50 ... SPWI625 1000), derived from `TEM3402`. Name patched to `@1114` ("Wandering priest's services"). No dialogue or Lua opens it any more (the priestess has no store reply since 2026-10-24). |
 | `SQPRIEST.CRE` | The priestess. Copied from `KELDDA.CRE` (BG2EE: `AMTCLE01.CRE`). Animation `0x28` = `0xC910` (PEASANT_WOMAN); colours 0x2C-0x32 = 27/54/54/13/54/54/115; NAME1/NAME2 = `@1113` ("Wandering priest"); all five scripts cleared; DEATHVAR and DIALOG = `SQPRIEST`. Soundset: the 100 strrefs at `0xA4` copied from `AGNASI.CRE` (BG2EE: `WILMAT.CRE`), when present. |
 | `SQPRIEST.DLG` | Compiled from `camp/dlg/SQPRIEST.d`: greeting (state trigger `SQPriest_Prime()`), replies Donate (`SQPriest_RepOk` / `RepPoor`), "Tend our wounds" (`SQPriest_FreeAny` -> `SQPriest_FreeHeal()`), paid healing (`SQPriest_HealOk` / `HealPoor` -> `SQPriest_Heal()`), Farewell. |
 | `SQMERCH.DLG` | Compiled from `camp/dlg/SQMERCH0.d`: placeholder dialogue ("My wagons have not arrived yet", `@1119`), replaced by #11. |
@@ -683,9 +677,8 @@ search and filters.
 None of its own (status comes from the save's journal). Uninstall leaves nothing in saves.
 
 ##### Install-time options / predicates
-- `REQUIRE_PREDICATE` #12 (`SADOEE-CAMP-SCHOLAR`, `@21`), `GAME_IS ~bgee bg2ee eet~` (`@2`), EEex main component
-  (`@2`), and `FILE_EXISTS_IN_GAME ~sqcain.dlg~` (`@21`). Note: `@2` in setup.tra is "Requires EEex." and is used
-  for the game check too.
+- `REQUIRE_PREDICATE` #12 (`SADOEE-CAMP-SCHOLAR`, `@21`), `GAME_IS ~bgee bg2ee eet~` (`@2014`, set by
+  build_sadoee.py since v1.0.2; #1 too), EEex main component (`@2`), and `FILE_EXISTS_IN_GAME ~sqcain.dlg~` (`@21`).
 - Hints / solution text language: English or French files only; other languages fall back to English.
 
 ---
@@ -817,7 +810,9 @@ Two extras: an optional dual-class preparation, and a "grimoire" item that holds
   code, the kit bytes 0x29/0x2B/0x2D/0x2F against `KITLIST.2DA UNUSABLE`, and the minimum abilities. The equipped
   slots checked are 0-9, 11-13 and 35-38. An unusable item goes through `PStash_Add` (into the Party Stash) and
   back through `PStash_Take` (to the backpack). If the backpack is full, the item stays in the stash and a line is
-  logged (@1177). **Without Party Stash's `PStash_Add` / `PStash_Take`, nothing is unequipped.**
+  logged (@1177). Without Party Stash (v1.0.2): the engine's `CInfGame::SwapItemPersonalInventory` (stub
+  `SQRespec_Eng_SwapItem`, prologue checked) takes it off into a free backpack slot (18-33); backpack full, or no
+  stub: `DropItem` at his feet.
 - **Grimoire of lost spells.**
   - At Finish, each mage spell from the old book that the new class / kit can still write (book casters: class
     1, 5, 7, 10, 13, 14, 17; school opposition per specialist kit; bards ≤ level 6) is re-learned with opcode 147
@@ -860,7 +855,8 @@ exists only in memory, so nothing of it remains.
 - Predicate: `MOD_IS_INSTALLED SADOEE-CAMP` (@2011). There are no options.
 - If the address table has no match for the running build, `SQ_Addr` gives `nil`. The patch then fails (caught by
   `pcall`) and respecs cannot start.
-- Party Stash (`PStash_Add` / `PStash_Take`) is needed to take unusable gear off.
+- Party Stash (`PStash_Add` / `PStash_Take`), when installed, takes unusable gear off (stash fallback when the
+  backpack is full); without it, the engine swap / `DropItem` path does.
 - Big party (Extension EEex, `PSXP7_LastPortrait`) widens the banked-XP and grimoire party scans beyond 6.
 - #17 joined creatures (`SQJOINED`) take the monster path, and may prepare a dual-class whatever their race.
 
@@ -958,8 +954,7 @@ normal characters.
 
 ##### Install-time options, predicates, interactions
 - Predicates: `MOD_IS_INSTALLED SADOEE-CAMP` (@2011), and `FILE_EXISTS_IN_GAME SQWITHER.DLG`, which means #14 must
-  be installed first. The refusal message for the second predicate is @1002 "Requires EEex.", which does not
-  describe the actual condition.
+  be installed first. Its refusal message is @1602 ("Requires Withers at the rest camp ...", v1.0.2).
 - Runtime dependencies on #14: the flag byte, `usable`, `levelOneHP` and `refreshStats`.
 - Big party: `PSXP7_Add` / `PSXP7_N` (Extension EEex) allow recruits past slot 6; without them `JoinParty()` is
   used (up to 6).
@@ -2033,7 +2028,7 @@ Common points for #27, #28, #30 and #31:
 
 **Options, interactions, limits.**
 - The layout is detected from UI.MENU, so other UI mods must be installed before #32.
-- Button and status texts are hard-coded English in `M_SQAROL.lua` ("Auto-Roll", "Stop (x.xs)", "18/xx weight:", "Duration:", "Best:", "rolls"). They are not translated.
+- Button and status texts come from qol.tra @1603-@1609 (v1.0.2: "Auto-Roll", "Stop (%.1fs)", "18/xx weight: %d", "Duration: %ds", "Best: %d", "STR", "%s rolls"), written into `M_SQAROL.lua` at install (`SQ_AROL_TXT_*`).
 
 ---
 

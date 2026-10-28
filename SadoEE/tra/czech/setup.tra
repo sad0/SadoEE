@@ -1,6 +1,6 @@
 @1 = ~Party Stash: nekonečná truhla sdílená celou družinou (vyžaduje EEex). Před odinstalováním: Ctrl + levé kliknutí na vak s váhou vyprázdní truhlu~
 @2 = ~Vyžaduje EEex.~
-@3 = ~Stash~
+@3 = ~Truhla~
 @4 = ~Nosí ji každá postava, aby hra počítala její obsah jako nesený (úkoly). Společná truhla celé družiny na stránce inventáře. Kliknutím předmět vezmete; Shift + dvojklik na předmět v batohu nebo mezerník (Uložit vše) jej uloží; Ctrl + kliknutí označí předmět k prodeji tlačítkem obchodníka „Prodat označené“. Vak uložený do truhly se do ní vysype a zůstane na kartě Vaky: předměty v truhle, které pojme, nic neváží. Zbytek se počítá do součtu nosností členů; nad ním jsou všichni zpomaleni.~
 @5 = ~Seřazená kořist: na zemi, v kontejnerech a v liště kořisti~
 @6 = ~Vzhled Baldur's Gate 1 (doporučeno)~
@@ -17,7 +17,7 @@
 @17 = ~Vyžaduje Party Stash.~
 @18 = ~Velký kupec: prodává vše, co mají na skladě již navštívené obchody (pro tábor SadoQoL)~
 @19 = ~Velký kupec~
-@20 = ~Quest chronicle: Decard opens the list of every quest of the game (status, journal, hints, full solution)~
-@21 = ~Requires Decard, the old scholar of the camp (SadoQoL / SadoEE).~
-@40 = ~Big party: 7 to 32 members (an extra portrait bar, the game's scripts and dialogues extended to members 7+)~
-@41 = ~For Baldur's Gate: Enhanced Edition and EET only.~
+@20 = ~Kronika úkolů: Decard otevře seznam všech úkolů ve hře (stav, deník, rady, úplné řešení)~
+@21 = ~Vyžaduje Decarda, starého učence z tábora (SadoQoL / SadoEE).~
+@40 = ~Velká družina: 7 až 32 členů (další lišta portrétů, skripty a dialogy hry rozšířené na členy 7+)~
+@41 = ~Pouze pro Baldur's Gate: Enhanced Edition a EET.~

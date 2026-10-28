@@ -16,6 +16,9 @@ Engine patches (bytes checked first; another build is left untouched, SQMode.sta
  3. CheckModal stealth re-roll failure: no cancel, the thief rolls again 3 rounds later (0x14038DBBA).
  4. Movement-rate modal effect (opcode 363, shaman dance): no cancel when moving (0x1401BA85F je -> jmp).
  5. Find Traps button handler 0x140264916 -> SQMode_ToggleTraps(sprite) then the handler's normal exit.
+ 5b. CheckModal's per-round feedback "Singing Bard Song" (0x14038E6AA, song and dance) and "Turning Undead"
+    (0x14038D2B4) -> NOPed. In vanilla a bard stops singing as soon as he acts, so it was barely seen; with lasting
+    modes it filled the log every round (Garrick, 2026-10-28). The portrait icon and the action bar still show it.
 Patches apply once per game run, at engine start or when this file is first run.
 --]]
 
@@ -39,6 +42,8 @@ local DANCE_JE_BYTES = { 0x0F, 0x84, 0xB9, 0x00, 0x00, 0x00 }
 local TRAP_BUTTON = SQ_Addr(0x140264916)
 local TRAP_BUTTON_BYTES = { 0x48, 0x8B, 0x4C, 0x24, 0x48 }   -- mov rcx, qword ptr [rsp+0x48] (the sprite)
 local TRAP_BUTTON_EXIT = SQ_Addr(0x140264AF7)                         -- selected = 100, update buttons, return 1
+local MODAL_FEEDBACK = SQ_Addr(0x140398B70)                           -- CGameSprite feedback (message id in edx)
+local FEEDBACK_CALLS = { SQ_Addr(0x14038E6AA), SQ_Addr(0x14038D2B4) }   -- song / dance (0x39), turn undead (0x36)
 
 local function byteAt(a) return EEex_ReadU8(a) % 256 end
 local function bytesAre(addr, list)
@@ -115,6 +120,10 @@ local function patch()
 	writeBytes(STEALTH_FAIL, STEALTH_FAIL_PATCH)
 	writeBytes(DANCE_JE, { 0x90, 0xE9 })
 	if SQTrap then writeRel(TRAP_BUTTON, 0xE9, trapStub) end   -- only with the passive trap detection (#0)
+	-- 5b. no per-round "Singing Bard Song" / "Turning Undead" (checked on their own: the rest does not depend on it)
+	for _, a in ipairs(FEEDBACK_CALLS) do
+		if byteAt(a) == 0xE8 and relTarget(a) == MODAL_FEEDBACK then writeBytes(a, { 0x0F, 0x1F, 0x44, 0x00, 0x00 }) end
+	end
 	EEex_EnableCodeProtection()
 	T.status = SQTrap and 'patched' or 'patched (no #0: Find Traps button unchanged)'
 end
@@ -252,7 +261,9 @@ end
 -- action is dropped when the sprite is already in that modal state (byte +0x3A29: 1 song, 4 turn undead, 5 dance).
 local A_BATTLESONG, A_TURN = 296, 33
 local MODAL_OFF = 0x3A29
+T.SPAM = T.SPAM ~= false -- the filter on (SadoEE options panel: SQMode.SPAM)
 function SQMode_OnStartedAction(sp, a)
+	if not T.SPAM then return end
 	local id = a.m_actionID
 	if id ~= A_BATTLESONG and id ~= A_TURN then return end
 	local m = EEex_ReadU8(EEex_UDToPtr(sp) + MODAL_OFF)

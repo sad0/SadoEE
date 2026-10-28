@@ -46,6 +46,10 @@ local function buildStub(name, target, nargs)
 		emit(0xFF, 0xD0)
 		emit(0x48, 0x89, 0x84, 0x24, bytesLE(slot(i), 4))
 	end
+	for k = 0, nargs - 5 do   -- arguments 5+ on the stack (SwapItem: 9)
+		emit(0x48, 0x8B, 0x84, 0x24, bytesLE(slot(5 + k), 4))
+		emit(0x48, 0x89, 0x44, 0x24, 0x20 + 8 * k)
+	end
 	local regs = { { 0x48, 0x8B, 0x8C }, { 0x48, 0x8B, 0x94 }, { 0x4C, 0x8B, 0x84 }, { 0x4C, 0x8B, 0x8C } }
 	for i = 1, math.min(nargs, 4) do
 		emit(regs[i][1], regs[i][2], regs[i][3], 0x24, bytesLE(slot(i), 4))
@@ -67,6 +71,11 @@ local function buildStub(name, target, nargs)
 end
 
 local REMOVE_ABILITIES = SQ_Addr(0x1402AC8D0)     -- CScreenCreateChar::RemoveAbilities(this, sprite, newClass, 1)
+-- CInfGame::SwapItemPersonal(game, portrait, slot, CItem** hand, short* err, maxCount, bool, 0): the inventory screen's
+-- own slot swap, any slot (SwapItemPersonalInventory, Party Stash's, takes the backpack only: "bad slot number" on
+-- equipped slots, study copy 2026-10-28). Takes gear off without Party Stash.
+local SWAP_ITEM = SQ_Addr(0x14028FF20)
+local SWAP_ITEM_PROLOGUE = { 0x40, 0x55, 0x53, 0x56, 0x57, 0x41, 0x54 }
 
 -- CompleteCharacterSkills, after the starting gold: "mov rdx, rdi ; mov [rsp+0xD60], r14" (11 bytes) then the
 -- gold + starting weapon block, which ends at SKILLS_AFTER_GEAR (r13d = 1, r12d = 0 there).
@@ -104,6 +113,9 @@ local function patch()
 	for i = 5, #SKILLS_GEAR_BYTES - 1 do EEex_WriteU8(SKILLS_GEAR + i, 0x90) end
 	EEex_EnableCodeProtection()
 	buildStub('RemoveAbilities', REMOVE_ABILITIES, 4)
+	local swapOk = SWAP_ITEM ~= nil
+	for i, b in ipairs(SWAP_ITEM_PROLOGUE) do swapOk = swapOk and byteAt(SWAP_ITEM + i - 1) == b end
+	if swapOk then buildStub('SwapItem', SWAP_ITEM, 8) end
 	T.status = 'patched'
 end
 
@@ -178,7 +190,8 @@ end
 -- ---- gear the new character can no longer use (John 2026-10-23) ----
 -- ITM "not usable by" bits (header 0x1E): class, race, alignment; kit bytes 0x29 / 0x2B / 0x2D / 0x2F against
 -- KITLIST's UNUSABLE; plus the minimum abilities. Unusable equipped items go to the backpack, or, when it is full,
--- to the Party Stash with a line in the message log.
+-- one backpack item makes room in the Party Stash (line in the message log); without Party Stash, the piece is dropped at
+-- his feet (#14 known issue, v1.0.2).
 local CLASS_BIT = { [1] = 18, [2] = 11, [3] = 7, [4] = 22, [5] = 6, [6] = 20, [7] = 13, [8] = 14, [9] = 17,
 	[10] = 16, [11] = 30, [12] = 21, [13] = 19, [14] = 8, [15] = 9, [16] = 12, [17] = 15, [18] = 10, [19] = 18,
 	[20] = 29, [21] = 30 }
@@ -229,20 +242,62 @@ T.TXT_GRIM_OPEN = "SQ_RESP_TXT_GRIMOPEN"
 T.TXT_GRIM_LEARNBTN = "SQ_RESP_TXT_GRIMLBTN"
 T.TXT_GRIM_CLOSE = "SQ_RESP_TXT_GRIMCLOSE"
 
+local function freeBackpackSlot(sp)
+	for i = 18, 33 do if not sp.m_equipment.m_items:get(i) then return i end end
+end
+
+-- The engine's own slot swap, as a click in the inventory screen: the item comes off into the hand (equipped effects
+-- removed), then goes in a free backpack slot. Backpack full: dropped at his feet (DropItem, the engine takes it off
+-- itself). Endless ammo's SQAROW is refused by the swap (stays in the quiver, harmless).
+local function swap(portrait, slot)
+	EEex_Write32(T.swapBuf + 8, 0)
+	SQRespec_Eng_SwapItem(EEex_UDToPtr(EEex_EngineGlobal_CBaldurChitin.m_pObjectGame), portrait, slot, T.swapBuf,
+		T.swapBuf + 8, 0xFFFF, 0, 0)
+	return EEex_ReadU64(T.swapBuf)
+end
+
+local function takeOffAlone(sp, portrait, slot, it, res)
+	local free = freeBackpackSlot(sp)
+	if not free or not SQRespec_Eng_SwapItem then
+		EEex_Action_QueueResponseStringOnAIBase(string.format('DropItem("%s",[%d.%d])', res, sp.m_pos.x, sp.m_pos.y), sp)
+		return
+	end
+	T.swapBuf = T.swapBuf or EEex_Malloc(16)   -- [0] CItem* in hand, [8] error
+	EEex_Write64(T.swapBuf, 0)
+	if swap(portrait, slot) ~= EEex_UDToPtr(it) then return end   -- refused: still on him, nothing in hand
+	-- set straight into the backpack: the swap checks the class for any slot ("cannot use item" for the new mage)
+	sp.m_equipment.m_items:set(free, it)
+end
+
+-- Backpack full and Party Stash installed: one backpack item (not the stash bag) goes to the stash, with a line in
+-- the message log, so the unusable piece can come down in the backpack.
+local function makeRoom(sp, portrait, takenOff)
+	if not PStash_Add then return end
+	for i = 32, 18, -1 do
+		local it = sp.m_equipment.m_items:get(i)
+		local res = it and not takenOff[EEex_UDToPtr(it)] and it.pRes.resref:get()   -- not a piece just taken off
+		if res and PStash_Add(portrait, i) then
+			local name = Infinity_FetchString(EEex_Resource_Demand(res, 'ITM').identifiedName)
+			Infinity_DisplayString(string.format(T.TXT_STASH, sp:getName(), name))
+			return
+		end
+	end
+end
+
+-- (Through Party Stash's PStash_Add / PStash_Take before v1.0.2: PStash_Add's swap takes backpack slots only, an
+-- equipped piece was copied into the stash and stayed on him.)
 local function unequipUnusable(sp)
 	local portrait = EEex_Sprite_GetPortraitIndex(sp)
-	if not portrait or portrait < 0 or not PStash_Add or not PStash_Take then return end
+	if not portrait or portrait < 0 then return end
+	local takenOff = {}
 	for _, slot in ipairs(EQUIPPED) do
 		local it = sp.m_equipment.m_items:get(slot)
 		if it then
 			local res = it.pRes.resref:get()
 			if not usable(sp, res) then
-				-- through the stash and back: the engine's own swaps take it off properly (equipped effects)
-				local ok = PStash_Add(portrait, slot)
-				if ok and not PStash_Take(portrait, res) then
-					local name = Infinity_FetchString(EEex_Resource_Demand(res, 'ITM').identifiedName)
-					Infinity_DisplayString(string.format(T.TXT_STASH, sp:getName(), name))
-				end
+				if not freeBackpackSlot(sp) then pcall(makeRoom, sp, portrait, takenOff) end
+				takenOff[EEex_UDToPtr(it)] = true
+				takeOffAlone(sp, portrait, slot, it, res)
 			end
 		end
 	end
@@ -799,6 +854,7 @@ end
 
 -- shared with #19 (Withers recruits, M_SQRECR.lua)
 T.usable, T.levelOneHP, T.refreshStats = usable, levelOneHP, refreshStats
+T.unequipUnusable = unequipUnusable   -- test scripts (v1.0.2 #14 check)
 
 local function pushTick()
 	if not Infinity_IsMenuOnStack('SQRESP_TICK') then Infinity_PushMenu('SQRESP_TICK') end

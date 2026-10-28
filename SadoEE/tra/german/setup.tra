@@ -1,6 +1,6 @@
 @1 = ~Party Stash: eine unendliche Truhe für die ganze Gruppe (benötigt EEex). Vor der Deinstallation: Strg + Linksklick auf den Gewichtsbeutel, um die Truhe zu leeren~
 @2 = ~Benötigt EEex.~
-@3 = ~Stash~
+@3 = ~Truhe~
 @4 = ~Jeder Charakter trägt sie, damit das Spiel ihren Inhalt als getragen zählt (Quests). Die gemeinsame Truhe der ganzen Gruppe, auf der Inventarseite. Klickt auf einen Gegenstand, um ihn zu nehmen; Umschalt + Doppelklick auf einen Rucksackgegenstand oder Leertaste (Alles einl.) zum Einlagern; Strg + Klick markiert einen Gegenstand zum Verkauf über die Händler-Schaltfläche „Markierte verk.“. Ein in die Truhe gelegter Beutel wird in sie geleert und im Reiter Beutel behalten: Truhengegenstände, die er aufnehmen kann, wiegen nichts. Der Rest zählt zur Summe der Traglasten der Mitglieder; darüber werden alle verlangsamt.~
 @5 = ~Sortierte Beute: am Boden, in Behältern und in der Beuteleiste~
 @6 = ~Aussehen von Baldur's Gate 1 (empfohlen)~
@@ -17,7 +17,7 @@
 @17 = ~Benötigt Party Stash.~
 @18 = ~Lagerhändler: verkauft alles, was die bereits besuchten Läden vorrätig haben (für das Lager von SadoQoL)~
 @19 = ~Lagerhändler~
-@20 = ~Quest chronicle: Decard opens the list of every quest of the game (status, journal, hints, full solution)~
-@21 = ~Requires Decard, the old scholar of the camp (SadoQoL / SadoEE).~
-@40 = ~Big party: 7 to 32 members (an extra portrait bar, the game's scripts and dialogues extended to members 7+)~
-@41 = ~For Baldur's Gate: Enhanced Edition and EET only.~
+@20 = ~Questchronik: Decard öffnet die Liste aller Quests des Spiels (Status, Tagebuch, Hinweise, vollständige Lösung)~
+@21 = ~Benötigt Decard, den alten Gelehrten des Lagers (SadoQoL / SadoEE).~
+@40 = ~Große Gruppe: 7 bis 32 Mitglieder (eine zusätzliche Porträtleiste, Skripte und Dialoge des Spiels auf Mitglieder ab 7 erweitert)~
+@41 = ~Nur für Baldur's Gate: Enhanced Edition und EET.~

@@ -15,6 +15,15 @@ autoRoller = {
 	fighter = false,
 }
 
+-- texts, from the .tra at install (SadoQoL.tp2 #18; English only before v1.0.2)
+autoRoller.TXT_BUTTON = "SQ_AROL_TXT_BUTTON"       -- "Auto-Roll"
+autoRoller.TXT_STOP = "SQ_AROL_TXT_STOP"           -- "Stop (%.1fs)"
+autoRoller.TXT_WEIGHT = "SQ_AROL_TXT_WEIGHT"       -- "18/xx weight: %d"
+autoRoller.TXT_DURATION = "SQ_AROL_TXT_DURATION"   -- "Duration: %ds"
+autoRoller.TXT_BEST = "SQ_AROL_TXT_BEST"           -- "Best: %d"
+autoRoller.TXT_STR = "SQ_AROL_TXT_STR"             -- "STR"
+autoRoller.TXT_ROLLS = "SQ_AROL_TXT_ROLLS"         -- "%s rolls"
+
 local function autoRoller_clamp(v, lo, hi)
 	if v < lo then return lo end
 	if v > hi then return hi end
@@ -130,17 +139,17 @@ end
 function autoRoller_buttonText()
 	if autoRoller.running then
 		local left = math.max(0, autoRoller.endTick - Infinity_GetClockTicks()) / 1000
-		return string.format('Stop (%.1fs)', left)
+		return string.format(autoRoller.TXT_STOP, left)
 	end
-	return 'Auto-Roll'
+	return autoRoller.TXT_BUTTON
 end
 
 function autoRoller_weightText()
-	return '18/xx weight: ' .. autoRoller.weight
+	return string.format(autoRoller.TXT_WEIGHT, autoRoller.weight)
 end
 
 function autoRoller_durationText()
-	return 'Duration: ' .. autoRoller.duration .. 's'
+	return string.format(autoRoller.TXT_DURATION, autoRoller.duration)
 end
 
 local function autoRoller_thousands(n)
@@ -158,12 +167,12 @@ function autoRoller_statusText()
 		return ''
 	end
 	-- Show the raw total; the 18/xx weight only affects the ranking.
-	local text = 'Best: ' .. autoRoller.bestTotal
+	local text = string.format(autoRoller.TXT_BEST, autoRoller.bestTotal)
 	if autoRoller.fighter and autoRoller.bestStr then
-		text = text .. '  STR ' .. autoRoller.bestStr
+		text = text .. '  ' .. autoRoller.TXT_STR .. ' ' .. autoRoller.bestStr
 	end
 	if autoRoller.rolls > 0 then
-		text = text .. '\n' .. autoRoller_thousands(autoRoller.rolls) .. ' rolls'
+		text = text .. '\n' .. string.format(autoRoller.TXT_ROLLS, autoRoller_thousands(autoRoller.rolls))
 	end
 	return text
 end

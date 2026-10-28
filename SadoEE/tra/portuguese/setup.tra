@@ -1,6 +1,6 @@
 @1 = ~Party Stash: um baú infinito compartilhado por todo o grupo (requer EEex). Antes de desinstalar: Ctrl + clique esquerdo na bolsa do peso para esvaziar o baú~
 @2 = ~Requer EEex.~
-@3 = ~Stash~
+@3 = ~Baú~
 @4 = ~Cada personagem o carrega para que o jogo conte o conteúdo como carregado (missões). O baú compartilhado de todo o grupo, na página de inventário. Clique em um item para pegá-lo; Shift + clique duplo em um item da mochila ou Espaço (Guardar tudo) para guardar; Ctrl + clique marca um item para vender com o botão "Vender marcados" do mercador. Uma bolsa guardada no baú é esvaziada nele e mantida na aba Bolsas: os itens do baú que ela comporta não pesam nada. O resto conta na soma das cargas máximas dos membros; acima disso, todos ficam lentos.~
 @5 = ~Saque ordenado: no chão, nos contêineres e na barra de saque~
 @6 = ~Visual de Baldur's Gate 1 (recomendado)~
@@ -17,7 +17,7 @@
 @17 = ~Requer Party Stash.~
 @18 = ~Grande mercador: vende tudo o que as lojas já visitadas têm em estoque (para o acampamento do SadoQoL)~
 @19 = ~Grande mercador~
-@20 = ~Quest chronicle: Decard opens the list of every quest of the game (status, journal, hints, full solution)~
-@21 = ~Requires Decard, the old scholar of the camp (SadoQoL / SadoEE).~
-@40 = ~Big party: 7 to 32 members (an extra portrait bar, the game's scripts and dialogues extended to members 7+)~
-@41 = ~For Baldur's Gate: Enhanced Edition and EET only.~
+@20 = ~Crônica das missões: Decard abre a lista de todas as missões do jogo (estado, diário, dicas, solução completa)~
+@21 = ~Requer Decard, o velho erudito do acampamento (SadoQoL / SadoEE).~
+@40 = ~Grupo grande: de 7 a 32 membros (uma barra de retratos extra, os scripts e diálogos do jogo estendidos aos membros 7+)~
+@41 = ~Somente para Baldur's Gate: Enhanced Edition e EET.~

@@ -30,7 +30,8 @@ if SITE and SITE.FIRE then   -- BG2EE's camp
 	T.KEEP_CLEAR = { SITE.PRIEST, SITE.MERCH, SITE.CAIN, SITE.WITHERS }
 end
 T.created = T.created or {}            -- [id] = true: no dialogue of his own when he left (player-created)
-T.pending = T.pending or {}            -- [id] = time he left the party
+T.pending = T.pending or {}            -- [id] = time he left the party (refreshed while a dialogue runs)
+T.tries = T.tries or {}                -- [id] = questions sent that did not open yet
 
 local function partyIds()
 	local out = {}
@@ -45,9 +46,12 @@ local function alive(sp)
 	return EEex_BAnd(sp.m_baseStats.m_generalState, 0xFC0) == 0
 end
 
+-- The dialogue window is up. (worldScreen:GetInControlOfDialog() answers true with no dialogue at all on BGEE 2.7.3:
+-- used here, nobody was ever asked; John's test 2026-10-28.)
 local function inDialog()
-	local ok, r = pcall(function() return worldScreen:GetInControlOfDialog() end)
-	return Infinity_IsMenuOnStack('WORLD_DIALOG') or (ok and r == true)
+	-- (1 or nil; the menu flag can lag right after another NPC's dialogue: the replies shown count too)
+	return (Infinity_IsMenuOnStack('WORLD_DIALOG') or Infinity_IsMenuOnStack('WORLD_DIALOG_CONFIRM')
+		or #(worldPlayerDialogChoices or {}) > 0) and true or false
 end
 
 local function dialogOf(sp)
@@ -87,7 +91,9 @@ end
 
 -- dialogue SQKICK (EEex_LuaTrigger / EEex_LuaAction run with the ex-member as their object)
 function SQWait_Asking()
-	return T.asking ~= nil and EEex_LuaTrigger_Object ~= nil and T.asking == EEex_LuaTrigger_Object.m_id
+	local yes = T.asking ~= nil and EEex_LuaTrigger_Object ~= nil and T.asking == EEex_LuaTrigger_Object.m_id
+	if yes then T.pending[T.asking] = nil end   -- the question is open: no more tries
+	return yes
 end
 
 function SQWait_ToCamp()
@@ -138,7 +144,13 @@ local function tick()
 		end
 	end
 	T.last = party
-	if inDialog() or T.asking then return end
+	-- While a dialogue runs (the ex-members' own leaving dialogues, another one being asked) the 60 s don't count:
+	-- with two members sent away together (Tweaks Anthology's separate NPC pairs: Jaheira and Khalid), the second one
+	-- waited through both dialogues and was forgotten before his turn (Jarno, G3, 2026-10-27).
+	if inDialog() or T.asking then
+		for id in pairs(T.pending) do T.pending[id] = now end
+		return
+	end
 	local leader = EEex_Sprite_GetInPortrait(0)
 	if not leader then return end
 	for id, since in pairs(T.pending) do
@@ -147,9 +159,14 @@ local function tick()
 		if not sp or party[id] or now - since > 60000 then
 			T.pending[id] = nil
 		elseif now - since > 800 and sp.m_curAction.m_actionID == 0 then
-			T.pending[id] = nil
 			local dx, dy = sp.m_pos.x - leader.m_pos.x, sp.m_pos.y - leader.m_pos.y
-			if EEex_UDEqual(sp.m_pArea, leader.m_pArea) and dx * dx + dy * dy <= T.NEAR * T.NEAR then
+			T.tries[id] = (T.tries[id] or 0) + 1
+			if not EEex_UDEqual(sp.m_pArea, leader.m_pArea) or dx * dx + dy * dy > T.NEAR * T.NEAR or T.tries[id] > 5 then
+				T.pending[id], T.tries[id] = nil, nil
+			else
+				-- he stays pending until the question really opens (SQWait_Asking): a leaving dialogue's last
+				-- actions (ChangeAIScript("",DEFAULT) in Khalid's and Jaheira's) can clear his queue right after
+				-- (Jarno, G3, 2026-10-27: both sent away, neither asked)
 				T.asking, T.askedAt = id, now
 				EEex_Action_QueueResponseStringOnAIBase('StartDialogOverride("SQKICK",Player1)', sp)
 				return
@@ -163,8 +180,8 @@ function SQWait_Tick()
 	local now = Infinity_GetClockTicks()
 	if T.next and now < T.next then return false end
 	T.next = now + T.PERIOD
-	-- a question that never opened (blocked, out of reach): forgotten after 10 s
-	if T.asking and not inDialog() and now - (T.askedAt or now) > 10000 then T.asking = nil end
+	-- a question that never opened (its queue cleared, blocked): asked again 4 s later (5 tries, then forgotten)
+	if T.asking and not inDialog() and now - (T.askedAt or now) > 4000 then T.asking = nil end
 	local ok, err = pcall(tick)
 	if not ok then T.lastError = tostring(err) end
 	return false
@@ -181,5 +198,5 @@ if not T.listenersAdded then
 	EEex_GameState_AddInitializedListener(pushTick)
 	EEex_Menu_AddAfterMainFileReloadedListener(pushTick)
 	-- a reload: the party seen last belongs to the old session
-	EEex_Sprite_AddLoadedListener(function() T.last, T.pending, T.asking = nil, {}, nil end)
+	EEex_Sprite_AddLoadedListener(function() T.last, T.pending, T.tries, T.asking = nil, {}, {}, nil end)
 end

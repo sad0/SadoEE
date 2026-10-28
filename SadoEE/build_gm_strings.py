@@ -225,6 +225,13 @@ EXTRA = {
         'gm_ctype_9': 'grimoire', 'gm_ctype_10': 'corps', 'gm_ctype_11': 'tonneau', 'gm_ctype_12': 'caisse'},
 }
 
+# the Codex strings in the other languages (2026-10-28, v1.0.2: translated for SadoEE), {language: {key: text}}
+_extra = os.path.join(HERE, 'gm_strings_extra.json')
+if os.path.exists(_extra):
+    import json
+    for _lang, _d in json.load(open(_extra, encoding='utf-8')).items():
+        EXTRA.setdefault(_lang, {}).update(_d)
+
 
 def lua_str(s):
     return "'" + s.replace('\\', '\\\\').replace("'", "\\'").replace('\n', '\\n') + "'"

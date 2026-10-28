@@ -70,6 +70,8 @@ if not T.listenersAdded then
 		if key == EEex_Key_GetFromName(T.KEY) then
 			T.on = not T.on
 			pcall(Infinity_SetINIValue, 'SadoQoL', 'FPS', T.on and 1 or 0)
+			-- the SadoEE options panel shows the same setting (M_SQOPT.lua)
+			if EEex_Options_Get and EEex_Options_Get('SQOPT_Fps') then pcall(EEex_Options_Set, 'SQOPT_Fps', T.on and 1 or 0) end
 		end
 	end)
 end

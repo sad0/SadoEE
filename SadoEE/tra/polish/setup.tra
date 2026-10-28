@@ -1,6 +1,6 @@
 @1 = ~Party Stash: nieskończona skrzynia wspólna dla całej drużyny (wymaga EEex). Przed odinstalowaniem: Ctrl + lewy przycisk na torbie wagi, aby opróżnić skrzynię~
 @2 = ~Wymaga EEex.~
-@3 = ~Stash~
+@3 = ~Skrzynia~
 @4 = ~Każda postać ją nosi, aby gra liczyła jej zawartość jako noszoną (zadania). Wspólna skrzynia całej drużyny, na stronie ekwipunku. Kliknij przedmiot, aby go wziąć; Shift + podwójne kliknięcie przedmiotu w plecaku lub Spacja (Schowaj wszystko), aby schować; Ctrl + kliknięcie zaznacza przedmiot do sprzedaży przyciskiem „Sprzedaj zazn.” u kupca. Torba schowana w skrzyni zostaje do niej opróżniona i zachowana w karcie Torby: przedmioty ze skrzyni, które może pomieścić, nic nie ważą. Reszta liczy się do sumy udźwigów członków; powyżej wszyscy są spowolnieni.~
 @5 = ~Posortowane łupy: na ziemi, w pojemnikach i na pasku łupów~
 @6 = ~Wygląd Baldur's Gate 1 (zalecany)~
@@ -17,7 +17,7 @@
 @17 = ~Wymaga Party Stash.~
 @18 = ~Wielki kupiec: sprzedaje wszystko, co mają w zapasie odwiedzone już sklepy (dla obozu SadoQoL)~
 @19 = ~Wielki kupiec~
-@20 = ~Quest chronicle: Decard opens the list of every quest of the game (status, journal, hints, full solution)~
-@21 = ~Requires Decard, the old scholar of the camp (SadoQoL / SadoEE).~
-@40 = ~Big party: 7 to 32 members (an extra portrait bar, the game's scripts and dialogues extended to members 7+)~
-@41 = ~For Baldur's Gate: Enhanced Edition and EET only.~
+@20 = ~Kronika zadań: Decard otwiera listę wszystkich zadań w grze (stan, dziennik, wskazówki, pełne rozwiązanie)~
+@21 = ~Wymaga Decarda, starego uczonego z obozu (SadoQoL / SadoEE).~
+@40 = ~Duża drużyna: od 7 do 32 członków (dodatkowy pasek portretów, skrypty i dialogi gry rozszerzone na członków 7+)~
+@41 = ~Tylko dla Baldur's Gate: Enhanced Edition i EET.~

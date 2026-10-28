@@ -1412,15 +1412,18 @@ function PStash_CellValuable(i) local c = cell(i) return c ~= nil and PStash_IsV
 -- Valuable items: old gold over the cell (15 %); to sell: the cell darkened (45 %) and the icon in greyscale
 -- (John 2026-10-22).
 local TINT_VALUABLE, TINT_SELL = 'PSTASHOR', 'PSTASHDK'
+-- SadoEE options panel (M_SQOPT.lua, John 2026-10-27): the hints can be switched off; on when the panel is not there.
+local function optOn(id) return SQOpt_On == nil or SQOpt_On(id) end
 function PStash_CellTint(i)
 	local c = cell(i)
 	if not c then return nil end
 	if not c.bag and PStash_IsValuable(c.res) then return TINT_VALUABLE end
 	if not c.bag and PStash_IsMarked(c.res) then return TINT_SELL end
+	if not optOn('StashTints') then return P.tintOk end -- red (unusable) / blue (unidentified) hints off
 	return c.tint
 end
 function PStash_CellGrey(i) local c = cell(i) return c ~= nil and not c.bag and PStash_IsMarked(c.res) end
-function PStash_CellPlus(i) local c = cell(i) return c ~= nil and c.plus == true end
+function PStash_CellPlus(i) local c = cell(i) return c ~= nil and c.plus == true and optOn('StashPlus') end
 
 local SORT_KEY = { Auto = 'sort_auto', Date = 'sort_date', Quality = 'sort_quality', Type = 'sort_type',
 	Price = 'sort_price', ['Gp/lb'] = 'sort_gplb' }
@@ -1814,6 +1817,7 @@ function PStash_DecorateTooltips()
 				line = d and T('dps_line', string.format('%.1f', d.round), d.thac0) or false
 				P.tipLine[res] = line
 			end
+			if not optOn('StashDps') then line = false end -- options panel: the DPS line off (the old one is cut below)
 			-- the engine keeps its slot table: the line added before goes first when the figure changed (John: two DPS
 			-- lines once the off hand was filled)
 			P.tipAdded = P.tipAdded or {}

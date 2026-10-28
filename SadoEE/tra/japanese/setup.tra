@@ -1,6 +1,6 @@
 @1 = ~Party Stash：パーティ全員で共有する無限の収納箱（EEex が必要）。アンインストール前：重量の袋を Ctrl＋左クリックして収納箱を空にする~
 @2 = ~EEex が必要です。~
-@3 = ~Stash~
+@3 = ~収納箱~
 @4 = ~全キャラクターが持つことで、中身が所持品として扱われます（クエスト用）。 パーティ全員共有の収納箱（インベントリ画面）。アイテムをクリックで取り出し、バックパックのアイテムを Shift＋ダブルクリック、またはスペース（全て収納）で収納。Ctrl＋クリックで売却の印を付け、商人の「印を売る」ボタンで売却。収納箱に入れた袋は中身が移され、袋タブに残ります。その袋に入る収納箱のアイテムは重さ0。残りはメンバーの最大積載量の合計に数えられ、超えると全員が遅くなります。~
 @5 = ~整理された戦利品：地面、コンテナ、戦利品バー~
 @6 = ~バルダーズ・ゲート 1 の外観（推奨）~
@@ -17,7 +17,7 @@
 @17 = ~Party Stash が必要です。~
 @18 = ~キャンプ商人: 訪れた店の在庫にあるものをすべて販売 (SadoQoL のキャンプ用)~
 @19 = ~キャンプ商人~
-@20 = ~Quest chronicle: Decard opens the list of every quest of the game (status, journal, hints, full solution)~
-@21 = ~Requires Decard, the old scholar of the camp (SadoQoL / SadoEE).~
-@40 = ~Big party: 7 to 32 members (an extra portrait bar, the game's scripts and dialogues extended to members 7+)~
-@41 = ~For Baldur's Gate: Enhanced Edition and EET only.~
+@20 = ~クエスト年代記：デカードがゲームの全クエストの一覧を開く（状態、日誌、ヒント、完全な解法）~
+@21 = ~キャンプの老学者デカードが必要（SadoQoL / SadoEE）。~
+@40 = ~大人数パーティ：7 人から 32 人（追加のポートレートバー、ゲームのスクリプトと会話を 7 人目以降のメンバーに拡張）~
+@41 = ~バルダーズ・ゲート：エンハンスト・エディションと EET 専用。~

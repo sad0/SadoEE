@@ -1,6 +1,6 @@
 @1 = ~Party Stash: tüm grubun paylaştığı sonsuz bir sandık (EEex gerekir). Kaldırmadan önce: sandığı boşaltmak için ağırlık çantasına Ctrl + sol tık~
 @2 = ~EEex gerekir.~
-@3 = ~Stash~
+@3 = ~Sandık~
 @4 = ~Her karakter taşır; böylece oyun içindekileri taşınıyor sayar (görevler). Tüm grubun ortak sandığı, envanter sayfasında. Bir eşyayı almak için tıklayın; saklamak için sırt çantasındaki bir eşyaya Shift + çift tıklayın veya Boşluk (Hepsini koy) tuşuna basın; Ctrl + tıklama, tüccarın "İşaretlileri sat" düğmesiyle satılacak eşyayı işaretler. Sandığa konan bir çanta içine boşaltılır ve Çantalar sekmesinde tutulur: alabileceği sandık eşyaları hiç ağırlık yapmaz. Geri kalanı üyelerin taşıma sınırları toplamına sayılır; bunun üzerinde herkes yavaşlar.~
 @5 = ~Sıralı ganimet: yerde, kaplarda ve ganimet çubuğunda~
 @6 = ~Baldur's Gate 1 görünümü (önerilir)~
@@ -17,7 +17,7 @@
 @17 = ~Party Stash gerektirir.~
 @18 = ~Büyük tüccar: zaten ziyaret edilen dükkânların stokundaki her şeyi satar (SadoQoL kampı için)~
 @19 = ~Büyük tüccar~
-@20 = ~Quest chronicle: Decard opens the list of every quest of the game (status, journal, hints, full solution)~
-@21 = ~Requires Decard, the old scholar of the camp (SadoQoL / SadoEE).~
-@40 = ~Big party: 7 to 32 members (an extra portrait bar, the game's scripts and dialogues extended to members 7+)~
-@41 = ~For Baldur's Gate: Enhanced Edition and EET only.~
+@20 = ~Görev vakayinamesi: Decard oyundaki tüm görevlerin listesini açar (durum, günlük, ipuçları, tam çözüm)~
+@21 = ~Kampın yaşlı âlimi Decard gerekir (SadoQoL / SadoEE).~
+@40 = ~Büyük grup: 7 ile 32 arası üye (ek bir portre çubuğu, oyunun betikleri ve diyalogları 7. ve sonraki üyelere genişletilir)~
+@41 = ~Yalnızca Baldur's Gate: Enhanced Edition ve EET için.~

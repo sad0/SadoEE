@@ -2,6 +2,8 @@
 
 Party Stash and SadoQoL in one WeiDU mod for **Baldur's Gate: Enhanced Edition**, **EET** and **Baldur's Gate II: Enhanced Edition** (game versions 2.6.6 and 2.7.3). Every feature is an optional component. Requires [EEex](https://github.com/Bubb13/EEex).
 
+**Discussion:** [Gibberlings3](https://www.gibberlings3.net/forums/topic/41664/) · [Beamdog Forums](https://forums.beamdog.com/discussion/90874) · [GitHub issues](https://github.com/sad0/SadoEE/issues). SadoEE includes [Party Stash](https://github.com/sad0/PartyStash-EE), which is also available on its own.
+
 > **Work in progress.** I had to wrap SadoEE up before leaving on holiday, so everything is still WIP. More balanced options are already planned for every component (today many of them lean on the generous side). Feedback is very welcome: open an issue on GitHub.
 
 ![A quick tour of the camp: Grand Merchant, quest chronicle, necromancer, a recruited gibberling](docs/images/camp-tour.gif)
@@ -16,6 +18,7 @@ Full documentation: [docs/README.md](docs/README.md).
 
 | # | Group | Component |
 |---|---|---|
+| 60-62 | Options page | One question for every feature the in-game SadoEE options page can switch off: install them all, none, or choose each one. The page opens from the Esc menu, the EEex options or the Old Scholar |
 | 0-4 | Party Stash | One infinite stash shared by the whole party, on a redesigned inventory page (Baldur's Gate 1 or II look) |
 | 1 | Party Stash | Sorted loot: quest items, then weightless items, then the rest by value/weight |
 | 5-7 | Party Stash | Options: weightless stash, keep the gold through campaign changes, hardcore |
@@ -29,6 +32,7 @@ Full documentation: [docs/README.md](docs/README.md).
 | 17 | Rest camp | The necromancer: raises any creature of the game as a target dummy (damage meter), to fight or to recruit |
 | 50-53 | Rest camp | Priestess prices for her paid healing: 75 %, 50 %, 25 % or free (default: the game's temple prices) |
 | 20-32 | Quality of life | Passive trap detection, valuable containers, automatic disarming, FPS counter, endless ammo, small party footprint, lasting modes, attack-move, mouse buttons, keep gear on death, chests in the ground bar, Auto-Roller |
+| 33 | Quality of life | NPC pairs can separate: dismissing Khalid, Jaheira, Minsc, Dynaheir, Xzar, Montaron, Eldoth or Skie no longer sends the partner away (BGEE, EET) |
 | 40 | Engine extension | Big party: 7 to 32 members, with working banter and interjections for members 7+ (experimental) |
 
 The rest camp (#10-#17, #50-#53) works on BGEE, EET and BG2EE (on BG2EE in the Helmite Camp); the big party on BGEE and EET.
@@ -59,3 +63,4 @@ MIT. Author: sad0.
 ## Credits
 
 Thanks to Endarire and 11jo for their feedback and testing, and for showing there was an audience for these features.
+Thanks also to Argent77, lynx, jmerry, AvA, Jarno Mikkola and MephistoSatanDevil for their reports and feedback on the forums.

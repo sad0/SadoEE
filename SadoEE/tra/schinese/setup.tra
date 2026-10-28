@@ -1,6 +1,6 @@
 @1 = ~Party Stash：全队共享的无限储物箱（需要 EEex）。卸载前：按住 Ctrl 左键单击重量旁的包袋以清空储物箱~
 @2 = ~需要 EEex。~
-@3 = ~Stash~
+@3 = ~储物箱~
 @4 = ~每个角色都携带它，使游戏把其中物品视为随身携带（用于任务）。 全队共享的储物箱，位于物品栏页面。单击物品即可取出；在背包物品上按 Shift + 双击或按空格键（全部存放）即可存放；Ctrl + 单击可标记要出售的物品，再用商人处的“出售标记”按钮出售。放入储物箱的包袋会被倒空并保留在“包袋”页中：它能容纳的储物箱物品不计重量。其余物品计入成员负重上限之和；超过后全队减速。~
 @5 = ~战利品排序：地上、容器中和拾取栏~
 @6 = ~博德之门 1 外观（推荐）~
@@ -17,7 +17,7 @@
 @17 = ~需要 Party Stash。~
 @18 = ~营地商人：出售已拜访过的商店现有库存中的所有物品（用于 SadoQoL 的营地）~
 @19 = ~营地商人~
-@20 = ~Quest chronicle: Decard opens the list of every quest of the game (status, journal, hints, full solution)~
-@21 = ~Requires Decard, the old scholar of the camp (SadoQoL / SadoEE).~
-@40 = ~Big party: 7 to 32 members (an extra portrait bar, the game's scripts and dialogues extended to members 7+)~
-@41 = ~For Baldur's Gate: Enhanced Edition and EET only.~
+@20 = ~任务编年史：德卡德会打开游戏中所有任务的列表（状态、日志、提示、完整攻略）~
+@21 = ~需要营地里的老学者德卡德（SadoQoL / SadoEE）。~
+@40 = ~大型队伍：7 到 32 名成员（额外的头像栏，游戏的脚本和对话扩展至第 7 名及之后的成员）~
+@41 = ~仅适用于《博德之门：增强版》和 EET。~
