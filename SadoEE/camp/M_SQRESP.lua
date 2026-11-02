@@ -169,15 +169,41 @@ local function at2DA(res, col, row)
 	return ok and v or nil
 end
 
+-- The kit, as KIT.IDS / KITLIST's KITIDS: CRE 0x244 = (m_mageSpecUpperWord << 16) | m_mageSpecialization (as EEex
+-- reads it; = the KIT stat). Kits 0x4001+ sit in the low word, specialists 0x40-0x2000 too, the wild mage (0x80000000)
+-- and the barbarian (0x40000000) in the high word. Before v1.0.3 only the high word was read (0 for almost everyone):
+-- no kit HP die, no kit item restrictions, no opposition school (study copy 2026-10-29).
+local function kitOf(sp)
+	local b = sp.m_baseStats
+	return (math.floor(b.m_mageSpecUpperWord or 0) % 0x10000) * 0x10000 + math.floor(b.m_mageSpecialization or 0) % 0x10000
+end
+
+-- KITLIST row (number as a string) and ROWNAME of a kit id, nil for no kit (true class / generalist 0x4000).
+local kitRows
+local function kitRow(kit)
+	if not kitRows then
+		kitRows = {}
+		pcall(function()
+			local a = EEex_Resource_Load2DA('KITLIST')
+			for row = 1, 500 do
+				local name = EEex_Resource_GetAt2DALabels(a, 'ROWNAME', tostring(row))
+				if not name or name == '' or name == '*' then break end
+				local id = tonumber(EEex_Resource_GetAt2DALabels(a, 'KITIDS', tostring(row)) or '')
+				if id then kitRows[id] = { tostring(row), name } end
+			end
+			EEex_Resource_Free2DA(a)
+		end)
+	end
+	local r = kitRows[kit]
+	if r then return r[1], r[2] end
+end
+
 local function levelOneHP(sp)
 	local class = sp.m_typeAI.m_Class
 	local label = CLASS_LABELS[class] or 'FIGHTER'
-	local kit = math.floor(sp.m_baseStats.m_mageSpecUpperWord or 0) % 0x10000
 	local tbl
-	if kit > 0x4000 then
-		local kitLabel = at2DA('KITLIST', 'ROWNAME', tostring(kit - 0x4000))
-		if kitLabel then tbl = at2DA('HPCLASS', 'TABLE', kitLabel) end
-	end
+	local _, kitLabel = kitRow(kitOf(sp))
+	if kitLabel then tbl = at2DA('HPCLASS', 'TABLE', kitLabel) end
 	tbl = tbl or at2DA('HPCLASS', 'TABLE', label) or 'HPWAR'
 	local sides = tonumber(at2DA(tbl, 'SIDES', '1')) or 8
 	local rolls = tonumber(at2DA(tbl, 'ROLLS', '1')) or 1
@@ -212,9 +238,9 @@ local function usable(sp, res)
 	local al = t.m_Alignment
 	if LAW_BIT[math.floor(al / 16)] and bit(nu, LAW_BIT[math.floor(al / 16)]) then return false end
 	if GOOD_BIT[al % 16] and bit(nu, GOOD_BIT[al % 16]) then return false end
-	local kit = math.floor(b.m_mageSpecUpperWord or 0) % 0x10000
-	if kit > 0x4000 then
-		local mask = tonumber(at2DA('KITLIST', 'UNUSABLE', tostring(kit - 0x4000)) or '0') or 0
+	local row = kitRow(kitOf(sp))
+	if row then
+		local mask = tonumber(at2DA('KITLIST', 'UNUSABLE', row) or '0') or 0
 		local bits = h.notUsableBy2a * 0x1000000 + h.notUsableBy2b * 0x10000 + h.notUsableBy2c * 0x100 + h.notUsableBy2d
 		if mask > 0 and EEex_BAnd(bits, mask) ~= 0 then return false end
 	end
@@ -427,9 +453,8 @@ local function knownMage(sp)
 end
 
 local function kitLabel(sp)
-	local kit = math.floor(sp.m_baseStats.m_mageSpecUpperWord or 0) % 0x10000
-	if kit <= 0x4000 then return nil end
-	return at2DA('KITLIST', 'ROWNAME', tostring(kit - 0x4000))
+	local _, name = kitRow(kitOf(sp))
+	return name
 end
 
 -- highest mage spell level he can cast now (0: none)
@@ -855,6 +880,7 @@ end
 -- shared with #19 (Withers recruits, M_SQRECR.lua)
 T.usable, T.levelOneHP, T.refreshStats = usable, levelOneHP, refreshStats
 T.unequipUnusable = unequipUnusable   -- test scripts (v1.0.2 #14 check)
+T.kitOf, T.kitRow, T.kitLabel = kitOf, kitRow, kitLabel   -- M_SQRECR.lua, test scripts
 
 local function pushTick()
 	if not Infinity_IsMenuOnStack('SQRESP_TICK') then Infinity_PushMenu('SQRESP_TICK') end

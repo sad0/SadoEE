@@ -25,7 +25,7 @@ T.CAMP = 'SQCAMP'
 T.FIRE = T.FIRE or { 638, 385 }        -- camp fire (SQCAMP.ARE): waiting places in rings around it
 T.KEEP_CLEAR = { { 553, 338 }, { 723, 301 }, { 560, 445 }, { 205, 382 } }   -- priest, merchant, scholar, Withers
 local SITE = SQCampSite
-if SITE and SITE.FIRE then   -- BG2EE's camp
+if SITE and SITE.FIRE then   -- the camp map's spots (M_SQ0CMP.lua)
 	T.FIRE = SITE.FIRE
 	T.KEEP_CLEAR = { SITE.PRIEST, SITE.MERCH, SITE.CAIN, SITE.WITHERS }
 end
@@ -80,6 +80,7 @@ local function place(n)
 	end
 	return T.FIRE[1], T.FIRE[2] + 140
 end
+T.place = place   -- (the camp's old-save migration, M_SQCAMP.lua, seats waiting ex-members with it)
 
 -- A player-created character has no dialogue: SQKICK becomes his (the old one is kept to be restored).
 local function keepDialog(sp)

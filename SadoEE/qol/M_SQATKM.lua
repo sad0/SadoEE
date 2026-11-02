@@ -3,9 +3,10 @@ SadoQoL component #11 - Attack-move (John 2026-10-23).
 
 RTS-style attack-move: a mouse input (component #12, Mouse 4 by default) sends the selected party members towards the
 point under the cursor in the game's current formation (the engine's own ground-click move). Every member is on its own (checked every PERIOD
-ms): while IT sees no enemy it walks on; when it sees some, a fighter attacks the nearest one it sees (then the next),
-a spellcaster stops and lets its AI script decide (spells included). The order ends when everyone has arrived and
-nobody sees an enemy. A normal ground click (move) cancels it.
+ms), the same rule for everyone, spellcasters included (John 2026-10-30): while IT sees an enemy it attacks it (the
+engine walks a melee member to it and a ranged one into range, then fights), and keeps that target until it dies or
+goes out of its sight, then takes the nearest one it sees; while it sees none it walks on to its place. The order
+ends when everyone has arrived and nobody sees an enemy. A normal ground click (move) cancels it.
 
 (An Attack-button + ground click version was dropped: the engine greys the cursor and refuses ground clicks in
 attack mode before CGameArea::OnActionButtonClickGround.) The mouse binding lives in #12 (M_SQMB.lua).
@@ -22,9 +23,10 @@ T.ARRIVE = T.ARRIVE or 48             -- px: close enough to the destination
 T.SIGHT = T.SIGHT or 448              -- px: enemies the party can see (with a line of sight check)
 
 local ATTACK_ACTION = 3               -- Attack(O:Target*) in ACTION.IDS
+-- The attack actions of ACTION.IDS: Attack runs on as AttackReevaluate (134) or AttackOneRound (105) once started.
+local ATTACKING = { [3] = true, [94] = true, [98] = true, [105] = true, [134] = true }
 local MOVE_ACTION = 23                -- MoveToPoint(P:Target*)
-local CASTER_CLASSES = { [1] = true, [3] = true, [11] = true, [19] = true, [21] = true,   -- mage, cleric, druid,
-	[7] = true, [8] = true, [13] = true, [14] = true, [15] = true, [17] = true, [18] = true } -- sorcerer, shaman, multis
+T.SKIP = T.SKIP or 3000               -- ms a target is left aside by a member whose attack on it did not start
 
 local function partyMembers()
 	local out = {}
@@ -78,13 +80,15 @@ local function moveTo(s, x, y)
 	EEex_Action_QueueResponseStringOnAIBase(string.format('MoveToPoint([%d.%d])', x, y), s)
 end
 
--- Attack(target): the target is resolved when the action runs, so the queued action gets the id written in.
+-- Attack(target), like a click on it: the queued action gets the target's own object type (its instance), so the
+-- engine does not resolve an object when the action starts. A resolved object can come back empty although the
+-- member sees the target (a Brown Bear its ranged attacks were all dropped on, John 2026-10-30).
+-- Only on an idle member: an attack queued right after ClearActions is dropped before it starts (measured 2026-10-30).
 local function attack(s, foe)
-	interrupt(s)
 	EEex_LuaObject = foe.sp
 	EEex_Action_QueueResponseStringOnAIBase('Attack(EEex_LuaObject)', s)
 	EEex_Utility_IterateCPtrList(s.m_queuedActions, function(a)
-		if a.m_actionID == ATTACK_ACTION then a.m_acteeID.m_Instance = foe.id end
+		if a.m_actionID == ATTACK_ACTION then a.m_acteeID:Set(foe.sp:virtual_GetAIType()) end
 	end)
 end
 
@@ -104,12 +108,18 @@ end
 -- The right-click drag (native): CGameArea keeps the drag start at +0x4D0 and a drag flag at +0x4D8. While the flag
 -- is set, CGameArea::AIUpdate draws the formation preview at the start, turned by the mouse, every frame; and
 -- OnActionButtonClickGround targets the drag start, turned the same way by the click point (= the release point).
+-- Under IEX, its native groundMoveClick hook vouches for these fields (same offsets on every platform, Linux included,
+-- where SQ_Addr has no address to check).
 local function dragFacingSupported()
-	for i, b in ipairs({ 0x41, 0x83, 0xBE, 0xD8, 0x04, 0x00, 0x00, 0x00 }) do
-		if EEex_ReadU8(SQ_Addr(0x140186A9B) + i - 1) % 256 ~= b then return false end
+	local hooks = type(IEX_Features) == 'table' and type(IEX_Features.nativeHooks) == 'table' and IEX_Features.nativeHooks
+	if hooks and hooks.groundMoveClick then return true end
+	local a, b = SQ_Addr(0x140186A9B), SQ_Addr(0x140186AA5)
+	if not a or not b then return false end
+	for i, v in ipairs({ 0x41, 0x83, 0xBE, 0xD8, 0x04, 0x00, 0x00, 0x00 }) do
+		if EEex_ReadU8(a + i - 1) % 256 ~= v then return false end
 	end
-	for i, b in ipairs({ 0x41, 0x8B, 0x86, 0xD0, 0x04, 0x00, 0x00 }) do
-		if EEex_ReadU8(SQ_Addr(0x140186AA5) + i - 1) % 256 ~= b then return false end
+	for i, v in ipairs({ 0x41, 0x8B, 0x86, 0xD0, 0x04, 0x00, 0x00 }) do
+		if EEex_ReadU8(b + i - 1) % 256 ~= v then return false end
 	end
 	return true
 end
@@ -197,8 +207,8 @@ end
 
 function SQAttackMove_Cancel() if not T.issuing then T.order = nil end end
 
--- Every member on its own (John): it walks to its point while it sees no enemy; when it sees some, it attacks the
--- nearest one it sees (spellcasters: their AI script decides), then the next one, then walks on.
+-- Every member on its own (John): it walks to its point while it sees no enemy; when it sees some, it attacks one
+-- (kept until it dies or goes out of sight, then the nearest it sees), then walks on.
 function SQAttackMove_Tick()
 	local now = Infinity_GetClockTicks()
 	if not T.order or (T.next and now < T.next) then return false end
@@ -208,24 +218,43 @@ function SQAttackMove_Tick()
 		for _, m in ipairs(partyMembers()) do if T.order.members[m.m_id] then members[#members + 1] = m end end
 		if #members == 0 then T.order = nil return end
 		local foes = enemiesSeen(members)
+		local foeById = {}
+		for _, f in ipairs(foes) do foeById[f.id] = f end
 		local over = true
 		for _, m in ipairs(members) do
 			local o = T.order.members[m.m_id]
 			local cur = m.m_curAction.m_actionID
 			local idle = cur == 0 and m.m_queuedActions.m_nCount == 0
-			local best, bd
-			for _, f in ipairs(foes) do
-				if f.seenBy[m.m_id] then
-					local d = (f.x - m.m_pos.x) ^ 2 + (f.y - m.m_pos.y) ^ 2
-					if not bd or d < bd then best, bd = f, d end
+			-- the attack ordered last tick did not even start: leave that target aside for a while
+			o.skip = o.skip or {}
+			if o.ordered and idle then o.skip[o.ordered] = now + T.SKIP o.target = nil end
+			o.ordered = nil
+			-- already attacking a living enemy it sees (our order or its own AI script): that is its target
+			local fighting = ATTACKING[cur] and foeById[m.m_curAction.m_acteeID.m_Instance]
+			if fighting and fighting.seenBy[m.m_id] then o.target = fighting.id end
+			-- its target: the one it fights while alive and in its sight, else the nearest enemy it sees
+			local best = o.target and foeById[o.target]
+			if not (best and best.seenBy[m.m_id]) then
+				best = nil
+				local bd
+				for _, f in ipairs(foes) do
+					if f.seenBy[m.m_id] and not ((o.skip[f.id] or 0) > now) then
+						local d = (f.x - m.m_pos.x) ^ 2 + (f.y - m.m_pos.y) ^ 2
+						if not bd or d < bd then best, bd = f, d end
+					end
 				end
 			end
+			o.target = best and best.id
 			if best then
 				over = false
-				if CASTER_CLASSES[m.m_typeAI.m_Class] then
-					if not o.fighting then interrupt(m) end      -- stop walking; the AI script fights
-				elseif cur ~= ATTACK_ACTION or not o.fighting then
-					attack(m, best)
+				-- already on it (Attack runs on as 134 / 105): let it fight; a new order restarts the round
+				if not (ATTACKING[cur] and m.m_curAction.m_acteeID.m_Instance == best.id) then
+					if idle then
+						attack(m, best)
+						o.ordered = best.id
+					else
+						interrupt(m)   -- the attack goes on the next tick, once it is idle
+					end
 				end
 				o.fighting = true
 			else

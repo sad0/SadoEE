@@ -19,6 +19,15 @@ Tweaks Anthology 18, SCS 35.21, Might & Guile 5.9.1, Faiths & Powers 0.92, EET_e
 **BG2EE + Infinity UI++ 1.31**: EE Fixpack, EEex, Infinity UI++, Ascension, Unfinished Business, IWDification,
 Tweaks Anthology, SCS, Tactics Remix, then SadoEE (24 components; the big party is BGEE / EET only).
 
+**EET + Infinity UI++ 1.4** (2.7.3, 2026-11-02): EET master, EEex 1.3.1, EET_end, Infinity UI++ 1.4 (core, tooltip
+background, strings), then SadoEE from the v1.0.3 dev sources (29 components, 0 errors, 7 minutes). Checked in game:
+SadoEE options page (main menu, EEex Options tab, Esc menu button in game; the auto-stash filter: click = next, right
+click = off), auto-stash (sword and mace picked up go to the stash; ammo, bag and quest item stay; off = nothing moves),
+Party Stash inventory page with its hints, sorted ground pile, camp merchant page, necromancer's bestiary, record
+screen, Auto-Roller (28,325 rolls in 10 s, 18/00 kept). Found and fixed on SadoEE's side: a C stack overflow when the
+Esc menu button placed itself (its text function re-entered the placement); the camp priestess's GENDER byte (0x275)
+stayed male. Small leftover: the inventory page's "Ground" label overlaps its "1/1" counter.
+
 Tweaks Anthology and SCS were installed with the components closest to SadoEE's features: bags, stacking, stores,
 infinite ammo, identification, resting, death, NPC customization, Spellhold item removal.
 
@@ -35,10 +44,20 @@ infinite ammo, identification, resting, death, NPC customization, Spellhold item
 
 ## Known issues in other mods (not SadoEE)
 
+- **Infinity UI++**: ships a 32x32 icon named `CEFF1INV.BAM`, the game's paper doll of elf female fighters and
+  rangers: they have no body in the inventory and on the colour page. SadoEE's recruit component (#15) removes that
+  copy so the game's own doll comes back (only when IUI++ is installed before SadoEE).
 - **SCS + Infinity UI++**: SCS copies part of `UI.MENU` into `M_DW_OOD.lua`; with Infinity UI++ the copy is broken and the
   game shows a Lua error at launch (`M_DW_OOD.lua:309: unexpected symbol near '}'`).
 - **SCS / Tweaks Anthology + Infinity UI++**: the record screen shows class names with their kit tag, e.g. `Fighter{K=0 (0,)`.
+- **SCS 4100 + Infinity UI++** (SCS installed after IUI++): SCS's UI patch also matches the `OnOpen` inside IUI++'s
+  `rgChooseSpellsMenuOnOpen()` label in the character creation spell menu and cuts it. Checked in game: a blocking
+  `Invalid token in menu: [dwOnOpen]` dialog at every launch, and the chargen mage spell list is drawn outside the
+  book (still clickable, character creation can go on). Happens with or without SadoEE.
 - **SCS 4100** (NPC customization): companions join at level 0 with an "Original class" status until levelled up. This is by design.
+- **SCS thief skills rework (BG2EE)**: when a companion made by Faceless (SadoEE camp) levels up, SCS's proficiency
+  page can keep its Done greyed (`dw_thief_skills_finished`, `dw_thief_extra` = 40 for a fighter): SCS's thief-skill
+  page treats it as a non-chargen level-up. Seen once in the compat test (2026-11-02), not a blocker.
 
 ## Not tested yet
 

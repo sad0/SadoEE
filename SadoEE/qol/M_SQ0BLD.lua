@@ -91,10 +91,18 @@ local function matches(addr)
 	return ok and same
 end
 
+-- The probe addresses are the Windows executables'. IEX reports its platform; without IEX (EEex) it is Windows.
+local function onWindows()
+	local p = type(IEX_Features) == 'table' and IEX_Features.platform
+	return type(p) ~= 'string' or p == 'win64'
+end
+
 if B.build == nil then
 	B.build = false
-	for build, at in pairs(PROBE_AT) do
-		if matches(at) then B.build = build end
+	if onWindows() then
+		for build, at in pairs(PROBE_AT) do
+			if matches(at) then B.build = build end
+		end
 	end
 	if not B.build then print('[SadoQoL] unknown engine build: the engine patches stay off') end
 end

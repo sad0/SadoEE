@@ -73,7 +73,7 @@ local function patch()
 			cmp ax, 4
 			je keep
 			mov r14, qword ptr ss:[rsp+0x50]
-			#MAKE_SHADOW_SPACE(32)
+			#MAKE_SHADOW_SPACE(48)   ; EEex_GenLuaCall with 2 args needs 48 (32 made EEex widen it at load, with a warning)
 		]]},
 		EEex_GenLuaCall('SQChest_Allowed', {
 			['args'] = {

@@ -102,6 +102,7 @@ menu
 		enabled "SQOpt_RowShown(1)"
 		area 242 102 420 56
 		action "SQOpt_RowClick(1)"
+		actionAlt "SQOpt_RowClear(1)"
 	}
 	label
 	{
@@ -132,6 +133,7 @@ menu
 		enabled "SQOpt_RowShown(2)"
 		area 242 162 420 56
 		action "SQOpt_RowClick(2)"
+		actionAlt "SQOpt_RowClear(2)"
 	}
 	label
 	{
@@ -162,6 +164,7 @@ menu
 		enabled "SQOpt_RowShown(3)"
 		area 242 222 420 56
 		action "SQOpt_RowClick(3)"
+		actionAlt "SQOpt_RowClear(3)"
 	}
 	label
 	{
@@ -192,6 +195,7 @@ menu
 		enabled "SQOpt_RowShown(4)"
 		area 242 282 420 56
 		action "SQOpt_RowClick(4)"
+		actionAlt "SQOpt_RowClear(4)"
 	}
 	label
 	{
@@ -222,6 +226,7 @@ menu
 		enabled "SQOpt_RowShown(5)"
 		area 242 342 420 56
 		action "SQOpt_RowClick(5)"
+		actionAlt "SQOpt_RowClear(5)"
 	}
 	label
 	{
@@ -252,6 +257,7 @@ menu
 		enabled "SQOpt_RowShown(6)"
 		area 242 402 420 56
 		action "SQOpt_RowClick(6)"
+		actionAlt "SQOpt_RowClear(6)"
 	}
 	label
 	{
@@ -282,6 +288,7 @@ menu
 		enabled "SQOpt_RowShown(7)"
 		area 242 462 420 56
 		action "SQOpt_RowClick(7)"
+		actionAlt "SQOpt_RowClear(7)"
 	}
 	label
 	{

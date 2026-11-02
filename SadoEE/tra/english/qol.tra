@@ -68,8 +68,8 @@
 @1172 = ~Farewell.~
 @1173 = ~The Old Scholar~
 @1174 = ~Waiting at the camp: a member who leaves the party can wait for you at the rest camp, around the fire~
-@1175 = ~Withers at the camp: a lich who fully recreates a party member (race, class, kit, abilities...), free~
-@1176 = ~Withers~
+@1175 = ~Faceless at the camp: a doppelganger who fully recreates a party member (race, class, kit, abilities...), free; a new face and voice at each visit~
+@1176 = ~Faceless~
 @1177 = ~%s: %s went to the stash (backpack full)~
 @1178 = ~Continue~
 @1179 = ~Finish~
@@ -100,7 +100,7 @@
 @1205 = ~Learn~
 @1206 = ~Close~
 @1207 = ~Grimoire of lost spells~
-@1208 = ~The spells a mage forgot when Withers remade him rest in these pages. Open it, and anyone who can write mage spells in his book learns them again (those he can cast).~
+@1208 = ~The spells a mage forgot when Faceless remade him rest in these pages. Open it, and anyone who can write mage spells in his book learns them again (those he can cast).~
 @1209 = ~Auto-Roller: an Auto-Roll button in character creation keeps the best of many rolls (18/xx strength weighted)~
 @1210 = ~Wouldn't you rather identify our items?~
 @1211 = ~I'd like to know more about this world.~
@@ -110,7 +110,7 @@
 @1252 = ~Shape him before me.~
 @1253 = ~Call back someone I knew (import).~
 @1254 = ~Another time.~
-@1255 = ~Withers: new companion~
+@1255 = ~Faceless: new companion~
 @1256 = ~Continue~
 @1257 = ~Abandon~
 @1258 = ~Does he keep the items he carried?~
@@ -121,7 +121,7 @@
 @1263 = ~The leader's~
 @1264 = ~%s joins the party.~
 @1265 = ~The party is full (%d members).~
-@1266 = ~Withers recruits: a new companion made in the game's own creation screens or imported, free~
+@1266 = ~Faceless recruits: a new companion made in the game's own creation screens or imported, free~
 @1267 = ~The new companion's gear~
 @1268 = ~Validate~
 @1269 = ~Bought from the Grand Merchant: %d gp (party gold: %d gp)~
@@ -140,7 +140,7 @@
 @1282 = ~Belt~
 @1283 = ~Boots~
 @1284 = ~Cloak~
-@1285 = ~Withers offers~
+@1285 = ~Faceless offers~
 @1286 = ~Accept our gift for your temple: <SQPRRC> gp (reputation <SQPRREP> -> <SQPRNEXT>).~
 @1287 = ~Heal the whole party: <SQPRHL>. Total: <SQPRHC> gp.~
 @1288 = ~Bless you. The poor of the Coast will speak your names kindly.~
@@ -191,6 +191,18 @@
 @1346 = ~Camp priestess prices: 50 %~
 @1347 = ~Camp priestess prices: 25 %~
 @1348 = ~Camp priestess prices: free~
+@1400 = ~Faceless~
+@1401 = ~Ah. You. *His voice slides from one pitch to another.* A face, a soul... everything can be rewritten, for whoever knows how to hold the quill. What do you wish?~
+@1402 = ~Rewrite me.~
+@1403 = ~Find us a new companion.~
+@1404 = ~Nothing, thank you.~
+@1405 = ~I unmake everything: race, calling, mind and body. Your memories and your belongings stay... I only ever steal faces. *A child's voice now.* Shall I begin?~
+@1406 = ~Begin.~
+@1407 = ~Not yet.~
+@1408 = ~One more face? I wear so many... *Then, an old man's voice.* I can shape a new one, or call back someone you knew elsewhere. He will walk with you, as seasoned as your leader.~
+@1409 = ~Shape him.~
+@1410 = ~Call back someone I knew (import).~
+@1411 = ~Another time.~
 @1540 = ~SadoEE~
 @1541 = ~SadoEE features switched on or off in game. Off only stops a feature from acting: what it already did stays.~
 @1542 = ~Stash hints: red / blue items~
@@ -251,7 +263,7 @@
 @1597 = ~Click: choose the action. Right click: nothing. MMO mouse side buttons send keys: bind them in the game's Keybindings.~
 @1600 = ~NPC pairs can separate: sending one away no longer sends the other one too (Jaheira and Khalid, Minsc and Dynaheir, Xzar and Montaron, Eldoth and Skie)~
 @1601 = ~This component is for Baldur's Gate (BGEE) and EET.~
-@1602 = ~Requires Withers at the rest camp (his component must be installed first).~
+@1602 = ~Requires Faceless at the rest camp (his component must be installed first).~
 @1603 = ~Auto-Roll~
 @1604 = ~Stop (%.1fs)~
 @1605 = ~18/xx weight: %d~
@@ -259,3 +271,7 @@
 @1607 = ~Best: %d~
 @1608 = ~STR~
 @1609 = ~%s rolls~
+@1620 = ~Auto-stash picked-up items~
+@1621 = ~What the party picks up goes straight to the party stash, by the chosen filter. Click: next filter. Right click: off.~
+@1622 = ~Off~
+@1623 = ~Everything except quest items, bags and ammo~

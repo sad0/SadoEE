@@ -450,6 +450,129 @@ Z.NO_ICONS_H = 60
 Z.PICK_SHIFT = { ['2.7.3.0'] = 0x1402F8AEB, ['2.6.6.0'] = 0x1402F84AB }
 Z.PICK_SHIFT_ORIG = '4881c286020000488d1496' -- add rdx, 0x286 / lea rdx, [rsi + rdx*4]
 
+-- Vision for 32 members (John 2026-10-29: the parallel model). The engine's CVisibilityMap has 15 viewer slots and a
+-- uint16 per tile (bit 15 explored, bits 0-14 "seen by slot n"), the slot bit built by an 8-bit shift: members 9-15
+-- saw nothing, 16+ had no slot (and RemoveFromArea then missed its area count decrement: areas never unloaded).
+-- vis32.c (compiled, M_PSXP7V.lua) gives every viewer its own slot (48 per map) and turns the 15 engine bits into
+-- groups (slot % 15), with an exact uint64-per-tile side table: a group bit stays while a viewer of the group still
+-- sees the tile. Stubs on the slot searches, the tile writes / clears, GetCharacterId / IsCharacterIdOnMap, the map
+-- Init / Uninit, and CGameSprite::CheckIfVisible's viewer loop (15 -> 48 slots). PSXP7_VIS_SITES: vis/gensites.py.
+Z.VIS_POOL_TILES = 65536 -- side table tiles per map (8 bytes each, 16 maps): areas are far smaller
+-- OFF by default (tested 2026-10-29 on EET 2.7.3 dev): EEex 1.3.1 already replaces CVisibilityMap::AddCharacter /
+-- RemoveCharacter / UpDate / IsCharacterIdOnMap and CGameSprite::CheckIfVisible with its own code in EEex.dll
+-- ("cap of FoW-clearing creatures raised to 32,768", EEex_Fix_Patch.lua): the 17th member alone in the fog reveals
+-- it. These stubs patch the game's own bodies, used only without EEex (IEX): switch on there (PSXP7.VIS_ENABLED).
+if Z.VIS_ENABLED == nil then Z.VIS_ENABLED = false end
+local VIS = { ctx = 3632, curK = 0, curG = 4, poolTiles = 16, pool = 24, groupMask = 152, maps = 272, mapSize = 208 }
+local REG = { rax = 0, rcx = 1, rdx = 2, rbx = 3, rsp = 4, rbp = 5, rsi = 6, rdi = 7, r8 = 8, r9 = 9, r10 = 10, r11 = 11,
+	eax = 0, ecx = 1, edx = 2, ebx = 3, esi = 6, edi = 7, r8d = 8, r9d = 9, r10d = 10, r11d = 11 }
+-- mov dst, src (64-bit when wide, else 32-bit, which zero-extends)
+local function movRR(dst, src, wide)
+	local rex = (wide and 8 or 0) + (src >= 8 and 4 or 0) + (dst >= 8 and 1 or 0)
+	local t = {}
+	if rex ~= 0 then t[1] = 0x40 + rex end
+	t[#t + 1] = 0x89
+	t[#t + 1] = 0xC0 + (src % 8) * 8 + dst % 8
+	return t
+end
+local function absJcc(op, from, to) -- op = { 0x0F, 0x8C } (jl) or { 0xE9 } (jmp); `from` = address of the op
+	local t = cat(op)
+	return cat(t, rel32(from + #t + 4, to))
+end
+local SAVE = { 0x50, 0x51, 0x52, 0x41, 0x50, 0x41, 0x51, 0x41, 0x52, 0x41, 0x53, 0x9C } -- rax rcx rdx r8-r11, flags
+local RESTORE = { 0x9D, 0x41, 0x5B, 0x41, 0x5A, 0x41, 0x59, 0x41, 0x58, 0x5A, 0x59, 0x58 }
+-- push rbx / mov rbx, rsp / and rsp, -16 / sub rsp, 32 / mov rax, fn / call rax / mov rsp, rbx / pop rbx
+local function callC(fn)
+	return cat({ 0x53, 0x48, 0x89, 0xE3, 0x48, 0x83, 0xE4, 0xF0, 0x48, 0x83, 0xEC, 0x20 }, movImm(0, fn),
+		{ 0xFF, 0xD0, 0x48, 0x89, 0xDC, 0x5B })
+end
+-- args: rdx = map register, r8d = second register (or nothing), r9d = constant, rcx = ctx (last: map may be rcx)
+local function args(ctx, map, second, r9)
+	local t = {}
+	if second then t = cat(t, movRR(8, REG[second], false)) end
+	t = cat(t, movRR(2, REG[map], true))
+	if r9 then t = cat(t, { 0x41, 0xB9 }, le(r9, 4)) end
+	return cat(t, movImm(1, ctx))
+end
+
+local function visStubs(sites, code, ctx, jumps)
+	local fn = {}
+	for k, v in pairs(PSXP7_VIS_ENTRY) do fn[k] = code + v end
+	for _, s in ipairs(sites) do
+		local back = s.site + s.len
+		if s.kind == 'bound' then
+			-- the immediate of "cmp sil, 0xF" (byte 4): direct write, no stub
+		elseif s.kind == 'getid' or s.kind == 'onmap' then
+			local first = s.kind == 'getid' and { 0x44, 0x0F, 0xB6, 0xC2 } or { 0x41, 0x89, 0xD0 } -- movzx r8d, dl / mov r8d, edx
+			jumps[#jumps + 1] = { s.site, makeStub(s.site, s.len, cat(first, { 0x48, 0x89, 0xCA }, movImm(1, ctx),
+				movImm(0, fn[s.kind == 'getid' and 'vis_getid' or 'vis_onmap']), { 0xFF, 0xE0 })) }
+		elseif s.kind == 'reset' then
+			jumps[#jumps + 1] = { s.site, makeStub(s.site, s.len, cat(SAVE, args(ctx, 'rcx'), callC(fn.vis_reset),
+				RESTORE, hexBytes(s.orig))) }
+		elseif s.kind == 'set' or s.kind == 'clear' then
+			jumps[#jumps + 1] = { s.site, makeStub(s.site, s.len, cat(SAVE, args(ctx, s.map, s.idx),
+				callC(s.kind == 'set' and fn.vis_set or fn.vis_clear), RESTORE)) }
+		elseif s.kind == 'free' then
+			jumps[#jumps + 1] = { s.site, makeStub(s.site, s.len, cat(SAVE, args(ctx, s.map), callC(fn.vis_free), RESTORE)) }
+		else -- slot searches: k = vis_slot(map, id, alloc); the engine continues with the group in cl / dl
+			local alloc = s.kind == 'slotAdd' and 1 or 0
+			jumps[#jumps + 1] = { s.site, makeStub(s.site, s.len, function(stub)
+				local body = cat(SAVE, args(ctx, s.map, s.id, alloc), callC(fn.vis_slot), RESTORE,
+					{ 0x50 }, movImm(0, ctx))
+				if s.kind == 'slotUpdate' then
+					body = cat(body, { 0x8B, 0x50, 0x04 }) -- mov edx, [rax + curG]
+				else
+					body = cat(body, { 0x8B, 0x48, 0x04 }) -- mov ecx, [rax + curG]
+				end
+				body = cat(body, { 0x83, 0x38, 0x00, 0x58 }) -- cmp dword [rax + curK], 0 / pop rax
+				if s.miss then body = cat(body, absJcc({ 0x0F, 0x8C }, stub + #body, s.miss)) end -- jl miss
+				if s.kind == 'slotRemove' then body = cat(body, { 0x48, 0x0F, 0xBF, 0xD1 }) end -- movsx rdx, cx
+				return body
+			end, 160) }
+		end
+	end
+end
+
+-- Allocates the context, the side tables and the code; returns the stub list builder's inputs, or nil + why.
+local function visPrepare(build)
+	if not Z.VIS_ENABLED then return nil, 'off (EEex handles the vision of every member)' end
+	-- never stacked on a runtime that already gives every party member vision: IEX (IEX_Features.partyVision, IEX commit
+	-- 57788c9) or EEex (its loader labels are there)
+	if IEX_Features and IEX_Features.partyVision then return nil, 'off (IEX party vision)' end
+	if type(EEex_Label) == 'function' and pcall(EEex_Label, 'Hook-CVisibilityMap::IsCharacterIdOnMap()-FirstInstruction') then
+		return nil, 'off (EEex party vision)'
+	end
+	local sites = PSXP7_VIS_SITES and PSXP7_VIS_SITES[build]
+	if not sites or not PSXP7_VIS_CODE then return nil, 'no vision tables for ' .. tostring(build) end
+	for _, s in ipairs(sites) do
+		if not bytesAt(s.site, hexBytes(s.orig)) then return nil, 'vision site ' .. tostring(s.site) .. ' differs' end
+	end
+	local hex = table.concat(PSXP7_VIS_CODE)
+	local bytes = hexBytes(hex)
+	local code = EEex_AllocNear(#bytes + 16)
+	writeBytes(code, bytes)
+	local ctx = EEex_Malloc(VIS.ctx)
+	for o = 0, VIS.ctx - 4, 4 do EEex_Write32(ctx + o, 0) end
+	EEex_Write32(ctx + VIS.curK, -1)
+	EEex_Write32(ctx + VIS.curG, 15)
+	local P = Z.VIS_POOL_TILES
+	EEex_Write32(ctx + VIS.poolTiles, P)
+	local pool = EEex_Malloc(16 * P * 8)
+	for i = 0, 15 do
+		local a = pool + i * P * 8
+		local lo = a % 2 ^ 32
+		EEex_Write32(ctx + VIS.pool + i * 8, lo >= 2 ^ 31 and lo - 2 ^ 32 or lo)
+		EEex_Write32(ctx + VIS.pool + i * 8 + 4, math.floor(a / 2 ^ 32))
+	end
+	for g = 0, 14 do
+		local lo, hi = 0, 0
+		for k = g, 47, 15 do if k < 32 then lo = lo + 2 ^ k else hi = hi + 2 ^ (k - 32) end end
+		EEex_Write32(ctx + VIS.groupMask + g * 8, lo >= 2 ^ 31 and lo - 2 ^ 32 or lo)
+		EEex_Write32(ctx + VIS.groupMask + g * 8 + 4, hi)
+	end
+	return { sites = sites, code = code, ctx = ctx, pool = pool }
+end
+
 function PSXP7_Enable(n)
 	n = math.floor(tonumber(n) or 8)
 	if Z.enabled then return true, 'already enabled (' .. Z.n .. ')' end
@@ -465,6 +588,8 @@ function PSXP7_Enable(n)
 	end
 	local pickShift = t.pick and Z.PICK_SHIFT[build]
 	if pickShift and not bytesAt(pickShift, hexBytes(Z.PICK_SHIFT_ORIG)) then pickShift = nil print('[PSXP7] pick list shift bytes differ: not patched') end
+	local vis, visWhy = visPrepare(build)
+	if not vis and Z.VIS_ENABLED then print('[PSXP7] vision for 32 members off: ' .. tostring(visWhy)) end
 	local noIcons = Z.NO_ICONS[build]
 	if noIcons and not bytesAt(noIcons[1], hexBytes(Z.NO_ICONS_ORIG)) then noIcons = nil print('[PSXP7] RenderPortrait bytes differ: icons kept') end
 	local guard = Z.SAVE_GUARD[build]
@@ -577,6 +702,7 @@ function PSXP7_Enable(n)
 	for _, o in ipairs(t.offsets or {}) do
 		jumps[#jumps + 1] = { o[1], makeStub(o[1], o[2], offsetStub(o, delta)) }
 	end
+	if vis then visStubs(vis.sites, vis.code, vis.ctx, jumps) Z.vis = vis end
 	if noIcons then
 		jumps[#jumps + 1] = { noIcons[1], makeStub(noIcons[1], 7, function(stub)
 			-- push rcx / mov ecx, [rbp-4] / sub ecx, [rbp-0xC] / cmp ecx, H / pop rcx / jl skip / mov rax, [r14+0x4CC8]
@@ -597,6 +723,9 @@ function PSXP7_Enable(n)
 	local nRedirect = #jumps
 	Z.marshalBuf = marshalPatch(t, n, jumps)
 	for _, j in ipairs(jumps) do writeBytes(j[1], j[2]) end
+	for _, s in ipairs(vis and vis.sites or {}) do
+		if s.kind == 'bound' then EEex_WriteU8(s.site + 3, 48) end -- CheckIfVisible: viewer slots 0..47
+	end
 	for _, a in ipairs(t.bounds) do EEex_WriteU8(a, n) end
 	-- Names of party members with a custom name are the special strrefs -2 - slot (CGameSprite::GetNameRef), accepted
 	-- by "lea eax, [r + 7] / cmp eax, 5 / ja" = 6 slots: members 7+ showed "Invalid: 16777207" in feedback (John).
@@ -659,6 +788,7 @@ function PSXP7_Disable(only)
 		if Z.saveGuard then writeBytes(Z.saveGuard[1], hexBytes(Z.saveGuard[2])) end
 		if Z.noIcons then writeBytes(Z.noIcons[1], hexBytes(Z.NO_ICONS_ORIG)) end
 		if Z.pickShift then writeBytes(Z.pickShift, hexBytes(Z.PICK_SHIFT_ORIG)) end
+		for _, s in ipairs(Z.vis and Z.vis.sites or {}) do writeBytes(s.site, hexBytes(s.orig)) end
 		if t.gather and Z.gatherOrig then
 			for i, r in ipairs(t.gather.refs) do EEex_Write32(r[1], Z.gatherOrig[i]) end
 		end

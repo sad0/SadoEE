@@ -69,6 +69,7 @@ COPY ~SadoEE/M_PSXENG.lua~ ~override~
      ~SadoEE/M_PSXP7.lua~ ~override~
      ~SadoEE/M_PSXP7S.lua~ ~override~
      ~SadoEE/M_PSXP7C.lua~ ~override~
+     ~SadoEE/M_PSXP7V.lua~ ~override~ // vision for 32 members (vis/vis32.c, compiled)
      ~SadoEE/PSXP7.menu~ ~override~
 // the switch read at startup: the engine patch is on (M_PSXP7.lua, party size PSXP7_N of M_PSXP7C.lua)
 <<<<<<<< .../PartyStash-inlined/PSXP7ON.2DA

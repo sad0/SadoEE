@@ -1,7 +1,7 @@
 --[[
 SadoQoL component #10 - Rest camp (John 2026-10-23).
 
-A quiet camp (area SQCAMP: a 20x15-tile crop of BD5000 around its campfire, built by tools/build_camp.py) reached
+A quiet camp (area SQCAMP: the Clairiere, our own 40x30-tile map, E:/AI/bg3d/tools/build_camp3d.py, 2026-11-02) reached
 from the world map: a torn parchment with a tent and a fire sits over the Travel button (red under the mouse).
  - Elsewhere it reads "Camp": the party goes to the camp, 0 hours. The origin (area + leader position) is saved.
  - In the camp it still reads "Camp" and carries the party marker (WMDAG); the engine's marker, which would sit on
@@ -20,7 +20,8 @@ SQCamp = SQCamp or {}
 local T = SQCamp
 
 T.AREA = 'SQCAMP'
--- BG2EE's camp (OH5300) brings its spots in M_SQ0CMP.lua (SQCampSite); without it, the BD5000 crop's below
+-- the camp map's spots come from M_SQ0CMP.lua (SQCampSite, the Clairiere, every game); the BD5000 crop's below are
+-- only a fallback
 local SITE = SQCampSite or {}
 T.ENTRY_X, T.ENTRY_Y = 634, 520        -- south of the campfire
 if SITE.ENTRY then T.ENTRY_X, T.ENTRY_Y = SITE.ENTRY[1], SITE.ENTRY[2] end
@@ -29,13 +30,30 @@ T.STR_BACK = tonumber("SQ_CAMP_STR_BACK")
 -- parchment over the Travel button (WORLD_MAP: Travel button at 783,715 230x40)
 local X, Y, W, H = 832, 593, 132, 118
 local LABEL_Y, LABEL_H = 683, 24
+-- Infinity UI++ lays its map out by screen size (rgWorldMap1 / 2 / 4, in its WORLD_MAP onOpen) and has no Travel
+-- button there: the parchment goes to the map's bottom-right corner (John 2026-11-02).
+local IUI_MAPS, IUI_MARGIN = { 'rgWorldMap1', 'rgWorldMap2', 'rgWorldMap4' }, 12
+local function iuiCorner()
+	if type(rgGetCustomizedPortraitList) ~= 'function' then return nil end
+	for _, name in ipairs(IUI_MAPS) do
+		local ok, x, y, w, h = pcall(Infinity_GetArea, name)
+		if ok and w and h and w > 0 and h > 0 then return x + w - W - IUI_MARGIN, y + h - H - IUI_MARGIN end
+	end
+end
+local function place()
+	local x, y = iuiCorner()
+	if not x or (x == X and y == Y) then return end
+	X, Y, LABEL_Y = x, y, y + 90
+	EEex_Menu_SetTemplateArea('WORLD_MAP', 'SQCAMP_TEMPLATE_Button', 1, X, Y, W, H)
+	EEex_Menu_SetTemplateArea('WORLD_MAP', 'SQCAMP_TEMPLATE_Label', 1, X, LABEL_Y, W, LABEL_H)
+	EEex_Menu_SetTemplateArea('WORLD_MAP', 'SQCAMP_TEMPLATE_Marker', 1, X + 41, Y + 14, 50, 50)
+end
 
 -- exit bands, as in tools/build_camp.py (EXITS): x1, y1, x2, y2
 -- the exit: the south-east corner after the last tree (same polygon as tools/build_camp.py EXITS), and the
 -- gathering point on the path, away from the screen edge (John 2026-10-23)
 T.EXIT_POLY = { { 830, 959 }, { 830, 760 }, { 1000, 600 }, { 1279, 520 }, { 1279, 959 } }
 T.EXIT_POLYS = SITE.EXITS or { T.EXIT_POLY }
-T.GATHER = { 1010, 820 }   -- the BD5000 exit's walk-to point (old saves' regions, migrateOldExits)
 T.PERIOD = 250
 
 local function leader() return EEex_Sprite_GetInPortrait(0) end
@@ -45,8 +63,37 @@ local function currentArea()
 end
 local function inCamp() return currentArea() == T.AREA end
 
+-- Is the area on the engine's world map? Areas outside it (BG2's chapter 1 dungeon AR0602) have no place to travel
+-- from: the map opened from there lists only the next destination, and travelling crashed in TravelToSelected
+-- (2026-11-02). CWorldMap: m_cResRef (8), m_cHeader (8), m_pData (CWorldMapData per map), m_ppAreas (one
+-- CWorldMapArea array per map). An unexpected layout answers true: the camp then behaves as before.
+local function onWorldMap(res)
+	local ok, found = pcall(function()
+		local wm = EngineGlobals.g_pBaldurChitin.m_pObjectGame.m_cWorldMap
+		local w, data = EEex_UDToPtr(wm), EEex_UDToPtr(wm.m_pData)
+		if data == 0 or EEex_ReadPtr(w + 16) ~= data then return nil end
+		local pp = EEex_ReadPtr(w + 16 + EEex_PtrSize)
+		if pp == 0 then return nil end
+		for m = 0, wm.m_cHeader.m_nMapCount - 1 do
+			local areas = EEex_ReadPtr(pp + m * EEex_PtrSize)
+			local n = EEex_PtrToUD(data + m * CWorldMapData.sizeof, 'CWorldMapData').m_nAreas
+			if areas ~= 0 then
+				for i = 0, n - 1 do
+					if EEex_PtrToUD(areas + i * CWorldMapArea.sizeof, 'CWorldMapArea').m_resCurrentArea:get():upper() == res then return true end
+				end
+			end
+		end
+		return false
+	end)
+	if not ok or found == nil then return true end
+	return found
+end
+T.onWorldMap = onWorldMap
+
 function SQCamp_Visible()
-	return worldMapScreen ~= nil and worldMapScreen:IsTravelButtonVisible() and leader() ~= nil
+	local shown = worldMapScreen ~= nil and worldMapScreen:IsTravelButtonVisible() and leader() ~= nil
+	if shown then pcall(place) end
+	return shown
 end
 
 function SQCamp_Frame()
@@ -107,6 +154,7 @@ function SQCamp_Click()
 		end
 		return
 	end
+	if not onWorldMap(currentArea()) then return end   -- no way back through the world map from there
 	do
 		EEex_Sprite_SetLocalString(p, 'SQCAMPOR', currentArea())
 		EEex_Sprite_SetLocalInt(p, 'SQCAMPX', p.m_pos.x)
@@ -247,34 +295,120 @@ local function partyList()
 	return out
 end
 
--- Saves that visited the camp before 2026-10-23 keep its first three exit bands (the ARE is copied into the save).
--- Rework them in place once per visit: SQCampExitS becomes a quadrilateral over the corner (walk-to point = the
--- gathering point), the other two are emptied. CGameTrigger: m_rBounding (RECT), m_pPolygon (POINT*), m_nPolygon.
-local OLD_QUAD = { { 830, 959 }, { 830, 700 }, { 1279, 520 }, { 1279, 959 } }
-local function migrateOldExits(area)
+-- Saves that visited the camp before the Clairiere (v1.0.3, John 2026-11-02) keep their copy of the old map's ARE
+-- (the BD5000 crop, or OH5300 on BG2EE): the new map's tiles show, with the old map's things at their old places.
+-- Once, at the first visit (an old map's fire still burns at one of these spots), everything is set right in place:
+-- the fire goes to the new fire, the old torches go out (an old save has no lanterns: an ARE's animations cannot be
+-- added), the ambient sound and item piles follow the fire, the exit region becomes the new one, and the camp's people,
+-- waiting ex-members and party go to their new spots. Tested on a v1.0.2 BGEE save (2026-11-02).
+local OLD_FIRES = { { 634, 385 }, { 908, 609 } }   -- BD5000 crop, OH5300 crop (camp_bg2)
+local SPOT_OF = { SQPRIEST = 'PRIEST', SQMERCH = 'MERCH', SQCAIN = 'CAIN', SQWITHER = 'WITHERS', SQNECRO = 'NECRO' }
+local function near(x, y, pt, d) return (x - pt[1]) ^ 2 + (y - pt[2]) ^ 2 <= d * d end
+local function jump(sp, x, y, face)
+	EEex_Action_ExecuteResponseStringOnAIBaseInstantly('ClearActions(Myself)', sp)
+	EEex_Action_ExecuteResponseStringOnAIBaseInstantly(string.format('JumpToPoint([%d.%d])', x, y), sp)
+	if face then EEex_Action_ExecuteResponseStringOnAIBaseInstantly(string.format('SetSequence(SEQ_READY) Face(%d)', face), sp) end
+end
+-- the n-th place in rings round a point (the waiting ex-members', when Waiting at the camp #16 is not installed)
+local function ring(c, n)
+	local r, count = 120, 8
+	while n >= count do n, r, count = n - count, r + 70, count + 8 end
+	local a = 2 * math.pi * n / count
+	return math.floor(c[1] + r * math.cos(a)), math.floor(c[2] + r * math.sin(a) * 0.75)
+end
+local function migrateLayout(area)
+	local fire = SITE.FIRE
+	if not fire then return end
+	local statics, oldFire, newFire = {}, nil, false
+	-- (an animation drawn under everything, flag "not drawn over", sits in the back list: BG2's fire pit, Compat 2026-11-02)
+	for _, list in ipairs({ area.m_lVertSort, area.m_lVertSortBack }) do
+		EEex_Utility_IterateCPtrList(list, function(id)
+			local o = EEex_GameObject_Get(id)
+			if not (o and o.m_objectType == 48) then return end
+			local st = EEex_GameObject_CastUserType(o)
+			table.insert(statics, st)
+			if near(o.m_pos.x, o.m_pos.y, fire, 40) then newFire = true end
+			for _, f in ipairs(OLD_FIRES) do
+				if not oldFire and near(o.m_pos.x, o.m_pos.y, f, 40) then oldFire = st end
+			end
+		end)
+	end
+	if newFire or not oldFire then return end   -- the new map, or already done
+	local dx, dy = fire[1] - oldFire.m_pos.x, fire[2] - oldFire.m_pos.y
+	print('[SQCamp] old camp map in this save: moving its things to the Clairiere')
+	for _, st in ipairs(statics) do
+		if st == oldFire then
+			st.m_pos.x, st.m_pos.y = fire[1], fire[2]
+			st.m_header.m_posX, st.m_header.m_posY = fire[1], fire[2]
+		else
+			local f = st.m_header.m_dwFlags
+			st.m_header.m_dwFlags = f - f % 2   -- bit 0 off: not shown
+		end
+	end
+	local triggers = {}
 	EEex_Utility_IterateCPtrList(area.m_lVertSortBack, function(id)
 		local o = EEex_GameObject_Get(id)
-		if not (o and o.m_objectType == 65) then return end
+		if not o then return end
 		local t = EEex_GameObject_CastUserType(o)
-		local name = t.m_scriptName:get()
-		local base = EEex_UDToPtr(t)
-		local poly = EEex_ReadPtr(base + 0x588)
-		if name == 'SQCampExitS' and EEex_ReadU16(base + 0x590) == 4 and poly ~= 0 then
-			for i, pt in ipairs(OLD_QUAD) do
-				EEex_WriteU32(poly + (i - 1) * 8, pt[1]); EEex_WriteU32(poly + (i - 1) * 8 + 4, pt[2])
-			end
-			EEex_WriteU32(base + 0x544, 830); EEex_WriteU32(base + 0x548, 520)
-			EEex_WriteU32(base + 0x54C, 1279); EEex_WriteU32(base + 0x550, 959)
-			EEex_WriteU32(base + 0x5DC, T.GATHER[1]); EEex_WriteU32(base + 0x5E0, T.GATHER[2])
-			EEex_WriteU32(base + 0x554, 34)
-		elseif name == 'SQCampExitE' or name == 'SQCampExitN' then
-			EEex_WriteU32(base + 0x544, 0); EEex_WriteU32(base + 0x548, 0)   -- (EEex_WriteU32 rejects negatives)
-			EEex_WriteU32(base + 0x54C, 1); EEex_WriteU32(base + 0x550, 1)
-			EEex_WriteU16(base + 0x590, 0)
-		elseif name == 'SQCampExit' then
-			EEex_WriteU32(base + 0x5DC, T.GATHER[1]); EEex_WriteU32(base + 0x5E0, T.GATHER[2])
+		if o.m_objectType == 16 then   -- the fire's crackle
+			o.m_pos.x, o.m_pos.y = o.m_pos.x + dx, o.m_pos.y + dy
+		elseif o.m_objectType == 17 and t.m_containerType == 4 and t.m_lstItems.m_nCount > 0 then   -- items on the ground
+			o.m_pos.x, o.m_pos.y = o.m_pos.x + dx, o.m_pos.y + dy
+			local rb = t.m_rBounding
+			rb.left, rb.top, rb.right, rb.bottom = rb.left + dx, rb.top + dy, rb.right + dx, rb.bottom + dy
+			t.m_ptWalkToUse.x, t.m_ptWalkToUse.y = t.m_ptWalkToUse.x + dx, t.m_ptWalkToUse.y + dy
+		elseif o.m_objectType == 65 then
+			table.insert(triggers, t)
 		end
 	end)
+	-- the exit regions: the first one with room for the new exit's points becomes it, the others are emptied
+	local poly = T.EXIT_POLYS[1]
+	for _, t in ipairs(triggers) do
+		local ptr = t.m_pPolygon and EEex_UDToPtr(t.m_pPolygon) or 0
+		local rb = t.m_rBounding
+		if poly and ptr ~= 0 and t.m_nPolygon >= #poly then
+			local l, tp, r, bt = math.huge, math.huge, 0, 0
+			for i, pt in ipairs(poly) do
+				EEex_WriteU32(ptr + (i - 1) * 8, pt[1]); EEex_WriteU32(ptr + (i - 1) * 8 + 4, pt[2])
+				l, tp, r, bt = math.min(l, pt[1]), math.min(tp, pt[2]), math.max(r, pt[1]), math.max(bt, pt[2])
+			end
+			t.m_nPolygon = #poly
+			rb.left, rb.top, rb.right, rb.bottom = l, tp, r, bt
+			poly = nil
+		else
+			t.m_nPolygon = 0
+			rb.left, rb.top, rb.right, rb.bottom = 0, 0, 1, 1
+		end
+	end
+	local inParty, n, k = {}, 0, 0
+	for i = 0, (PSXP7_LastPortrait and PSXP7_LastPortrait() or 5) do
+		local s = EEex_Sprite_GetInPortrait(i)
+		if s then inParty[s.m_id] = true end
+	end
+	EEex_Utility_IterateCPtrList(area.m_lVertSort, function(id)
+		local o = EEex_GameObject_Get(id)
+		if not (o and o.m_objectType == 49) then return end
+		local sp = EEex_GameObject_CastUserType(o)
+		local spot = SITE[SPOT_OF[string.upper(sp.m_scriptName:get())] or '']
+		if inParty[id] then
+			local x, y = ring({ T.ENTRY_X, T.ENTRY_Y }, n)
+			if n == 0 then x, y = T.ENTRY_X, T.ENTRY_Y end
+			n = n + 1
+			jump(sp, x, y)
+		elseif spot then
+			jump(sp, spot[1], spot[2], spot[3])
+		elseif EEex_Sprite_GetLocalInt(sp, 'SQDUMMY') > 0 and SITE.NECRO_CENTER then   -- the necromancer's creatures
+			jump(sp, ring(SITE.NECRO_CENTER, k % 8))
+		else   -- waiting ex-members and anyone else: round the fire
+			local x, y
+			if SQWait and SQWait.place then x, y = SQWait.place(k) else x, y = ring(fire, k) end
+			k = k + 1
+			jump(sp, x, y)
+		end
+	end)
+	if leader() then
+		EEex_Action_ExecuteResponseStringOnAIBaseInstantly(string.format('MoveViewPoint([%d.%d],INSTANT)', T.ENTRY_X, T.ENTRY_Y), leader())
+	end
 end
 
 -- The camp's people (SQCAMP.ARE actors, tools/build_camp.py). A save that visited the camp before one of them was
@@ -291,8 +425,10 @@ end
 -- (the camp chest SQCHEST is gone, John 2026-10-24: the Old Scholar opens the Codex; see T.GONE)
 T.spawnAt = T.spawnAt or {}
 T.relooked = T.relooked or {}
+T.renamed = T.renamed or {}
+T.NAMED = { SQPRIEST = true, SQMERCH = true, SQCAIN = true, SQNECRO = true }   -- (Faceless: M_SQFACE.lua's faces)
 -- the camp people's animations (SadoQoL.tp2 writes the same into their CREs)
-T.LOOKS = { SQPRIEST = 0xC910, SQMERCH = 0xC800, SQCAIN = 0x6402, SQWITHER = 0xE050 }
+T.LOOKS = { SQPRIEST = 0xC910, SQMERCH = 0xC800, SQCAIN = 0x6402 }   -- SQWITHER = Faceless: M_SQFACE.lua's disguises
 -- camp people version: raise it when their CREs change in a way a save keeps (voice); they are remade once
 T.PEOPLE_VERSION = 2
 T.REMAKE = { SQPRIEST = true, SQMERCH = true }
@@ -316,6 +452,19 @@ local function spawnResidents()
 			if o and o.m_objectType == 49 then
 				local sp = EEex_GameObject_CastUserType(o)
 				local name = string.upper(sp.m_scriptName:get())
+				-- a save keeps the creature with the name strref of the install it was made under: another install (a
+				-- new version adding strings) turned the merchant into "Shape him." (2026-11-02). The shown name is a
+				-- copy made at load time, so such a one goes and comes back from today's CRE (once he is missing, the
+				-- camp or the Old Scholar's own spawn makes him again at his spot).
+				if T.NAMED[name] and not T.renamed[id] then
+					T.renamed[id] = true
+					local ok, h = pcall(EEex_Resource_Demand, name, 'CRE')
+					local p = ok and h and EEex_UDToPtr(h) or 0
+					if p ~= 0 and EEex_ReadU32(p + 8) ~= sp.m_baseStats.m_name then
+						EEex_Action_ExecuteResponseStringOnAIBaseInstantly('DestroySelf()', sp)
+						return
+					end
+				end
 				if T.ONE[name] then
 					copies[name] = copies[name] or {}
 					table.insert(copies[name], sp)
@@ -407,10 +556,10 @@ function SQCamp_Tick()
 	local ok, err = pcall(spawnResidents)
 	if not ok then T.lastError = 'residents: ' .. tostring(err) end
 	local area = EEex_Area_GetVisible()
-	if area and T.migrated ~= EEex_UDToPtr(area) and not SITE.EXITS then   -- (BD5000 saves only)
-		T.migrated = EEex_UDToPtr(area)
-		local ok, err = pcall(migrateOldExits, area)
-		if not ok then T.lastError = 'migrate: ' .. tostring(err) end
+	if area and T.migrated ~= EEex_UDToPtr(area) and T.spawnArea == EEex_UDToPtr(area) and Infinity_GetClockTicks() - T.spawnSince >= 3000 then
+		T.migrated = EEex_UDToPtr(area)   -- (once its objects are all listed, like the camp's people)
+		local ok, err = pcall(migrateLayout, area)
+		if not ok then T.lastError = 'layout: ' .. tostring(err) end
 	end
 	local party = partyList()
 	local inside
@@ -427,7 +576,14 @@ function SQCamp_Tick()
 		end
 	elseif T.armed and inside.m_curAction.m_actionID ~= 23 then   -- in the exit and stopped there
 		T.armed, T.disarmedAt = false, now
-		EEex_Action_QueueResponseStringOnAIBase(string.format('LeaveArea("",[%d.%d],12)', inside.m_pos.x, inside.m_pos.y), inside)
+		local origin = EEex_Sprite_GetLocalString(p, 'SQCAMPOR')
+		if origin and origin ~= '' and not onWorldMap(origin) then
+			-- came from an area outside the world map (an older save, or a call by hand): the map would offer no way
+			-- back, so the exit leads straight back to the origin spot
+			T.goBack = { origin, EEex_Sprite_GetLocalInt(p, 'SQCAMPX'), EEex_Sprite_GetLocalInt(p, 'SQCAMPY') }
+		else
+			EEex_Action_QueueResponseStringOnAIBase(string.format('LeaveArea("",[%d.%d],12)', inside.m_pos.x, inside.m_pos.y), inside)
+		end
 	end
 	return false
 end

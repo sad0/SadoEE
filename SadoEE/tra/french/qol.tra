@@ -68,8 +68,8 @@
 @1172 = ~Adieu.~
 @1173 = ~Le Vieux Lettré~
 @1174 = ~Attente au camp : un membre qui quitte le groupe peut t'attendre au camp de repos, autour du feu~
-@1175 = ~Withers au camp : une liche qui recrée entièrement un membre du groupe (race, classe, kit, caractéristiques...), gratuitement~
-@1176 = ~Withers~
+@1175 = ~Sans-Visage au camp : un doppelganger qui recrée entièrement un membre du groupe (race, classe, kit, caractéristiques...), gratuit ; un nouveau visage et une nouvelle voix à chaque visite~
+@1176 = ~Sans-Visage~
 @1177 = ~%s : %s est parti dans le coffre (sac plein)~
 @1178 = ~Continuer~
 @1179 = ~Terminer~
@@ -100,7 +100,7 @@
 @1205 = ~Apprendre~
 @1206 = ~Fermer~
 @1207 = ~Grimoire des sorts perdus~
-@1208 = ~Les sorts qu'un mage a oubliés quand Withers l'a refait reposent dans ces pages. Ouvre-le : quiconque sait écrire des sorts de mage dans son grimoire les réapprend (ceux qu'il peut lancer).~
+@1208 = ~Les sorts qu'un mage a oubliés quand Sans-Visage l'a refait reposent dans ces pages. Ouvre-le : quiconque sait écrire des sorts de mage dans son grimoire les réapprend (ceux qu'il peut lancer).~
 @1209 = ~Auto-Roller : un bouton Auto-Roll à la création de personnage garde le meilleur de nombreux jets (force 18/xx pondérée)~
 @1210 = ~Tu veux pas identifier nos objets plutôt ?~
 @1211 = ~Je voudrais en savoir plus sur ce monde.~
@@ -110,7 +110,7 @@
 @1252 = ~Façonne-le devant moi.~
 @1253 = ~Rappelle quelqu'un que j'ai connu (importer).~
 @1254 = ~Une autre fois.~
-@1255 = ~Withers : nouveau compagnon~
+@1255 = ~Sans-Visage : nouveau compagnon~
 @1256 = ~Continuer~
 @1257 = ~Abandonner~
 @1258 = ~Garde-t-il les objets qu'il portait ?~
@@ -121,7 +121,7 @@
 @1263 = ~Celle du chef~
 @1264 = ~%s rejoint le groupe.~
 @1265 = ~Le groupe est complet (%d membres).~
-@1266 = ~Withers recrute : un nouveau compagnon créé dans les écrans de création du jeu ou importé, gratuit~
+@1266 = ~Sans-Visage recrute : un nouveau compagnon créé dans les écrans de création du jeu ou importé, gratuit~
 @1267 = ~Équipement du nouveau compagnon~
 @1268 = ~Valider~
 @1269 = ~Achats chez le Grand marchand : %d po (or du groupe : %d po)~
@@ -140,7 +140,7 @@
 @1282 = ~Ceinture~
 @1283 = ~Bottes~
 @1284 = ~Cape~
-@1285 = ~Withers propose~
+@1285 = ~Sans-Visage propose~
 @1286 = ~Acceptez notre don pour votre temple : <SQPRRC> po (réputation <SQPRREP> -> <SQPRNEXT>).~
 @1287 = ~Soignez tout le groupe : <SQPRHL>. Total : <SQPRHC> po.~
 @1288 = ~Soyez bénis. Les pauvres de la Côte prononceront vos noms avec gratitude.~
@@ -191,6 +191,18 @@
 @1346 = ~Tarifs de la prêtresse du camp : 50 %~
 @1347 = ~Tarifs de la prêtresse du camp : 25 %~
 @1348 = ~Tarifs de la prêtresse du camp : gratuit~
+@1400 = ~Sans-Visage~
+@1401 = ~Ah. Vous. *Sa voix glisse d'un timbre à l'autre.* Un visage, une âme... tout se réécrit, pour qui sait tenir la plume. Que désirez-vous ?~
+@1402 = ~Réécris-moi.~
+@1403 = ~Trouve-nous un nouveau compagnon.~
+@1404 = ~Rien, merci.~
+@1405 = ~Je défais tout : la race, la vocation, l'esprit, le corps. Vos souvenirs et vos biens restent... je ne vole que les visages. *Une voix d'enfant, à présent.* Je commence ?~
+@1406 = ~Commence.~
+@1407 = ~Pas encore.~
+@1408 = ~Un visage de plus ? J'en porte tant... *Puis une voix de vieillard.* Je peux en façonner un neuf, ou rappeler quelqu'un que vous avez connu ailleurs. Il marchera avec vous, aussi aguerri que votre chef.~
+@1409 = ~Façonne-le.~
+@1410 = ~Rappelle quelqu'un que j'ai connu (importer).~
+@1411 = ~Une autre fois.~
 @1540 = ~SadoEE~
 @1541 = ~Fonctions SadoEE activées ou coupées en jeu. Couper une fonction l'arrête seulement : ce qu'elle a déjà fait reste.~
 @1542 = ~Indices du coffre : objets rouges / bleus~
@@ -251,7 +263,7 @@
 @1597 = ~Clic : choisir l'action. Clic droit : rien. Les boutons latéraux des souris MMO envoient des touches : affectez-les dans les Raccourcis du jeu.~
 @1600 = ~Les binômes de PNJ peuvent se séparer : renvoyer l'un ne renvoie plus l'autre (Jaheira et Khalid, Minsc et Dynaheir, Xzar et Montaron, Eldoth et Skie)~
 @1601 = ~Ce composant est pour Baldur's Gate (BGEE) et EET.~
-@1602 = ~Nécessite Withers au camp de repos (son composant doit être installé avant).~
+@1602 = ~Nécessite Sans-Visage au camp de repos (son composant doit être installé avant).~
 @1603 = ~Auto-tirage~
 @1604 = ~Arrêter (%.1fs)~
 @1605 = ~Poids 18/xx : %d~
@@ -259,3 +271,7 @@
 @1607 = ~Meilleur : %d~
 @1608 = ~FOR~
 @1609 = ~%s tirages~
+@1620 = ~Ranger automatiquement les objets ramassés~
+@1621 = ~Ce que le groupe ramasse va directement dans le coffre de groupe, selon le filtre choisi. Clic : filtre suivant. Clic droit : désactivé.~
+@1622 = ~Désactivé~
+@1623 = ~Tout sauf les objets de quête, les sacs et les munitions~

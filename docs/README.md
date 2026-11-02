@@ -25,8 +25,8 @@
 | 11 | Grand Merchant | Sells every item seen in the stores you visited | all |
 | 12 | The Old Scholar | Identifies everything, party and stash, 80 gp per item; opens the item Codex | all |
 | 13 | Waiting at the camp | A member who leaves the party can wait for you around the fire | all |
-| 14 | Withers: respec | A lich who fully remakes a party member (race, class, kit, abilities...), free; works on recruited creatures too | all |
-| 15 | Withers: recruit | New companions made in the game's creation screens or imported, free | all |
+| 14 | Faceless: respec | A doppelganger who fully remakes a party member (race, class, kit, abilities...), free; works on recruited creatures too | all |
+| 15 | Faceless: recruit | New companions made in the game's creation screens or imported, free | all |
 | 16 | Quest chronicle | Every quest of the game: status, journal, hints, full solution | all |
 | 17 | Necromancer | Raises any creature of the game: undying target dummy with a damage meter, unleash it to fight, or recruit it | all |
 | 50-53 | Priestess prices | Her paid healing at 75 / 50 / 25 % or free | all |
@@ -56,14 +56,14 @@ _To write: the inventory page, the stash, bags, sorting options (auto, DPS, AC, 
 level, quality), Store all, Sell marked, uninstall note (Ctrl + click on the weight bag empties the stash)._
 
 ## Rest camp (#10-#17, #50-#53)
-_To write: how to reach it (parchment over Travel), leaving (exit corner, like a map edge), BG2EE site (Helmite
-Camp), each resident with screenshots._
+_To write: how to reach it (parchment over Travel), leaving (exit on the clearing's west edge, like a map edge), the map (the Clairiere, the same in every game, day and
+night), each resident with screenshots._
 
 ### Priestess (#10, #50-#53)
 ### Grand Merchant (#11)
 ### The Old Scholar, Codex and quest chronicle (#12, #16)
 ### Waiting at the camp (#13)
-### Withers: respec and recruit (#14, #15)
+### Faceless: respec and recruit (#14, #15)
 ### Necromancer (#17)
 
 ## Quality of life (#20-#32)
@@ -360,7 +360,7 @@ spot is prepared but stays empty until #11.
 | Resource | What it is |
 |---|---|
 | `M_SQ0BLD.lua` (from `SadoEE/qol/`) | Engine build table: detects v2.7.3 / v2.6.6 and maps every v2.7.3 patch address to its v2.6.6 twin (`SQ_Addr`). Shared with the QoL components. |
-| `SQCAMP.ARE`, `SQCAMP.WED`, `SQCAMPN.WED`, `SQCAMPSR.BMP`, `SQCAMPLM.BMP`, `SQCAMPLN.BMP`, `SQCAMPHT.BMP` | The camp area. BGEE / EET: 20x15-tile crop of `BD5000` (tiles x 54-73, y 24-38 = px 3456..4736 x 1536..2496) built by `SadoQoL/tools/build_camp.py`. Area type flags `0x47`. No TIS is shipped: the WEDs point at the game's `BD5000.TIS` / `BD5000N.TIS`. BG2EE: replaced by `camp/area_bg2/` (see below). |
+| `SQCAMP.ARE`, `SQCAMP.WED`, `SQCAMP.TIS`, `SQCAMPN.WED`, `SQCAMPN.TIS`, `SCAMP00-05.PVRZ`, `SCAMPN00-05.PVRZ`, `SQCAMPSR.BMP`, `SQCAMPLM.BMP`, `SQCAMPLN.BMP`, `SQCAMPHT.BMP` | The camp area, the same in every game (v1.0.3): "the Clairiere", our own 40x30-tile forest clearing (2560x1920 px) with its own PVRZ tiles, day and night, rendered and built by the Camp Map 3D pipeline (`E:/AI/bg3d/tools/build_camp3d.py`, editor now in MapSmithEE). Area type flags `0x47`. |
 | `SQCAMPBT.BAM` | The parchment button (frame 0 normal, frame 1 under the mouse: `SQCamp_Frame()`). |
 | `SQCHS.BAM`, `7F8B.INI` | Legacy: the old camp chest's static animation (`animation_type=4000`, resref `SQCHS`), kept for saves made when the chest `SQCHEST` existed. The chest is removed from saves at runtime (`T.GONE`). |
 | `7F8C.INI`, `7F8D.INI` | Legacy test animation slots 0x7F8C (= 0x6402 MONK) and 0x7F8D (= 0xC910 PEASANT_WOMAN), kept for saves made on 2026-10-24. |
@@ -370,17 +370,24 @@ spot is prepared but stays empty until #11.
 | `M_SQCAMP.lua` | The camp: parchment, travel, exits, residents, engine patches. Patched at install: placeholders `SQ_CAMP_STR_CAMP` / `SQ_CAMP_STR_BACK` -> strrefs of `@1101` "Camp" / `@1102` "Back"; the merchant's line in `T.RESIDENTS` is commented out (`-- SADOEE-MERCHANT`). |
 | `SQCAMP.menu` | Menu `SQCAMP_TICK` (a 0x0 label whose `enabled` runs `SQCamp_Tick()` every frame) and `SQCAMP_TEMPLATES` (templates `SQCAMP_TEMPLATE_Button` / `_Label` / `_Marker`, the marker using the game's `WMDAG`). |
 | `M_SQPRST.lua` | The priestess' services and the rest heal. Placeholders `SQ_PR_RAISE/WOUNDS/DRAIN/CURSE/POISON/DISEASE` -> strrefs `@1291`-`@1296`, `SQ_PR_REST` -> `@1342`, `SQ_PR_FREEMSG` -> `@1343`. |
-| BG2EE only (`ACTION_IF GAME_IS ~bg2ee~`): `camp/area_bg2/` -> `SQCAMP.ARE`, `SQCAMP.WED`, `SQCAMPN.WED`, the four BMPs, `M_SQ0CMP.lua` | 28x20-tile crop of `OH5300` (Helmite Camp) at (256,384), built by `SadoQoL/tools/build_camp_bg2.py`; WEDs point at `OH5300.TIS` / `OH5300N.TIS`; area type flags `0xD3`. `M_SQ0CMP.lua` defines `SQCampSite` (ENTRY 1594,176; two EXITS polygons; FIRE 908,609; PRIEST 791,306,0; MERCH 494,486,14; CAIN 972,552,2; WITHERS; RECRUIT; NECRO; NECRO_CENTER), which overrides the BD5000 coordinates in every camp Lua. EET uses the BD5000 camp (`GAME_IS ~bg2ee~` is false on EET). |
+| `M_SQ0CMP.lua` (in `camp/area/`) | `SQCampSite`, the map's spots, written by the builder: ENTRY 210,1140; one EXITS polygon on the west edge (0,982-109,1241); FIRE 1392,971; PRIEST, MERCH, CAIN, WITHERS (Faceless), RECRUIT, NECRO, NECRO_CENTER; VISION (unused). Read by every camp Lua. Until v1.0.2 BG2EE had its own camp (a crop of `OH5300`, `camp/area_bg2/`) and BGEE / EET a crop of `BD5000`. |
 
-`SQCAMP.ARE` content (BD5000 build; the BG2EE file has the same structure):
-- Actors: `Wandering priest` -> `SQPRIEST` at 553,338 facing 14; `Camp merchant` -> `SQMERCH` at 723,301 facing 2
-  (BG2EE: 791,306 f0 and 494,486 f14). Actor animation field 0 (the creature's own), no dialogue / script overrides.
-- One entrance `SQCampIn` (634,520; BG2EE 1594,176).
-- Travel region(s) of type 2 with no destination area, cursor 34, flag 0x4 (party required): `SQCampExit`
-  (south-east polygon, bounding box 830,520-1279,959). BG2EE: `SQCampExit` (road north, 1152,0-1450,80) and
-  `SQCampExit2` (road east, 1711,176-1791,420).
-- No area script, no containers, no spawn points; rest-encounter block kept from BD5000 but creature count 0 and
-  probabilities 0 / 0 (`build_camp.py`: "no rest ambush").
+`SQCAMP.ARE` content (the Clairiere):
+- Actors: `Wandering priest` -> `SQPRIEST` at 1464,792; `Camp merchant` -> `SQMERCH` at 989,898. Actor animation field
+  0 (the creature's own), no dialogue / script overrides.
+- One entrance at 210,1140.
+- One travel region of type 2 with no destination area, cursor 34: `SQCampExit` (west edge, 0,982-109,1241).
+- Animations: `Camp_Fire` (`FPIT1L`) at 1392,971 and three lanterns (`FLAME2S`).
+- No area script, no containers, no spawn points, no rest encounters.
+
+Old saves (v1.0.0 - v1.0.2) keep their copy of the old camp's ARE. `migrateLayout` (`M_SQCAMP.lua`) moves them over
+once, at the first visit: an old fire found at 634,385 (BD5000 crop) or 908,609 (OH5300 crop), in either sprite list,
+goes to the new fire; the other old animations are hidden (bit 0 of their flags); the ambient sound and non-empty item
+piles shift by the same offset; the first exit region with room for 4 points becomes the new exit, the others are
+emptied; the camp's people jump to their `SQCampSite` spots, waiting ex-members round the fire, the necromancer's
+creatures round `NECRO_CENTER`, the party round the entrance. An old save has no lanterns (an ARE's animations cannot
+be added at runtime). A camp person whose name strref differs from today's CRE (made under an older install) is
+removed once and made again from the CRE.
 
 ##### Existing game files modified
 - None of the game's own resources. `COPY_EXISTING ~SQCAMP.ARE~` patches the component's own area: the actor whose
@@ -431,9 +438,9 @@ Camp tick (`SQCamp_Tick`, menu `SQCAMP_TICK`, pushed on `EEex_GameState_AddIniti
   animation differs from `T.LOOKS` (SQPRIEST 0xC910, SQMERCH 0xC800, SQCAIN 0x6402, SQWITHER 0xE050); once per save,
   when Player1's local `SQCAMPV` < `T.PEOPLE_VERSION` (2), destroys SQPRIEST and SQMERCH so they are recreated from
   the current CREs (look and voice).
-- `migrateOldExits` (BD5000 camp only): for saves that visited the camp before 2026-10-23, rewrites the old exit
-  regions in memory (CGameTrigger: bounding RECT `+0x544..+0x550`, polygon pointer `+0x588`, vertex count `+0x590`,
-  cursor `+0x554` = 34, walk-to point `+0x5DC/+0x5E0` = 1010,820), empties `SQCampExitE` / `SQCampExitN`.
+- `migrateLayout` (v1.0.3): moves a save's old camp (BD5000 / OH5300 crop) to the Clairiere once, through the
+  bindings (`m_header.m_posX/m_posY`, `m_header.m_dwFlags`, `m_rBounding`, `m_nPolygon`, `m_pPolygon`, sprites by
+  `JumpToPoint`): see the area description above. It replaces `migrateOldExits` (BD5000 exit bands, before 2026-10-23).
 - Legacy: an Alt + left-drag handler wrapping `EEex_Key_Hook_AfterEventsPoll` moves `SQCHEST` (the chest no longer
   exists; the hook does nothing without it).
 
@@ -472,8 +479,7 @@ Priestess services (`M_SQPRST.lua`):
 ##### Install-time options / predicates
 - `REQUIRE_PREDICATE GAME_IS ~bgee eet bg2ee~` (`@2014`), and EEex main component
   (`ID_OF_LABEL ~EEex.tp2~ ~B3-EEex-Main~`, `@1002`).
-- BGEE / EET: BD5000 crop (needs the game's `BD5000.TIS`; the installer does not check it). BG2EE: OH5300 crop +
-  `M_SQ0CMP.lua`; creature fallbacks `KELDDA` -> `AMTCLE01`, `AGNASI` -> `WILMAT` chosen by `FILE_EXISTS_IN_GAME`.
+- The camp map ships its own tiles (PVRZ): nothing is read from the game's areas. Creature fallbacks `KELDDA` -> `AMTCLE01`, `AGNASI` -> `WILMAT` chosen by `FILE_EXISTS_IN_GAME`.
 - The whole mod refuses to install over Party Stash or SadoQoL components (`ALWAYS` block, `@2010`).
 - Engine builds: v2.7.3 and v2.6.6 (`SQ_Addr`).
 
@@ -580,7 +586,7 @@ None. No scan.
 
 ##### Engine / runtime changes
 - `SQCamp_Hooks.cain`: in `SQCAMP`, 3 s after entering (uses `SQCamp.spawnArea` / `spawnSince`), creates `SQCAIN`
-  once per visit at `SQCain.SPOT` (BD5000: 560,445 facing 10; BG2EE `SQCampSite.CAIN`) when absent (old saves);
+  once per visit at `SQCain.SPOT` (`SQCampSite.CAIN`) when absent (old saves);
   renames an existing one to the current strref (`m_name`, `m_apparentName`).
 - `SQCamp_Hooks.unarm`: destroys the weapons in slots 35-38 and a non-shield off-hand (slot 2) of `SQPRIEST`,
   `SQMERCH`, `SQCAIN` (runs only when #12 is installed).
@@ -622,8 +628,7 @@ None. No scan.
   alive (`m_generalState & 0xFC0 == 0`) is pending for 60 s; dialogue `''`, `NONE` or SoD's `MULTIG` marks him as
   player-created. When no dialogue runs and he is idle (action 0) 800 ms later, near the leader in the same area:
   `StartDialogOverride("SQKICK",Player1)` on him. A question that never opened is dropped after 10 s.
-- Places: rings of radius 120 / 190 / 260 px (8, 16, 24 spots, y scaled 0.75) around `T.FIRE` (BD5000 638,385;
-  BG2EE `SQCampSite.FIRE`), at least 60 px from the camp people (`T.KEEP_CLEAR`); slot counter modulo 48.
+- Places: rings of radius 120 / 190 / 260 px (8, 16, 24 spots, y scaled 0.75) around `T.FIRE` (`SQCampSite.FIRE`), at least 60 px from the camp people (`T.KEEP_CLEAR`); slot counter modulo 48.
 - Player-created characters: `SetDialog("SQKICK")`, old dialogue kept in a local; on rejoin `SetDialog(<old or
   NONE>)` + `JoinParty()`.
 - Listeners: main file loaded (loads `SQWAIT.menu`), sprite loaded / game state initialised / after reload (push the

@@ -24,6 +24,9 @@ O.ROWS = {
 	{ 'StashTints', 'Stash Tints', "SQ_OPT_TXT_1542", "SQ_OPT_TXT_1543", 'PStash' },
 	{ 'StashPlus', 'Stash Upgrade Mark', "SQ_OPT_TXT_1544", "SQ_OPT_TXT_1545", 'PStash' },
 	{ 'StashDps', 'Stash DPS Line', "SQ_OPT_TXT_1546", "SQ_OPT_TXT_1547", 'PStash' },
+	-- a choice, not a switch (values = its labels, 0 first; John 2026-10-29: off by default, more filters later)
+	{ 'AutoStash', 'Auto Stash', "SQ_OPT_TXT_1620", "SQ_OPT_TXT_1621", 'PStash', 'autoFilter',
+		values = { "SQ_OPT_TXT_1622", "SQ_OPT_TXT_1623" }, default = 0 },
 	{ 'Traps', 'Passive Traps', "SQ_OPT_TXT_1548", "SQ_OPT_TXT_1549", 'SQTrap', 'ENABLED' },
 	{ 'AutoDisarm', 'Auto Disarm', "SQ_OPT_TXT_1550", "SQ_OPT_TXT_1551", 'SQAuto', 'ENABLED' },
 	{ 'AutoOpen', 'Auto Open', "SQ_OPT_TXT_1552", "SQ_OPT_TXT_1553", 'SQAuto', 'CLICK' },
@@ -39,7 +42,7 @@ O.ROWS = {
 }
 -- section id, label, its switches (the mouse section lists SQMB's inputs instead)
 O.SECTIONS = {
-	{ 'stash', "SQ_OPT_TXT_1572", { 'StashTints', 'StashPlus', 'StashDps' } },
+	{ 'stash', "SQ_OPT_TXT_1572", { 'StashTints', 'StashPlus', 'StashDps', 'AutoStash' } },
 	{ 'traps', "SQ_OPT_TXT_1573", { 'Traps', 'AutoDisarm', 'AutoOpen', 'Outline' } },
 	{ 'combat', "SQ_OPT_TXT_1574", { 'Ammo', 'Quiver', 'AttackMove', 'SongSpam' } },
 	{ 'loot', "SQ_OPT_TXT_1575", { 'SortedLoot', 'ChestsBar', 'Waiting' } },
@@ -72,10 +75,20 @@ function SQOpt_On(id)
 	return not ok or v == nil or v ~= 0
 end
 
--- Copies a switch's setting into its feature's field (when installed).
+-- A choice's setting: 0 (off) .. #values - 1; for a switch 1 / 0. 0 when the page is not there.
+function SQOpt_Value(id)
+	local o = EEex_Options_Get and EEex_Options_Get(optionID(id))
+	if not o then return 0 end
+	local ok, v = pcall(function() return o:get() end)
+	return ok and tonumber(v) or 0
+end
+
+-- Copies a switch's setting (a choice's value) into its feature's field (when installed).
 local function apply(row)
 	local t = _G[row[5]]
-	if row[6] and type(t) == 'table' then t[row[6]] = SQOpt_On(row[1]) end
+	if row[6] and type(t) == 'table' then
+		if row.values then t[row[6]] = SQOpt_Value(row[1]) else t[row[6]] = SQOpt_On(row[1]) end
+	end
 	if row[5] == 'PStash' and type(t) == 'table' then t.dirty = true end -- the stash page redraws its cells
 end
 function SQOpt_ApplyAll()
@@ -89,9 +102,9 @@ end
 for _, row in ipairs(O.ROWS) do
 	if not EEex_Options_Get(optionID(row[1])) then
 		EEex_Options_Register(optionID(row[1]), EEex_Options_Option.new({
-			['default']  = 1,
+			['default']  = row.default or 1,
 			['type']     = EEex_Options_ToggleType.new(),
-			['accessor'] = EEex_Options_ClampedAccessor.new({ ['min'] = 0, ['max'] = 1 }),
+			['accessor'] = EEex_Options_ClampedAccessor.new({ ['min'] = 0, ['max'] = row.values and #row.values - 1 or 1 }),
 			['storage']  = EEex_Options_NumberLuaStorage.new({ ['section'] = 'SadoQoL', ['key'] = row[2] }),
 			['onChange'] = function() pcall(apply, row) end,
 		}))
@@ -176,12 +189,30 @@ function SQOpt_Title() local s = section() return s and s.text or '' end
 -- switch lines
 function SQOpt_RowShown(k) return not isMouse() and rows()[k] ~= nil end
 function SQOpt_RowName(k) local r = rows()[k] return r and r[3] or '' end
-function SQOpt_RowDesc(k) local r = rows()[k] return r and r[4] or '' end
--- SQOPTCK.BAM: 0 = red cross (off), 1 = green check (on)
+-- under the name: a switch's description; a choice's value, between arrows (its description goes to the help)
+function SQOpt_RowDesc(k)
+	local r = rows()[k]
+	if not r then return '' end
+	if r.values then
+		local v = SQOpt_Value(r[1])
+		return (v == 0 and '' or '^0xff901010') .. '< ' .. (r.values[v + 1] or '') .. ' >'
+	end
+	return r[4]
+end
+local function rowHelp(k) local r = rows()[k] return r and r[4] or '' end
+-- SQOPTCK.BAM: 0 = red cross (off), 1 = green check (on; a choice: any value but the first)
 function SQOpt_RowFrame(k) local r = rows()[k] return (r and SQOpt_On(r[1])) and 1 or 0 end
+-- click: a switch flips, a choice goes to its next value; right click: off
 function SQOpt_RowClick(k)
 	local r = rows()[k]
-	if r then SQOpt_Set(r[1], not SQOpt_On(r[1])) end
+	if not r then return end
+	local o = EEex_Options_Get(optionID(r[1]))
+	if r.values and o then o:set((SQOpt_Value(r[1]) + 1) % #r.values) return end
+	SQOpt_Set(r[1], not SQOpt_On(r[1]))
+end
+function SQOpt_RowClear(k)
+	local r = rows()[k]
+	if r then SQOpt_Set(r[1], false) end
 end
 
 -- mouse lines
@@ -261,7 +292,7 @@ function SQOpt_HelpTitle()
 end
 function SQOpt_HelpText()
 	local kind, k = hovered()
-	if kind == 'r' then return SQOpt_RowDesc(k) end
+	if kind == 'r' then return rowHelp(k) end
 	if kind == 'm' then
 		local key = mouseKey(k)
 		return SQMB_ActionLabel(key and SQMB_Bind(key) or 0) .. '\n\n' .. O.TXT.mouseHelp
@@ -291,6 +322,15 @@ end
 
 -- On the world screen: a full page (M_PSXPG.lua: pause + veil), or pushed as is with the game paused.
 function SQOpt_Open()
+	-- main menu (no game loaded): selecting the world screen crashes the game; push the page as is.
+	-- (CurrentlyInGame() is no help: it already says true on the start screen.)
+	if not O.inGame or e:GetActiveEngine() == startEngine then
+		O.pending = nil
+		O.direct = true
+		if not Infinity_IsMenuOnStack('SQOPT_PAGE') then Infinity_PushMenu('SQOPT_PAGE') end
+		return
+	end
+	O.direct = nil
 	if not onWorld() then
 		-- from the game's Options menu: back to the world first, the page opens on the next frame (SQOPT_TICK)
 		O.pending = true
@@ -310,6 +350,11 @@ function SQOpt_Open()
 end
 function SQOpt_Close()
 	if Infinity_IsMenuOnStack('SQOPT_DROP') then Infinity_PopMenu('SQOPT_DROP') end
+	if O.direct then
+		O.direct = nil
+		if Infinity_IsMenuOnStack('SQOPT_PAGE') then Infinity_PopMenu('SQOPT_PAGE') end
+		return
+	end
 	if PSXPG_Close then PSXPG_Close('SQOPT_PAGE') return end
 	if Infinity_IsMenuOnStack('SQOPT_PAGE') then Infinity_PopMenu('SQOPT_PAGE') end
 	if O.unpause then
@@ -330,27 +375,145 @@ local function pushTick()
 	if not Infinity_IsMenuOnStack('SQOPT_TICK') then Infinity_PushMenu('SQOPT_TICK') end
 end
 
+-- An item of `menu` by its text, without colour codes and any case (Infinity UI++ draws its buttons' text as
+-- rgString(): '^$' .. getUiString(...), which an exact match misses).
+local function plain(t)
+	if type(t) ~= 'string' then return nil end
+	return string.lower((t:gsub('%^0x%x%x%x%x%x%x%x%x', ''):gsub('%^.', '')))
+end
+local function findItemByText(menu, text)
+	local want = plain(text)
+	if not menu or not want then return nil end
+	local item = menu.items
+	while item ~= nil do
+		local ok, t = pcall(function() return EEex_Menu_GetItemVariant(item.text.text) end)
+		if ok and type(t) == 'function' then
+			local ok2, r = pcall(t)
+			t = ok2 and r or nil
+		end
+		if ok and plain(t) == want then return item end
+		item = item.next
+	end
+end
+
 -- The game's Options menu (Esc): a "SadoEE" button above EEex's, a copy of the Return button's look.
 local function injectEscButton()
 	local esc = EEex_Menu_Find('ESC_MENU')
 	if not esc or O.escInjected then return end
-	local ret = EEex_Options_Private_FindItemByText and EEex_Options_Private_FindItemByText(esc, getUiString('RETURN_GAME_BUTTON'))
-	if not ret then return end
+	local ret = findItemByText(esc, getUiString('RETURN_GAME_BUTTON'))
+	if not ret then
+		print('[SQOpt] Options menu: no Return button, no SadoEE button')
+		return
+	end
 	local b = EEex_Menu_InjectTemplateInstance('ESC_MENU', 'SQOPT_TEMPLATE_EscButton', 0, 0, 0)
 	b.bam.resref = ret.bam.resref
 	b.bam.sequence = ret.bam.sequence
 	b.pad.x, b.pad.y, b.pad.w, b.pad.h = ret.pad.x, ret.pad.y, ret.pad.w, ret.pad.h
-	local area, retArea = b.area, ret.area
-	local prev = EEex_Menu_GetItemFunction(esc.reference_onOpen)
-	EEex_Menu_SetItemFunction(esc.reference_onOpen, function()
-		if prev then prev() end
-		local gap = 5
-		area.x, area.w, area.h = retArea.x, retArea.w, retArea.h
-		area.y = retArea.y - 2 * (retArea.h + gap) -- EEex's own button sits right above Return
-	end)
+	b.area.x, b.area.y = -1000, -1000 -- placed on the first frame shown (SQOpt_EscText), once every item has its place
+	-- No menu or item reference is kept: after the mods load, EEex adds its option tab menus and the engine's
+	-- name-sorted menu array shifts, so a kept ESC_MENU would point at another menu (IEX, 2026-10-30).
 	O.escInjected = true
 end
-function SQOpt_EscText() return O.TXT.button end
+
+-- The "SadoEE" button's place (IEX session 2026-10-28: a fixed "two rows above Return" sat on Save game when EEex's
+-- own button is not there): the first free slot of Return's column, going up then down, among the items the menu
+-- shows now (EEex's button or not; vanilla, Infinity UI++, LeUI, Dragonspear UI++): buttons, texts and BAM pictures
+-- count, the backgrounds (over a quarter of the menu) do not.
+local function itemShown(item)
+	local ok, v = pcall(function() return EEex_Menu_GetItemVariant(item.enabled) end)
+	if not ok or v == nil then return true end
+	if type(v) == 'function' then
+		local ok2, r = pcall(v)
+		return not ok2 or (r ~= false and r ~= nil and r ~= 0)
+	end
+	return v ~= 0 and v ~= false
+end
+local function itemText(item)
+	local ok, t = pcall(function() return EEex_Menu_GetItemVariant(item.text.text) end)
+	if not ok then return nil end
+	if type(t) == 'function' then
+		local ok2, r = pcall(t)
+		return ok2 and r or nil
+	end
+	return t
+end
+local function placeEscButton()
+	-- looked up again each time (see injectEscButton)
+	local esc = EEex_Menu_Find('ESC_MENU')
+	if not esc then return end
+	local retItem = findItemByText(esc, getUiString('RETURN_GAME_BUTTON'))
+	local ours = findItemByText(esc, O.TXT.button)
+	if not retItem or not ours then
+		if O.DEBUG then print('[SQOpt] Esc button: Return ' .. tostring(retItem) .. ', ours ' .. tostring(ours)) end
+		return
+	end
+	local area, ret = ours.area, retItem.area
+	local x, w, h, gap = ret.x, ret.w, ret.h, 5
+	local menuX, menuY, menuW, menuH = EEex_Menu_GetUIMenuArea(esc)
+	local sw, sh = Infinity_GetScreenSize()
+	menuX, menuY = menuX or 0, menuY or 0
+	-- the slot must be on screen (the menu can be larger than a small window)
+	local function onScreen(px, py)
+		return menuX + px >= 0 and menuY + py >= 0 and (not sw or menuX + px + w <= sw) and (not sh or menuY + py + h <= sh)
+	end
+	local busy = {}
+	local item = esc.items
+	while item ~= nil do
+		local a = item.area
+		local text = itemText(item)
+		-- what a button must not cover: the other buttons, the texts (title, version), the pictures with a BAM. Without
+		-- uiItemType (IEX, 2026-10-28: Quit looked free) every item counts but the backgrounds.
+		local known, isButton = pcall(function() return item.type == assert(uiItemType.ITEM_BUTTON) end)
+		local okBam, bam = pcall(function() return EEex_Menu_GetItemVariant(item.bam.resref) end)
+		local taken = not known or isButton or (type(text) == 'string' and text ~= '')
+			or (okBam and type(bam) == 'string' and bam ~= '')
+		if a and taken and plain(text) ~= plain(O.TXT.button) and itemShown(item)
+			and a.w > 0 and a.h > 0 and a.w * a.h < 0.25 * (menuW or 1024) * (menuH or 768) then
+			busy[#busy + 1] = { a.x, a.y, a.w, a.h }
+		end
+		item = item.next
+	end
+	local function free(px, py)
+		if not onScreen(px, py) then return false end
+		for _, r in ipairs(busy) do
+			if px < r[1] + r[3] and r[1] < px + w and py < r[2] + r[4] and r[2] < py + h then return false end
+		end
+		return true
+	end
+	local function put(px, py)
+		area.x, area.y, area.w, area.h = px, py, w, h
+		if O.DEBUG then print(string.format('[SQOpt] Esc button at %d,%d (menu %d,%d %dx%d, screen %sx%s, %d taken)',
+			px, py, menuX, menuY, menuW or 0, menuH or 0, tostring(sw), tostring(sh), #busy)) end
+		return true
+	end
+	for k = 1, 12 do
+		local y = ret.y - k * (h + gap)
+		if free(x, y) then return put(x, y) end
+	end
+	for k = 1, 6 do
+		local y = ret.y + k * (h + gap)
+		if free(x, y) then return put(x, y) end
+	end
+	-- no free slot in the column: left, then right of Return; at worst over the column's top, kept on screen
+	if free(x - w - gap, ret.y) then return put(x - w - gap, ret.y) end
+	if free(x + w + gap, ret.y) then return put(x + w + gap, ret.y) end
+	local px = math.max(-menuX, math.min(x, (sw or 99999) - menuX - w))
+	local py = math.max(-menuY, math.min(ret.y - (h + gap), (sh or 99999) - menuY - h))
+	return put(px, py)
+end
+-- Placed again each time the Options menu shows (it was closed for a moment: the window may have changed size).
+function SQOpt_EscText()
+	local now = Infinity_GetClockTicks()
+	-- placeEscButton reads every button's text, this one's too: not again from inside it (C stack overflow, IUI++ 1.4)
+	if not O.placing and (not O.escSeen or now - O.escSeen > 300) then
+		O.placing = true
+		local ok, err = pcall(placeEscButton)
+		O.placing = nil
+		if not ok then print('[SQOpt] Options button place: ' .. tostring(err)) end
+	end
+	O.escSeen = now
+	return O.TXT.button
+end
 
 if not O.listenersAdded then
 	O.listenersAdded = true
@@ -383,6 +546,7 @@ if not O.listenersAdded then
 		if not ok then print('[SQOpt] Options button: ' .. tostring(err)) end
 	end)
 	EEex_GameState_AddInitializedListener(function() SQOpt_ApplyAll() pcall(pushTick) end)
-	EEex_Sprite_AddLoadedListener(function() pcall(pushTick) end)
+	EEex_Sprite_AddLoadedListener(function() O.inGame = true pcall(pushTick) end)
+	EEex_GameState_AddDestroyedListener(function() O.inGame = nil end)
 	EEex_Menu_AddAfterMainFileReloadedListener(pushTick)
 end

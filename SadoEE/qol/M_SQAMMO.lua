@@ -70,7 +70,10 @@ local function hook()
 		}}},
 		EEex_FlattenTable({
 			{[[
-				#MAKE_SHADOW_SPACE(56)
+				; 72 = EEex_GenLuaCall's own 48 bytes (2 args: its frame ends at rsp+80) + 3 saves above it. With 56 the saves of
+				; rdx / r8 (rsp+72 / +64) were its Lua args (sprite, item): SetUsageCount got a bogus ability index and did
+				; nothing, so ammo that should be used up (excluded arrows, enemies) never was (v1.0.3, study copy 2026-10-29).
+				#MAKE_SHADOW_SPACE(72)
 				mov qword ptr ss:[rsp+#SHADOW_SPACE_BOTTOM(-8)], rcx
 				mov qword ptr ss:[rsp+#SHADOW_SPACE_BOTTOM(-16)], rdx
 				mov qword ptr ss:[rsp+#SHADOW_SPACE_BOTTOM(-24)], r8

@@ -119,6 +119,44 @@ local function findSpawned()
 	return nil
 end
 
+-- out of the party and out of the game, now (instant: a half-made creature never runs its action queue)
+local function remove(sp)
+	pcall(function() EEex_Action_ExecuteResponseStringOnAIBaseInstantly('LeaveParty()', sp) end)
+	T.toDestroy = T.toDestroy or {}
+	T.toDestroy[sp.m_id] = 10              -- tries left (the tick destroys him once he is out of the party)
+end
+local function destroyLeft()
+	for id, tries in pairs(T.toDestroy or {}) do
+		local sp = spriteOf(id)
+		if not sp or tries <= 0 then
+			T.toDestroy[id] = nil
+		elseif EEex_Sprite_GetPortraitIndex(sp) < 0 then
+			pcall(function()
+				if not sp.m_pArea then
+					local lead = leader()
+					if lead and lead.m_pArea then EEex_Object_AddToArea(sp, lead.m_pArea, lead.m_pos.x, lead.m_pos.y) end
+				end
+				EEex_Action_ExecuteResponseStringOnAIBaseInstantly('DestroySelf()', sp)
+			end)
+			T.toDestroy[id] = tries - 1
+		else
+			pcall(function() EEex_Action_ExecuteResponseStringOnAIBaseInstantly('LeaveParty()', sp) end)
+			T.toDestroy[id] = tries - 1
+		end
+	end
+end
+
+-- ghost slots from earlier versions (a recruit abandoned half-made stayed in the party: blank CHARBASE, no name)
+local function cleanGhosts()
+	for i = 0, (PSXP7_N or 6) - 1 do
+		local sp = EEex_Sprite_GetInPortrait(i)
+		if sp and sp.m_id ~= T.id and string.upper(sp.m_resref:get()) == T.TEMPLATE and (sp:getName() or '') == '' then
+			remove(sp)
+		end
+	end
+end
+T.cleanGhosts = cleanGhosts
+
 local function destroy(sp)
 	if not sp then return end
 	pcall(function()
@@ -198,6 +236,14 @@ function SQRecruit_Continue()
 	if step() >= STEP_DONE then return end
 	primeLuaState()
 	local sp = sprite()
+	-- from the appearance step on he is in the party: the game's colour page (preview and colours) works on the
+	-- selected party member; outside the party it recoloured the protagonist (John 2026-11-02). Abandoning after
+	-- this still frees the slot (OnMainCancel + remove).
+	if sp and step() >= STEP_COLORS and EEex_Sprite_GetPortraitIndex(sp) < 0 and T.joinParty then
+		T.joinParty(sp)
+		local slot = EEex_Sprite_GetPortraitIndex(sp)
+		if slot >= 0 then EEex_WriteU32(cc() + 0x48, slot) end
+	end
 	if sp then selectRecruit(sp) end
 	if T.wrapInGame then pcall(T.wrapInGame) end      -- (UI.MENU reloaded: CurrentlyInGame is new again)
 	local ok, err = pcall(function() createCharScreen:OnMenuButtonClick() end)
@@ -593,9 +639,10 @@ local function joinParty(sp)
 		local ok, res = pcall(PSXP7_Add, sp.m_id)
 		if ok and res then return true end
 	end
-	EEex_Action_QueueResponseStringOnAIBase('JoinParty()', sp)
-	return true
+	EEex_Action_ExecuteResponseStringOnAIBaseInstantly('JoinParty()', sp)
+	return EEex_Sprite_GetPortraitIndex(sp) >= 0
 end
+T.joinParty = joinParty
 
 local function finish()
 	local sp = sprite()
@@ -617,6 +664,7 @@ local function finish()
 		sp.m_baseStats.m_maxHitPointsBase, sp.m_baseStats.m_hitPoints = hp, hp
 	end
 	refresh(sp)
+	joinParty(sp)
 	local ok, err = pcall(openGear, sp)
 	if not ok then T.lastError = 'gear: ' .. tostring(err) closeGear() unpause() joined(sp) end
 end
@@ -656,8 +704,14 @@ function SQRecruit_Abandon()
 		EEex_WriteU32(cc() + 0x770, sp.m_id)
 		local slot = EEex_Sprite_GetPortraitIndex(sp)
 		if slot >= 0 then EEex_WriteU32(cc() + 0x48, slot) end
+		-- joined at the appearance step: out of the party FIRST (the creation screen's Cancel deletes the creature but
+		-- left his party slot: an empty portrait, John 2026-11-02)
+		if slot >= 0 then
+			pcall(function() EEex_Action_ExecuteResponseStringOnAIBaseInstantly('LeaveParty()', sp) end)
+		end
 		local ok, err = pcall(function() createCharScreen:OnMainCancelButtonClick() end)
-		if not ok then T.lastError = 'cancel: ' .. tostring(err) destroy(sp) end
+		if not ok then T.lastError = 'cancel: ' .. tostring(err) end
+		if spriteOf(sp.m_id) then remove(sp) end
 	end
 	restoreScreen()
 	if Infinity_IsMenuOnStack('SQRECR_MAIN') then Infinity_PopMenu('SQRECR_MAIN') end
@@ -675,6 +729,10 @@ function SQRecruit_Begin(mode)
 	spawnBlank()
 	return true
 end
+-- the dialogue's replies call these: the engine's action parser drops a quoted Lua argument ('import' arrived as
+-- nil, so an import ran as a creation, John 2026-11-02)
+function SQRecruit_BeginCreate() return SQRecruit_Begin('create') end
+function SQRecruit_BeginImport() return SQRecruit_Begin('import') end
 
 -- The shade lifts the sidebars over it (pushSidebars, as the record screen does). The game's popSidebars() takes them
 -- off the stack, made for screens of their own: over the world, 2.6.6 then lost its sidebars and portraits until
@@ -712,11 +770,23 @@ local function startPanels(sp)
 		T.phase, T.imported, T.lastOpen = 'panels', false, 'POPUP_THREEBUTTON'
 		pause()
 		local ok, err = pcall(function() createCharScreen:OnImportCharacterButtonClick() end)
-		if not ok then T.lastError = tostring(err) SQRecruit_Abandon() end
+		if not ok then T.lastError = tostring(err) SQRecruit_Abandon() return end
+		-- a character file only: the engine's "saved game" import goes to its load screen and the bare creation screen,
+		-- with no way back to the world (compat test 2026-11-02): its popup is answered "character file" at once
+		if Infinity_IsMenuOnStack('POPUP_THREEBUTTON') and Popup3Button and Popup3Button.midFunc then
+			Infinity_PopMenu('POPUP_THREEBUTTON')
+			ok, err = pcall(Popup3Button.midFunc)
+			if not ok then T.lastError = tostring(err) SQRecruit_Abandon() return end
+			T.lastOpen = 'CHARACTER_SELECT'
+		end
 	else
+		-- outside the party until he is complete (John 2026-11-02: a recruit left half-made kept an empty portrait
+		-- slot); he joins at the end (finish)
+		EEex_WriteU32(cc() + 0x48, partySize())
+		T.phase = 'panels'
 		showMain()
-		T.phase = 'joining'
-		EEex_Action_QueueResponseStringOnAIBase('JoinParty()', sp)
+		pause()
+		SQRecruit_Continue()
 	end
 end
 
@@ -726,6 +796,9 @@ function SQRecruit_Title()
 	return name ~= '' and string.format('%s - %s', T.TXT_TITLE, name) or T.TXT_TITLE
 end
 function SQRecruit_Active() return T.phase == 'panels' end
+-- added to the UI's "creation screen?" tests by SadoQoL.tp2 #19 ("e:GetActiveEngine() == createCharScreen or ..."):
+-- our panels run over the world, but they are the game's creation (IUI's appearance page: Done, hair / skin)
+function SQRecruit_IsChargen() return T.phase == 'panels' end
 
 -- ---- the creation screen (menu SQRECR_MAIN, a copy of the game's CHARGEN) ----
 function SQRecruit_Step() return T.phase == 'panels' and step() or -1 end
@@ -771,12 +844,14 @@ end
 local function className(c, kit)
 	local ok, v = pcall(function()
 		local a = EEex_Resource_Load2DA('CLASTEXT')
-		local out
+		local out, plain
 		for row = 0, 200 do
 			local cid, kid = tonumber(a:getAtPoint(0, row) or ''), tonumber(a:getAtPoint(1, row) or '')
-			if cid == c and (kid == kit or (kit == 0 and kid == 16384)) then out = a:getAtPoint(4, row) break end
+			if cid == c and kid == kit then out = a:getAtPoint(4, row) break end
+			if cid == c and kid == 16384 and not plain then plain = a:getAtPoint(4, row) end   -- the true class
 			if cid == nil then break end
 		end
+		out = out or plain
 		EEex_Resource_Free2DA(a)
 		return out
 	end)
@@ -797,8 +872,10 @@ function SQRecruit_Info()
 	local s = step()
 	if s >= 3 then lines[#lines + 1] = raceName(t.m_Race) end
 	if s >= 7 then
-		local kit = math.floor(b.m_mageSpecUpperWord or 0) % 0x10000
-		lines[#lines + 1] = className(t.m_Class, kit > 0x4000 and kit - 0x4000 or 0)
+		-- CLASTEXT's kit column holds the KIT.IDS id (16384 = true class), not the KITLIST row (fixed v1.0.3)
+		local kit = SQRespec and SQRespec.kitOf and SQRespec.kitOf(sp)
+			or (math.floor(b.m_mageSpecUpperWord or 0) % 0x10000) * 0x10000 + math.floor(b.m_mageSpecialization or 0) % 0x10000
+		lines[#lines + 1] = className(t.m_Class, kit)
 	end
 	if s >= 9 then
 		lines[#lines + 1] = ''
@@ -814,7 +891,17 @@ end
 -- ---- tick (menu SQRECR_TICK) ----
 local function tick()
 	local now = Infinity_GetClockTicks()
-	if not T.phase or T.phase == 'ask' then return end
+	pcall(destroyLeft)
+	if not T.phase then
+		if not T.nextGhosts or now >= T.nextGhosts then
+			T.nextGhosts = now + 5000
+			pcall(cleanGhosts)
+			-- party slots whose creature is gone (earlier versions): the 7+ party extension drops them
+			if PSXP7_DropMissing then pcall(PSXP7_DropMissing) end
+		end
+		return
+	end
+	if T.phase == 'ask' then return end
 	if T.phase == 'spawning' then
 		local sp = findSpawned()
 		if sp then startPanels(sp)
@@ -838,6 +925,9 @@ local function tick()
 	if not sprite() then SQRecruit_Abandon() return end
 	-- (the derived stats follow at once: a level drop seen later costs the HP written at the end, M_SQRESP.lua)
 	if T.mode == 'create' and sprite().m_baseStats.m_xp > 0 then levelOne(sprite()) refresh(sprite()) end
+	if rgGetCustomizedPortraitList and step() > STEP_COLORS + 1 and Infinity_IsMenuOnStack('CHARGEN_CUSTOMSOUNDS') then
+		Infinity_PopMenu('CHARGEN_CUSTOMSOUNDS')      -- IUI: its Done pops CHARACTER_COLOR, not its own page
+	end
 	local open = panelOpen()
 	if open then
 		T.lastOpen = open
@@ -847,6 +937,11 @@ local function tick()
 	if T.lastOpen == 'CHARACTER_COLOR' and step() == STEP_COLORS then
 		pcall(function() createCharScreen:OnDoneButtonClick() end)
 	end
+	-- Infinity UI++ (rgGetCustomizedPortraitList): its 2nd colour page is CHARGEN_CUSTOMSOUNDS at step 16, same dead
+	-- Done (its Cancel goes back to 15): still at 16 once it closed = its Done (compat test 2026-11-02, IUI 1.31 + 1.4)
+	if T.lastOpen == 'CHARGEN_CUSTOMSOUNDS' and step() == STEP_COLORS + 1 and rgGetCustomizedPortraitList then
+		pcall(function() createCharScreen:OnDoneButtonClick() end)
+	end
 	local closed = T.lastOpen
 	T.lastOpen = nil
 	-- import window closed with Back / Cancel before a character was picked: nothing to recruit
@@ -854,7 +949,9 @@ local function tick()
 	local s = step()
 	-- Back on the first panel (gender): the half-made recruit is deleted (John 2026-10-24)
 	-- (its Done always moves to the portrait, step 1; its Back calls OnCancelButtonClick, whose step is not 0 here)
-	if closed == 'CHARGEN_GENDER' and s ~= 1 then SQRecruit_Abandon() return end
+	-- (Infinity UI++'s gender page itself cancels back to step 0 while it fills its portrait lists, then ends at the
+	-- race step: only a close that left the creation unstarted counts as Back)
+	if closed == 'CHARGEN_GENDER' and not (s >= 1 and s <= STEP_DONE) then SQRecruit_Abandon() return end
 	if s >= STEP_DONE then return end      -- complete: the Accept button of the creation screen ends it
 	if s ~= T.lastStep then
 		T.lastStep = s
@@ -874,11 +971,19 @@ end
 -- LeUI's portrait panel serves the record screen's Customize too: in game (CurrentlyInGame()) it lists the portraits
 -- of characters[currentID], which a recruit has not, and hides the gender buttons; the list stayed empty and the
 -- game hung (BG2EE 2.7.3, John 2026-10-25). While a new recruit is at the portrait step it is a new character.
+-- UIs whose creation panels change when CurrentlyInGame() (their in-game "Customize" pages): while our panels run,
+-- they must see the game's own creation. LeUI: its portrait page (step 1). Infinity UI++ (rgGetCustomizedPortraitList):
+-- its combined gender + portrait page, which flips between gender and portrait (steps 0-2) to fill its portrait lists.
 local function wrapInGame()
-	if not LeUI_uiStrings or not CurrentlyInGame or CurrentlyInGame == T.inGame then return end
+	local leui, iui = LeUI_uiStrings ~= nil, rgGetCustomizedPortraitList ~= nil
+	if not (leui or iui) or not CurrentlyInGame or CurrentlyInGame == T.inGame then return end
 	local orig = CurrentlyInGame
 	T.inGame = function()
-		if T.phase == 'panels' and T.mode == 'create' and step() == 1 then return false end
+		if T.phase == 'panels' and (T.mode == 'create' or iui) then
+			local s = step()
+			if leui and T.mode == 'create' and s == 1 then return false end
+			if iui then return false end      -- IUI: every page (its appearance page mixed in its in-game Customize, 2026-11-02)
+		end
 		return orig()
 	end
 	CurrentlyInGame = T.inGame

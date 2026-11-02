@@ -12,8 +12,8 @@ Party Stash and SadoQoL in one WeiDU mod for **Baldur's Gate: Enhanced Edition**
 
 ![A quick tour of the camp: Grand Merchant, quest chronicle, necromancer, a recruited gibberling](docs/images/camp-tour.gif)
 
-![The rest camp with a 19-member party](docs/images/camp.jpg)
-![Who's who at the camp: priestess, Old Scholar, Grand Merchant, necromancer and Withers](docs/images/camp-who-is-who.jpg)
+![The new rest camp by day: Grand Merchant, priestess, Old Scholar, necromancer and Faceless](docs/images/camp-day.png)
+![The rest camp by night](docs/images/camp-night.png)
 ![The inventory page with the party stash, on a recruited ogrillon](docs/images/inventory.jpg)
 
 ## Components
@@ -30,8 +30,8 @@ Full documentation: [docs/README.md](docs/README.md).
 | 11 | Rest camp | Grand Merchant: sells every item seen at the stores already visited |
 | 12 | Rest camp | The Old Scholar: identifies everything |
 | 13 | Rest camp | Ex-members can wait for you at the camp |
-| 14 | Rest camp | Withers: a lich who fully recreates a party member |
-| 15 | Rest camp | Withers can also recruit new members |
+| 14 | Rest camp | Faceless: a doppelganger who fully recreates a party member |
+| 15 | Rest camp | Faceless can also recruit new members |
 | 16 | Rest camp | The Old Scholar's quest chronicle: every quest of the game and how far you are |
 | 17 | Rest camp | The necromancer: raises any creature of the game as a target dummy (damage meter), to fight or to recruit |
 | 50-53 | Rest camp | Priestess prices for her paid healing: 75 %, 50 %, 25 % or free (default: the game's temple prices) |
@@ -39,7 +39,7 @@ Full documentation: [docs/README.md](docs/README.md).
 | 33 | Quality of life | NPC pairs can separate: dismissing Khalid, Jaheira, Minsc, Dynaheir, Xzar, Montaron, Eldoth or Skie no longer sends the partner away (BGEE, EET) |
 | 40 | Engine extension | Big party: 7 to 32 members, with working banter and interjections for members 7+ (experimental) |
 
-The rest camp (#10-#17, #50-#53) works on BGEE, EET and BG2EE (on BG2EE in the Helmite Camp); the big party on BGEE and EET.
+The rest camp (#10-#17, #50-#53) works on BGEE, EET and BG2EE, on its own map (a forest clearing, day and night); the big party on BGEE and EET.
 
 ## Installation
 
@@ -52,7 +52,7 @@ The rest camp (#10-#17, #50-#53) works on BGEE, EET and BG2EE (on BG2EE in the H
 3. Extract the release into the game folder (where chitin.key is) and run `setup-SadoEE.exe`.
 4. Start the game with `InfinityLoader.exe`.
 
-Uninstalling SadoEE for good: empty the stash in game first (Ctrl + left click on the big bag next to the weight), otherwise its contents stay in your saves but out of reach.
+Uninstalling SadoEE for good: empty the stash in game first (Ctrl + left click on the big bag next to the weight), otherwise its contents stay in your saves but out of reach. With the big party (#40), bring the party back to 6 members or fewer and save before uninstalling: a save with 7+ members crashes the game on load once #40 is gone.
 
 Readme in 15 languages: `SadoEE/readme/`.
 

@@ -2067,12 +2067,29 @@ function PStash_IsRare(res)
 	return false
 end
 
--- Backpack item `it` may go to the stash on its own.
-local function autoStorable(it)
+-- The SadoEE options page's "Auto-stash picked-up items" (M_SQOPT.lua, John 2026-10-29): 0 = off (the default; also
+-- without the page), 1 = everything except quest items, bags and ammo. Later filters: 2, 3...
+P.FILTER_ALL = 1
+function PStash_AutoFilter()
+	if SQOpt_Value then
+		local ok, v = pcall(SQOpt_Value, 'AutoStash')
+		if ok and tonumber(v) then return tonumber(v) end
+	end
+	return 0
+end
+
+-- Backpack item `it` may go to the stash on its own. filter: the option's (0 = the bot's own rule below).
+local function autoStorable(it, filter)
 	local res = string.upper(it.pRes.resref:get())
 	local info = PStash_ItemInfo(res)
-	if not info or EEex_BAnd(it.m_flags, 1) == 0 then return false end -- unidentified
-	if botKeep(res) or info.critical or info.type == 36 or AMMO[info.type] or res == P.RES then return false end
+	if not info or res == P.RES then return false end
+	if filter == P.FILTER_ALL then
+		-- everything but quest items, bags and ammo (the quivers refill from the backpack); rare, magical and
+		-- unidentified items go too (John 2026-10-29)
+		return not (botKeep(res) or info.critical or P.KEEP[res] or info.type == 36 or AMMO[info.type])
+	end
+	if EEex_BAnd(it.m_flags, 1) == 0 then return false end -- unidentified
+	if botKeep(res) or info.critical or info.type == 36 or AMMO[info.type] then return false end
 	return not PStash_IsRare(res)
 end
 
@@ -2080,12 +2097,13 @@ end
 function PStash_AutoStoreAll()
 	local done = {}
 	if not PStash_Ready() then return done end
+	local filter = PStash_AutoFilter() -- the option's filter when on, the bot's own rule otherwise
 	for p = 0, lastPortrait() do
 		local sp = EEex_Sprite_GetInPortrait(p)
 		if sp then
 			for i = 18, P.DROP_SLOT - 1 do
 				local it = sp.m_equipment.m_items:get(i)
-				if it and autoStorable(it) then
+				if it and autoStorable(it, filter) then
 					local res = string.upper(it.pRes.resref:get())
 					if PStash_Add(p, i) then done[#done + 1] = res end
 				end
@@ -2095,10 +2113,11 @@ function PStash_AutoStoreAll()
 	return done
 end
 
--- Hand play (bot OFF): whatever newly lands in a backpack is checked once and stored if allowed (the first look
--- after a load checks everything). Not while the inventory or a store is open (the player sorts by hand there).
+-- Hand play (bot OFF), with the option on: whatever newly lands in a backpack is checked once and stored if the
+-- filter allows it. What a character carries at the first look (after a load, or when the option is turned on) is
+-- only noted, never stored. Not while the inventory or a store is open (the player sorts by hand there).
 P.seen = P.seen or {}
-local function autoStoreNew()
+local function autoStoreNew(filter)
 	local busy = (BGBot and BGBot.enabled) or Infinity_IsMenuOnStack('INVENTORY')
 		or e:GetActiveEngine() == storeScreen
 	for p = 0, lastPortrait() do
@@ -2110,7 +2129,7 @@ local function autoStoreNew()
 				if it then
 					local ptr = EEex_UDToPtr(it)
 					now[ptr] = true
-					if not (old and old[ptr]) and not busy and i < P.DROP_SLOT and autoStorable(it) then
+					if old and not old[ptr] and not busy and i < P.DROP_SLOT and autoStorable(it, filter) then
 						if PStash_Add(p, i) then now[ptr] = nil end
 					end
 				end
@@ -3483,10 +3502,19 @@ function PStash_Tick()
 	if P.next and now < P.next then return false end
 	P.next = now + 500
 	if not PStash_Ready() or not EEex_Sprite_GetInPortrait(0) then return false end
-	-- John: nothing goes to the stash on its own (the player decides; the bot calls PStash_AutoStoreAll itself).
+	-- John: nothing goes to the stash on its own (the player decides; the bot calls PStash_AutoStoreAll itself),
+	-- unless the SadoEE options page's "Auto-stash picked-up items" is on (2026-10-29): then, on the world screen,
+	-- what the party picks up is stored by its filter.
 	-- Not at a store: a script action run there crashes the game (the stash item is never missing there anyway).
 	-- Only on the world and inventory screens (never in chargen, level-up or other screens).
 	local eng = e:GetActiveEngine()
+	local filter = PStash_AutoFilter()
+	if filter > 0 and eng == worldScreen then
+		local ok, err = pcall(autoStoreNew, filter)
+		if not ok then print('PStash auto-stash: ' .. tostring(err)) end
+	elseif filter == 0 and next(P.seen) then
+		P.seen = {} -- off: the next turn on starts from what is carried then
+	end
 	if P.CARRY and (eng == worldScreen or eng == inventoryScreen) then pcall(placeStashItems) end
 	pcall(storeMenu)
 	pcall(payGoldDue)

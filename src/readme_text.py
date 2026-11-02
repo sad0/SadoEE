@@ -8,7 +8,7 @@ TEXT = {}
 TEXT['english'] = dict(
     lang='en',
     intro='Party Stash and SadoQoL in one mod: a shared infinite stash on a redesigned inventory page, a rest camp '
-          'with its merchant, scholar and lich, a party of up to 32, and many quality-of-life tweaks. Every feature is '
+          'with its merchant, scholar and doppelganger, a party of up to 32, and many quality-of-life tweaks. Every feature is '
           'an optional component.',
     h_components='Components', c_num='#', c_name='Component', experimental='experimental',
     h_compat='Compatibility', compat_head=('', 'BGEE', 'EET', 'BG2EE'),
@@ -36,7 +36,7 @@ TEXT['english'] = dict(
 TEXT['french'] = dict(
     lang='fr',
     intro='Party Stash et SadoQoL en un seul mod : un coffre infini partagé sur une page d\'inventaire repensée, un '
-          'camp de repos avec son marchand, son lettré et sa liche, un groupe jusqu\'à 32 et de nombreux réglages de '
+          'camp de repos avec son marchand, son lettré et son doppelganger, un groupe jusqu\'à 32 et de nombreux réglages de '
           'confort. Chaque fonction est un composant optionnel.',
     h_components='Composants', c_num='#', c_name='Composant', experimental='expérimental',
     h_compat='Compatibilité', compat_head=('', 'BGEE', 'EET', 'BG2EE'),
@@ -65,7 +65,7 @@ TEXT['french'] = dict(
 TEXT['german'] = dict(
     lang='de',
     intro='Party Stash und SadoQoL in einem Mod: eine gemeinsame, unendliche Truhe auf einer neu gestalteten '
-          'Inventarseite, ein Rastlager mit Händler, Gelehrtem und Lich, eine Gruppe mit bis zu 32 Mitgliedern und '
+          'Inventarseite, ein Rastlager mit Händler, Gelehrtem und Doppelgänger, eine Gruppe mit bis zu 32 Mitgliedern und '
           'viele Komfortfunktionen. Jede Funktion ist eine optionale Komponente.',
     h_components='Komponenten', c_num='#', c_name='Komponente', experimental='experimentell',
     h_compat='Kompatibilität', compat_head=('', 'BGEE', 'EET', 'BG2EE'),
@@ -94,7 +94,7 @@ TEXT['german'] = dict(
 TEXT['spanish'] = dict(
     lang='es',
     intro='Party Stash y SadoQoL en un solo mod: un baúl infinito compartido en una página de inventario rediseñada, '
-          'un campamento de descanso con su mercader, su erudito y su liche, un grupo de hasta 32 miembros y muchas '
+          'un campamento de descanso con su mercader, su erudito y su doppelganger, un grupo de hasta 32 miembros y muchas '
           'mejoras de comodidad. Cada función es un componente opcional.',
     h_components='Componentes', c_num='#', c_name='Componente', experimental='experimental',
     h_compat='Compatibilidad', compat_head=('', 'BGEE', 'EET', 'BG2EE'),
@@ -123,7 +123,7 @@ TEXT['spanish'] = dict(
 TEXT['italian'] = dict(
     lang='it',
     intro="Party Stash e SadoQoL in un unico mod: un baule infinito condiviso su una pagina dell'inventario "
-          "ridisegnata, un campo di riposo con il suo mercante, il suo erudito e il suo lich, un gruppo fino a 32 "
+          "ridisegnata, un campo di riposo con il suo mercante, il suo erudito e il suo doppelganger, un gruppo fino a 32 "
           "membri e tante comodità di gioco. Ogni funzione è un componente opzionale.",
     h_components='Componenti', c_num='#', c_name='Componente', experimental='sperimentale',
     h_compat='Compatibilità', compat_head=('', 'BGEE', 'EET', 'BG2EE'),
@@ -152,7 +152,7 @@ TEXT['italian'] = dict(
 TEXT['polish'] = dict(
     lang='pl',
     intro='Party Stash i SadoQoL w jednym modzie: wspólna, nieskończona skrzynia na przeprojektowanej stronie '
-          'ekwipunku, obóz odpoczynku z kupcem, uczonym i liszem, drużyna do 32 osób oraz wiele udogodnień. Każda '
+          'ekwipunku, obóz odpoczynku z kupcem, uczonym i doppelgangerem, drużyna do 32 osób oraz wiele udogodnień. Każda '
           'funkcja to opcjonalny komponent.',
     h_components='Komponenty', c_num='#', c_name='Komponent', experimental='eksperymentalny',
     h_compat='Zgodność', compat_head=('', 'BGEE', 'EET', 'BG2EE'),
@@ -181,7 +181,7 @@ TEXT['polish'] = dict(
 TEXT['russian'] = dict(
     lang='ru',
     intro='Party Stash и SadoQoL в одном моде: общий бесконечный сундук на переработанной странице инвентаря, лагерь '
-          'для отдыха с торговцем, учёным и личем, отряд до 32 человек и множество улучшений удобства. Каждая '
+          'для отдыха с торговцем, учёным и доппельгангером, отряд до 32 человек и множество улучшений удобства. Каждая '
           'функция — необязательный компонент.',
     h_components='Компоненты', c_num='#', c_name='Компонент', experimental='экспериментальный',
     h_compat='Совместимость', compat_head=('', 'BGEE', 'EET', 'BG2EE'),
@@ -210,7 +210,7 @@ TEXT['russian'] = dict(
 TEXT['portuguese'] = dict(
     lang='pt-BR',
     intro='Party Stash e SadoQoL em um só mod: um baú infinito compartilhado em uma página de inventário redesenhada, '
-          'um acampamento de descanso com seu mercador, seu erudito e seu lich, um grupo de até 32 membros e muitas '
+          'um acampamento de descanso com seu mercador, seu erudito e seu doppelganger, um grupo de até 32 membros e muitas '
           'melhorias de qualidade de vida. Cada função é um componente opcional.',
     h_components='Componentes', c_num='#', c_name='Componente', experimental='experimental',
     h_compat='Compatibilidade', compat_head=('', 'BGEE', 'EET', 'BG2EE'),
@@ -239,7 +239,7 @@ TEXT['portuguese'] = dict(
 TEXT['czech'] = dict(
     lang='cs',
     intro='Party Stash a SadoQoL v jednom modu: sdílená nekonečná truhla na přepracované stránce inventáře, '
-          'odpočinkový tábor s kupcem, učencem a lichem, družina až o 32 členech a spousta vylepšení pohodlí. Každá '
+          'odpočinkový tábor s kupcem, učencem a dvojníkem, družina až o 32 členech a spousta vylepšení pohodlí. Každá '
           'funkce je volitelná komponenta.',
     h_components='Komponenty', c_num='#', c_name='Komponenta', experimental='experimentální',
     h_compat='Kompatibilita', compat_head=('', 'BGEE', 'EET', 'BG2EE'),
@@ -268,7 +268,7 @@ TEXT['czech'] = dict(
 TEXT['hungarian'] = dict(
     lang='hu',
     intro='A Party Stash és a SadoQoL egyetlen modban: közös, végtelen láda egy újratervezett felszerelés oldalon, '
-          'pihenőtábor kereskedővel, tudóssal és lichhel, legfeljebb 32 fős csapat és számos kényelmi funkció. Minden '
+          'pihenőtábor kereskedővel, tudóssal és doppelgangerrel, legfeljebb 32 fős csapat és számos kényelmi funkció. Minden '
           'funkció külön választható komponens.',
     h_components='Komponensek', c_num='#', c_name='Komponens', experimental='kísérleti',
     h_compat='Kompatibilitás', compat_head=('', 'BGEE', 'EET', 'BG2EE'),
@@ -297,7 +297,7 @@ TEXT['hungarian'] = dict(
 TEXT['turkish'] = dict(
     lang='tr',
     intro="Party Stash ve SadoQoL tek bir modda: yeniden tasarlanmış envanter sayfasında ortak ve sonsuz bir sandık; "
-          "tüccarı, âlimi ve lich'iyle bir dinlenme kampı; 32 kişiye kadar bir grup ve birçok yaşam kalitesi "
+          "tüccarı, âlimi ve doppelganger'ıyla bir dinlenme kampı; 32 kişiye kadar bir grup ve birçok yaşam kalitesi "
           "iyileştirmesi. Her özellik isteğe bağlı bir bileşendir.",
     h_components='Bileşenler', c_num='#', c_name='Bileşen', experimental='deneysel',
     h_compat='Uyumluluk', compat_head=('', 'BGEE', 'EET', 'BG2EE'),
@@ -326,7 +326,7 @@ TEXT['turkish'] = dict(
 TEXT['ukrainian'] = dict(
     lang='uk',
     intro='Party Stash і SadoQoL в одному моді: спільна нескінченна скриня на оновленій сторінці спорядження, табір '
-          'відпочинку з торговцем, ученим і лічем, загін до 32 осіб і безліч покращень зручності. Кожна функція — '
+          'відпочинку з торговцем, ученим і доппельгангером, загін до 32 осіб і безліч покращень зручності. Кожна функція — '
           'необов’язковий компонент.',
     h_components='Компоненти', c_num='#', c_name='Компонент', experimental='експериментальний',
     h_compat='Сумісність', compat_head=('', 'BGEE', 'EET', 'BG2EE'),
@@ -355,7 +355,7 @@ TEXT['ukrainian'] = dict(
 TEXT['schinese'] = dict(
     lang='zh-Hans',
     intro='Party Stash 与 SadoQoL 合为一个模组：重新设计的物品栏页面上有一个全队共享的无限储物箱，休息营地里有商人、'
-          '学者和巫妖，队伍最多 32 人，还有大量便利性改进。每项功能都是可选组件。',
+          '学者和变形怪，队伍最多 32 人，还有大量便利性改进。每项功能都是可选组件。',
     h_components='组件', c_num='#', c_name='组件', experimental='实验性',
     h_compat='兼容性', compat_head=('', 'BGEE', 'EET', 'BG2EE'),
     compat=[('Party Stash、战利品排序、选项 (#0-#7)', '是', '是', '是'),
@@ -380,7 +380,7 @@ TEXT['schinese'] = dict(
 TEXT['japanese'] = dict(
     lang='ja',
     intro='Party Stash と SadoQoL を一つにした MOD：新デザインのインベントリ画面にパーティ共有の無限収納箱、商人・学者・'
-          'リッチのいる休息キャンプ、最大 32 人のパーティ、そして多数の快適性の向上。すべての機能は選択式のコンポーネントです。',
+          'ドッペルゲンガーのいる休息キャンプ、最大 32 人のパーティ、そして多数の快適性の向上。すべての機能は選択式のコンポーネントです。',
     h_components='コンポーネント', c_num='#', c_name='コンポーネント', experimental='実験的',
     h_compat='互換性', compat_head=('', 'BGEE', 'EET', 'BG2EE'),
     compat=[('Party Stash、整理された戦利品、オプション (#0-#7)', '対応', '対応', '対応'),
@@ -407,7 +407,7 @@ TEXT['japanese'] = dict(
 
 TEXT['korean'] = dict(
     lang='ko',
-    intro='Party Stash와 SadoQoL을 하나로 합친 모드: 새로 디자인한 인벤토리 화면의 파티 공용 무한 보관함, 상인·학자·리치가 '
+    intro='Party Stash와 SadoQoL을 하나로 합친 모드: 새로 디자인한 인벤토리 화면의 파티 공용 무한 보관함, 상인·학자·도플갱어가 '
           '있는 휴식 야영지, 최대 32명의 파티, 그리고 다양한 편의성 개선. 모든 기능은 선택 가능한 구성 요소입니다.',
     h_components='구성 요소', c_num='#', c_name='구성 요소', experimental='실험적',
     h_compat='호환성', compat_head=('', 'BGEE', 'EET', 'BG2EE'),
