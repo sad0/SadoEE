@@ -1,16 +1,17 @@
 --[[
-SadoQoL component #19 - Withers recruits (John 2026-10-24). Design notes: SadoQoL/docs/RECRUIT.md.
+SadoQoL component #19 - Faceless recruits (John 2026-10-24; Withers until SadoEE 1.03). Design notes:
+SadoQoL/docs/RECRUIT.md.
 
-Withers (the lich at the rest camp) brings a NEW player character into the party, multiplayer style, free:
+Faceless (the doppelganger at the rest camp, script name SQWITHER) brings a NEW player character into the party,
+multiplayer style, free:
 - "create": the game's own character creation panels (gender, portrait, race, class, ..., colours, sounds, name),
-  opened over the world on a blank creature (CHARBASE.CRE, the engine's own chargen base) that already stands next
-  to Withers in the party;
-- "import": the game's own import (character file / saved game) on a blank creature that is NOT in the party; the
-  engine replaces it with a new creature outside any area, which we place next to Withers and add to the party.
-The recruit then gets the protagonist's XP (the game's level-up screens raise him). A created recruit gets, instead
-of the class's starting weapon and gold: one plain weapon per weapon proficiency (the best one equipped), the best
-plain armour his class / kit may wear, a shield and a helmet when usable. An imported recruit: the player chooses
-whether he keeps his own items and his own XP.
+  opened over the world, game paused, on a blank creature (CHARBASE.CRE, the engine's own chargen base) that stays
+  out of the party until the appearance step (the colour page works on the selected party member);
+- "import": the game's own import, from a character file, on a blank creature that is NOT in the party; the engine
+  replaces it with a new creature outside any area, which we place next to Faceless and add to the party.
+A created recruit is made at level 1, then gets the protagonist's XP (the game's level-up screens raise him); instead
+of the class's starting weapon and gold, a gear screen offers the Party Stash's items (free) and the Grand marchand's
+(paid), nothing for free. An imported recruit: the player chooses whether he keeps his own items and his own XP.
 
 Reuses #17's driver pieces (M_SQRESP.lua): createCharScreen +0x770 = sprite id, +0x48 = portrait slot, +0x768 =
 current step; createCharScreen:OnMenuButtonClick() opens the panel of the step; the starting-gear block of

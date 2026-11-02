@@ -548,7 +548,7 @@ Scholar #12) and its install-time item / area encyclopedia.
   catch `storeItems` writes; listeners on main file loaded / reloaded and game state initialised.
 - Wishlist: globals `PSXW_<RES>` (shared with `M_PSXENG.lua`).
 - Public API for other mods: `PSXGM_Pool` (what the merchant sells, prices) and `PSXGM_PoolTake(res, n)`, which takes copies out
-  of the stores and charges the party gold (used by Withers #14/#15).
+  of the stores and charges the party gold (used by Faceless #15's gear screen).
 
 ##### Data stored in saves
 - Stores `PSXCAMP`, `PSXCHEST`, `PSXSEEN` (once used) and the reduced stocks of the source stores.
@@ -714,61 +714,89 @@ None. Uninstall: back to 100 %.
 ##### Install-time options / predicates
 Each requires #10 (`@2011`). Mutually exclusive through `SUBCOMPONENT @1344`.
 
-### Withers and the necromancer (#14, #15, #17)
+### Faceless and the necromancer (#14, #15, #17)
 
 These three components add two residents to the rest camp (#10, label `SADOEE-CAMP`) and drive the game's own
 character-creation screen (`CScreenCreateChar`) over the world map. All three need #10, which itself needs EEex
 (`B3-EEex-Main`). Their Lua runs from `M_*.lua` files that EEex loads at startup. Menus are loaded with
 `EEex_Menu_LoadFile` from an `EEex_Menu_AddMainFileLoadedListener`.
 
-Numbering: the source comments and design documents use SadoQoL numbers. SadoQoL #17 = SadoEE #14 (Withers
-respec), SadoQoL #19 = SadoEE #15 (Withers recruit), SadoQoL #20 = SadoEE #17 (necromancer). Design documents:
-`SadoQoL/docs/RESPEC.md`, `RECRUIT.md`, `NECROMANCER_HANDOFF.md`, `NECRO_RESPEC.md`. Where those documents and the
-shipped code disagree, this section describes the code.
+Faceless (French: Sans-Visage) replaced Withers, the lich of v1.0.0-v1.0.2, in v1.0.3. He is a doppelganger: same
+jobs (respec #14, recruit #15), same creature resref, script name and dialogue (`SQWITHER`), so old saves and every
+camp table keep working. In an old save, Withers is swapped for Faceless at the first camp visit.
 
-Camp spots (BGEE/EET `SQCAMP`; BG2EE values come from `SQCampSite` in `camp/area_bg2/M_SQ0CMP.lua`):
+Numbering: the source comments and design documents use SadoQoL numbers. SadoQoL #17 = SadoEE #14 (Faceless
+respec), SadoQoL #19 = SadoEE #15 (Faceless recruit), SadoQoL #20 = SadoEE #17 (necromancer). Design documents:
+`SadoQoL/docs/RESPEC.md`, `RECRUIT.md`, `CAMP_V2.md` (Faceless), `NECROMANCER_HANDOFF.md`, `NECRO_RESPEC.md`. Where
+those documents and the shipped code disagree, this section describes the code.
 
-| Who | BGEE / EET (x, y, facing) | BG2EE (`SQCampSite`) |
+Camp spots (one camp map in every game since v1.0.3; values from `SQCampSite` in `camp/area/M_SQ0CMP.lua`):
+
+| Who | `SQCampSite` key | x, y, facing |
 |---|---|---|
-| Withers `SQWITHER` | 205, 382, 12 | `WITHERS` 1344, 236, 2 |
-| New recruit (blank `CHARBASE`) | 240, 410 (facing 12) | `RECRUIT` 1304, 266 |
-| Necromancer `SQNECRO` | 872, 214, 6 | `NECRO` 1324, 726, 12 |
-| Raised creatures (grid centre) | 850, 104 | `NECRO_CENTER` 1524, 716 |
+| Faceless `SQWITHER` | `WITHERS` | 1097, 729, 14 |
+| New recruit (blank `CHARBASE`) | `RECRUIT` | 1079, 1149 (facing 12) |
+| Necromancer `SQNECRO` | `NECRO` | 1680, 1166, 6 |
+| Raised creatures (grid centre) | `NECRO_CENTER` | 2012, 1076 |
 
-Neither resident is placed in `SQCAMP.ARE` (neither `.ARE` file contains their names). Each Lua file appends its
+The Lua files still carry the old BGEE spots as fallbacks (Faceless 205, 382, 12; recruit 240, 410), used only when
+`SQCampSite` is missing.
+
+Neither resident is placed in `SQCAMP.ARE` (the `.ARE` file does not contain their names). Each Lua file appends its
 creature to `SQCamp.RESIDENTS` (`M_SQCAMP.lua`, #10). #10's `spawnResidents` creates any missing resident with
 `CreateCreature` once per camp visit, which also covers old saves. It also keeps only one copy of each
 (`SQCamp.ONE`), and re-applies the expected animation once with opcode 53 (duration type 9) when a save holds an
-older look (`SQCamp.LOOKS`: `SQWITHER = 0xE050`, `SQNECRO = 0x6200`).
+older look (`SQCamp.LOOKS`: `SQNECRO = 0x6200`; `SQWITHER` is not listed, Faceless's look is `M_SQFACE.lua`'s).
 
 ---
 
-#### #14 Withers respec (`SADOEE-CAMP-WITHERS`)
+#### #14 Faceless respec (`SADOEE-CAMP-WITHERS`)
 
 ##### What it does
-Withers is a lich who stands at the camp. He fully recreates the party member who talks to him, for free. The
-member goes through the game's own creation panels (race, class, kit, alignment, abilities with the game's dice,
-proficiencies, skills, spells, hated race). Name, gender, portrait, voice, colours and inventory are kept. The
-member ends at level 1 with level-1 HP, then gets his old XP back, and the game's level-up screens raise him again.
-Two extras: an optional dual-class preparation, and a "grimoire" item that holds the mage spells he lost.
+Faceless is a doppelganger who stands at the camp. At each camp visit he wears another face and voice, taken from
+the game's own people. He fully recreates the party member who talks to him, for free. The member goes through the
+game's own creation panels (race, class, kit, alignment, abilities with the game's dice, proficiencies, skills,
+spells, hated race). Name, gender, portrait, voice, colours and inventory are kept. The member ends at level 1 with
+level-1 HP, then gets his old XP back, and the game's level-up screens raise him again. Two extras: an optional
+dual-class preparation, and a "grimoire" item that holds the mage spells he lost.
 
 ##### Files added to override
 | File | Origin / content |
 |---|---|
 | `M_SQ0BLD.lua` | Engine build address table (v2.7.3 / v2.6.6). `SQ_Addr(addr)` maps a v2.7.3 address to the running build, or gives `nil` on an unknown build. The `0` in the name makes it load before the other `M_SQ*.lua`. #10 copies it too. |
-| `camp/withers/*` (41 files) | `7F8A.INI` (animation_type 7000, resref `MWIT`, lich sounds), `MWIT*.BAM` (recoloured lich animation), `SQGRIMC/G/I.BAM` (grimoire icons). |
-| `SQWITHER.CRE` | `COPY_EXISTING KELDDA.CRE`, or `AMTCLE01.CRE` when `keldda.cre` is absent (BG2EE). Names = @1176 "Withers". Animation `0xE050` (LICH_BLACK, the game's own). All five script slots emptied. Death variable (script name) and dialogue = `SQWITHER`. `REMOVE_CRE_ITEMS`. |
-| `SQWITHER.DLG` | Compiled from `camp/dlg/SQWITHER.d` (state `sq_hello`: "remake me" leads to `sq_warn`, then `EEex_LuaAction("SQRespec_BeginSelected()")`). |
+| `camp/withers/*` (41 files) | Left from Withers and no longer used by any creature: `7F8A.INI` (animation_type 7000, resref `MWIT`, lich sounds), `MWIT*.BAM` (recoloured lich animation). Still used: `SQGRIMC/G/I.BAM` (grimoire icons). |
+| `SQWITHER.CRE` | `COPY_EXISTING KELDDA.CRE`, or `AMTCLE01.CRE` when `keldda.cre` is absent (BG2EE). Names = @1400 "Faceless". Animation `0xCA00` (NOBLE_MAN): the look he has until his first disguise. All five script slots emptied. Death variable (script name) and dialogue = `SQWITHER`. `REMOVE_CRE_ITEMS`. |
+| `SQFACE01.CRE`-`SQFACE18.CRE` | One per face, in the order of `M_SQFACE.lua`'s `T.FACES`: copies of `SQWITHER.CRE` wearing a donor's animation (0x28), colours (0x2c-0x32), sex (0x237) and sound set (0xa4, 100 strrefs). Donors: `NOBL11 NOBLEM3 NOBLAY MERCHANT FLAM GUARD TOWNCR_ SERVANT FARM BEGGAR1` (men), `NOBW8 NOBLEW3 NOBWSN_A SERVWG AMMERC04 BEGGAR3` (women), `GORION ELMIN2` (famous faces). A donor missing from the game (BG2EE lacks most BG1 townsfolk) is skipped, and so is its number. A donor with a lying `STATIC_*` animation (0xB200-0xB7FF: `TOWNCR_`, `BEGGAR1`, `BEGGAR3`) gets its walking twin (+0x1400, e.g. 0xB500 → 0xC900). A seated or sleeping 0x4xxx donor (`NOBLEM3` 0x4000, `NOBLAY` 0x4400, `NOBLEW3` 0x4010, `NOBWSN_A` 0x4012) gets a walking townsperson: men 0xCA00, women 0xCA10 (peasants 0xC900 / 0xC910). Every face then stands. |
+| `SQFADO01.CRE`-`SQFADO18.CRE` | The same faces with `DOPPLE.CRE`'s sound set (his true doppelganger voice). `SQFADO17` / `SQFADO18` (famous faces) are made but never chosen. Without `dopple.cre`, they keep the donor's voice. |
+| `SQWITHER.DLG` | Compiled from `camp/dlg/SQWITHER.d`. State `sq_hello` (@1401): "Rewrite me." (@1402) leads to `sq_warn` (@1405), then "Begin." (@1406) runs `EEex_LuaAction("SQRespec_BeginSelected()")`; "Nothing, thank you." (@1404) leaves. |
 | `SQGRIM.ITM` | `COPY_EXISTING BOOK02.ITM` ("Spell book"). Name and descriptions = @1207 / @1208. Price 0, weight 1. Icons `SQGRIMI` (inventory, 0x3a), `SQGRIMG` (ground, 0x44), `SQGRIMC` (description, 0x58). |
+| `M_SQFACE.lua` | The disguises (below). |
 | `M_SQRESP.lua` | The respec driver. The install replaces 15 `SQ_RESP_TXT_*` placeholders with .tra strings (@1177-@1179, @1186-@1188, @1198-@1206). |
 | `SQRESP.menu` | Menus `SQRESP_TICK` (200 ms driver), `SQRESP_BACK` (the `GUICGB` backdrop under the stock half-screen Race / Kit / Alignment panels; not drawn under LeUI), `SQRESPEC` (top bar: name, "Continue"), `SQRESP_DUAL` (modal), `SQGRIMOIRE` (modal, 8 rows per page). |
 
 ##### Existing game files modified
-- `ANIMATE.IDS`: `APPEND 0x7F8A SQ_WITHERS`, unless `0x7F8A` is already present. The CRE no longer uses `0x7F8A`
-  (it now uses `0xE050`), but the IDS entry, `7F8A.INI` and the `MWIT*` BAMs are still installed.
+- `ANIMATE.IDS`: `APPEND 0x7F8A SQ_WITHERS`, unless `0x7F8A` is already present. No creature uses `0x7F8A` any more,
+  but the IDS entry, `7F8A.INI` and the `MWIT*` BAMs are still installed.
 - No 2DA, UI.MENU or existing ITM/CRE is modified. Every other file is a copy under a new name.
 
 ##### Engine / runtime changes
+- **Disguises** (`M_SQFACE.lua`, hooked as `SQCamp_Hooks.faceless` and run by #10's camp tick every 500 ms; its own
+  pace is 1 s).
+  - Once per camp visit (the visible area is `SQCamp.AREA`, `SQCAMP`; a game loaded inside the camp counts as a new
+    visit), it finds the creature whose script name is `SQWITHER` (Withers in an old save, or an earlier face) and
+    picks a face:
+    - 10 % of visits (`FAMOUS_CHANCE`): a famous face (Gorion, Elminster), always with his own voice;
+    - otherwise a townsperson, weighted (`T.FACES`: weight 1 to 3), and 20 % of those visits (`SLIP_CHANCE`) with the
+      doppelganger voice (`SQFADOnn` instead of `SQFACEnn`).
+    Only faces whose CRE exists are drawn.
+  - When the chosen resref differs from the current creature's, the current one runs `DestroySelf()` (instant) and
+    the chosen CRE is created on the `SQWITHER` spot of `SQCamp.RESIDENTS` (`SQCamp_Create(res, x, y, face)`; fallback
+    `CreateCreature` on Player1).
+  - The engine keeps a creature's voice from its CRE file (writing the sound set at run time changed nothing), hence
+    one CRE per face instead of a runtime look change.
+  - During the swap, the camp's one-of-each rule is held off (`SQCamp.ONE.SQWITHER = nil`): the old copy, still
+    listed while it goes, was nearest the spot and the new one was removed. It is restored 5 s later.
+  - Errors are kept in `SQFace.lastError`; nothing is shown to the player.
 - **Code patch at load** (`patch()`, `pcall`-protected). In `CScreenCreateChar::CompleteCharacterSkills`, at
   `SQ_Addr(0x1402B385D)`, the code checks these 11 bytes first: `48 8B D7 4C 89 B4 24 60 0D 00 00`. It then writes a
   `JMP` to a JIT stub plus `NOP`s. The stub replays the overwritten instructions and reads a 1-byte flag
@@ -802,7 +830,7 @@ Two extras: an optional dual-class preparation, and a "grimoire" item that holds
 - **Stat refresh** (`refreshStats`): an instant opcode 0 (AC +0, duration type 0, duration 0) on the sprite, so the
   engine rebuilds the derived stats after base fields were written by hand.
 - **Monster path** (`opts.necro`). A sprite counts as a monster when its class is outside 1-21, or when it has the
-  local `SQJOINED = 1`.
+  local `SQJOINED = 1`. Everyone may be remade: there is no separate monster warning in the dialogue.
   - Its race is set to HUMAN (`m_typeAI`, `m_startTypeAI`, `m_liveTypeAI`) while the panels run.
   - Its class panel lists the union of the class lists for races 1-7 (`allClasses`: each race in turn, then
     `OnMenuButtonClick`, then read `chargen.class`). Every frame, `watchClassPick` changes the stand-in race to one
@@ -838,8 +866,7 @@ Two extras: an optional dual-class preparation, and a "grimoire" item that holds
   has dual-classed, and logs a line (@1188).
 - **Exposed for other components**: `SQRespec.usable`, `SQRespec.levelOneHP`, `SQRespec.refreshStats`,
   `SQRespec.flag`, `SQRespec_Begin`, `SQRespec_Active`, `SQRespec_BeginSelected`, `SQRespec_IsMonster` /
-  `SQRespec_IsMortal`. The shipped `SQWITHER.d` does not use `SQRespec_IsMonster` / `SQRespec_IsMortal`; it has no
-  separate monster warning, although `RESPEC.md` mentions one.
+  `SQRespec_IsMortal` (not used by the shipped dialogue); `SQFace_Disguise(sp)`, `SQFace_Tick()`.
 - **LeUI**: when `LeUI_uiStrings` exists, `SQRESP_BACK` is not drawn.
 
 ##### Data stored in saves
@@ -849,12 +876,12 @@ Two extras: an optional dual-class preparation, and a "grimoire" item that holds
 | Player1, local string | `SQGRIMOIRE` | Spell resrefs held by the grimoire |
 | Inventory | `SQGRIM` item | The grimoire |
 | Sprite (changed for good) | race, class, kit, alignment, abilities, proficiencies, skills, spells, HP, XP; for a monster, a permanent opcode 53 (its own animation) | The result of the respec |
-| Camp area in the save | the `SQWITHER` actor | Withers |
+| Camp area in the save | one actor with script name `SQWITHER` (resref `SQWITHER`, `SQFACEnn` or `SQFADOnn`) | Faceless, wearing the face of the last visit |
 
-On uninstall, WeiDU restores `ANIMATE.IDS` and deletes the added files. The results of a respec stay, because they
-are ordinary CRE data. In saves, the `SQWITHER` actor stays in the camp area, but its CRE resources, dialogue and
-animation files are gone. `SQGRIM` items become missing resources. The locals stay and are unused. The engine patch
-exists only in memory, so nothing of it remains.
+The face itself is not saved: a new one is picked at each visit. On uninstall, WeiDU restores `ANIMATE.IDS` and
+deletes the added files. The results of a respec stay, because they are ordinary CRE data. In saves, the Faceless
+actor stays in the camp area, but its CRE resources, dialogue and animation files are gone. `SQGRIM` items become
+missing resources. The locals stay and are unused. The engine patch exists only in memory, so nothing of it remains.
 
 ##### Install-time options, predicates, interactions
 - Predicate: `MOD_IS_INSTALLED SADOEE-CAMP` (@2011). There are no options.
@@ -864,67 +891,95 @@ exists only in memory, so nothing of it remains.
   backpack is full); without it, the engine swap / `DropItem` path does.
 - Big party (Extension EEex, `PSXP7_LastPortrait`) widens the banked-XP and grimoire party scans beyond 6.
 - #17 joined creatures (`SQJOINED`) take the monster path, and may prepare a dual-class whatever their race.
+- #10's camp: `SQCamp.RESIDENTS`, `SQCamp.ONE`, `SQCamp_Create`, `SQCamp_Hooks` (the disguises need #10's tick).
 
 ---
 
-#### #15 Withers recruit (`SADOEE-CAMP-WITHERS-RECRUIT`)
+#### #15 Faceless recruit (`SADOEE-CAMP-WITHERS-RECRUIT`)
 
 ##### What it does
-Withers adds a new player character to the party, for free. There are two modes:
-- "Create": the game's creation panels run over the world on a blank `CHARBASE` creature that has already joined
-  the party.
-- "Import": the game's import (character file or saved game). The engine replaces the blank creature with the
-  imported one.
+Faceless adds a new player character to the party, for free. There are two modes:
+- "Shape him" (create): the game's creation panels run over the world on a blank `CHARBASE` creature, outside the
+  party until the appearance step.
+- "Call back someone I knew" (import): the game's import, from a character file only. The engine replaces the blank
+  creature with the imported one.
 
-A created recruit is made at level 1, then gets the protagonist's XP; the level-up screens raise him. A last "gear"
-screen offers items from the Party Stash (free) and the Grand marchand pool (paid). An imported recruit is asked
-whether to keep his own items, and whether to keep his own XP or take the leader's.
+The game is paused and darkened while the panels run. A created recruit is made at level 1, then gets the
+protagonist's XP; the level-up screens raise him. A last "gear" screen offers items from the Party Stash (free) and
+the Grand marchand pool (paid); nothing is given for free. An imported recruit is asked whether to keep his own
+items, and whether to keep his own XP or take the leader's.
 
 ##### Files added to override
 | File | Content |
 |---|---|
-| `SQWITHER.DLG` (extended) | `camp/dlg/SQRECR.d`: `EXTEND_BOTTOM SQWITHER 0 #1` adds the reply @1250 (as the 2nd reply of state 0). It leads to `APPEND`ed state `sq_recruit`: `SQRecruit_Begin('create')`, `SQRecruit_Begin('import')`, or leave. |
-| `M_SQRECR.lua` | The recruit driver. The install replaces 31 `SQ_RECR_TXT_*` placeholders (@1255-@1285). |
-| `SQRECR.menu` | `SQRECR_TICK` (200 ms), `SQRECR_SHADE` (modal veil; `pushSidebars` on open, and on close `popSidebars` then re-pushes the sidebars that were up), `SQRECR_MAIN` (modal copy of UI.MENU's `CHARGEN`, `GUICGB` mosaic, step buttons, portrait, summary, Back / Abandon / Accept), `SQRECR_ASK` (modal, import questions), `SQRECR_GEAR` (modal, stock store look `GUISTBSC` / `GUISTBBB`, left list "Withers offers" and right list "picks"). |
-
-The header comment of `M_SQRECR.lua` still describes free plain gear. The code no longer gives anything for free
-(see below).
+| `SQWITHER.DLG` (extended) | `camp/dlg/SQRECR.d`: `EXTEND_BOTTOM SQWITHER 0 #1` adds the reply @1403 "Find us a new companion." (as the 2nd reply of state 0). It leads to `APPEND`ed state `sq_recruit` (@1408): @1409 `EEex_LuaAction("SQRecruit_BeginCreate()")`, @1410 `EEex_LuaAction("SQRecruit_BeginImport()")`, @1411 leave. The two entry points take no argument: the engine's action parser drops a quoted Lua argument (`SQRecruit_Begin('import')` arrived as `nil`, so an import ran as a creation; fixed in v1.0.3). |
+| `M_SQRECR.lua` | The recruit driver. The install replaces 30 `SQ_RECR_TXT_*` placeholders (@1255-@1265, @1267-@1285). |
+| `SQRECR.menu` | `SQRECR_TICK` (200 ms), `SQRECR_SHADE` (modal veil; `SQRecruit_ShadeOpen` pushes the sidebars, `SQRecruit_ShadeClose` pops them then re-pushes those that were up), `SQRECR_MAIN` (modal copy of UI.MENU's `CHARGEN`, `GUICGB` mosaic, step buttons that cover step ranges, portrait, summary, Back / Abandon / Accept), `SQRECR_ASK` (modal, import questions), `SQRECR_GEAR` (modal, stock store look `GUISTBSC` / `GUISTBBB`, left list "Faceless offers" @1285 and right list "picks"). |
 
 ##### Existing game files modified
-Only `SQWITHER.DLG` (from #14), through `EXTEND_BOTTOM` and `APPEND`. No 2DA, UI.MENU, ITM or CRE is changed. The
-template `CHARBASE.CRE` is the engine's own, used as it is.
+- `SQWITHER.DLG` (from #14), through `EXTEND_BOTTOM` and `APPEND`.
+- `UI.MENU` (`COPY_EXISTING`, `BUT_ONLY`, skipped when it already holds `SQRecruit_IsChargen`). The UI's "creation
+  screen?" tests must also answer yes while the recruit's panels run over the world (Infinity UI++'s appearance page:
+  its Done, the hair / skin rows). Four exact matches, the original test kept:
+  - `enabled "e:GetActiveEngine() == createCharScreen"` and the two `if` forms
+    (`if (e:GetActiveEngine() == createCharScreen) then`, `if e:GetActiveEngine() == createCharScreen then`) get
+    `or (SQRecruit_IsChargen and SQRecruit_IsChargen())`;
+  - `enabled "e:GetActiveEngine() ~= createCharScreen"` (Infinity UI++'s colour page: its in-game portrait and
+    Appearance / Sounds / Colors / Script / Biography buttons) gets `and not (SQRecruit_IsChargen and
+    SQRecruit_IsChargen())`.
+  `SQRecruit_IsChargen()` is true only while `SQRecruit.phase == 'panels'`, so the game's own creation is unchanged.
+  Infinity UI++'s `rgGameEngine == 3 and ...` Back is not matched. Counts on EET + IUI++ 1.4: 10 `or` matches,
+  7 `and not` matches.
+- `CEFF1INV.BAM`: Infinity UI++ ships a 32x32 one-frame icon with this name, which replaces the game's paper doll of
+  elf female fighters and rangers (no body in the inventory and on the colour page). When `override/CEFF1INV.BAM` is
+  a one-frame BAM V1 at most 32 pixels wide, it is deleted, so the game's own doll (biff) comes back. This works only
+  when IUI++ is installed before SadoEE.
+- No 2DA, ITM or CRE is changed. The template `CHARBASE.CRE` is the engine's own, used as it is.
 
 ##### Engine / runtime changes
-- **Start** (`SQRecruit_Begin(mode)`). If a #14 respec is active, it resumes that respec instead. If the party is
-  full, it shows @1265 and stops; the limit is `PSXP7_N` when `PSXP7_Add` exists, else 6. Otherwise
-  `CreateCreature("CHARBASE",[x.y],12)` is queued on the leader. The tick finds the new sprite: the `CHARBASE`
-  sprite of the area that did not exist before (5 s timeout).
+- **Start** (`SQRecruit_BeginCreate()` / `SQRecruit_BeginImport()` → `SQRecruit_Begin(mode)`). If a #14 respec is
+  active, it resumes that respec instead. If the party is full, it shows @1265 and stops; the limit is `PSXP7_N`
+  when `PSXP7_Add` exists, else 6. Otherwise `CreateCreature("CHARBASE",[x.y],12)` is queued on the leader, at
+  `SQCampSite.RECRUIT`. The tick finds the new sprite: the `CHARBASE` sprite of the area that did not exist before
+  (5 s timeout).
 - **Panels** (`startPanels`).
   - The sprite's gold is set to 0 (`CHARBASE` carries 100 gold, which the party would gain on join).
   - The screen fields are saved (`+0x770`, `+0x768`, `+0x48`, `+0x800`), and the mode is set to 0.
   - The #14 flag byte is set, so `CompleteCharacterSkills` gives no starting weapon or gold.
-  - `+0x770` = sprite id, `+0x768` = 0.
-  - Create: `SQRECR_SHADE` + `SQRECR_MAIN` are pushed and `JoinParty()` is queued. Once the sprite has a portrait
-    slot, `+0x48` = that slot, the game is paused (`worldScreen:TogglePauseGame`), and
-    `createCharScreen:OnMenuButtonClick()` opens the panel for each step.
-  - Import: the blank creature stays outside the party. `+0x48` = party size. Then
-    `createCharScreen:OnImportCharacterButtonClick()` runs. The engine destroys the sprite at `+0x770` and creates a
-    new one (new id read back from `+0x770`, outside any area). `SQRECR_MAIN` is shown only after the pick.
+  - `+0x770` = sprite id, `+0x768` = 0, `+0x48` = party size (the slot he will take).
+  - Create: the blank creature stays outside the party. `SQRECR_SHADE` + `SQRECR_MAIN` are pushed, the game is
+    paused (`worldScreen:TogglePauseGame`), and `createCharScreen:OnMenuButtonClick()` opens the panel for each
+    step.
+  - Import: the game is paused and `createCharScreen:OnImportCharacterButtonClick()` runs. Its "character file /
+    saved game" popup (`POPUP_THREEBUTTON`) is answered "character file" at once (`Popup3Button.midFunc`): the
+    saved-game import went to the load screen and a bare creation screen, with no way back to the world. After the
+    pick, the engine destroys the sprite at `+0x770` and creates a new one (new id read back from `+0x770`, outside
+    any area); `SQRECR_MAIN` is shown only then. Closing the list before a pick means Abandon.
+- **Joining at the appearance step.** From step 15 (colours) on, the recruit joins the party (`joinParty`: placed at
+  `SQCampSite.RECRUIT` when he has no area, then `PSXP7_Add(id)`, fallback an instant `JoinParty()`), and `+0x48` =
+  his slot. The game's colour page works on the selected party member (preview and colours); outside the party it
+  recoloured the protagonist.
 - **Per-tick handling.**
-  - Before each panel, the recruit becomes the only selected character, and the Lua global `id` is set to him
-    (`CHARACTER_COLOR` reads `characters[id]`).
+  - Before each panel, the recruit becomes the only selected character (once in the party), and the Lua global `id`
+    is set to him (`CHARACTER_COLOR` reads `characters[id]`).
   - Some Lua globals the panels expect are primed: `currentChargenAlignment`, and `gender` (needed by LeUI).
   - When `CHARACTER_COLOR` closes at step 15, the tick calls `OnDoneButtonClick` itself.
+  - Infinity UI++ (`rgGetCustomizedPortraitList`): its second colour page `CHARGEN_CUSTOMSOUNDS` (step 16) pops
+    `CHARACTER_COLOR`, not itself. Still at step 16 once it closed = its Done, so the tick calls
+    `OnDoneButtonClick`; still open at a later step, the tick pops it.
   - Closing the gender panel without reaching step 1 means Abandon.
   - A created recruit is kept at XP 0 / level 1 every tick.
   - Accept is possible at step ≥ 18.
-- **Abandon.** All panels are popped. `+0x770` / `+0x48` are set to the recruit, and the creation screen's own
-  `OnMainCancelButtonClick()` deletes him and frees his slot. If that fails, `LeaveParty() DestroySelf()` is
-  queued instead. The screen fields are restored.
+- **Abandon.** All panels are popped. `+0x770` / `+0x48` are set to the recruit. A recruit already in a slot first
+  runs an instant `LeaveParty()` (the creation screen's Cancel deleted the creature but left his slot: an empty
+  portrait). Then the creation screen's own `OnMainCancelButtonClick()` deletes him. If he still exists, he is
+  removed: instant `LeaveParty()`, then the tick puts him back in an area if he has none (`EEex_Object_AddToArea` at
+  the leader) and runs `DestroySelf()` (up to 10 tries). The screen fields are restored and the game unpaused.
+- **Ghost slots.** While no recruit runs, every 5 s, a nameless `CHARBASE` party member (left by earlier versions) is
+  removed the same way.
 - **Finish, created recruit.** Level 1, `SQRespec.levelOneHP` written to max HP and current HP, stats refreshed,
-  then the gear screen opens.
-- **Finish, imported recruit.** `EEex_Object_AddToArea(sp, leader area, spot)`, then `PSXP7_Add(id)` (fallback:
-  `JoinParty()`), then `SQRECR_ASK`.
+  joined if not yet, then the gear screen opens.
+- **Finish, imported recruit.** Joined (as above), then `SQRECR_ASK`.
   - Items: "drop" queues `DestroyItem` for every item except slot 10 (the fist).
   - XP: "leader" sets the recruit's XP to Player1's.
 - **Gear screen** (`SQRECR_GEAR`).
@@ -944,28 +999,31 @@ template `CHARBASE.CRE` is the engine's own, used as it is.
     - stash items: `PStash_Take(portrait, res)` (all stacks for ammunition);
     - merchant items: `PSXGM_PoolTake(res, 1)` (takes the item from the store stock and pays), then
       `CreateItem(res, stack)`;
-    - then `XEquipItem("res",Myself,SLOT_*,EQUIP)`.
+    - then `XEquipItem("res",Myself,SLOT_*,EQUIP)`, run instantly (a half-made creature never runs its queued
+      actions).
     The recruit then gets Player1's XP and a log line (@1264).
   - Under LeUI (`LeUI_uiStrings`), `SQRecruit_GearLayout` moves the gear window's items with `Infinity_SetArea`.
-- **LeUI**: `CurrentlyInGame` is wrapped so that it returns false while a created recruit is at the portrait step.
-- The summary text on `SQRECR_MAIN` is built by the mod (name, `RACETEXT` race, `CLASTEXT` class, abilities),
-  because the game fills `chargen.information` only on its own screen.
+- **`CurrentlyInGame` wrap.** UIs whose creation pages change in game (their in-game "Customize" pages) must see the
+  game's own creation while the panels run. LeUI: false while a created recruit is at the portrait step (step 1).
+  Infinity UI++: false on every page during a recruit.
+- The summary text on `SQRECR_MAIN` is built by the mod (name, `RACETEXT` race, `CLASTEXT` class with the `KIT.IDS`
+  id, abilities), because the game fills `chargen.information` only on its own screen.
 
 ##### Data stored in saves
-No local or global is written. The recruit is an ordinary party member: a `CHARBASE`-based CRE in the save, with
-the chosen picks, items and XP. Merchant purchases change the Grand marchand stock and the party gold; stash items
-leave the Party Stash. On uninstall, the dialogue branch and the Lua/menu files are removed, and recruits stay as
-normal characters.
+No local or global is written. The recruit is an ordinary party member: a `CHARBASE`-based CRE in the save (or the
+imported character), with the chosen picks, items and XP. Merchant purchases change the Grand marchand stock and the
+party gold; stash items leave the Party Stash. On uninstall, the dialogue branch, the Lua/menu files and the UI.MENU
+patch are removed, and recruits stay as normal characters. A `CEFF1INV.BAM` deleted from Infinity UI++ comes back.
 
 ##### Install-time options, predicates, interactions
 - Predicates: `MOD_IS_INSTALLED SADOEE-CAMP` (@2011), and `FILE_EXISTS_IN_GAME SQWITHER.DLG`, which means #14 must
-  be installed first. Its refusal message is @1602 ("Requires Withers at the rest camp ...", v1.0.2).
+  be installed first. Its refusal message is @1602 ("Requires Faceless at the rest camp ...").
 - Runtime dependencies on #14: the flag byte, `usable`, `levelOneHP` and `refreshStats`.
 - Big party: `PSXP7_Add` / `PSXP7_N` (Extension EEex) allow recruits past slot 6; without them `JoinParty()` is
   used (up to 6).
 - Party Stash: `PStash_List`, `PStash_Take`, `PStash_WeaponDps`, `PStash_ItemInfo`. Grand marchand: `PSXGM_Pool`,
   `PSXGM_PoolTake`. Every one is optional (checked with `if`). Without both, the gear screen is empty.
-- LeUI: handled as described above.
+- LeUI and Infinity UI++: handled as described above (UI.MENU patch, `CurrentlyInGame` wrap, colour pages).
 
 ---
 
@@ -1068,7 +1126,7 @@ All patches use fallbacks of the form `(X or original)`, so the menus keep worki
   death). The kill is delayed because a kill in the same update as the removal does nothing.
 - **Join.** `SQDUMMY = 0`, opcode 321 `SQDUMMY` and opcode 321 `SQDMG`, then a heal 300 ms later. The undroppable
   flag is cleared, scripts are cleared again for undying dummies, then `ClearActions`, `JoinParty()`, and local
-  `SQJOINED = 1`. The creature joins as it is: no respec is forced. Withers (#14) remakes it on request through the
+  `SQJOINED = 1`. The creature joins as it is: no respec is forced. Faceless (#14) remakes it on request through the
   monster path.
   - `NECRO_RESPEC.md` still describes a mandatory respec on join. The queue code for it (`T.respecQueue`, which sets
     local `SQRESPECED`) remains, but nothing fills the queue.
@@ -1136,7 +1194,7 @@ On uninstall:
   `M_SQNART.lua` (built from EET dev files).
 - Big party (Extension EEex): portraits are scanned for slots 0-23. `JoinParty()` places the creature in the next
   free slot.
-- #14: joined creatures take Withers' monster path (class step, race kept, stand-in HUMAN, opcode 53 restores the
+- #14: joined creatures take Faceless's monster path (class step, race kept, stand-in HUMAN, opcode 53 restores the
   animation).
 - BG2EE: the camp spots come from `SQCampSite` (`M_SQ0CMP.lua`). `XZAR.CRE` must exist in the game, or the
   `COPY_EXISTING` fails.
@@ -2180,4 +2238,4 @@ Common points for #27, #28, #30 and #31:
 - The `M_PSXP7.lua` header still says "Player7+ do not exist as script objects; the UI shows 6 portraits". Later sections of the same file and `party.tpa` supersede this: Decode patch, OBJECT.IDS, PSXP7 bars.
 - The header's other known limit still holds: portrait indexes 6 and 7 are special values in `CInfGame::SwapItemPersonal` (ground, container). The comment adds that the 6 / 7 compared there come from the item/slot, not the portrait (checked 2026-10-23, items moved both ways).
 - #28 attack-move and other SadoEE code loop to `PSXP7_LastPortrait()`.
-- Adding new player-made members is #15 (Withers recruit), which uses PSXP7 at run time.
+- Adding new player-made members is #15 (Faceless recruit), which uses PSXP7 at run time.

@@ -138,14 +138,9 @@ SQCamp_Hooks.cain = function()
 	local area = EEex_Area_GetVisible()
 	if not area or string.upper(area.m_resref:get()) ~= 'SQCAMP' then return end
 	if not area then return end
-	if present(area) then
-		-- saves made before the renaming keep the old name: give him the current one
-		if T.NAME and T.found and T.found.m_baseStats.m_name ~= T.NAME then
-			T.found.m_baseStats.m_name = T.NAME
-			pcall(function() T.found.m_baseStats.m_apparentName = T.NAME end)
-		end
-		return
-	end
+	-- a scholar with an older name (a save made before the renaming, or under an older install) is removed and made
+	-- again from today's CRE by M_SQCAMP.lua's camp people check (the shown name is a copy made at load time)
+	if present(area) then return end
 	local now, key = Infinity_GetClockTicks(), EEex_UDToPtr(area)
 	-- right after the area loads its actors may not be listed yet (a duplicate was made, 2026-10-23): the camp must
 	-- have been entered 3 s ago (SQCamp.spawnSince, M_SQCAMP.lua)

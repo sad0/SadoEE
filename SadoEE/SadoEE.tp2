@@ -1470,6 +1470,15 @@ ACTION_FOR_EACH sq_donor IN NOBL11 NOBLEM3 NOBLAY MERCHANT FLAM GUARD TOWNCR_ SE
 				// a STATIC_* donor (0xB200-0xB7FF: beggars, peasants lying asleep) gets the walking twin (0xC600-0xCB10),
 				// same people standing up (John 2026-11-02: a sleeping Faceless is too goofy)
 				PATCH_IF (sq_anim >= 0xB200) AND (sq_anim < 0xB800) BEGIN SET sq_anim = sq_anim + 0x1400 END
+				// the 0x4xxx STATIC_* / SLEEPING_* people (seated in a chair, on a mat, asleep: NOBLEM3, NOBLAY, NOBLEW3,
+				// NOBWSN_A; lead's test 2026-11-03, Faceless lying at his spot) stand up as the same people walking
+				PATCH_MATCH sq_anim WITH
+					0x4000 0x4002 0x4400 0x4500 0x4700 0x4800 BEGIN SET sq_anim = 0xCA00 END   // men -> NOBLE_MAN
+					0x4010 0x4012 0x4410 0x4710 BEGIN SET sq_anim = 0xCA10 END                 // women -> NOBLE_WOMAN
+					0x4100 0x4101 0x4102 0x4200 0x4600 BEGIN SET sq_anim = 0xC900 END         // -> PEASANT_MAN
+					0x4110 0x4112 BEGIN SET sq_anim = 0xC910 END                               // -> PEASANT_WOMAN
+					DEFAULT
+				END
 				WRITE_LONG 0x28 sq_anim
 				FOR (i = 0; i < 7; i += 1) BEGIN WRITE_BYTE (0x2c + i) $sq_col(~%i%~) END
 				WRITE_BYTE 0x237 sq_sex
