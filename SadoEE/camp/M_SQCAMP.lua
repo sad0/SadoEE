@@ -62,6 +62,13 @@ local function currentArea()
 	return a and a.m_resref:get():upper() or ''
 end
 local function inCamp() return currentArea() == T.AREA end
+-- The camp's people are created on the leader, in HIS area. While the party moves between areas the view can already
+-- show the camp with the leader still elsewhere (or the reverse): they were made in the other area (two Faceless in
+-- the ground A/B test, John 2026-11-03). Nobody is created until the leader stands in the camp shown.
+function SQCamp_LeaderHere()
+	local p, a = leader(), EEex_Area_GetVisible()
+	return p and a and EEex_UDEqual(p.m_pArea, a) or false
+end
 
 -- Is the area on the engine's world map? Areas outside it (BG2's chapter 1 dungeon AR0602) have no place to travel
 -- from: the map opened from there lists only the next destination, and travelling crashed in TravelToSelected
@@ -548,6 +555,7 @@ function SQCamp_Tick()
 		if e:GetActiveEngine() == worldScreen then T.armed = true end
 		return false
 	end
+	if not SQCamp_LeaderHere() then return false end
 	if T.goBack and e:GetActiveEngine() == worldScreen then
 		local ok, err = pcall(goBack)
 		if not ok then T.lastError = 'back: ' .. tostring(err) end

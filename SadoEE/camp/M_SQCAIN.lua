@@ -148,6 +148,7 @@ SQCamp_Hooks.cain = function()
 	-- once per camp visit, created at once (a CreateCreature queued on a talking leader or a paused game waited,
 	-- and the next try made a second scholar: Compat test, 2026-10-25)
 	if T.pending == key or not SQCamp_Create then return end
+	if SQCamp_LeaderHere and not SQCamp_LeaderHere() then return end   -- created on the leader: he must be here
 	T.pending = key
 	SQCamp_Create(T.RES, T.SPOT[1], T.SPOT[2], T.SPOT[3])
 end

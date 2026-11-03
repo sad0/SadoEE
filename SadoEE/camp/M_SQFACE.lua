@@ -102,6 +102,7 @@ local function tick()
 	if not area then return end
 	if string.upper(area.m_resref:get()) ~= campArea() then T.visited = nil return end
 	if T.visited then return end
+	if SQCamp_LeaderHere and not SQCamp_LeaderHere() then return end   -- the new face is created on the leader
 	local sp = findFaceless(area)
 	if not sp then return end        -- not spawned yet (the camp creates its people a few seconds in)
 	T.visited = true
