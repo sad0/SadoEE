@@ -37,6 +37,7 @@ Full documentation: [docs/README.md](docs/README.md).
 | 50-53 | Rest camp | Priestess prices for her paid healing: 75 %, 50 %, 25 % or free (default: the game's temple prices) |
 | 20-32 | Quality of life | Passive trap detection, valuable containers, automatic disarming, FPS counter, endless ammo, small party footprint, lasting modes, attack-move, mouse buttons, keep gear on death, chests in the ground bar, Auto-Roller |
 | 33 | Quality of life | NPC pairs can separate: dismissing Khalid, Jaheira, Minsc, Dynaheir, Xzar, Montaron, Eldoth or Skie no longer sends the partner away (BGEE, EET) |
+| 34 | Quality of life | Allies clear the fog of war: summons, familiars, charmed creatures and quest allies reveal the map around them (switch on the options page) |
 | 40 | Engine extension | Big party: 7 to 32 members, with working banter and interjections for members 7+ (experimental) |
 
 The rest camp (#10-#17, #50-#53) works on BGEE, EET and BG2EE, on its own map (a forest clearing, day and night); the big party on BGEE and EET.

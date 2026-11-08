@@ -1,0 +1,11 @@
+menu
+{
+	name "SQFOG_TICK"
+	ignoreesc
+	-- SadoQoL allies clear the fog of war: its enabled check runs every frame (throttled in SQFog_Tick).
+	label
+	{
+		area 0 0 0 0
+		enabled "SQFog_Tick()"
+	}
+}

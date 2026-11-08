@@ -158,7 +158,7 @@ PSXP7_SITES['2.7.3.0'] = {
 		{ 0x140285F55, 6, 1, 0, 0, '39a914660000', 11 }, -- CInfGame::RemoveCharacterFromParty
 		{ 0x140285F5D, 7, 1, 0, 0, '4489a114660000', 11 }, -- CInfGame::RemoveCharacterFromParty
 		{ 0x140285FE9, 7, 3, 1, 0, '488d8b18660000', 11 }, -- CInfGame::RemoveCharacterFromParty
-		{ 0x140286095, 8, 3, 0, 0, '4489a48314660000', 11 }, -- CInfGame::RemoveCharacterFromParty
+		{ 0x140286095, 8, 3, 1, 0, '4489a48314660000', 11 }, -- CInfGame::RemoveCharacterFromParty
 		{ 0x1402863C7, 7, 2, 1, 0, '8b848218660000', 11 }, -- CInfGame::RenderAppearance
 		{ 0x140286F3E, 7, 1, 1, 0, '8b848118660000', 11 }, -- CInfGame::RenderColorDisplay
 		{ 0x140287159, 7, 2, 1, 0, '8b8c8218660000', 11 }, -- CInfGame::RenderPalette
@@ -603,7 +603,7 @@ PSXP7_SITES['2.6.6.0'] = {
 		{ 0x140285A55, 6, 1, 0, 0, '39a914660000', 11 }, -- CInfGame::RemoveCharacterFromParty
 		{ 0x140285A5D, 7, 1, 0, 0, '4489a114660000', 11 }, -- CInfGame::RemoveCharacterFromParty
 		{ 0x140285AE9, 7, 3, 1, 0, '488d8b18660000', 11 }, -- CInfGame::RemoveCharacterFromParty
-		{ 0x140285B95, 8, 3, 0, 0, '4489a48314660000', 11 }, -- CInfGame::RemoveCharacterFromParty
+		{ 0x140285B95, 8, 3, 1, 0, '4489a48314660000', 11 }, -- CInfGame::RemoveCharacterFromParty
 		{ 0x140285EC7, 7, 2, 1, 0, '8b848218660000', 11 }, -- CInfGame::RenderAppearance
 		{ 0x140286A3E, 7, 1, 1, 0, '8b848118660000', 11 }, -- CInfGame::RenderColorDisplay
 		{ 0x140286C59, 7, 2, 1, 0, '8b8c8218660000', 11 }, -- CInfGame::RenderPalette

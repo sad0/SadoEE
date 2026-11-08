@@ -39,6 +39,7 @@ O.ROWS = {
 	{ 'ChestsBar', 'Chests In Ground Bar', "SQ_OPT_TXT_1566", "SQ_OPT_TXT_1567", 'SQChest', 'ENABLED' },
 	{ 'Waiting', 'Camp Waiting', "SQ_OPT_TXT_1568", "SQ_OPT_TXT_1569", 'SQWait', 'ENABLED' },
 	{ 'Fps', 'FPS', "SQ_OPT_TXT_1570", "SQ_OPT_TXT_1571", 'SQFps', 'on' },
+	{ 'AlliesFog', 'Allies Clear Fog', "SQ_OPT_TXT_1641", "SQ_OPT_TXT_1642", 'SQFog', 'ENABLED' },
 }
 -- section id, label, its switches (the mouse section lists SQMB's inputs instead)
 O.SECTIONS = {
@@ -46,7 +47,7 @@ O.SECTIONS = {
 	{ 'traps', "SQ_OPT_TXT_1573", { 'Traps', 'AutoDisarm', 'AutoOpen', 'Outline' } },
 	{ 'combat', "SQ_OPT_TXT_1574", { 'Ammo', 'Quiver', 'AttackMove', 'SongSpam' } },
 	{ 'loot', "SQ_OPT_TXT_1575", { 'SortedLoot', 'ChestsBar', 'Waiting' } },
-	{ 'display', "SQ_OPT_TXT_1576", { 'Fps' } },
+	{ 'display', "SQ_OPT_TXT_1576", { 'Fps', 'AlliesFog' } },
 	{ 'mouse', "SQ_OPT_TXT_1577" },
 }
 O.TXT = {

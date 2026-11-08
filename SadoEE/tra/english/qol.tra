@@ -275,3 +275,6 @@
 @1621 = ~What the party picks up goes straight to the party stash, by the chosen filter. Click: next filter. Right click: off.~
 @1622 = ~Off~
 @1623 = ~Everything except quest items, bags and ammo~
+@1640 = ~Allies clear the fog of war: summons, familiars, charmed creatures and quest allies reveal the map around them~
+@1641 = ~Allies clear the fog~
+@1642 = ~Summons, familiars, charmed creatures and quest allies reveal the fog of war around them, like party members.~

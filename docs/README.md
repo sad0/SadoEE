@@ -43,6 +43,7 @@
 | 30 | Keep gear on death | The party keeps its equipment when someone dies | all |
 | 31 | Chests in the ground bar | Visible unlocked containers listed in the ground items bar | all |
 | 32 | Auto-Roller | Auto-Roll button in character creation keeps the best of many rolls | all |
+| 34 | Allies clear the fog | Summons, familiars, charmed creatures and quest allies reveal the fog of war around them (switch on the options page; stands aside if Albie's mod is installed) | all |
 | **Engine extension** | | | |
 | 40 | Big party | 7 to 32 members, extra portrait bar, working banter and interjections for members 7+ (scripts and dialogues extended at install) | BGEE, EET |
 

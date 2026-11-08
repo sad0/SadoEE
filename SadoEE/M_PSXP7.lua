@@ -991,20 +991,45 @@ end
 -- filling the screen height (7-16 next to the game's bar, then 17-26, 27-32 further left). Placed by
 -- PSXP7_ColumnsLayout() (Infinity_SetArea on PSXP7_C6..31) when the party or the screen size changes.
 Z.COL_ASPECT = 64 / 90 -- the game's portrait shape
+-- The columns follow the UI actually on screen (v1.0.4: Infinity UI++ 1.4 put its bottom bar, message box and level-up
+-- buttons over them; its sidebar can be 97 px wide): right edge = the RIGHT_SIDEBAR menu's left side (or the level-up
+-- buttons left of it), bottom = the top of a bottom menu that overlaps the columns. EEex_Menu_GetArea gives the
+-- areas; without it, the game's own layout (80 px sidebar, full height).
+Z.COL_BOTTOM_MENUS = { 'RIGHT_SIDEBAR_BOTTOM', 'WORLD_ACTIONBAR', 'RGWORLD_MESSAGES', 'WORLD_MESSAGES' }
+local function menuArea(name)
+	if not EEex_Menu_GetArea or not onStack(name) then return nil end
+	local ok, x, y, w, h = pcall(EEex_Menu_GetArea, name)
+	if not ok or type(x) ~= 'number' or type(w) ~= 'number' or w <= 0 then return nil end
+	return x, y, w, h
+end
+local function columnsFrame(sw, sh)
+	local right, top, bottom = sw - 80, 0, sh
+	local sx, sy, swd, shg = menuArea('RIGHT_SIDEBAR')
+	if sx and sx > sw / 2 then right, top = sx, math.max(0, sy) end
+	local lx, ly, lw, lh = menuArea('WORLD_LEVEL_UP_BUTTONS')
+	if lx and lx < right and lx + lw > right - 8 and lx > sw / 2 then right = lx end
+	for _, m in ipairs(Z.COL_BOTTOM_MENUS) do
+		local x, y, w, h = menuArea(m)
+		-- a menu low on the screen whose span reaches the columns' strip (at most 3 columns left of `right`)
+		if x and y > sh / 3 and y < bottom and x < right and x + w > right - 3 * 80 then bottom = y end
+	end
+	return math.floor(right), math.floor(top), math.floor(bottom)
+end
 function PSXP7_ColumnsLayout()
 	if not PSXP7_BarVisible() then return false end
 	local n = Infinity_GetNumCharacters()
 	local sw, sh = Infinity_GetScreenSize()
-	local key = n .. 'x' .. sw .. 'x' .. sh
+	local right, top, bottom = columnsFrame(sw, sh)
+	local key = table.concat({ n, sw, sh, right, top, bottom }, 'x')
 	if Z.colKey == key then return true end
 	Z.colKey = key
-	local ph = math.floor(sh / 10)
+	local ph = math.floor((bottom - top) / 10)
 	local pw = math.floor(ph * Z.COL_ASPECT)
-	Z.colW, Z.colAreas = pw, {}
+	Z.colW, Z.colShift, Z.colAreas = pw, sw - 80 - right, {} -- colShift: extra width left of the game's 80 px
 	for i = 6, 31 do
 		if i < n then
 			local k = i - 6
-			local x, y = sw - 80 - (math.floor(k / 10) + 1) * pw, (k % 10) * ph
+			local x, y = right - (math.floor(k / 10) + 1) * pw, top + (k % 10) * ph
 			pcall(Infinity_SetArea, 'PSXP7_C' .. i, x, y, pw, ph)
 			Z.colAreas[i] = { x, y, pw, ph }
 		else
@@ -1265,7 +1290,7 @@ end
 function PSXP7_BarWidth()
 	if not PSXP7_BarVisible() then return 0 end
 	local c = Infinity_GetNumCharacters()
-	return (c > 26 and 3 or c > 16 and 2 or 1) * (Z.colW or Z.BAR_W) -- 10 per column: 7-16, 17-26, 27-32 (John)
+	return (c > 26 and 3 or c > 16 and 2 or 1) * (Z.colW or Z.BAR_W) + (Z.colShift or 0) -- 10 per column: 7-16, 17-26, 27-32 (John)
 end
 
 -- Gather radius scale: x1 up to 6 members, then members / 6 (x2 at 12, x3 at 18), at most x4 (John: "rayon élargi").

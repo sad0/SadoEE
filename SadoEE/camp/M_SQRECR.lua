@@ -120,6 +120,29 @@ local function findSpawned()
 	return nil
 end
 
+-- A creature that leaves the party goes to CInfGame's global creature list (the ex-members, saved in the GAM): there
+-- DestroySelf only takes him off the map and he lives on, saved with every game (Compat test, 2026-11-02). Out of
+-- that list, his DestroySelf deletes him (m_bDeleteOnRemove). CPtrList: head +P, tail +2P, count +3P, free list +4P;
+-- node: next +0, prev +P, data +2P (the MFC RemoveAt, the node goes back to the free list).
+local function unlinkGlobal(id)
+	local P = EEex_PtrSize
+	local list = EEex_UDToPtr(EngineGlobals.g_pBaldurChitin.m_pObjectGame.m_lstGlobalCreatures)
+	local node = EEex_ReadPtr(list + P)
+	while node ~= 0 do
+		if EEex_Read32(node + 2 * P) == id then
+			local nxt, prv = EEex_ReadPtr(node), EEex_ReadPtr(node + P)
+			if prv ~= 0 then EEex_WritePtr(prv, nxt) else EEex_WritePtr(list + P, nxt) end
+			if nxt ~= 0 then EEex_WritePtr(nxt + P, prv) else EEex_WritePtr(list + 2 * P, prv) end
+			EEex_WritePtr(node, EEex_ReadPtr(list + 4 * P))
+			EEex_WritePtr(list + 4 * P, node)
+			EEex_Write32(list + 3 * P, EEex_Read32(list + 3 * P) - 1)
+			return true
+		end
+		node = EEex_ReadPtr(node)
+	end
+	return false
+end
+
 -- out of the party and out of the game, now (instant: a half-made creature never runs its action queue)
 local function remove(sp)
 	pcall(function() EEex_Action_ExecuteResponseStringOnAIBaseInstantly('LeaveParty()', sp) end)
@@ -133,6 +156,7 @@ local function destroyLeft()
 			T.toDestroy[id] = nil
 		elseif EEex_Sprite_GetPortraitIndex(sp) < 0 then
 			pcall(function()
+				unlinkGlobal(id)
 				if not sp.m_pArea then
 					local lead = leader()
 					if lead and lead.m_pArea then EEex_Object_AddToArea(sp, lead.m_pArea, lead.m_pos.x, lead.m_pos.y) end
@@ -147,14 +171,29 @@ local function destroyLeft()
 	end
 end
 
+-- a blank CHARBASE with no name; a saved game brings him back as '*HARBASE' (the engine's mark on a creature saved in
+-- the GAM: the protagonist made in the creation screen is '*HARBASE' too, with his name)
+local function isGhost(sp)
+	local r = string.upper(sp.m_resref:get())
+	return (r == T.TEMPLATE or r == '*' .. T.TEMPLATE:sub(2)) and (sp:getName() or '') == ''
+end
+
 -- ghost slots from earlier versions (a recruit abandoned half-made stayed in the party: blank CHARBASE, no name)
 local function cleanGhosts()
 	for i = 0, (PSXP7_N or 6) - 1 do
 		local sp = EEex_Sprite_GetInPortrait(i)
-		if sp and sp.m_id ~= T.id and string.upper(sp.m_resref:get()) == T.TEMPLATE and (sp:getName() or '') == '' then
+		if sp and sp.m_id ~= T.id and isGhost(sp) then
 			remove(sp)
 		end
 	end
+	-- and the ghosts v1.0.3 took out of the party: kept in the global creature list, saved with the game
+	EEex_Utility_IterateCPtrList(EngineGlobals.g_pBaldurChitin.m_pObjectGame.m_lstGlobalCreatures, function(id)
+		local sp = id ~= T.id and spriteOf(id)
+		if sp and isGhost(sp) and EEex_Sprite_GetPortraitIndex(sp) < 0 then
+			T.toDestroy = T.toDestroy or {}
+			T.toDestroy[id] = T.toDestroy[id] or 10
+		end
+	end)
 end
 T.cleanGhosts = cleanGhosts
 
@@ -709,6 +748,9 @@ function SQRecruit_Abandon()
 		-- left his party slot: an empty portrait, John 2026-11-02)
 		if slot >= 0 then
 			pcall(function() EEex_Action_ExecuteResponseStringOnAIBaseInstantly('LeaveParty()', sp) end)
+			-- LeaveParty made him a global creature: the Cancel below deletes him, his id would stay in that list (an
+			-- empty NPC entry in the next save)
+			pcall(unlinkGlobal, sp.m_id)
 		end
 		local ok, err = pcall(function() createCharScreen:OnMainCancelButtonClick() end)
 		if not ok then T.lastError = 'cancel: ' .. tostring(err) end
