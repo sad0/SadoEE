@@ -21,3 +21,8 @@
 @21 = ~Kampın yaşlı âlimi Decard gerekir (SadoQoL / SadoEE).~
 @40 = ~Büyük grup: 7 ile 32 arası üye (ek bir portre çubuğu, oyunun betikleri ve diyalogları 7. ve sonraki üyelere genişletilir)~
 @41 = ~Yalnızca Baldur's Gate: Enhanced Edition, Baldur's Gate II: Enhanced Edition ve EET için.~
+@42 = ~Büyük grup TP'si: her oyunun varsayılan ayarı (her oyun bunu SadoEE seçenekler sayfasının Grup bölümünde istediği zaman değiştirebilir)~
+@43 = ~Vanilla: oyunun kendi paylaşımı~
+@44 = ~Üye başına aynı TP (BG2 tarzı): her üye 6 kişilik bir grubun toplamının 6'da birini alır~
+@45 = ~Aynı toplam TP (BG1 tarzı): her üye 6 kişilik bir grubun toplamını üye sayısına bölünmüş olarak alır~
+@46 = ~Büyük grup (#40) gerekir.~

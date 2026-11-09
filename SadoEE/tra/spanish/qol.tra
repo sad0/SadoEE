@@ -278,3 +278,9 @@
 @1640 = ~Los aliados disipan la niebla de guerra: invocaciones, familiares, criaturas hechizadas y aliados de misión revelan el mapa a su alrededor~
 @1641 = ~Los aliados disipan la niebla~
 @1642 = ~Las invocaciones, los familiares, las criaturas hechizadas y los aliados de misión revelan la niebla de guerra a su alrededor, como los miembros del grupo.~
+@1643 = ~PX del grupo grande~
+@1644 = ~Grupos de 7 o más miembros: cómo se reparte la experiencia. Vanilla: sin cambios. Mismos PX por miembro: cada miembro recibe lo que recibiría un miembro de un grupo de 6. Mismos PX totales: el grupo entero recibe en total lo que recibiría un grupo de 6. Se guarda con cada partida; los grupos de 6 o menos nunca se ven afectados.~
+@1645 = ~Vanilla~
+@1646 = ~Mismos PX por miembro~
+@1647 = ~Mismos PX totales~
+@1648 = ~Grupo~

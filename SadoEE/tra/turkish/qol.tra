@@ -278,3 +278,9 @@
 @1640 = ~Müttefikler savaş sisini dağıtır: çağrılan yaratıklar, hizmetkâr ruhlar, büyülenmiş yaratıklar ve görev müttefikleri çevrelerindeki haritayı açar~
 @1641 = ~Müttefikler sisi dağıtır~
 @1642 = ~Çağrılan yaratıklar, hizmetkâr ruhlar, büyülenmiş yaratıklar ve görev müttefikleri, grup üyeleri gibi çevrelerindeki savaş sisini dağıtır.~
+@1643 = ~Büyük grup TP'si~
+@1644 = ~7 veya daha fazla üyeli gruplar: tecrübenin nasıl paylaşıldığı. Vanilla: değişmez. Üye başına aynı TP: her üye, 6 kişilik bir grubun üyesinin alacağını alır. Aynı toplam TP: tüm grup toplamda 6 kişilik bir grubun alacağını alır. Her oyunla birlikte kaydedilir; 6 veya daha az üyeli gruplar asla etkilenmez.~
+@1645 = ~Vanilla~
+@1646 = ~Üye başına aynı TP~
+@1647 = ~Aynı toplam TP~
+@1648 = ~Grup~

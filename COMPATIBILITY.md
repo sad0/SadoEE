@@ -45,6 +45,7 @@ infinite ammo, identification, resting, death, NPC customization, Spellhold item
 | Auto-Roller (#32) | Own layouts for Infinity UI++ (checked) and LeUI (to recheck in game); coexists with EEUITweaks' own auto-roller |
 | Stores (Tweaks Anthology changes) | Buying and selling from the stash work |
 | Better item recommender (Person, STATVAL.2DA in override) | Compatible: the "better item" highlight also works for party members 7+ (#40, checked with 30 members on Infinity UI++) |
+| XP mods (XP caps, Tweaks Anthology XP tweaks, level-cap removers) | #40's XP modes change only how party XP is divided among 7+ living members (engine `AddPartyXP` and `AddXP2DA`): mods that set the amounts or the caps work on top of them |
 
 ## Known issues in other mods (not SadoEE)
 

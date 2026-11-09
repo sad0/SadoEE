@@ -278,3 +278,9 @@
 @1640 = ~Os aliados dissipam a névoa de guerra: invocações, familiares, criaturas enfeitiçadas e aliados de missão revelam o mapa ao seu redor~
 @1641 = ~Os aliados dissipam a névoa~
 @1642 = ~Invocações, familiares, criaturas enfeitiçadas e aliados de missão revelam a névoa de guerra ao seu redor, como os membros do grupo.~
+@1643 = ~XP do grupo grande~
+@1644 = ~Grupos de 7 ou mais membros: como a experiência é dividida. Vanilla: sem alterações. Mesma XP por membro: cada membro recebe o que receberia um membro de um grupo de 6. Mesma XP total: o grupo inteiro recebe no total o que um grupo de 6 receberia. Salvo com cada jogo; grupos de 6 ou menos nunca são afetados.~
+@1645 = ~Vanilla~
+@1646 = ~Mesma XP por membro~
+@1647 = ~Mesma XP total~
+@1648 = ~Grupo~

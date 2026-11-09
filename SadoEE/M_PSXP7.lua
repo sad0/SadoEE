@@ -359,6 +359,69 @@ local function bestCode(kind, buf)
 	return cat(movImm(0, buf), { 0x48, 0x8B, 0x04, 0xC8 }) -- rax = buf / mov rax, [rax + rcx*8]
 end
 
+-- XP modes (v1.0.6, John 2026-11-09, atcDave's question on Beamdog). One exe for BGEE / BG2EE / EET, the data decides:
+-- * CInfGame::AddPartyXP splits by the living members n (kills, AddexperienceParty, AddexperiencePartyGlobal,
+--   AddXPWorth, AddXP2DA "P_" rows, locks, traps, scribing);
+-- * CGameAIBase::AddXP2DA gives a row without "P_" in full to each member (73 of BG2EE's 98 XPLIST rows: BG2 quests).
+-- Mode (per save, global PSXP7XP = mode + 1, default from the install): 0 vanilla; 1 same XP per member as a party of
+-- 6 ("BG2 style": a party of 6's total / 6; AddPartyXP divides by min(n, 6)); 2 same total as a party of 6 ("BG1
+-- style": a party of 6's total / n; full AddXP2DA grants x 6 / n). Both stubs do nothing up to 6 living members.
+-- Z.xpCell: byte 0 = mode, byte 1 = living members (PSXP7_XpTick).
+Z.XP_DIV = { ['2.7.3.0'] = 0x14026DC83, ['2.6.6.0'] = 0x14026DA23 }   -- movsx ecx, r9w / xor edx, edx (divisor n)
+Z.XP_DIV_ORIG = '410fbfc933d2'
+Z.XP_2DA = { ['2.7.3.0'] = 0x140165AA0, ['2.6.6.0'] = 0x140165890 }   -- after the non-P_ sscanf: value at [rbp-0x19]
+Z.XP_2DA_ORIG = '33f68bde488b8890100000'                               -- xor esi, esi / mov ebx, esi / mov rcx, [rax+0x1090]
+Z.XP_GLOBAL = 'PSXP7XP'
+local function xpDivCode(cell)
+	-- movsx ecx, r9w / push rax / rax = cell / cmp byte [rax], 1 / pop rax / jne +10 / cmp ecx, 6 / jle +5 / mov ecx, 6
+	-- / xor edx, edx
+	return cat({ 0x41, 0x0F, 0xBF, 0xC9, 0x50 }, movImm(0, cell), { 0x80, 0x38, 0x01, 0x58, 0x75, 0x0A,
+		0x83, 0xF9, 0x06, 0x7E, 0x05, 0xB9, 0x06, 0x00, 0x00, 0x00, 0x31, 0xD2 })
+end
+local function xp2daCode(cell)
+	-- push rax, rdx, rcx / rax = cell / mode 2 and n > 6 and value > 0: value = value * 6 / n / pop / the 3 moved
+	-- instructions (rax is restored before mov rcx, [rax + 0x1090])
+	return cat({ 0x50, 0x52, 0x51 }, movImm(0, cell), { 0x80, 0x38, 0x02, 0x75, 0x1A,
+		0x0F, 0xB6, 0x48, 0x01, 0x83, 0xF9, 0x06, 0x7E, 0x11,
+		0x8B, 0x45, 0xE7, 0x85, 0xC0, 0x7E, 0x0A,
+		0x6B, 0xC0, 0x06, 0x31, 0xD2, 0xF7, 0xF1, 0x89, 0x45, 0xE7,
+		0x59, 0x5A, 0x58 }, hexBytes(Z.XP_2DA_ORIG))
+end
+-- The mode of the loaded save: 0, 1, 2. PSXP7XP holds mode + 1; 0 (never set: new games, saves made before) = the
+-- install choice, PSXP7_XP_DEFAULT (components #41-#43, M_PSXP7X.lua; John 2026-11-09: asked at install, changed in
+-- the options page).
+local function xpDefault()
+	local d = tonumber(PSXP7_XP_DEFAULT)
+	return (d == 1 or d == 2) and d or 0
+end
+function PSXP7_XpMode()
+	local ok, v = pcall(EEex_GameState_GetGlobalInt, Z.XP_GLOBAL)
+	v = ok and tonumber(v) or 0
+	if v >= 1 and v <= 3 then return v - 1 end
+	return xpDefault()
+end
+function PSXP7_SetXpMode(m)
+	pcall(EEex_GameState_SetGlobalInt, Z.XP_GLOBAL, ((m == 1 or m == 2) and m or 0) + 1)
+	pcall(PSXP7_XpTick)
+end
+-- living members, as AddPartyXP counts them (STATE_DEAD 0x800 off)
+local function livingMembers()
+	local n = 0
+	for i = 0, Infinity_GetNumCharacters() - 1 do
+		local sp = EEex_Sprite_GetInPortrait(i)
+		if sp then
+			local ok, st = pcall(function() return sp.m_derivedStats.m_generalState end)
+			if not ok or not st or EEex_BAnd(st, 0x800) == 0 then n = n + 1 end
+		end
+	end
+	return n
+end
+function PSXP7_XpTick()
+	if not Z.xpCell then return end
+	EEex_WriteU8(Z.xpCell, PSXP7_XpMode())
+	EEex_WriteU8(Z.xpCell + 1, math.min(255, livingMembers()))
+end
+
 -- Save guard (John 2026-10-24, before SadoEE 1.0): CInfGame::Marshal writes the GAM party header from m_nCharacters
 -- but one entry per non -1 m_characters id: a stale or doubled id there wrote N+1 entries over party[0]'s CRE. Right
 -- before its party loop (movsx eax, [rsi + 0x6630], rsi = game) a stub rebuilds m_characters from the real party:
@@ -598,6 +661,9 @@ function PSXP7_Enable(n)
 	for _, b in ipairs(best or {}) do
 		if not bytesAt(b[1], hexBytes(b[4])) then best = nil print('[PSXP7] SwapWithSlot bytes differ: its patch is skipped') break end
 	end
+	local xpDiv, xp2da = Z.XP_DIV[build], Z.XP_2DA[build]
+	if xpDiv and not bytesAt(xpDiv, hexBytes(Z.XP_DIV_ORIG)) then xpDiv = nil print('[PSXP7] AddPartyXP bytes differ: XP mode 1 off') end
+	if xp2da and not bytesAt(xp2da, hexBytes(Z.XP_2DA_ORIG)) then xp2da = nil print('[PSXP7] AddXP2DA bytes differ: XP mode 2 off') end
 	if t.piles then
 		local okInv, inv = pcall(function() return EEex_UDToPtr(EngineGlobals.g_pBaldurChitin.m_pEngineInventory) end)
 		if not okInv or not inv or inv == 0 then return false, 'CScreenInventory not created yet' end
@@ -720,6 +786,13 @@ function PSXP7_Enable(n)
 		for _, b in ipairs(best) do jumps[#jumps + 1] = { b[1], makeStub(b[1], b[2], bestCode(b[3], buf)) } end
 		Z.bestMem, Z.bestSites = buf, best
 	end
+	if xpDiv or xp2da then
+		Z.xpCell = Z.xpCell or EEex_Malloc(8)
+		EEex_WriteU8(Z.xpCell, 0) EEex_WriteU8(Z.xpCell + 1, 0)
+		if xpDiv then jumps[#jumps + 1] = { xpDiv, makeStub(xpDiv, 6, xpDivCode(Z.xpCell)) } end
+		if xp2da then jumps[#jumps + 1] = { xp2da, makeStub(xp2da, 11, xp2daCode(Z.xpCell)) } end
+		Z.xpDiv, Z.xp2da = xpDiv, xp2da
+	end
 	local nRedirect = #jumps
 	Z.marshalBuf = marshalPatch(t, n, jumps)
 	for _, j in ipairs(jumps) do writeBytes(j[1], j[2]) end
@@ -786,6 +859,8 @@ function PSXP7_Disable(only)
 		for _, k in ipairs(t.pick or {}) do writeBytes(k[1], hexBytes(k[5])) end
 		for _, b in ipairs(Z.bestSites or {}) do writeBytes(b[1], hexBytes(b[4])) end
 		if Z.saveGuard then writeBytes(Z.saveGuard[1], hexBytes(Z.saveGuard[2])) end
+		if Z.xpDiv then writeBytes(Z.xpDiv, hexBytes(Z.XP_DIV_ORIG)) end
+		if Z.xp2da then writeBytes(Z.xp2da, hexBytes(Z.XP_2DA_ORIG)) end
 		if Z.noIcons then writeBytes(Z.noIcons[1], hexBytes(Z.NO_ICONS_ORIG)) end
 		if Z.pickShift then writeBytes(Z.pickShift, hexBytes(Z.PICK_SHIFT_ORIG)) end
 		for _, s in ipairs(Z.vis and Z.vis.sites or {}) do writeBytes(s.site, hexBytes(s.orig)) end
@@ -1002,16 +1077,23 @@ local function menuArea(name)
 	if not ok or type(x) ~= 'number' or type(w) ~= 'number' or w <= 0 then return nil end
 	return x, y, w, h
 end
-local function columnsFrame(sw, sh)
+local function columnsFrame(sw, sh, n)
 	local right, top, bottom = sw - 80, 0, sh
 	local sx, sy, swd, shg = menuArea('RIGHT_SIDEBAR')
 	if sx and sx > sw / 2 then right, top = sx, math.max(0, sy) end
+	-- Infinity UI++'s wider sidebar (97 px) has its level-up buttons left of it. The game's own UI (80 px) keeps a
+	-- WORLD_LEVEL_UP_BUTTONS menu over its sidebar: following it pushed the columns 29 px away from the bar (BG2EE
+	-- vanilla UI, John 2026-11-09).
 	local lx, ly, lw, lh = menuArea('WORLD_LEVEL_UP_BUTTONS')
-	if lx and lx < right and lx + lw > right - 8 and lx > sw / 2 then right = lx end
+	if lx and swd and swd > 84 and lx < right and lx + lw > right - 8 and lx > sw / 2 then right = lx end
+	-- the strip the columns need: one per 10 members past 6, each about (height / 10) * aspect wide
+	local cols = math.max(1, math.ceil(((n or 7) - 6) / 10))
+	local strip = cols * math.floor((sh - top) / 10 * Z.COL_ASPECT)
 	for _, m in ipairs(Z.COL_BOTTOM_MENUS) do
 		local x, y, w, h = menuArea(m)
-		-- a menu low on the screen whose span reaches the columns' strip (at most 3 columns left of `right`)
-		if x and y > sh / 3 and y < bottom and x < right and x + w > right - 3 * 80 then bottom = y end
+		-- a menu low on the screen whose span reaches that strip (the game's message box stops short of it: its
+		-- 465-high top made the columns half size, BG2EE vanilla UI)
+		if x and y > sh / 3 and y < bottom and x < right and x + w > right - strip then bottom = y end
 	end
 	return math.floor(right), math.floor(top), math.floor(bottom)
 end
@@ -1019,7 +1101,7 @@ function PSXP7_ColumnsLayout()
 	if not PSXP7_BarVisible() then return false end
 	local n = Infinity_GetNumCharacters()
 	local sw, sh = Infinity_GetScreenSize()
-	local right, top, bottom = columnsFrame(sw, sh)
+	local right, top, bottom = columnsFrame(sw, sh, n)
 	local key = table.concat({ n, sw, sh, right, top, bottom }, 'x')
 	if Z.colKey == key then return true end
 	Z.colKey = key
@@ -1307,6 +1389,7 @@ end
 function PSXP7_BarTick()
 	if Z.pendingMove and Z.processPending then pcall(Z.processPending) end
 	pcall(PSXP7_GatherTick)
+	pcall(PSXP7_XpTick)
 	if Z.hookSwapPortraits then pcall(Z.hookSwapPortraits) end -- drag and drop = insertion, in the game's bar too
 	pcall(PSXP7_FormTick)
 	if PSXP7_KickTick then

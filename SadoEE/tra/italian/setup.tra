@@ -21,3 +21,8 @@
 @21 = ~Richiede Decard, il vecchio erudito del campo (SadoQoL / SadoEE).~
 @40 = ~Gruppo numeroso: da 7 a 32 membri (una barra dei ritratti in più, script e dialoghi del gioco estesi ai membri dal 7 in poi)~
 @41 = ~Solo per Baldur's Gate: Enhanced Edition, Baldur's Gate II: Enhanced Edition ed EET.~
+@42 = ~PE del gruppo grande: l'impostazione predefinita di ogni partita (ogni partita può cambiarla in qualsiasi momento nella pagina delle opzioni di SadoEE, sezione Gruppo)~
+@43 = ~Vanilla: la divisione del gioco~
+@44 = ~Stessi PE per membro (stile BG2): ogni membro riceve il totale di un gruppo di 6, diviso per 6~
+@45 = ~Stessi PE totali (stile BG1): ogni membro riceve il totale di un gruppo di 6, diviso per il numero dei membri~
+@46 = ~Richiede il gruppo grande (#40).~

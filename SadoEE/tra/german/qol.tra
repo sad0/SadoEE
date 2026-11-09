@@ -278,3 +278,9 @@
 @1640 = ~Verbündete lichten den Kriegsnebel: Beschworene, Vertraute, bezauberte Kreaturen und Quest-Verbündete decken die Karte um sich herum auf~
 @1641 = ~Verbündete lichten den Nebel~
 @1642 = ~Beschworene Kreaturen, Vertraute, bezauberte Kreaturen und Quest-Verbündete decken den Kriegsnebel um sich herum auf, wie Gruppenmitglieder.~
+@1643 = ~XP der großen Gruppe~
+@1644 = ~Gruppen ab 7 Mitgliedern: wie die Erfahrung verteilt wird. Vanilla: unverändert. Gleiche XP pro Mitglied: jedes Mitglied erhält, was ein Mitglied einer 6er-Gruppe erhalten würde. Gleiche Gesamt-XP: die ganze Gruppe erhält insgesamt, was eine 6er-Gruppe erhalten würde. Wird mit jedem Spielstand gespeichert; Gruppen mit 6 oder weniger Mitgliedern sind nie betroffen.~
+@1645 = ~Vanilla~
+@1646 = ~Gleiche XP pro Mitglied~
+@1647 = ~Gleiche Gesamt-XP~
+@1648 = ~Gruppe~

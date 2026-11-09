@@ -278,3 +278,9 @@
 @1640 = ~Sojusznicy rozwiewają mgłę wojny: przywołańcy, chowańce, zauroczone stworzenia i sojusznicy z zadań odsłaniają mapę wokół siebie~
 @1641 = ~Sojusznicy rozwiewają mgłę~
 @1642 = ~Przywołańcy, chowańce, zauroczone stworzenia i sojusznicy z zadań odsłaniają mgłę wojny wokół siebie, tak jak członkowie drużyny.~
+@1643 = ~PD dużej drużyny~
+@1644 = ~Drużyny liczące 7 lub więcej członków: jak dzielone jest doświadczenie. Vanilla: bez zmian. Tyle samo PD na członka: każdy członek dostaje tyle, ile dostałby członek drużyny 6-osobowej. Tyle samo PD łącznie: cała drużyna dostaje łącznie tyle, ile dostałaby drużyna 6-osobowa. Zapisywane z każdą grą; drużyny liczące 6 lub mniej członków nigdy nie są zmieniane.~
+@1645 = ~Vanilla~
+@1646 = ~Tyle samo PD na członka~
+@1647 = ~Tyle samo PD łącznie~
+@1648 = ~Drużyna~

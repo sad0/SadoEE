@@ -278,3 +278,9 @@
 @1640 = ~Les alliés dissipent le brouillard de guerre : invocations, familiers, créatures charmées et alliés de quête révèlent la carte autour d'eux~
 @1641 = ~Les alliés dissipent le brouillard~
 @1642 = ~Invocations, familiers, créatures charmées et alliés de quête révèlent le brouillard de guerre autour d'eux, comme les membres du groupe.~
+@1643 = ~XP du grand groupe~
+@1644 = ~Groupes de 7 membres ou plus : comment l'expérience est partagée. Vanilla : inchangé. Même XP par membre : chaque membre reçoit ce que recevrait un membre d'un groupe de 6. Même XP totale : le groupe entier reçoit au total ce que recevrait un groupe de 6. Enregistré avec chaque partie ; les groupes de 6 ou moins ne sont jamais touchés.~
+@1645 = ~Vanilla~
+@1646 = ~Même XP par membre~
+@1647 = ~Même XP totale~
+@1648 = ~Groupe~

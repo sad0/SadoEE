@@ -278,3 +278,9 @@
 @1640 = ~Allies clear the fog of war: summons, familiars, charmed creatures and quest allies reveal the map around them~
 @1641 = ~Allies clear the fog~
 @1642 = ~Summons, familiars, charmed creatures and quest allies reveal the fog of war around them, like party members.~
+@1643 = ~Big party XP~
+@1644 = ~Parties of 7 or more: how experience is shared. Vanilla: unchanged. Same XP per member: each member gets what a member of a party of 6 would. Same total XP: the whole party gets what a party of 6 would get in total. Saved with each game; parties of 6 or fewer are never affected.~
+@1645 = ~Vanilla~
+@1646 = ~Same XP per member~
+@1647 = ~Same total XP~
+@1648 = ~Party~

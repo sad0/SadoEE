@@ -21,3 +21,8 @@
 @21 = ~Requires Decard, the old scholar of the camp (SadoQoL / SadoEE).~
 @40 = ~Big party: 7 to 32 members (an extra portrait bar, the game's scripts and dialogues extended to members 7+)~
 @41 = ~For Baldur's Gate: Enhanced Edition, Baldur's Gate II: Enhanced Edition and EET only.~
+@42 = ~Big party XP: the default for every game (each game can change it at any time on the SadoEE options page, Party section)~
+@43 = ~Vanilla: the game's own sharing~
+@44 = ~Same XP per member (BG2 style): each member gets what a party of 6 gets in total, divided by 6~
+@45 = ~Same total XP (BG1 style): each member gets what a party of 6 gets in total, divided by the number of members~
+@46 = ~Needs the big party (#40).~

@@ -21,3 +21,8 @@
 @21 = ~Vyžaduje Decarda, starého učence z tábora (SadoQoL / SadoEE).~
 @40 = ~Velká družina: 7 až 32 členů (další lišta portrétů, skripty a dialogy hry rozšířené na členy 7+)~
 @41 = ~Pouze pro Baldur's Gate: Enhanced Edition, Baldur's Gate II: Enhanced Edition a EET.~
+@42 = ~ZK velké družiny: výchozí nastavení každé hry (každá hra ho může kdykoli změnit na stránce možností SadoEE, oddíl Družina)~
+@43 = ~Vanilla: dělení podle hry~
+@44 = ~Stejné ZK na člena (styl BG2): každý člen dostane celkové ZK šestičlenné družiny děleno 6~
+@45 = ~Stejné ZK celkem (styl BG1): každý člen dostane celkové ZK šestičlenné družiny děleno počtem členů~
+@46 = ~Vyžaduje velkou družinu (#40).~

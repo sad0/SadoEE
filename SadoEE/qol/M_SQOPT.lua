@@ -40,6 +40,10 @@ O.ROWS = {
 	{ 'Waiting', 'Camp Waiting', "SQ_OPT_TXT_1568", "SQ_OPT_TXT_1569", 'SQWait', 'ENABLED' },
 	{ 'Fps', 'FPS', "SQ_OPT_TXT_1570", "SQ_OPT_TXT_1571", 'SQFps', 'on' },
 	{ 'AlliesFog', 'Allies Clear Fog', "SQ_OPT_TXT_1641", "SQ_OPT_TXT_1642", 'SQFog', 'ENABLED' },
+	-- per save, not in the INI (get / set: the module's functions; John 2026-11-09, big party XP, #40)
+	{ 'XpMode', 'Big Party XP', "SQ_OPT_TXT_1643", "SQ_OPT_TXT_1644", 'PSXP7',
+		values = { "SQ_OPT_TXT_1645", "SQ_OPT_TXT_1646", "SQ_OPT_TXT_1647" }, default = 0,
+		get = 'PSXP7_XpMode', set = 'PSXP7_SetXpMode' },
 }
 -- section id, label, its switches (the mouse section lists SQMB's inputs instead)
 O.SECTIONS = {
@@ -48,6 +52,7 @@ O.SECTIONS = {
 	{ 'combat', "SQ_OPT_TXT_1574", { 'Ammo', 'Quiver', 'AttackMove', 'SongSpam' } },
 	{ 'loot', "SQ_OPT_TXT_1575", { 'SortedLoot', 'ChestsBar', 'Waiting' } },
 	{ 'display', "SQ_OPT_TXT_1576", { 'Fps', 'AlliesFog' } },
+	{ 'party', "SQ_OPT_TXT_1648", { 'XpMode' } },
 	{ 'mouse', "SQ_OPT_TXT_1577" },
 }
 O.TXT = {
@@ -63,6 +68,17 @@ local function rowById(id)
 	for _, row in ipairs(O.ROWS) do if row[1] == id then return row end end
 end
 local function installed(row) return row ~= nil and type(_G[row[5]]) == 'table' end
+-- a per-save row: its value comes from the module (the loaded game), 0 when it cannot be read
+local function saveValue(row)
+	local f = _G[row.get]
+	if type(f) ~= 'function' then return 0 end
+	local ok, v = pcall(f)
+	return ok and tonumber(v) or 0
+end
+local function setSaveValue(row, v)
+	local f = _G[row.set]
+	if type(f) == 'function' then pcall(f, v) end
+end
 
 -----------------------
 -- Settings           --
@@ -70,6 +86,8 @@ local function installed(row) return row ~= nil and type(_G[row[5]]) == 'table' 
 
 -- The switch's setting: true / false; true when the page is not there (or before EEex read the INI).
 function SQOpt_On(id)
+	local row = rowById(id)
+	if row and row.get then return saveValue(row) ~= 0 end
 	local o = EEex_Options_Get and EEex_Options_Get(optionID(id))
 	if not o then return true end
 	local ok, v = pcall(function() return o:get() end)
@@ -78,6 +96,8 @@ end
 
 -- A choice's setting: 0 (off) .. #values - 1; for a switch 1 / 0. 0 when the page is not there.
 function SQOpt_Value(id)
+	local row = rowById(id)
+	if row and row.get then return saveValue(row) end
 	local o = EEex_Options_Get and EEex_Options_Get(optionID(id))
 	if not o then return 0 end
 	local ok, v = pcall(function() return o:get() end)
@@ -86,6 +106,7 @@ end
 
 -- Copies a switch's setting (a choice's value) into its feature's field (when installed).
 local function apply(row)
+	if row.get then return end
 	local t = _G[row[5]]
 	if row[6] and type(t) == 'table' then
 		if row.values then t[row[6]] = SQOpt_Value(row[1]) else t[row[6]] = SQOpt_On(row[1]) end
@@ -96,12 +117,14 @@ function SQOpt_ApplyAll()
 	for _, row in ipairs(O.ROWS) do pcall(apply, row) end
 end
 function SQOpt_Set(id, on)
+	local row = rowById(id)
+	if row and row.set then setSaveValue(row, on and 1 or 0) return end
 	local o = EEex_Options_Get(optionID(id))
 	if o then o:set(on and 1 or 0) end
 end
 
 for _, row in ipairs(O.ROWS) do
-	if not EEex_Options_Get(optionID(row[1])) then
+	if not row.get and not EEex_Options_Get(optionID(row[1])) then
 		EEex_Options_Register(optionID(row[1]), EEex_Options_Option.new({
 			['default']  = row.default or 1,
 			['type']     = EEex_Options_ToggleType.new(),
@@ -207,6 +230,7 @@ function SQOpt_RowFrame(k) local r = rows()[k] return (r and SQOpt_On(r[1])) and
 function SQOpt_RowClick(k)
 	local r = rows()[k]
 	if not r then return end
+	if r.values and r.set then setSaveValue(r, (SQOpt_Value(r[1]) + 1) % #r.values) return end
 	local o = EEex_Options_Get(optionID(r[1]))
 	if r.values and o then o:set((SQOpt_Value(r[1]) + 1) % #r.values) return end
 	SQOpt_Set(r[1], not SQOpt_On(r[1]))

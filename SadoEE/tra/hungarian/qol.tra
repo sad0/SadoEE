@@ -278,3 +278,9 @@
 @1640 = ~A szövetségesek eloszlatják a háború ködét: a megidézett lények, familiárisok, elbűvölt lények és küldetésbeli szövetségesek felfedik maguk körül a térképet~
 @1641 = ~A szövetségesek eloszlatják a ködöt~
 @1642 = ~A megidézett lények, familiárisok, elbűvölt lények és küldetésbeli szövetségesek felfedik maguk körül a háború ködét, akárcsak a csapattagok.~
+@1643 = ~A nagy csapat TP-je~
+@1644 = ~7 vagy több tagú csapatok: hogyan oszlik el a tapasztalat. Vanilla: változatlan. Azonos TP tagonként: minden tag annyit kap, amennyit egy 6 fős csapat tagja kapna. Azonos összes TP: az egész csapat összesen annyit kap, amennyit egy 6 fős csapat kapna. Minden mentéssel együtt tárolódik; a legfeljebb 6 fős csapatokat sosem érinti.~
+@1645 = ~Vanilla~
+@1646 = ~Azonos TP tagonként~
+@1647 = ~Azonos összes TP~
+@1648 = ~Csapat~

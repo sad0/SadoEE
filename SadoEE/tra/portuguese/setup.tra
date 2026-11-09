@@ -21,3 +21,8 @@
 @21 = ~Requer Decard, o velho erudito do acampamento (SadoQoL / SadoEE).~
 @40 = ~Grupo grande: de 7 a 32 membros (uma barra de retratos extra, os scripts e diálogos do jogo estendidos aos membros 7+)~
 @41 = ~Somente para Baldur's Gate: Enhanced Edition, Baldur's Gate II: Enhanced Edition e EET.~
+@42 = ~XP do grupo grande: a configuração padrão de cada jogo (cada jogo pode mudá-la a qualquer momento na página de opções do SadoEE, seção Grupo)~
+@43 = ~Vanilla: a divisão do jogo~
+@44 = ~Mesma XP por membro (estilo BG2): cada membro recebe o total de um grupo de 6, dividido por 6~
+@45 = ~Mesma XP total (estilo BG1): cada membro recebe o total de um grupo de 6, dividido pelo número de membros~
+@46 = ~Requer o grupo grande (#40).~

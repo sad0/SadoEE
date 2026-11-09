@@ -278,3 +278,9 @@
 @1640 = ~Gli alleati diradano la nebbia di guerra: evocazioni, famigli, creature affascinate e alleati di missione rivelano la mappa intorno a sé~
 @1641 = ~Gli alleati diradano la nebbia~
 @1642 = ~Evocazioni, famigli, creature affascinate e alleati di missione rivelano la nebbia di guerra intorno a sé, come i membri del gruppo.~
+@1643 = ~PE del gruppo grande~
+@1644 = ~Gruppi di 7 o più membri: come viene divisa l'esperienza. Vanilla: invariato. Stessi PE per membro: ogni membro riceve quanto riceverebbe un membro di un gruppo di 6. Stessi PE totali: l'intero gruppo riceve in totale quanto riceverebbe un gruppo di 6. Salvato con ogni partita; i gruppi di 6 o meno non sono mai interessati.~
+@1645 = ~Vanilla~
+@1646 = ~Stessi PE per membro~
+@1647 = ~Stessi PE totali~
+@1648 = ~Gruppo~

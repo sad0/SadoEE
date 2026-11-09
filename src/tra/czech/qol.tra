@@ -278,3 +278,9 @@
 @1640 = ~Spojenci odhalují válečnou mlhu: vyvolané bytosti, přisluhovači, očarovaní tvorové a spojenci z úkolů odhalují mapu kolem sebe~
 @1641 = ~Spojenci odhalují mlhu~
 @1642 = ~Vyvolané bytosti, přisluhovači, očarovaní tvorové a spojenci z úkolů odhalují válečnou mlhu kolem sebe, stejně jako členové družiny.~
+@1643 = ~ZK velké družiny~
+@1644 = ~Družiny se 7 a více členy: jak se dělí zkušenosti. Vanilla: beze změny. Stejné ZK na člena: každý člen dostane tolik, kolik by dostal člen šestičlenné družiny. Stejné ZK celkem: celá družina dostane celkem tolik, kolik by dostala šestičlenná družina. Ukládá se s každou hrou; družin se 6 a méně členy se to nikdy netýká.~
+@1645 = ~Vanilla~
+@1646 = ~Stejné ZK na člena~
+@1647 = ~Stejné ZK celkem~
+@1648 = ~Družina~

@@ -45,7 +45,8 @@
 | 32 | Auto-Roller | Auto-Roll button in character creation keeps the best of many rolls | all |
 | 34 | Allies clear the fog | Summons, familiars, charmed creatures and quest allies reveal the fog of war around them (switch on the options page; stands aside if Albie's mod is installed) | all |
 | **Engine extension** | | | |
-| 40 | Big party | 7 to 32 members, extra portrait bar, working banter and interjections for members 7+ (scripts and dialogues extended at install) | BGEE, EET |
+| 40 | Big party | 7 to 32 members, extra portrait bar, working banter and interjections for members 7+ (scripts and dialogues extended at install), XP mode for big parties (options page, per save) | BGEE, BG2EE, EET |
+| 41-43 | Big party XP default | The XP mode of games that have not chosen one: vanilla, same XP per member (BG2 style), same total XP (BG1 style); each game can change it on the options page. Needs #40 | BGEE, BG2EE, EET |
 
 "Games: all" = BGEE, EET and BG2EE. To check in the review: banter with members 7+, level up of respecced
 creatures, equipping items on creatures. (Banter 7+: checked in game by John, 2026-10-25.)
@@ -72,6 +73,22 @@ _To write: one short paragraph per component, with its options (EEex Options men
 
 ## Big party (#40)
 _To write: how to enable, limits, known issues._
+
+**Experience with 7+ members** (v1.0.6). The game splits most experience between the living members: kills, most
+BG1 quest rewards (`AddexperienceParty`), locks, traps, scribing. Most BG2 quest rewards (`AddXP2DA` without a `P_`
+prefix in XPLIST.2DA) give the full amount to each member. The SadoEE options page, section **Party**, row **Big party
+XP**, picks how a big party is treated. The choice is saved with each game and can change at any time; the
+installer asks the default for games that have not chosen yet (#41-#43):
+- **Vanilla** (default): unchanged.
+- **Same XP per member** (BG2 style: a party of 6's total XP, divided by 6): each member gets what a member of a
+  party of 6 would get. Shared XP is divided by 6
+  instead of the number of living members; full grants stay full.
+- **Same total XP** (BG1 style: a party of 6's total XP, divided by the members): the whole party gets what a
+  party of 6 would get in total. Shared XP stays split; full grants
+  are multiplied by 6 / living members.
+
+With 6 living members or fewer, every mode is vanilla. A single character's XP (`AddXPObject`, `ChangeStat`, items
+and spells) is never changed.
 
 ---
 
@@ -2117,6 +2134,23 @@ Common points for #27, #28, #30 and #31:
 - `PSXP7.menu`: menus `PSXP7_BAR` (with `PSXP7_CL` and portrait buttons `PSXP7_C6..C31`), `PSXP7_BOTTOM` (`PSXP7_BBG`, `PSXP7_B0..B31`, arrows `PSXP7_BL` / `PSXP7_BR`) and `PSXP7_PICK`.
 - `M_PSXENG.lua` and `PSXENG.menu` (`PSXENG_TICK`): the world-screen tick, store sort and wishlist, loot hook.
 - `PSXP7ON.2DA`: the startup switch, written inline (`2DA V1.0 / 0 / VALUE / ON 1`).
+- The SadoEE options page (`M_SQOPT.lua`, `SQOPT.menu`, `SQOPTBB.MOS`, `SQOPTCIR.BAM`, `SQOPTBN.BAM`, `SQOPTCK.BAM`,
+  `SQOPTT.BAM`), as the switchable components install it (v1.0.6): its **Party** section holds the XP mode row.
+
+**XP modes (v1.0.6).**
+- Per save: global `PSXP7XP` = mode + 1 (1 vanilla, 2 same XP per member, 3 same total); 0 (never set) = the install
+  default `PSXP7_XP_DEFAULT` in `M_PSXP7X.lua`, written by #41 (0), #42 (1) or #43 (2), one SUBCOMPONENT group
+  (@42) that needs #40 (@46). `PSXP7_XpMode()` /
+  `PSXP7_SetXpMode(m)`; the options row reads and writes it (a per-save row: `get` / `set` in `M_SQOPT.lua`, not in
+  the INI).
+- `PSXP7_XpTick()` (world-screen tick) copies the mode and the living members (STATE_DEAD off, as the engine counts
+  them) into a cell read by two stubs, set with the other patches in `PSXP7_Enable`, removed by `PSXP7_Disable`:
+  - `CInfGame::AddPartyXP` divisor (`movsx ecx, r9w / xor edx, edx`, 2.7.3 `0x14026DC83`, 2.6.6 `0x14026DA23`): mode 1
+    divides by min(n, 6). Covers kills, `AddexperienceParty`, `AddexperiencePartyGlobal`, `AddXPWorth`, `P_` rows of
+    `AddXP2DA`, locks, traps and scribing. The "Party gains" line keeps the engine's total.
+  - `CGameAIBase::AddXP2DA`, branch without `P_` (2.7.3 `0x140165AA0`, 2.6.6 `0x140165890`, right after its sscanf):
+    mode 2 sets the value to value x 6 / n when n > 6.
+- Both stubs leave n <= 6 untouched.
 
 **Existing game files modified.**
 

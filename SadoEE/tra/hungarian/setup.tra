@@ -21,3 +21,8 @@
 @21 = ~Decard, a tábor öreg tudósa szükséges (SadoQoL / SadoEE).~
 @40 = ~Nagy csapat: 7-32 tag (egy további portrésáv, a játék szkriptjei és párbeszédei kiterjesztve a 7. és további tagokra)~
 @41 = ~Csak a Baldur's Gate: Enhanced Editionhöz, a Baldur's Gate II: Enhanced Editionhöz és az EET-hez.~
+@42 = ~A nagy csapat TP-je: minden játék alapbeállítása (minden játék bármikor módosíthatja a SadoEE beállítások oldalán, Csapat rész)~
+@43 = ~Vanilla: a játék saját elosztása~
+@44 = ~Azonos TP tagonként (BG2 stílus): minden tag egy 6 fős csapat összes TP-jének hatodát kapja~
+@45 = ~Azonos összes TP (BG1 stílus): minden tag egy 6 fős csapat összes TP-jét kapja, elosztva a tagok számával~
+@46 = ~A nagy csapat (#40) szükséges.~
