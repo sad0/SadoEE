@@ -15,7 +15,7 @@ TEXT['english'] = dict(
     compat=[('Party Stash, sorted loot, options (#0-#7)', 'yes', 'yes', 'yes'),
             ('Rest camp and its people (#10-#17, #50-#53)', 'yes', 'yes', 'yes'),
             ('Quality of life (#20-#32)', 'yes', 'yes', 'yes'),
-            ('Big party, 7 to 32 members (#40)', 'yes', 'yes', 'no')],
+            ('Big party, 7 to 32 members (#40)', 'yes', 'yes', 'yes')],
     compat_note='Game versions 2.6.6 and 2.7.3. EEex is required by every component.',
     h_install='Installation', install=[
         'Install EEex.',
@@ -43,7 +43,7 @@ TEXT['french'] = dict(
     compat=[('Party Stash, butin trié, options (#0-#7)', 'oui', 'oui', 'oui'),
             ('Camp de repos et ses habitants (#10-#17, #50-#53)', 'oui', 'oui', 'oui'),
             ('Confort de jeu (#20-#32)', 'oui', 'oui', 'oui'),
-            ('Grand groupe, 7 à 32 membres (#40)', 'oui', 'oui', 'non')],
+            ('Grand groupe, 7 à 32 membres (#40)', 'oui', 'oui', 'oui')],
     compat_note='Versions du jeu 2.6.6 et 2.7.3. Tous les composants nécessitent EEex.',
     h_install='Installation', install=[
         'Installez EEex.',
@@ -72,7 +72,7 @@ TEXT['german'] = dict(
     compat=[('Party Stash, sortierte Beute, Optionen (#0-#7)', 'ja', 'ja', 'ja'),
             ('Rastlager und seine Bewohner (#10-#17, #50-#53)', 'ja', 'ja', 'ja'),
             ('Komfortfunktionen (#20-#32)', 'ja', 'ja', 'ja'),
-            ('Große Gruppe, 7 bis 32 Mitglieder (#40)', 'ja', 'ja', 'nein')],
+            ('Große Gruppe, 7 bis 32 Mitglieder (#40)', 'ja', 'ja', 'ja')],
     compat_note='Spielversionen 2.6.6 und 2.7.3. Jede Komponente benötigt EEex.',
     h_install='Installation', install=[
         'Installiert EEex.',
@@ -101,7 +101,7 @@ TEXT['spanish'] = dict(
     compat=[('Party Stash, botín ordenado, opciones (#0-#7)', 'sí', 'sí', 'sí'),
             ('Campamento de descanso y sus habitantes (#10-#17, #50-#53)', 'sí', 'sí', 'sí'),
             ('Comodidad de juego (#20-#32)', 'sí', 'sí', 'sí'),
-            ('Grupo grande, de 7 a 32 miembros (#40)', 'sí', 'sí', 'no')],
+            ('Grupo grande, de 7 a 32 miembros (#40)', 'sí', 'sí', 'sí')],
     compat_note='Versiones del juego 2.6.6 y 2.7.3. Todos los componentes requieren EEex.',
     h_install='Instalación', install=[
         'Instala EEex.',
@@ -130,7 +130,7 @@ TEXT['italian'] = dict(
     compat=[('Party Stash, bottino ordinato, opzioni (#0-#7)', 'sì', 'sì', 'sì'),
             ('Campo di riposo e i suoi abitanti (#10-#17, #50-#53)', 'sì', 'sì', 'sì'),
             ('Comodità di gioco (#20-#32)', 'sì', 'sì', 'sì'),
-            ('Gruppo grande, da 7 a 32 membri (#40)', 'sì', 'sì', 'no')],
+            ('Gruppo grande, da 7 a 32 membri (#40)', 'sì', 'sì', 'sì')],
     compat_note='Versioni del gioco 2.6.6 e 2.7.3. Tutti i componenti richiedono EEex.',
     h_install='Installazione', install=[
         'Installa EEex.',
@@ -159,7 +159,7 @@ TEXT['polish'] = dict(
     compat=[('Party Stash, posortowane łupy, opcje (#0-#7)', 'tak', 'tak', 'tak'),
             ('Obóz odpoczynku i jego mieszkańcy (#10-#17, #50-#53)', 'tak', 'tak', 'tak'),
             ('Udogodnienia (#20-#32)', 'tak', 'tak', 'tak'),
-            ('Duża drużyna, od 7 do 32 członków (#40)', 'tak', 'tak', 'nie')],
+            ('Duża drużyna, od 7 do 32 członków (#40)', 'tak', 'tak', 'tak')],
     compat_note='Wersje gry 2.6.6 i 2.7.3. Każdy komponent wymaga EEex.',
     h_install='Instalacja', install=[
         'Zainstaluj EEex.',
@@ -188,7 +188,7 @@ TEXT['russian'] = dict(
     compat=[('Party Stash, отсортированная добыча, опции (#0-#7)', 'да', 'да', 'да'),
             ('Лагерь для отдыха и его обитатели (#10-#17, #50-#53)', 'да', 'да', 'да'),
             ('Удобство игры (#20-#32)', 'да', 'да', 'да'),
-            ('Большой отряд, от 7 до 32 человек (#40)', 'да', 'да', 'нет')],
+            ('Большой отряд, от 7 до 32 человек (#40)', 'да', 'да', 'да')],
     compat_note='Версии игры 2.6.6 и 2.7.3. Для всех компонентов требуется EEex.',
     h_install='Установка', install=[
         'Установите EEex.',
@@ -217,7 +217,7 @@ TEXT['portuguese'] = dict(
     compat=[('Party Stash, saque ordenado, opções (#0-#7)', 'sim', 'sim', 'sim'),
             ('Acampamento de descanso e seus habitantes (#10-#17, #50-#53)', 'sim', 'sim', 'sim'),
             ('Qualidade de vida (#20-#32)', 'sim', 'sim', 'sim'),
-            ('Grupo grande, de 7 a 32 membros (#40)', 'sim', 'sim', 'não')],
+            ('Grupo grande, de 7 a 32 membros (#40)', 'sim', 'sim', 'sim')],
     compat_note='Versões do jogo 2.6.6 e 2.7.3. Todos os componentes exigem o EEex.',
     h_install='Instalação', install=[
         'Instale o EEex.',
@@ -246,7 +246,7 @@ TEXT['czech'] = dict(
     compat=[('Party Stash, seřazená kořist, možnosti (#0-#7)', 'ano', 'ano', 'ano'),
             ('Odpočinkový tábor a jeho obyvatelé (#10-#17, #50-#53)', 'ano', 'ano', 'ano'),
             ('Pohodlí hry (#20-#32)', 'ano', 'ano', 'ano'),
-            ('Velká družina, 7 až 32 členů (#40)', 'ano', 'ano', 'ne')],
+            ('Velká družina, 7 až 32 členů (#40)', 'ano', 'ano', 'ano')],
     compat_note='Verze hry 2.6.6 a 2.7.3. Všechny komponenty vyžadují EEex.',
     h_install='Instalace', install=[
         'Nainstalujte EEex.',
@@ -275,7 +275,7 @@ TEXT['hungarian'] = dict(
     compat=[('Party Stash, rendezett zsákmány, beállítások (#0-#7)', 'igen', 'igen', 'igen'),
             ('Pihenőtábor és lakói (#10-#17, #50-#53)', 'igen', 'igen', 'igen'),
             ('Kényelmi funkciók (#20-#32)', 'igen', 'igen', 'igen'),
-            ('Nagy csapat, 7-32 tag (#40)', 'igen', 'igen', 'nem')],
+            ('Nagy csapat, 7-32 tag (#40)', 'igen', 'igen', 'igen')],
     compat_note='Játékverziók: 2.6.6 és 2.7.3. Minden komponenshez EEex szükséges.',
     h_install='Telepítés', install=[
         'Telepítsd az EEex-et.',
@@ -304,7 +304,7 @@ TEXT['turkish'] = dict(
     compat=[('Party Stash, sıralı ganimet, seçenekler (#0-#7)', 'evet', 'evet', 'evet'),
             ('Dinlenme kampı ve sakinleri (#10-#17, #50-#53)', 'evet', 'evet', 'evet'),
             ('Yaşam kalitesi (#20-#32)', 'evet', 'evet', 'evet'),
-            ('Büyük grup, 7 ila 32 üye (#40)', 'evet', 'evet', 'hayır')],
+            ('Büyük grup, 7 ila 32 üye (#40)', 'evet', 'evet', 'evet')],
     compat_note='Oyun sürümleri 2.6.6 ve 2.7.3. Tüm bileşenler EEex gerektirir.',
     h_install='Kurulum', install=[
         "EEex'i kurun.",
@@ -333,7 +333,7 @@ TEXT['ukrainian'] = dict(
     compat=[('Party Stash, відсортована здобич, опції (#0-#7)', 'так', 'так', 'так'),
             ('Табір відпочинку та його мешканці (#10-#17, #50-#53)', 'так', 'так', 'так'),
             ('Зручність гри (#20-#32)', 'так', 'так', 'так'),
-            ('Великий загін, від 7 до 32 осіб (#40)', 'так', 'так', 'ні')],
+            ('Великий загін, від 7 до 32 осіб (#40)', 'так', 'так', 'так')],
     compat_note='Версії гри 2.6.6 і 2.7.3. Усі компоненти потребують EEex.',
     h_install='Встановлення', install=[
         'Встановіть EEex.',
@@ -361,7 +361,7 @@ TEXT['schinese'] = dict(
     compat=[('Party Stash、战利品排序、选项 (#0-#7)', '是', '是', '是'),
             ('休息营地及其居民 (#10-#17, #50-#53)', '是', '是', '是'),
             ('便利性改进 (#20-#32)', '是', '是', '是'),
-            ('大型队伍，7 至 32 人 (#40)', '是', '是', '否')],
+            ('大型队伍，7 至 32 人 (#40)', '是', '是', '是')],
     compat_note='游戏版本 2.6.6 和 2.7.3。所有组件都需要 EEex。',
     h_install='安装', install=[
         '安装 EEex。',
@@ -386,7 +386,7 @@ TEXT['japanese'] = dict(
     compat=[('Party Stash、整理された戦利品、オプション (#0-#7)', '対応', '対応', '対応'),
             ('休息キャンプとその住人 (#10-#17, #50-#53)', '対応', '対応', '対応'),
             ('快適性の向上 (#20-#32)', '対応', '対応', '対応'),
-            ('大人数パーティ、7〜32 人 (#40)', '対応', '対応', '非対応')],
+            ('大人数パーティ、7〜32 人 (#40)', '対応', '対応', '対応')],
     compat_note='ゲームバージョン 2.6.6 と 2.7.3。すべてのコンポーネントに EEex が必要です。',
     h_install='インストール', install=[
         'EEex をインストールします。',
@@ -414,7 +414,7 @@ TEXT['korean'] = dict(
     compat=[('Party Stash, 정렬된 전리품, 옵션 (#0-#7)', '예', '예', '예'),
             ('휴식 야영지와 주민 (#10-#17, #50-#53)', '예', '예', '예'),
             ('편의성 개선 (#20-#32)', '예', '예', '예'),
-            ('대규모 파티, 7~32명 (#40)', '예', '예', '아니요')],
+            ('대규모 파티, 7~32명 (#40)', '예', '예', '예')],
     compat_note='게임 버전 2.6.6 및 2.7.3. 모든 구성 요소에 EEex가 필요합니다.',
     h_install='설치', install=[
         'EEex를 설치합니다.',

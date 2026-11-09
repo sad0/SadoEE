@@ -2106,7 +2106,7 @@ Common points for #27, #28, #30 and #31:
 
 **Header.**
 - `GROUP @2003` ("Engine extension"), `LABEL ~SADOEE-PARTY-BIG~`.
-- `REQUIRE_PREDICATE GAME_IS ~bgee eet~` (@41: "For Baldur's Gate: Enhanced Edition and EET only."). Standalone BG2EE is excluded at install, although the Lua itself supports it.
+- `REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet~` (@41: "For Baldur's Gate: Enhanced Edition, Baldur's Gate II: Enhanced Edition and EET only."). Standalone BG2EE is allowed since v1.0.5.
 - `REQUIRE_PREDICATE MOD_IS_INSTALLED ~EEex.tp2~ … B3-EEex-Main`.
 - `INCLUDE ~SadoEE/lib/party.tpa~`, which includes `party_fn.tpa` and sets `psxp7_last = 32`.
 

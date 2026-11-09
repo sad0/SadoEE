@@ -17,7 +17,10 @@ BG1 NPC Project 32, Ascension 2.1.0, Unfinished Business 28, Item Revisions v4 b
 Tweaks Anthology 18, SCS 35.21, Might & Guile 5.9.1, Faiths & Powers 0.92, EET_end, Tactics Remix 8.2, then SadoEE (25 components).
 
 **BG2EE + Infinity UI++ 1.31**: EE Fixpack, EEex, Infinity UI++, Ascension, Unfinished Business, IWDification,
-Tweaks Anthology, SCS, Tactics Remix, then SadoEE (24 components; the big party is BGEE / EET only).
+Tweaks Anthology, SCS, Tactics Remix, then SadoEE (24 components; the big party was BGEE / EET only until v1.0.5).
+
+**BG2EE + EEex 1.3.1** (2.7.3, v1.0.5 dev): big party (#40) on standalone BG2EE. SoA chapter 1 with 13 members: portrait
+bar 7+, combat, a 7+ member's leave dialog, save/load in order. ToB transition not tested yet (same engine sites as EET).
 
 **EET + Infinity UI++ 1.4** (2.7.3, 2026-11-02): EET master, EEex 1.3.1, EET_end, Infinity UI++ 1.4 (core, tooltip
 background, strings), then SadoEE from the v1.0.3 dev sources (29 components, 0 errors, 7 minutes). Checked in game:
@@ -41,6 +44,7 @@ infinite ammo, identification, resting, death, NPC customization, Spellhold item
 | Rest camp, grand merchant, Old Scholar | Work on EET (stocks include Item Revisions items). A duplicate Old Scholar when the leader was busy is fixed (to recheck). LeUI store: Sell Marked moved under SELL (to recheck). |
 | Auto-Roller (#32) | Own layouts for Infinity UI++ (checked) and LeUI (to recheck in game); coexists with EEUITweaks' own auto-roller |
 | Stores (Tweaks Anthology changes) | Buying and selling from the stash work |
+| Better item recommender (Person, STATVAL.2DA in override) | Compatible: the "better item" highlight also works for party members 7+ (#40, checked with 30 members on Infinity UI++) |
 
 ## Known issues in other mods (not SadoEE)
 

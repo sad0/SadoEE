@@ -40,7 +40,7 @@ Full documentation: [docs/README.md](docs/README.md).
 | 34 | Quality of life | Allies clear the fog of war: summons, familiars, charmed creatures and quest allies reveal the map around them (switch on the options page) |
 | 40 | Engine extension | Big party: 7 to 32 members, with working banter and interjections for members 7+ (experimental) |
 
-The rest camp (#10-#17, #50-#53) works on BGEE, EET and BG2EE, on its own map (a forest clearing, day and night); the big party on BGEE and EET.
+The rest camp (#10-#17, #50-#53) works on BGEE, EET and BG2EE, on its own map (a forest clearing, day and night); the big party on BGEE, BG2EE and EET.
 
 ## Installation
 
