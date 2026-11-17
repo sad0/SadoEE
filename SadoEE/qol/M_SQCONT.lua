@@ -10,8 +10,8 @@ Once looted down to nothing valuable, the outline goes away. Trapped containers 
 How: the outline is drawn while m_drawPoly > 0 (Find Traps sets 400). Valuable containers get GOLD_POLY (401):
 that value is the gold marker. Its color is set by a pure assembly hook on the outline's draw call (no Lua call
 per frame: Lua there ran ~2000 times per second). The hover/Tab highlight goes through EEex's "Empty Container"
-module hook (enabled in EEex.ini by SadoQoL.tp2); this file replaces the module's callback (the gray color for
-empty containers is not used).
+module hook (enabled in EEex.ini by SadoQoL.tp2); this file replaces the module's callback and keeps its rule (empty
+containers in gray) when the player had the module on before SadoQoL (GRAY_EMPTY, set at install).
 Tuning live from the EEex console, e.g.  SQCont.MIN_RATIO = 25 (then SQCont.itemCache = {})   SQCont.COLOR = 0x00D7FF   SQCont.ENABLED = false
 --]]
 
@@ -19,6 +19,8 @@ SQCont = SQCont or {}
 local T = SQCont
 
 T.ENABLED   = T.ENABLED ~= false
+-- EEex's Empty Container module (empty containers outlined in gray): on when the player had it on before the install.
+if T.GRAY_EMPTY == nil then T.GRAY_EMPTY = (SQ_CONT_GRAY_EMPTY) == 1 end
 T.MIN_VALUE = T.MIN_VALUE or 100       -- gold pieces in a gold pile
 T.MIN_RATIO = T.MIN_RATIO or 50        -- base price per weight unit (Armure de plates 12, Potion de soins 75)
 T.COLOR     = T.COLOR or 0x00D7FF      -- gold (engine color, 0xBBGGRR)
@@ -111,6 +113,8 @@ end
 
 -- Called by EEex's Empty Container hook when a container is highlighted (hover / Tab; hovering resets m_drawPoly).
 function B3EmptyContainer_Hook_OnBeforeContainerOutlineRender(container, color)
+	-- EEex's own rule first (B3EmptyContainer.lua): empty containers in gray, the green (0xFF00) left alone.
+	if T.GRAY_EMPTY and color.value ~= 0xFF00 and container.m_lstItems.m_nCount == 0 then color.value = 0x808080 end
 	if not T.ENABLED then return end
 	local e = T.contCache[container.m_id]
 	if e and e[2] and not trapShown(container) then color.value = T.COLOR end

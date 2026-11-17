@@ -35,35 +35,26 @@ local function field(o, name)  -- nil when the type has no such field (no closur
 	if ok then return v end
 end
 
--- The red outline: m_drawPoly (400, as the Find Traps mode sets it) and, for regions, the "detectable" flag 0x8.
+-- The red outline: m_drawPoly (400, as the Find Traps mode sets it). Regions also need the "detectable" flag 0x8,
+-- which every region we detect already has (see isFake).
 local DRAW_POLY = 400
 local function setPoly(t) if t.m_drawPoly == 0 then t.m_drawPoly = DRAW_POLY end end
--- A region that lacked the flag is a scripted, undisarmable trap (AR0125 horrors, Sarevok's skull): remembered in
--- the area variable SQND_<x>_<y> (saved with the area) for component #2 (auto-disarm).
-local function setDetectable(area, t)
-	if EEex_BAnd(t.m_dwFlags, 0x8) == 0 then
-		local b = t.m_rBounding
-		EEex_Area_SetVariableInt(area, 'SQND_' .. b.left .. '_' .. b.top, 1)
-		t.m_dwFlags = EEex_BOr(t.m_dwFlags, 0x8)
-	end
-end
 local function markDrawn(area, t, ty)
 	pcall(setPoly, t)
-	if ty == TYPE_TRIGGER then pcall(setDetectable, area, t) end
 end
 
--- Scripted triggers flagged "trapped" in the area file that are not traps at all: bounty hunter triggers (REPTRAP,
--- ACT* scripts), and SoD's story triggers (BD1000: Corwin romance, banters, the camp region covering the whole
--- map): disarm difficulty 0, or a region that lacked the "detectable" flag and is over FAKE_PX on a side.
-local FAKE_PX = 600
+-- Trap regions the game never lets a thief find: the area file leaves out their "detectable" flag (0x8). Most are
+-- not traps at all (spawn and teleport triggers, guard alarms, Durlag's chessboard squares, SoD's story triggers);
+-- the rest are undetectable on purpose (also traps added by mods, e.g. Tactics Remix). The game's Find Traps mode
+-- skips them whatever the skill, so we do too. Also skipped: bounty hunter triggers (REPTRAP, ACT* scripts) and
+-- disarm difficulty 0. SQND_<x>_<y> = a region an older version made detectable (flag added by us).
 local function isFake(area, t)
 	local scr = string.upper(field(t, 'm_scriptRes') and t.m_scriptRes:get() or '')
 	if scr:sub(1, 3) == 'ACT' or scr:sub(1, 7) == 'REPTRAP' then return true end
 	if (field(t, 'm_trapDisarmingDifficulty') or 1) == 0 then return true end
+	if EEex_BAnd(t.m_dwFlags, 0x8) == 0 then return true end
 	local b = field(t, 'm_rBounding')
-	if not b then return false end
-	local lacked = EEex_BAnd(t.m_dwFlags, 0x8) == 0 or EEex_Area_GetVariableInt(area, 'SQND_' .. b.left .. '_' .. b.top) == 1
-	return lacked and (b.right - b.left > FAKE_PX or b.bottom - b.top > FAKE_PX)
+	return b ~= nil and EEex_Area_GetVariableInt(area, 'SQND_' .. b.left .. '_' .. b.top) == 1
 end
 
 -- A fake trap shown by an older version of the mod (saved as detected): hidden again, flag restored.
@@ -92,8 +83,7 @@ local function scan(area)
 				if fake and found == 1 then pcall(unmark, area, t) found = 0 end
 				if armed and found == 1 then markDrawn(area, t, ty) end
 				if armed and found == 0 then
-					-- Fake traps stay hidden. Undisarmable traps (disarm 100, Sarevok's temple) are real: the game's
-					-- Find Traps shows them too.
+					-- Fake and undetectable traps stay hidden, like the game's Find Traps mode.
 					if not fake then
 						local b = field(t, 'm_rBounding')
 						local x1, y1, x2, y2
