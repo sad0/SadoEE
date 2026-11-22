@@ -284,3 +284,8 @@
 @1646 = ~Azonos TP tagonként~
 @1647 = ~Azonos összes TP~
 @1648 = ~Csapat~
+@1651 = ~Gyülekezési távolság~
+@1652 = ~7 vagy több fős csapatok: milyen messze lehetnek a tagok attól, aki kijáraton vagy a térkép szélén távozik („gyűjtsd össze a csapatod”). Auto: a távolság a csapattal nő (x2 12 tagnál, x4 24-től). x4: mindig négyszeres távolság (nagyjából egy képernyő). Korlátlan: a tagok bárhol lehetnek a területen. Egy másik területen lévő vagy nem irányítható tag továbbra is visszatartja a csapatot.~
+@1653 = ~Auto~
+@1654 = ~x4~
+@1655 = ~Korlátlan~

@@ -284,3 +284,8 @@
 @1646 = ~Stejné ZK na člena~
 @1647 = ~Stejné ZK celkem~
 @1648 = ~Družina~
+@1651 = ~Dosah shromáždění~
+@1652 = ~Družiny 7 a více členů: jak daleko smějí být členové od toho, kdo prochází východem nebo okrajem mapy („shromáždi družinu“). Auto: dosah roste s družinou (x2 při 12 členech, x4 od 24). x4: vždy čtyřnásobný dosah (zhruba jedna obrazovka). Bez omezení: členové mohou být kdekoli v oblasti. Člen v jiné oblasti nebo mimo tvou kontrolu družinu stále zdrží.~
+@1653 = ~Auto~
+@1654 = ~x4~
+@1655 = ~Bez omezení~

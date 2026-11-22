@@ -44,6 +44,9 @@ O.ROWS = {
 	{ 'XpMode', 'Big Party XP', "SQ_OPT_TXT_1643", "SQ_OPT_TXT_1644", 'PSXP7',
 		values = { "SQ_OPT_TXT_1645", "SQ_OPT_TXT_1646", "SQ_OPT_TXT_1647" }, default = 0,
 		get = 'PSXP7_XpMode', set = 'PSXP7_SetXpMode' },
+	-- big party's gather radius (John 2026-11-22, Endarire's request): auto (members / 6, x4 at most), x4, no limit
+	{ 'Gather', 'Gather Range', "SQ_OPT_TXT_1651", "SQ_OPT_TXT_1652", 'PSXP7', 'GATHER_MODE',
+		values = { "SQ_OPT_TXT_1653", "SQ_OPT_TXT_1654", "SQ_OPT_TXT_1655" }, default = 0 },
 }
 -- section id, label, its switches (the mouse section lists SQMB's inputs instead)
 O.SECTIONS = {
@@ -52,7 +55,7 @@ O.SECTIONS = {
 	{ 'combat', "SQ_OPT_TXT_1574", { 'Ammo', 'Quiver', 'AttackMove', 'SongSpam' } },
 	{ 'loot', "SQ_OPT_TXT_1575", { 'SortedLoot', 'ChestsBar', 'Waiting' } },
 	{ 'display', "SQ_OPT_TXT_1576", { 'Fps', 'AlliesFog' } },
-	{ 'party', "SQ_OPT_TXT_1648", { 'XpMode' } },
+	{ 'party', "SQ_OPT_TXT_1648", { 'XpMode', 'Gather' } },
 	{ 'mouse', "SQ_OPT_TXT_1577" },
 }
 O.TXT = {

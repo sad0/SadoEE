@@ -1376,12 +1376,18 @@ function PSXP7_BarWidth()
 end
 
 -- Gather radius scale: x1 up to 6 members, then members / 6 (x2 at 12, x3 at 18), at most x4 (John: "rayon élargi").
+-- GATHER_MODE (SadoEE options page, "Gather range", John 2026-11-22 after Endarire's request): 0 = that auto scale,
+-- 1 = always x4, 2 = no limit (members anywhere in the area; one of them must still reach the exit).
 Z.GATHER_MAX = 4
-function PSXP7_GatherScale() return math.min(Z.GATHER_MAX, math.max(1, Infinity_GetNumCharacters() / 6)) end
+Z.GATHER_MODE = Z.GATHER_MODE or 0
+function PSXP7_GatherScale()
+	if Z.GATHER_MODE == 1 then return Z.GATHER_MAX end
+	return math.min(Z.GATHER_MAX, math.max(1, Infinity_GetNumCharacters() / 6))
+end
 function PSXP7_GatherTick()
 	if not Z.gatherCell then return end
 	local f = PSXP7_GatherScale()
-	local v = math.floor(Z.gatherBase * f * f)
+	local v = Z.GATHER_MODE == 2 and 0x7FFFFFFF or math.floor(Z.gatherBase * f * f)
 	if v ~= Z.gatherValue then EEex_Write32(Z.gatherCell, v) Z.gatherValue = v end
 end
 

@@ -284,3 +284,8 @@
 @1646 = ~Mismos PX por miembro~
 @1647 = ~Mismos PX totales~
 @1648 = ~Grupo~
+@1651 = ~Distancia de reunión~
+@1652 = ~Grupos de 7 o más: a qué distancia pueden estar los miembros de quien cruza una salida o el borde del mapa ("reúne a tu grupo"). Auto: el radio crece con el grupo (x2 con 12 miembros, x4 desde 24). x4: siempre 4 veces el radio (más o menos una pantalla). Sin límite: los miembros pueden estar en cualquier parte de la zona. Un miembro en otra zona o fuera de tu control sigue frenando al grupo.~
+@1653 = ~Auto~
+@1654 = ~x4~
+@1655 = ~Sin límite~

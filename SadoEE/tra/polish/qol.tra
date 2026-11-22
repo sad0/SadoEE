@@ -284,3 +284,8 @@
 @1646 = ~Tyle samo PD na członka~
 @1647 = ~Tyle samo PD łącznie~
 @1648 = ~Drużyna~
+@1651 = ~Zasięg zbiórki~
+@1652 = ~Drużyny 7 lub więcej osób: jak daleko członkowie mogą być od postaci, która przechodzi przez wyjście lub krawędź mapy („zbierz drużynę”). Auto: zasięg rośnie wraz z drużyną (x2 przy 12 członkach, x4 od 24). x4: zawsze czterokrotny zasięg (mniej więcej jeden ekran). Bez limitu: członkowie mogą być w dowolnym miejscu obszaru. Członek w innym obszarze lub poza twoją kontrolą nadal zatrzymuje drużynę.~
+@1653 = ~Auto~
+@1654 = ~x4~
+@1655 = ~Bez limitu~

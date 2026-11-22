@@ -284,3 +284,8 @@
 @1646 = ~Même XP par membre~
 @1647 = ~Même XP totale~
 @1648 = ~Groupe~
+@1651 = ~Distance de regroupement~
+@1652 = ~Groupes de 7 ou plus : à quelle distance les membres peuvent être de celui qui passe une sortie ou un bord de carte (« rassemblez votre groupe »). Auto : le rayon grandit avec le groupe (x2 à 12 membres, x4 à partir de 24). x4 : toujours 4 fois le rayon (environ un écran). Sans limite : les membres peuvent être n'importe où dans la zone. Un membre dans une autre zone ou hors de votre contrôle bloque toujours le groupe.~
+@1653 = ~Auto~
+@1654 = ~x4~
+@1655 = ~Sans limite~

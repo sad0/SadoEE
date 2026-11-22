@@ -284,3 +284,8 @@
 @1646 = ~Gleiche XP pro Mitglied~
 @1647 = ~Gleiche Gesamt-XP~
 @1648 = ~Gruppe~
+@1651 = ~Sammelreichweite~
+@1652 = ~Gruppen ab 7 Mitgliedern: wie weit Mitglieder von dem entfernt sein dürfen, der einen Ausgang oder Kartenrand benutzt („Sammelt Eure Gruppe“). Auto: die Reichweite wächst mit der Gruppe (x2 bei 12 Mitgliedern, x4 ab 24). x4: immer die vierfache Reichweite (etwa ein Bildschirm). Ohne Grenze: Mitglieder können überall im Gebiet sein. Ein Mitglied in einem anderen Gebiet oder außerhalb Eurer Kontrolle hält die Gruppe weiterhin auf.~
+@1653 = ~Auto~
+@1654 = ~x4~
+@1655 = ~Ohne Grenze~
