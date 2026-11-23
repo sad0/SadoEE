@@ -285,7 +285,7 @@
 @1647 = ~Mesma XP total~
 @1648 = ~Grupo~
 @1651 = ~Distância de reunião~
-@1652 = ~Grupos de 7 ou mais: a que distância os membros podem estar de quem atravessa uma saída ou a borda do mapa ("reúna o seu grupo"). Auto: o raio cresce com o grupo (x2 com 12 membros, x4 a partir de 24). x4: sempre 4 vezes o raio (cerca de uma tela). Sem limite: os membros podem estar em qualquer lugar da área. Um membro em outra área ou fora do seu controle ainda segura o grupo.~
+@1652 = ~Grupos de 7 ou mais: a que distância os membros podem estar de quem atravessa uma saída ou a borda do mapa ('reúna o seu grupo'). Auto: o raio cresce com o grupo (x2 com 12 membros, x4 a partir de 24). x4: sempre 4 vezes o raio (cerca de uma tela). Sem limite: os membros podem estar em qualquer lugar da área. Um membro em outra área ou fora do seu controle ainda segura o grupo.~
 @1653 = ~Auto~
 @1654 = ~x4~
 @1655 = ~Sem limite~

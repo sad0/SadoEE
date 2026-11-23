@@ -285,7 +285,7 @@
 @1647 = ~Stessi PE totali~
 @1648 = ~Gruppo~
 @1651 = ~Distanza di raduno~
-@1652 = ~Gruppi di 7 o più: quanto possono essere lontani i membri da chi attraversa un'uscita o il bordo della mappa ("raduna il gruppo"). Auto: il raggio cresce con il gruppo (x2 a 12 membri, x4 da 24). x4: sempre 4 volte il raggio (circa uno schermo). Senza limite: i membri possono essere ovunque nell'area. Un membro in un'altra area o fuori dal tuo controllo blocca ancora il gruppo.~
+@1652 = ~Gruppi di 7 o più: quanto possono essere lontani i membri da chi attraversa un'uscita o il bordo della mappa ('raduna il gruppo'). Auto: il raggio cresce con il gruppo (x2 a 12 membri, x4 da 24). x4: sempre 4 volte il raggio (circa uno schermo). Senza limite: i membri possono essere ovunque nell'area. Un membro in un'altra area o fuori dal tuo controllo blocca ancora il gruppo.~
 @1653 = ~Auto~
 @1654 = ~x4~
 @1655 = ~Senza limite~

@@ -285,7 +285,7 @@
 @1647 = ~Same total XP~
 @1648 = ~Party~
 @1651 = ~Gather range~
-@1652 = ~Parties of 7 or more: how far members may be from the one who leaves through an exit or a map edge ("You must gather your party"). Auto: the radius grows with the party (x2 at 12 members, x4 at 24 or more). x4: always 4 times the radius (about a screen). No limit: members can be anywhere in the area. A member in another area or not under your control still holds the party back.~
+@1652 = ~Parties of 7 or more: how far members may be from the one who leaves through an exit or a map edge ('You must gather your party'). Auto: the radius grows with the party (x2 at 12 members, x4 at 24 or more). x4: always 4 times the radius (about a screen). No limit: members can be anywhere in the area. A member in another area or not under your control still holds the party back.~
 @1653 = ~Auto~
 @1654 = ~x4~
 @1655 = ~No limit~

@@ -285,7 +285,7 @@
 @1647 = ~Aynı toplam TP~
 @1648 = ~Grup~
 @1651 = ~Toplanma mesafesi~
-@1652 = ~7 veya daha fazla kişilik gruplar: üyelerin bir çıkıştan veya harita kenarından geçen karakterden ne kadar uzakta olabileceği ("grubunu topla"). Otomatik: mesafe grupla birlikte büyür (12 üyede x2, 24'ten itibaren x4). x4: her zaman 4 kat mesafe (yaklaşık bir ekran). Sınırsız: üyeler bölgenin herhangi bir yerinde olabilir. Başka bir bölgedeki ya da kontrolünüz dışındaki bir üye grubu yine de bekletir.~
+@1652 = ~7 veya daha fazla kişilik gruplar: üyelerin bir çıkıştan veya harita kenarından geçen karakterden ne kadar uzakta olabileceği ('grubunu topla'). Otomatik: mesafe grupla birlikte büyür (12 üyede x2, 24'ten itibaren x4). x4: her zaman 4 kat mesafe (yaklaşık bir ekran). Sınırsız: üyeler bölgenin herhangi bir yerinde olabilir. Başka bir bölgedeki ya da kontrolünüz dışındaki bir üye grubu yine de bekletir.~
 @1653 = ~Otomatik~
 @1654 = ~x4~
 @1655 = ~Sınırsız~
